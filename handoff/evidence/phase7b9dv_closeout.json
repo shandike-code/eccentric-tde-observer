@@ -1,0 +1,556 @@
+{
+  "authorization": {
+    "dynamic_nlte_solution": false,
+    "formal_h_he_feedback_pair": false,
+    "material_step_acceptance": false,
+    "phase4_replacement": false,
+    "real_line_formation": false,
+    "uvot": false
+  },
+  "classification": "[V-closeout]+[A-user-stop]+[O-not-converged]",
+  "combined_picard_history": [
+    {
+      "boundary_bolometric_fraction": 0.00012589396352574784,
+      "boundary_spectrum_l1": 0.0001308560590274023,
+      "combined_iteration": 0,
+      "contraction_ratio": null,
+      "residual": 0.0008226213641043368,
+      "stage": "7B9dp",
+      "stage_iteration": 0
+    },
+    {
+      "boundary_bolometric_fraction": 0.00011507597928860989,
+      "boundary_spectrum_l1": 0.0001193173427449488,
+      "combined_iteration": 1,
+      "contraction_ratio": 0.9198363631873451,
+      "residual": 0.000756677043837946,
+      "stage": "7B9dp",
+      "stage_iteration": 1
+    },
+    {
+      "boundary_bolometric_fraction": 0.0001051922549887001,
+      "boundary_spectrum_l1": 0.0001089224688423206,
+      "combined_iteration": 2,
+      "contraction_ratio": 0.9206758133856511,
+      "residual": 0.0006966542528057508,
+      "stage": "7B9dp",
+      "stage_iteration": 2
+    },
+    {
+      "boundary_bolometric_fraction": 9.61613473169859e-05,
+      "boundary_spectrum_l1": 9.955825747601674e-05,
+      "combined_iteration": 3,
+      "contraction_ratio": 0.9209995105500903,
+      "residual": 0.0006416182258567354,
+      "stage": "7B9dp",
+      "stage_iteration": 3
+    },
+    {
+      "boundary_bolometric_fraction": 8.790928848119739e-05,
+      "boundary_spectrum_l1": 9.11081015722289e-05,
+      "combined_iteration": 4,
+      "contraction_ratio": 0.9261530677946974,
+      "residual": 0.0005942366882302065,
+      "stage": "7B9dp",
+      "stage_iteration": 4
+    },
+    {
+      "boundary_bolometric_fraction": 8.03687321286546e-05,
+      "boundary_spectrum_l1": 8.348032313564931e-05,
+      "combined_iteration": 5,
+      "contraction_ratio": 0.9296283077049016,
+      "residual": 0.0005524192468556121,
+      "stage": "7B9dp",
+      "stage_iteration": 5
+    },
+    {
+      "boundary_bolometric_fraction": 7.347826353393235e-05,
+      "boundary_spectrum_l1": 7.659402169257876e-05,
+      "combined_iteration": 6,
+      "contraction_ratio": 0.9291857486907982,
+      "residual": 0.0005133000914807387,
+      "stage": "7B9dp",
+      "stage_iteration": 6
+    },
+    {
+      "boundary_bolometric_fraction": 6.718182415928305e-05,
+      "boundary_spectrum_l1": 7.038244405203835e-05,
+      "combined_iteration": 7,
+      "contraction_ratio": 0.9287777878447848,
+      "residual": 0.0004767417234660062,
+      "stage": "7B9dp",
+      "stage_iteration": 7
+    },
+    {
+      "boundary_bolometric_fraction": 6.142821807970823e-05,
+      "boundary_spectrum_l1": 6.47441668105305e-05,
+      "combined_iteration": 8,
+      "contraction_ratio": 0.9284035700577036,
+      "residual": 0.0004426087180613026,
+      "stage": "7B9dp",
+      "stage_iteration": 8
+    },
+    {
+      "boundary_bolometric_fraction": 5.6170679109197465e-05,
+      "boundary_spectrum_l1": 5.963511374308923e-05,
+      "combined_iteration": 9,
+      "contraction_ratio": 0.9280618270287083,
+      "residual": 0.00041076825554280696,
+      "stage": "7B9dp",
+      "stage_iteration": 9
+    },
+    {
+      "boundary_bolometric_fraction": 5.136648479103307e-05,
+      "boundary_spectrum_l1": 5.501693845278306e-05,
+      "combined_iteration": 10,
+      "contraction_ratio": 0.9277504119446529,
+      "residual": 0.0003810904182936256,
+      "stage": "7B9dp",
+      "stage_iteration": 10
+    },
+    {
+      "boundary_bolometric_fraction": 4.697660812281119e-05,
+      "boundary_spectrum_l1": 5.08256065217358e-05,
+      "combined_iteration": 11,
+      "contraction_ratio": 0.9315175136579041,
+      "residual": 0.0003549923989277288,
+      "stage": "7B9dp",
+      "stage_iteration": 11
+    },
+    {
+      "boundary_bolometric_fraction": 4.296540087071718e-05,
+      "boundary_spectrum_l1": 4.7016627172208703e-05,
+      "combined_iteration": 12,
+      "contraction_ratio": 0.9350623111220431,
+      "residual": 0.00033194001297212036,
+      "stage": "7B9dp",
+      "stage_iteration": 12
+    },
+    {
+      "boundary_bolometric_fraction": 3.930030422369841e-05,
+      "boundary_spectrum_l1": 4.355137465263825e-05,
+      "combined_iteration": 13,
+      "contraction_ratio": 0.9349003950436968,
+      "residual": 0.0003103308492584452,
+      "stage": "7B9dp",
+      "stage_iteration": 13
+    },
+    {
+      "boundary_bolometric_fraction": 3.595158370846572e-05,
+      "boundary_spectrum_l1": 4.039394292380459e-05,
+      "combined_iteration": 14,
+      "contraction_ratio": 0.9345435502575216,
+      "residual": 0.00029001769362041913,
+      "stage": "7B9dp",
+      "stage_iteration": 14
+    },
+    {
+      "boundary_bolometric_fraction": 3.289208602967712e-05,
+      "boundary_spectrum_l1": 3.7513433058861766e-05,
+      "combined_iteration": 15,
+      "contraction_ratio": 0.9688701455956118,
+      "residual": 0.00028098948504331903,
+      "stage": "7B9dp",
+      "stage_iteration": 15
+    },
+    {
+      "boundary_bolometric_fraction": 3.0097015954392284e-05,
+      "boundary_spectrum_l1": 3.487516494364568e-05,
+      "combined_iteration": 16,
+      "contraction_ratio": 0.989882641471514,
+      "residual": 0.0002781466136804011,
+      "stage": "7B9dp",
+      "stage_iteration": 16
+    },
+    {
+      "boundary_bolometric_fraction": 2.7543731646096187e-05,
+      "boundary_spectrum_l1": 3.24533078077871e-05,
+      "combined_iteration": 17,
+      "contraction_ratio": 0.9898927389274312,
+      "residual": 0.00027533531323948235,
+      "stage": "7B9dp",
+      "stage_iteration": 17
+    },
+    {
+      "boundary_bolometric_fraction": 2.521155704768424e-05,
+      "boundary_spectrum_l1": 3.022774190192101e-05,
+      "combined_iteration": 18,
+      "contraction_ratio": 0.9900851001385582,
+      "residual": 0.00027260539118039416,
+      "stage": "7B9dp",
+      "stage_iteration": 18
+    },
+    {
+      "boundary_bolometric_fraction": 2.308161002857052e-05,
+      "boundary_spectrum_l1": 2.8182179975003808e-05,
+      "combined_iteration": 19,
+      "contraction_ratio": 0.990828963313254,
+      "residual": 0.00027010531713687403,
+      "stage": "7B9dp",
+      "stage_iteration": 19
+    },
+    {
+      "boundary_bolometric_fraction": 2.1136645114486176e-05,
+      "boundary_spectrum_l1": 2.6306162950526392e-05,
+      "combined_iteration": 20,
+      "contraction_ratio": 0.9908592621782137,
+      "residual": 0.00026763635524865544,
+      "stage": "7B9dp",
+      "stage_iteration": 20
+    },
+    {
+      "boundary_bolometric_fraction": 1.936090968777089e-05,
+      "boundary_spectrum_l1": 2.4577111336623686e-05,
+      "combined_iteration": 21,
+      "contraction_ratio": 0.9908746843944891,
+      "residual": 0.00026519408903950283,
+      "stage": "7B9dp",
+      "stage_iteration": 21
+    },
+    {
+      "boundary_bolometric_fraction": 1.7740012614017462e-05,
+      "boundary_spectrum_l1": 2.2981497053497793e-05,
+      "combined_iteration": 22,
+      "contraction_ratio": 0.9909117884271255,
+      "residual": 0.0002627839490504361,
+      "stage": "7B9dp",
+      "stage_iteration": 22
+    },
+    {
+      "boundary_bolometric_fraction": 1.626080431213422e-05,
+      "boundary_spectrum_l1": 2.1505304730469318e-05,
+      "combined_iteration": 23,
+      "contraction_ratio": 0.990939592460366,
+      "residual": 0.00026040301937716473,
+      "stage": "7B9dp",
+      "stage_iteration": 23
+    },
+    {
+      "boundary_bolometric_fraction": 1.4911267343247746e-05,
+      "boundary_spectrum_l1": 2.0137542979367296e-05,
+      "combined_iteration": 24,
+      "contraction_ratio": 0.9909697986710009,
+      "residual": 0.0002580515276855097,
+      "stage": "7B9dp",
+      "stage_iteration": 24
+    },
+    {
+      "boundary_bolometric_fraction": 1.3680416654091528e-05,
+      "boundary_spectrum_l1": 1.8868382405738412e-05,
+      "combined_iteration": 25,
+      "contraction_ratio": 0.9910056614945153,
+      "residual": 0.00025573052489364875,
+      "stage": "7B9dp",
+      "stage_iteration": 25
+    },
+    {
+      "boundary_bolometric_fraction": 1.2558208664019525e-05,
+      "boundary_spectrum_l1": 1.7688985288348276e-05,
+      "combined_iteration": 26,
+      "contraction_ratio": 0.9910493735249631,
+      "residual": 0.0002534415764870606,
+      "stage": "7B9dp",
+      "stage_iteration": 26
+    },
+    {
+      "boundary_bolometric_fraction": 1.1535458445066474e-05,
+      "boundary_spectrum_l1": 1.6591476974596793e-05,
+      "combined_iteration": 27,
+      "contraction_ratio": 0.9911055502224644,
+      "residual": 0.000251187353113457,
+      "stage": "7B9dp",
+      "stage_iteration": 27
+    },
+    {
+      "boundary_bolometric_fraction": 1.0603764297256851e-05,
+      "boundary_spectrum_l1": 1.5568775347086117e-05,
+      "combined_iteration": 28,
+      "contraction_ratio": 0.99116619459214,
+      "residual": 0.00024896841291513727,
+      "stage": "7B9dp",
+      "stage_iteration": 28
+    },
+    {
+      "boundary_bolometric_fraction": 9.755439068937425e-06,
+      "boundary_spectrum_l1": 1.4614529796527052e-05,
+      "combined_iteration": 29,
+      "contraction_ratio": 0.991223184306409,
+      "residual": 0.00024678326304145525,
+      "stage": "7B9dp",
+      "stage_iteration": 29
+    },
+    {
+      "boundary_bolometric_fraction": 8.983447635122239e-06,
+      "boundary_spectrum_l1": 1.3723050526952396e-05,
+      "combined_iteration": 30,
+      "contraction_ratio": 0.9912776227427544,
+      "residual": 0.0002446307263204336,
+      "stage": "7B9dp",
+      "stage_iteration": 30
+    },
+    {
+      "boundary_bolometric_fraction": 8.281349977671654e-06,
+      "boundary_spectrum_l1": 1.2889210439951118e-05,
+      "combined_iteration": 31,
+      "contraction_ratio": 0.9913266035632341,
+      "residual": 0.00024250894705044252,
+      "stage": "7B9dp",
+      "stage_iteration": 31
+    },
+    {
+      "boundary_bolometric_fraction": 7.643249371231528e-06,
+      "boundary_spectrum_l1": 1.210837489145719e-05,
+      "combined_iteration": 32,
+      "contraction_ratio": 0.9913710303243513,
+      "residual": 0.00024041634470027074,
+      "stage": "7B9dp",
+      "stage_iteration": 32
+    },
+    {
+      "boundary_bolometric_fraction": 7.063745212202704e-06,
+      "boundary_spectrum_l1": 1.1376393528299166e-05,
+      "combined_iteration": 33,
+      "contraction_ratio": 0.9914130667283815,
+      "residual": 0.0002383519055909231,
+      "stage": "7B9dp",
+      "stage_iteration": 33
+    },
+    {
+      "boundary_bolometric_fraction": 6.5378900723778335e-06,
+      "boundary_spectrum_l1": 1.0689503953065651e-05,
+      "combined_iteration": 34,
+      "contraction_ratio": 0.9914537375835516,
+      "residual": 0.00023631488765828252,
+      "stage": "7B9dp",
+      "stage_iteration": 34
+    },
+    {
+      "boundary_bolometric_fraction": 6.0611505894616955e-06,
+      "boundary_spectrum_l1": 1.0044324036831161e-05,
+      "combined_iteration": 35,
+      "contraction_ratio": 0.991493917532478,
+      "residual": 0.00023430477373555795,
+      "stage": "7B9dp",
+      "stage_iteration": 35
+    },
+    {
+      "boundary_bolometric_fraction": 5.629371851909204e-06,
+      "boundary_spectrum_l1": 9.43778056579921e-06,
+      "combined_iteration": 36,
+      "contraction_ratio": 0.9915337734962596,
+      "residual": 0.00023232109645020507,
+      "stage": "7B9dp",
+      "stage_iteration": 36
+    },
+    {
+      "boundary_bolometric_fraction": 5.238744952233185e-06,
+      "boundary_spectrum_l1": 8.867116835599241e-06,
+      "combined_iteration": 37,
+      "contraction_ratio": 0.9915710708706653,
+      "residual": 0.00023036287839297697,
+      "stage": "7B9dp",
+      "stage_iteration": 37
+    },
+    {
+      "boundary_bolometric_fraction": 4.88577742440881e-06,
+      "boundary_spectrum_l1": 8.329831990182499e-06,
+      "combined_iteration": 38,
+      "contraction_ratio": 0.9916174638433266,
+      "residual": 0.0002284318532356925,
+      "stage": "7B9dp",
+      "stage_iteration": 38
+    },
+    {
+      "boundary_bolometric_fraction": 4.567266299415907e-06,
+      "boundary_spectrum_l1": 7.823655522361015e-06,
+      "combined_iteration": 39,
+      "contraction_ratio": 0.9916539601150003,
+      "residual": 0.000226525351877583,
+      "stage": "7B9dp",
+      "stage_iteration": 39
+    },
+    {
+      "boundary_bolometric_fraction": 4.280273542261817e-06,
+      "boundary_spectrum_l1": 7.346555493001144e-06,
+      "combined_iteration": 40,
+      "contraction_ratio": 0.991693089392135,
+      "residual": 0.00022464362602912075,
+      "stage": "7B9dp",
+      "stage_iteration": 40
+    },
+    {
+      "boundary_bolometric_fraction": 4.0221036506635515e-06,
+      "boundary_spectrum_l1": 6.896688372709669e-06,
+      "combined_iteration": 41,
+      "contraction_ratio": 0.9917288813855927,
+      "residual": 0.00022278557195226333,
+      "stage": "7B9du",
+      "stage_iteration": 1
+    },
+    {
+      "boundary_bolometric_fraction": 3.7902832202341627e-06,
+      "boundary_spectrum_l1": 6.472407126780946e-06,
+      "combined_iteration": 42,
+      "contraction_ratio": 0.9917630201848725,
+      "residual": 0.0002209504916929909,
+      "stage": "7B9du",
+      "stage_iteration": 2
+    },
+    {
+      "boundary_bolometric_fraction": 3.582542297413823e-06,
+      "boundary_spectrum_l1": 6.072235910531007e-06,
+      "combined_iteration": 43,
+      "contraction_ratio": 0.9918020269147627,
+      "residual": 0.0002191391455089218,
+      "stage": "7B9du",
+      "stage_iteration": 3
+    },
+    {
+      "boundary_bolometric_fraction": 3.39679735689377e-06,
+      "boundary_spectrum_l1": 5.694860478389991e-06,
+      "combined_iteration": 44,
+      "contraction_ratio": 0.9918353405222656,
+      "residual": 0.00021734994900759978,
+      "stage": "7B9du",
+      "stage_iteration": 4
+    },
+    {
+      "boundary_bolometric_fraction": 3.2311357579794656e-06,
+      "boundary_spectrum_l1": 5.3391242664961775e-06,
+      "combined_iteration": 45,
+      "contraction_ratio": 0.9918689749072842,
+      "residual": 0.0002155826711183185,
+      "stage": "7B9du",
+      "stage_iteration": 5
+    },
+    {
+      "boundary_bolometric_fraction": 3.0838015437805826e-06,
+      "boundary_spectrum_l1": 5.003983851196928e-06,
+      "combined_iteration": 46,
+      "contraction_ratio": 0.9919066558526328,
+      "residual": 0.00021383788636874926,
+      "stage": "7B9du",
+      "stage_iteration": 6
+    },
+    {
+      "boundary_bolometric_fraction": 2.9531824674836588e-06,
+      "boundary_spectrum_l1": 4.691646623223303e-06,
+      "combined_iteration": 47,
+      "contraction_ratio": 0.9919399214510626,
+      "residual": 0.0002121143362078784,
+      "stage": "7B9du",
+      "stage_iteration": 7
+    },
+    {
+      "boundary_bolometric_fraction": 2.8377981281868137e-06,
+      "boundary_spectrum_l1": 4.400980778260922e-06,
+      "combined_iteration": 48,
+      "contraction_ratio": 0.991981500554851,
+      "residual": 0.00021041349752068736,
+      "stage": "7B9du",
+      "stage_iteration": 8
+    }
+  ],
+  "combined_progress": {
+    "all_retained_steps_monotone_nonincreasing": true,
+    "final_contraction_ratio": 0.991981500554851,
+    "final_residual": 0.00021041349752068736,
+    "fractional_residual_reduction": 0.7442158607808784,
+    "initial_residual": 0.0008226213641043368,
+    "minimum_residual": 0.00021041349752068736,
+    "strict_convergence_reached": false,
+    "unique_state_count": 49
+  },
+  "du_closeout_audit": {
+    "boundary_target": 0.001,
+    "last_block_report_count": 76,
+    "last_boundary_bolometric_fraction": 2.8377981281868137e-06,
+    "last_boundary_spectrum_l1": 4.400980778260922e-06,
+    "last_convergence_passed": false,
+    "last_frequency_ownership_exact": true,
+    "last_iteration": 8,
+    "last_original_operator_residual": 0.00021041349752068736,
+    "last_progression_passed": true,
+    "residual_target": 0.0001,
+    "residual_target_ratio": 2.1041349752068736,
+    "retained_record_count": 9
+  },
+  "figure": {
+    "path": "outputs/phase7b9dv_closeout.png",
+    "sha256": "510ef72551c882b34a03144811bfe25398f8a11bc0d4c5ed66090fa05c94a767"
+  },
+  "forbidden_repairs": {
+    "arbitrary_clip": false,
+    "arbitrary_floor": false,
+    "failed_point_deletion": false,
+    "nan_to_num": false,
+    "posthoc_renormalization": false
+  },
+  "objective_limitations": [
+    "one representative annulus only",
+    "one orbital phase only",
+    "matter fixed during this radiation tail",
+    "ground-state H/He continuum closure only",
+    "strict original-operator convergence not reached",
+    "no formal H/He feedback pair on this endpoint",
+    "no Phase 4 atmosphere replacement",
+    "no Swift/UVOT instrument or observation-sampling product",
+    "no real bound-bound line formation"
+  ],
+  "phase": "7B9dv clean-boundary closeout",
+  "post_convergence_branch_decision": {
+    "reason": "Strict convergence, a formal feedback pair, and full-domain continuum evidence are absent.",
+    "selected_branch": null,
+    "status": "not_ready"
+  },
+  "slow_mode_diagnostic": {
+    "controlling_energy_ev": 9.096785069214262,
+    "controlling_frequency_group": 3011,
+    "exact_original_residual_reproduction": true,
+    "interpretation": "diagnostic localization only; it is not convergence proof",
+    "status": "complete"
+  },
+  "source_artifacts": {
+    "branch_contract": {
+      "path": "outputs/phase7_post_convergence_branch_contract.json",
+      "sha256": "f8fdae36e46427943ff5dbc94e173e7b8e9318b43695e5a33038cf15f3e259ec"
+    },
+    "dp_summary": {
+      "path": "outputs/phase7b9dp_post_streaming_picard_summary.json",
+      "sha256": "85108adfbcc198509a8fb11d53c3ac2c55cfe7eed5820a6107c686d4d8d01703"
+    },
+    "dt_summary": {
+      "path": "outputs/phase7b9dt_two_state_slow_mode_summary.json",
+      "sha256": "db44492ffc253fa35a6517901da4d6c727032d851cb6b2a083a4cbbcf0de6a1a"
+    },
+    "du_manifest": {
+      "path": "outputs/checkpoints/phase7b9du_exhausted_dp_picard_continuation/manifest.json",
+      "sha256": "097d89141e1a9d51f016457b314a580c993a9e0d37eac9df7037f5312d8dbdb8"
+    },
+    "du_protocol": {
+      "path": "outputs/phase7b9du_preregistered_exhausted_dp_picard_continuation.json",
+      "sha256": "51a670f53f9bb7be7abc312e31b01d5f6d3102dc633fcab328c9c01bba78b15b"
+    },
+    "du_summary": {
+      "path": "outputs/phase7b9du_exhausted_dp_picard_continuation_summary.json",
+      "sha256": "c1b7872784f347ccca97c5a7e95af4db32d9ac385ed10b6bf1052749101a7b23"
+    }
+  },
+  "stop_provenance": {
+    "background_execution_claimed": false,
+    "checkpoint_or_manifest_mutated": false,
+    "clean_iteration_boundary_verified": true,
+    "manifest_active_iteration_is_null": true,
+    "manifest_status": "running",
+    "manifest_status_interpretation": "recoverable-state marker only; it does not mean a background process remains running",
+    "reason": "The user requested project closeout instead of deeper slow-tail convergence.",
+    "stop_location": "after completed Phase 7B9du iteration 8"
+  },
+  "verified_achievements": [
+    "A 9632-group, 32-direction, 4096-depth fixed-matter radiation sequence remained physical and progression-passing.",
+    "The original operator residual decreased monotonically across the merged 49-state dp+du history.",
+    "Both boundary diagnostics are already below their 1e-3 thresholds.",
+    "The independent 7B9dt locator exactly reproduced the dp endpoint residual without changing the target.",
+    "The stopped du endpoint contains all 76 natural frequency blocks and no active partial iteration."
+  ]
+}

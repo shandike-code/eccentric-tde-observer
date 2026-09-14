@@ -1,0 +1,89 @@
+{
+  "phase": "7B9dd structured physical-domain decision for the finite material trial",
+  "classification": "[A-preregistered]+[V-physical-domain]+[O]",
+  "protocol_sha256": "ecd1bc47c996ddac9393ff48ab1d7faeb638e1dd57aa24f74266ed5a1c3234af",
+  "comparison": {
+    "photoionization_volume_l1": [
+      4.6474455929912914e-07,
+      8.924901471480191e-06,
+      3.2680009195937644e-09
+    ],
+    "total_recombination_volume_l1": [
+      4.332863771067826e-09,
+      2.5749466971097113e-09,
+      1.6477469110079532e-14
+    ],
+    "atomic_heating_volume_l1": 0.00012183328123942333,
+    "direct_heating_volume_l1": 0.00012183328123933724,
+    "formal_heating_volume_l1": 0.00012183532501830706,
+    "inner_noise_to_trial_signal_l2_ratio": null,
+    "candidate_to_base_residual_l2_ratio": null,
+    "candidate_to_base_mass_weighted_norm_ratio": null,
+    "candidate_to_base_maximum_cell_norm_ratio": null,
+    "not_evaluated_reason": "finite material response left the physical domain"
+  },
+  "material_response_failures": {
+    "previous": {
+      "error_type": "PhysicalDomainError",
+      "message": "specific material energy leaves no positive gas heat"
+    },
+    "final": {
+      "error_type": "PhysicalDomainError",
+      "message": "specific material energy leaves no positive gas heat"
+    }
+  },
+  "previous_feedback": {
+    "feedback_artifact_path": "outputs/phase7b9cz_previous_feedback.npz",
+    "feedback_artifact_sha256": "0f3930d93be453c08ae01a00ab9d7a480919243c4e7c3376b813f9f03133ae84",
+    "rate_direct_volume_l1": 7.988437888193569e-13,
+    "rate_formal_volume_l1": 2.252277755861996e-05,
+    "rate_formal_global_fraction": 2.110415819166583e-05,
+    "maximum_parent_mirror_residual": 7.352948499920197e-13,
+    "maximum_process_peak_rss_mib": 4251.5,
+    "accumulated_wall_runtime_s": 584.2044126244728
+  },
+  "final_feedback": {
+    "feedback_artifact_path": "outputs/phase7b9cz_final_feedback.npz",
+    "feedback_artifact_sha256": "177fa66af201d178218af94decb53672a4b90322a31b573a07beadf7da389622",
+    "rate_direct_volume_l1": 7.989616033126921e-13,
+    "rate_formal_volume_l1": 2.252527237137982e-05,
+    "rate_formal_global_fraction": 2.1107235327199093e-05,
+    "maximum_parent_mirror_residual": 7.378312467673787e-13,
+    "maximum_process_peak_rss_mib": 4253.125,
+    "accumulated_wall_runtime_s": 292.2651163357077
+  },
+  "target_material_path": null,
+  "encoded_residual_path": null,
+  "gate_checks": {
+    "last_two_photoionization_pass": true,
+    "last_two_total_recombination_pass": true,
+    "last_two_atomic_heating_pass": true,
+    "last_two_direct_heating_pass": true,
+    "last_two_formal_heating_pass": true,
+    "two_formal_feedback_states_pass": true,
+    "two_inner_radiation_residuals_pass": true,
+    "two_boundary_spectra_pass": true,
+    "two_boundary_bolometric_pass": true,
+    "candidate_state_bytes_pass": true,
+    "previous_material_response_physical_pass": false,
+    "final_material_response_physical_pass": false,
+    "population_nonnegative_pass": false,
+    "all_residual_components_finite_pass": false,
+    "inner_noise_resolved_pass": false,
+    "candidate_l2_contraction_pass": false,
+    "candidate_mass_weighted_contraction_pass": false,
+    "candidate_maximum_cell_contraction_pass": false
+  },
+  "decision": {
+    "formal_h_he_feedback_pair_passed": true,
+    "finite_trial_accepted_as_one_nonlinear_step": false,
+    "finite_trial_rejected": true,
+    "static_approximation_rejected_from_one_failed_trial": false,
+    "dynamic_nlte_solution_accepted": false,
+    "phase4_replacement": false,
+    "real_line_formation": false
+  },
+  "figures": [
+    "phase7b9dd_material_trial_rejection.png"
+  ]
+}

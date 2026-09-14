@@ -1,0 +1,282 @@
+{
+  "snapshot_date": "2026-09-14",
+  "scope": "Mac 7B9du stopped after iteration 8; original 1e-4 gate not passed",
+  "shape": [
+    9632,
+    32,
+    4096
+  ],
+  "dtype": "little-endian float64",
+  "checkpoints": [
+    {
+      "path": "outputs/checkpoints/phase7b9k_retained_trial_map3.dat",
+      "sha256": "5999be906b78e5478c34868e210eb3a135a579df9ff7d203badc31b37ae03e6b",
+      "size_bytes": 10099884032
+    },
+    {
+      "path": "outputs/checkpoints/phase7b9cs_resource_adjusted_tail_anchor.dat",
+      "sha256": "ce582773b6ba67903b8602f2477bc4cfb10068eb6980b6f0eac1f1689ef5eeeb",
+      "size_bytes": 10099884032
+    }
+  ],
+  "small_runtime_inputs": [
+    {
+      "path": "outputs/checkpoints/phase7b9dh_half_trial_radiation/initialization_receipt.json",
+      "size_bytes": 1000,
+      "sha256": "cb1b8a68dfe812e2af6af98be30152a9299d32678f55d8a864c9b39a08d699d1"
+    },
+    {
+      "path": "outputs/checkpoints/phase7b9dh_half_trial_radiation/manifest.json",
+      "size_bytes": 3040,
+      "sha256": "0b9c076eb765abb929fd34d0d3264a353ebcdf3f0916e522818438f87c2930d4"
+    },
+    {
+      "path": "outputs/checkpoints/phase7b9di_progression_continuation/manifest.json",
+      "size_bytes": 64440,
+      "sha256": "3163ffd7622432ddc208b74a306038d5d7aa5cab409fe577ed20bf544ee730da"
+    },
+    {
+      "path": "outputs/checkpoints/phase7b9dk_full_map_reproduction/manifest.json",
+      "size_bytes": 124252,
+      "sha256": "3eeebc2350b3b0c9ca0e3037903b37e21cf376072028ab599ba8243e53db1456"
+    },
+    {
+      "path": "outputs/checkpoints/phase7b9dl_reproduced_tail_continuation/manifest.json",
+      "size_bytes": 76532,
+      "sha256": "8a7ff5ee10a9e4073e9dd701cce6705b08a1bd0533d85e86761b55e89ad1ad40"
+    },
+    {
+      "path": "outputs/checkpoints/phase7b9dm_preregistered_streaming_anderson_tail_work/candidate_commit_manifest.json",
+      "size_bytes": 27810,
+      "sha256": "8924b5565c82ba8124b5f8cced1f02169dfbff36db3141bfe41f1426930a37a0"
+    },
+    {
+      "path": "outputs/checkpoints/phase7b9dm_preregistered_streaming_anderson_tail_work/fresh_map_manifest.json",
+      "size_bytes": 85067,
+      "sha256": "0b876c6e18d634a9a243a11931c1ca494e49469e5ec48014fc628905d9a4d7ac"
+    },
+    {
+      "path": "outputs/checkpoints/phase7b9dm_preregistered_streaming_anderson_tail_work/pass1_coefficient_manifest.json",
+      "size_bytes": 279570,
+      "sha256": "242c3f55b08acd620198a17d0db2f833e5447ccd0997284248fc7f5d1492b65e"
+    },
+    {
+      "path": "outputs/checkpoints/phase7b9dm_preregistered_streaming_anderson_tail_work/pass2_evaluation_manifest.json",
+      "size_bytes": 121129,
+      "sha256": "643abe1b67ad68674c879be66ec59597e52c53a79981d42f9c091b54b716d90e"
+    },
+    {
+      "path": "outputs/checkpoints/phase7b9dp_post_streaming_picard/manifest.json",
+      "size_bytes": 126730,
+      "sha256": "c3f644f61368ea53bda8ecbdc7496ed2c6e03c468dccf1ae530404f8628962eb"
+    },
+    {
+      "path": "outputs/checkpoints/phase7b9du_exhausted_dp_picard_continuation/manifest.json",
+      "size_bytes": 26570,
+      "sha256": "097d89141e1a9d51f016457b314a580c993a9e0d37eac9df7037f5312d8dbdb8"
+    },
+    {
+      "path": "outputs/phase7b4r_depth128_phase2048.npz",
+      "size_bytes": 17159976,
+      "sha256": "33f248d5cf35ac07fffd139e1cd99d4edefa590debf7e109f67f2dbc57adf455"
+    },
+    {
+      "path": "outputs/phase7b5p_master_worker_input.npz",
+      "size_bytes": 635100,
+      "sha256": "c55d52b15fb01387c7c349262f06da58f1051d38b8a3c7edf284ae2bc3fcec70"
+    },
+    {
+      "path": "outputs/phase7b7i_preregistered_second_radiation_map.json",
+      "size_bytes": 4844,
+      "sha256": "f9078188430b3672f84a234ea1411c07a428a8045e126528a55b24ed3158d1ea"
+    },
+    {
+      "path": "outputs/phase7b9dd_preregistered_material_trial_rejection.json",
+      "size_bytes": 8777,
+      "sha256": "ecd1bc47c996ddac9393ff48ab1d7faeb638e1dd57aa24f74266ed5a1c3234af"
+    },
+    {
+      "path": "outputs/phase7b9de_half_trial_material_state.npz",
+      "size_bytes": 27774,
+      "sha256": "21bdccd89a96a402a2352408ccab5c80b11bc4244d572fe3cb76ff5a0678d64c"
+    },
+    {
+      "path": "outputs/phase7b9de_half_trial_material_summary.json",
+      "size_bytes": 1506,
+      "sha256": "94fb2541488bd1155e189cbe77097bafacbf567dde7d93501f21560b3a10b5c7"
+    },
+    {
+      "path": "outputs/phase7b9de_preregistered_half_trial_material.json",
+      "size_bytes": 3787,
+      "sha256": "cc30648a88bce3be218441770d24c276851b75631c52efc77bbba5e4750b1d98"
+    },
+    {
+      "path": "outputs/phase7b9dg_preregistered_storage_reuse.json",
+      "size_bytes": 5406,
+      "sha256": "220c3078e203b30c025a88e4f6bd786d6742f1fb9caec5d581f9333a2c35a50d"
+    },
+    {
+      "path": "outputs/phase7b9dh_fixed_material_radiation_worker_template.json",
+      "size_bytes": 4069,
+      "sha256": "da7fd2eb843cfa088332b31d6d2502d32f42590e628ea8007dadd6eb5c9b8698"
+    },
+    {
+      "path": "outputs/phase7b9dh_half_trial_radiation_summary.json",
+      "size_bytes": 3379,
+      "sha256": "17c500697afcd9fecff90282ea77f2b3ad6c05330742a920ab4a8242e8eb9475"
+    },
+    {
+      "path": "outputs/phase7b9dh_preregistered_half_trial_radiation.json",
+      "size_bytes": 8702,
+      "sha256": "af3e72f770d9d78a1190a5b225edbd9692c84c9656d8afa7050baf2c3810140e"
+    },
+    {
+      "path": "outputs/phase7b9di_preregistered_progression_continuation.json",
+      "size_bytes": 12774,
+      "sha256": "dc7430d82585837192988b265ece9129183a18c9ec134a79112fa6f1c9364813"
+    },
+    {
+      "path": "outputs/phase7b9di_progression_continuation_summary.json",
+      "size_bytes": 66422,
+      "sha256": "38d7a3ae52fb24d74d8c9bd491407cbd6a4eb33611680d843b12d884017eb83d"
+    },
+    {
+      "path": "outputs/phase7b9dk_full_map_reproduction_summary.json",
+      "size_bytes": 1850,
+      "sha256": "916c1ae19ca762eb9a8bd31a9a6c3880722c07c575915642a229dd9af4d51923"
+    },
+    {
+      "path": "outputs/phase7b9dk_preregistered_full_map_reproduction.json",
+      "size_bytes": 16180,
+      "sha256": "65adaae9cc208fcf632a12b01a13c8679bd5b91f1c7c8a69b94248365311640d"
+    },
+    {
+      "path": "outputs/phase7b9dl_preregistered_reproduced_tail_continuation.json",
+      "size_bytes": 76642,
+      "sha256": "eba8ae32c64a702df43223d7d5d8eee3c313cfb191bbc3b9e667351c74b9e4b3"
+    },
+    {
+      "path": "outputs/phase7b9dl_reproduced_tail_continuation_summary.json",
+      "size_bytes": 78466,
+      "sha256": "f7d53d13d7af71d37dd264f54001ca2b094321acb9a02fe3708220070691d598"
+    },
+    {
+      "path": "outputs/phase7b9dm_preregistered_streaming_anderson_tail.json",
+      "size_bytes": 14926,
+      "sha256": "2b3d7e259122a7cfb3206e8618db64fb41bd7085dd7f352eed4baf700d61b497"
+    },
+    {
+      "path": "outputs/phase7b9dm_preregistered_streaming_anderson_tail_candidate_summary_fresh_map.json",
+      "size_bytes": 1818,
+      "sha256": "33d0e872f70bc32e3a0786333224e818a8f7fee699b75a02356b8bc44934224c"
+    },
+    {
+      "path": "outputs/phase7b9dp_post_streaming_picard_summary.json",
+      "size_bytes": 130413,
+      "sha256": "85108adfbcc198509a8fb11d53c3ac2c55cfe7eed5820a6107c686d4d8d01703"
+    },
+    {
+      "path": "outputs/phase7b9dp_preregistered_post_streaming_picard.json",
+      "size_bytes": 20036,
+      "sha256": "73c1b325f596d4a39fdb3e05c13e78da38ce92f3166d373f3ef6d32e281a25a4"
+    },
+    {
+      "path": "outputs/phase7b9du_preregistered_exhausted_dp_picard_continuation.json",
+      "size_bytes": 20308,
+      "sha256": "51a670f53f9bb7be7abc312e31b01d5f6d3102dc633fcab328c9c01bba78b15b"
+    },
+    {
+      "path": "scripts/phase7b7i_second_radiation_map.py",
+      "size_bytes": 17807,
+      "sha256": "e4e9e6af4a8df2c1b88569c4dda730f4c721952e89efd506cb726b5382e2f99a"
+    },
+    {
+      "path": "scripts/phase7b9_half_trial_positive_sequence_engine.py",
+      "size_bytes": 23943,
+      "sha256": "bbe54dccb950e7ab3910729496d25c65745c6f97d0fc7917bfa5616f16b9c4a2"
+    },
+    {
+      "path": "scripts/phase7b9_half_trial_radiation_continuation.py",
+      "size_bytes": 29005,
+      "sha256": "faed56a6a7948de57f46d72ccdaa214294011d04b7a76128cf82356dbf23c86f"
+    },
+    {
+      "path": "scripts/phase7b9_streaming_dry_pass_parent.py",
+      "size_bytes": 15489,
+      "sha256": "fd11b01ecfaa18fac11b6865d0303e8d1746f862f86f70140e00c6abd7c4c72e"
+    },
+    {
+      "path": "scripts/phase7b9ac_global_positive_picard_map.py",
+      "size_bytes": 19351,
+      "sha256": "44e3f8c97fc15ee1b03a8ffb3143327fd4dd5c551782aa4bf6cc3595ade91ed1"
+    },
+    {
+      "path": "scripts/phase7b9d_inner_converged_base_radiation.py",
+      "size_bytes": 30850,
+      "sha256": "791659356851fc286192dd30997d43b09670806a759243d4874af49d402c671b"
+    },
+    {
+      "path": "scripts/phase7b9di_preregister_streaming_anderson_tail.py",
+      "size_bytes": 5275,
+      "sha256": "c7b2412127cc222eb51ddd0144af30a17ebbeb8919860c24b6413c5d6babc997"
+    },
+    {
+      "path": "scripts/phase7b9di_progression_continuation.py",
+      "size_bytes": 29971,
+      "sha256": "63a2ee292a1d0ecee2c0232847de995c224ae80e9b70cad2c677f23f84a1e373"
+    },
+    {
+      "path": "scripts/phase7b9di_streaming_anderson_orchestrator.py",
+      "size_bytes": 27750,
+      "sha256": "aca0a59c694f9021c55eb3a360665bd1f135526526b770801b72424ef33c99da"
+    },
+    {
+      "path": "scripts/phase7b9di_streaming_anderson_tail.py",
+      "size_bytes": 34391,
+      "sha256": "b3378e4ed3698a265cff8a1c12728a6aa5687465253f0781335f987ba99cdafc"
+    },
+    {
+      "path": "scripts/phase7b9dl_reproduced_tail_continuation.py",
+      "size_bytes": 28710,
+      "sha256": "32e911486361f55f83ac3d23d983bdfc56bfb138de7fcaa86fa3b3a4751f8c34"
+    },
+    {
+      "path": "scripts/phase7b9dn_repeat_streaming_anderson.py",
+      "size_bytes": 34342,
+      "sha256": "9af7276edbfc777c65b7ef06e45c55fca983542ea282394a39d923b6a9192144"
+    },
+    {
+      "path": "scripts/phase7b9dp_post_streaming_picard.py",
+      "size_bytes": 38016,
+      "sha256": "ebfc6c4d7e1f16443c81c5d08dab3d19fb1d501ca2fead4feb53f2f2d633bcf5"
+    },
+    {
+      "path": "scripts/phase7b9dp_preregister_post_streaming_picard.py",
+      "size_bytes": 4093,
+      "sha256": "13ec63fe3f5bda4cad56fd0b4518831f6a183f4c38da8e5ded64138019744ab2"
+    },
+    {
+      "path": "scripts/phase7b9du_exhausted_dp_picard_continuation.py",
+      "size_bytes": 34628,
+      "sha256": "a6973d8c75940587264ff7d0ddfaf9a22ae821354f1778f373114791ed7d19ab"
+    },
+    {
+      "path": "scripts/phase7b9du_preregister_exhausted_dp_picard_continuation.py",
+      "size_bytes": 3761,
+      "sha256": "ae64418f49652ae79711cdab870175dbc6e7882c2120299d2d8152f1b64767ab"
+    },
+    {
+      "path": "src/eccentric_tde_observer/mixed_frame_ale.py",
+      "size_bytes": 49412,
+      "sha256": "9769d84303c9509ef01a19d383348758333f8037ac7598cd0a164e95a12215fa"
+    },
+    {
+      "path": "src/eccentric_tde_observer/mixed_frame_frequency.py",
+      "size_bytes": 61082,
+      "sha256": "ef27fc8b433ad84788c984f387f25ee025026a1bec5841e9ce087082da421689"
+    }
+  ],
+  "checkpoint_hash_provenance": "copied from current committed manifest; transfer-time full hashing required",
+  "checkpoint_bytes_read_for_this_manifest": 0,
+  "optional_previous_candidate_checkpoints": "see outputs/phase7_checkpoint_inventory.json; not required by 7B9du map worker"
+}

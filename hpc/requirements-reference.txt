@@ -1,0 +1,6 @@
+# Observed Mac environment, 2026-09-14, Python 3.12.
+# This is a reproducibility reference; not evidence of Linux wheel availability.
+numpy==2.5.2
+scipy==1.18.1
+matplotlib==3.11.1
+pytest==9.1.1

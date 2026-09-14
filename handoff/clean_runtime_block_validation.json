@@ -1,0 +1,84 @@
+{
+  "scope": "one 128 x 32 x 4096 block; synthetic zero neighbors; not a physical solution",
+  "new_worker": {
+    "protocol_sha256": "c99827066cd2b036d9d38f03158e162c7c426d028fa5f609386f46931f5a14fe",
+    "input_state_sha256": "ed799d32a5be6ad5b4f62324e6aab1223b0198c93352886bebe9dffddc9c57f3",
+    "block_index": 0,
+    "core_group_start": 0,
+    "core_group_stop": 128,
+    "maximum_absolute_radiation_change": 4.332406597471014e-06,
+    "maximum_radiation_scale": 1.5311190918641214e-05,
+    "block_relative_radiation_change": 0.28295686602642744,
+    "boundary_spectrum_l1_numerator": 23200301.864929765,
+    "current_boundary_absolute_scale": 116677895.3826691,
+    "mapped_boundary_absolute_scale": 139828318.71645266,
+    "current_boundary_bolometric": 116677895.3826691,
+    "mapped_boundary_bolometric": 139828318.71645266,
+    "minimum_input_intensity": 2.9719896729191763e-06,
+    "minimum_mapped_intensity": 4.15990255762775e-08,
+    "baseline_highwater_rss_mib": 935.09375,
+    "peak_process_rss_mib": 2448.640625,
+    "wall_runtime_s": 5.365088374936022
+  },
+  "reference_worker": {
+    "protocol_sha256": "51a670f53f9bb7be7abc312e31b01d5f6d3102dc633fcab328c9c01bba78b15b",
+    "input_state_sha256": "ed799d32a5be6ad5b4f62324e6aab1223b0198c93352886bebe9dffddc9c57f3",
+    "block_index": 0,
+    "core_group_start": 0,
+    "core_group_stop": 128,
+    "maximum_absolute_radiation_change": 4.332406597471014e-06,
+    "maximum_radiation_scale": 1.5311190918641214e-05,
+    "block_relative_radiation_change": 0.28295686602642744,
+    "boundary_spectrum_l1_numerator": 23200301.864929765,
+    "current_boundary_absolute_scale": 116677895.3826691,
+    "mapped_boundary_absolute_scale": 139828318.71645266,
+    "current_boundary_bolometric": 116677895.3826691,
+    "mapped_boundary_bolometric": 139828318.71645266,
+    "minimum_input_intensity": 2.9719896729191763e-06,
+    "minimum_mapped_intensity": 4.15990255762775e-08,
+    "baseline_highwater_rss_mib": 978.875,
+    "peak_process_rss_mib": 2086.640625,
+    "wall_runtime_s": 5.371843000059016,
+    "picard_iteration": 9,
+    "input_state_path": "outputs/hpc/real-block-validation/input.dat",
+    "output_state_path": "outputs/hpc/real-block-validation/reference.dat"
+  },
+  "bitwise_equal": true,
+  "maximum_absolute_difference": 0.0,
+  "global_relative_difference": 0.0,
+  "comparison_tolerance": 1e-11,
+  "radiation_adapter_passed": true,
+  "material_migration": {
+    "source": {
+      "path": "outputs/phase7b9de_half_trial_material_state.npz",
+      "size_bytes": 27774,
+      "sha256": "21bdccd89a96a402a2352408ccab5c80b11bc4244d572fe3cb76ff5a0678d64c"
+    },
+    "destination": {
+      "path": "outputs/hpc/real-block-validation/trial_material.npz",
+      "size_bytes": 27774,
+      "sha256": "21bdccd89a96a402a2352408ccab5c80b11bc4244d572fe3cb76ff5a0678d64c"
+    },
+    "relative_changes": {
+      "temperature_k": 0.0,
+      "hydrogen_fraction": 0.0,
+      "helium_fraction": 0.0
+    },
+    "encoded_state_changed": false,
+    "physical_kernel_changed": false
+  },
+  "slurm_job_id": null,
+  "development_mac_validation": true,
+  "feedback_adapter_finite": true,
+  "feedback_block_report": {
+    "block_index": 0,
+    "core_group_start": 0,
+    "core_group_stop": 128,
+    "minimum_owned_comoving_mean_intensity": 2.381659918355052e-06,
+    "runtime_s": 6.1793886659434065,
+    "peak_process_rss_mib": 2955.015625,
+    "partial_path": "outputs/hpc/real-block-validation/feedback_block.npz",
+    "partial_sha256": "cd03acac64d136da95aa0c6a51af2ad2f6f79183f0cd3bf1bcd5190ff10235a6"
+  },
+  "full_column_or_material_acceptance_tested": false
+}

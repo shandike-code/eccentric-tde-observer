@@ -1,0 +1,37 @@
+{
+  "phase": "7B9de first dyadic material backtrack candidate",
+  "classification": "[A-preregistered]+[V-material-domain]+[O]",
+  "protocol_sha256": "cc30648a88bce3be218441770d24c276851b75631c52efc77bbba5e4750b1d98",
+  "candidate_absolute_relaxation": 0.0625,
+  "maximum_relative_temperature_change": 0.21630731992938154,
+  "maximum_relative_material_energy_change": 0.06318267966143984,
+  "maximum_population_fraction_change": 1.0251094191837673e-06,
+  "encoded_candidate_displacement_l2": 0.9680535848031095,
+  "candidate_path": "outputs/phase7b9de_half_trial_material_state.npz",
+  "candidate_sha256": "21bdccd89a96a402a2352408ccab5c80b11bc4244d572fe3cb76ff5a0678d64c",
+  "gate_checks": {
+    "trust_region_pass": true,
+    "temperature_positive_pass": true,
+    "specific_material_energy_positive_pass": true,
+    "population_nonnegative_pass": true,
+    "hydrogen_simplex_pass": true,
+    "helium_simplex_pass": true,
+    "all_arrays_finite_pass": true,
+    "encoded_definition_pass": true
+  },
+  "decision": {
+    "material_candidate_gate_passed": true,
+    "candidate_full_frequency_radiation_authorized": true,
+    "candidate_radiation_evaluated": false,
+    "candidate_formal_feedback_evaluated": false,
+    "candidate_accepted_as_nonlinear_step": false,
+    "static_approximation_rejected": false,
+    "dynamic_nlte_solution_accepted": false,
+    "phase4_replacement": false,
+    "uvot": false,
+    "real_line_formation": false
+  },
+  "figures": [
+    "phase7b9de_half_trial_material.png"
+  ]
+}
