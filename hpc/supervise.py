@@ -8,12 +8,15 @@ import fcntl
 import json
 import os
 from pathlib import Path
+import re
 import subprocess
 import time
 
 from pipeline import ROOT, read, safe_path, write_json
 
 CONTINUE = {"initializing", "radiation", "feedback_ready", "feedback_running"}
+TERMINAL = {"COMPLETED", "FAILED", "CANCELLED", "TIMEOUT", "OUT_OF_MEMORY",
+            "NODE_FAIL", "BOOT_FAIL", "DEADLINE", "PREEMPTED"}
 
 
 def job_id(output: str) -> str:
@@ -21,6 +24,25 @@ def job_id(output: str) -> str:
     if not value.isdigit():
         raise ValueError(f"Unexpected sbatch result: {output!r}")
     return value
+
+
+def scontrol_state(job: str):
+    """Terminal (state, exit_code) from scontrol, or None while it is unknown.
+
+    Some clusters run slurmdbd without ever recording job completions, so sacct
+    stays empty for every job. scontrol still reports the job for MinJobAge
+    seconds after it leaves the queue, so it is queried before the retry loop
+    can burn through that window.
+    """
+    done = subprocess.run(["scontrol", "show", "job", job], text=True,
+                          stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
+    if done.returncode != 0:  # purged past MinJobAge; not an answer
+        return None
+    state = re.search(r"\bJobState=(\S+)", done.stdout)
+    if state is None or state.group(1) not in TERMINAL:
+        return None
+    code = re.search(r"\bExitCode=(\S+)", done.stdout)
+    return state.group(1), code.group(1) if code else ""
 
 
 def main():
@@ -51,17 +73,26 @@ def main():
             print(json.dumps({"watching_job": current, "run": args.run}), flush=True)
             while subprocess.check_output(["squeue", "-h", "-j", current, "-o", "%i"], text=True).strip():
                 time.sleep(args.poll_seconds)
-            # Accounting may lag briefly behind squeue. Never silently submit on an unknown exit.
-            accounting = ""
-            for _ in range(10):
+            # Accounting may lag briefly behind squeue, and on some clusters it
+            # never arrives at all. Never silently submit on an unknown exit.
+            source, accounting = "", ""
+            for attempt in range(10):
+                found = scontrol_state(current)
+                if found is not None:
+                    accounting, source = "|".join(found), "scontrol"
+                    break
                 accounting = subprocess.check_output(["sacct", "-X", "-n", "-P", "-j", current,
                                "--format=State,ExitCode"], text=True).strip()
-                if accounting: break
-                time.sleep(args.poll_seconds)
+                if accounting:
+                    source = "sacct"
+                    break
+                if attempt < 9:
+                    time.sleep(args.poll_seconds)
             if not accounting:
-                raise RuntimeError(f"No sacct result for {current}; inspect it before another submission")
+                raise RuntimeError(f"No Slurm result for {current}; inspect it before another submission")
             state_name, exit_code, *_ = accounting.splitlines()[0].split("|")
-            receipt["finished_jobs"].append({"job_id": current, "state": state_name, "exit_code": exit_code})
+            receipt["finished_jobs"].append({"job_id": current, "state": state_name,
+                                             "exit_code": exit_code, "state_source": source})
             receipt["active_job"] = None
             write_json(path, receipt)
             if state_name != "COMPLETED" or exit_code != "0:0":
