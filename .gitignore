@@ -11,6 +11,8 @@ __pycache__/
 *.pem
 *.key
 outputs/
+downloads/
+*.dat
 tmp/
 dist/
 build/
