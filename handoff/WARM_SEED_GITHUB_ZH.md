@@ -1,6 +1,6 @@
 # 从 GitHub 取得 warm 检查点
 
-本次将一份完整检查点通过**私有 GitHub Release 附件**交接。`git pull` 更新下载脚本、
+本次将一份完整检查点通过 **GitHub Release 附件**交接。`git pull` 更新下载脚本、
 清单和说明；大数据通过 Release 下载，不进入 Git 历史。
 
 - 仓库：`shandike-code/eccentric-tde-observer`
@@ -25,10 +25,12 @@ git pull --ff-only
 gh auth status
 ```
 
-私有 Release 需要 GitHub 访问权限。GitHub 认证与学校 SSH 密码无关。
-已有 Git 凭据不保证 `gh` 已登录；若需要，使用 `gh auth login` 的官方登录流程。
-不要把 token 写到命令 URL、脚本或提交中。没有 `gh` 时，可以从浏览器下载全部原名分片，
-放入 `downloads/warm-seed/`，然后直接运行第 3 步。
+本次上传后的最终核验显示仓库为公开可见；可见性以 GitHub 当前页面为准。
+公开 Release 不需要登录：没有 `gh` 或其认证不可用时，下载脚本自动使用标准库 HTTPS。
+上面的 `gh auth status` 是有 gh 时的可选检查。若仓库之后改为私有，需安装并通过
+`gh auth login` 登录有权限的 GitHub 账号；已有 Git 凭据不保证 `gh` 已登录。
+GitHub 认证与学校 SSH 密码无关，不要把 token 写到 URL、脚本或提交中。
+也可以从浏览器下载全部原名分片，放入 `downloads/warm-seed/`，然后运行第 3 步。
 
 脚本位于 `handoff/`，不会被既有 pipeline 的 `src/scripts/hpc` Python 源清单收录，
 因此单独加入这些文件不会改变已冻结 cold 运行的数值源哈希。本次没有修改生产求解器。

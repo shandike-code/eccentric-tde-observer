@@ -1,6 +1,7 @@
 """Small byte fixtures test the same integrity and commit path as the 9.4 GiB seed."""
 import hashlib
 import json
+import io
 import importlib.util
 from pathlib import Path
 import pytest
@@ -107,3 +108,28 @@ def test_unfinished_release_is_not_downloaded(tmp_path, monkeypatch):
     monkeypatch.setattr(transfer.subprocess, "check_output", lambda *a, **k: '{"assets": []}')
     with pytest.raises(RuntimeError, match="completion manifest"):
         transfer.download(tmp_path, manifest, parts, tmp_path / "manifest.json")
+
+
+def test_public_download_works_without_gh_or_credentials(tmp_path, monkeypatch):
+    parts, manifest, data = fixture(tmp_path)
+    manifest.update(repository="owner/repo", release_tag="seed")
+    manifest_path = tmp_path / "manifest.json"
+    manifest_path.write_text(json.dumps(manifest))
+    second = parts / manifest["parts"][1]["name"]
+    second.unlink()
+    assets = [{"name": manifest_path.name, "digest": "sha256:" + transfer.digest(manifest_path)}]
+    assets.extend({"name": p["name"], "state": "uploaded", "size": p["size_bytes"],
+                   "digest": "sha256:" + p["sha256"]} for p in manifest["parts"])
+    monkeypatch.setattr(transfer.shutil, "which", lambda name: None)
+    urls = []
+    def open_url(request, **kwargs):
+        assert "Authorization" not in request.headers
+        urls.append(request.full_url)
+        if "api.github.com" in request.full_url:
+            return io.BytesIO(json.dumps({"assets": assets}).encode())
+        assert request.full_url.endswith(second.name)
+        return io.BytesIO(data[manifest["parts"][1]["offset_bytes"]:])
+    monkeypatch.setattr(transfer.urllib.request, "urlopen", open_url)
+    transfer.download(tmp_path, manifest, parts, manifest_path)
+    assert len(urls) == 2
+    transfer.verify(second, manifest["parts"][1])

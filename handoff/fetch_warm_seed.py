@@ -14,6 +14,9 @@ import re
 import shutil
 import subprocess
 import time
+import urllib.error
+import urllib.parse
+import urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = Path(__file__).with_name("warm_seed_github.json")
@@ -62,14 +65,32 @@ def verify(path: Path, claim: dict):
         raise RuntimeError(f"Size/SHA mismatch: {path}")
 
 
+def release_metadata(repo: str, tag: str):
+    """Use existing gh credentials when available; public releases need no login."""
+    gh = shutil.which("gh")
+    endpoint = f"repos/{repo}/releases/tags/{urllib.parse.quote(tag, safe='')}"
+    if gh:
+        try:
+            raw = subprocess.check_output([gh, "api", "--method", "GET", endpoint],
+                                          text=True, stderr=subprocess.DEVNULL)
+            return json.loads(raw), gh
+        except subprocess.CalledProcessError:
+            pass
+    request = urllib.request.Request("https://api.github.com/" + endpoint,
+        headers={"User-Agent": "tde-warm-seed-transfer", "Accept": "application/vnd.github+json"})
+    try:
+        with urllib.request.urlopen(request, timeout=60) as response:
+            return json.load(response), None
+    except urllib.error.HTTPError as error:
+        if error.code in (401, 404):
+            raise RuntimeError("Release unavailable; for a private repository install/authenticate gh") from error
+        raise
+
+
 def download(root: Path, manifest: dict, parts_dir: Path, manifest_path: Path):
     validate_manifest(root, manifest)
-    gh = shutil.which("gh")
-    if not gh:
-        raise RuntimeError("Install/authenticate gh, or download Release parts manually and use assemble")
     repo, tag = manifest["repository"], manifest["release_tag"]
-    release = json.loads(subprocess.check_output(
-        [gh, "api", "--method", "GET", f"repos/{repo}/releases/tags/{tag}"], text=True))
+    release, gh = release_metadata(repo, tag)
     assets = {a["name"]: a for a in release["assets"]}
     marker = assets.get(manifest_path.name)
     if not marker or marker.get("digest") != "sha256:" + digest(manifest_path):
@@ -91,9 +112,21 @@ def download(root: Path, manifest: dict, parts_dir: Path, manifest_path: Path):
                 continue
             temporary = staging / part["name"]
             for attempt in range(3):
-                result = subprocess.run([gh, "release", "download", tag, "--repo", repo,
-                    "--pattern", part["name"], "--dir", str(staging), "--clobber"])
-                if result.returncode == 0:
+                if gh:
+                    ok = subprocess.run([gh, "release", "download", tag, "--repo", repo,
+                        "--pattern", part["name"], "--dir", str(staging), "--clobber"]).returncode == 0
+                else:
+                    url = (f"https://github.com/{repo}/releases/download/"
+                           f"{urllib.parse.quote(tag, safe='')}/{urllib.parse.quote(part['name'], safe='')}")
+                    try:
+                        request = urllib.request.Request(url, headers={"User-Agent": "tde-warm-seed-transfer"})
+                        with urllib.request.urlopen(request, timeout=60) as response, temporary.open("wb") as out:
+                            shutil.copyfileobj(response, out, length=BUFFER)
+                        ok = True
+                    except (OSError, urllib.error.URLError) as error:
+                        print(f"Part download interrupted: {error}", flush=True)
+                        ok = False
+                if ok:
                     verify(temporary, part)
                     os.link(temporary, final)
                     temporary.unlink()
