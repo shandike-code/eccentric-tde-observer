@@ -196,7 +196,17 @@ def start_round(run: Path, config: dict, state: dict, state_path: Path) -> dict:
     previous, final = state["history"][-2:]
     round_dir = run / f"feedback-round{index}"
     if round_dir.exists():
-        raise RuntimeError(f"round directory already exists: {round_dir}")
+        # An existing directory is only a conflict when it is NOT the one this
+        # round already registered. A registered round must stay resumable --
+        # refusing purely because the directory exists would block legitimate
+        # recovery after a job died mid-round.
+        registered = state.get("pending_feedback")
+        if (registered and registered.get("round") == index
+                and registered.get("round_dir") == relative(round_dir)):
+            return registered
+        raise RuntimeError(
+            f"round directory exists but is not registered for round {index}: "
+            f"{round_dir}; refusing to touch it")
     round_dir.mkdir(parents=True)
     pending = {
         "round": index,

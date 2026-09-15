@@ -49,6 +49,36 @@ def submit(run_relative: str, env: dict) -> str:
     return subprocess.check_output(command, cwd=ROOT, env=env, text=True)
 
 
+def recovery_refusal(run: Path, state: dict, root: Path = ROOT):
+    """Why `diagnosis_incomplete` must NOT be resubmitted blindly.
+
+    The status only says "the physics of a round finished but its ledger did not".
+    Before another job is submitted, the persisted pending record has to actually
+    describe a resumable round: the directory must be the registered one, and the
+    artifacts its stage depends on must be present. Anything else is a condition
+    to inspect, not to retry -- in particular a previous job's non-zero exit is a
+    different situation from a recorded ledger failure.
+    """
+    pending = state.get("pending_feedback")
+    if not pending:
+        return "diagnosis_incomplete but no pending round is registered"
+    # Both fields are project-root relative, not run relative.
+    round_dir = root / pending["round_dir"]
+    if not round_dir.is_dir():
+        return f"registered round directory missing: {pending['round_dir']}"
+    stage = pending.get("stage")
+    if stage == "feedback":
+        protocol = root / pending.get("protocol_path", "")
+        if not protocol.is_file():
+            return f"round protocol missing: {pending.get('protocol_path')}"
+    elif stage == "ledger":
+        if not (round_dir / "feedback_summary.json").is_file():
+            return "stage is 'ledger' but the round has no feedback summary"
+    elif stage != "protocol":
+        return f"unknown round stage: {stage!r}"
+    return None
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run", required=True)
@@ -71,6 +101,15 @@ def main() -> None:
                     print(json.dumps({"status": state["status"],
                                       "action": "stop for scientific review"}), flush=True)
                     return
+                if state["status"] == "diagnosis_incomplete":
+                    refusal = recovery_refusal(run, state)
+                    if refusal:
+                        print(json.dumps({"status": state["status"],
+                                          "action": "stop: recovery condition not met",
+                                          "reason": refusal}), flush=True)
+                        return
+                    print(json.dumps({"status": state["status"],
+                                      "action": "resume the recorded round"}), flush=True)
                 receipt["active_job"] = job_id(submit(args.run, env))
                 write_json(path, receipt)
             current = receipt["active_job"]

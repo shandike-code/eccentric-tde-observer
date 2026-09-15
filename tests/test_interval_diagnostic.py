@@ -113,14 +113,6 @@ def test_stop_request_reaches_the_flag_pipeline_batches_reads(monkeypatch):
 # --------------------------------------------------------------------------- #
 # round ownership: nothing moved, nothing overwritten, nothing rmtree'd
 # --------------------------------------------------------------------------- #
-def test_start_round_refuses_an_existing_round_directory(run_dir):
-    state = read_state(run_dir)
-    state["history"] = [history_row(3), history_row(4)]
-    (run_dir / "feedback-round1").mkdir()
-    with pytest.raises(RuntimeError, match="already exists"):
-        driver.start_round(run_dir, {}, state, run_dir / "state.json")
-
-
 def test_start_round_persists_both_endpoints_before_any_work(run_dir):
     state = read_state(run_dir)
     state["history"] = [history_row(3), history_row(4)]
@@ -310,3 +302,55 @@ def test_resource_failure_is_not_overwritten_by_budget_completion(run_dir, monke
     drive_main(run_dir, monkeypatch, ["--run", "outputs/hpc/run", "--maps-per-job", "1"])
     assert order == []
     assert read_state(run_dir)["status"] == "resource_gate_failed"
+
+
+def test_registered_round_directory_stays_resumable(run_dir):
+    """Refusing purely because the directory exists would block legitimate recovery."""
+    state = read_state(run_dir)
+    state["history"] = [history_row(3), history_row(4)]
+    first = driver.start_round(run_dir, {}, state, run_dir / "state.json")
+    # Simulate a job that died mid-round: the directory exists AND is registered.
+    again = driver.start_round(run_dir, {}, state, run_dir / "state.json")
+    assert again["round"] == first["round"] == 1
+    assert again["round_dir"] == "outputs/hpc/run/feedback-round1"
+
+
+def test_unregistered_round_directory_is_refused(run_dir):
+    """An existing directory with no matching registration is an identity conflict."""
+    state = read_state(run_dir)
+    state["history"] = [history_row(3), history_row(4)]
+    (run_dir / "feedback-round1").mkdir()
+    with pytest.raises(RuntimeError, match="not registered for round 1"):
+        driver.start_round(run_dir, {}, state, run_dir / "state.json")
+
+
+# --------------------------------------------------------------------------- #
+# supervisor: diagnosis_incomplete is a condition to check, not to retry
+# --------------------------------------------------------------------------- #
+def test_supervisor_refuses_to_resubmit_an_unverifiable_recovery(run_dir):
+    import interval_supervise as supervisor
+
+    root, run = run_dir.parents[2], run_dir
+    assert "no pending round" in supervisor.recovery_refusal(
+        run, {"status": "diagnosis_incomplete"}, root)
+
+    round_dir = run / "feedback-round1"
+    round_dir.mkdir()
+    pending = {"round": 1, "round_dir": "outputs/hpc/run/feedback-round1",
+               "stage": "ledger"}
+    state = {"status": "diagnosis_incomplete", "pending_feedback": pending}
+    # Stage "ledger" without a feedback summary is not a resumable round.
+    assert "no feedback summary" in supervisor.recovery_refusal(run, state, root)
+
+    (round_dir / "feedback_summary.json").write_text("{}")
+    assert supervisor.recovery_refusal(run, state, root) is None
+
+    missing = {"round": 1, "round_dir": "outputs/hpc/run/feedback-round9",
+               "stage": "ledger"}
+    assert "missing" in supervisor.recovery_refusal(
+        run, {"status": "diagnosis_incomplete", "pending_feedback": missing}, root)
+
+    protocol_missing = {"round": 1, "round_dir": "outputs/hpc/run/feedback-round1",
+                        "stage": "feedback", "protocol_path": "outputs/hpc/run/nope.json"}
+    assert "protocol missing" in supervisor.recovery_refusal(
+        run, {"status": "diagnosis_incomplete", "pending_feedback": protocol_missing}, root)
