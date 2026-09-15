@@ -112,10 +112,8 @@ def ensure_declaration(run: Path, config: dict, args) -> dict:
     }
     if path.exists():
         recorded = pipeline.read(path)
-        problems = []
-        for name, digest in recorded["sources"].items():
-            if current["sources"].get(name) != digest:
-                problems.append(name)
+        problems = sorted(name for name in recorded["sources"].keys() | current["sources"].keys()
+                          if recorded["sources"].get(name) != current["sources"].get(name))
         if problems:
             raise RuntimeError(
                 f"diagnostic sources changed since the run was declared: {problems}; "
@@ -196,18 +194,7 @@ def start_round(run: Path, config: dict, state: dict, state_path: Path) -> dict:
     previous, final = state["history"][-2:]
     round_dir = run / f"feedback-round{index}"
     if round_dir.exists():
-        # An existing directory is only a conflict when it is NOT the one this
-        # round already registered. A registered round must stay resumable --
-        # refusing purely because the directory exists would block legitimate
-        # recovery after a job died mid-round.
-        registered = state.get("pending_feedback")
-        if (registered and registered.get("round") == index
-                and registered.get("round_dir") == relative(round_dir)):
-            return registered
-        raise RuntimeError(
-            f"round directory exists but is not registered for round {index}: "
-            f"{round_dir}; refusing to touch it")
-    round_dir.mkdir(parents=True)
+        raise RuntimeError(f"round directory already exists: {round_dir}")
     pending = {
         "round": index,
         "round_dir": relative(round_dir),
@@ -221,21 +208,45 @@ def start_round(run: Path, config: dict, state: dict, state_path: Path) -> dict:
                   "output_path": final["output_path"],
                   "output_sha256": final["output_sha256"]},
         "stage": "protocol",
+        "history_rows": [dict(previous), dict(final)],
     }
     state["pending_feedback"] = pending
     pipeline.write_json(state_path, state)
+    # Persist ownership before mkdir: interruption here can safely recreate the
+    # directory; an unregistered pre-existing directory is still rejected above.
+    round_dir.mkdir(parents=True)
     return pending
 
 
 def build_round_protocol(run: Path, config: dict, state: dict, round_dir: Path) -> Path:
-    """Produce a protocol whose declared outputs all live inside the round dir.
+    """Generate the unchanged payload in a round-owned input directory.
 
-    `pipeline.feedback_protocol` is reused verbatim for the payload, then its
-    output paths are rewritten to the round directory. The temporary run-root
-    copy is recorded in the migration index and removed, so a later round cannot
-    pick it up as its own."""
-    base = pipeline.feedback_protocol(config, state)
+    Do not read/remove a cached run-root protocol. It may belong to a different
+    pair. Inputs, including the template, are never shared across round outputs.
+    """
+    inputs = round_dir / "inputs"
+    inputs.mkdir(parents=True, exist_ok=True)
+    trial = inputs / "trial_material.npz"
+    source_trial = run / "trial_material.npz"
+    if trial.exists():
+        if pipeline.sha256(trial) != pipeline.sha256(source_trial):
+            raise RuntimeError("round-owned trial input changed")
+    else:
+        temporary = inputs / "trial_material.npz.tmp"
+        shutil.copyfile(source_trial, temporary)
+        os.replace(temporary, trial)
+    staged_config = {**config, "run": relative(inputs)}
+    pending = pending_round(state)
+    staged_state = {**state, "history": pending["history_rows"]} if pending else state
+    base = pipeline.feedback_protocol(staged_config, staged_state)
     payload = json.loads(Path(base).read_text())
+    previous, final = staged_state["history"][-2:]
+    if previous["output_sha256"] != final["input_sha256"]:
+        raise RuntimeError("pending feedback endpoints are not consecutive")
+    for label, row in (("previous", previous), ("final", final)):
+        declared = payload["sources"][f"{label}_radiation"]
+        if declared["path"] != row["input_path"] or declared["sha256"] != row["input_sha256"]:
+            raise RuntimeError("cached round protocol belongs to different endpoints")
     cfg = payload["configuration"]
     cfg["feedback_work_directory"] = relative(round_dir / "feedback")
     cfg["summary_path"] = relative(round_dir / "feedback_summary.json")
@@ -245,15 +256,15 @@ def build_round_protocol(run: Path, config: dict, state: dict, round_dir: Path) 
     for label in ("previous", "final"):
         cfg[f"{label}_feedback_output"] = relative(round_dir / f"{label}_feedback.npz")
     target = round_dir / "feedback_protocol.json"
-    target.write_text(json.dumps(payload, indent=2, allow_nan=False) + "\n")
-    record_legacy(run, Path(base), "run-root protocol superseded by a per-round protocol")
-    Path(base).unlink()
-    # feedback_template.json is a shared *input* regenerated per round and stays
-    # in the run root; it is not a moved artifact, so it is not indexed here.
+    if target.exists():
+        if pipeline.read(target) != payload:
+            raise RuntimeError("round protocol already exists with different content")
+    else:
+        pipeline.write_json(target, payload)
     return target
 
 
-def run_ledger(run: Path, round_dir: Path, endpoints: dict) -> dict:
+def run_ledger(run: Path, round_dir: Path, feedback_claims: dict) -> dict:
     """Run the ledger with an argument list and a checked exit; verify it exists,
     parses, and describes exactly this round's inputs."""
     output = round_dir / "material_energy_ledger.json"
@@ -267,13 +278,59 @@ def run_ledger(run: Path, round_dir: Path, endpoints: dict) -> dict:
     if not output.is_file():
         raise RuntimeError("ledger reported success but wrote no JSON")
     report = json.loads(output.read_text())
+    json.dumps(report, allow_nan=False)
     for label in ("previous", "final"):
         recorded = report["inputs"][f"{label}_feedback"]["sha256"]
-        expected = endpoints[label]["sha256"]
+        expected = feedback_claims[label]["sha256"]
         if recorded != expected:
             raise RuntimeError(
                 f"ledger input hash mismatch for {label}: {recorded} != {expected}")
     return report
+
+
+def validate_completed_feedback(round_dir: Path, pending: dict, report: dict) -> dict:
+    """Check small feedback files against the protocol, manifests and summary.
+
+    Radiation input hashes and feedback-NPZ hashes are distinct identities.
+    This check also runs when recovering a ledger, without recomputing physics.
+    """
+    protocol = ROOT / pending["protocol_path"]
+    if pipeline.sha256(protocol) != pending["protocol_sha256"]:
+        raise RuntimeError("committed round protocol changed")
+    payload = pipeline.read(protocol)
+    small_sources = [source for name, source in payload["sources"].items()
+                     if name not in {"previous_radiation", "final_radiation"}
+                     and not source["path"].endswith(".dat")]
+    failures = pipeline.verify_claims(ROOT, small_sources, hash_files=True)
+    if failures:
+        raise RuntimeError(f"completed feedback small inputs changed: {failures}")
+    if report.get("protocol_sha256") != pending["protocol_sha256"]:
+        raise RuntimeError("feedback summary belongs to another protocol")
+    claims = {}
+    for label in ("previous", "final"):
+        source = payload["sources"][f"{label}_radiation"]
+        endpoint = pending[label]
+        if (source["path"] != endpoint["input_path"]
+                or source["sha256"] != endpoint["input_sha256"]):
+            raise RuntimeError("protocol radiation inputs differ from pending endpoints")
+        artifact = round_dir / f"{label}_feedback.npz"
+        info = report[f"{label}_feedback"]
+        manifest = pipeline.read(round_dir / "feedback" / f"{label}_manifest.json")
+        checks = (
+            info["feedback_artifact_path"] == relative(artifact),
+            manifest["protocol_sha256"] == pending["protocol_sha256"],
+            manifest["status"] == "complete",
+            manifest["state_path"] == endpoint["input_path"],
+            manifest["state_sha256"] == endpoint["input_sha256"],
+            manifest["feedback_artifact_path"] == relative(artifact),
+            manifest["feedback_artifact_sha256"] == info["feedback_artifact_sha256"],
+            pipeline.sha256(artifact) == info["feedback_artifact_sha256"],
+        )
+        if not all(checks):
+            raise RuntimeError(f"completed {label} feedback lineage/hash mismatch")
+        claims[label] = {"path": relative(artifact), "size_bytes": artifact.stat().st_size,
+                         "sha256": info["feedback_artifact_sha256"]}
+    return claims
 
 
 def complete_round(run: Path, config: dict, state: dict, state_path: Path) -> dict:
@@ -281,6 +338,12 @@ def complete_round(run: Path, config: dict, state: dict, state_path: Path) -> di
     pending = pending_round(state)
     round_dir = ROOT / pending["round_dir"]
     endpoints = {"previous": pending["previous"], "final": pending["final"]}
+    if pending["stage"] not in {"protocol", "feedback", "ledger"}:
+        raise RuntimeError("unknown pending feedback stage")
+    if not round_dir.exists():
+        if pending["stage"] != "protocol":
+            raise RuntimeError("registered feedback artifacts are missing")
+        round_dir.mkdir(parents=True)
 
     if pending["stage"] == "protocol":
         protocol = build_round_protocol(run, config, state, round_dir)
@@ -288,7 +351,9 @@ def complete_round(run: Path, config: dict, state: dict, state_path: Path) -> di
         pending["protocol_sha256"] = pipeline.sha256(protocol)
         pending["stage"] = "feedback"
         pending["endpoints_claim"] = {
-            label: claim(ROOT / endpoints[label]["output_path"])
+            label: {"path": endpoints[label]["input_path"],
+                    "sha256": endpoints[label]["input_sha256"],
+                    "size_bytes": pipeline.STATE_BYTES}
             for label in ("previous", "final")
         }
         pending["slot_reuse_note"] = (
@@ -305,6 +370,11 @@ def complete_round(run: Path, config: dict, state: dict, state_path: Path) -> di
         started = time.monotonic()
         report = pair.run_pair(protocol, pending["protocol_sha256"])
         pending["feedback_wall_s"] = time.monotonic() - started
+        pending["feedback_claims"] = validate_completed_feedback(round_dir, pending, report)
+        summary_path = round_dir / "feedback_summary.json"
+        if pipeline.read(summary_path) != report:
+            raise RuntimeError("returned feedback differs from persisted summary")
+        pending["feedback_summary_sha256"] = pipeline.sha256(summary_path)
         pending["stage"] = "ledger"
         pipeline.write_json(state_path, state)
     else:
@@ -314,12 +384,22 @@ def complete_round(run: Path, config: dict, state: dict, state_path: Path) -> di
         summary_path = round_dir / "feedback_summary.json"
         if not summary_path.is_file():
             raise RuntimeError("round is at the ledger stage but has no feedback summary")
+        if pipeline.sha256(summary_path) != pending["feedback_summary_sha256"]:
+            raise RuntimeError("completed feedback summary changed before ledger recovery")
         report = json.loads(summary_path.read_text())
+        claims = validate_completed_feedback(round_dir, pending, report)
+        if claims != pending["feedback_claims"]:
+            raise RuntimeError("committed feedback claims changed before ledger recovery")
 
     # Ledger: a failure here must leave the round incomplete, not completed. The
     # pending record stays at stage "ledger", so a rerun redoes only this step.
     try:
-        ledger = run_ledger(run, round_dir, endpoints)
+        ledger = run_ledger(run, round_dir, pending["feedback_claims"])
+        sources = pipeline.read(ROOT / pending["protocol_path"])["sources"]
+        for field, source in (("trial_material", "trial_material"),
+                              ("old_time_level", "physical_old_time_level")):
+            if source in sources and ledger["inputs"][field]["sha256"] != sources[source]["sha256"]:
+                raise RuntimeError(f"ledger {field} does not match the frozen feedback input")
     except Exception:
         state["status"] = "diagnosis_incomplete"
         pipeline.write_json(state_path, state)
@@ -341,7 +421,12 @@ def complete_round(run: Path, config: dict, state: dict, state_path: Path) -> di
         "ledger_heating_ratio": ledger["heating_stability"]["metrics"][
             "atomic_rate_heating_erg_s_cm3"]["ratio"],
     }
-    pipeline.write_json(round_dir / "round_summary.json", summary)
+    completed_path = round_dir / "round_summary.json"
+    if completed_path.exists():
+        if pipeline.read(completed_path) != summary:
+            raise RuntimeError("completed round summary already exists with different content")
+    else:
+        pipeline.write_json(completed_path, summary)
     state.setdefault("diagnostic", {}).setdefault("rounds", []).append(summary)
     state.pop("pending_feedback", None)
     if accepted:
@@ -368,6 +453,8 @@ def main() -> None:
     parser.add_argument("--maps-per-job", type=int, default=1)
     parser.add_argument("--feedback-every", type=int, default=4)
     args = parser.parse_args()
+    if args.maps_per_job < 0 or args.feedback_every < 2:
+        parser.error("maps-per-job must be nonnegative and feedback-every must be >= 2")
 
     run = pipeline.safe_path(ROOT, args.run)
     config = pipeline.read(run / "config.json")
@@ -395,7 +482,18 @@ def main() -> None:
         if state["status"] in FAULT_STATUSES:
             print(json.dumps({"status": state["status"], "action": "stopped on fault"}))
             return
-        # Priority 2: an owed feedback is settled before any new map can rotate a slot.
+        if state["status"] in ACCEPTED_STATUSES:
+            return
+        # A map commit and pending-record creation are separate atomic writes.
+        # Reconstruct a due boundary before any new map, including at the budget.
+        if (state["status"] == "radiation" and not pending_round(state) and not STOP):
+            done = len(state["history"])
+            rounds_done = len(state.get("diagnostic", {}).get("rounds", []))
+            if done // args.feedback_every > rounds_done:
+                if done % args.feedback_every:
+                    raise RuntimeError("a past feedback boundary was skipped; inspect retained endpoints")
+                start_round(run, config, state, state_path)
+        # An owed feedback is settled before any new map can rotate a slot.
         if pending_round(state) and not STOP:
             complete_round(run, config, state, state_path)
         if state["status"] in ACCEPTED_STATUSES:
@@ -425,7 +523,7 @@ def main() -> None:
             return
         # Priority 5: budget only bounds new maps. A last owed feedback still runs.
         if (not STOP and len(state["history"]) >= config["maximum_maps"]
-                and not pending_round(state)):
+                and state["status"] == "radiation" and not pending_round(state)):
             state["status"] = "diagnostic_round_complete"
         pipeline.write_json(state_path, state)
         print(json.dumps({"status": state["status"], "maps": len(state["history"]),

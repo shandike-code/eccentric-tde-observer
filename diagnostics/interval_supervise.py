@@ -77,6 +77,21 @@ def recovery_refusal(run: Path, state: dict, root: Path = ROOT):
     elif stage != "protocol":
         return f"unknown round stage: {stage!r}"
     return None
+def acknowledge_failed_job(receipt: dict, retry_job: str | None) -> None:
+    """Restarting the supervisor must not silently retry a recorded failure."""
+    if receipt.get("active_job") is not None or not receipt.get("finished_jobs"):
+        return
+    last = receipt["finished_jobs"][-1]
+    if last["state"] == "COMPLETED" and last["exit_code"] == "0:0":
+        return
+    acknowledged = receipt.get("acknowledged_failed_jobs", [])
+    if last["job_id"] in acknowledged:
+        return
+    if retry_job != last["job_id"]:
+        raise RuntimeError(
+            f"Job {last['job_id']} previously failed; inspect/fix its cause, then "
+            f"resume with --retry-failed-job {last['job_id']}")
+    receipt.setdefault("acknowledged_failed_jobs", []).append(last["job_id"])
 
 
 def main() -> None:
@@ -84,6 +99,7 @@ def main() -> None:
     parser.add_argument("--run", required=True)
     parser.add_argument("--max-jobs", type=int, default=8)
     parser.add_argument("--poll-seconds", type=int, default=60)
+    parser.add_argument("--retry-failed-job", help="exact failed job ID whose recovery has been checked")
     args = parser.parse_args()
     if args.max_jobs < 1 or args.poll_seconds < 10:
         parser.error("positive job budget and polling interval >=10 s required")
@@ -94,6 +110,8 @@ def main() -> None:
     with (run / "supervisor.lock").open("a") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         receipt = read(path) if path.exists() else {"active_job": None, "finished_jobs": []}
+        acknowledge_failed_job(receipt, args.retry_failed_job)
+        write_json(path, receipt)
         while len(receipt["finished_jobs"]) < args.max_jobs:
             state = read(run / "state.json")
             if receipt["active_job"] is None:
