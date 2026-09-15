@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "repository": "shandike-code/eccentric-tde-observer",
+  "release_tag": "warm-seed-2026-09-15",
+  "checkpoint": {
+    "path": "outputs/checkpoints/phase7b9k_retained_trial_map3.dat",
+    "sha256": "5999be906b78e5478c34868e210eb3a135a579df9ff7d203badc31b37ae03e6b",
+    "size_bytes": 10099884032
+  },
+  "parts": [
+    {
+      "name": "phase7b9k_retained_trial_map3.dat.part-000",
+      "offset_bytes": 0,
+      "size_bytes": 1073741824,
+      "sha256": "b273fe1efe66dc6e917ef1a2906bc1d78be3adde38fbec6fa89f159451403e5d"
+    },
+    {
+      "name": "phase7b9k_retained_trial_map3.dat.part-001",
+      "offset_bytes": 1073741824,
+      "size_bytes": 1073741824,
+      "sha256": "0cd2fb5a32c23601c9622340cd3a002365f22c9174be70d17e15a221ed592201"
+    },
+    {
+      "name": "phase7b9k_retained_trial_map3.dat.part-002",
+      "offset_bytes": 2147483648,
+      "size_bytes": 1073741824,
+      "sha256": "31864f29a5fc3fad210fa0d03bc1f0ad4709e26ba0aafadbd024bb407cb8773a"
+    },
+    {
+      "name": "phase7b9k_retained_trial_map3.dat.part-003",
+      "offset_bytes": 3221225472,
+      "size_bytes": 1073741824,
+      "sha256": "5b8478a542ea674991027e5779072b0ee0ee9d681a23244b1e7e837e0dcbd9fb"
+    },
+    {
+      "name": "phase7b9k_retained_trial_map3.dat.part-004",
+      "offset_bytes": 4294967296,
+      "size_bytes": 1073741824,
+      "sha256": "cd856dfa5e79a926cf910073296568aacca327bc3dcc5de9af29115259866944"
+    },
+    {
+      "name": "phase7b9k_retained_trial_map3.dat.part-005",
+      "offset_bytes": 5368709120,
+      "size_bytes": 1073741824,
+      "sha256": "0c5204cbb4a362c8a0fd41de5d20a04eafdf5c1a6e6519bb1539e7c6060acdcb"
+    },
+    {
+      "name": "phase7b9k_retained_trial_map3.dat.part-006",
+      "offset_bytes": 6442450944,
+      "size_bytes": 1073741824,
+      "sha256": "e74a341cf1f2f932b9bff1803c70eb5caa454432de6dcddba1439ace0fa8f833"
+    },
+    {
+      "name": "phase7b9k_retained_trial_map3.dat.part-007",
+      "offset_bytes": 7516192768,
+      "size_bytes": 1073741824,
+      "sha256": "d6e5d496aebf7e269fdb0f0b8efaa4374be7573c4262ab80ec2c2cede79f179a"
+    },
+    {
+      "name": "phase7b9k_retained_trial_map3.dat.part-008",
+      "offset_bytes": 8589934592,
+      "size_bytes": 1073741824,
+      "sha256": "ec64ec2d8ee2b50d4332914fa8b59b257505df9278ffc23fbf785f713e479006"
+    },
+    {
+      "name": "phase7b9k_retained_trial_map3.dat.part-009",
+      "offset_bytes": 9663676416,
+      "size_bytes": 436207616,
+      "sha256": "eb7ff789ed4cb27dd6501e29065ca450f8cbc02135efc638c5ac30db9e771a92"
+    }
+  ],
+  "scope": "One warm seed only; no inherited Linux convergence claim."
+}
