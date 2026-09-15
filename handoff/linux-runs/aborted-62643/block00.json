@@ -1,0 +1,20 @@
+{
+  "protocol_sha256": "356a3d8fd9d018d03ff4bec3a464efae4e6325b5c0cdc477851a10af4734a8f7",
+  "input_state_sha256": "c26dea423731f7a836787de8031d094972954481341c49ae7349408014a1b944",
+  "block_index": 0,
+  "core_group_start": 0,
+  "core_group_stop": 128,
+  "maximum_absolute_radiation_change": 4.332405121952675e-06,
+  "maximum_radiation_scale": 1.5311190918641203e-05,
+  "block_relative_radiation_change": 0.28295676965780764,
+  "boundary_spectrum_l1_numerator": 24340142.00937873,
+  "current_boundary_absolute_scale": 116677895.38266906,
+  "mapped_boundary_absolute_scale": 141018037.39204782,
+  "current_boundary_bolometric": 116677895.38266906,
+  "mapped_boundary_bolometric": 141018037.39204782,
+  "minimum_input_intensity": 2.9719896729191755e-06,
+  "minimum_mapped_intensity": 4.1599025576277925e-08,
+  "baseline_highwater_rss_mib": 796.60546875,
+  "peak_process_rss_mib": 2265.1171875,
+  "wall_runtime_s": 147.82132056355476
+}

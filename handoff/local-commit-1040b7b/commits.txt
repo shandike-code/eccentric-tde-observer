@@ -1,0 +1,37 @@
+=== 提交图（本地）===
+* 1040b7b (HEAD -> main) Fall back to scontrol when sacct records no job completions
+* c4d735e (tag: handoff-2026-09-14, origin/main, origin/HEAD) Keep downloaded input archives and radiation states out of Git
+* f35aa78 Prepare eccentric TDE H/He project and recoverable USTC Slurm handoff
+
+=== 本地提交 1040b7b 详情 ===
+1040b7b95bf4b247361b66078487bee8da9f8dfa
+shandike-code <310837749+shandike-code@users.noreply.github.com>
+Mon Sep 14 17:44:58 2026 +0800
+
+Fall back to scontrol when sacct records no job completions
+
+The school cluster runs slurmdbd with the cluster registered but no job
+records, so sacct returns empty for every job, past and present. hpc/
+supervise.py treated that as "unknown exit" and stopped after ten polls.
+
+Query scontrol first, before the retry loop can outlast the MinJobAge
+window, and keep the existing conservative behaviour: a job that is
+neither reporting a terminal state nor present in accounting still
+raises rather than letting the supervisor resubmit blindly. Record which
+source answered in supervisor.json.
+
+Also record the Linux smoke and block-check runs under handoff/linux-runs/
+and the frozen Linux environment at environment-linux.txt.
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+
+
+ environment-linux.txt                              |  17 +++
+ handoff/linux-runs/2026-09-14-block-check-62576.md | 104 ++++++++++++++++
+ handoff/linux-runs/2026-09-14-block-check-62585.md | 133 +++++++++++++++++++++
+ handoff/linux-runs/2026-09-14-smoke-62570.md       |  97 +++++++++++++++
+ hpc/supervise.py                                   |  45 +++++--
+ 5 files changed, 389 insertions(+), 7 deletions(-)
+
+=== 与远端 main 的关系 ===
+远端 main (cfbbf112) 不含 1040b7b；两者共同祖先为 c4d735e。
