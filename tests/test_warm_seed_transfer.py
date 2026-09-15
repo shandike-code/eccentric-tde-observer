@@ -1,5 +1,6 @@
 """Small byte fixtures test the same integrity and commit path as the 9.4 GiB seed."""
 import hashlib
+import json
 import importlib.util
 from pathlib import Path
 import pytest
@@ -68,3 +69,41 @@ def test_invalid_manifest_never_publishes_checkpoint(tmp_path, mutation):
     with pytest.raises((ValueError, RuntimeError)):
         transfer.assemble(tmp_path, manifest, parts)
     assert not (tmp_path / "outputs/checkpoints/seed.dat").exists()
+
+
+def test_download_retains_verified_parts_and_retries_only_partial(tmp_path, monkeypatch):
+    from types import SimpleNamespace
+    parts, manifest, data = fixture(tmp_path)
+    manifest.update(repository="owner/repo", release_tag="seed")
+    manifest_path = tmp_path / "manifest.json"
+    manifest_path.write_text(json.dumps(manifest))
+    second = parts / manifest["parts"][1]["name"]
+    second.unlink()
+    assets = [{"name": manifest_path.name, "digest": "sha256:" + transfer.digest(manifest_path)}]
+    assets.extend({"name": p["name"], "state": "uploaded", "size": p["size_bytes"],
+                   "digest": "sha256:" + p["sha256"]} for p in manifest["parts"])
+    monkeypatch.setattr(transfer.shutil, "which", lambda name: "/fake/gh")
+    monkeypatch.setattr(transfer.subprocess, "check_output", lambda *a, **k: json.dumps({"assets": assets}))
+    monkeypatch.setattr(transfer.time, "sleep", lambda seconds: None)
+    calls = []
+    def fetch(args):
+        assert not second.exists()
+        name = args[args.index("--pattern") + 1]
+        assert name == second.name
+        temporary = Path(args[args.index("--dir") + 1]) / name
+        calls.append(name)
+        temporary.write_bytes(b"interrupted" if len(calls) == 1 else data[manifest["parts"][1]["offset_bytes"]:])
+        return SimpleNamespace(returncode=1 if len(calls) == 1 else 0)
+    monkeypatch.setattr(transfer.subprocess, "run", fetch)
+    transfer.download(tmp_path, manifest, parts, manifest_path)
+    assert calls == [second.name, second.name]
+    transfer.verify(second, manifest["parts"][1])
+
+
+def test_unfinished_release_is_not_downloaded(tmp_path, monkeypatch):
+    parts, manifest, _ = fixture(tmp_path)
+    manifest.update(repository="owner/repo", release_tag="seed")
+    monkeypatch.setattr(transfer.shutil, "which", lambda name: "/fake/gh")
+    monkeypatch.setattr(transfer.subprocess, "check_output", lambda *a, **k: '{"assets": []}')
+    with pytest.raises(RuntimeError, match="completion manifest"):
+        transfer.download(tmp_path, manifest, parts, tmp_path / "manifest.json")
