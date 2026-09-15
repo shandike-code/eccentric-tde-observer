@@ -22,8 +22,14 @@ import time
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT), str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT / "hpc")]
-from supervise import CONTINUE, job_id, scontrol_state  # noqa: E402
+from supervise import job_id, scontrol_state  # noqa: E402  (cluster-specific terminal states)
 from pipeline import read, safe_path, write_json  # noqa: E402
+
+# `supervise.CONTINUE` covers the stock pipeline's states. This driver adds
+# `diagnosis_incomplete`: the physics of a round finished but its ledger did not,
+# and only that step still has to be redone. It is a resumable state, not a stop.
+CONTINUE = {"initializing", "radiation", "diagnosis_incomplete",
+            "feedback_ready", "feedback_running"}
 
 
 def submit(run_relative: str, env: dict) -> str:
