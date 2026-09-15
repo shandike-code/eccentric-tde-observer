@@ -90,3 +90,72 @@ def test_ionization_energy_ignores_nothing_at_zero_temperature():
     ionization = ledger.ionization_specific_energy_erg_g(hydrogen, helium, composition)
     assert np.all(ionization > 0.0)
     assert ionization.shape == (hydrogen.shape[0],)
+
+
+def test_parent_96_perturbation_localises_to_96_not_48():
+    """The adapter maps 4096 subcells onto 256 parent layers of 16, then half=parent[:128].
+
+    Grouping 32 adjacent subcells (the earlier, wrong reading) puts a perturbation
+    that truly sits in material layer 96 into layer 48.
+    """
+    perturbation = np.zeros(4096)
+    perturbation[96 * 16:97 * 16] = 1.0
+    parent = ledger.parent_layer_contributions(perturbation)
+    assert np.nonzero(parent)[0].tolist() == [96]
+    folded = ledger.fold_to_material_layers(parent)
+    assert int(np.argmax(folded)) == 96
+
+    wrong = perturbation.reshape(128, 32).sum(axis=1)
+    assert int(np.argmax(wrong)) == 48  # what the old mapping returned
+
+
+def test_mirrored_perturbation_folds_to_the_same_material_layer():
+    """Subcell 159 is the mirror of parent 96, so it must fold to 96 as well."""
+    perturbation = np.zeros(4096)
+    perturbation[159 * 16:160 * 16] = 1.0
+    parent = ledger.parent_layer_contributions(perturbation)
+    assert np.nonzero(parent)[0].tolist() == [159]
+    folded = ledger.fold_to_material_layers(parent)
+    assert int(np.argmax(folded)) == 96
+
+
+def test_fold_is_symmetric_and_preserves_the_column_total():
+    rng = np.random.default_rng(7)
+    parent = rng.uniform(0.0, 1.0, size=256)
+    folded = ledger.fold_to_material_layers(parent)
+    assert folded.shape == (128,)
+    assert np.isclose(folded.sum(), parent.sum(), rtol=0.0, atol=1e-12)
+
+
+def test_metric_numerator_and_denominator_come_from_one_component():
+    """The largest numerator and the largest ratio can sit in different components."""
+    previous = np.array([[10.0, 0.0, 1.0]])
+    final = np.array([[20.0, 1.0, 1.0]])
+    width = np.ones(1)
+    numerator, denominator = ledger.weighted_volume_terms(previous, final, width)
+    component_numerator = np.atleast_1d(np.sum(numerator, axis=0))
+    component_denominator = np.atleast_1d(np.sum(denominator, axis=0))
+    # Component 0 carries the big numerator; component 1 carries the worst ratio.
+    assert component_numerator.tolist() == [10.0, 1.0, 0.0]
+    assert component_denominator.tolist() == [20.0, 1.0, 1.0]
+    assert int(np.argmax(component_numerator)) == 0
+    ratios = component_numerator / component_denominator
+    assert int(np.argmax(ratios)) == 1
+    # Reporting max(numerator) over max(denominator) would have used component 0's
+    # denominator and produced 10/20 = 0.5 instead of the true worst 1.0.
+    assert np.max(component_numerator) / np.max(component_denominator) == 0.5
+    assert ratios[1] == 1.0
+
+
+def test_absolute_and_relative_worst_layers_are_reported_separately():
+    weights = np.array([0.5, 0.5])
+    led = {
+        "remaining": np.array([-10.0, -1.0]),
+        "remaining_relative_to_old_gas_heat": np.array([-10.0 / 1000.0, -1.0 / 1.5]),
+        "gas_old": np.array([1000.0, 1.5]),
+        "charge_residual": np.zeros(2), "particle_residual": np.zeros(2),
+        "split_self_check": 0.0,
+    }
+    report = ledger.endpoint_report(led, weights, "synthetic")
+    assert report["absolute_worst"]["cell"] == 0   # most negative in erg/g
+    assert report["relative_worst"]["cell"] == 1   # most negative relative to its own gas heat
