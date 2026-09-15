@@ -43,7 +43,7 @@ MATERIAL_LAYERS = PARENT_LAYERS // 2
 
 def finite_or_none(value: float):
     """Emit null instead of a non-finite number; the JSON stays strict."""
-    return value if math.isfinite(value) else None
+    return value if value is not None and math.isfinite(value) else None
 
 
 def parent_layer_contributions(per_depth):
@@ -286,11 +286,12 @@ def heating_decomposition(previous, final):
         component_numerator = np.atleast_1d(np.sum(numerator, axis=0))
         component_denominator = np.atleast_1d(np.sum(denominator, axis=0))
         defined = component_denominator > 0.0
-        component_ratio = np.full(component_denominator.shape, np.nan)
+        # Match weighted_volume_l1: zero/zero means identical zero signals.
+        component_ratio = np.zeros(component_denominator.shape)
         component_ratio[defined] = (
             component_numerator[defined] / component_denominator[defined]
         )
-        worst = int(np.nanargmax(component_ratio))
+        worst = int(np.argmax(component_ratio))
         metrics[key] = {
             "worst_component_index": worst,
             "numerator": finite_or_none(float(component_numerator[worst])),
@@ -299,6 +300,7 @@ def heating_decomposition(previous, final):
             "component_numerators": [finite_or_none(float(x)) for x in component_numerator],
             "component_denominators": [finite_or_none(float(x)) for x in component_denominator],
             "component_ratios": [finite_or_none(float(x)) for x in component_ratio],
+            "zero_signal_components": (~defined).tolist(),
         }
         numerators[key] = np.sum(numerator.reshape(SUBCELLS, -1), axis=1)
 
@@ -306,9 +308,9 @@ def heating_decomposition(previous, final):
     per_depth = numerators[key]
     total = float(np.sum(per_depth))
     order = np.argsort(per_depth)[::-1]
-    cumulative = np.cumsum(per_depth[order]) / total
+    cumulative = np.cumsum(per_depth[order]) / total if total else np.zeros_like(per_depth)
     depths_for = {
-        f"{int(100 * frac)}%": int(np.searchsorted(cumulative, frac)) + 1
+        f"{int(100 * frac)}%": int(np.searchsorted(cumulative, frac)) + 1 if total else None
         for frac in (0.5, 0.9, 0.99)
     }
     # The adapter maps 4096 radiation subcells onto 256 whole-column parent
@@ -323,7 +325,7 @@ def heating_decomposition(previous, final):
     folded = fold_to_material_layers(parent_layer)
     full_total = float(np.sum(parent_layer))
     front_total = float(np.sum(front))
-    top_folded = np.argsort(folded)[::-1][:5]
+    top_folded = np.argsort(folded)[::-1][:5] if full_total else np.array([], dtype=int)
 
     def share(value, denominator):
         return finite_or_none(float(value) / denominator) if denominator else None
@@ -331,8 +333,10 @@ def heating_decomposition(previous, final):
     absorbed = np.abs(np.asarray(previous["absorbed_power_erg_s_cm3"], dtype=np.float64))
     emitted = np.abs(np.asarray(previous["emitted_power_erg_s_cm3"], dtype=np.float64))
     net = np.asarray(previous[key], dtype=np.float64)
-    closure = float(np.max(np.abs(absorbed - emitted - net)) / np.max(np.abs(net)))
-    cancellation = np.abs(net) / (absorbed + emitted)
+    closure = share(np.max(np.abs(absorbed - emitted - net)), float(np.max(np.abs(net))))
+    gross = absorbed + emitted
+    cancellation = np.abs(net[gross > 0]) / gross[gross > 0]
+    median = float(np.median(cancellation)) if cancellation.size else None
 
     components = {}
     for base in ("absorbed_power_erg_s_cm3", "emitted_power_erg_s_cm3",
@@ -340,14 +344,14 @@ def heating_decomposition(previous, final):
         a = np.asarray(previous[base], dtype=np.float64)
         b = np.asarray(final[base], dtype=np.float64)
         components[base] = {
-            "max_relative_change": float(
-                np.max(np.abs(b - a)) / max(np.max(np.abs(a)), np.max(np.abs(b)))
-            ),
+            "max_relative_change": share(np.max(np.abs(b - a)),
+                                         float(max(np.max(np.abs(a)), np.max(np.abs(b)))))
+                if np.any(a) or np.any(b) else 0.0,
             "minimum": float(np.min(a)), "maximum": float(np.max(a)),
             "negative_fraction": float(np.mean(a < 0.0)),
         }
 
-    top_front = np.argsort(front)[::-1][:5]
+    top_front = np.argsort(front)[::-1][:5] if front_total else np.array([], dtype=int)
     return {
         "metrics": metrics,
         "numerator_by_depth": {
@@ -385,10 +389,11 @@ def heating_decomposition(previous, final):
         },
         "absorption_emission_cancellation": {
             "closure_error_relative": finite_or_none(closure),
-            "net_over_gross_median": finite_or_none(float(np.median(cancellation))),
-            "net_over_gross_p90": finite_or_none(float(np.percentile(cancellation, 90))),
-            "net_over_gross_max": finite_or_none(float(np.max(cancellation))),
-            "median_amplification": finite_or_none(float(1.0 / np.median(cancellation))),
+            "net_over_gross_median": median,
+            "net_over_gross_p90": float(np.percentile(cancellation, 90)) if cancellation.size else None,
+            "net_over_gross_max": float(np.max(cancellation)) if cancellation.size else None,
+            "median_amplification": 1.0 / median if median else None,
+            "undefined_zero_gross_depths": int(np.count_nonzero(gross == 0)),
             "interpretation": (
                 "net heating is locally a difference of two nearly equal large "
                 "terms. This describes the local mechanism only: it is not an "

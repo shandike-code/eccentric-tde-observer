@@ -29,7 +29,7 @@ def history_row(iteration):
         "input_path": f"outputs/hpc/run/state_{iteration % 3}.dat",
         "input_sha256": f"in{iteration}",
         "output_path": f"outputs/hpc/run/state_{(iteration + 1) % 3}.dat",
-        "output_sha256": f"out{iteration}",
+        "output_sha256": f"in{iteration + 1}",
         "wall_s": 1.0, "residual": 2.0e-4,
         "boundary_l1": 3.0e-6, "boundary_bolometric": 2.0e-6,
         "maximum_worker_rss_mib": 3500.0,
@@ -127,8 +127,8 @@ def test_start_round_persists_both_endpoints_before_any_work(run_dir):
     pending = driver.start_round(run_dir, {}, state, run_dir / "state.json")
     on_disk = read_state(run_dir)["pending_feedback"]
     assert on_disk["endpoints"] == [3, 4]
-    assert on_disk["previous"]["output_sha256"] == "out3"
-    assert on_disk["final"]["output_sha256"] == "out4"
+    assert on_disk["previous"]["input_sha256"] == "in3"
+    assert on_disk["final"]["input_sha256"] == "in4"
     assert on_disk["stage"] == "protocol"
     assert on_disk == pending
 
@@ -140,20 +140,31 @@ def test_build_round_protocol_puts_every_output_inside_the_round(run_dir, monkey
     round_dir = run_dir / "feedback-round1"
     round_dir.mkdir()
 
+    (run_dir / "trial_material.npz").write_bytes(b"trial")
     base = run_dir / "feedback_protocol.json"
-    monkeypatch.setattr(pipeline, "feedback_protocol",
-                        lambda config, state: base)
-    base.write_text(json.dumps({"configuration": {}, "sources": {}}))
+    base.write_text('{"belongs_to_another_round": true}')
+    def factory(config, state):
+        inputs = driver.ROOT / config["run"]
+        template = inputs / "feedback_template.json"
+        template.write_text('{}')
+        payload = {"configuration": {}, "sources": {
+            label + "_radiation": {"path": row["input_path"], "sha256": row["input_sha256"]}
+            for label, row in zip(("previous", "final"), state["history"][-2:])}}
+        payload["sources"]["phase7b7j_protocol"] = driver.claim(template)
+        path = inputs / "feedback_protocol.json"
+        pipeline.write_json(path, payload)
+        return path
+    monkeypatch.setattr(pipeline, "feedback_protocol", factory)
 
     protocol = driver.build_round_protocol(run_dir, {}, state, round_dir)
     cfg = json.loads(protocol.read_text())["configuration"]
     for key in ("feedback_work_directory", "summary_path", "figure_path",
                 "previous_feedback_output", "final_feedback_output"):
         assert cfg[key].startswith("outputs/hpc/run/feedback-round1/"), key
-    # The run-root copy must not survive for a later round to pick up.
-    assert not base.exists()
-    index = json.loads((run_dir / driver.MIGRATION_INDEX).read_text())
-    assert index["entries"][0]["old_path"] == "outputs/hpc/run/feedback_protocol.json"
+    # A stale root protocol is neither consumed nor deleted. Each template is owned.
+    assert json.loads(base.read_text()) == {"belongs_to_another_round": True}
+    assert pipeline.read(protocol)["sources"]["phase7b7j_protocol"]["path"].startswith(
+        "outputs/hpc/run/feedback-round1/inputs/")
 
 
 def test_migration_index_is_append_only(run_dir):
@@ -183,6 +194,10 @@ def test_ledger_failure_leaves_the_round_incomplete(run_dir, monkeypatch):
         "gate_checks": {"a": True},
         "decision": {"finite_trial_accepted_as_one_nonlinear_step": True},
     }))
+    pending["feedback_summary_sha256"] = pipeline.sha256(
+        run_dir / "feedback-round1" / "feedback_summary.json")
+    pending["feedback_claims"] = {}
+    monkeypatch.setattr(driver, "validate_completed_feedback", lambda *a: {})
 
     def boom(*a, **k):
         raise RuntimeError("ledger exited 256")
