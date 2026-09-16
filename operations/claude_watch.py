@@ -41,6 +41,10 @@ def snapshot(science, benchmark, benchmark_job):
               "supervisor": read(ROOT / science / "supervisor.json"),
               "benchmark": read(ROOT / benchmark / "benchmark.json"),
               "benchmark_job": benchmark_job}
+    if result["supervisor"]:
+        completed = result["supervisor"].get("finished_jobs", [])
+        result["supervisor"] = {**result["supervisor"], "finished_job_count": len(completed),
+                                "finished_jobs": completed[-3:]}
     if rounds:
         ledger = read(ROOT / rounds[-1]["ledger"])
         if ledger:
@@ -110,6 +114,10 @@ def main():
                         "异常和是否需要 Codex 决策。不要声称发射率已完成，不把预计开始时间当承诺。"
                         "不得提交作业、改代码/阈值/预算、读取凭据或操作文件；你没有工具。"
                         "既有科学 run 最多64张；性能试验是同种子的2/4/8 worker各1张，不是科学续算。"
+                        "反馈每4张一次，因此map59仍对应map55/56的反馈完全正常；"
+                        "三态轮换和原路径不可永久复跑也是已声明机制，都不是异常。"
+                        "已授权继续至64张，无需建议再次确认；只有真正故障、预算结束或新科学结论才提请决策。"
+                        "注意decision中finite_trial_rejected=true是拒绝，不要说所有decision字段都为否。"
                         "没有新结论就简短报告。限500字。\n" + json.dumps(state, ensure_ascii=False))
                     call = subprocess.run([args.claude, "-p", "--tools", "", "--no-session-persistence",
                         "--output-format", "json"], input=prompt, text=True, capture_output=True,

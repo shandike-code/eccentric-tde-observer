@@ -56,3 +56,11 @@ Claude Code 通过 `-p --tools "" --no-session-persistence --output-format json`
 ## 验证
 
 Mac 当前 70 项相关测试通过：原合并后的 62 项与新增 8 项监督事件/性能一致性测试；sbatch shell 语法检查通过。性能实测必须等新 Slurm allocation 的结果，不能把这些测试写成已测出加速。
+
+## 启动回执
+
+- 新增运行代码提交 `f38eed9`；学校端也实跑 **70 passed**，耗时 10.16 秒。
+- 性能作业 **64408** 于 19:48:28 提交、19:48:29 起跑，节点 anode16，实际请求 8 CPU / 52G / 2h、qos_stu_cpu_long；提交前预估排到次日的时间没有兑现，因此不能用预估当作实际排队结论。
+- 平台 tmux **tde-codex-watch** 已启动，第一份解读及 heartbeat 已落地，输出目录 `outputs/hpc/codex-watch-20260916`。SSH 断开不终止这些平台进程。
+- 第一份模型解读把每 4 张一次反馈导致的正常间隔列为异常，且错误概括 decision 布尔值。Codex 已纠正监督提示，保留原始 review-001 供追溯；不把模型解读视为原始事实。
+- 本地另建每 30 分钟一次的本任务跟进 `ustc-hhe`，用于 Codex 审阅与决策；仅有实质变化才通知。该跟进需要 Mac/Codex 可运行及 SSH 连接有效，平台任务本身不依赖此本地连接。
