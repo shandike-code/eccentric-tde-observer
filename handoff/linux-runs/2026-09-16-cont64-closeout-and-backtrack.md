@@ -60,3 +60,13 @@ sbatch --parsable operations/encoded_backtrack.sbatch
 - 作业 64607 已在 Linux allocation 通过真实候选检查及 native 注入核验：镜像全柱密度、温度、H/He 布居逐值一致，原相位与 dt 一致。新候选 trial SHA 为 `f0c35fff1f47aaf6189cfc2d90a8db398a654939d3cff7fa0f11875d756c66e7`。随后旧 CLI 拒绝零 map 参数（只允许 1..20），未开始辐射初始化或新 map。
 - 第二项修复通过专用入口直接调用支持零 map 的既有 API，缺少自有新 trial 就拒绝，避免回退到旧候选迁移或多算预算外 map。准备脚本与 batch 脚本已变更，旧 run 声明保留，新建 `-v2` run，不篡改旧声明。
 - 增加历史协议身份与零 map 初始化的回归测试；当前候选与监督相关测试合计 23 项通过。测试不能替代下一次真实初始化及 worker 开始的验证。
+
+## v2 已进入实际计算
+
+2026-09-16T22:49:23.654597+08:00 实测：作业 **64633** 为 RUNNING，`-v2` run 完成新候选及 native 注入审计、9.41 GiB 初值复制与哈希验证，进入第 1 张 map，已有 **16 个块**提交。部署提交为 `89519f4`；Mac 与 Linux 各自 23 项相关测试通过。GitHub 远端分支 HEAD 已通过 `ls-remote` 核对为同一完整提交。
+
+两个旧失败的调度器终态均已在过期前留档：64598 为 FAILED / 1:0 / 11 秒，64607 为 FAILED / 2:0 / 8 秒。二者是准备接口缺陷，不是新候选的物理失败。原始查询、首块记录、native 核验及提交参数见 `handoff/evidence/ustc-backtrack-v2-start-20260916.json`。
+
+平台 tmux 会话 `tde-backtrack-v2-watch`、监督目录 `outputs/hpc/codex-backtrack-watch-20260916-v2` 已启动并产生两次只读简报。Claude Code 实际配置后端为 `deepseek-v4-flash`，不把客户端名当模型身份。监督模型不提交作业、不改代码或门槛；Codex 的 30 分钟跟进已切换至这个 run/job。
+
+监督模型曾从性能基准的 512 秒/图推测新候选总用时；该外推不可采纳：候选物质与离不动点距离均已变化，正式反馈也另有成本。这里不报告新候选完成时间，只承诺已声明的资源与映射预算。当前仍没有新候选的正式反馈结果，更没有最终发射率。

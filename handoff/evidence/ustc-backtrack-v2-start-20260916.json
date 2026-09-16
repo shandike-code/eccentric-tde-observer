@@ -1,0 +1,71 @@
+{
+  "observed_at": "2026-09-16T22:49:23.654597+08:00",
+  "source_repo": "/home/scc/pb24511938/eccentric-tde-observer",
+  "run": "outputs/hpc/hhe-backtrack-r003125-20260916-v2",
+  "submission": {
+    "job_id": "64633",
+    "run": "outputs/hpc/hhe-backtrack-r003125-20260916-v2",
+    "submitted_at": "2026-09-16T22:47:08.142910+08:00",
+    "code_commit": "89519f41a9e02d7d2754e7ad03a1bb80c38f65ec",
+    "maximum_maps": 8,
+    "feedback_every": 4,
+    "workers": 4,
+    "cpus": 8,
+    "memory_gib": 32,
+    "wall_limit": "08:00:00"
+  },
+  "scheduler": "JobId=64633 JobName=tde-backtrack UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:02:14 TimeLimit=08:00:00 TimeMin=N/A SubmitTime=2026-09-16T22:47:08 EligibleTime=2026-09-16T22:47:08 AccrueTime=2026-09-16T22:47:08 StartTime=2026-09-16T22:47:09 EndTime=2026-09-17T06:47:09 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-16T22:47:09 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:1652229 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode16 BatchHost=anode16 NumNodes=1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=32G,node=1,billing=8 AllocTRES=cpu=8,node=1,billing=8 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=8 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/encoded_backtrack.sbatch SubmitLine=sbatch --parsable operations/encoded_backtrack.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-backtrack-64633.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-backtrack-64633.out TresPerTask=cpu=8",
+  "status": "radiation",
+  "completed_maps": 0,
+  "active_iteration": 1,
+  "committed_blocks": 16,
+  "first_committed_block": {
+    "protocol_sha256": "f1f80dfe9a9262f5a2a760f9309bb70f6b879009a2ace5ffea195e4041cff4b2",
+    "input_state_sha256": "bbad1a837889c93104d2f7b47a47fe35d2cf7e1035792247480ed612a6832c1f",
+    "block_index": 0,
+    "core_group_start": 0,
+    "core_group_stop": 128,
+    "maximum_absolute_radiation_change": 7.034732235148564e-07,
+    "maximum_radiation_scale": 1.4951604645533574e-05,
+    "block_relative_radiation_change": 0.04705001504470637,
+    "boundary_spectrum_l1_numerator": 8040716.140079083,
+    "current_boundary_absolute_scale": 138348036.64741442,
+    "mapped_boundary_absolute_scale": 130307320.50733534,
+    "current_boundary_bolometric": 138348036.64741442,
+    "mapped_boundary_bolometric": 130307320.50733534,
+    "minimum_input_intensity": 3.550404110196886e-08,
+    "minimum_mapped_intensity": 3.588307933964674e-08,
+    "baseline_highwater_rss_mib": 796.625,
+    "peak_process_rss_mib": 2265.9921875,
+    "wall_runtime_s": 14.182541020214558
+  },
+  "native_trial_audit": {
+    "trial_source": {
+      "path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/trial_material.npz",
+      "size_bytes": 27774,
+      "sha256": "f0c35fff1f47aaf6189cfc2d90a8db398a654939d3cff7fa0f11875d756c66e7"
+    },
+    "native_mirrored_material_exact": true,
+    "physical_phase_and_dt_exact": true
+  },
+  "watch": {
+    "last_event": "c12d3b429ab0925242a6d6420b72bdc0fcc634fcdc927a86f64e7defae142152",
+    "reviews": 2,
+    "heartbeat": "2026-09-16T22:48:20.159682+08:00",
+    "status": "watching"
+  },
+  "earlier_failed_attempts": {
+    "64598": {
+      "observed_at": "2026-09-16T22:37:48.882823+08:00",
+      "raw": "JobId=64598 JobName=tde-backtrack UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=FAILED Reason=NonZeroExitCode Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=1:0 RunTime=00:00:11 TimeLimit=08:00:00 TimeMin=N/A SubmitTime=2026-09-16T22:37:24 EligibleTime=2026-09-16T22:37:24 AccrueTime=2026-09-16T22:37:24 StartTime=2026-09-16T22:37:24 EndTime=2026-09-16T22:37:35 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-16T22:37:24 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:1520805 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode16 BatchHost=anode16 NumNodes=1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=32G,node=1,billing=8 AllocTRES=cpu=8,node=1,billing=8 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=8 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/encoded_backtrack.sbatch SubmitLine=sbatch --parsable operations/encoded_backtrack.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-backtrack-64598.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-backtrack-64598.out TresPerTask=cpu=8",
+      "state": "FAILED",
+      "exit_code": "1:0"
+    },
+    "64607": {
+      "observed_at": "2026-09-16T22:41:16.157989+08:00",
+      "raw": "JobId=64607 JobName=tde-backtrack UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=FAILED Reason=NonZeroExitCode Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=2:0 RunTime=00:00:08 TimeLimit=08:00:00 TimeMin=N/A SubmitTime=2026-09-16T22:40:04 EligibleTime=2026-09-16T22:40:04 AccrueTime=2026-09-16T22:40:04 StartTime=2026-09-16T22:40:04 EndTime=2026-09-16T22:40:12 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-16T22:40:04 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:1538860 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode16 BatchHost=anode16 NumNodes=1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=32G,node=1,billing=8 AllocTRES=cpu=8,node=1,billing=8 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=8 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/encoded_backtrack.sbatch SubmitLine=sbatch --parsable operations/encoded_backtrack.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-backtrack-64607.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-backtrack-64607.out TresPerTask=cpu=8",
+      "state": "FAILED",
+      "exit_code": "2:0"
+    }
+  }
+}
