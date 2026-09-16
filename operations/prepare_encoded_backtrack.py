@@ -84,6 +84,23 @@ def audit_native_trial(cfg, trial):
             "native_mirrored_material_exact": True, "physical_phase_and_dt_exact": True}
 
 
+def verified_source_trial(source_run, state):
+    """Historical diagnostic states may omit trial_sha256; use the formal pair."""
+    rounds = state.get("diagnostic", {}).get("rounds", [])
+    if not rounds:
+        raise RuntimeError("source candidate has no completed formal feedback to anchor its identity")
+    protocol_path = (ROOT / rounds[-1]["ledger"]).parent / "feedback_protocol.json"
+    if pipeline.sha256(protocol_path) != rounds[-1]["protocol_sha256"]:
+        raise RuntimeError("last completed formal protocol changed")
+    frozen_trial = pipeline.read(protocol_path)["sources"]["trial_material"]
+    if pipeline.verify_claims(ROOT, [frozen_trial], hash_files=True):
+        raise RuntimeError("last completed formal trial changed")
+    digest = pipeline.sha256(source_run / "trial_material.npz")
+    if digest != frozen_trial["sha256"] or state.get("trial_sha256", digest) != digest:
+        raise RuntimeError("source trial differs from formal feedback or state claim")
+    return [pipeline.claim(protocol_path), frozen_trial]
+
+
 def prepare(run, source_run, relaxation, workers, maximum_maps):
     pipeline.require_allocation(workers)
     if (not run.is_relative_to(ROOT / "outputs/hpc") or workers != 4
@@ -109,8 +126,7 @@ def prepare(run, source_run, relaxation, workers, maximum_maps):
     if pipeline.sha256(source_run / "config.json") != state["config_sha256"]:
         raise RuntimeError("source configuration changed")
     trial_path = source_run / "trial_material.npz"
-    if pipeline.sha256(trial_path) != state["trial_sha256"]:
-        raise RuntimeError("source trial changed")
+    formal_sources = verified_source_trial(source_run, state)
     source = load_arrays(trial_path)
     if float(source["relaxation"]) != 0.0625:
         raise RuntimeError("this is specifically the second dyadic backtrack from 0.0625")
@@ -125,6 +141,7 @@ def prepare(run, source_run, relaxation, workers, maximum_maps):
     dependencies = [pipeline.claim(p) for p in (
         trial_path, source_run / "config.json", source_run / "state.json",
         ROOT / "operations/prepare_encoded_backtrack.py", ROOT / "operations/encoded_backtrack.sbatch")]
+    dependencies.extend(formal_sources)
     declaration = {"classification": "bounded exploratory material backtrack; no accepted matter step",
         "source_run": pipeline.relative(source_run), "sources": dependencies,
         "source_relaxation": 0.0625, "candidate_relaxation": relaxation,

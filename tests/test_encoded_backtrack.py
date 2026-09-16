@@ -46,3 +46,21 @@ def test_refuses_lineage_decode_dt_and_baseline_tampering(field):
     source, old = example();baseline = source["base_residual"].copy()
     source[field] = source[field] + .001
     with pytest.raises(RuntimeError): candidate_arrays(source, old, baseline, .03125)
+
+
+def test_legacy_state_trial_identity_is_anchored_to_completed_formal_protocol(tmp_path, monkeypatch):
+    import operations.prepare_encoded_backtrack as module
+    monkeypatch.setattr(module, "ROOT", tmp_path)
+    monkeypatch.setattr(module.pipeline, "ROOT", tmp_path)
+    run = tmp_path / "run";folder = run / "feedback-round1"
+    folder.mkdir(parents=True)
+    trial = run / "trial_material.npz";trial.write_bytes(b"frozen material")
+    frozen = folder / "trial_material.npz";frozen.write_bytes(trial.read_bytes())
+    protocol = folder / "feedback_protocol.json"
+    module.pipeline.write_json(protocol, {"sources":{"trial_material":module.pipeline.claim(frozen)}})
+    state = {"diagnostic":{"rounds":[{"ledger":"run/feedback-round1/ledger.json",
+                                      "protocol_sha256":module.pipeline.sha256(protocol)}]}}
+    assert module.verified_source_trial(run,state)[1]["sha256"] == module.pipeline.sha256(trial)
+    trial.write_bytes(b"tampered")
+    with pytest.raises(RuntimeError,match="differs"):
+        module.verified_source_trial(run,state)
