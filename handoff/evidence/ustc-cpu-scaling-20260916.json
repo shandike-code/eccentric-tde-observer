@@ -1,0 +1,93 @@
+{
+  "status": "complete",
+  "science_run": false,
+  "seed": {
+    "path": "outputs/hpc/hhe-diag-r025/state_2.dat",
+    "size_bytes": 10099884032,
+    "sha256": "eb4c30283322c41ca130db9f6efa1234de0349945e057869e032dd9e736d26a8"
+  },
+  "cases": [
+    {
+      "workers": 2,
+      "run": "outputs/hpc/cpu-scaling-20260916/workers2",
+      "total_wall_s": 757.6182852983475,
+      "iteration": 1,
+      "input_path": "outputs/hpc/cpu-scaling-20260916/workers2/state_0.dat",
+      "input_sha256": "eb4c30283322c41ca130db9f6efa1234de0349945e057869e032dd9e736d26a8",
+      "output_path": "outputs/hpc/cpu-scaling-20260916/workers2/state_1.dat",
+      "output_sha256": "e0961399c903ec9c491909c74b7bec119f0965f71e44b73afaa450a5a102cf2f",
+      "wall_s": 698.6817570030689,
+      "residual": 0.00019301557036992647,
+      "boundary_l1": 2.4088811334989863e-06,
+      "boundary_bolometric": 2.2542134176740072e-06,
+      "maximum_worker_rss_mib": 3500.2578125,
+      "bitwise_equal_to_workers2": true,
+      "map_speedup_vs_workers2": 1.0,
+      "total_speedup_vs_workers2": 1.0
+    },
+    {
+      "workers": 4,
+      "run": "outputs/hpc/cpu-scaling-20260916/workers4",
+      "total_wall_s": 570.1868566479534,
+      "iteration": 1,
+      "input_path": "outputs/hpc/cpu-scaling-20260916/workers4/state_0.dat",
+      "input_sha256": "eb4c30283322c41ca130db9f6efa1234de0349945e057869e032dd9e736d26a8",
+      "output_path": "outputs/hpc/cpu-scaling-20260916/workers4/state_1.dat",
+      "output_sha256": "e0961399c903ec9c491909c74b7bec119f0965f71e44b73afaa450a5a102cf2f",
+      "wall_s": 511.9963383078575,
+      "residual": 0.00019301557036992647,
+      "boundary_l1": 2.4088811334989863e-06,
+      "boundary_bolometric": 2.2542134176740072e-06,
+      "maximum_worker_rss_mib": 3500.80078125,
+      "bitwise_equal_to_workers2": true,
+      "map_speedup_vs_workers2": 1.3646225660757745,
+      "total_speedup_vs_workers2": 1.3287193074780372
+    },
+    {
+      "workers": 8,
+      "run": "outputs/hpc/cpu-scaling-20260916/workers8",
+      "total_wall_s": 2292.251132218167,
+      "iteration": 1,
+      "input_path": "outputs/hpc/cpu-scaling-20260916/workers8/state_0.dat",
+      "input_sha256": "eb4c30283322c41ca130db9f6efa1234de0349945e057869e032dd9e736d26a8",
+      "output_path": "outputs/hpc/cpu-scaling-20260916/workers8/state_1.dat",
+      "output_sha256": "e0961399c903ec9c491909c74b7bec119f0965f71e44b73afaa450a5a102cf2f",
+      "wall_s": 2233.926255857572,
+      "residual": 0.00019301557036992647,
+      "boundary_l1": 2.4088811334989863e-06,
+      "boundary_bolometric": 2.2542134176740072e-06,
+      "maximum_worker_rss_mib": 3498.5390625,
+      "bitwise_equal_to_workers2": true,
+      "map_speedup_vs_workers2": 0.3127595439513983,
+      "total_speedup_vs_workers2": 0.33051277613077884
+    }
+  ],
+  "environment": {
+    "git_commit": "f38eed9ff5cd43439139c233c19a601412b651c8",
+    "tracked_worktree_dirty": false,
+    "python": "3.12.3 (main, Jan  8 2026, 11:30:50) [GCC 13.3.0]",
+    "platform": "Linux-6.8.0-53-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "logical_host_cpus": 128,
+    "cpu_affinity_count": 8,
+    "scheduler": {
+      "SLURM_JOB_ID": "64408",
+      "SLURM_JOB_PARTITION": "Students",
+      "SLURM_JOB_QOS": "qos_stu_cpu_long",
+      "SLURM_CPUS_PER_TASK": "8",
+      "SLURM_MEM_PER_NODE": "53248",
+      "SLURM_JOB_NODELIST": "anode16"
+    },
+    "cgroup_v2": {},
+    "packages": {
+      "numpy": "2.5.2",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.1",
+      "pytest": "9.1.1"
+    },
+    "project_free_bytes": 992404255969280,
+    "warning": "Host resources are not necessarily this job's allocation."
+  },
+  "script_sha256": "3d127ab744b3b495965bd853b1b75c13ea196be414723fdb818f5b08dc6db09b",
+  "note": "one map per count; cache/order effects are not controlled repetitions"
+}

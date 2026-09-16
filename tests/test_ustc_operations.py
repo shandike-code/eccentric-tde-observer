@@ -2,7 +2,7 @@ import copy
 import pytest
 
 from operations.cpu_scaling_benchmark import compare_cases
-from operations.claude_watch import event_key
+from operations.claude_watch import event_key, retain_scheduler_terminal
 
 
 def test_scaling_requires_equal_output_and_reports_real_speedup():
@@ -34,3 +34,23 @@ def test_watch_does_not_call_model_for_each_block_or_map():
 def test_watch_notices_meaningful_events(update):
     state = {"status": "radiation", "rounds": 14}
     assert event_key(state) != event_key({**state, **update})
+
+
+def test_scheduler_terminal_survives_scontrol_record_expiry(tmp_path):
+    state = {"benchmark_job": "123", "observed_at": "time1",
+             "benchmark_slurm": "JobId=123 JobState=COMPLETED ExitCode=0:0"}
+    retain_scheduler_terminal(tmp_path, state)
+    original = (tmp_path / "scheduler-123.json").read_bytes()
+    expired = {**state, "observed_at": "time2", "benchmark_slurm": "Invalid job id specified"}
+    retain_scheduler_terminal(tmp_path, expired)
+    assert "JobState=COMPLETED" in expired["benchmark_slurm"]
+    assert expired["benchmark_slurm_current_lookup"] == "Invalid job id specified"
+    assert (tmp_path / "scheduler-123.json").read_bytes() == original
+
+
+def test_completed_artifact_is_not_invented_scheduler_evidence(tmp_path):
+    state = {"benchmark_job": "123", "observed_at": "time1", "benchmark": {"status": "complete"},
+             "benchmark_slurm": "Invalid job id specified"}
+    retain_scheduler_terminal(tmp_path, state)
+    assert state["benchmark_terminal_observation"] is None
+    assert not (tmp_path / "scheduler-123.json").exists()
