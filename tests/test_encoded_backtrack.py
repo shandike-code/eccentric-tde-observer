@@ -64,3 +64,16 @@ def test_legacy_state_trial_identity_is_anchored_to_completed_formal_protocol(tm
     trial.write_bytes(b"tampered")
     with pytest.raises(RuntimeError,match="differs"):
         module.verified_source_trial(run,state)
+
+
+def test_initialization_uses_zero_map_api_without_legacy_trial_fallback(tmp_path, monkeypatch):
+    import operations.prepare_encoded_backtrack as module
+    module.pipeline.write_json(tmp_path / "config.json", {"candidate_relaxation": .03125})
+    called = []
+    monkeypatch.setattr(module.pipeline, "run_pipeline", lambda run, **kwargs: called.append((run,kwargs)))
+    with pytest.raises(RuntimeError,match="no legacy fallback"):
+        module.initialize_declared_trial(tmp_path)
+    assert not called
+    (tmp_path / "trial_material.npz").write_bytes(b"owned trial")
+    module.initialize_declared_trial(tmp_path)
+    assert called == [(tmp_path, {"maps_per_job":0,"do_feedback":False})]

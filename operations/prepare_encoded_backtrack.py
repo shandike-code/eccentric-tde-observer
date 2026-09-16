@@ -178,13 +178,27 @@ def prepare(run, source_run, relaxation, workers, maximum_maps):
     print(f"Declared new bounded backtrack: {pipeline.relative(run)}", flush=True)
 
 
+def initialize_declared_trial(run):
+    cfg = pipeline.read(run / "config.json")
+    if cfg.get("candidate_relaxation") != 0.03125 or not (run / "trial_material.npz").is_file():
+        raise RuntimeError("initialization requires the declared new trial; no legacy fallback")
+    # The API supports zero maps. The historical CLI intentionally accepts only
+    # 1..20, so do not send --maps-per-job 0 through that CLI.
+    pipeline.run_pipeline(run, maps_per_job=0, do_feedback=False)
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--run", required=True)
     p.add_argument("--source-run", required=True)
+    p.add_argument("--initialize-only", action="store_true")
     args = p.parse_args()
-    prepare(pipeline.safe_path(ROOT, args.run), pipeline.safe_path(ROOT, args.source_run),
-            relaxation=0.03125, workers=4, maximum_maps=8)
+    run = pipeline.safe_path(ROOT, args.run)
+    if args.initialize_only:
+        initialize_declared_trial(run)
+    else:
+        prepare(run, pipeline.safe_path(ROOT, args.source_run),
+                relaxation=0.03125, workers=4, maximum_maps=8)
 
 
 if __name__ == "__main__":

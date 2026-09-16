@@ -21,7 +21,7 @@ Codex 于 2026-09-16 22:28 经 SSH 验证：`hhe-r025-cont64` 已结束，64 张
 
 不机械追加旧候选 64 张。进行一次**探索性的有界回溯**：从原 `base_encoded_state` 沿原 `finite_direction`，把绝对步长 0.0625 减至 **0.03125**。这不是在旧候选上再走半步，也不是插值其反馈，更不是减小物理 dt。新候选不预设会改善。
 
-- 新 run：`outputs/hpc/hhe-backtrack-r003125-20260916`。
+- 新 run：`outputs/hpc/hhe-backtrack-r003125-20260916-v2`。
 - 候选定义：`encoded_new = original_encoded_base + 0.03125 * original_direction`。
 - 保留原密度、旧物理时间层、相位、dt、能量定义、原 residual baseline 及所有科学门；禁止 floor、裁剪和重归一化。
 - 原 run 的最后辐射输出 `state_1.dat`（SHA `bbad1a837889c93104d2f7b47a47fe35d2cf7e1035792247480ed612a6832c1f`）只作数值初值，不能视为新物质态的辐射解。
@@ -32,7 +32,7 @@ Codex 于 2026-09-16 22:28 经 SSH 验证：`hhe-r025-cont64` 已结束，64 张
 
 `operations/prepare_encoded_backtrack.py` 在 allocation 内验证停止态来源、config/trial SHA、原编码方向恒等式、基准残差和精确物理解码，构造并检查新候选；将原方向、基态所在 NPZ 与新 NPZ 分别固定哈希，写独立声明。
 
-新 trial 在初始化前创建。现有 `pipeline.run --maps-per-job 0 --no-feedback` 只初始化自有辐射槽，检测到已存在的 trial 后不会调用旧 0.0625 迁移。之后调用原诊断 driver，执行 8 张/4 张间隔的独立运行。
+新 trial 在初始化前创建。专用 `--initialize-only` 入口调用现有 Python API `pipeline.run_pipeline(run, maps_per_job=0, do_feedback=False)`，只初始化自有辐射槽，检测到已存在的 trial 后不会调用旧 0.0625 迁移。之后调用原诊断 driver，执行 8 张/4 张间隔的独立运行。
 
 额外运行 `audit_native_trial`：经原 `configure_native` 配置后调用实际 `_second_full_material`，逐值核验镜像全柱的密度、温度、H/He 布居确实来自新候选，并验证旧相位与 dt。旧碰撞/转移/正式反馈核不改动；正式反馈适配器仍会验证新 trial 精确编码、SHA 和物理旧时间层。历史 `src/`、`scripts/`、`hpc/`、`diagnostics/` 无修改。
 
@@ -45,7 +45,7 @@ Mac 相关 69 项测试通过，其中新候选 11 项测试覆盖编码/方向�
 Mac 用 Linux 真实 trial 做精确 decode 比较出现架构差异；没有放宽 guard。真实候选和 native 物质注入核验必须在学校 Linux allocation 内通过，失败即退出，不把 Mac 合成测试冒充 Linux 实测。
 
 ```bash
-TDE_RUN=outputs/hpc/hhe-backtrack-r003125-20260916 \
+TDE_RUN=outputs/hpc/hhe-backtrack-r003125-20260916-v2 \
 TDE_SOURCE_RUN=outputs/hpc/hhe-r025-cont64 \
 sbatch --parsable operations/encoded_backtrack.sbatch
 ```
@@ -53,3 +53,10 @@ sbatch --parsable operations/encoded_backtrack.sbatch
 单批直接提交，不创建第二个自动提交者。信号时尽量在现有可恢复边界停止；正式反馈中的超时恢复仍需查实际 manifest，不承诺所有阶段都能在 USR1 后瞬时退出。再次提交同一个 run 前核对队列、声明和输入，准备器验证已有声明，不覆盖旧 run。
 
 平台 Claude watcher 已支持从新 run 配置读取预算及候选，并可直接监督一个 `--science-job JOBID`，保存调度器终态；有界作业结束即交 Codex 审阅，不扩预算。下一次本任务跟进应先读本报告及新 run，cont64 保持归档态。
+
+## 准备阶段实测与两次接口修复
+
+- 作业 64598 在准备阶段因历史 state 没有 `trial_sha256` 失败；未创建候选、未算 map。改用最后一轮已完成正式反馈协议及其 trial 的 SHA 作为身份锚，协议本身也与 state 中的声明 SHA 核对，不绕过完整性验证。
+- 作业 64607 已在 Linux allocation 通过真实候选检查及 native 注入核验：镜像全柱密度、温度、H/He 布居逐值一致，原相位与 dt 一致。新候选 trial SHA 为 `f0c35fff1f47aaf6189cfc2d90a8db398a654939d3cff7fa0f11875d756c66e7`。随后旧 CLI 拒绝零 map 参数（只允许 1..20），未开始辐射初始化或新 map。
+- 第二项修复通过专用入口直接调用支持零 map 的既有 API，缺少自有新 trial 就拒绝，避免回退到旧候选迁移或多算预算外 map。准备脚本与 batch 脚本已变更，旧 run 声明保留，新建 `-v2` run，不篡改旧声明。
+- 增加历史协议身份与零 map 初始化的回归测试；当前候选与监督相关测试合计 23 项通过。测试不能替代下一次真实初始化及 worker 开始的验证。

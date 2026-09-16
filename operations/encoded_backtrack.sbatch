@@ -38,6 +38,7 @@ run_step "$python_bin" operations/prepare_encoded_backtrack.py \
   --run "${TDE_RUN:?}" --source-run "${TDE_SOURCE_RUN:?}"
 # Existing trial_material.npz is owned and hashed by the new declaration;
 # pipeline initialization consumes it without invoking the old 0.0625 migration.
-run_step "$python_bin" hpc/pipeline.py run --run "$TDE_RUN" --maps-per-job 0 --no-feedback
+run_step "$python_bin" operations/prepare_encoded_backtrack.py --run "$TDE_RUN" \
+  --source-run "$TDE_SOURCE_RUN" --initialize-only
 run_step "$python_bin" diagnostics/interval_diagnostic.py --run "$TDE_RUN" \
   --maps-per-job 8 --feedback-every 4
