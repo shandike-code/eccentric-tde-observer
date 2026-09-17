@@ -45,3 +45,16 @@ def test_single_process_audit_fits_default_allocation(monkeypatch):
     require_audit_allocation()
     monkeypatch.setenv('SLURM_MEM_PER_NODE','4096')
     with pytest.raises(RuntimeError):require_audit_allocation()
+
+
+def test_audit_paths_accept_internal_absolute_and_reject_escape(tmp_path,monkeypatch):
+    import operations.localize_confirmation as audit
+    root=tmp_path/'repo';root.mkdir();inside=root/'state.json';inside.write_text('{}')
+    outside=tmp_path/'other.json';outside.write_text('{}')
+    monkeypatch.setattr(audit,'ROOT',root)
+    assert audit.audit_path(inside)==inside
+    assert audit.audit_path('state.json')==inside
+    for path in (outside,'../other.json'):
+        with pytest.raises(ValueError):audit.audit_path(path)
+    link=root/'escape.json';link.symlink_to(outside)
+    with pytest.raises(ValueError):audit.audit_path(link)

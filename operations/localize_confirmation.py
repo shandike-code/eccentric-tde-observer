@@ -60,6 +60,13 @@ def rank(values, count=12):
     return [{'index': int(i), 'value': float(x[i])} for i in np.argsort(abs(x))[::-1][:count]]
 
 
+def audit_path(path):
+    # 内部调用持有绝对Path；先显式转为仓库相对路径，仍用原守卫拒绝逃逸。
+    path = Path(path)
+    relative = path.relative_to(ROOT) if path.is_absolute() else path
+    return pipeline.safe_path(ROOT, str(relative))
+
+
 def require_audit_allocation():
     # 单一串行分析进程；allocation 的 4 CPU 不是 4 个 6GiB 重型worker。
     pipeline.require_allocation(1)
@@ -80,7 +87,7 @@ def main():
     pipeline.write_json(out/'declaration.json', {'arguments': vars(args), 'sources': [pipeline.claim(Path(__file__)), pipeline.claim(Path(__file__).with_suffix('.sbatch'))], 'scope': 'read-only localization; fixed source; no continuation'})
     claims = {}
     def pin(path, expected=None):
-        path = pipeline.safe_path(ROOT, str(path))
+        path = audit_path(path)
         item = pipeline.claim(path)
         if expected is not None and item['sha256'] != expected:
             raise RuntimeError(f'artifact changed: {path}')
