@@ -1,0 +1,102 @@
+{
+  "classification": "read-only parity localization; no new radiation or acceptance",
+  "package": "outputs/baseline-audit-inputs-20260917",
+  "physical_phase": 1367,
+  "physical_dt_s": 889.419892762322,
+  "identities": {
+    "target_equals_base_plus_stored_maximum_difference": 0.0,
+    "stored_residual_l2": 15.588863511319733,
+    "decode_roundtrip_maximum_difference": 0.0,
+    "equation_versus_recovered_replay_maximum_difference": 1.1368683772161603e-13,
+    "ledger_split_self_check": 0.0,
+    "nonphysical_response_cells": 0
+  },
+  "populations": {
+    "hydrogen_maximum_absolute_difference": 0.0,
+    "helium_maximum_absolute_difference": 0.0,
+    "temperature_replayed_maximum": 701017.5699468548
+  },
+  "stored_norms": {
+    "l2": 15.588863511319733,
+    "mass_weighted_l2": 0.6152845019444865,
+    "maximum_cell": 3.476087869801306,
+    "worst_cell": 3,
+    "maximum_energy_component": 3.4593170891763307,
+    "maximum_population_logratio_component": 0.44858959369550533
+  },
+  "verdict": {
+    "rtol": 1e-11,
+    "atol": 3e-13,
+    "passed": true,
+    "worst_absolute_difference_over_allowed": 0.0,
+    "definition": "allclose(replay, stored, rtol, atol)"
+  },
+  "difference": {
+    "finite": true,
+    "l2_replayed": 15.588863511319733,
+    "l2_stored": 15.588863511319733,
+    "l2_difference": 0.0,
+    "maximum_absolute_difference": 0.0,
+    "maximum_relative_difference": 0.0,
+    "worst": {
+      "cell": 0,
+      "component": "energy",
+      "component_index": 0,
+      "replayed": 2.017248950022129,
+      "stored": 2.017248950022129,
+      "difference": 0.0
+    },
+    "components": {
+      "energy": {
+        "maximum_absolute_difference": 0.0,
+        "rms_difference": 0.0,
+        "maximum_stored_magnitude": 3.4593170891763307,
+        "maximum_replayed_magnitude": 3.4593170891763307,
+        "worst_cell": 0
+      },
+      "hydrogen_logratio": {
+        "maximum_absolute_difference": 0.0,
+        "rms_difference": 0.0,
+        "maximum_stored_magnitude": 0.44858959369550533,
+        "maximum_replayed_magnitude": 0.44858959369550533,
+        "worst_cell": 0
+      },
+      "helium_logratio": {
+        "maximum_absolute_difference": 0.0,
+        "rms_difference": 0.0,
+        "maximum_stored_magnitude": 0.15395140766331394,
+        "maximum_replayed_magnitude": 0.15395140766331394,
+        "worst_cell": 0
+      },
+      "electron_logratio": {
+        "maximum_absolute_difference": 0.0,
+        "rms_difference": 0.0,
+        "maximum_stored_magnitude": 0.1539473167405241,
+        "maximum_replayed_magnitude": 0.1539473167405241,
+        "worst_cell": 0
+      }
+    },
+    "exceedance_counts": {
+      "absolute_difference_above_0e+00": 0,
+      "absolute_difference_above_1e-16": 0,
+      "absolute_difference_above_1e-15": 0,
+      "absolute_difference_above_1e-13": 0,
+      "absolute_difference_above_1e-12": 0,
+      "absolute_difference_above_1e-11": 0,
+      "absolute_difference_above_1e-09": 0,
+      "absolute_difference_above_1e-06": 0
+    }
+  },
+  "environment": {
+    "python": "3.12.9",
+    "platform": "macOS-15.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "git_head": "02a3635b2edc9bc2a0218b9a29491ff02964c222",
+    "git_status": "?? operations/debug_baseline_parity.py\n?? operations/debug_baseline_parity.sbatch\n"
+  },
+  "numpy_blas": "accelerate",
+  "numpy_lapack": "accelerate",
+  "note": "Mac replay of the archived 7B9f baseline response is bit-identical to the stored residual"
+}
