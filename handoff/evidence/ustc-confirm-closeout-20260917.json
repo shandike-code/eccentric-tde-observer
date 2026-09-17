@@ -1,0 +1,564 @@
+{
+  "observed_at": "2026-09-17T12:22:49.458729+08:00",
+  "run": "outputs/hpc/hhe-r003125-confirm-20260917",
+  "state_sha256": "a8ee11dc5f1dfcb6887baabc43ab3e76211b409a5779f28e5e171d0a8574a726",
+  "status": "diagnostic_round_complete",
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/hhe-r003125-confirm-20260917/state_0.dat",
+      "input_sha256": "829600014fd346e0ea1701e48a78514813159bc918f6f8869814dcb4bdd953f7",
+      "output_path": "outputs/hpc/hhe-r003125-confirm-20260917/state_1.dat",
+      "output_sha256": "d37b42b08055ea2583ac6dbf431ab61cf85e48ce09bc54336bba3653c0e4d9e9",
+      "wall_s": 131.7964019260835,
+      "residual": 0.0003050051030725449,
+      "boundary_l1": 8.86121799684056e-05,
+      "boundary_bolometric": 8.854852854522603e-05,
+      "maximum_worker_rss_mib": 3497.55078125
+    },
+    {
+      "iteration": 2,
+      "input_path": "outputs/hpc/hhe-r003125-confirm-20260917/state_1.dat",
+      "input_sha256": "d37b42b08055ea2583ac6dbf431ab61cf85e48ce09bc54336bba3653c0e4d9e9",
+      "output_path": "outputs/hpc/hhe-r003125-confirm-20260917/state_2.dat",
+      "output_sha256": "d2360465b2c4fefe4997a384b1e67cc5aad4731c3a514bf3e98977d1649c15d1",
+      "wall_s": 139.56889231619425,
+      "residual": 0.0002911377963217655,
+      "boundary_l1": 8.438467413249032e-05,
+      "boundary_bolometric": 8.432923412918625e-05,
+      "maximum_worker_rss_mib": 3499.23046875
+    },
+    {
+      "iteration": 3,
+      "input_path": "outputs/hpc/hhe-r003125-confirm-20260917/state_2.dat",
+      "input_sha256": "d2360465b2c4fefe4997a384b1e67cc5aad4731c3a514bf3e98977d1649c15d1",
+      "output_path": "outputs/hpc/hhe-r003125-confirm-20260917/state_0.dat",
+      "output_sha256": "e49e4669b3515fa75e27729f50f5625da82565826b94a79328eaeffd28a114cb",
+      "wall_s": 130.8254765800666,
+      "residual": 0.00027791203009435063,
+      "boundary_l1": 8.037561670409533e-05,
+      "boundary_bolometric": 8.032748090391873e-05,
+      "maximum_worker_rss_mib": 3502.08203125
+    },
+    {
+      "iteration": 4,
+      "input_path": "outputs/hpc/hhe-r003125-confirm-20260917/state_0.dat",
+      "input_sha256": "e49e4669b3515fa75e27729f50f5625da82565826b94a79328eaeffd28a114cb",
+      "output_path": "outputs/hpc/hhe-r003125-confirm-20260917/state_1.dat",
+      "output_sha256": "89f92df854891b2286d67228e3d1ae4758fa27af090df5e285abdefc59f96473",
+      "wall_s": 137.54693274991587,
+      "residual": 0.00026692765305757376,
+      "boundary_l1": 7.657204205113812e-05,
+      "boundary_bolometric": 7.65304141824878e-05,
+      "maximum_worker_rss_mib": 3498.03515625
+    },
+    {
+      "iteration": 5,
+      "input_path": "outputs/hpc/hhe-r003125-confirm-20260917/state_1.dat",
+      "input_sha256": "89f92df854891b2286d67228e3d1ae4758fa27af090df5e285abdefc59f96473",
+      "output_path": "outputs/hpc/hhe-r003125-confirm-20260917/state_2.dat",
+      "output_sha256": "167d41d6f2a66fc79350c58c0e29a058899f460a8b62a9d6b4b2dfb21d6cde9a",
+      "wall_s": 132.85911355400458,
+      "residual": 0.0002647843785870884,
+      "boundary_l1": 7.296187244871513e-05,
+      "boundary_bolometric": 7.292605124452577e-05,
+      "maximum_worker_rss_mib": 3499.76953125
+    },
+    {
+      "iteration": 6,
+      "input_path": "outputs/hpc/hhe-r003125-confirm-20260917/state_2.dat",
+      "input_sha256": "167d41d6f2a66fc79350c58c0e29a058899f460a8b62a9d6b4b2dfb21d6cde9a",
+      "output_path": "outputs/hpc/hhe-r003125-confirm-20260917/state_0.dat",
+      "output_sha256": "b0947a325332a16193aec73c571f66af3b77553c99a9ce70b497bcaf964ab56b",
+      "wall_s": 129.1472153661307,
+      "residual": 0.0002626669507870645,
+      "boundary_l1": 6.953384881609792e-05,
+      "boundary_bolometric": 6.950321474755131e-05,
+      "maximum_worker_rss_mib": 3498.59765625
+    },
+    {
+      "iteration": 7,
+      "input_path": "outputs/hpc/hhe-r003125-confirm-20260917/state_0.dat",
+      "input_sha256": "b0947a325332a16193aec73c571f66af3b77553c99a9ce70b497bcaf964ab56b",
+      "output_path": "outputs/hpc/hhe-r003125-confirm-20260917/state_1.dat",
+      "output_sha256": "5413940e5cde2305ce6e9ba63a8adbd387e6b43a7159156b5fba36d94a1fe14d",
+      "wall_s": 126.55231042718515,
+      "residual": 0.0002605738248602584,
+      "boundary_l1": 6.627746762072798e-05,
+      "boundary_bolometric": 6.62514717096519e-05,
+      "maximum_worker_rss_mib": 3495.40625
+    },
+    {
+      "iteration": 8,
+      "input_path": "outputs/hpc/hhe-r003125-confirm-20260917/state_1.dat",
+      "input_sha256": "5413940e5cde2305ce6e9ba63a8adbd387e6b43a7159156b5fba36d94a1fe14d",
+      "output_path": "outputs/hpc/hhe-r003125-confirm-20260917/state_2.dat",
+      "output_sha256": "210e49bbc8192272ec6facd8bc5831151d44f1d108ff9b515334c33ad6f2776d",
+      "wall_s": 129.11987632908858,
+      "residual": 0.0002585044902010653,
+      "boundary_l1": 6.31829231668892e-05,
+      "boundary_bolometric": 6.316107756977007e-05,
+      "maximum_worker_rss_mib": 3498.83203125
+    }
+  ],
+  "diagnostic": {
+    "rounds": [
+      {
+        "round": 1,
+        "endpoints": [
+          3,
+          4
+        ],
+        "protocol_sha256": "b7241d5f1dc94b6b573818238961efd95479dc61595e819b9196630ad87b59db",
+        "endpoints_claim": {
+          "previous": {
+            "path": "outputs/hpc/hhe-r003125-confirm-20260917/state_2.dat",
+            "sha256": "d2360465b2c4fefe4997a384b1e67cc5aad4731c3a514bf3e98977d1649c15d1",
+            "size_bytes": 10099884032
+          },
+          "final": {
+            "path": "outputs/hpc/hhe-r003125-confirm-20260917/state_0.dat",
+            "sha256": "e49e4669b3515fa75e27729f50f5625da82565826b94a79328eaeffd28a114cb",
+            "size_bytes": 10099884032
+          }
+        },
+        "slot_reuse_note": "radiation state slots rotate across three files; the retained small artifacts stay verifiable, but these large states may later be overwritten and the round may then not be re-runnable at these paths",
+        "feedback_wall_s": 287.2715641472023,
+        "accepted": false,
+        "failed_gates": [
+          "all_residual_components_finite_pass",
+          "candidate_l2_contraction_pass",
+          "candidate_mass_weighted_contraction_pass",
+          "candidate_maximum_cell_contraction_pass",
+          "final_material_response_physical_pass",
+          "inner_noise_resolved_pass",
+          "population_nonnegative_pass",
+          "previous_material_response_physical_pass",
+          "two_inner_radiation_residuals_pass"
+        ],
+        "decision": {
+          "formal_h_he_feedback_pair_passed": true,
+          "finite_trial_accepted_as_one_nonlinear_step": false,
+          "finite_trial_rejected": true,
+          "static_approximation_rejected_from_one_failed_trial": false,
+          "dynamic_nlte_solution_accepted": false,
+          "phase4_replacement": false,
+          "real_line_formation": false
+        },
+        "ledger": "outputs/hpc/hhe-r003125-confirm-20260917/feedback-round1/material_energy_ledger.json",
+        "ledger_heating_ratio": 0.0005056398862444561
+      },
+      {
+        "round": 2,
+        "endpoints": [
+          7,
+          8
+        ],
+        "protocol_sha256": "ea7174b1cc9855b775b789fc3024889574fcf4d4454751f3ad7caf4f693ff0bd",
+        "endpoints_claim": {
+          "previous": {
+            "path": "outputs/hpc/hhe-r003125-confirm-20260917/state_0.dat",
+            "sha256": "b0947a325332a16193aec73c571f66af3b77553c99a9ce70b497bcaf964ab56b",
+            "size_bytes": 10099884032
+          },
+          "final": {
+            "path": "outputs/hpc/hhe-r003125-confirm-20260917/state_1.dat",
+            "sha256": "5413940e5cde2305ce6e9ba63a8adbd387e6b43a7159156b5fba36d94a1fe14d",
+            "size_bytes": 10099884032
+          }
+        },
+        "slot_reuse_note": "radiation state slots rotate across three files; the retained small artifacts stay verifiable, but these large states may later be overwritten and the round may then not be re-runnable at these paths",
+        "feedback_wall_s": 291.9377718591131,
+        "accepted": false,
+        "failed_gates": [
+          "all_residual_components_finite_pass",
+          "candidate_l2_contraction_pass",
+          "candidate_mass_weighted_contraction_pass",
+          "candidate_maximum_cell_contraction_pass",
+          "final_material_response_physical_pass",
+          "inner_noise_resolved_pass",
+          "last_two_atomic_heating_pass",
+          "last_two_direct_heating_pass",
+          "last_two_formal_heating_pass",
+          "population_nonnegative_pass",
+          "previous_material_response_physical_pass",
+          "two_inner_radiation_residuals_pass"
+        ],
+        "decision": {
+          "formal_h_he_feedback_pair_passed": true,
+          "finite_trial_accepted_as_one_nonlinear_step": false,
+          "finite_trial_rejected": true,
+          "static_approximation_rejected_from_one_failed_trial": false,
+          "dynamic_nlte_solution_accepted": false,
+          "phase4_replacement": false,
+          "real_line_formation": false
+        },
+        "ledger": "outputs/hpc/hhe-r003125-confirm-20260917/feedback-round2/material_energy_ledger.json",
+        "ledger_heating_ratio": 0.0012172274869892542
+      }
+    ]
+  },
+  "active_map": false,
+  "pending_feedback": null,
+  "scheduler_note": "scontrol returned no retained record at observation; no terminal exit code inferred from this query",
+  "rounds": [
+    {
+      "round": 1,
+      "comparison": {
+        "photoionization_volume_l1": [
+          8.32788440972327e-05,
+          0.00023492282158741666,
+          3.58638427593055e-08
+        ],
+        "total_recombination_volume_l1": [
+          1.6373438964698021e-06,
+          2.1157151856473683e-07,
+          1.4890933371435023e-13
+        ],
+        "atomic_heating_volume_l1": 0.0005056398862444561,
+        "direct_heating_volume_l1": 0.0005056398862448635,
+        "formal_heating_volume_l1": 0.0005056389357304355,
+        "inner_noise_to_trial_signal_l2_ratio": null,
+        "candidate_to_base_residual_l2_ratio": null,
+        "candidate_to_base_mass_weighted_norm_ratio": null,
+        "candidate_to_base_maximum_cell_norm_ratio": null,
+        "not_evaluated_reason": "finite material response left the physical domain"
+      },
+      "gate_checks": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": true,
+        "last_two_direct_heating_pass": true,
+        "last_two_formal_heating_pass": true,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": false,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "decision": {
+        "formal_h_he_feedback_pair_passed": true,
+        "finite_trial_accepted_as_one_nonlinear_step": false,
+        "finite_trial_rejected": true,
+        "static_approximation_rejected_from_one_failed_trial": false,
+        "dynamic_nlte_solution_accepted": false,
+        "phase4_replacement": false,
+        "real_line_formation": false
+      },
+      "inputs": {
+        "trial_material": {
+          "path": "outputs/hpc/hhe-r003125-confirm-20260917/trial_material.npz",
+          "sha256": "f0c35fff1f47aaf6189cfc2d90a8db398a654939d3cff7fa0f11875d756c66e7"
+        },
+        "old_time_level": {
+          "sha256": "33f248d5cf35ac07fffd139e1cd99d4edefa590debf7e109f67f2dbc57adf455",
+          "phase": 1367
+        },
+        "previous_feedback": {
+          "path": "outputs/hpc/hhe-r003125-confirm-20260917/feedback-round1/previous_feedback.npz",
+          "sha256": "bfb1a5bebacba85cbfd94b10878eb7fcb3f4453a6c9ea5dffc5544f145cc5d47"
+        },
+        "final_feedback": {
+          "path": "outputs/hpc/hhe-r003125-confirm-20260917/feedback-round1/final_feedback.npz",
+          "sha256": "156b5ed4b096d0d41537f16bb51b5938e729e3cd9c5424aaed3b34d1dca372d1"
+        }
+      },
+      "step_duration_s": 889.419892762322,
+      "endpoints": {
+        "previous": {
+          "cells": 128,
+          "failing_cells": 43,
+          "failing_mass_fraction": 0.6080197463236496,
+          "relative_worst": {
+            "criterion": "minimum remaining gas heat relative to that cell's old gas heat",
+            "cell": 106,
+            "ratio": -2.063451626525659,
+            "remaining_erg_g": -23340830852491.723
+          },
+          "split_self_check": 0.0,
+          "absolute_worst_cell_ledger": {
+            "cell": 106,
+            "mass_fraction": 0.014647361969020492,
+            "old_gas_heat_erg_g": 11311547386158.936,
+            "old_ionization_erg_g": 14415349855317.645,
+            "old_total_erg_g": 25726897241476.58,
+            "new_ionization_erg_g": 14415349853311.43,
+            "delta_ionization_erg_g": -2006.21484375,
+            "q_erg_s_cm3": -1.83160865377504,
+            "dt_times_q_over_rho_erg_g": -34652378240656.87,
+            "target_total_erg_g": -8925480999180.293,
+            "remaining_gas_heat_erg_g": -23340830852491.723,
+            "remaining_over_old_gas_heat": -2.063451626525659,
+            "old_hydrogen": [
+              5.835482022523166e-09,
+              0.9999999941645179
+            ],
+            "new_hydrogen": [
+              5.845300034490031e-09,
+              0.9999999941547
+            ],
+            "delta_hydrogen": [
+              9.818011966865407e-12,
+              -9.817924251365184e-12
+            ],
+            "old_helium": [
+              1.360038596800951e-12,
+              2.4630810509851386e-05,
+              0.9999753691881301
+            ],
+            "new_helium": [
+              1.4699736185109696e-12,
+              2.4631335643454655e-05,
+              0.9999753686628866
+            ],
+            "delta_helium": [
+              1.0993502171001855e-13,
+              5.251336032685572e-10,
+              -5.252435153479951e-10
+            ]
+          }
+        },
+        "final": {
+          "cells": 128,
+          "failing_cells": 43,
+          "failing_mass_fraction": 0.6080197463236496,
+          "relative_worst": {
+            "criterion": "minimum remaining gas heat relative to that cell's old gas heat",
+            "cell": 106,
+            "ratio": -2.0601854129135484,
+            "remaining_erg_g": -23303884922445.016
+          },
+          "split_self_check": 0.0,
+          "absolute_worst_cell_ledger": {
+            "cell": 106,
+            "mass_fraction": 0.014647361969020492,
+            "old_gas_heat_erg_g": 11311547386158.936,
+            "old_ionization_erg_g": 14415349855317.645,
+            "old_total_erg_g": 25726897241476.58,
+            "new_ionization_erg_g": 14415349853303.021,
+            "delta_ionization_erg_g": -2014.623046875,
+            "q_erg_s_cm3": -1.829655815654956,
+            "dt_times_q_over_rho_erg_g": -34615432310618.57,
+            "target_total_erg_g": -8888535069141.992,
+            "remaining_gas_heat_erg_g": -23303884922445.016,
+            "remaining_over_old_gas_heat": -2.0601854129135484,
+            "old_hydrogen": [
+              5.835482022523166e-09,
+              0.9999999941645179
+            ],
+            "new_hydrogen": [
+              5.8458769636627816e-09,
+              0.9999999941541231
+            ],
+            "delta_hydrogen": [
+              1.0394941139615917e-11,
+              -1.0394796134960416e-11
+            ],
+            "old_helium": [
+              1.360038596800951e-12,
+              2.4630810509851386e-05,
+              0.9999753691881301
+            ],
+            "new_helium": [
+              1.4695735943603224e-12,
+              2.463133650631999e-05,
+              0.9999753686620241
+            ],
+            "delta_helium": [
+              1.0953499755937139e-13,
+              5.259964686032959e-10,
+              -5.261060476158264e-10
+            ]
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "comparison": {
+        "photoionization_volume_l1": [
+          6.984182617214193e-05,
+          0.0002268518001523436,
+          2.9292551002209577e-08
+        ],
+        "total_recombination_volume_l1": [
+          1.3961880459813525e-06,
+          2.032011246459611e-07,
+          1.2159792753305157e-13
+        ],
+        "atomic_heating_volume_l1": 0.0012172274869892542,
+        "direct_heating_volume_l1": 0.0012172274869901795,
+        "formal_heating_volume_l1": 0.0012172252125729627,
+        "inner_noise_to_trial_signal_l2_ratio": null,
+        "candidate_to_base_residual_l2_ratio": null,
+        "candidate_to_base_mass_weighted_norm_ratio": null,
+        "candidate_to_base_maximum_cell_norm_ratio": null,
+        "not_evaluated_reason": "finite material response left the physical domain"
+      },
+      "gate_checks": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": false,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "decision": {
+        "formal_h_he_feedback_pair_passed": true,
+        "finite_trial_accepted_as_one_nonlinear_step": false,
+        "finite_trial_rejected": true,
+        "static_approximation_rejected_from_one_failed_trial": false,
+        "dynamic_nlte_solution_accepted": false,
+        "phase4_replacement": false,
+        "real_line_formation": false
+      },
+      "inputs": {
+        "trial_material": {
+          "path": "outputs/hpc/hhe-r003125-confirm-20260917/trial_material.npz",
+          "sha256": "f0c35fff1f47aaf6189cfc2d90a8db398a654939d3cff7fa0f11875d756c66e7"
+        },
+        "old_time_level": {
+          "sha256": "33f248d5cf35ac07fffd139e1cd99d4edefa590debf7e109f67f2dbc57adf455",
+          "phase": 1367
+        },
+        "previous_feedback": {
+          "path": "outputs/hpc/hhe-r003125-confirm-20260917/feedback-round2/previous_feedback.npz",
+          "sha256": "563e4a2601149471c7205cdba59611b0d944888385ec3bd17839109f73487882"
+        },
+        "final_feedback": {
+          "path": "outputs/hpc/hhe-r003125-confirm-20260917/feedback-round2/final_feedback.npz",
+          "sha256": "e3808f43c9989ee146dfe10d4833808acf2d7ef91311fd3d2a42689721c7d67a"
+        }
+      },
+      "step_duration_s": 889.419892762322,
+      "endpoints": {
+        "previous": {
+          "cells": 128,
+          "failing_cells": 43,
+          "failing_mass_fraction": 0.6080197463236496,
+          "relative_worst": {
+            "criterion": "minimum remaining gas heat relative to that cell's old gas heat",
+            "cell": 106,
+            "ratio": -2.043739550958673,
+            "remaining_erg_g": -23117856775636.21
+          },
+          "split_self_check": 0.0,
+          "absolute_worst_cell_ledger": {
+            "cell": 106,
+            "mass_fraction": 0.014647361969020492,
+            "old_gas_heat_erg_g": 11311547386158.936,
+            "old_ionization_erg_g": 14415349855317.645,
+            "old_total_erg_g": 25726897241476.58,
+            "new_ionization_erg_g": 14415349853279.896,
+            "delta_ionization_erg_g": -2037.748046875,
+            "q_erg_s_cm3": -1.819822990873579,
+            "dt_times_q_over_rho_erg_g": -34429404163832.89,
+            "target_total_erg_g": -8702506922356.3125,
+            "remaining_gas_heat_erg_g": -23117856775636.21,
+            "remaining_over_old_gas_heat": -2.043739550958673,
+            "old_hydrogen": [
+              5.835482022523166e-09,
+              0.9999999941645179
+            ],
+            "new_hydrogen": [
+              5.847473258573905e-09,
+              0.9999999941525268
+            ],
+            "delta_hydrogen": [
+              1.1991236050739716e-11,
+              -1.1991074799766466e-11
+            ],
+            "old_helium": [
+              1.360038596800951e-12,
+              2.4630810509851386e-05,
+              0.9999753691881301
+            ],
+            "new_helium": [
+              1.468390919167681e-12,
+              2.4631338857217244e-05,
+              0.9999753686596744
+            ],
+            "delta_helium": [
+              1.0835232236673006e-13,
+              5.283473658579396e-10,
+              -5.28455723625143e-10
+            ]
+          }
+        },
+        "final": {
+          "cells": 128,
+          "failing_cells": 43,
+          "failing_mass_fraction": 0.6080197463236496,
+          "relative_worst": {
+            "criterion": "minimum remaining gas heat relative to that cell's old gas heat",
+            "cell": 106,
+            "ratio": -2.0361657144188765,
+            "remaining_erg_g": -23032184964721.285
+          },
+          "split_self_check": 0.0,
+          "absolute_worst_cell_ledger": {
+            "cell": 106,
+            "mass_fraction": 0.014647361969020492,
+            "old_gas_heat_erg_g": 11311547386158.936,
+            "old_ionization_erg_g": 14415349855317.645,
+            "old_total_erg_g": 25726897241476.58,
+            "new_ionization_erg_g": 14415349853272.832,
+            "delta_ionization_erg_g": -2044.8125,
+            "q_erg_s_cm3": -1.8152946658866576,
+            "dt_times_q_over_rho_erg_g": -34343732352925.03,
+            "target_total_erg_g": -8616835111448.453,
+            "remaining_gas_heat_erg_g": -23032184964721.285,
+            "remaining_over_old_gas_heat": -2.0361657144188765,
+            "old_hydrogen": [
+              5.835482022523166e-09,
+              0.9999999941645179
+            ],
+            "new_hydrogen": [
+              5.847963108144959e-09,
+              0.9999999941520369
+            ],
+            "delta_hydrogen": [
+              1.2481085621793442e-11,
+              -1.2481016220533547e-11
+            ],
+            "old_helium": [
+              1.360038596800951e-12,
+              2.4630810509851386e-05,
+              0.9999753691881301
+            ],
+            "new_helium": [
+              1.4680024405243466e-12,
+              2.4631339568981225e-05,
+              0.999975368658963
+            ],
+            "delta_helium": [
+              1.079638437233956e-13,
+              5.290591298390268e-10,
+              -5.291671545393228e-10
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
