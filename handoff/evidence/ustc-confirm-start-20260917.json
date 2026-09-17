@@ -1,0 +1,34 @@
+{
+  "observed_at": "2026-09-17T11:43:45.274408+08:00",
+  "submission": {
+    "job_id": "71765",
+    "run": "outputs/hpc/hhe-r003125-confirm-20260917",
+    "submitted_at": "2026-09-17T11:41:52.277105+08:00",
+    "commit": "949d01e4fde4b30ae8cf9afd773fabe278de25a7",
+    "cpus": 32,
+    "memory_gib": 128,
+    "wall_limit": "02:00:00",
+    "workers": 16,
+    "maximum_maps": 8,
+    "feedback_every": 4
+  },
+  "scheduler": "JobId=71765 JobName=tde-confirm UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:01:53 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-09-17T11:41:52 EligibleTime=2026-09-17T11:41:52 AccrueTime=2026-09-17T11:41:52 StartTime=2026-09-17T11:41:52 EndTime=2026-09-17T13:41:52 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-17T11:41:52 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2745220 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode17 BatchHost=anode17 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/confirm_inner_threshold.sbatch SubmitLine=sbatch --parsable operations/confirm_inner_threshold.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-confirm-71765.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-confirm-71765.out TresPerTask=cpu=32",
+  "status": "radiation",
+  "maps": 0,
+  "committed_blocks": 16,
+  "native_trial_audit": {
+    "trial_source": {
+      "path": "outputs/hpc/hhe-r003125-confirm-20260917/trial_material.npz",
+      "size_bytes": 27774,
+      "sha256": "f0c35fff1f47aaf6189cfc2d90a8db398a654939d3cff7fa0f11875d756c66e7"
+    },
+    "native_mirrored_material_exact": true,
+    "physical_phase_and_dt_exact": true
+  },
+  "watch": {
+    "last_event": "d0ddcda2c29813d979c55fe4e617236770b8134af158ecb8a6e118043060d4ec",
+    "reviews": 2,
+    "heartbeat": "2026-09-17T11:43:06.771322+08:00",
+    "status": "watching"
+  }
+}
