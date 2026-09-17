@@ -1,0 +1,70 @@
+{
+  "observed_at": "2026-09-17T09:21:03.501423+08:00",
+  "submission": {
+    "job_id": "71606",
+    "run": "outputs/hpc/scale32-cont-20260917",
+    "science_run": "outputs/hpc/scale32-cont-20260917/science",
+    "submitted_at": "2026-09-17T09:19:38.852810+08:00",
+    "code_commit": "b51b583d7e6bd75a90cae2821c5baca040bcd302",
+    "cpus": 32,
+    "memory_gib": 128,
+    "wall_limit": "08:00:00",
+    "benchmark_order": [
+      4,
+      8,
+      16,
+      16,
+      8,
+      4
+    ],
+    "maximum_science_maps": 32,
+    "feedback_every": 8
+  },
+  "scheduler": "JobId=71606 JobName=tde-scale32-cont UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:01:24 TimeLimit=08:00:00 TimeMin=N/A SubmitTime=2026-09-17T09:19:38 EligibleTime=2026-09-17T09:19:38 AccrueTime=2026-09-17T09:19:38 StartTime=2026-09-17T09:19:39 EndTime=2026-09-17T17:19:39 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-17T09:19:39 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:963860 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode17 BatchHost=anode17 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/scale_then_continue.sbatch SubmitLine=sbatch --parsable operations/scale_then_continue.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-scale32-cont-71606.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-scale32-cont-71606.out TresPerTask=cpu=32",
+  "benchmark_status": "running",
+  "cpu_affinity": [
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118
+  ],
+  "first_case": {
+    "status": "radiation",
+    "completed_maps": 0,
+    "committed_blocks": 4
+  },
+  "watch": {
+    "last_event": "99bca4ed127ab6ec1d1a6d51fc83739f6b0a1d45b79b41ed6e4891e7e92aba9c",
+    "reviews": 2,
+    "heartbeat": "2026-09-17T09:20:48.637172+08:00",
+    "status": "watching"
+  }
+}
