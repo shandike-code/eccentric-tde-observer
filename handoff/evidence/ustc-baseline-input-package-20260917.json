@@ -1,0 +1,194 @@
+{
+  "classification": "immutable archived baseline feedback; no new radiation evaluation",
+  "package_prefix": "outputs/baseline-audit-inputs-20260917",
+  "files": [
+    {
+      "path": "outputs/checkpoints/phase7b9f_base_residual_manifest.json",
+      "size_bytes": 19827,
+      "sha256": "e18fadefa8527164722b550c1c7c16d5b07caf50a22005c518af09d962add350"
+    },
+    {
+      "path": "outputs/phase7b4r_depth128_phase2048.npz",
+      "size_bytes": 17159976,
+      "sha256": "33f248d5cf35ac07fffd139e1cd99d4edefa590debf7e109f67f2dbc57adf455"
+    },
+    {
+      "path": "outputs/phase7b7h_second_material_iterate.npz",
+      "size_bytes": 13918,
+      "sha256": "815bf2f3bc9122f380e8870a3d968eea6bf9c8b263b8f220da1d58569775f7b8"
+    },
+    {
+      "path": "outputs/phase7b7j_preregistered_second_assembled_feedback.json",
+      "size_bytes": 5380,
+      "sha256": "86a93126df0d370c5f8db59468fd2a58c8cd4dc189b4dbc5bcc392b2e028b1f7"
+    },
+    {
+      "path": "outputs/phase7b9cy_feedback_dependency_migration_audit.json",
+      "size_bytes": 1900,
+      "sha256": "fb0620419fd5f1d996b866e4a33521605838bce02a141f4a5633be2d199ae201"
+    },
+    {
+      "path": "outputs/phase7b9d_encoded_base_material_state.npy",
+      "size_bytes": 4224,
+      "sha256": "feafd8e975951e59ab5a23c715468595e048a562ca3b9e8129ed79313ec105fb"
+    },
+    {
+      "path": "outputs/phase7b9e2_preregistered_science_functional_extension.json",
+      "size_bytes": 4492,
+      "sha256": "291def7f1b292bdd16a8981bc285aaba3e5e0c3e2bb677e0cbecedb77cf0093e"
+    },
+    {
+      "path": "outputs/phase7b9e2_science_functional_extension_summary.json",
+      "size_bytes": 10421,
+      "sha256": "f39d18722bdd7a96aee9ea8b50757acd20477e123c68cdd41e89160084a12c28"
+    },
+    {
+      "path": "outputs/phase7b9f_base_material_residual.npy",
+      "size_bytes": 4224,
+      "sha256": "217e7fec52ad506214cc997ebe074fac0433700bb84eaeac4bba24a7da55fa3b"
+    },
+    {
+      "path": "outputs/phase7b9f_converged_feedback_residual_summary.json",
+      "size_bytes": 2960,
+      "sha256": "d9843569efbd0e9aeec1c10e7d15ea7c8d13f6192c8a85198a392f2f1269709b"
+    },
+    {
+      "path": "outputs/phase7b9f_final_feedback.npz",
+      "size_bytes": 687000,
+      "sha256": "8bb1cec3e29d1f64d22c252d4311280880ff16a70a66f94de58854cd2409f475"
+    },
+    {
+      "path": "outputs/phase7b9f_preregistered_converged_feedback_residual.json",
+      "size_bytes": 6971,
+      "sha256": "0a665c8dccb1fa59c0e9939d2ded5d5d1dd0c9e7ed9430ac4c466e8b3007398e"
+    },
+    {
+      "path": "outputs/phase7b9f_previous_feedback.npz",
+      "size_bytes": 687000,
+      "sha256": "4af84aac07d0464a91e7f706d64e9f7502ae56b6d245531d923b4388af2fe788"
+    },
+    {
+      "path": "outputs/phase7b9f_target_material_state.npz",
+      "size_bytes": 14436,
+      "sha256": "3ee7ef57bd4435acd819f771243761d48c73811a04fff76ac68ff0c257be9ce3"
+    }
+  ],
+  "code_dependencies": [
+    {
+      "name": "phase7b9e2_runner",
+      "legacy": {
+        "path": "scripts/phase7b9e2_science_functional_extension.py",
+        "size_bytes": 12434,
+        "sha256": "e01ab26bacd90ef9ef9eee4746b09e6e8aa390eee8546a871032b0c99970b2a0"
+      },
+      "current_sha256": "e01ab26bacd90ef9ef9eee4746b09e6e8aa390eee8546a871032b0c99970b2a0"
+    },
+    {
+      "name": "phase7b7j_runner",
+      "legacy": {
+        "path": "scripts/phase7b7j_second_assembled_feedback.py",
+        "size_bytes": 25569,
+        "sha256": "f03b39cfcf0586848c3fb8bc744c2db4111c4acb0cb1422fde6b36b155b80a92"
+      },
+      "current_sha256": "f03b39cfcf0586848c3fb8bc744c2db4111c4acb0cb1422fde6b36b155b80a92"
+    },
+    {
+      "name": "phase7b7f_runner",
+      "legacy": {
+        "path": "scripts/phase7b7f_assembled_diagnostics.py",
+        "size_bytes": 37412,
+        "sha256": "93e9f23d76557d5fd87eb904728dac289d5d3ce0fb39535a542848ab42fc46d0"
+      },
+      "current_sha256": "93e9f23d76557d5fd87eb904728dac289d5d3ce0fb39535a542848ab42fc46d0"
+    },
+    {
+      "name": "phase7b7g_runner",
+      "legacy": {
+        "path": "scripts/phase7b7g_assembled_atomic_rates.py",
+        "size_bytes": 18736,
+        "sha256": "2ad5faefac50a88a199e893b84fb93562c805ba2dbe7668326e728d21f464631"
+      },
+      "current_sha256": "2ad5faefac50a88a199e893b84fb93562c805ba2dbe7668326e728d21f464631"
+    },
+    {
+      "name": "phase7b7e_runner",
+      "legacy": {
+        "path": "scripts/phase7b7e_radiation_direction.py",
+        "size_bytes": 28748,
+        "sha256": "37bcf583d34203828184ba3d10ea75fcb01f15a919b981eda8ed0fdb9184aab8"
+      },
+      "current_sha256": "37bcf583d34203828184ba3d10ea75fcb01f15a919b981eda8ed0fdb9184aab8"
+    },
+    {
+      "name": "phase7b5x_context",
+      "legacy": {
+        "path": "scripts/phase7b5x_full_depth_block_probe.py",
+        "size_bytes": 23866,
+        "sha256": "68783421b8cc57ec5c7fa5e6f209183a5230dce507b3d74c057c4fa50dfa21bc"
+      },
+      "current_sha256": "68783421b8cc57ec5c7fa5e6f209183a5230dce507b3d74c057c4fa50dfa21bc"
+    },
+    {
+      "name": "mixed_frame_frequency",
+      "legacy": {
+        "path": "src/eccentric_tde_observer/mixed_frame_frequency.py",
+        "size_bytes": 59584,
+        "sha256": "363c179e8aae73ea74f9ed15c17c24a6efc84be580ac37436ec7a6b85a4dc08c"
+      },
+      "current_sha256": "ef27fc8b433ad84788c984f387f25ee025026a1bec5841e9ce087082da421689"
+    },
+    {
+      "name": "multigroup_continuum",
+      "legacy": {
+        "path": "src/eccentric_tde_observer/multigroup_continuum.py",
+        "size_bytes": 30946,
+        "sha256": "aab92a7395f9d5b39565b280e279374813d0296128820f9cac4aa9e01195fc2c"
+      },
+      "current_sha256": "aab92a7395f9d5b39565b280e279374813d0296128820f9cac4aa9e01195fc2c"
+    },
+    {
+      "name": "continuum_emission",
+      "legacy": {
+        "path": "src/eccentric_tde_observer/continuum_emission.py",
+        "size_bytes": 32394,
+        "sha256": "49364c29efad50c4dd6818f16d4f90b2981670cea84f3ec124b88fcbc2b111a4"
+      },
+      "current_sha256": "49364c29efad50c4dd6818f16d4f90b2981670cea84f3ec124b88fcbc2b111a4"
+    },
+    {
+      "name": "radiation_matter_feedback",
+      "legacy": {
+        "path": "src/eccentric_tde_observer/radiation_matter_feedback.py",
+        "size_bytes": 11458,
+        "sha256": "1b10bb3028c997656809559c01873501ee55ab16699b2c0d4a1341b8fc5f13f8"
+      },
+      "current_sha256": "1b10bb3028c997656809559c01873501ee55ab16699b2c0d4a1341b8fc5f13f8"
+    },
+    {
+      "name": "material_newton_krylov",
+      "legacy": {
+        "path": "src/eccentric_tde_observer/coupled_material_newton_krylov.py",
+        "size_bytes": 19022,
+        "sha256": "30fbe1157f7242951bd7d0108452aff18b687e3e351c07e20a8085b8d5b980cf"
+      },
+      "current_sha256": "30fbe1157f7242951bd7d0108452aff18b687e3e351c07e20a8085b8d5b980cf"
+    },
+    {
+      "name": "recoverable_residual",
+      "legacy": {
+        "path": "src/eccentric_tde_observer/full_frequency_residual_evaluation.py",
+        "size_bytes": 28837,
+        "sha256": "5d948106e2b5c85e8b9c5a1ff264ad724d217046c9c3e5f56aea66bbdfcad5cb"
+      },
+      "current_sha256": "5d948106e2b5c85e8b9c5a1ff264ad724d217046c9c3e5f56aea66bbdfcad5cb"
+    }
+  ],
+  "excluded": "all .dat radiation states; full transfer is not rerun",
+  "migration": "mixed_frame_frequency legacy hash differs; phase7b9cy exact source reconstruction and positive-path parity must be checked explicitly",
+  "archive": {
+    "name": "baseline-audit-inputs.tar.gz",
+    "size_bytes": 17698450,
+    "sha256": "f27e42e510258aab208a39e470c07cbb3ad3ca595682b53c3a28a10c5441c1f6"
+  },
+  "manifest_sha256": "8b23dca182322ef19fc3ecbf6a080a965531f439f3f117b3a85c9d798845862b"
+}
