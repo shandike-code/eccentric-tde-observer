@@ -1,0 +1,169 @@
+{
+  "round": 16,
+  "endpoints": {
+    "previous": {
+      "production_norms": {
+        "l2": 17.61155947534937,
+        "mass_weighted_l2": 1.3490752047647006,
+        "maximum_cell": 3.5523519334081137,
+        "worst_cell": 64,
+        "maximum_energy_component": 3.5523485997920368,
+        "maximum_population_logratio_component": 0.46256535900931084
+      },
+      "ledger_norms": {
+        "l2": 90.39780212865386,
+        "mass_weighted_l2": 3.9535498825295488,
+        "maximum_cell": 30.092094618994313,
+        "worst_cell": 3,
+        "maximum_energy_component": 30.089902920541377,
+        "maximum_population_logratio_component": 0.46256535900931084
+      },
+      "nonphysical_cells": 0,
+      "ledger_population_difference": {
+        "hydrogen_maximum_absolute_difference": 0.0,
+        "helium_maximum_absolute_difference": 0.0
+      },
+      "perturbations": {
+        "iteration_count_96_vs_160": {
+          "l2": 0.0,
+          "maximum_absolute_difference": 0.0,
+          "over_production_l2": 0.0
+        },
+        "heating_rate_one_ulp": {
+          "l2": 1.0658141036401503e-14,
+          "maximum_absolute_difference": 7.105427357601002e-15,
+          "over_production_l2": 6.051787209031398e-16
+        },
+        "ledger_versus_response_populations": {
+          "l2": 0.0,
+          "maximum_absolute_difference": 0.0,
+          "over_production_l2": 0.0
+        }
+      }
+    },
+    "final": {
+      "production_norms": {
+        "l2": 17.598077265863203,
+        "mass_weighted_l2": 1.3497160724950785,
+        "maximum_cell": 3.4837699675479437,
+        "worst_cell": 64,
+        "maximum_energy_component": 3.483766532954352,
+        "maximum_population_logratio_component": 0.46256536684776606
+      },
+      "ledger_norms": {
+        "l2": 90.42648934101004,
+        "mass_weighted_l2": 3.9628370050261306,
+        "maximum_cell": 30.09209903869963,
+        "worst_cell": 3,
+        "maximum_energy_component": 30.08990734046483,
+        "maximum_population_logratio_component": 0.46256536684776606
+      },
+      "nonphysical_cells": 0,
+      "ledger_population_difference": {
+        "hydrogen_maximum_absolute_difference": 0.0,
+        "helium_maximum_absolute_difference": 0.0
+      },
+      "perturbations": {
+        "iteration_count_96_vs_160": {
+          "l2": 0.0,
+          "maximum_absolute_difference": 0.0,
+          "over_production_l2": 0.0
+        },
+        "heating_rate_one_ulp": {
+          "l2": 1.1783018260144473e-14,
+          "maximum_absolute_difference": 7.105427357601002e-15,
+          "over_production_l2": 6.695628211043943e-16
+        },
+        "ledger_versus_response_populations": {
+          "l2": 0.0,
+          "maximum_absolute_difference": 0.0,
+          "over_production_l2": 0.0
+        }
+      }
+    }
+  },
+  "signal_to_noise": {
+    "reference_candidate_minus_baseline_l2": 22.4073155,
+    "reference_choices_l2": [
+      22.318397,
+      22.405869,
+      22.408762,
+      43.706065
+    ],
+    "worst_perturbation_l2": 1.1783018260144473e-14,
+    "reference_over_noise": 1901661781836639.8,
+    "measured_cross_platform_l2_difference": 2.4464231734195865e-11,
+    "measured_cross_platform_maximum_difference": 7.776890242894297e-12,
+    "reference_over_cross_platform_difference": 915921486660.841,
+    "definition": "candidate-vs-baseline L2 difference divided by the largest numerical perturbation L2",
+    "scope": "numerical noise floor only; not an acceptance gate and not an error bound on the physics"
+  },
+  "sources": [
+    {
+      "path": "outputs/hpc/hhe-r025-cont64/state.json",
+      "size_bytes": 68748,
+      "sha256": "558a943e14a872f6d9ac67f7e0bc4a70b92c60c41a1485f7b36c41b2843a05ab"
+    },
+    {
+      "path": "outputs/hpc/hhe-r025-cont64/trial_material.npz",
+      "size_bytes": 27774,
+      "sha256": "d4b8b59d15579827cadac92a03103d9798ca1f2688b2a65fbb9e3c37da024f4a"
+    },
+    {
+      "path": "outputs/phase7b4r_depth128_phase2048.npz",
+      "size_bytes": 17159976,
+      "sha256": "33f248d5cf35ac07fffd139e1cd99d4edefa590debf7e109f67f2dbc57adf455"
+    },
+    {
+      "path": "outputs/hpc/hhe-r025-cont64/feedback-round16/feedback_summary.json",
+      "size_bytes": 3518,
+      "sha256": "7d3e673e8113a37acf690fd85ae267a3dce1e9889ae772c79edf0e0040146c27"
+    },
+    {
+      "path": "outputs/hpc/hhe-r025-cont64/feedback-round16/feedback_protocol.json",
+      "size_bytes": 4785,
+      "sha256": "dbb3cb7cf283bd8a5df3915a32daf9cb38ca3d245c0341dda6e651099294754f"
+    },
+    {
+      "path": "outputs/hpc/hhe-r025-cont64/feedback-round16/previous_feedback.npz",
+      "size_bytes": 687000,
+      "sha256": "dc637c33c0291436b90e9f6ed8bbd9788ce4542e5eb680823342f7d05380072b"
+    },
+    {
+      "path": "outputs/hpc/hhe-r025-cont64/feedback-round16/final_feedback.npz",
+      "size_bytes": 687000,
+      "sha256": "751b8e8626a78b42b8ef8c1e1f5ffd497a814b5993a439982e8e320ac0fe645d"
+    }
+  ],
+  "classification": "read-only numerical noise floor; no acceptance implied",
+  "codec_identity": {
+    "decode_versus_stored_maximum_absolute_difference": 0.0,
+    "encode_roundtrip_maximum_absolute_difference": 2.5627681310425032e-08,
+    "encode_roundtrip_per_component": [
+      0.0,
+      2.5627681310425032e-08,
+      0.0,
+      8.881784197001252e-16
+    ],
+    "decode_identity_passed": true,
+    "note": "decode \u65b9\u5411\u662f\u8eab\u4efd\u5224\u636e\uff1bencode \u65b9\u5411\u7684 ~1e-8 \u6765\u81ea log-ratio \u5de8\u5927\u65f6 1-h+ \u7684\u76f8\u6d88\uff0c\u5c5e\u5df2\u77e5\u8868\u793a\u8bef\u5dee\uff0c\u4e0d\u662f\u6587\u4ef6\u4e0d\u4e00\u81f4"
+  },
+  "environment": {
+    "python": "3.12.3 (main, Jan  8 2026, 11:30:50) [GCC 13.3.0]",
+    "platform": "Linux-6.8.0-53-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "numpy": null,
+    "scipy": null,
+    "git_commit": "9efa2cb8f5033edb42b537d8bc2731facc9537d0",
+    "blas": null
+  },
+  "job": {
+    "id": 71947,
+    "qos": "qos_stu_default",
+    "cpus": 4,
+    "mem": "16G",
+    "state": "COMPLETED",
+    "exit": "0:0",
+    "run": "outputs/hpc/noise-floor-cont64-20260917-v2"
+  }
+}
