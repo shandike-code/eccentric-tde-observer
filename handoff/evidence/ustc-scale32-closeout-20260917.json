@@ -1,0 +1,695 @@
+{
+  "observed_at": "2026-09-17T11:41:08.113609+08:00",
+  "run": "outputs/hpc/scale32-cont-20260917/science",
+  "status": "diagnostic_round_complete",
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "input_sha256": "b13cd1d2a574155a6b29707e8523560f8a11af85f1b74b9fda435d2af01b7760",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "output_sha256": "01b6525980acc2bdc995a2aa7147fd574dd2332169e483e234e6271edc72831f",
+      "wall_s": 133.4416945129633,
+      "residual": 0.0015863866893025013,
+      "boundary_l1": 0.000532055307589793,
+      "boundary_bolometric": 0.0005134414361908803,
+      "maximum_worker_rss_mib": 3498.97265625
+    },
+    {
+      "iteration": 2,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "input_sha256": "01b6525980acc2bdc995a2aa7147fd574dd2332169e483e234e6271edc72831f",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "output_sha256": "cdd23a49af48c482d9e4e6cd6f89e81579789819ede15993ddd7657aef96545c",
+      "wall_s": 130.29009229899384,
+      "residual": 0.0014930054560334204,
+      "boundary_l1": 0.0004949509696743993,
+      "boundary_bolometric": 0.0004813106077203529,
+      "maximum_worker_rss_mib": 3498.57421875
+    },
+    {
+      "iteration": 3,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "input_sha256": "cdd23a49af48c482d9e4e6cd6f89e81579789819ede15993ddd7657aef96545c",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "output_sha256": "41e7a3cc43ec0a5e23d9e1fba19bbd30dd4dcd5299c92db40d0b184fdf23de71",
+      "wall_s": 129.07152941892855,
+      "residual": 0.0014063436484096606,
+      "boundary_l1": 0.00046194593486393064,
+      "boundary_bolometric": 0.0004517429869615025,
+      "maximum_worker_rss_mib": 3496.18359375
+    },
+    {
+      "iteration": 4,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "input_sha256": "41e7a3cc43ec0a5e23d9e1fba19bbd30dd4dcd5299c92db40d0b184fdf23de71",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "output_sha256": "2abb38bf752c9632c8ede22e2a0bd433171e4544b682fa58aca62981fe6069fd",
+      "wall_s": 129.63014379981905,
+      "residual": 0.0013257623149192767,
+      "boundary_l1": 0.00043220982890561496,
+      "boundary_bolometric": 0.00042444346028204505,
+      "maximum_worker_rss_mib": 3499.99609375
+    },
+    {
+      "iteration": 5,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "input_sha256": "2abb38bf752c9632c8ede22e2a0bd433171e4544b682fa58aca62981fe6069fd",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "output_sha256": "56b9629baaee74cad19c7d0ead801345dd65b0ab7513f81f4302cc8882bbebe8",
+      "wall_s": 130.20025404612534,
+      "residual": 0.001250539884612877,
+      "boundary_l1": 0.0004051680819497518,
+      "boundary_bolometric": 0.00039916632085859306,
+      "maximum_worker_rss_mib": 3499.9296875
+    },
+    {
+      "iteration": 6,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "input_sha256": "56b9629baaee74cad19c7d0ead801345dd65b0ab7513f81f4302cc8882bbebe8",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "output_sha256": "e27b8a437f8a06c5dc4ac5413cabb5e9fc5981c09ec15e81fc5ad0d205a6ed3a",
+      "wall_s": 129.73708392190747,
+      "residual": 0.0011803437064141279,
+      "boundary_l1": 0.00038040671699810755,
+      "boundary_bolometric": 0.00037570661466168815,
+      "maximum_worker_rss_mib": 3499.96484375
+    },
+    {
+      "iteration": 7,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "input_sha256": "e27b8a437f8a06c5dc4ac5413cabb5e9fc5981c09ec15e81fc5ad0d205a6ed3a",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "output_sha256": "d3287639db74ab47e7b969d405c64cac54f28944db3a254a762870c6cdec9879",
+      "wall_s": 129.98756292415783,
+      "residual": 0.0011146956355965892,
+      "boundary_l1": 0.00035761602306024626,
+      "boundary_bolometric": 0.000353891509764159,
+      "maximum_worker_rss_mib": 3499.79296875
+    },
+    {
+      "iteration": 8,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "input_sha256": "d3287639db74ab47e7b969d405c64cac54f28944db3a254a762870c6cdec9879",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "output_sha256": "b9bacacf6e9182e6316c259f33f4a67bc330d19d6f99cf9dcec31d86bfc670d5",
+      "wall_s": 129.476596621098,
+      "residual": 0.0010531977285731734,
+      "boundary_l1": 0.00033655619347728477,
+      "boundary_bolometric": 0.00033357319289569804,
+      "maximum_worker_rss_mib": 3500.2578125
+    },
+    {
+      "iteration": 9,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "input_sha256": "b9bacacf6e9182e6316c259f33f4a67bc330d19d6f99cf9dcec31d86bfc670d5",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "output_sha256": "8f795c16393efde39b6df1bd7d239548c23f968c9092259474774cb0aad3a2da",
+      "wall_s": 129.8844657118898,
+      "residual": 0.0009956090949683036,
+      "boundary_l1": 0.00031703576326961317,
+      "boundary_bolometric": 0.0003146234357884294,
+      "maximum_worker_rss_mib": 3498.89453125
+    },
+    {
+      "iteration": 10,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "input_sha256": "8f795c16393efde39b6df1bd7d239548c23f968c9092259474774cb0aad3a2da",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "output_sha256": "035a18b116e59d5a620263f0239c1425c65a9f348b1b81fa9e2159bfe5ccbe6c",
+      "wall_s": 129.05304787191562,
+      "residual": 0.0009416444079471484,
+      "boundary_l1": 0.00029889772327050215,
+      "boundary_bolometric": 0.0002969295627804759,
+      "maximum_worker_rss_mib": 3499.890625
+    },
+    {
+      "iteration": 11,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "input_sha256": "035a18b116e59d5a620263f0239c1425c65a9f348b1b81fa9e2159bfe5ccbe6c",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "output_sha256": "9fc19f6482204ecb49b6ee3b4f22debab96ebf03790ff09feeab7fcd2916856d",
+      "wall_s": 129.75913673080504,
+      "residual": 0.0008909299933719017,
+      "boundary_l1": 0.0002820103670704615,
+      "boundary_bolometric": 0.00028039148497567974,
+      "maximum_worker_rss_mib": 3500.97265625
+    },
+    {
+      "iteration": 12,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "input_sha256": "9fc19f6482204ecb49b6ee3b4f22debab96ebf03790ff09feeab7fcd2916856d",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "output_sha256": "b440a470b7a25b4793135298f111adc0eaaba43f7406acd032a75fe5f539381d",
+      "wall_s": 129.57101105805486,
+      "residual": 0.0008432678107118234,
+      "boundary_l1": 0.00026626111290552456,
+      "boundary_bolometric": 0.00026491951030643894,
+      "maximum_worker_rss_mib": 3500.625
+    },
+    {
+      "iteration": 13,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "input_sha256": "b440a470b7a25b4793135298f111adc0eaaba43f7406acd032a75fe5f539381d",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "output_sha256": "65996ffb77ec9f5facaca86493dd3c1ea96b3fdca73ac9c0b2c7bd079b160924",
+      "wall_s": 129.5136123180855,
+      "residual": 0.0007984422176760752,
+      "boundary_l1": 0.0002515527613276151,
+      "boundary_bolometric": 0.00025043270601098554,
+      "maximum_worker_rss_mib": 3498.7734375
+    },
+    {
+      "iteration": 14,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "input_sha256": "65996ffb77ec9f5facaca86493dd3c1ea96b3fdca73ac9c0b2c7bd079b160924",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "output_sha256": "9f7635f1b3a5e1ad5eece904878ed98706e38e611bac4b699047132a3e2c0c96",
+      "wall_s": 128.70998955890536,
+      "residual": 0.0007562183464209234,
+      "boundary_l1": 0.00023779894915183436,
+      "boundary_bolometric": 0.00023685765120293927,
+      "maximum_worker_rss_mib": 3501.8515625
+    },
+    {
+      "iteration": 15,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "input_sha256": "9f7635f1b3a5e1ad5eece904878ed98706e38e611bac4b699047132a3e2c0c96",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "output_sha256": "7d52d46a33b36904c5155e87d28cf89915410f4adce83ad29cdd53da7c508342",
+      "wall_s": 129.1720825158991,
+      "residual": 0.0007164229490725123,
+      "boundary_l1": 0.00022492305229375494,
+      "boundary_bolometric": 0.00022412746512606135,
+      "maximum_worker_rss_mib": 3500.66015625
+    },
+    {
+      "iteration": 16,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "input_sha256": "7d52d46a33b36904c5155e87d28cf89915410f4adce83ad29cdd53da7c508342",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "output_sha256": "98292b915b12a250b239e4b1623657e6faf5aa03bed7486fb2ad6ccf8062dd40",
+      "wall_s": 130.03484201501124,
+      "residual": 0.0006789357297359184,
+      "boundary_l1": 0.00021285693483698236,
+      "boundary_bolometric": 0.0002121810317550765,
+      "maximum_worker_rss_mib": 3501.1640625
+    },
+    {
+      "iteration": 17,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "input_sha256": "98292b915b12a250b239e4b1623657e6faf5aa03bed7486fb2ad6ccf8062dd40",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "output_sha256": "70ed21cd7a4e1e5889c4488ee464f554d5bc5980cb8d24804175920f8d2bfcfa",
+      "wall_s": 132.7146115831565,
+      "residual": 0.00064400058021831,
+      "boundary_l1": 0.00020153924948624173,
+      "boundary_bolometric": 0.0002009623661517837,
+      "maximum_worker_rss_mib": 3500.16796875
+    },
+    {
+      "iteration": 18,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "input_sha256": "70ed21cd7a4e1e5889c4488ee464f554d5bc5980cb8d24804175920f8d2bfcfa",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "output_sha256": "96e5da4dfe2a98e415b9943322a1b3112345c7ed410e82356237af963ced341c",
+      "wall_s": 132.48252233094536,
+      "residual": 0.0006145430473230196,
+      "boundary_l1": 0.00019091448219398115,
+      "boundary_bolometric": 0.0001904200850804474,
+      "maximum_worker_rss_mib": 3496.17578125
+    },
+    {
+      "iteration": 19,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "input_sha256": "96e5da4dfe2a98e415b9943322a1b3112345c7ed410e82356237af963ced341c",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "output_sha256": "8bb69f0f56fdbcb8d2d9c6ad28c845ce8f331faa6ad3b04c2d9ae00523921871",
+      "wall_s": 129.9398651921656,
+      "residual": 0.0005864279895666692,
+      "boundary_l1": 0.00018093219115801048,
+      "boundary_bolometric": 0.0001805069560529853,
+      "maximum_worker_rss_mib": 3498.75
+    },
+    {
+      "iteration": 20,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "input_sha256": "8bb69f0f56fdbcb8d2d9c6ad28c845ce8f331faa6ad3b04c2d9ae00523921871",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "output_sha256": "fc3e12d47127d65800e3c210ecd2a1fe73d4701d90985ea660234a9f04d7492d",
+      "wall_s": 129.7226354489103,
+      "residual": 0.000559595505269405,
+      "boundary_l1": 0.00017154659325485688,
+      "boundary_bolometric": 0.00017117950687494909,
+      "maximum_worker_rss_mib": 3499.15625
+    },
+    {
+      "iteration": 21,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "input_sha256": "fc3e12d47127d65800e3c210ecd2a1fe73d4701d90985ea660234a9f04d7492d",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "output_sha256": "138c9798a0762552aa2d61baeab6430596168a599ee6a98554cdf3c76b2f66b3",
+      "wall_s": 130.72471696697176,
+      "residual": 0.0005340123593798852,
+      "boundary_l1": 0.00016271584895698594,
+      "boundary_bolometric": 0.0001623976831044311,
+      "maximum_worker_rss_mib": 3501.64453125
+    },
+    {
+      "iteration": 22,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "input_sha256": "138c9798a0762552aa2d61baeab6430596168a599ee6a98554cdf3c76b2f66b3",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "output_sha256": "a1ebc5b0f5d2253bebcbdf1bf887168a5c859e3413cf82e17b0758a9ad850c40",
+      "wall_s": 129.33651254186407,
+      "residual": 0.0005096016690565466,
+      "boundary_l1": 0.0001544010875626682,
+      "boundary_bolometric": 0.00015412454442904392,
+      "maximum_worker_rss_mib": 3498.09765625
+    },
+    {
+      "iteration": 23,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "input_sha256": "a1ebc5b0f5d2253bebcbdf1bf887168a5c859e3413cf82e17b0758a9ad850c40",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "output_sha256": "99af1edd110b88d104bec101e70c37ce4745655c72eca8b5a4d980eac69a4889",
+      "wall_s": 129.53182398783974,
+      "residual": 0.0004863136093290886,
+      "boundary_l1": 0.00014656694282859904,
+      "boundary_bolometric": 0.00014632599341508098,
+      "maximum_worker_rss_mib": 3499.8515625
+    },
+    {
+      "iteration": 24,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "input_sha256": "99af1edd110b88d104bec101e70c37ce4745655c72eca8b5a4d980eac69a4889",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "output_sha256": "f6ca168639e101c4fe863c8f4452ea13620db125c4954474251404c6ca01afc2",
+      "wall_s": 143.4387645239476,
+      "residual": 0.00046410497524109173,
+      "boundary_l1": 0.00013918089703205845,
+      "boundary_bolometric": 0.0001389705317349326,
+      "maximum_worker_rss_mib": 3500.125
+    },
+    {
+      "iteration": 25,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "input_sha256": "f6ca168639e101c4fe863c8f4452ea13620db125c4954474251404c6ca01afc2",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "output_sha256": "a1b08c9a27e610b1f1354faa1e01a27d11b1377df6f60d9c9799b2dd8a43c819",
+      "wall_s": 130.06201099115424,
+      "residual": 0.0004429215226000098,
+      "boundary_l1": 0.00013221300717720694,
+      "boundary_bolometric": 0.00013202904012324577,
+      "maximum_worker_rss_mib": 3504.16796875
+    },
+    {
+      "iteration": 26,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "input_sha256": "a1b08c9a27e610b1f1354faa1e01a27d11b1377df6f60d9c9799b2dd8a43c819",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "output_sha256": "dd6b84473333da5cbf51687496fabab73aacddfe8b6d292f8e5a422256adae46",
+      "wall_s": 130.6294258160051,
+      "residual": 0.0004227074045073722,
+      "boundary_l1": 0.0001256356649269576,
+      "boundary_bolometric": 0.00012547457910698826,
+      "maximum_worker_rss_mib": 3500.6171875
+    },
+    {
+      "iteration": 27,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "input_sha256": "dd6b84473333da5cbf51687496fabab73aacddfe8b6d292f8e5a422256adae46",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "output_sha256": "3002e114ea2d5e7862734f8d3803e91b404e4b8c4e8b6a71efa4b6c3a8f55ba5",
+      "wall_s": 128.85240428708494,
+      "residual": 0.00040342280546117303,
+      "boundary_l1": 0.00011942338292564882,
+      "boundary_bolometric": 0.00011928220811131098,
+      "maximum_worker_rss_mib": 3499.375
+    },
+    {
+      "iteration": 28,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "input_sha256": "3002e114ea2d5e7862734f8d3803e91b404e4b8c4e8b6a71efa4b6c3a8f55ba5",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "output_sha256": "0b8fc6318f7ac3c35d6629abc727e918e133cd0ad20686a5c1b6f14eb9adf39b",
+      "wall_s": 129.76833747513592,
+      "residual": 0.00038502888054454346,
+      "boundary_l1": 0.00011355260598328687,
+      "boundary_bolometric": 0.0001134288209596686,
+      "maximum_worker_rss_mib": 3498.7265625
+    },
+    {
+      "iteration": 29,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "input_sha256": "0b8fc6318f7ac3c35d6629abc727e918e133cd0ad20686a5c1b6f14eb9adf39b",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "output_sha256": "4a6cf4877a17b5678c4d7017d97146530e9b384a6c4a8326db0a68569caa97b4",
+      "wall_s": 130.0595897808671,
+      "residual": 0.00036747745920063585,
+      "boundary_l1": 0.0001080015417770261,
+      "boundary_bolometric": 0.00010789299607617619,
+      "maximum_worker_rss_mib": 3501.96484375
+    },
+    {
+      "iteration": 30,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "input_sha256": "4a6cf4877a17b5678c4d7017d97146530e9b384a6c4a8326db0a68569caa97b4",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "output_sha256": "193ecae73466226e5a730385ff79b1fbad9be554521d765ff81858865a1ff9fe",
+      "wall_s": 129.59937106701545,
+      "residual": 0.0003507404941818506,
+      "boundary_l1": 0.00010275000912053637,
+      "boundary_bolometric": 0.00010265485993996999,
+      "maximum_worker_rss_mib": 3500.78515625
+    },
+    {
+      "iteration": 31,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_0.dat",
+      "input_sha256": "193ecae73466226e5a730385ff79b1fbad9be554521d765ff81858865a1ff9fe",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "output_sha256": "b00ea6198460eb39848ad704766883de71320569cb7f72f1c0e1f90fc021ba8a",
+      "wall_s": 138.4465265800245,
+      "residual": 0.00033477400642964087,
+      "boundary_l1": 9.777930150024763e-05,
+      "boundary_bolometric": 9.769596251282516e-05,
+      "maximum_worker_rss_mib": 3503.3515625
+    },
+    {
+      "iteration": 32,
+      "input_path": "outputs/hpc/scale32-cont-20260917/science/state_1.dat",
+      "input_sha256": "b00ea6198460eb39848ad704766883de71320569cb7f72f1c0e1f90fc021ba8a",
+      "output_path": "outputs/hpc/scale32-cont-20260917/science/state_2.dat",
+      "output_sha256": "829600014fd346e0ea1701e48a78514813159bc918f6f8869814dcb4bdd953f7",
+      "wall_s": 130.14060901408084,
+      "residual": 0.00031953789659217973,
+      "boundary_l1": 9.307206355763915e-05,
+      "boundary_bolometric": 9.29991635153148e-05,
+      "maximum_worker_rss_mib": 3499.36328125
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "comparison": {
+        "photoionization_volume_l1": [
+          0.0002782588030888969,
+          0.00030204345886841727,
+          2.7722063774199723e-07
+        ],
+        "total_recombination_volume_l1": [
+          5.321239528055025e-06,
+          2.822917353086219e-07,
+          1.2170495984537936e-12
+        ],
+        "atomic_heating_volume_l1": 0.006751718187095655,
+        "direct_heating_volume_l1": 0.006751718187097022,
+        "formal_heating_volume_l1": 0.006751708528533372,
+        "inner_noise_to_trial_signal_l2_ratio": null,
+        "candidate_to_base_residual_l2_ratio": null,
+        "candidate_to_base_mass_weighted_norm_ratio": null,
+        "candidate_to_base_maximum_cell_norm_ratio": null,
+        "not_evaluated_reason": "finite material response left the physical domain"
+      },
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": false,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "decision": {
+        "formal_h_he_feedback_pair_passed": true,
+        "finite_trial_accepted_as_one_nonlinear_step": false,
+        "finite_trial_rejected": true,
+        "static_approximation_rejected_from_one_failed_trial": false,
+        "dynamic_nlte_solution_accepted": false,
+        "phase4_replacement": false,
+        "real_line_formation": false
+      },
+      "material": {
+        "previous": {
+          "failing_cells": 34,
+          "failing_mass_fraction": 0.493702355435635,
+          "relative_worst": {
+            "criterion": "minimum remaining gas heat relative to that cell's old gas heat",
+            "cell": 106,
+            "ratio": -1.6176405138947332,
+            "remaining_erg_g": -18298017326690.766
+          }
+        },
+        "final": {
+          "failing_cells": 34,
+          "failing_mass_fraction": 0.493702355435635,
+          "relative_worst": {
+            "criterion": "minimum remaining gas heat relative to that cell's old gas heat",
+            "cell": 106,
+            "ratio": -1.6458739434257028,
+            "remaining_erg_g": -18617381102704.11
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "comparison": {
+        "photoionization_volume_l1": [
+          0.00019665803306402737,
+          0.00028058669521886873,
+          1.2852260611714105e-07
+        ],
+        "total_recombination_volume_l1": [
+          3.7268688745587027e-06,
+          2.5948542876592905e-07,
+          5.351454918268807e-13
+        ],
+        "atomic_heating_volume_l1": 0.005230241829098066,
+        "direct_heating_volume_l1": 0.0052302418290979865,
+        "formal_heating_volume_l1": 0.005230233551077516,
+        "inner_noise_to_trial_signal_l2_ratio": null,
+        "candidate_to_base_residual_l2_ratio": null,
+        "candidate_to_base_mass_weighted_norm_ratio": null,
+        "candidate_to_base_maximum_cell_norm_ratio": null,
+        "not_evaluated_reason": "finite material response left the physical domain"
+      },
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": false,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "decision": {
+        "formal_h_he_feedback_pair_passed": true,
+        "finite_trial_accepted_as_one_nonlinear_step": false,
+        "finite_trial_rejected": true,
+        "static_approximation_rejected_from_one_failed_trial": false,
+        "dynamic_nlte_solution_accepted": false,
+        "phase4_replacement": false,
+        "real_line_formation": false
+      },
+      "material": {
+        "previous": {
+          "failing_cells": 36,
+          "failing_mass_fraction": 0.519093307105374,
+          "relative_worst": {
+            "criterion": "minimum remaining gas heat relative to that cell's old gas heat",
+            "cell": 106,
+            "ratio": -1.8433348656419033,
+            "remaining_erg_g": -20850969681267.305
+          }
+        },
+        "final": {
+          "failing_cells": 36,
+          "failing_mass_fraction": 0.519093307105374,
+          "relative_worst": {
+            "criterion": "minimum remaining gas heat relative to that cell's old gas heat",
+            "cell": 106,
+            "ratio": -1.868088120788597,
+            "remaining_erg_g": -21130967299820.812
+          }
+        }
+      }
+    },
+    {
+      "round": 3,
+      "comparison": {
+        "photoionization_volume_l1": [
+          0.00013981173915027042,
+          0.0002611456350323685,
+          7.153290318513814e-08
+        ],
+        "total_recombination_volume_l1": [
+          2.6636453832196778e-06,
+          2.390069285241229e-07,
+          2.9723329042545825e-13
+        ],
+        "atomic_heating_volume_l1": 0.002672824857098977,
+        "direct_heating_volume_l1": 0.0026728248570977602,
+        "formal_heating_volume_l1": 0.002672820050130752,
+        "inner_noise_to_trial_signal_l2_ratio": null,
+        "candidate_to_base_residual_l2_ratio": null,
+        "candidate_to_base_mass_weighted_norm_ratio": null,
+        "candidate_to_base_maximum_cell_norm_ratio": null,
+        "not_evaluated_reason": "finite material response left the physical domain"
+      },
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": false,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "decision": {
+        "formal_h_he_feedback_pair_passed": true,
+        "finite_trial_accepted_as_one_nonlinear_step": false,
+        "finite_trial_rejected": true,
+        "static_approximation_rejected_from_one_failed_trial": false,
+        "dynamic_nlte_solution_accepted": false,
+        "phase4_replacement": false,
+        "real_line_formation": false
+      },
+      "material": {
+        "previous": {
+          "failing_cells": 41,
+          "failing_mass_fraction": 0.5775469184195245,
+          "relative_worst": {
+            "criterion": "minimum remaining gas heat relative to that cell's old gas heat",
+            "cell": 106,
+            "ratio": -2.001357300994242,
+            "remaining_erg_g": -22638447946831.52
+          }
+        },
+        "final": {
+          "failing_cells": 43,
+          "failing_mass_fraction": 0.6080197463236496,
+          "relative_worst": {
+            "criterion": "minimum remaining gas heat relative to that cell's old gas heat",
+            "cell": 106,
+            "ratio": -2.014363405276943,
+            "remaining_erg_g": -22785567111734.617
+          }
+        }
+      }
+    },
+    {
+      "round": 4,
+      "comparison": {
+        "photoionization_volume_l1": [
+          9.910848493638945e-05,
+          0.0002433165448864594,
+          4.440633574339133e-08
+        ],
+        "total_recombination_volume_l1": [
+          1.922543749767688e-06,
+          2.2031811793980013e-07,
+          1.844222973562211e-13
+        ],
+        "atomic_heating_volume_l1": 0.0007221799058651453,
+        "direct_heating_volume_l1": 0.0007221799058638185,
+        "formal_heating_volume_l1": 0.0007221785483991365,
+        "inner_noise_to_trial_signal_l2_ratio": null,
+        "candidate_to_base_residual_l2_ratio": null,
+        "candidate_to_base_mass_weighted_norm_ratio": null,
+        "candidate_to_base_maximum_cell_norm_ratio": null,
+        "not_evaluated_reason": "finite material response left the physical domain"
+      },
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": true,
+        "last_two_direct_heating_pass": true,
+        "last_two_formal_heating_pass": true,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": false,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "decision": {
+        "formal_h_he_feedback_pair_passed": true,
+        "finite_trial_accepted_as_one_nonlinear_step": false,
+        "finite_trial_rejected": true,
+        "static_approximation_rejected_from_one_failed_trial": false,
+        "dynamic_nlte_solution_accepted": false,
+        "phase4_replacement": false,
+        "real_line_formation": false
+      },
+      "material": {
+        "previous": {
+          "failing_cells": 43,
+          "failing_mass_fraction": 0.6080197463236496,
+          "relative_worst": {
+            "criterion": "minimum remaining gas heat relative to that cell's old gas heat",
+            "cell": 106,
+            "ratio": -2.064446001517409,
+            "remaining_erg_g": -23352078772330.516
+          }
+        },
+        "final": {
+          "failing_cells": 43,
+          "failing_mass_fraction": 0.6080197463236496,
+          "relative_worst": {
+            "criterion": "minimum remaining gas heat relative to that cell's old gas heat",
+            "cell": 106,
+            "ratio": -2.0660815041322826,
+            "remaining_erg_g": -23370578837658.844
+          }
+        }
+      }
+    }
+  ],
+  "scheduler": {
+    "observed_at": "2026-09-17T11:27:59.914012+08:00",
+    "raw": "JobId=71606 JobName=tde-scale32-cont UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=02:07:40 TimeLimit=08:00:00 TimeMin=N/A SubmitTime=2026-09-17T09:19:38 EligibleTime=2026-09-17T09:19:38 AccrueTime=2026-09-17T09:19:38 StartTime=2026-09-17T09:19:39 EndTime=2026-09-17T11:27:19 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-17T09:19:39 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:963860 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode17 BatchHost=anode17 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/scale_then_continue.sbatch SubmitLine=sbatch --parsable operations/scale_then_continue.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-scale32-cont-71606.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-scale32-cont-71606.out TresPerTask=cpu=32",
+    "state": "COMPLETED",
+    "exit_code": "0:0"
+  }
+}
