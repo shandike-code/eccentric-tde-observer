@@ -60,6 +60,35 @@ def solve(codec, encoded, density, old_temperature, old_hydrogen, old_helium, dt
     return vector, solved
 
 
+def codec_identity_report(codec, encoded, trial) -> dict[str, object]:
+    """Verify that the trial's physical arrays are the decoded encoded vector.
+
+    The encoded vector is the authoritative object: `encode` maps the hydrogen
+    simplex through `log(h+/(1-h+))`, and for the extreme ionization reached in
+    this column (log-ratio ~19, so `1-h+ ~ 5e-9`) the subtraction
+    `1 - hydrogen_ionized` loses about eight digits. The encode direction can
+    therefore only round-trip to ~1e-8 and must not be used as an identity gate;
+    the decode direction is exact and is what the migration guarantees.
+    """
+    decoded = codec.decode(encoded)
+    decoded_difference = max(
+        float(np.max(np.abs(np.asarray(getattr(decoded, name)) - np.asarray(trial[name]))))
+        for name in ("temperature_k", "hydrogen_fraction", "helium_fraction"))
+    reencoded = np.asarray(codec.encode(
+        trial["temperature_k"], trial["hydrogen_fraction"], trial["helium_fraction"]))
+    encoded_difference = reencoded - np.asarray(encoded, dtype=np.float64)
+    per_component = [float(np.max(np.abs(encoded_difference.reshape(-1, 4)[:, index])))
+                     for index in range(4)]
+    return {
+        "decode_versus_stored_maximum_absolute_difference": decoded_difference,
+        "encode_roundtrip_maximum_absolute_difference": float(np.max(np.abs(encoded_difference))),
+        "encode_roundtrip_per_component": per_component,
+        "decode_identity_passed": decoded_difference <= 1.0e-15,
+        "note": ("decode 方向是身份判据；encode 方向的 ~1e-8 来自 log-ratio 巨大时 "
+                 "1-h+ 的相消，属已知表示误差，不是文件不一致"),
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run", required=True, help="new diagnostics directory under outputs/hpc")
@@ -118,12 +147,11 @@ def main() -> None:
             raise RuntimeError("physical old time level, dt or density changed")
         encoded = np.asarray(trial["encoded_state"], dtype=np.float64)
         codec = GroundStateLogSimplexCodec(len(density))
-        # 身份检查：候选的编码向量必须能从它自己记录的物理量重新编码得到。
-        recoded = np.asarray(codec.encode(
-            trial["temperature_k"], trial["hydrogen_fraction"], trial["helium_fraction"]))
-        encoding_roundtrip = float(np.max(np.abs(recoded - encoded)))
-        if encoding_roundtrip > 3e-13:
-            raise RuntimeError(f"trial encoding identity failed: {encoding_roundtrip}")
+        identity = codec_identity_report(codec, encoded, trial)
+        if not identity["decode_identity_passed"]:
+            raise RuntimeError(
+                "trial physical arrays are not the decode of encoded_state: "
+                f"{identity['decode_versus_stored_maximum_absolute_difference']}")
         temperature = old["temperature_k"][phase]
         hydrogen = old["hydrogen_fraction"][phase]
         helium = old["helium_fraction"][phase]
@@ -205,6 +233,7 @@ def main() -> None:
         probes["sources"] = input_claims
         probes["environment"] = pipeline.environment()
         probes["classification"] = "read-only numerical noise floor; no acceptance implied"
+        probes["codec_identity"] = identity
         pipeline.write_json(out / "noise_floor.json", probes)
         pipeline.write_json(out / "status.json", {
             "status": "complete",
