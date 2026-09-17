@@ -35,3 +35,13 @@ def test_valid_ownership():
 @pytest.mark.parametrize('width',[[0.,1.],[1.],[np.nan,1.]])
 def test_invalid_width_rejected(width):
     with pytest.raises(ValueError):attribution(np.ones((2,2)),np.ones((2,2)),width)
+
+
+def test_single_process_audit_fits_default_allocation(monkeypatch):
+    from operations.localize_confirmation import require_audit_allocation
+    monkeypatch.setenv('SLURM_JOB_ID','synthetic')
+    monkeypatch.setenv('SLURM_CPUS_PER_TASK','4')
+    monkeypatch.setenv('SLURM_MEM_PER_NODE','16384')
+    require_audit_allocation()
+    monkeypatch.setenv('SLURM_MEM_PER_NODE','4096')
+    with pytest.raises(RuntimeError):require_audit_allocation()

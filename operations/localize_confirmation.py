@@ -60,12 +60,17 @@ def rank(values, count=12):
     return [{'index': int(i), 'value': float(x[i])} for i in np.argsort(abs(x))[::-1][:count]]
 
 
+def require_audit_allocation():
+    # 单一串行分析进程；allocation 的 4 CPU 不是 4 个 6GiB 重型worker。
+    pipeline.require_allocation(1)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--run', required=True)
     parser.add_argument('--source-run', required=True)
     args = parser.parse_args()
-    pipeline.require_allocation(4)
+    require_audit_allocation()
     out = pipeline.safe_path(ROOT, args.run)
     source = pipeline.safe_path(ROOT, args.source_run)
     if not out.is_relative_to(ROOT/'outputs/hpc') or out == source:

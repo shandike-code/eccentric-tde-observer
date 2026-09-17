@@ -12,3 +12,7 @@
 只写新目录 `outputs/hpc/confirmation-localization-20260917`；禁止覆盖。旧 `.dat`、反馈、协议、物质候选与所有门保持原样。小工件在审计始末检查身份。该任务会读取两份9.41GiB原态以核验哈希，故在allocation中执行，不在登录节点做数值和大I/O。
 
 24 项相关测试通过，包含带符号贡献的相消闭合、镜像层归属、频率重复/缺漏及非法权重拒绝，和原能量/新残差检查。合成测试不能代替真实工件核验。新脚本独立声明自身及batch文件SHA，运行环境记录提交与Slurm参数。
+
+## 首交资源调用修正
+
+71814 在 13:09:44 以 FAILED/1:0、5秒结束，进入数据读取之前原资源守卫拒绝了 `require_allocation(4)`。此参数代表重型worker数量，不是申请CPU数；本诊断仅一个串行进程，应调用 `require_allocation(1)`，保留原每worker 6GiB+主进程2GiB守卫。没有减小原资源保护，也没有为错误实现增加内存。新增默认4CPU/16GiB应通过、4GiB应拒绝的真实守卫回归测试；旧失败调度记录保存于平台 `outputs/hpc/confirmation-localization-71814-scheduler.txt`。新尝试使用 `confirmation-localization-20260917-v2`，不掩盖首次失败。
