@@ -1,0 +1,1123 @@
+{
+  "per_round": [
+    {
+      "run": "hhe-r025-cont64",
+      "round": 1,
+      "maps": [
+        3,
+        4
+      ],
+      "R": [
+        0.0001871759290446639,
+        0.00018575029430676636
+      ],
+      "heating": 0.005861644717132117,
+      "photo": [
+        7.4950429225439034e-06,
+        0.0001705354836644011,
+        5.623723042435923e-09
+      ],
+      "recomb": [
+        6.337790170907903e-08,
+        1.5437038955442886e-07,
+        2.488000821994616e-14
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": true,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        6,
+        6
+      ],
+      "failmass": 0.049003313865325984
+    },
+    {
+      "run": "hhe-r025-cont64",
+      "round": 2,
+      "maps": [
+        7,
+        8
+      ],
+      "R": [
+        0.00018155032100849512,
+        0.00018017423831861155
+      ],
+      "heating": 0.005639302957556057,
+      "photo": [
+        7.575962435899361e-06,
+        0.00016479628365606626,
+        5.250628278233188e-09
+      ],
+      "recomb": [
+        5.459117327947769e-08,
+        1.4845556143063206e-07,
+        2.3228379853644328e-14
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": true,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        4,
+        4
+      ],
+      "failmass": 0.029148333179171225
+    },
+    {
+      "run": "hhe-r025-cont64",
+      "round": 3,
+      "maps": [
+        11,
+        12
+      ],
+      "R": [
+        0.00017612383054442678,
+        0.00017479629908489925
+      ],
+      "heating": 0.00541985147401157,
+      "photo": [
+        7.621281944012693e-06,
+        0.00015926917682112577,
+        4.873942804432972e-09
+      ],
+      "recomb": [
+        4.69919578109243e-08,
+        1.4277985946411903e-07,
+        2.1560845389513102e-14
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": true,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        4,
+        4
+      ],
+      "failmass": 0.029148333179171225
+    },
+    {
+      "run": "hhe-r025-cont64",
+      "round": 4,
+      "maps": [
+        15,
+        16
+      ],
+      "R": [
+        0.00017091422400920635,
+        0.000169824842043115
+      ],
+      "heating": 0.00520506837354356,
+      "photo": [
+        7.634411191482443e-06,
+        0.00015394538260179297,
+        4.5026623666153625e-09
+      ],
+      "recomb": [
+        4.040458313088076e-08,
+        1.3733282703649678e-07,
+        1.991560540101199e-14
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": true,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        4,
+        4
+      ],
+      "failmass": 0.029148333179171225
+    },
+    {
+      "run": "hhe-r025-cont64",
+      "round": 5,
+      "maps": [
+        19,
+        20
+      ],
+      "R": [
+        0.0001666029693971307,
+        0.0001655439835507881
+      ],
+      "heating": 0.004994842992584449,
+      "photo": [
+        7.618781563094329e-06,
+        0.00014881655212395018,
+        4.1426885135120625e-09
+      ],
+      "recomb": [
+        3.4684123685258175e-08,
+        1.3210453795335794e-07,
+        1.832182556650907e-14
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": true,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        3,
+        3
+      ],
+      "failmass": 0.021188101900386315
+    },
+    {
+      "run": "hhe-r025-cont64",
+      "round": 6,
+      "maps": [
+        23,
+        24
+      ],
+      "R": [
+        0.00016241504846579538,
+        0.00016138907251527092
+      ],
+      "heating": 0.004791074409620325,
+      "photo": [
+        7.577732941219479e-06,
+        0.00014387473899501682,
+        3.797741192464614e-09
+      ],
+      "recomb": [
+        2.970994549653945e-08,
+        1.2708555929424608e-07,
+        1.679905031620988e-14
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": true,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        3,
+        3
+      ],
+      "failmass": 0.021188101900386315
+    },
+    {
+      "run": "hhe-r025-cont64",
+      "round": 7,
+      "maps": [
+        27,
+        28
+      ],
+      "R": [
+        0.00015835576708135067,
+        0.00015735851141877698
+      ],
+      "heating": 0.004593303598676291,
+      "photo": [
+        7.514442201495607e-06,
+        0.0001391123734855152,
+        3.469990207765031e-09
+      ],
+      "recomb": [
+        2.5381183924289823e-08,
+        1.2226691889696955e-07,
+        1.534414931832826e-14
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": true,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        3,
+        3
+      ],
+      "failmass": 0.021188101900386315
+    },
+    {
+      "run": "hhe-r025-cont64",
+      "round": 8,
+      "maps": [
+        31,
+        32
+      ],
+      "R": [
+        0.00015440959027476395,
+        0.00015344039967260886
+      ],
+      "heating": 0.004402766548425935,
+      "photo": [
+        7.431880906163518e-06,
+        0.00013452223942319526,
+        3.160518797554537e-09
+      ],
+      "recomb": [
+        2.1613083899258752e-08,
+        1.1764007624942351e-07,
+        1.397845634098265e-14
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": true,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        2,
+        2
+      ],
+      "failmass": 0.013227870621601452
+    },
+    {
+      "run": "hhe-r025-cont64",
+      "round": 9,
+      "maps": [
+        35,
+        36
+      ],
+      "R": [
+        0.00015058141743874828,
+        0.00014964120952629573
+      ],
+      "heating": 0.004219104606910051,
+      "photo": [
+        7.332793302748937e-06,
+        0.00013009745330792304,
+        2.8696822649777038e-09
+      ],
+      "recomb": [
+        1.83355715761282e-08,
+        1.1319689649826497e-07,
+        1.2692850901592928e-14
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": true,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        2,
+        2
+      ],
+      "failmass": 0.013227870621601452
+    },
+    {
+      "run": "hhe-r025-cont64",
+      "round": 10,
+      "maps": [
+        39,
+        40
+      ],
+      "R": [
+        0.0001468605212704952,
+        0.0001459463178973574
+      ],
+      "heating": 0.004042951737542842,
+      "photo": [
+        7.219688275181344e-06,
+        0.0001258314452809477,
+        2.5973700147084576e-09
+      ],
+      "recomb": [
+        1.5488267599983372e-08,
+        1.0892962667743734e-07,
+        1.1488821044121564e-14
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": true,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        2,
+        2
+      ],
+      "failmass": 0.013227870621601452
+    },
+    {
+      "run": "hhe-r025-cont64",
+      "round": 11,
+      "maps": [
+        43,
+        44
+      ],
+      "R": [
+        0.00014324889151189304,
+        0.00014236232156655256
+      ],
+      "heating": 0.0038743015015077296,
+      "photo": [
+        7.094840713020281e-06,
+        0.0001217179416685347,
+        2.3431516018696306e-09
+      ],
+      "recomb": [
+        1.3023521967606e-08,
+        1.0483087416384162e-07,
+        1.036861828523467e-14
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": true,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        2,
+        2
+      ],
+      "failmass": 0.013227870621601452
+    },
+    {
+      "run": "hhe-r025-cont64",
+      "round": 12,
+      "maps": [
+        47,
+        48
+      ],
+      "R": [
+        0.00013973796249736856,
+        0.00013887668663022104
+      ],
+      "heating": 0.003712713240781631,
+      "photo": [
+        6.960299069102086e-06,
+        0.00011775094888379871,
+        2.1064430921754713e-09
+      ],
+      "recomb": [
+        1.0925396696940624e-08,
+        1.0089358668470866e-07,
+        9.324458454037034e-15
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": true,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        2,
+        2
+      ],
+      "failmass": 0.013227870621601452
+    },
+    {
+      "run": "hhe-r025-cont64",
+      "round": 13,
+      "maps": [
+        51,
+        52
+      ],
+      "R": [
+        0.00013633025475096153,
+        0.00013549306307149238
+      ],
+      "heating": 0.0035578312096644095,
+      "photo": [
+        6.817896813361713e-06,
+        0.00011392473851531669,
+        1.8864580566629435e-09
+      ],
+      "recomb": [
+        9.183684839904146e-09,
+        9.711103399337998e-08,
+        8.353478704166511e-15
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "inner_noise_resolved_pass": true,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": true,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "population_nonnegative_pass": true,
+        "all_residual_components_finite_pass": true
+      },
+      "failcells": [
+        0,
+        0
+      ],
+      "failmass": 0.0
+    },
+    {
+      "run": "hhe-r025-cont64",
+      "round": 14,
+      "maps": [
+        55,
+        56
+      ],
+      "R": [
+        0.00013301680849284943,
+        0.00013220318452569505
+      ],
+      "heating": 0.003409950337291241,
+      "photo": [
+        6.669266164862364e-06,
+        0.00011023383346506927,
+        1.6823688999674779e-09
+      ],
+      "recomb": [
+        7.677267526466573e-09,
+        9.347679076965845e-08,
+        7.456493380584088e-15
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "inner_noise_resolved_pass": true,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": true,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "population_nonnegative_pass": true,
+        "all_residual_components_finite_pass": true
+      },
+      "failcells": [
+        0,
+        0
+      ],
+      "failmass": 0.0
+    },
+    {
+      "run": "hhe-r025-cont64",
+      "round": 15,
+      "maps": [
+        59,
+        60
+      ],
+      "R": [
+        0.00012979464453919396,
+        0.00012900352490435955
+      ],
+      "heating": 0.003268848660083759,
+      "photo": [
+        6.5158529687188415e-06,
+        0.00010667299502323592,
+        1.4933411802157058e-09
+      ],
+      "recomb": [
+        6.409406630533761e-09,
+        8.998472074945568e-08,
+        6.6242359051035834e-15
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "inner_noise_resolved_pass": true,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": true,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "population_nonnegative_pass": true,
+        "all_residual_components_finite_pass": true
+      },
+      "failcells": [
+        0,
+        0
+      ],
+      "failmass": 0.0
+    },
+    {
+      "run": "hhe-r025-cont64",
+      "round": 16,
+      "maps": [
+        63,
+        64
+      ],
+      "R": [
+        0.00012666267615638301,
+        0.00012589261183894017
+      ],
+      "heating": 0.003133997184404173,
+      "photo": [
+        6.358931935561958e-06,
+        0.00010323721078613405,
+        1.3184898002058162e-09
+      ],
+      "recomb": [
+        5.346792406657671e-09,
+        8.66289618735827e-08,
+        5.8535024517028814e-15
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "inner_noise_resolved_pass": true,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": true,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "population_nonnegative_pass": true,
+        "all_residual_components_finite_pass": true
+      },
+      "failcells": [
+        0,
+        0
+      ],
+      "failmass": 0.0
+    },
+    {
+      "run": "science",
+      "round": 1,
+      "maps": [
+        7,
+        8
+      ],
+      "R": [
+        0.0011146956355965892,
+        0.0010531977285731734
+      ],
+      "heating": 0.006751718187095655,
+      "photo": [
+        0.0002782588030888969,
+        0.00030204345886841727,
+        2.7722063774199723e-07
+      ],
+      "recomb": [
+        5.321239528055025e-06,
+        2.822917353086219e-07,
+        1.2170495984537936e-12
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": false,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        34,
+        34
+      ],
+      "failmass": 0.493702355435635
+    },
+    {
+      "run": "science",
+      "round": 2,
+      "maps": [
+        15,
+        16
+      ],
+      "R": [
+        0.0007164229490725123,
+        0.0006789357297359184
+      ],
+      "heating": 0.005230241829098066,
+      "photo": [
+        0.00019665803306402737,
+        0.00028058669521886873,
+        1.2852260611714105e-07
+      ],
+      "recomb": [
+        3.7268688745587027e-06,
+        2.5948542876592905e-07,
+        5.351454918268807e-13
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": false,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        36,
+        36
+      ],
+      "failmass": 0.519093307105374
+    },
+    {
+      "run": "science",
+      "round": 3,
+      "maps": [
+        23,
+        24
+      ],
+      "R": [
+        0.0004863136093290886,
+        0.00046410497524109173
+      ],
+      "heating": 0.002672824857098977,
+      "photo": [
+        0.00013981173915027042,
+        0.0002611456350323685,
+        7.153290318513814e-08
+      ],
+      "recomb": [
+        2.6636453832196778e-06,
+        2.390069285241229e-07,
+        2.9723329042545825e-13
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": false,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        41,
+        43
+      ],
+      "failmass": 0.6080197463236496
+    },
+    {
+      "run": "science",
+      "round": 4,
+      "maps": [
+        31,
+        32
+      ],
+      "R": [
+        0.00033477400642964087,
+        0.00031953789659217973
+      ],
+      "heating": 0.0007221799058651453,
+      "photo": [
+        9.910848493638945e-05,
+        0.0002433165448864594,
+        4.440633574339133e-08
+      ],
+      "recomb": [
+        1.922543749767688e-06,
+        2.2031811793980013e-07,
+        1.844222973562211e-13
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": true,
+        "last_two_direct_heating_pass": true,
+        "last_two_formal_heating_pass": true,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": false,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        43,
+        43
+      ],
+      "failmass": 0.6080197463236496
+    },
+    {
+      "run": "hhe-r003125-confirm-20260917",
+      "round": 1,
+      "maps": [
+        3,
+        4
+      ],
+      "R": [
+        0.00027791203009435063,
+        0.00026692765305757376
+      ],
+      "heating": 0.0005056398862444561,
+      "photo": [
+        8.32788440972327e-05,
+        0.00023492282158741666,
+        3.58638427593055e-08
+      ],
+      "recomb": [
+        1.6373438964698021e-06,
+        2.1157151856473683e-07,
+        1.4890933371435023e-13
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": true,
+        "last_two_direct_heating_pass": true,
+        "last_two_formal_heating_pass": true,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": false,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        43,
+        43
+      ],
+      "failmass": 0.6080197463236496
+    },
+    {
+      "run": "hhe-r003125-confirm-20260917",
+      "round": 2,
+      "maps": [
+        7,
+        8
+      ],
+      "R": [
+        0.0002605738248602584,
+        0.0002585044902010653
+      ],
+      "heating": 0.0012172274869892542,
+      "photo": [
+        6.984182617214193e-05,
+        0.0002268518001523436,
+        2.9292551002209577e-08
+      ],
+      "recomb": [
+        1.3961880459813525e-06,
+        2.032011246459611e-07,
+        1.2159792753305157e-13
+      ],
+      "gates": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": false,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "failcells": [
+        43,
+        43
+      ],
+      "failmass": 0.6080197463236496
+    }
+  ],
+  "fits": {
+    "hhe-r003125-confirm-20260917": {
+      "log_log_slope_heating_vs_R": -13.637503755675828,
+      "rounds": 2,
+      "R_values": [
+        0.00027791203009435063,
+        0.0002605738248602584
+      ],
+      "heating_values": [
+        0.0005056398862444561,
+        0.0012172274869892542
+      ]
+    },
+    "hhe-r025-cont64": {
+      "log_log_slope_heating_vs_R": 1.634521729748961,
+      "rounds": 16,
+      "R_values": [
+        0.0001871759290446639,
+        0.00018155032100849512,
+        0.00017612383054442678,
+        0.00017091422400920635,
+        0.0001666029693971307,
+        0.00016241504846579538,
+        0.00015835576708135067,
+        0.00015440959027476395,
+        0.00015058141743874828,
+        0.0001468605212704952,
+        0.00014324889151189304,
+        0.00013973796249736856,
+        0.00013633025475096153,
+        0.00013301680849284943,
+        0.00012979464453919396,
+        0.00012666267615638301
+      ],
+      "heating_values": [
+        0.005861644717132117,
+        0.005639302957556057,
+        0.00541985147401157,
+        0.00520506837354356,
+        0.004994842992584449,
+        0.004791074409620325,
+        0.004593303598676291,
+        0.004402766548425935,
+        0.004219104606910051,
+        0.004042951737542842,
+        0.0038743015015077296,
+        0.003712713240781631,
+        0.0035578312096644095,
+        0.003409950337291241,
+        0.003268848660083759,
+        0.003133997184404173
+      ]
+    },
+    "science": {
+      "log_log_slope_heating_vs_R": 1.8211467930778706,
+      "rounds": 4,
+      "R_values": [
+        0.0011146956355965892,
+        0.0007164229490725123,
+        0.0004863136093290886,
+        0.00033477400642964087
+      ],
+      "heating_values": [
+        0.006751718187095655,
+        0.005230241829098066,
+        0.002672824857098977,
+        0.0007221799058651453
+      ]
+    }
+  },
+  "note": "\u5e42\u5f8b\u6307\u6570\u53ea\u63cf\u8ff0\u540c\u4e00 run \u5185\u90e8 R \u4e0e\u914d\u5bf9\u52a0\u70ed\u91cf\u7684\u5173\u7cfb\uff1b\u786e\u8ba4 run \u5728 R \u51e0\u4e4e\u4e0d\u53d8\u65f6\u52a0\u70ed\u56de\u5347\uff0c\u8bf4\u660e\u8be5\u91cf\u4e0d\u7531 R \u552f\u4e00\u51b3\u5b9a\u3002"
+}
