@@ -1,0 +1,17 @@
+{
+  "job_id": 71878,
+  "run": "outputs/hpc/equation-baseline-replay-20260917",
+  "scheduler": {
+    "returncode": 0,
+    "stdout": "JobId=71878 JobName=tde-base-replay\n   UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A\n   Priority=1 Nice=0 Account=stu QOS=qos_stu_default\n   JobState=FAILED Reason=NonZeroExitCode Dependency=(null)\n   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=1:0\n   RunTime=00:00:05 TimeLimit=00:20:00 TimeMin=N/A\n   SubmitTime=2026-09-17T14:39:51 EligibleTime=2026-09-17T14:39:51\n   AccrueTime=2026-09-17T14:39:51\n   StartTime=2026-09-17T14:39:52 EndTime=2026-09-17T14:39:57 Deadline=N/A\n   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-17T14:39:52 Scheduler=Main\n   Partition=Students AllocNode:Sid=tradmin-02:739265\n   ReqNodeList=(null) ExcNodeList=(null)\n   NodeList=anode16\n   BatchHost=anode16\n   NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:*\n   ReqTRES=cpu=4,mem=16G,node=1,billing=4\n   AllocTRES=cpu=4,node=1,billing=4\n   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*\n   MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0\n   Features=(null) DelayBoot=00:00:00\n   OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)\n   Command=/home/scc/pb24511938/eccentric-tde-observer/operations/replay_equation_baseline.sbatch\n   SubmitLine=sbatch --parsable operations/replay_equation_baseline.sbatch\n   WorkDir=/home/scc/pb24511938/eccentric-tde-observer\n   StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-base-replay-71878.err\n   StdIn=/dev/null\n   StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-base-replay-71878.out\n   TresPerTask=cpu=4\n\n",
+    "stderr": ""
+  },
+  "status": {
+    "status": "failed",
+    "error": "legacy response replay parity failed"
+  },
+  "stderr": "Traceback (most recent call last):\n  File \"/home/scc/pb24511938/eccentric-tde-observer/operations/replay_equation_baseline.py\", line 241, in <module>\n    main()\n  File \"/home/scc/pb24511938/eccentric-tde-observer/operations/replay_equation_baseline.py\", line 174, in main\n    raise RuntimeError('legacy response replay parity failed')\nRuntimeError: legacy response replay parity failed\n",
+  "git_head": "216a1fe3a74f9decd430f3103380660c6d8595fd",
+  "queue": "",
+  "worktree": ""
+}
