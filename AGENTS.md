@@ -7,6 +7,13 @@ This is a research continuation, not a claim that a complete atmosphere exists.
 - Configure repository-local Git author identity before edits/commits. Use the user's
   verified identity; do not invent an email, copy another author's identity, or set
   machine-wide Git defaults. Never commit credentials or tokens.
+- Code written by any agent other than the one that verified it must pass three
+  review passes before it is executed on the platform: (1) interface read-through
+  against the code it calls, (2) unit and negative-path tests, (3) an end-to-end run
+  on real artifacts or a dry run that exercises the full entry point. Record what
+  each pass found, including defects that had to be fixed. This user requirement is
+  standing: do not submit a first-run job on code that has not been through all
+  three passes.
 - Keep the Mac historical `src/`, phase scripts, protocols and result bytes immutable
   until a separately named, documented migration or science branch is needed.
   Existing protocols hash their dependencies. A hash failure is evidence, not a
