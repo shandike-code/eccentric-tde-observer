@@ -1,0 +1,189 @@
+{
+  "status": "complete",
+  "science_run": false,
+  "seed": {
+    "path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/state_2.dat",
+    "size_bytes": 10099884032,
+    "sha256": "b13cd1d2a574155a6b29707e8523560f8a11af85f1b74b9fda435d2af01b7760"
+  },
+  "cases": [
+    {
+      "workers": 4,
+      "run": "outputs/hpc/scale32-cont-20260917/case01-w4",
+      "total_wall_s": 378.0377126969397,
+      "load_average": [
+        7.96875,
+        7.13818359375,
+        5.873046875
+      ],
+      "iteration": 1,
+      "input_path": "outputs/hpc/scale32-cont-20260917/case01-w4/state_0.dat",
+      "input_sha256": "b13cd1d2a574155a6b29707e8523560f8a11af85f1b74b9fda435d2af01b7760",
+      "output_path": "outputs/hpc/scale32-cont-20260917/case01-w4/state_1.dat",
+      "output_sha256": "01b6525980acc2bdc995a2aa7147fd574dd2332169e483e234e6271edc72831f",
+      "wall_s": 332.4700774450321,
+      "residual": 0.0015863866893025013,
+      "boundary_l1": 0.000532055307589793,
+      "boundary_bolometric": 0.0005134414361908803,
+      "maximum_worker_rss_mib": 3499.7734375
+    },
+    {
+      "workers": 8,
+      "run": "outputs/hpc/scale32-cont-20260917/case02-w8",
+      "total_wall_s": 247.2726144520566,
+      "load_average": [
+        10.06103515625,
+        8.97119140625,
+        6.91845703125
+      ],
+      "iteration": 1,
+      "input_path": "outputs/hpc/scale32-cont-20260917/case02-w8/state_0.dat",
+      "input_sha256": "b13cd1d2a574155a6b29707e8523560f8a11af85f1b74b9fda435d2af01b7760",
+      "output_path": "outputs/hpc/scale32-cont-20260917/case02-w8/state_1.dat",
+      "output_sha256": "01b6525980acc2bdc995a2aa7147fd574dd2332169e483e234e6271edc72831f",
+      "wall_s": 201.18999418895692,
+      "residual": 0.0015863866893025013,
+      "boundary_l1": 0.000532055307589793,
+      "boundary_bolometric": 0.0005134414361908803,
+      "maximum_worker_rss_mib": 3502.02734375
+    },
+    {
+      "workers": 16,
+      "run": "outputs/hpc/scale32-cont-20260917/case03-w16",
+      "total_wall_s": 176.22841590293683,
+      "load_average": [
+        14.5078125,
+        11.4033203125,
+        8.177734375
+      ],
+      "iteration": 1,
+      "input_path": "outputs/hpc/scale32-cont-20260917/case03-w16/state_0.dat",
+      "input_sha256": "b13cd1d2a574155a6b29707e8523560f8a11af85f1b74b9fda435d2af01b7760",
+      "output_path": "outputs/hpc/scale32-cont-20260917/case03-w16/state_1.dat",
+      "output_sha256": "01b6525980acc2bdc995a2aa7147fd574dd2332169e483e234e6271edc72831f",
+      "wall_s": 130.45963530801237,
+      "residual": 0.0015863866893025013,
+      "boundary_l1": 0.000532055307589793,
+      "boundary_bolometric": 0.0005134414361908803,
+      "maximum_worker_rss_mib": 3500.44921875
+    },
+    {
+      "workers": 16,
+      "run": "outputs/hpc/scale32-cont-20260917/case04-w16",
+      "total_wall_s": 176.50790711306036,
+      "load_average": [
+        16.10400390625,
+        13.16552734375,
+        9.384765625
+      ],
+      "iteration": 1,
+      "input_path": "outputs/hpc/scale32-cont-20260917/case04-w16/state_0.dat",
+      "input_sha256": "b13cd1d2a574155a6b29707e8523560f8a11af85f1b74b9fda435d2af01b7760",
+      "output_path": "outputs/hpc/scale32-cont-20260917/case04-w16/state_1.dat",
+      "output_sha256": "01b6525980acc2bdc995a2aa7147fd574dd2332169e483e234e6271edc72831f",
+      "wall_s": 130.56706582102925,
+      "residual": 0.0015863866893025013,
+      "boundary_l1": 0.000532055307589793,
+      "boundary_bolometric": 0.0005134414361908803,
+      "maximum_worker_rss_mib": 3498.58984375
+    },
+    {
+      "workers": 8,
+      "run": "outputs/hpc/scale32-cont-20260917/case05-w8",
+      "total_wall_s": 248.33733194787055,
+      "load_average": [
+        14.46240234375,
+        14.3916015625,
+        10.79736328125
+      ],
+      "iteration": 1,
+      "input_path": "outputs/hpc/scale32-cont-20260917/case05-w8/state_0.dat",
+      "input_sha256": "b13cd1d2a574155a6b29707e8523560f8a11af85f1b74b9fda435d2af01b7760",
+      "output_path": "outputs/hpc/scale32-cont-20260917/case05-w8/state_1.dat",
+      "output_sha256": "01b6525980acc2bdc995a2aa7147fd574dd2332169e483e234e6271edc72831f",
+      "wall_s": 202.29073961800896,
+      "residual": 0.0015863866893025013,
+      "boundary_l1": 0.000532055307589793,
+      "boundary_bolometric": 0.0005134414361908803,
+      "maximum_worker_rss_mib": 3499.84765625
+    },
+    {
+      "workers": 4,
+      "run": "outputs/hpc/scale32-cont-20260917/case06-w4",
+      "total_wall_s": 386.1747136740014,
+      "load_average": [
+        28.19482421875,
+        18.57470703125,
+        13.37890625
+      ],
+      "iteration": 1,
+      "input_path": "outputs/hpc/scale32-cont-20260917/case06-w4/state_0.dat",
+      "input_sha256": "b13cd1d2a574155a6b29707e8523560f8a11af85f1b74b9fda435d2af01b7760",
+      "output_path": "outputs/hpc/scale32-cont-20260917/case06-w4/state_1.dat",
+      "output_sha256": "01b6525980acc2bdc995a2aa7147fd574dd2332169e483e234e6271edc72831f",
+      "wall_s": 339.5180407320149,
+      "residual": 0.0015863866893025013,
+      "boundary_l1": 0.000532055307589793,
+      "boundary_bolometric": 0.0005134414361908803,
+      "maximum_worker_rss_mib": 3500.125
+    }
+  ],
+  "cpu_affinity": [
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118
+  ],
+  "order": [
+    4,
+    8,
+    16,
+    16,
+    8,
+    4
+  ],
+  "maximum_workers": 16,
+  "note": "4/8/16 workers in forward/reverse order, two full maps each; same seed/material",
+  "next_science": {
+    "run": "outputs/hpc/scale32-cont-20260917/science",
+    "maximum_new_maps": 32,
+    "feedback_every": 8,
+    "candidate_relaxation": 0.03125
+  },
+  "chosen_workers": 16,
+  "median_map_wall_s": {
+    "4": 335.9940590885235,
+    "8": 201.74036690348294,
+    "16": 130.5133505645208
+  },
+  "source_path": "outputs/hpc/scale32-cont-20260917/benchmark.json",
+  "source_sha256": "90dec37cd2292e11581d234806b1037fa2afee0918f5b6778cb181bff1af7db2"
+}
