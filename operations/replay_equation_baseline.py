@@ -182,13 +182,16 @@ def main():
                 if not np.allclose(encoded+stored, target['encoded_state'], rtol=0, atol=3e-13):
                     raise RuntimeError('stored target and residual disagree')
                 recovered = recover_equation_residual(codec, encoded, stored, led['gas_old'])
-                if not np.allclose(recovered, vector, rtol=1e-11, atol=3e-13):
+                # 代数恒等式同样按尺度判定：Mac 上余量只有 2.6 倍，跨平台不应要求逐位。
+                identity = scale_aware_verdict(recovered, vector)
+                if not identity['passed']:
                     raise RuntimeError('converted baseline disagrees with direct energy equation')
                 parity = {
                     'replay_verdict': replay_verdict,
                     'strict_element_wise_verdict': strict,
+                    'conversion_identity_verdict': identity,
                     'difference': {k: v for k, v in difference.items() if k != 'difference_by_cell'},
-                    'equation_maximum_absolute_difference': float(np.max(abs(recovered-vector))),
+                    'conversion_identity_maximum_absolute_difference': float(np.max(abs(recovered-vector))),
                     'note': '跨平台重放用尺度锚定判据；严格逐位判据只记录，不冒充物理接受条件。'}
         result = {'classification': 'same-scale equation residual diagnostic; no accepted material step',
                   'environment': pipeline.environment(), 'migration': migrated, 'cross_platform_parity': parity,
@@ -197,6 +200,8 @@ def main():
                                'historical_feedback_comparison': summary['comparison']}, 'candidates': [],
                   'scope': {'new_radiation_maps': 0, 'new_directions': 0, 'formal_gates_changed': False,
                             'baseline_error_bound_available': False, 'candidate_error_bound_available': False}}
+        # 基态证据先单独落盘：后面任何一步失败都不能再丢掉已完成的部分。
+        pipeline.write_json(out/'baseline_replay.partial.json', result)
         for name in SOURCE_RUNS:
             run = pipeline.safe_path(ROOT, name)
             state = pipeline.read(pin(run/'state.json'))
@@ -236,6 +241,7 @@ def main():
                            residual_by_cell={k:v.tolist() for k,v in pair.items()})
                 entry['rounds'].append(row)
             result['candidates'].append(entry)
+            pipeline.write_json(out/'baseline_replay.partial.json', result)
         # 已停止源在本次只读重放期间也不得改变；记录所有小工件和实际执行代码身份。
         if pipeline.verify_claims(ROOT, list(claims.values()), hash_files=True):
             raise RuntimeError('input changed during replay')
@@ -243,6 +249,11 @@ def main():
         pipeline.write_json(out/'baseline_comparison.json', result)
         pipeline.write_json(out/'status.json', {'status': 'complete', 'candidate_runs': len(result['candidates'])})
     except Exception as exc:
+        # 失败也保留已经完成的部分结果，失败原因单独记录，不覆盖证据。
+        for partial in (out/'baseline_replay.partial.json',):
+            if partial.exists():
+                pipeline.write_json(out/'baseline_replay.failed.json',
+                                    {**pipeline.read(partial), 'failure': str(exc)})
         pipeline.write_json(out/'status.json', {'status': 'failed', 'error': str(exc)})
         raise
 
