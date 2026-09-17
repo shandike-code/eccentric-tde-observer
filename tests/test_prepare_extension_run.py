@@ -16,16 +16,28 @@ def test_recorded_hashes_collects_history_and_round_endpoints():
     assert recorded == {"a.dat": "h1", "b.dat": "h2", "c.dat": "h3"}
 
 
-def test_first_record_wins_so_a_rotation_cannot_rewrite_an_endpoint():
-    # 同一路径先作为 map1 输出、后作为 map2 输入被记录；两者必须一致，
-    # 若不一致（槽位被覆盖）以先记录者为准，由主流程的比对来拒绝。
+def test_last_write_wins_so_a_rotating_slot_uses_its_final_bytes():
+    # 轮换槽位 s.dat 先被 map1 写、后被 map2 写；只有最后写入能与磁盘现状比较。
+    # 用首次记录会把完好的 run 误判成被覆盖（曾真实发生）。
     state = {"history": [
         {"input_path": "s.dat", "input_sha256": "old", "output_path": "t.dat", "output_sha256": "t0"},
         {"input_path": "t.dat", "input_sha256": "t0", "output_path": "s.dat", "output_sha256": "new"},
     ]}
     recorded = recorded_hashes(state)
-    assert recorded["s.dat"] == "old"
+    assert recorded["s.dat"] == "new"
     assert recorded["t.dat"] == "t0"
+
+
+def test_round_endpoints_only_fill_paths_the_history_never_wrote():
+    state = {
+        "history": [{"output_path": "s.dat", "output_sha256": "latest"}],
+        "diagnostic": {"rounds": [{"endpoints_claim": {
+            "previous": {"path": "s.dat", "sha256": "older-input"},
+            "final": {"path": "z.dat", "sha256": "only-in-round"}}}]},
+    }
+    recorded = recorded_hashes(state)
+    assert recorded["s.dat"] == "latest"
+    assert recorded["z.dat"] == "only-in-round"
 
 
 def test_missing_keys_are_tolerated_for_incomplete_states():

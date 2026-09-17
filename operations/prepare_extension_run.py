@@ -25,15 +25,15 @@ STOPPED = ("diagnostic_round_complete", "budget_exhausted")
 def recorded_hashes(state: dict) -> dict[str, str]:
     """Every sha256 the source run itself recorded, keyed by state path.
 
-    A slot rotates, so a path can legitimately hold different bytes than the last
-    round claims. Comparing the fresh hash against this map is what detects a
-    slot that was overwritten after the run stopped.
+    A slot rotates, so the same path legitimately holds different bytes over the
+    life of a run. Only the *last* write to a path can be compared with the file
+    on disk now; using an earlier record would reject healthy runs (observed on
+    hhe-r025-cont64, whose slots are intact).
     """
     recorded: dict[str, str] = {}
     for row in state.get("history", []):
-        for path_key, sha_key in (("input_path", "input_sha256"), ("output_path", "output_sha256")):
-            if row.get(path_key) and row.get(sha_key):
-                recorded.setdefault(row[path_key], row[sha_key])
+        if row.get("output_path") and row.get("output_sha256"):
+            recorded[row["output_path"]] = row["output_sha256"]
     for row in state.get("diagnostic", {}).get("rounds", []):
         for label in ("previous", "final"):
             claim = row.get("endpoints_claim", {}).get(label)
@@ -87,6 +87,14 @@ def main() -> None:
         raise SystemExit(
             f"seed state bytes no longer match the run's own record for {claim['path']}; "
             "the slot was overwritten, so this chain can no longer be continued from it")
+    # 续跑点必须是这条链的最新态：当前槽位就是最后一次 map 的输出。
+    history = state.get("history", [])
+    latest = history[-1] if history else None
+    if not latest or latest.get("output_path") != claim["path"] \
+            or latest.get("output_sha256") != claim["sha256"]:
+        raise SystemExit("seed must be the output of the run's most recent map")
+    if state["slots"][state["current_slot"]] != claim["path"]:
+        raise SystemExit("seed is not the run's current slot")
 
     config.update({
         "run": run.relative_to(ROOT).as_posix(),
