@@ -1,0 +1,123 @@
+{
+  "classification": "equation residual diagnostic only; not an accepted step or root existence proof",
+  "definition": "energy=(e_candidate-e_old-dt*Q/rho)/old_gas_heat; population=logratios(candidate)-logratios(BE response)",
+  "formal_acceptance_changed": false,
+  "physical_dt_changed": false,
+  "norms_comparable_to_legacy_encoded_residual": false,
+  "source_path": "outputs/hpc/equation-residual-audit-20260917/equation_residual.json",
+  "source_sha256": "fe0264f2b9af6a2ecf8786c88e86f92d0703f4cc24e4bcf1af1f5168b9b3ab5c",
+  "scheduler": {
+    "observed_at": "2026-09-17T11:56:31.570821+08:00",
+    "raw": "JobId=71772 JobName=tde-eq-audit UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:09 TimeLimit=00:20:00 TimeMin=N/A SubmitTime=2026-09-17T11:55:46 EligibleTime=2026-09-17T11:55:46 AccrueTime=2026-09-17T11:55:46 StartTime=2026-09-17T11:55:47 EndTime=2026-09-17T11:55:56 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-17T11:55:47 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2922310 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode17 BatchHost=anode17 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/conservative_residual_diagnostic.sbatch SubmitLine=sbatch --parsable operations/conservative_residual_diagnostic.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-eq-audit-71772.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-eq-audit-71772.out TresPerTask=cpu=4\n"
+  },
+  "runs": [
+    {
+      "source_run": "outputs/hpc/hhe-r025-cont64",
+      "alpha": 0.0625,
+      "endpoints": {
+        "previous": {
+          "norms": {
+            "l2": 90.39780212865386,
+            "mass_weighted_l2": 3.9535498825295488,
+            "maximum_cell": 30.092094618994313,
+            "worst_cell": 3,
+            "maximum_energy_component": 30.089902920541377,
+            "maximum_population_logratio_component": 0.46256535900931084
+          },
+          "legacy_response_nonphysical_cells": 0
+        },
+        "final": {
+          "norms": {
+            "l2": 90.42648934101004,
+            "mass_weighted_l2": 3.9628370050261306,
+            "maximum_cell": 30.09209903869963,
+            "worst_cell": 3,
+            "maximum_energy_component": 30.08990734046483,
+            "maximum_population_logratio_component": 0.46256536684776606
+          },
+          "legacy_response_nonphysical_cells": 0
+        }
+      },
+      "adjacent_residual_difference": {
+        "l2": 0.1359089632592139,
+        "mass_weighted_l2": 0.0167143756110819,
+        "maximum_cell": 0.023906800875704445,
+        "worst_cell": 111,
+        "maximum_energy_component": 0.023906042202412436,
+        "maximum_population_logratio_component": 0.00013476576960513853
+      }
+    },
+    {
+      "source_run": "outputs/hpc/hhe-backtrack-r003125-20260916-v2",
+      "alpha": 0.03125,
+      "endpoints": {
+        "previous": {
+          "norms": {
+            "l2": 102.43066307331225,
+            "mass_weighted_l2": 3.679934665004853,
+            "maximum_cell": 32.68650944592389,
+            "worst_cell": 3,
+            "maximum_energy_component": 32.68459249070271,
+            "maximum_population_logratio_component": 0.4587877538750611
+          },
+          "legacy_response_nonphysical_cells": 32
+        },
+        "final": {
+          "norms": {
+            "l2": 102.50490881962038,
+            "mass_weighted_l2": 3.6734717717722307,
+            "maximum_cell": 32.64109906937453,
+            "worst_cell": 3,
+            "maximum_energy_component": 32.63917920581421,
+            "maximum_population_logratio_component": 0.45865841924110384
+          },
+          "legacy_response_nonphysical_cells": 32
+        }
+      },
+      "adjacent_residual_difference": {
+        "l2": 0.7457564531028966,
+        "mass_weighted_l2": 0.05230697622554277,
+        "maximum_cell": 0.16445481322875344,
+        "worst_cell": 18,
+        "maximum_energy_component": 0.16444700283062552,
+        "maximum_population_logratio_component": 0.001581528504942753
+      }
+    },
+    {
+      "source_run": "outputs/hpc/scale32-cont-20260917/science",
+      "alpha": 0.03125,
+      "endpoints": {
+        "previous": {
+          "norms": {
+            "l2": 100.44873619772414,
+            "mass_weighted_l2": 3.6975643901999566,
+            "maximum_cell": 32.18646194581973,
+            "worst_cell": 3,
+            "maximum_energy_component": 32.184532447056355,
+            "maximum_population_logratio_component": 0.45659110634107236
+          },
+          "legacy_response_nonphysical_cells": 43
+        },
+        "final": {
+          "norms": {
+            "l2": 100.43309854815524,
+            "mass_weighted_l2": 3.697750998447744,
+            "maximum_cell": 32.184677727228795,
+            "worst_cell": 3,
+            "maximum_energy_component": 32.182748197312726,
+            "maximum_population_logratio_component": 0.4565836659687328
+          },
+          "legacy_response_nonphysical_cells": 43
+        }
+      },
+      "adjacent_residual_difference": {
+        "l2": 0.05274077663683137,
+        "mass_weighted_l2": 0.004079425688271759,
+        "maximum_cell": 0.010047403337075926,
+        "worst_cell": 23,
+        "maximum_energy_component": 0.01004739916195696,
+        "maximum_population_logratio_component": 0.0003390387179500465
+      }
+    }
+  ]
+}
