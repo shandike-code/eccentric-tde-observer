@@ -1,0 +1,107 @@
+{
+  "classification": "read-only energy-component audit; not full coupled residual or acceptance",
+  "energy_defect_definition": "candidate_specific_material_energy - old_specific_material_energy - dt*Q/rho",
+  "formal_acceptance_changed": false,
+  "physical_phase_and_dt": [
+    1367,
+    889.419892762322
+  ],
+  "interpretation_limits": [
+    "Frozen radiation response can leave its temperature domain while the algebraic energy defect is finite.",
+    "A finite diagnostic defect neither accepts a material step nor proves the nonlinear equations have a physical root.",
+    "Candidates have different radiation convergence histories; their difference is not a validated Jacobian.",
+    "No dt reduction, clipping, floors, population changes, or replaced formal norm."
+  ],
+  "source_path": "outputs/hpc/response-energy-audit-20260917/energy_audit.json",
+  "source_sha256": "3c3c3545fb21b3fd3688f83bbb761ef99fe349ffa032d54f414183e823288be7",
+  "scheduler": {
+    "observed_at": "2026-09-17T11:49:00.868808+08:00",
+    "raw": "JobId=71768 JobName=tde-energy-audit UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:13 TimeLimit=00:20:00 TimeMin=N/A SubmitTime=2026-09-17T11:47:30 EligibleTime=2026-09-17T11:47:30 AccrueTime=2026-09-17T11:47:30 StartTime=2026-09-17T11:47:30 EndTime=2026-09-17T11:47:43 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-17T11:47:30 Scheduler=Backfill Partition=Students AllocNode:Sid=tradmin-02:2809470 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode16 BatchHost=anode16 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/response_energy_audit.sbatch SubmitLine=sbatch --parsable operations/response_energy_audit.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-energy-audit-71768.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-energy-audit-71768.out TresPerTask=cpu=4"
+  },
+  "endpoints": [
+    {
+      "source_run": "outputs/hpc/hhe-r025-cont64",
+      "endpoint": "previous",
+      "alpha": 0.0625,
+      "heating_pair_change": 0.003133997184404173,
+      "inner_gate_passed": true,
+      "failing_cells": 0,
+      "worst_cell": 64,
+      "remaining_over_old_gas": 0.028717558633841372,
+      "radiative_increment_over_old_gas": -0.9712824380989667,
+      "delta_ionization_over_old_gas": 3.2671917025209436e-09,
+      "energy_equation_defect_over_old_gas": 0.9733867047350953,
+      "split_self_check": 0.0
+    },
+    {
+      "source_run": "outputs/hpc/hhe-r025-cont64",
+      "endpoint": "final",
+      "alpha": 0.0625,
+      "heating_pair_change": 0.003133997184404173,
+      "inner_gate_passed": true,
+      "failing_cells": 0,
+      "worst_cell": 64,
+      "remaining_over_old_gas": 0.030756175446537307,
+      "radiative_increment_over_old_gas": -0.9692438212862375,
+      "delta_ionization_over_old_gas": 3.2672249956841804e-09,
+      "energy_equation_defect_over_old_gas": 0.9713480879223659,
+      "split_self_check": 0.0
+    },
+    {
+      "source_run": "outputs/hpc/hhe-backtrack-r003125-20260916-v2",
+      "endpoint": "previous",
+      "alpha": 0.03125,
+      "heating_pair_change": 0.009047870398460198,
+      "inner_gate_passed": false,
+      "failing_cells": 32,
+      "worst_cell": 106,
+      "remaining_over_old_gas": -1.5735587172500494,
+      "radiative_increment_over_old_gas": -2.5735587173608705,
+      "delta_ionization_over_old_gas": -1.1082148685810107e-10,
+      "energy_equation_defect_over_old_gas": 2.551320143030465,
+      "split_self_check": 0.0
+    },
+    {
+      "source_run": "outputs/hpc/hhe-backtrack-r003125-20260916-v2",
+      "endpoint": "final",
+      "alpha": 0.03125,
+      "heating_pair_change": 0.009047870398460198,
+      "inner_gate_passed": false,
+      "failing_cells": 32,
+      "worst_cell": 106,
+      "remaining_over_old_gas": -1.537596355771154,
+      "radiative_increment_over_old_gas": -2.5375963558741343,
+      "delta_ionization_over_old_gas": -1.0298052961793364e-10,
+      "energy_equation_defect_over_old_gas": 2.5153577815437287,
+      "split_self_check": 0.0
+    },
+    {
+      "source_run": "outputs/hpc/scale32-cont-20260917/science",
+      "endpoint": "previous",
+      "alpha": 0.03125,
+      "heating_pair_change": 0.0007221799058651453,
+      "inner_gate_passed": false,
+      "failing_cells": 43,
+      "worst_cell": 106,
+      "remaining_over_old_gas": -2.064446001517409,
+      "radiative_increment_over_old_gas": -3.064446001691446,
+      "delta_ionization_over_old_gas": -1.7403675490135452e-10,
+      "energy_equation_defect_over_old_gas": 3.04220742736104,
+      "split_self_check": 0.0
+    },
+    {
+      "source_run": "outputs/hpc/scale32-cont-20260917/science",
+      "endpoint": "final",
+      "alpha": 0.03125,
+      "heating_pair_change": 0.0007221799058651453,
+      "inner_gate_passed": false,
+      "failing_cells": 43,
+      "worst_cell": 106,
+      "remaining_over_old_gas": -2.0660815041322826,
+      "radiative_increment_over_old_gas": -3.066081504307206,
+      "delta_ionization_over_old_gas": -1.7492356991061438e-10,
+      "energy_equation_defect_over_old_gas": 3.0438429299768006,
+      "split_self_check": 0.0
+    }
+  ]
+}
