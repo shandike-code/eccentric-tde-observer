@@ -1119,5 +1119,249 @@
       ]
     }
   },
-  "note": "\u5e42\u5f8b\u6307\u6570\u53ea\u63cf\u8ff0\u540c\u4e00 run \u5185\u90e8 R \u4e0e\u914d\u5bf9\u52a0\u70ed\u91cf\u7684\u5173\u7cfb\uff1b\u786e\u8ba4 run \u5728 R \u51e0\u4e4e\u4e0d\u53d8\u65f6\u52a0\u70ed\u56de\u5347\uff0c\u8bf4\u660e\u8be5\u91cf\u4e0d\u7531 R \u552f\u4e00\u51b3\u5b9a\u3002"
+  "note": "\u5e42\u5f8b\u6307\u6570\u53ea\u63cf\u8ff0\u540c\u4e00 run \u5185\u90e8 R \u4e0e\u914d\u5bf9\u52a0\u70ed\u91cf\u7684\u5173\u7cfb\uff1b\u786e\u8ba4 run \u5728 R \u51e0\u4e4e\u4e0d\u53d8\u65f6\u52a0\u70ed\u56de\u5347\uff0c\u8bf4\u660e\u8be5\u91cf\u4e0d\u7531 R \u552f\u4e00\u51b3\u5b9a\u3002",
+  "extension_run": {
+    "run": "outputs/hpc/hhe-r025-ext16-20260917",
+    "seed": "cont64 state_1.dat sha bbad1a837889...",
+    "authorized_stage_b_threshold": 0.00025,
+    "declared_radiation_threshold": 0.0001,
+    "workers": 16,
+    "maximum_maps": 16,
+    "feedback_every": 4,
+    "per_map_wall_s": [
+      [
+        1,
+        861.7
+      ],
+      [
+        2,
+        349.7
+      ],
+      [
+        3,
+        357.2
+      ],
+      [
+        4,
+        355.5
+      ],
+      [
+        5,
+        325.3
+      ],
+      [
+        6,
+        270.2
+      ],
+      [
+        7,
+        271.4
+      ],
+      [
+        8,
+        272.4
+      ],
+      [
+        9,
+        251.4
+      ],
+      [
+        10,
+        267.2
+      ],
+      [
+        11,
+        261.6
+      ],
+      [
+        12,
+        264.3
+      ],
+      [
+        13,
+        263.6
+      ],
+      [
+        14,
+        256.0
+      ],
+      [
+        15,
+        257.5
+      ]
+    ],
+    "rounds": [
+      {
+        "run": "ext16",
+        "round": 1,
+        "maps": [
+          3,
+          4
+        ],
+        "R": [
+          0.00012361821768875115,
+          0.00012287016034890396
+        ],
+        "heating": 0.0030050782972779206,
+        "photo": [
+          6.199621711094198e-06,
+          9.992168333884639e-05,
+          1.157010643177537e-09
+        ],
+        "recomb": [
+          4.460905361342699e-09,
+          8.340391243675852e-08,
+          5.14448653549101e-15
+        ],
+        "gates": {
+          "last_two_photoionization_pass": true,
+          "last_two_total_recombination_pass": true,
+          "last_two_atomic_heating_pass": false,
+          "last_two_direct_heating_pass": false,
+          "last_two_formal_heating_pass": false,
+          "inner_noise_resolved_pass": true,
+          "candidate_l2_contraction_pass": false,
+          "candidate_mass_weighted_contraction_pass": false,
+          "candidate_maximum_cell_contraction_pass": true,
+          "two_formal_feedback_states_pass": true,
+          "two_inner_radiation_residuals_pass": false,
+          "two_boundary_spectra_pass": true,
+          "two_boundary_bolometric_pass": true,
+          "candidate_state_bytes_pass": true,
+          "population_nonnegative_pass": true,
+          "all_residual_components_finite_pass": true
+        },
+        "failcells": [
+          0,
+          0
+        ],
+        "failmass": 0.0
+      },
+      {
+        "run": "ext16",
+        "round": 2,
+        "maps": [
+          7,
+          8
+        ],
+        "R": [
+          0.00012065992755274776,
+          0.00011993307414855563
+        ],
+        "heating": 0.0028819631111694165,
+        "photo": [
+          6.038899426204178e-06,
+          9.672181963485596e-05,
+          1.0081509036551657e-09
+        ],
+        "recomb": [
+          3.7524016405070975e-09,
+          8.030421807022145e-08,
+          4.490349360959629e-15
+        ],
+        "gates": {
+          "last_two_photoionization_pass": true,
+          "last_two_total_recombination_pass": true,
+          "last_two_atomic_heating_pass": false,
+          "last_two_direct_heating_pass": false,
+          "last_two_formal_heating_pass": false,
+          "inner_noise_resolved_pass": true,
+          "candidate_l2_contraction_pass": false,
+          "candidate_mass_weighted_contraction_pass": false,
+          "candidate_maximum_cell_contraction_pass": true,
+          "two_formal_feedback_states_pass": true,
+          "two_inner_radiation_residuals_pass": false,
+          "two_boundary_spectra_pass": true,
+          "two_boundary_bolometric_pass": true,
+          "candidate_state_bytes_pass": true,
+          "population_nonnegative_pass": true,
+          "all_residual_components_finite_pass": true
+        },
+        "failcells": [
+          0,
+          0
+        ],
+        "failmass": 0.0
+      },
+      {
+        "run": "ext16",
+        "round": 3,
+        "maps": [
+          11,
+          12
+        ],
+        "R": [
+          0.00011778560370628552,
+          0.00011708016131351537
+        ],
+        "heating": 0.0027646590511838463,
+        "photo": [
+          5.877614505102195e-06,
+          9.36332210144322e-05,
+          8.71185508703386e-10
+        ],
+        "recomb": [
+          3.235343271950334e-09,
+          7.732475945300506e-08,
+          3.889384142884954e-15
+        ],
+        "gates": {
+          "last_two_photoionization_pass": true,
+          "last_two_total_recombination_pass": true,
+          "last_two_atomic_heating_pass": false,
+          "last_two_direct_heating_pass": false,
+          "last_two_formal_heating_pass": false,
+          "inner_noise_resolved_pass": true,
+          "candidate_l2_contraction_pass": false,
+          "candidate_mass_weighted_contraction_pass": false,
+          "candidate_maximum_cell_contraction_pass": true,
+          "two_formal_feedback_states_pass": true,
+          "two_inner_radiation_residuals_pass": false,
+          "two_boundary_spectra_pass": true,
+          "two_boundary_bolometric_pass": true,
+          "candidate_state_bytes_pass": true,
+          "population_nonnegative_pass": true,
+          "all_residual_components_finite_pass": true
+        },
+        "failcells": [
+          0,
+          0
+        ],
+        "failmass": 0.0
+      }
+    ],
+    "note": "\u9636\u6bb5 B \u6388\u6743\u7684 2.5e-4 \u672a\u53d8\uff1b\u672c run \u7684 radiation_threshold=1e-4 \u53ea\u662f\"\u4f55\u65f6\u7b97\u6536\u655b\"\u7684\u8bb0\u5f55\uff0c\u56e0\u6b64 two_inner_radiation_residuals_pass \u5728 R>1e-4 \u65f6\u4e3a false \u5c5e\u58f0\u660e\u6240\u81f4\uff0c\u4e0d\u662f\u7269\u7406\u5931\u8d25",
+    "encoded_residual_vs_base": {
+      "base_l2": 15.588864,
+      "candidate_l2": [
+        17.5643,
+        17.5524,
+        17.5543
+      ],
+      "ratio": [
+        1.1267,
+        1.126,
+        1.1261
+      ],
+      "gate": "candidate_to_base_residual_l2_ratio_below = 1.0 (feedback_protocol acceptance_gates)",
+      "interpretation": "\u5019\u9009\u7684\u7f16\u7801\u6b8b\u5dee\u6bd4\u57fa\u6001\u5927 12.6%\uff0c\u4e14\u4e09\u8f6e\u51e0\u4e4e\u4e0d\u52a8\u2014\u2014\u6536\u7f29\u95e8\u4e0d\u968f\u5185\u5c42\u7cbe\u5ea6\u6539\u5584"
+    }
+  },
+  "chain_fit": {
+    "points": 19,
+    "slope_all": 1.6566584125998283,
+    "slope_last8": 1.725233214509881,
+    "slope_new_rounds": 1.72528739213247,
+    "last_point": {
+      "R": 0.00011778560370628552,
+      "heating": 0.0027646590511838463
+    },
+    "caveat": "\u659c\u7387\u662f\u540c\u4e00 run \u5185\u7684\u7ecf\u9a8c\u63cf\u8ff0\uff0c\u4e0d\u5916\u63a8\u6210\"\u518d\u8dd1 N \u5f20\u5c31\u8fc7\u95e8\""
+  },
+  "heating_gate_cost": {
+    "R_target_for_1e-3": 6.532850456298343e-05,
+    "maps_needed": 97.94458493640468,
+    "per_map_wall_s_median": 268.7,
+    "hours_at_median": 7.3104749923366485
+  }
 }
