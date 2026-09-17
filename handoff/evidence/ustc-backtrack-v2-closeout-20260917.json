@@ -1,0 +1,259 @@
+{
+  "observed_at": "2026-09-17T09:18:47.489807+08:00",
+  "run": "outputs/hpc/hhe-backtrack-r003125-20260916-v2",
+  "status": "diagnostic_round_complete",
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/state_0.dat",
+      "input_sha256": "bbad1a837889c93104d2f7b47a47fe35d2cf7e1035792247480ed612a6832c1f",
+      "output_path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/state_1.dat",
+      "output_sha256": "0f2cc3cbe0b63b40b45659fabb55f262df5c591836fb9a600e92d4e212a7bd22",
+      "wall_s": 377.40917494520545,
+      "residual": 0.002743795915411458,
+      "boundary_l1": 0.0016203147618610847,
+      "boundary_bolometric": 0.0009870220453136978,
+      "maximum_worker_rss_mib": 3501.7890625
+    },
+    {
+      "iteration": 2,
+      "input_path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/state_1.dat",
+      "input_sha256": "0f2cc3cbe0b63b40b45659fabb55f262df5c591836fb9a600e92d4e212a7bd22",
+      "output_path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/state_2.dat",
+      "output_sha256": "d416a0abc8ba3ed066582fd69b94eb7680ad13ed1ff4d116f21180cf1a7c184c",
+      "wall_s": 372.9592859726399,
+      "residual": 0.0025369446457042246,
+      "boundary_l1": 0.001238638331930048,
+      "boundary_bolometric": 0.00081026142322298,
+      "maximum_worker_rss_mib": 3499.22265625
+    },
+    {
+      "iteration": 3,
+      "input_path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/state_2.dat",
+      "input_sha256": "d416a0abc8ba3ed066582fd69b94eb7680ad13ed1ff4d116f21180cf1a7c184c",
+      "output_path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/state_0.dat",
+      "output_sha256": "49e0e4f8b2677d4ef0a5feb929d58d60efd0719d228b666bf7f6ec09d60554a0",
+      "wall_s": 371.8202741071582,
+      "residual": 0.002352966640379965,
+      "boundary_l1": 0.0010133098698554648,
+      "boundary_bolometric": 0.000770915665652365,
+      "maximum_worker_rss_mib": 3500.2734375
+    },
+    {
+      "iteration": 4,
+      "input_path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/state_0.dat",
+      "input_sha256": "49e0e4f8b2677d4ef0a5feb929d58d60efd0719d228b666bf7f6ec09d60554a0",
+      "output_path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/state_1.dat",
+      "output_sha256": "4fe2a38d5f395742cbce66537a0702caddb17864592aefec1a780b9220151cd5",
+      "wall_s": 375.00664045475423,
+      "residual": 0.00218889619970265,
+      "boundary_l1": 0.0008646323117238698,
+      "boundary_bolometric": 0.0007229146224707946,
+      "maximum_worker_rss_mib": 3497.83984375
+    },
+    {
+      "iteration": 5,
+      "input_path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/state_1.dat",
+      "input_sha256": "4fe2a38d5f395742cbce66537a0702caddb17864592aefec1a780b9220151cd5",
+      "output_path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/state_2.dat",
+      "output_sha256": "360c6fe08072c488a2c3c55c5c24ca679e53a735ba19a3fa77259dc5bc902215",
+      "wall_s": 373.48953580856323,
+      "residual": 0.002043737259624854,
+      "boundary_l1": 0.0007613735287548542,
+      "boundary_bolometric": 0.0006744457941567899,
+      "maximum_worker_rss_mib": 3500.7421875
+    },
+    {
+      "iteration": 6,
+      "input_path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/state_2.dat",
+      "input_sha256": "360c6fe08072c488a2c3c55c5c24ca679e53a735ba19a3fa77259dc5bc902215",
+      "output_path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/state_0.dat",
+      "output_sha256": "ec2c8a1209c6793b133523dcfc3fcb97486abec5b54b01b810e4881453bbf9c8",
+      "wall_s": 372.47855487279594,
+      "residual": 0.0019137892360105134,
+      "boundary_l1": 0.0006846900729505109,
+      "boundary_bolometric": 0.0006287892803402184,
+      "maximum_worker_rss_mib": 3499.70703125
+    },
+    {
+      "iteration": 7,
+      "input_path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/state_0.dat",
+      "input_sha256": "ec2c8a1209c6793b133523dcfc3fcb97486abec5b54b01b810e4881453bbf9c8",
+      "output_path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/state_1.dat",
+      "output_sha256": "e8dca1d4070c09b4903c26fa7025ef55e91ad11c94deab20de7fb87245ab7a2e",
+      "wall_s": 377.07225552760065,
+      "residual": 0.001795513439485954,
+      "boundary_l1": 0.0006242983071926371,
+      "boundary_bolometric": 0.0005868194624675258,
+      "maximum_worker_rss_mib": 3500.76171875
+    },
+    {
+      "iteration": 8,
+      "input_path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/state_1.dat",
+      "input_sha256": "e8dca1d4070c09b4903c26fa7025ef55e91ad11c94deab20de7fb87245ab7a2e",
+      "output_path": "outputs/hpc/hhe-backtrack-r003125-20260916-v2/state_2.dat",
+      "output_sha256": "b13cd1d2a574155a6b29707e8523560f8a11af85f1b74b9fda435d2af01b7760",
+      "wall_s": 372.2599529605359,
+      "residual": 0.0016867704972623326,
+      "boundary_l1": 0.000574511737983835,
+      "boundary_bolometric": 0.0005484833283446994,
+      "maximum_worker_rss_mib": 3498.640625
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "comparison": {
+        "photoionization_volume_l1": [
+          0.0005118958154235195,
+          0.00033936553847624325,
+          0.000284150099498625
+        ],
+        "total_recombination_volume_l1": [
+          1.102095972726217e-05,
+          3.264264960452074e-07,
+          1.7291401396655766e-09
+        ],
+        "atomic_heating_volume_l1": 0.02658679842190759,
+        "direct_heating_volume_l1": 0.02658679842191957,
+        "formal_heating_volume_l1": 0.026586760400373496,
+        "inner_noise_to_trial_signal_l2_ratio": null,
+        "candidate_to_base_residual_l2_ratio": null,
+        "candidate_to_base_mass_weighted_norm_ratio": null,
+        "candidate_to_base_maximum_cell_norm_ratio": null,
+        "not_evaluated_reason": "finite material response left the physical domain"
+      },
+      "decision": {
+        "formal_h_he_feedback_pair_passed": true,
+        "finite_trial_accepted_as_one_nonlinear_step": false,
+        "finite_trial_rejected": true,
+        "static_approximation_rejected_from_one_failed_trial": false,
+        "dynamic_nlte_solution_accepted": false,
+        "phase4_replacement": false,
+        "real_line_formation": false
+      },
+      "gate_checks": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": false,
+        "two_boundary_spectra_pass": false,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "material": {
+        "previous": {
+          "failing_cells": 38,
+          "failing_mass_fraction": 0.5574313696658189,
+          "relative_worst": {
+            "criterion": "minimum remaining gas heat relative to that cell's old gas heat",
+            "cell": 106,
+            "ratio": -2.110433244537907,
+            "remaining_erg_g": -23872265650915.68
+          }
+        },
+        "final": {
+          "failing_cells": 34,
+          "failing_mass_fraction": 0.5016702964386598,
+          "relative_worst": {
+            "criterion": "minimum remaining gas heat relative to that cell's old gas heat",
+            "cell": 114,
+            "ratio": -1.9534169781320465,
+            "remaining_erg_g": -22573503743768.6
+          }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "comparison": {
+        "photoionization_volume_l1": [
+          0.00040540665685007246,
+          0.00032634061264233676,
+          3.4909863677619005e-06
+        ],
+        "total_recombination_volume_l1": [
+          8.105405111791133e-06,
+          3.0830473737302347e-07,
+          9.141065381982777e-12
+        ],
+        "atomic_heating_volume_l1": 0.009047870398460198,
+        "direct_heating_volume_l1": 0.00904787039846084,
+        "formal_heating_volume_l1": 0.009047859677515145,
+        "inner_noise_to_trial_signal_l2_ratio": null,
+        "candidate_to_base_residual_l2_ratio": null,
+        "candidate_to_base_mass_weighted_norm_ratio": null,
+        "candidate_to_base_maximum_cell_norm_ratio": null,
+        "not_evaluated_reason": "finite material response left the physical domain"
+      },
+      "decision": {
+        "formal_h_he_feedback_pair_passed": true,
+        "finite_trial_accepted_as_one_nonlinear_step": false,
+        "finite_trial_rejected": true,
+        "static_approximation_rejected_from_one_failed_trial": false,
+        "dynamic_nlte_solution_accepted": false,
+        "phase4_replacement": false,
+        "real_line_formation": false
+      },
+      "gate_checks": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": false,
+        "last_two_direct_heating_pass": false,
+        "last_two_formal_heating_pass": false,
+        "two_formal_feedback_states_pass": true,
+        "two_inner_radiation_residuals_pass": false,
+        "two_boundary_spectra_pass": true,
+        "two_boundary_bolometric_pass": true,
+        "candidate_state_bytes_pass": true,
+        "previous_material_response_physical_pass": false,
+        "final_material_response_physical_pass": false,
+        "population_nonnegative_pass": false,
+        "all_residual_components_finite_pass": false,
+        "inner_noise_resolved_pass": false,
+        "candidate_l2_contraction_pass": false,
+        "candidate_mass_weighted_contraction_pass": false,
+        "candidate_maximum_cell_contraction_pass": false
+      },
+      "material": {
+        "previous": {
+          "failing_cells": 32,
+          "failing_mass_fraction": 0.47477679665977646,
+          "relative_worst": {
+            "criterion": "minimum remaining gas heat relative to that cell's old gas heat",
+            "cell": 106,
+            "ratio": -1.5735587172500494,
+            "remaining_erg_g": -17799383995077.402
+          }
+        },
+        "final": {
+          "failing_cells": 32,
+          "failing_mass_fraction": 0.47477679665977646,
+          "relative_worst": {
+            "criterion": "minimum remaining gas heat relative to that cell's old gas heat",
+            "cell": 106,
+            "ratio": -1.537596355771154,
+            "remaining_erg_g": -17392594039090.701
+          }
+        }
+      }
+    }
+  ],
+  "scheduler": {
+    "observed_at": "2026-09-17T00:05:43.375225+08:00",
+    "raw": "JobId=64633 JobName=tde-backtrack UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=01:18:05 TimeLimit=08:00:00 TimeMin=N/A SubmitTime=2026-09-16T22:47:08 EligibleTime=2026-09-16T22:47:08 AccrueTime=2026-09-16T22:47:08 StartTime=2026-09-16T22:47:09 EndTime=2026-09-17T00:05:14 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-16T22:47:09 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:1652229 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode16 BatchHost=anode16 NumNodes=1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=8,mem=32G,node=1,billing=8 AllocTRES=cpu=8,node=1,billing=8 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=8 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/encoded_backtrack.sbatch SubmitLine=sbatch --parsable operations/encoded_backtrack.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-backtrack-64633.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-backtrack-64633.out TresPerTask=cpu=8",
+    "state": "COMPLETED",
+    "exit_code": "0:0"
+  }
+}
