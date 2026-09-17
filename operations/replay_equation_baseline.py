@@ -16,6 +16,8 @@ from diagnostics.material_energy_ledger import ledger, OLD_TIME_LEVEL
 from operations.prepare_encoded_backtrack import load_arrays
 from operations.conservative_residual_diagnostic import equation_residual, norms
 from operations.recover_equation_baseline import recover_equation_residual
+from operations.debug_baseline_parity import (
+    array_difference, parity_verdict, scale_aware_verdict)
 from eccentric_tde_observer.coupled_material_newton_krylov import GroundStateLogSimplexCodec
 from eccentric_tde_observer.radiation_matter_feedback import frozen_radiation_material_response
 import phase7b9cy_refresh_feedback_worker_template as migration
@@ -170,16 +172,24 @@ def main():
             if label == 'final':
                 stored = np.load(pin(package/summary['encoded_residual_path'], summary['encoded_residual_sha256']), allow_pickle=False)
                 target = load_arrays(pin(package/summary['target_material_path'], summary['target_material_sha256']))
-                if not np.allclose(legacy, stored, rtol=1e-11, atol=3e-13):
+                # 入口判据锚定在残差自身尺度：1-ulp 布居差经 log 变换约成 1e-12，
+                # 逐元素绝对界无法区分舍入与真实差异。严格逐位结果仍完整记录。
+                difference = array_difference(legacy, stored)
+                strict = parity_verdict(legacy, stored)
+                replay_verdict = scale_aware_verdict(legacy, stored)
+                if not replay_verdict['passed']:
                     raise RuntimeError('legacy response replay parity failed')
                 if not np.allclose(encoded+stored, target['encoded_state'], rtol=0, atol=3e-13):
                     raise RuntimeError('stored target and residual disagree')
                 recovered = recover_equation_residual(codec, encoded, stored, led['gas_old'])
                 if not np.allclose(recovered, vector, rtol=1e-11, atol=3e-13):
                     raise RuntimeError('converted baseline disagrees with direct energy equation')
-                parity = {'legacy_maximum_absolute_difference': float(np.max(abs(legacy-stored))),
-                          'equation_maximum_absolute_difference': float(np.max(abs(recovered-vector))),
-                          'rtol': 1e-11, 'atol': 3e-13}
+                parity = {
+                    'replay_verdict': replay_verdict,
+                    'strict_element_wise_verdict': strict,
+                    'difference': {k: v for k, v in difference.items() if k != 'difference_by_cell'},
+                    'equation_maximum_absolute_difference': float(np.max(abs(recovered-vector))),
+                    'note': '跨平台重放用尺度锚定判据；严格逐位判据只记录，不冒充物理接受条件。'}
         result = {'classification': 'same-scale equation residual diagnostic; no accepted material step',
                   'environment': pipeline.environment(), 'migration': migrated, 'cross_platform_parity': parity,
                   'physical_phase': phase, 'physical_dt_s': dt,

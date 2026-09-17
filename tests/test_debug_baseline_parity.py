@@ -1,7 +1,8 @@
 import numpy as np
 import pytest
 
-from operations.debug_baseline_parity import array_difference, parity_verdict
+from operations.debug_baseline_parity import (
+    SCALE_RELATIVE_TOLERANCE, array_difference, parity_verdict, scale_aware_verdict)
 
 
 def test_flat_vector_reshapes_to_cell_and_component_locally():
@@ -47,3 +48,34 @@ def test_verdict_uses_stored_magnitude_as_relative_scale():
     # 相对项按 stored 缩放：大分量允许更大绝对差，小分量只由 atol 兜底。
     assert parity_verdict(np.array([0.0, 1000.0 + 1e-9]), stored)["passed"] is True
     assert parity_verdict(np.array([1e-9, 1000.0]), stored)["passed"] is False
+
+
+def test_scale_aware_verdict_accepts_ulp_level_difference_in_tiny_components():
+    # 复现实测情形：分量尺度 3.46，小量级分量上出现 7.8e-12 的 ulp 放大差异。
+    rng = np.random.default_rng(20260917)
+    stored = np.zeros(512)
+    stored[0::4] = 2.0 * rng.random(128)
+    stored[3::4] = 1.0e-4 * rng.random(128)
+    replay = stored.copy()
+    replay[3::4] += 7.776890242894297e-12
+    strict = parity_verdict(replay, stored)
+    scale = scale_aware_verdict(replay, stored)
+    assert strict["passed"] is False
+    assert scale["passed"] is True
+    assert scale["observed_over_allowed"] < 1.0
+    assert scale["l2_allowed"] == pytest.approx(SCALE_RELATIVE_TOLERANCE * scale["l2_scale"])
+
+
+def test_scale_aware_verdict_rejects_a_real_discrepancy():
+    stored = np.ones(512)
+    replay = stored.copy()
+    replay[7] += 1.0e-4
+    assert scale_aware_verdict(replay, stored)["passed"] is False
+    assert scale_aware_verdict(replay, stored)["observed_over_allowed"] > 1.0
+
+
+def test_scale_aware_verdict_rejects_shape_mismatch_and_zero_scale():
+    with pytest.raises(ValueError):
+        scale_aware_verdict(np.zeros(8), np.zeros(9))
+    with pytest.raises(ValueError):
+        scale_aware_verdict(np.zeros(8), np.zeros(8))  # 零尺度无法定义相对界
