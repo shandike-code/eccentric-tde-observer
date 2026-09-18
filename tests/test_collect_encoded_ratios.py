@@ -131,3 +131,40 @@ def test_verdict_ignores_rounds_without_a_measured_ratio():
             {"round": 2, "qualifies": False, "ratio_to_base": 1.1}]
     result = verdict_for(rows)
     assert result["verdict"] == "pending"
+
+
+def test_domain_failure_detail_is_attached_when_ledger_present():
+    """物理域失败的轮次要带上失败单元统计（单元数/质量份额/最差比值）。"""
+    import shutil as _shutil
+    import uuid as _uuid
+    from operations.collect_encoded_ratios import ROOT as REPO
+    name = f"domain-detail-{_uuid.uuid4().hex[:8]}"
+    run = REPO / "outputs/hpc" / name
+    try:
+        (run / "feedback-round1").mkdir(parents=True)
+        (run / "feedback-round1" / "feedback_summary.json").write_text(json.dumps({
+            "encoded_residual_path": None,
+            "classification": "[A-preregistered]+[V-physical-domain]+[O]",
+            "material_response_failures": {
+                "previous": {"message": "specific material energy leaves no positive gas heat"}}}) + "\n")
+        (run / "feedback-round1" / "material_energy_ledger.json").write_text(json.dumps({
+            "endpoints": {
+                "previous": {"failing_cells": 50, "failing_mass_fraction": 0.683,
+                             "relative_worst": {"cell": 115, "ratio": -5.42}},
+                "final": {"failing_cells": 49, "failing_mass_fraction": 0.675,
+                          "relative_worst": {"cell": 115, "ratio": -5.23}}}}) + "\n")
+        (run / "state.json").write_text(json.dumps({
+            "config_sha256": "x", "status": "radiation",
+            "history": [{"iteration": 3, "residual": 4e-3}, {"iteration": 4, "residual": 3.9e-3}],
+            "slots": ["a", "b", "c"], "current_slot": 0, "active_map": None,
+            "diagnostic": {"rounds": [{"round": 1, "endpoints": [3, 4],
+                            "ledger": f"outputs/hpc/{name}/feedback-round1/"
+                                      "material_energy_ledger.json"}]}}) + "\n")
+        row = collect_run(f"outputs/hpc/{name}", base_l2=4.0)["rounds"][0]
+        detail = row["domain_failure_detail"]
+        assert detail["previous"]["failing_cells"] == 50
+        assert detail["previous"]["worst_cell"] == 115
+        assert detail["previous"]["worst_remaining_over_old_gas"] == pytest.approx(-5.42)
+        assert detail["final"]["failing_mass_fraction"] == pytest.approx(0.675)
+    finally:
+        _shutil.rmtree(run, ignore_errors=True)

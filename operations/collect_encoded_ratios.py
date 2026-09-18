@@ -50,12 +50,25 @@ def collect_round(run_dir: Path, summary_path: Path, base_l2: float) -> dict[str
         # classification 带 [V-physical-domain]）。这是数据，不是崩溃理由：
         # 报出状态与失败信息，不编造比值。
         failures = summary.get("material_response_failures") or {}
+        detail: dict[str, object] = {}
+        ledger_path = summary_path.parent / "material_energy_ledger.json"
+        if ledger_path.is_file():
+            ledger = pipeline.read(ledger_path)
+            for label in ("previous", "final"):
+                endpoint = (ledger.get("endpoints") or {}).get(label)
+                if isinstance(endpoint, dict):
+                    worst = endpoint.get("relative_worst") or {}
+                    detail[label] = {"failing_cells": endpoint.get("failing_cells"),
+                                     "failing_mass_fraction": endpoint.get("failing_mass_fraction"),
+                                     "worst_cell": worst.get("cell"),
+                                     "worst_remaining_over_old_gas": worst.get("ratio")}
         return {"summary": pipeline.relative(summary_path),
                 "status": "no encoded residual recorded",
                 "classification": summary.get("classification"),
                 "material_response_failures": {
                     label: row.get("message") if isinstance(row, dict) else row
                     for label, row in failures.items()} or None,
+                "domain_failure_detail": detail or None,
                 "ratio_to_base": None, "l2": None}
     residual_path = ROOT / recorded
     row = {"summary": pipeline.relative(summary_path), **ratio_of(residual_path, base_l2)}
