@@ -38,8 +38,11 @@
 
 1. 已停止 a078125-cont48 的监督器并 `scancel 72350`；该 run 的全部数据保留为证据，不删除。
 2. a15625-cont48 已自行跑满预算并停止，数据保留。
-3. 待修：`prepare_extension_run.py` 必须显式写入（或复制）源 run 的 `trial_material.npz`，并在初始化后**断言** `trial_material.npz` 的 `encoded_state` 与源 trial 逐位一致，否则拒绝运行；补一条回归测试锁死这个不变量（当前测试只覆盖 config/seed）。修好后按三遍检查再上平台。
-4. 重做 α=1/8 与 1/16 的**正确**延续链：源 run 分别是 `small-step-a15625-20260917` 与 `small-step-a078125-20260917`（两者的 trial 已核实正确），延续链必须携带源 trial。
+3. **已完成**：两个无效 run 目录里写入了 `INVALID-run-notice.json`（注明原因、证据与撤回文件位置，数据保留）。
+4. **已完成**：`prepare_extension_run.py` 修复并三遍检查通过（提交 5fe4611）。新增 `carry_trial()`：在写 config/state **之前**把源 trial 复制进新 run，并逐位断言 `encoded_state`/`base_encoded_state`/`finite_direction`/`base_residual` 与 `relaxation`；源缺 trial 或复制后被篡改都直接拒绝（新增两条负路径测试，合计 6 项通过）。平台的 dry-run 会打印 `source_trial` 与 `source_trial_relaxation` 供人工核对。
+5. **已完成**：重做了 α=1/8 与 1/16 的正确延续链——`small-step-a15625-cont48-v2-20260918` 与 `small-step-a078125-cont48-v2-20260918`，源 run 分别是 trial 身份已验证的 `small-step-a15625-20260917`（1/8）与 `small-step-a078125-20260917`（1/16）。准备后独立复核：两条 v2 的 `encoded_state` 与 `finite_direction` 与源**逐位一致**，relaxation 分别为 0.015625 与 0.0078125。两条链已初始化（各完成第 1 张 map，R=3.02e-3 与 3.49e-3，属各自场的初始失配）并由健壮监督器驱动（作业 72419、72420）；α=1/32 链（作业 72354）继续运行。
+
+三条链的预算均为 48 张 map、每 8 张一轮反馈，预计数小时内给出真正属于 1/8、1/16、1/32 三个步长的 `‖r(α)‖/‖r(base)‖`。
 
 ## 教训（写入操作纪律）
 
