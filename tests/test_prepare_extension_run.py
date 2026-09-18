@@ -43,3 +43,70 @@ def test_round_endpoints_only_fill_paths_the_history_never_wrote():
 def test_missing_keys_are_tolerated_for_incomplete_states():
     assert recorded_hashes({}) == {}
     assert recorded_hashes({"history": [{"input_path": "a.dat"}]}) == {}
+
+
+def test_carry_trial_copies_and_verifies_identity():
+    import shutil as _shutil
+    import uuid
+    import numpy as np
+    import pytest
+    from operations.collect_encoded_ratios import ROOT as REPO
+    from operations.prepare_extension_run import carry_trial
+
+    name = f"carry-selftest-{uuid.uuid4().hex[:8]}"
+    source = REPO / "outputs/hpc" / name / "source"
+    run = REPO / "outputs/hpc" / name / "run"
+    try:
+        source.mkdir(parents=True)
+        run.mkdir(parents=True)
+        base = np.arange(8, dtype=float)
+        direction = np.linspace(-0.1, 0.1, 8)
+        np.savez(source / "trial_material.npz",
+                 encoded_state=base + 0.0078125 * direction,
+                 base_encoded_state=base, finite_direction=direction,
+                 base_residual=np.full(8, 0.5), relaxation=np.array(0.0078125))
+        report = carry_trial(source, run)
+        assert report["relaxation"] == 0.0078125 and report["encoded_vector_size"] == 8
+        with np.load(run / "trial_material.npz") as copied:
+            assert np.array_equal(copied["encoded_state"], base + 0.0078125 * direction)
+        # 负面：源缺 trial 时必须拒绝，而不是让 pipeline 去复制 MATERIAL
+        (source / "trial_material.npz").unlink()
+        with pytest.raises(SystemExit):
+            carry_trial(source, run)
+    finally:
+        _shutil.rmtree(REPO / "outputs/hpc" / name, ignore_errors=True)
+
+
+def test_carry_trial_rejects_tampered_copy(monkeypatch):
+    import shutil as _shutil
+    import uuid
+    import numpy as np
+    import pytest
+    from operations.collect_encoded_ratios import ROOT as REPO
+    import operations.prepare_extension_run as module
+
+    name = f"carry-tamper-{uuid.uuid4().hex[:8]}"
+    source = REPO / "outputs/hpc" / name / "source"
+    run = REPO / "outputs/hpc" / name / "run"
+    try:
+        source.mkdir(parents=True)
+        run.mkdir(parents=True)
+        base = np.zeros(4)
+        direction = np.ones(4)
+        np.savez(source / "trial_material.npz", encoded_state=base + 0.01 * direction,
+                 base_encoded_state=base, finite_direction=direction,
+                 base_residual=np.zeros(4), relaxation=np.array(0.01))
+        real_copy = _shutil.copyfile
+
+        def tampering_copy(src, dst, **kwargs):
+            real_copy(src, dst, **kwargs)
+            with np.load(dst, allow_pickle=True) as data:
+                payload = {key: np.asarray(data[key]) for key in data.files}
+            payload["encoded_state"] = payload["encoded_state"] + 1.0
+            np.savez(dst, **payload)
+
+        monkeypatch.setattr(module.shutil, "copyfile", tampering_copy)
+        with pytest.raises(SystemExit):
+            module.carry_trial(source, run)
+    finally:
+        _shutil.rmtree(REPO / "outputs/hpc" / name, ignore_errors=True)

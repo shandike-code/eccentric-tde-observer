@@ -12,7 +12,10 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+import shutil
 import sys
+
+import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT), str(ROOT / "hpc")]
@@ -40,6 +43,36 @@ def recorded_hashes(state: dict) -> dict[str, str]:
             if claim:
                 recorded.setdefault(claim["path"], claim["sha256"])
     return recorded
+
+
+def carry_trial(source_run: Path, run: Path) -> dict[str, object]:
+    """Copy the source run's material trial into the new run and assert identity.
+
+    Why this exists: `hpc/pipeline.py::run_pipeline` calls `migrate_trial()` when the
+    new run has no `trial_material.npz`, and that silently substitutes the fixed
+    `MATERIAL` (the alpha=0.0625 candidate). On 2026-09-18 this replaced two
+    small-step candidates and invalidated a verdict (see
+    `handoff/linux-runs/2026-09-18-RETRACTION-trial-identity-error.md`). The encoded
+    vector *is* the experiment, so it is copied explicitly and compared bitwise.
+    """
+    source_trial = source_run / "trial_material.npz"
+    if not source_trial.is_file():
+        raise SystemExit(f"source run has no trial_material.npz: {source_trial}")
+    destination = run / "trial_material.npz"
+    shutil.copyfile(source_trial, destination)
+    with np.load(source_trial, allow_pickle=False) as before, \
+            np.load(destination, allow_pickle=False) as after:
+        for field in ("encoded_state", "base_encoded_state", "finite_direction",
+                      "base_residual"):
+            if not np.array_equal(before[field], after[field]):
+                raise SystemExit(f"copied trial changed {field}; refusing to continue")
+        if float(before["relaxation"]) != float(after["relaxation"]):
+            raise SystemExit("copied trial changed relaxation; refusing to continue")
+        relaxation = float(after["relaxation"])
+        size = int(np.asarray(after["encoded_state"]).size)
+    return {"source": pipeline.claim(source_trial), "destination": pipeline.claim(destination),
+            "relaxation": relaxation, "encoded_vector_size": size,
+            "note": "carried explicitly so pipeline.migrate_trial cannot substitute MATERIAL"}
 
 
 def main() -> None:
@@ -114,7 +147,13 @@ def main() -> None:
                            "deliberately continues below it to test the measured R-scaling"),
     })
     if args.dry_run:
+        trial_source = pipeline.claim(source / "trial_material.npz") \
+            if (source / "trial_material.npz").is_file() else None
         print(json.dumps({"dry_run": True, "run": config["run"], "seed": claim,
+                          "source_trial": trial_source,
+                          "source_trial_relaxation": (
+                              float(np.load(source / "trial_material.npz", allow_pickle=False)["relaxation"])
+                              if trial_source else None),
                           "workers": args.workers, "maximum_maps": args.maximum_maps,
                           "feedback_every": args.feedback_every,
                           "radiation_threshold": args.radiation_threshold,
@@ -122,7 +161,11 @@ def main() -> None:
                           "sources_count": len(config.get("sources", []))}))
         return
     run.mkdir(parents=True)
+    # 先落 trial：pipeline 初始化在 trial 缺失时会复制 MATERIAL（0.0625 候选），
+    # 那会静默换掉实验对象（2026-09-18 撤回事件的根因）。
+    trial = carry_trial(source, run)
     config_path = run / "config.json"
+    config["sources"] = list(config.get("sources", [])) + [trial["source"], trial["destination"]]
     config_path.write_text(json.dumps(config, indent=2, allow_nan=False) + "\n")
     pipeline.write_json(run / "state.json", {
         "config_sha256": pipeline.sha256(config_path),
@@ -136,6 +179,7 @@ def main() -> None:
     pipeline.write_json(run / "extension_declaration.json", {
         "source_run": source.relative_to(ROOT).as_posix(),
         "source_state": claim,
+        "carried_trial": trial,
         "purpose": args.purpose,
         "workers": args.workers,
         "maximum_maps": args.maximum_maps,
