@@ -53,6 +53,17 @@ This is a research continuation, not a claim that a complete atmosphere exists.
   until a separately named, documented migration or science branch is needed.
   Existing protocols hash their dependencies. A hash failure is evidence, not a
   reason to disable validation or silently regenerate the old protocol.
+- A candidate run IS its `trial_material.npz`: the encoded vector in that file
+  defines the experiment. `hpc/pipeline.py::run_pipeline` calls `migrate_trial()`
+  whenever a new run has no trial on disk, which **silently substitutes the fixed
+  MATERIAL candidate (the 0.0625 step)**. On 2026-09-18 that replaced two small-step
+  candidates, produced a verdict about the wrong step, and forced a retraction
+  (`handoff/linux-runs/2026-09-18-RETRACTION-trial-identity-error.md`). Therefore:
+  any script that creates a run must write or copy the intended trial **before** the
+  run is initialized, and must assert `encoded_state`, `base_encoded_state`,
+  `finite_direction`, `base_residual` and `relaxation` bitwise against the source
+  trial. Config-, seed- or hash-only checks do not satisfy the triple check; if the
+  trial identity is not asserted, the check is incomplete and the run must not start.
 - Run significant computation only inside a Slurm allocation. WebShell hardware and
   `free -h` are not the job's CPU/memory allocation. Do not assume 48 CPUs/125 GiB
   are available to this user. The existing runner uses exactly two workers.
