@@ -1,0 +1,38 @@
+{
+  "trial_source": {
+    "path": "outputs/hpc/baseline-zero-control-20260919/trial_material.npz",
+    "size_bytes": 27774,
+    "sha256": "14f8b3f76a2c0c3cd7a68d35cdb63fdc36aaf423de405e7cac6ef8a1d4c0cc33"
+  },
+  "native_mirrored_material_exact": true,
+  "physical_phase_and_dt_exact": true
+}
+JobId=73070 JobName=tde-base-zero
+   UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A
+   Priority=1 Nice=0 Account=stu QOS=qos_stu_default
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:01:22 TimeLimit=03:30:00 TimeMin=N/A
+   SubmitTime=2026-09-19T00:42:20 EligibleTime=2026-09-19T00:42:20
+   AccrueTime=2026-09-19T00:42:20
+   StartTime=2026-09-19T00:42:21 EndTime=2026-09-19T04:12:21 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-19T00:42:21 Scheduler=Main
+   Partition=Students AllocNode:Sid=tradmin-02:3254842
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=anode16
+   BatchHost=anode16
+   NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=4,mem=16G,node=1,billing=4
+   AllocTRES=cpu=4,node=1,billing=4
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/home/scc/pb24511938/eccentric-tde-observer/operations/baseline_zero_control.sbatch
+   SubmitLine=sbatch --parsable operations/baseline_zero_control.sbatch
+   WorkDir=/home/scc/pb24511938/eccentric-tde-observer
+   StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-base-zero-73070.err
+   StdIn=/dev/null
+   StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-base-zero-73070.out
+   TresPerTask=cpu=4
+

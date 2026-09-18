@@ -1,5 +1,7 @@
 # 有限差分信号饱和：步长必须再降一档（α=1/32）
 
+> 本页 cont48 两条链使用了错误候选，表中 signal/alpha 不可用于有限差分结论。见已有 trial 身份撤回记录和 [独立复核](2026-09-18-independent-review.md)。保留正文用于追溯，不执行其建议。
+
 ## 测量结果（`operations/finite_difference_linearity.py`）
 
 | α | 链 | 收敛末轮端点 R | signal = ‖r(α)−r_base‖ | signal/α | 噪声（轮间差分） | S/N |
