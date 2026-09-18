@@ -72,8 +72,10 @@ def analyse(name: str, base_l2: float, threshold: float) -> dict[str, object]:
     for row in run["rounds"]:
         endpoints = row.get("endpoints") or []
         values = [residuals.get(int(iteration)) for iteration in endpoints]
+        # 没有编码残差的轮次（物质响应离开物理域）只记录、不参与判词。
+        measured = row.get("ratio_to_base") is not None
         rows.append({**row, "endpoint_residuals": values,
-                     "qualifies": qualifying(row, residuals, threshold)})
+                     "qualifies": measured and qualifying(row, residuals, threshold)})
     return {"run": run["run"], "status": run["status"], "maps": run["maps"],
             "last_residual": run["last_residual"], "rounds": rows,
             **verdict_for(rows)}

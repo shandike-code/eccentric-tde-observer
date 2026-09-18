@@ -44,7 +44,20 @@ def ratio_of(residual_path: Path, base_l2: float) -> dict[str, object]:
 
 def collect_round(run_dir: Path, summary_path: Path, base_l2: float) -> dict[str, object]:
     summary = pipeline.read(summary_path)
-    residual_path = ROOT / summary["encoded_residual_path"]
+    recorded = summary.get("encoded_residual_path")
+    if not recorded:
+        # 物质响应离开物理域时适配器不会写出编码残差（summary 里该字段为 null，
+        # classification 带 [V-physical-domain]）。这是数据，不是崩溃理由：
+        # 报出状态与失败信息，不编造比值。
+        failures = summary.get("material_response_failures") or {}
+        return {"summary": pipeline.relative(summary_path),
+                "status": "no encoded residual recorded",
+                "classification": summary.get("classification"),
+                "material_response_failures": {
+                    label: row.get("message") if isinstance(row, dict) else row
+                    for label, row in failures.items()} or None,
+                "ratio_to_base": None, "l2": None}
+    residual_path = ROOT / recorded
     row = {"summary": pipeline.relative(summary_path), **ratio_of(residual_path, base_l2)}
     comparison = summary.get("comparison", {})
     if "atomic_heating_volume_l1" in comparison:

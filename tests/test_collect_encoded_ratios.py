@@ -87,3 +87,47 @@ def test_non_finite_residual_is_rejected():
             collect_run(f"outputs/hpc/{name}", base_l2=4.0)
     finally:
         shutil.rmtree(ROOT / f"outputs/hpc/{name}", ignore_errors=True)
+
+
+def test_round_without_encoded_residual_is_reported_not_crashing():
+    """物质响应离开物理域时适配器写 null；工具必须报状态而不是崩。"""
+    import shutil as _shutil
+    import uuid as _uuid
+    from operations.collect_encoded_ratios import ROOT as REPO
+    name = f"no-residual-selftest-{_uuid.uuid4().hex[:8]}"
+    run = REPO / "outputs/hpc" / name
+    try:
+        (run / "feedback-round1").mkdir(parents=True)
+        (run / "feedback-round1" / "feedback_summary.json").write_text(json.dumps({
+            "encoded_residual_path": None,
+            "classification": "[A-preregistered]+[V-physical-domain]+[O]",
+            "material_response_failures": {
+                "previous": {"error_type": "PhysicalDomainError",
+                             "message": "specific material energy leaves no positive gas heat"}}}) + "\n")
+        (run / "feedback-round1" / "material_energy_ledger.json").write_text("{}\n")
+        (run / "state.json").write_text(json.dumps({
+            "config_sha256": "x", "status": "radiation",
+            "history": [{"iteration": 3, "residual": 4e-3}, {"iteration": 4, "residual": 4e-3}],
+            "slots": ["a", "b", "c"], "current_slot": 0, "active_map": None,
+            "diagnostic": {"rounds": [{"round": 1, "endpoints": [3, 4],
+                            "ledger": f"outputs/hpc/{name}/feedback-round1/"
+                                      "material_energy_ledger.json"}]}}) + "\n")
+        result = collect_run(f"outputs/hpc/{name}", base_l2=4.0)
+        row = result["rounds"][0]
+        assert row["status"] == "no encoded residual recorded"
+        assert row["ratio_to_base"] is None and row["l2"] is None
+        assert "physical-domain" in row["classification"]
+        assert "no positive gas heat" in row["material_response_failures"]["previous"]
+    finally:
+        _shutil.rmtree(run, ignore_errors=True)
+
+
+def test_verdict_ignores_rounds_without_a_measured_ratio():
+    import shutil as _shutil
+    import uuid as _uuid
+    from operations.collect_encoded_ratios import ROOT as REPO
+    from operations.small_step_verdict import verdict_for
+    rows = [{"round": 1, "qualifies": False, "ratio_to_base": None},
+            {"round": 2, "qualifies": False, "ratio_to_base": 1.1}]
+    result = verdict_for(rows)
+    assert result["verdict"] == "pending"
