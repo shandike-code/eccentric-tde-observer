@@ -7,13 +7,48 @@ This is a research continuation, not a claim that a complete atmosphere exists.
 - Configure repository-local Git author identity before edits/commits. Use the user's
   verified identity; do not invent an email, copy another author's identity, or set
   machine-wide Git defaults. Never commit credentials or tokens.
-- Code written by any agent other than the one that verified it must pass three
-  review passes before it is executed on the platform: (1) interface read-through
-  against the code it calls, (2) unit and negative-path tests, (3) an end-to-end run
-  on real artifacts or a dry run that exercises the full entry point. Record what
-  each pass found, including defects that had to be fixed. This user requirement is
-  standing: do not submit a first-run job on code that has not been through all
-  three passes.
+- MANDATORY PRE-RUN CHECK (user requirement, 2026-09-18). This is a physics project:
+  the chain physics model -> mathematical formula -> code -> numerical result must be
+  correct, closed and explainable, so "the code runs" is never sufficient. Before
+  running any code, perform and report three checks:
+  (1) **Code**: syntax, variables/functions/array shapes, types, indices, NaN/Inf and
+      division-by-zero, explicit units and definitions, and whether the code really
+      implements the intended formula rather than merely running;
+  (2) **Logic**: walk input -> model assumptions -> formula -> computation -> output;
+      every key variable has a stated source, every formula maps to code, and there is
+      no logical gap, hidden assumption or ad-hoc correction;
+  (3) **Physics**: dimensional consistency, order of magnitude, limiting cases against
+      physical intuition, conservation laws, trends under parameter changes, and
+      whether the result matches a defensible physical picture.
+  Emit exactly this block before running, naming what was actually checked (never just
+  "checked, no problems"):
+
+  ```text
+  [PRE-RUN CHECK]
+
+  Code: PASS / WARNING / BLOCK
+  Logic: PASS / WARNING / BLOCK
+  Physics: PASS / WARNING / BLOCK
+
+  Key Issues:
+  1. ...
+  2. ...
+  3. ...
+
+  Decision: RUN / DO NOT RUN
+  ```
+
+  If a formula, unit, model assumption or physical interpretation is uncertain, say so
+  explicitly instead of guessing. If a result looks wrong, never adjust the result,
+  add an unexplained correction factor or retune parameters to make a figure look
+  plausible: diagnose units -> formula -> code -> initial conditions -> numerical method.
+  After a successful run, perform a POST-RUN CHECK covering warnings, NaN/Inf or
+  divergence, order of magnitude, whether trends match theory, numerical artefacts in
+  figures, and whether the result is explainable by the physical model.
+  Priority is always: physics correct > logic closed > numerically reliable > code runs.
+  The earlier three review passes (interface read-through, unit/negative-path tests,
+  real-artifact end-to-end) remain required as the *how*; this block is the *evidence*
+  that must accompany every platform submission.
 - Keep the Mac historical `src/`, phase scripts, protocols and result bytes immutable
   until a separately named, documented migration or science branch is needed.
   Existing protocols hash their dependencies. A hash failure is evidence, not a
