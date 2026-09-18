@@ -81,6 +81,22 @@ def vector_secant_check(coarse, fine, coarse_h, fine_h):
             'establishes_derivative_by_itself': False}
 
 
+def decoded_field_audit(trial, decoded):
+    """Native RT consumes T/H/He; old migrate_trial retained archived energy."""
+    fields={}
+    for key in ('temperature_k','hydrogen_fraction','helium_fraction','specific_material_energy_erg_g'):
+        a,b=np.asarray(trial[key]),np.asarray(getattr(decoded,key))
+        if a.shape!=b.shape or not np.all(np.isfinite(a)) or not np.all(np.isfinite(b)):
+            raise ValueError('invalid stored material field')
+        fields[key]={'array_equal':bool(np.array_equal(a,b)),
+                     'maximum_absolute_difference':float(np.max(abs(a-b))),
+                     'maximum_decoded_magnitude':float(np.max(abs(b)))}
+    fields['native_input_identity_pass']=all(fields[k]['array_equal'] for k in (
+        'temperature_k','hydrogen_fraction','helium_fraction'))
+    fields['energy_note']='Archived energy metadata is reported separately; native RT reads T/H/He, and this equation diagnostic uses decoded total energy.'
+    return fields
+
+
 class Snapshot:
     def __init__(self, output):
         self.output = output
@@ -172,9 +188,10 @@ def main():
             alpha=trial_identity(trial,base,legacy,float(cfg.get('candidate_relaxation',0.0625)),reference_direction)
             reference_direction=trial['finite_direction']
             decoded=codec.decode(trial['encoded_state'])
-            for key in ('temperature_k','hydrogen_fraction','helium_fraction','specific_material_energy_erg_g'):
-                if not np.array_equal(trial[key],getattr(decoded,key)):
-                    raise RuntimeError('stored candidate differs from its encoded decode')
+            fields=decoded_field_audit(trial,decoded)
+            pipeline.write_json(out/f'decode-{len(result["runs"])+1}.json',fields)
+            if not fields['native_input_identity_pass']:
+                raise RuntimeError('native candidate fields differ from their encoded decode')
             if int(trial['phase_index'])!=phase or float(trial['step_duration_s'])!=dt or not np.array_equal(trial['density_g_cm3'],rho):
                 raise RuntimeError('candidate physical time mismatch')
             dependency_failures=[];excluded=[]
@@ -190,7 +207,7 @@ def main():
                     if not np.array_equal(trial[key],source_trial[key]):raise RuntimeError('extension switched candidate')
             hist=state['history'];rounds=state.get('diagnostic',{}).get('rounds',[])
             entry={'run':name,'captured_status':state['status'],'maps':len(hist),'alpha':alpha,
-                   'trial_identity_pass':True,'rounds':[],'skipped_large_dependency_hashes':excluded,
+                   'trial_identity_pass':True,'decoded_fields':fields,'rounds':[],'skipped_large_dependency_hashes':excluded,
                    'recent_radiation_residuals':[h['residual'] for h in hist[-9:]],
                    'recent_contractions':[hist[i]['residual']/hist[i-1]['residual'] for i in range(max(1,len(hist)-8),len(hist))]}
             result['runs'].append(entry)

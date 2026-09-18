@@ -1,6 +1,6 @@
 import numpy as np
 import pytest
-from operations.review_small_step_evidence import trial_identity, classify_pair, vector_secant_check, Snapshot
+from operations.review_small_step_evidence import trial_identity, classify_pair, vector_secant_check, Snapshot, decoded_field_audit
 
 
 def test_config_label_cannot_replace_actual_trial():
@@ -46,3 +46,15 @@ def test_snapshot_preserves_first_atomic_read_and_rejects_conflict(tmp_path,monk
     source.write_text('{"history": [1]}')
     assert snap.save('state.json').read_text()=='{"history": []}'
     with pytest.raises(RuntimeError,match='conflicting'):snap.save('state.json','0'*64)
+
+
+def test_archived_energy_metadata_cannot_hide_a_changed_native_temperature():
+    from types import SimpleNamespace
+    names=('temperature_k','hydrogen_fraction','helium_fraction','specific_material_energy_erg_g')
+    t={k:np.ones(2) for k in names};d=SimpleNamespace(**{k:v.copy() for k,v in t.items()})
+    t['specific_material_energy_erg_g']=np.nextafter(t['specific_material_energy_erg_g'],np.inf)
+    report=decoded_field_audit(t,d)
+    assert report['native_input_identity_pass']
+    assert report['specific_material_energy_erg_g']['maximum_absolute_difference']>0
+    t['temperature_k']=np.nextafter(t['temperature_k'],np.inf)
+    assert not decoded_field_audit(t,d)['native_input_identity_pass']
