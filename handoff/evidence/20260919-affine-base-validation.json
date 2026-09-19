@@ -1,0 +1,34 @@
+{
+  "history": "base",
+  "candidate": {
+    "path": "outputs/hpc/affine-base-map-validation-20260919/anderson_candidate.dat",
+    "size_bytes": 10099884032,
+    "sha256": "4c5119a381df26324189e9784e17d6feefcb74fa9513be4394ff1f5e1f28e7b3"
+  },
+  "candidate_minimum_intensity": 0.0,
+  "actual_map": {
+    "iteration": 1,
+    "input_path": "outputs/hpc/affine-base-map-validation-20260919/state_0.dat",
+    "input_sha256": "4c5119a381df26324189e9784e17d6feefcb74fa9513be4394ff1f5e1f28e7b3",
+    "output_path": "outputs/hpc/affine-base-map-validation-20260919/state_1.dat",
+    "output_sha256": "9ddbfebb466aab9da406b6fce87e389c2196df448058a180137af29b66307996",
+    "wall_s": 132.41662395303138,
+    "residual": 0.00012217637159185642,
+    "boundary_l1": 0.0001377448791729246,
+    "boundary_bolometric": 3.432048261690884e-05,
+    "maximum_worker_rss_mib": 3500.44140625
+  },
+  "predicted_residual": 0.00012217637159204632,
+  "actual_minus_predicted_residual": -1.898980105108361e-16,
+  "validation_checks": {
+    "actual_maximum_norm_improves": true,
+    "actual_boundary_spectrum_pass": true,
+    "actual_boundary_bolometric_pass": true,
+    "worker_memory_pass": true
+  },
+  "extrapolation_validated": true,
+  "accepted_material_step": false,
+  "feedback_evaluated": false,
+  "full_intensity_prediction_error_evaluated": false,
+  "note": "Map aggregate enforces complete ownership, finite metrics and nonnegative input/output; agreement of scalar residual alone does not prove operator affinity."
+}
