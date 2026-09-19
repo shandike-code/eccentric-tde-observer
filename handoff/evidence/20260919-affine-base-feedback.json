@@ -1,0 +1,188 @@
+{
+  "state": {
+    "config_sha256": "c157ec7c01a513de2c86fb3746be0f1ef5c29cfe94914363610ea486e0f353be",
+    "status": "diagnostic_round_complete",
+    "initialization_blocks": [],
+    "history": [
+      {
+        "iteration": 1,
+        "input_path": "outputs/hpc/affine-base-feedback-20260919/state_0.dat",
+        "input_sha256": "9ddbfebb466aab9da406b6fce87e389c2196df448058a180137af29b66307996",
+        "output_path": "outputs/hpc/affine-base-feedback-20260919/state_1.dat",
+        "output_sha256": "36374cc4603deb211d93b1a82ff6e26543c7a2dcd6072bc81cff1bab0cbf554b",
+        "wall_s": 152.78353860601783,
+        "residual": 9.079180498572801e-05,
+        "boundary_l1": 0.00011355473881474758,
+        "boundary_bolometric": 3.132028386317929e-05,
+        "maximum_worker_rss_mib": 3494.859375
+      },
+      {
+        "iteration": 2,
+        "input_path": "outputs/hpc/affine-base-feedback-20260919/state_1.dat",
+        "input_sha256": "36374cc4603deb211d93b1a82ff6e26543c7a2dcd6072bc81cff1bab0cbf554b",
+        "output_path": "outputs/hpc/affine-base-feedback-20260919/state_2.dat",
+        "output_sha256": "c3ad32d837f1bb4c19fd17478532b8205ba817837e75bf7eb35c6019b6829ed2",
+        "wall_s": 156.9629248289857,
+        "residual": 7.751071866695657e-05,
+        "boundary_l1": 9.785518950032592e-05,
+        "boundary_bolometric": 2.8588569090232673e-05,
+        "maximum_worker_rss_mib": 3493.48046875
+      }
+    ],
+    "slots": [
+      "outputs/hpc/affine-base-feedback-20260919/state_0.dat",
+      "outputs/hpc/affine-base-feedback-20260919/state_1.dat",
+      "outputs/hpc/affine-base-feedback-20260919/state_2.dat"
+    ],
+    "current_slot": 2,
+    "active_map": null,
+    "current_sha256": "c3ad32d837f1bb4c19fd17478532b8205ba817837e75bf7eb35c6019b6829ed2",
+    "trial_sha256": "1db4370c2f74ac83973d314c19bd65ccf799a7aa99e7ea453575c245df380eca",
+    "diagnostic": {
+      "rounds": [
+        {
+          "round": 1,
+          "endpoints": [
+            1,
+            2
+          ],
+          "protocol_sha256": "48fd29a86825212ffa9e48b2f68123afaa80ff4a24b5bf5e10b3eab665e55f5d",
+          "endpoints_claim": {
+            "previous": {
+              "path": "outputs/hpc/affine-base-feedback-20260919/state_0.dat",
+              "sha256": "9ddbfebb466aab9da406b6fce87e389c2196df448058a180137af29b66307996",
+              "size_bytes": 10099884032
+            },
+            "final": {
+              "path": "outputs/hpc/affine-base-feedback-20260919/state_1.dat",
+              "sha256": "36374cc4603deb211d93b1a82ff6e26543c7a2dcd6072bc81cff1bab0cbf554b",
+              "size_bytes": 10099884032
+            }
+          },
+          "slot_reuse_note": "radiation state slots rotate across three files; the retained small artifacts stay verifiable, but these large states may later be overwritten and the round may then not be re-runnable at these paths",
+          "feedback_wall_s": 450.26082003698684,
+          "accepted": false,
+          "failed_gates": [
+            "candidate_l2_contraction_pass",
+            "candidate_mass_weighted_contraction_pass",
+            "last_two_atomic_heating_pass",
+            "last_two_direct_heating_pass",
+            "last_two_formal_heating_pass"
+          ],
+          "decision": {
+            "formal_h_he_feedback_pair_passed": true,
+            "finite_trial_accepted_as_one_nonlinear_step": false,
+            "finite_trial_rejected": true,
+            "static_approximation_rejected_from_one_failed_trial": false,
+            "dynamic_nlte_solution_accepted": false,
+            "phase4_replacement": false,
+            "real_line_formation": false
+          },
+          "ledger": "outputs/hpc/affine-base-feedback-20260919/feedback-round1/material_energy_ledger.json",
+          "ledger_heating_ratio": 0.009314718817279176
+        }
+      ]
+    }
+  },
+  "formal_summary": {
+    "phase": "HPC explicit inner-tolerance experiment",
+    "classification": "[A-preregistered]+[V]+[O]",
+    "protocol_sha256": "48fd29a86825212ffa9e48b2f68123afaa80ff4a24b5bf5e10b3eab665e55f5d",
+    "comparison": {
+      "photoionization_volume_l1": [
+        3.015049640412022e-05,
+        2.1853399960084768e-05,
+        5.629033992923242e-06
+      ],
+      "total_recombination_volume_l1": [
+        6.671017480830426e-07,
+        2.1222242322059725e-08,
+        1.8139353078402714e-11
+      ],
+      "atomic_heating_volume_l1": 0.009314718817279176,
+      "direct_heating_volume_l1": 0.009314718817275842,
+      "formal_heating_volume_l1": 0.009314707722141677,
+      "inner_noise_to_trial_signal_l2_ratio": 0.07204226996418388,
+      "candidate_to_base_residual_l2_ratio": 1.0140603317976609,
+      "candidate_to_base_mass_weighted_norm_ratio": 1.187905752075495,
+      "candidate_to_base_maximum_cell_norm_ratio": 0.9963383291030246
+    },
+    "previous_feedback": {
+      "feedback_artifact_path": "outputs/hpc/affine-base-feedback-20260919/feedback-round1/previous_feedback.npz",
+      "feedback_artifact_sha256": "0da2beea4027ceda5d551ec4052458953e9c5a50613c9654c4c7f5d996dfa1b5",
+      "rate_direct_volume_l1": 1.8972705052305275e-12,
+      "rate_formal_volume_l1": 6.615293529202207e-06,
+      "rate_formal_global_fraction": 3.1850581155167225e-05,
+      "maximum_parent_mirror_residual": 1.3972168789530484e-11,
+      "maximum_process_peak_rss_mib": 3937.08203125,
+      "accumulated_wall_runtime_s": 201.091954942327
+    },
+    "final_feedback": {
+      "feedback_artifact_path": "outputs/hpc/affine-base-feedback-20260919/feedback-round1/final_feedback.npz",
+      "feedback_artifact_sha256": "d626ea47614b9943a8116f4010fbbd74b673e14c31c72abae1de74106e491a83",
+      "rate_direct_volume_l1": 1.8899343714712062e-12,
+      "rate_formal_volume_l1": 6.597864839840414e-06,
+      "rate_formal_global_fraction": 3.04630777049814e-05,
+      "maximum_parent_mirror_residual": 1.3110417782679745e-11,
+      "maximum_process_peak_rss_mib": 3931.546875,
+      "accumulated_wall_runtime_s": 222.37431558896787
+    },
+    "target_material_path": "outputs/hpc/affine-base-feedback-20260919/feedback-round1/target_material.npz",
+    "target_material_sha256": "78cd19a9ea87a6f39dc430d7bd68828c4fef0443ae40c8c43b596b98b9a8e188",
+    "encoded_residual_path": "outputs/hpc/affine-base-feedback-20260919/feedback-round1/material_residual.npy",
+    "encoded_residual_sha256": "cce50397faf21710551ed3edca4c2ab04eee172c6dec869378a2642be5546b4a",
+    "gate_checks": {
+      "last_two_photoionization_pass": true,
+      "last_two_total_recombination_pass": true,
+      "last_two_atomic_heating_pass": false,
+      "last_two_direct_heating_pass": false,
+      "last_two_formal_heating_pass": false,
+      "inner_noise_resolved_pass": true,
+      "candidate_l2_contraction_pass": false,
+      "candidate_mass_weighted_contraction_pass": false,
+      "candidate_maximum_cell_contraction_pass": true,
+      "two_formal_feedback_states_pass": true,
+      "two_inner_radiation_residuals_pass": true,
+      "two_boundary_spectra_pass": true,
+      "two_boundary_bolometric_pass": true,
+      "candidate_state_bytes_pass": true,
+      "population_nonnegative_pass": true,
+      "all_residual_components_finite_pass": true
+    },
+    "decision": {
+      "formal_h_he_feedback_pair_passed": true,
+      "finite_trial_accepted_as_one_nonlinear_step": false,
+      "finite_trial_rejected": true,
+      "static_approximation_rejected_from_one_failed_trial": false,
+      "dynamic_nlte_solution_accepted": false,
+      "phase4_replacement": false,
+      "real_line_formation": false
+    },
+    "figures": [
+      "feedback.png"
+    ]
+  },
+  "ledger_endpoint_difference": {
+    "absolute_worst_previous": {
+      "criterion": "minimum remaining gas heat (erg/g)",
+      "cell": 63,
+      "remaining_erg_g": 9349825655774.922,
+      "shortfall_over_old_gas_heat": -1.0155424387549714
+    },
+    "absolute_worst_final": {
+      "criterion": "minimum remaining gas heat (erg/g)",
+      "cell": 63,
+      "remaining_erg_g": 9359294325238.434,
+      "shortfall_over_old_gas_heat": -1.0165708895553134
+    },
+    "delta_minimum_remaining_erg_g": 9468669463.511719,
+    "failing_cells_previous": 0,
+    "failing_cells_final": 0,
+    "maximum_abs_delta_ionization_erg_g": 1083.591796875,
+    "maximum_abs_delta_radiative_energy_erg_g": 779254482210.3281,
+    "maximum_abs_delta_q_erg_s_cm3": 0.04332560911021577,
+    "interpretation": "observed adjacent-endpoint sensitivity, not a strict error bound"
+  },
+  "ledger_static_note_is_stale": "encoded-residual noise-to-signal ratio stays unevaluated: the material response raised before the residual was formed; no substitute value is reported here.",
+  "note": "Formal summary evaluates encoded noise; ledger unevaluated text is an unconditional stale template, not a current exception."
+}
