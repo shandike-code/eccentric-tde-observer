@@ -26,6 +26,14 @@
 
 Mac20项相关测试通过：真实输出选择、不修改来源history、未完成/半态/待反馈/错槽/错SHA/旧摘要/错误候选拒绝，以及已有全物质身份与外推非负有限性测试。shell语法与git whitespace检查通过。变更前Git备份`outputs/review-20260919/pre-affine-feedback-4330b45.bundle`。
 
+## 已执行提交与监督交接
+
+代码`8a5f0c6`已同步学校和GitHub；Linux同组20测试通过。已提交73459（`affine-base-feedback-20260919`，cpu_long32CPU/128GiB/16worker）与73460（`affine-old-feedback-20260919`，默认4CPU/16GiB/2worker）。资源分配与预算按上节执行；没有对旧run续交。
+
+现有`ustc-hhe`定时任务已更新，保持ACTIVE、每30分钟；先看这两项任务及本报告，只在新科学结果、完成、失败或需要用户重连时通知。原定时配置备份为`outputs/review-20260919/automation-before-affine-feedback.toml`。SSH真实认证失败则提醒用户在Terminal重连并暂停定时任务，不终止后台Slurm计算。
+
+全库Markdown只读检查仍列出6份既有lecture文件的格式差异，未批量改写。本新增报告单独通过同一normalizer检查；不把全库旧差异记为本轮通过。
+
 ## 本轮结束后的决策要求
 
 先备份并双端核小工件，再核输入SHA、native物质、正式反馈血缘、所有门。既比较相邻两个端点，也比较两种历史的完整反馈向量；同时给加热、率分量、目标正热能、方程L2/质量加权/最差层和encoded正式接受指标，不能只挑残差变小。
