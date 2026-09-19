@@ -39,3 +39,5 @@
 扫描写候选预算0、新map预算0。即使通过，也需要另声明完整原算子验证及全场误差检查，不能据预测接受物质步。两项独立，无相互依赖，不机械重复约1%收益的单方向混合。
 
 变更前Git保全`pre-multidirection-44f760b.bundle`。Mac34项相关测试通过，包含已知三模仿射固定点、退化/非法Gram、负原组合的统一回溯、原字节不变、拒绝仅标量种子及既有物质身份/映射血缘检查。当前尚无被接受的物质步或自洽柱。
+
+代码`6445db4`已同步学校/GitHub，Linux同组34项测试通过。已提交73617（`outputs/hpc/cross-mixture-feedback-20260919`，cpu_long32CPU/128GiB/16worker，60min）及73618（`outputs/hpc/multihistory-subspace-scan-20260919`，默认4CPU/16GiB，30min），提交初态均PD。两个新run独立命名且使用NUMPY_MADVISE_HUGEPAGE=0；不重交旧run。扫描未来的写候选/原算子验证须另声明预算；反馈必须先读取完整正式门和账本，不能见辐射门过就接受。
