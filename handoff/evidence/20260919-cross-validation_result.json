@@ -1,0 +1,44 @@
+{
+  "history": "cross-history",
+  "candidate": {
+    "path": "outputs/hpc/cross-history-map-validation-20260919/cross_candidate.dat",
+    "size_bytes": 10099884032,
+    "sha256": "9500d88fd1c5a84ba0e1b37fec8d49987bc50a2dac29bb89cb91bd9596aa4fa6"
+  },
+  "candidate_minimum_intensity": 0.0,
+  "actual_map": {
+    "iteration": 1,
+    "input_path": "outputs/hpc/cross-history-map-validation-20260919/state_0.dat",
+    "input_sha256": "9500d88fd1c5a84ba0e1b37fec8d49987bc50a2dac29bb89cb91bd9596aa4fa6",
+    "output_path": "outputs/hpc/cross-history-map-validation-20260919/state_1.dat",
+    "output_sha256": "fe38c6646c78d6ab8d190449c76bbe43d4e0ee5b97a87237ff342c75de71e6ac",
+    "wall_s": 132.04633478587493,
+    "residual": 7.657069076118395e-05,
+    "boundary_l1": 7.906615147916884e-05,
+    "boundary_bolometric": 1.9004878238119936e-05,
+    "maximum_worker_rss_mib": 3501.8203125
+  },
+  "predicted_residual": 7.657069076118395e-05,
+  "actual_minus_predicted_residual": 0.0,
+  "validation_checks": {
+    "actual_maximum_norm_improves": true,
+    "actual_boundary_spectrum_pass": true,
+    "actual_boundary_bolometric_pass": true,
+    "worker_memory_pass": true,
+    "full_field_prediction_error_resolved": true
+  },
+  "extrapolation_validated": true,
+  "accepted_material_step": false,
+  "feedback_evaluated": false,
+  "full_intensity_prediction_error_evaluated": true,
+  "full_field_error": {
+    "error_l2": 7.107648422323798e-14,
+    "relative_field_l2": 1.688081740306004e-16,
+    "maximum_error_over_field_scale": 1.2526562865212165e-15,
+    "error_over_actual_defect_l2": 4.39446445702495e-12,
+    "boundary_prediction_l1_error": 1.200495393915766e-16,
+    "boundary_prediction_bolometric_error": 0.0,
+    "prediction_error_resolved": true
+  },
+  "note": "Map aggregate enforces complete ownership, finite metrics and nonnegative input/output; full-field agreement is tested for this mixture only; it is not a proof of global operator affinity or feedback stability."
+}

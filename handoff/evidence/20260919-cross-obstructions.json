@@ -1,0 +1,408 @@
+{
+  "environment": {
+    "git_commit": "44f760bcbeb3f02cbba3ea6d93e76da064e72b3c",
+    "tracked_worktree_dirty": false,
+    "python": "3.12.3 (main, Jan  8 2026, 11:30:50) [GCC 13.3.0]",
+    "platform": "Linux-6.8.0-53-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "logical_host_cpus": 128,
+    "cpu_affinity_count": 4,
+    "scheduler": {
+      "SLURM_JOB_ID": "73582",
+      "SLURM_JOB_PARTITION": "Students",
+      "SLURM_JOB_QOS": "qos_stu_default",
+      "SLURM_CPUS_PER_TASK": "4",
+      "SLURM_MEM_PER_NODE": "16384",
+      "SLURM_JOB_NODELIST": "anode16"
+    },
+    "cgroup_v2": {},
+    "packages": {
+      "numpy": "2.5.2",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.1",
+      "pytest": "9.1.1"
+    },
+    "project_free_bytes": 989800851771392,
+    "warning": "Host resources are not necessarily this job's allocation."
+  },
+  "basis": [
+    {
+      "path": "outputs/hpc/affine-base-feedback-20260919/state_1.dat",
+      "sha256": "36374cc4603deb211d93b1a82ff6e26543c7a2dcd6072bc81cff1bab0cbf554b"
+    },
+    {
+      "path": "outputs/hpc/affine-base-feedback-20260919/state_2.dat",
+      "sha256": "c3ad32d837f1bb4c19fd17478532b8205ba817837e75bf7eb35c6019b6829ed2"
+    },
+    {
+      "path": "outputs/hpc/affine-old-feedback-20260919/state_1.dat",
+      "sha256": "41dd3fb1c72f9c86b61dc516893dd086439124c0e16cc244641e8f336ff2bc4c"
+    },
+    {
+      "path": "outputs/hpc/affine-old-feedback-20260919/state_2.dat",
+      "sha256": "9704d62ecf83552cd667f81fb300b8702135d7c1e41ebea8ee369f31988fb681"
+    }
+  ],
+  "scan_feasible_interval": [
+    -3.0184248035944536,
+    0.0
+  ],
+  "statistics": {
+    "candidate": {
+      "count": 12785284,
+      "old_subnormal_count": 2635014,
+      "maximum_old_intensity": 8.135369593297521e-263,
+      "whole_field_scale": 0.03878143391271062,
+      "block_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        328,
+        7912132,
+        4872824,
+        0
+      ],
+      "largest_cells": [
+        {
+          "frequency_index": 9342,
+          "angle_index": 18,
+          "radiation_depth_index": 15,
+          "base_intensity": 0.0,
+          "old_intensity": 8.135369593297521e-263,
+          "frequency_edges_hz": [
+            7.829340022000659e+17,
+            7.841079217098504e+17
+          ]
+        },
+        {
+          "frequency_index": 9342,
+          "angle_index": 13,
+          "radiation_depth_index": 4080,
+          "base_intensity": 0.0,
+          "old_intensity": 8.135369593263689e-263,
+          "frequency_edges_hz": [
+            7.829340022000659e+17,
+            7.841079217098504e+17
+          ]
+        },
+        {
+          "frequency_index": 9342,
+          "angle_index": 18,
+          "radiation_depth_index": 14,
+          "base_intensity": 0.0,
+          "old_intensity": 7.899111075724817e-263,
+          "frequency_edges_hz": [
+            7.829340022000659e+17,
+            7.841079217098504e+17
+          ]
+        },
+        {
+          "frequency_index": 9342,
+          "angle_index": 13,
+          "radiation_depth_index": 4081,
+          "base_intensity": 0.0,
+          "old_intensity": 7.899111075691618e-263,
+          "frequency_edges_hz": [
+            7.829340022000659e+17,
+            7.841079217098504e+17
+          ]
+        },
+        {
+          "frequency_index": 9342,
+          "angle_index": 18,
+          "radiation_depth_index": 13,
+          "base_intensity": 0.0,
+          "old_intensity": 7.665311173771669e-263,
+          "frequency_edges_hz": [
+            7.829340022000659e+17,
+            7.841079217098504e+17
+          ]
+        },
+        {
+          "frequency_index": 9342,
+          "angle_index": 13,
+          "radiation_depth_index": 4082,
+          "base_intensity": 0.0,
+          "old_intensity": 7.665311173739238e-263,
+          "frequency_edges_hz": [
+            7.829340022000659e+17,
+            7.841079217098504e+17
+          ]
+        },
+        {
+          "frequency_index": 9342,
+          "angle_index": 18,
+          "radiation_depth_index": 12,
+          "base_intensity": 0.0,
+          "old_intensity": 7.43191371343785e-263,
+          "frequency_edges_hz": [
+            7.829340022000659e+17,
+            7.841079217098504e+17
+          ]
+        },
+        {
+          "frequency_index": 9342,
+          "angle_index": 13,
+          "radiation_depth_index": 4083,
+          "base_intensity": 0.0,
+          "old_intensity": 7.431913713405928e-263,
+          "frequency_edges_hz": [
+            7.829340022000659e+17,
+            7.841079217098504e+17
+          ]
+        }
+      ],
+      "maximum_obstruction_over_field_scale": 2.097748528744099e-261,
+      "positive_gamma_forbidden_by_exact_zero": true
+    },
+    "predicted_map": {
+      "count": 12781674,
+      "old_subnormal_count": 2647668,
+      "maximum_old_intensity": 9.266225410418187e-263,
+      "whole_field_scale": 0.038783120500825254,
+      "block_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        230,
+        7869730,
+        4911714,
+        0
+      ],
+      "largest_cells": [
+        {
+          "frequency_index": 9342,
+          "angle_index": 18,
+          "radiation_depth_index": 14,
+          "base_intensity": 0.0,
+          "old_intensity": 9.266225410418187e-263,
+          "frequency_edges_hz": [
+            7.829340022000659e+17,
+            7.841079217098504e+17
+          ]
+        },
+        {
+          "frequency_index": 9342,
+          "angle_index": 13,
+          "radiation_depth_index": 4081,
+          "base_intensity": 0.0,
+          "old_intensity": 9.26622541037927e-263,
+          "frequency_edges_hz": [
+            7.829340022000659e+17,
+            7.841079217098504e+17
+          ]
+        },
+        {
+          "frequency_index": 9342,
+          "angle_index": 18,
+          "radiation_depth_index": 13,
+          "base_intensity": 0.0,
+          "old_intensity": 8.991946142001093e-263,
+          "frequency_edges_hz": [
+            7.829340022000659e+17,
+            7.841079217098504e+17
+          ]
+        },
+        {
+          "frequency_index": 9342,
+          "angle_index": 13,
+          "radiation_depth_index": 4082,
+          "base_intensity": 0.0,
+          "old_intensity": 8.991946141963074e-263,
+          "frequency_edges_hz": [
+            7.829340022000659e+17,
+            7.841079217098504e+17
+          ]
+        },
+        {
+          "frequency_index": 9342,
+          "angle_index": 18,
+          "radiation_depth_index": 12,
+          "base_intensity": 0.0,
+          "old_intensity": 8.71814044335168e-263,
+          "frequency_edges_hz": [
+            7.829340022000659e+17,
+            7.841079217098504e+17
+          ]
+        },
+        {
+          "frequency_index": 9342,
+          "angle_index": 13,
+          "radiation_depth_index": 4083,
+          "base_intensity": 0.0,
+          "old_intensity": 8.718140443314256e-263,
+          "frequency_edges_hz": [
+            7.829340022000659e+17,
+            7.841079217098504e+17
+          ]
+        },
+        {
+          "frequency_index": 9342,
+          "angle_index": 18,
+          "radiation_depth_index": 11,
+          "base_intensity": 0.0,
+          "old_intensity": 8.441861419567358e-263,
+          "frequency_edges_hz": [
+            7.829340022000659e+17,
+            7.841079217098504e+17
+          ]
+        },
+        {
+          "frequency_index": 9342,
+          "angle_index": 13,
+          "radiation_depth_index": 4084,
+          "base_intensity": 0.0,
+          "old_intensity": 8.441861419531023e-263,
+          "frequency_edges_hz": [
+            7.829340022000659e+17,
+            7.841079217098504e+17
+          ]
+        }
+      ],
+      "maximum_obstruction_over_field_scale": 2.38924183788177e-261,
+      "positive_gamma_forbidden_by_exact_zero": true
+    }
+  },
+  "new_maps": 0,
+  "original_bytes_changed": false,
+  "science_gates_relaxed": false,
+  "limitation": "Small intensity relative to the global peak does not bound its heating or material-response importance; exact zero does not establish its physical cause."
+}
