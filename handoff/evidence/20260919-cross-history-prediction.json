@@ -1,0 +1,50 @@
+{
+  "direction": {
+    "gamma_unconstrained": -0.19186292036058647,
+    "gamma": -0.19186292036058647,
+    "feasible_interval": [
+      -3.0184248035944536,
+      0.0
+    ],
+    "coefficients": [
+      0.8081370796394135,
+      0.19186292036058647
+    ],
+    "coefficient_l1": 1.0,
+    "base_residual_squared_l2": 0.000319823552806027,
+    "old_residual_squared_l2": 0.001294545112016645,
+    "residual_difference_squared_l2": 0.0015816362645340348,
+    "direction_resolution_ratio": 1.2217699096404286,
+    "relative_operator_change_along_history_difference": 0.006740019073265114,
+    "history_difference_image_l2_ratio": 0.9937578239193982
+  },
+  "prediction": {
+    "predicted_residual": 7.657069076118395e-05,
+    "predicted_residual_squared_l2": 0.00026160133891945964,
+    "predicted_boundary_l1": 7.906615147916873e-05,
+    "predicted_boundary_bolometric": 1.9004878236984377e-05,
+    "minimum_candidate": 0.0,
+    "minimum_predicted_map": 0.0,
+    "candidate_negative_count": 0,
+    "predicted_map_negative_count": 0
+  },
+  "checks": {
+    "resolved_direction": true,
+    "nonzero_coefficient": true,
+    "bounded_coefficients": true,
+    "nonnegative_prediction": true,
+    "maximum_norm_improves_best_history": true,
+    "boundary_spectrum_pass": true,
+    "boundary_bolometric_pass": true
+  },
+  "algebraic_feasibility": true,
+  "best_measured_residual": 7.751071866695657e-05,
+  "actual_map_performed": false,
+  "candidate_written": false,
+  "accepted_material_step": false,
+  "limitations": [
+    "Predicted affinity needs a fresh full-field map.",
+    "A small operator residual is not a feedback-error bound.",
+    "The history-difference image ratio does not prove a global contraction or uniqueness."
+  ]
+}
