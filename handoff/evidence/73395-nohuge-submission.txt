@@ -1,0 +1,29 @@
+JobId=73395 JobName=tde-feedback-profile
+   UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A
+   Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:41 TimeLimit=00:30:00 TimeMin=N/A
+   SubmitTime=2026-09-19T18:47:11 EligibleTime=2026-09-19T18:47:11
+   AccrueTime=2026-09-19T18:47:11
+   StartTime=2026-09-19T18:47:12 EndTime=2026-09-19T19:17:12 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-19T18:47:12 Scheduler=Main
+   Partition=Students AllocNode:Sid=tradmin-02:506647
+   ReqNodeList=anode16 ExcNodeList=anode01
+   NodeList=anode16
+   BatchHost=anode16
+   NumNodes=1 NumCPUs=2 NumTasks=1 CPUs/Task=2 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=2,mem=8G,node=1,billing=2
+   AllocTRES=cpu=2,node=1,billing=2
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=2 MinMemoryNode=8G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/home/scc/pb24511938/eccentric-tde-observer/operations/profile_frozen_feedback_block.sbatch
+   SubmitLine=sbatch --parsable --nodelist=anode16 --time=00:30:00 --export=ALL,NUMPY_MADVISE_HUGEPAGE=0,TDE_PROFILE_RUN=outputs/hpc/profile-round2-block24-nohuge-20260919 operations/profile_frozen_feedback_block.sbatch
+   WorkDir=/home/scc/pb24511938/eccentric-tde-observer
+   StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-feedback-profile-73395.err
+   StdIn=/dev/null
+   StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-feedback-profile-73395.out
+   TresPerTask=cpu=2
+
