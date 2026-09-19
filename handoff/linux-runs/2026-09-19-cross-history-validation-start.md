@@ -22,3 +22,5 @@
 所有新代码使用`NUMPY_MADVISE_HUGEPAGE=0`，原source/kernel及历史数据不变。Mac25项相关测试通过，含流式写入公式与顺序、短读不发布候选、负值/非法系数拒绝、全场预测完全一致、标量残差相同但全场不同必须被识别、正性阻碍计数与索引、原字节不变、既有同物质身份和扫描代数测试。
 
 变更前Git备份`pre-cross-validation-885a1fd.bundle`。本轮主要检验跨历史组合的全场预测是否可靠，为后续更有效的方向设计提供证据；不把1.21%的预测改善称为已经解决慢模。完成后各自小包双端核验，再决定是否值得独立追加反馈或扩展子空间，不自动重复本轮。
+
+代码`041c3c2`已同步学校/GitHub，Linux同组25测试通过。正式提交73581（`outputs/hpc/cross-history-map-validation-20260919`，cpu_long32CPU/128GiB/16worker）和73582（`outputs/hpc/cross-history-positivity-audit-20260919`，默认4CPU/16GiB）。提交初态均PD，独立运行无相互等待；各自预算按上文执行。旧run及原四态不变，小包排除dat、lock和可能较大的cross_candidate.partial。
