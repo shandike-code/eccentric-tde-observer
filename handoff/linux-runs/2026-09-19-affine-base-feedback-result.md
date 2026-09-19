@@ -29,3 +29,5 @@
 新增只读`operations/audit_affine_feedback_histories.py/.sbatch`。待73460成功结束后启动，比较外推前（73396和73309第二轮）与外推后（73459和73460）的两条历史，各重算正式NPZ的逐层能量账本和完整方程向量。核同物质、物理旧时间层/密度/dt、原协议与NPZ、76块完整性及逐块SHA，报告L2、质量加权、最差层、正热能、相邻漂移及跨历史率/加热差；正式encoded验收另列。
 
 该审计不写新辐射态，不改验收门，最多cpu_long2CPU/8GiB/10min，使用afterok依赖而非轮询启动；若73460失败，审计保持不启动，下一次先处理失败现场。原历史及新完成base均不续交。代码变更前备份`pre-affine-audit-bd56199.bundle`；Mac46项相关测试通过，包含半态、错误反馈端点拒绝和已有账本/方程/全字段物质身份测试。
+
+代码`31941db`已同步学校与GitHub，Linux同组46项测试通过。审计作业为73495，run为`outputs/hpc/affine-feedback-history-audit-20260919`，提交后PD/Dependency；73460当时已运行38分25秒，2张map完成，pending_feedback=true，开始反馈阶段。后续需读取comparison.json、status.json并双端归档，生成的history_comparison.png须实际打开核图。两条新物质候选均不自动追加预算。
