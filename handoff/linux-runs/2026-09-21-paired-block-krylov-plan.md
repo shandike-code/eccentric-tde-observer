@@ -57,3 +57,7 @@ $$
 若后续获得两个物质状态各自的受控辐射精度序列，应固定响应定义与测度，对照完整物质残差向量、范数判决余量、逐层能量和逐块加热。能观察到判决稳定只属于经验精度证据；若无法建立上界，报告中仍需保留这一限制。不能通过替换分母把已有失败宣布为接受。
 
 改前备份为`outputs/review-20260921/pre-paired-block-krylov.bundle`与`automation-before-paired-block-krylov.toml`。旧源码、协议、dat和结果均未改。
+
+## 提交记录
+
+Mac/Linux相关测试各41项通过（1.14秒/14.26秒），新sbatch语法与Markdown归一化检查通过。代码`0f512cad580e3b4ec3d1492b39219f6ab9b56d2d`三端同步后提交74235；北京时间2026-09-21 00:10:17开始，anode22、默认4CPU/16GiB、30分钟。00:10:28现场RUNNING，驱动preparing；此时正在小输入快照与完整dat哈希阶段，尚无块试验结果。小证据`handoff/evidence/20260921-74235-submission.json`固定这一提交时点，不冒充最终状态。
