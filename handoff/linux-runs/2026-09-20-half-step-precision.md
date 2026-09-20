@@ -48,3 +48,9 @@ Mac相关46项测试通过，包含11个新用例：最新输出与反馈输入�
 `half-step-73863-small.tar.gz`在学校家目录和Mac `outputs/review-20260920/`双存；84649129 bytes、1555文件，SHA256 `d53058a6f179ad36717b20f31bb1ec3089db965ae5a0b4cd70b42ff559407f6a`。整包及逐文件SHA全核，提取到新`half-step-73863-received`目录；dat不打包、不删除。Git存state、native audit、声明和两份正式summary。改前Git保全`pre-half-precision-320c3cf.bundle`。
 
 仍没有接受的物质步、自洽代表柱或可用于整盘的角分辨强度。这轮不提供模型无解的证据，也不足以估计最终自洽光谱的交付日期。
+
+## 新提交与监督
+
+代码`407f520`三端一致，Linux同组46测试通过。新作业73888于13:02:56 CST在anode02开始，实际32CPU/128GiB、qos_stu_cpu_long、16worker、60分钟；13:04:01为RUNNING、preparing、stderr空。准备成功与新反馈结果尚待下次实测，不提前报告完成。
+
+30分钟heartbeat已更新为73888、8map/两轮上限及上述决策分支，旧配置保全`outputs/review-20260920/automation-before-half-precision.toml`。73863和更早任务均为历史对照，不再重交。
