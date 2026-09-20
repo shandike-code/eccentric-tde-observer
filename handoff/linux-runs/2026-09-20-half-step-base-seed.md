@@ -27,3 +27,9 @@ Mac48项相关测试通过，其中19项新测试覆盖基态终态/最新槽、
 改前保全`outputs/review-20260920/pre-half-base-seed-7246fb7.bundle`。新工件在独立目录，完成后按既有规则双端备份并核整包/逐文件SHA。默认4核暂不重复跑已完成方向审计；若出现独立有效的诊断再使用。
 
 本次不是已接受物质步、耦合柱收敛或整盘自洽强度交付，也不能用于宣称模型无解。
+
+## 启动与监督记录
+
+代码`237f28a`已在Mac、学校和GitHub同步并核HEAD；Linux同组48测试通过。作业73929于2026-09-20 15:15:38 CST在anode16开始，实际为qos_stu_cpu_long、32CPU/128GiB、16worker、60分钟。15:15:55检查RUNNING、preparing、stderr空，此时尚未确认初始化完成或新map完成。
+
+每30分钟的`ustc-hhe`已更新为73929的预算、恢复规则及与73888对照要求，并回读配置确认prompt完全一致。旧自动任务配置备份为`outputs/review-20260920/automation-before-base-seed-launch.toml`。SSH断线按已有约定提醒重连并暂停跟进，不终止Slurm。
