@@ -1,0 +1,196 @@
+{
+  "config_sha256": "080229117d395e3f47fbdc7974a31caceb51667514b0652db86385e127411080",
+  "status": "diagnostic_round_complete",
+  "initialization_blocks": [],
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/half-step-precision-20260920/state_0.dat",
+      "input_sha256": "c9d72f3303a51706c1d66fba3ac6280845c6cb4eabbcb24b89de54070d6bd066",
+      "output_path": "outputs/hpc/half-step-precision-20260920/state_1.dat",
+      "output_sha256": "39da80bbb30c8fcfcc74d1176c8e093bad519fdb80f99f96469410f8732d3040",
+      "wall_s": 148.64111589360982,
+      "residual": 0.00011802233383681373,
+      "boundary_l1": 6.322169926817377e-05,
+      "boundary_bolometric": 5.7478893922323846e-05,
+      "maximum_worker_rss_mib": 3498.94921875
+    },
+    {
+      "iteration": 2,
+      "input_path": "outputs/hpc/half-step-precision-20260920/state_1.dat",
+      "input_sha256": "39da80bbb30c8fcfcc74d1176c8e093bad519fdb80f99f96469410f8732d3040",
+      "output_path": "outputs/hpc/half-step-precision-20260920/state_2.dat",
+      "output_sha256": "66b90328db8133a67fc45e9725cfbe63bcea47737c3d763f997dccb57fb463ac",
+      "wall_s": 147.1780891828239,
+      "residual": 0.00011013584005454021,
+      "boundary_l1": 5.857419704732176e-05,
+      "boundary_bolometric": 5.468906902516845e-05,
+      "maximum_worker_rss_mib": 3498.4375
+    },
+    {
+      "iteration": 3,
+      "input_path": "outputs/hpc/half-step-precision-20260920/state_2.dat",
+      "input_sha256": "66b90328db8133a67fc45e9725cfbe63bcea47737c3d763f997dccb57fb463ac",
+      "output_path": "outputs/hpc/half-step-precision-20260920/state_0.dat",
+      "output_sha256": "98f2623dc747662513bc264949248f293c3207484b3706edd1d88d377e868f99",
+      "wall_s": 146.1154092773795,
+      "residual": 0.00010285041162381619,
+      "boundary_l1": 5.492014031729189e-05,
+      "boundary_bolometric": 5.211872710818225e-05,
+      "maximum_worker_rss_mib": 3501.44140625
+    },
+    {
+      "iteration": 4,
+      "input_path": "outputs/hpc/half-step-precision-20260920/state_0.dat",
+      "input_sha256": "98f2623dc747662513bc264949248f293c3207484b3706edd1d88d377e868f99",
+      "output_path": "outputs/hpc/half-step-precision-20260920/state_1.dat",
+      "output_sha256": "ab2948d2ab15411144e185f710b9804b6476ca8ed0540f3e9f9c30b110de75a0",
+      "wall_s": 153.04629340488464,
+      "residual": 9.606905824826699e-05,
+      "boundary_l1": 5.1895923421355064e-05,
+      "boundary_bolometric": 4.976303675250758e-05,
+      "maximum_worker_rss_mib": 3497.9453125
+    },
+    {
+      "iteration": 5,
+      "input_path": "outputs/hpc/half-step-precision-20260920/state_1.dat",
+      "input_sha256": "ab2948d2ab15411144e185f710b9804b6476ca8ed0540f3e9f9c30b110de75a0",
+      "output_path": "outputs/hpc/half-step-precision-20260920/state_2.dat",
+      "output_sha256": "1e4972b316f87b3453ea39ea4bc5196e28e2f853efb122e4bdec9a426c432af0",
+      "wall_s": 146.2550838869065,
+      "residual": 8.992536383863834e-05,
+      "boundary_l1": 4.9297743559588046e-05,
+      "boundary_bolometric": 4.759990026927631e-05,
+      "maximum_worker_rss_mib": 3496.76171875
+    },
+    {
+      "iteration": 6,
+      "input_path": "outputs/hpc/half-step-precision-20260920/state_2.dat",
+      "input_sha256": "1e4972b316f87b3453ea39ea4bc5196e28e2f853efb122e4bdec9a426c432af0",
+      "output_path": "outputs/hpc/half-step-precision-20260920/state_0.dat",
+      "output_sha256": "4968052563db89c337eb6075a0cccaccd20b1822f48915eeedf0b2ed77c79f1a",
+      "wall_s": 147.2324272757396,
+      "residual": 8.441280595446085e-05,
+      "boundary_l1": 4.700567084241774e-05,
+      "boundary_bolometric": 4.560527909657019e-05,
+      "maximum_worker_rss_mib": 3499.7109375
+    },
+    {
+      "iteration": 7,
+      "input_path": "outputs/hpc/half-step-precision-20260920/state_0.dat",
+      "input_sha256": "4968052563db89c337eb6075a0cccaccd20b1822f48915eeedf0b2ed77c79f1a",
+      "output_path": "outputs/hpc/half-step-precision-20260920/state_1.dat",
+      "output_sha256": "cde419b08e747e62e0d75f20efaff6b63893cb295fb21a155f54975a19566d16",
+      "wall_s": 146.57185198925436,
+      "residual": 7.923345631209003e-05,
+      "boundary_l1": 4.494554193516016e-05,
+      "boundary_bolometric": 4.375787354403674e-05,
+      "maximum_worker_rss_mib": 3501.9140625
+    },
+    {
+      "iteration": 8,
+      "input_path": "outputs/hpc/half-step-precision-20260920/state_1.dat",
+      "input_sha256": "cde419b08e747e62e0d75f20efaff6b63893cb295fb21a155f54975a19566d16",
+      "output_path": "outputs/hpc/half-step-precision-20260920/state_2.dat",
+      "output_sha256": "c04af8c94dfeafd17690dc17269e68ba247ceb858e9654792d04363b9ede86d4",
+      "wall_s": 146.45816816948354,
+      "residual": 7.436605722864344e-05,
+      "boundary_l1": 4.306927589285721e-05,
+      "boundary_bolometric": 4.203996226136971e-05,
+      "maximum_worker_rss_mib": 3499.34375
+    }
+  ],
+  "slots": [
+    "outputs/hpc/half-step-precision-20260920/state_0.dat",
+    "outputs/hpc/half-step-precision-20260920/state_1.dat",
+    "outputs/hpc/half-step-precision-20260920/state_2.dat"
+  ],
+  "current_slot": 2,
+  "active_map": null,
+  "current_sha256": "c04af8c94dfeafd17690dc17269e68ba247ceb858e9654792d04363b9ede86d4",
+  "trial_sha256": "07a3700d8767f5bd7addf7b2932d3b44742e803e2aed52c83e2e86b82ce07b86",
+  "diagnostic": {
+    "rounds": [
+      {
+        "round": 1,
+        "endpoints": [
+          3,
+          4
+        ],
+        "protocol_sha256": "e2736ea9bb7ed1af67e7a99cfa627f1369ee4baffd0400bc7ae91ebef1aa866e",
+        "endpoints_claim": {
+          "previous": {
+            "path": "outputs/hpc/half-step-precision-20260920/state_2.dat",
+            "sha256": "66b90328db8133a67fc45e9725cfbe63bcea47737c3d763f997dccb57fb463ac",
+            "size_bytes": 10099884032
+          },
+          "final": {
+            "path": "outputs/hpc/half-step-precision-20260920/state_0.dat",
+            "sha256": "98f2623dc747662513bc264949248f293c3207484b3706edd1d88d377e868f99",
+            "size_bytes": 10099884032
+          }
+        },
+        "slot_reuse_note": "radiation state slots rotate across three files; the retained small artifacts stay verifiable, but these large states may later be overwritten and the round may then not be re-runnable at these paths",
+        "feedback_wall_s": 359.0991120962426,
+        "accepted": false,
+        "failed_gates": [
+          "candidate_l2_contraction_pass",
+          "candidate_mass_weighted_contraction_pass",
+          "last_two_atomic_heating_pass",
+          "last_two_direct_heating_pass",
+          "last_two_formal_heating_pass",
+          "two_inner_radiation_residuals_pass"
+        ],
+        "decision": {
+          "formal_h_he_feedback_pair_passed": true,
+          "finite_trial_accepted_as_one_nonlinear_step": false,
+          "finite_trial_rejected": true,
+          "static_approximation_rejected_from_one_failed_trial": false,
+          "dynamic_nlte_solution_accepted": false,
+          "phase4_replacement": false,
+          "real_line_formation": false
+        },
+        "ledger": "outputs/hpc/half-step-precision-20260920/feedback-round1/material_energy_ledger.json",
+        "ledger_heating_ratio": 0.001497466710601932
+      },
+      {
+        "round": 2,
+        "endpoints": [
+          7,
+          8
+        ],
+        "protocol_sha256": "8401bc88b396f05e63c88ab5fb2e7a4a8e705f63df57fe5a200da901a2c2b8e6",
+        "endpoints_claim": {
+          "previous": {
+            "path": "outputs/hpc/half-step-precision-20260920/state_0.dat",
+            "sha256": "4968052563db89c337eb6075a0cccaccd20b1822f48915eeedf0b2ed77c79f1a",
+            "size_bytes": 10099884032
+          },
+          "final": {
+            "path": "outputs/hpc/half-step-precision-20260920/state_1.dat",
+            "sha256": "cde419b08e747e62e0d75f20efaff6b63893cb295fb21a155f54975a19566d16",
+            "size_bytes": 10099884032
+          }
+        },
+        "slot_reuse_note": "radiation state slots rotate across three files; the retained small artifacts stay verifiable, but these large states may later be overwritten and the round may then not be re-runnable at these paths",
+        "feedback_wall_s": 358.5652578892186,
+        "accepted": false,
+        "failed_gates": [
+          "candidate_l2_contraction_pass",
+          "candidate_mass_weighted_contraction_pass"
+        ],
+        "decision": {
+          "formal_h_he_feedback_pair_passed": true,
+          "finite_trial_accepted_as_one_nonlinear_step": false,
+          "finite_trial_rejected": true,
+          "static_approximation_rejected_from_one_failed_trial": false,
+          "dynamic_nlte_solution_accepted": false,
+          "phase4_replacement": false,
+          "real_line_formation": false
+        },
+        "ledger": "outputs/hpc/half-step-precision-20260920/feedback-round2/material_energy_ledger.json",
+        "ledger_heating_ratio": 0.0008025424135952665
+      }
+    ]
+  }
+}
