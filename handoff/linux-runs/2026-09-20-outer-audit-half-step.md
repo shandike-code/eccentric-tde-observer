@@ -45,3 +45,9 @@ Mac合成与既有回归29项通过，覆盖冻结方向、真实编码位移、
 改前Git全历史bundle：`outputs/review-20260920/pre-half-step-589ced9.bundle`。审计包`outer-audit-73846-small.tar.gz`在学校家目录和Mac同目录各一份；114664624 bytes，1093文件，SHA256 `31521e5eb1d12acb155a5e5bde9ab76ad7b06250b08603d8b36090f031864e54`。整包及全部1093文件已核SHA，提取到新目录；原dat未改，Git仅收小型审计JSON、CSV、图与代码/报告。
 
 当前没有被接受的物质步、收敛耦合柱或可用于整盘的自洽角分辨强度。此次是代表柱单时间步的连续谱研究，不证明静态模型无解，也不提供最终完成日期。
+
+## 提交与监督记录
+
+代码`5e68bfe`在Mac、学校、GitHub三端一致；Linux相关29项测试通过，shell语法通过。作业73863于2026-09-20 12:21:52 CST在anode22开始，实际申请为`qos_stu_cpu_long`、32CPU、128G、60分钟，16worker。12:23:34检查为RUNNING、准备状态preparing，stdout/stderr为空；此时尚不能称真实候选同平台核验通过或新map完成。
+
+已有`ustc-hhe` heartbeat保持每30分钟ACTIVE，内容已替换为73863的预算、候选身份、结果分支和停止条件；旧配置保全为`outputs/review-20260920/automation-before-half-step-73863.toml`。SSH认证失败时通知用户重连并暂停跟进，不因断线终止Slurm。无实质变化不重复通知。
