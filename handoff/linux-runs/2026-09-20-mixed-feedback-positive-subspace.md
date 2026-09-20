@@ -61,3 +61,7 @@ Mac相关42项回归通过，包括解析活动约束、零起点约束、系数
 | mixed-review-73618-small.tar.gz | 19944986 / 582 | 34c6903728dc35c826852320a2471bd86c6cf79e75770ae2218fd9b72143e0f8 |
 
 下一次读取两个新run的status、state、完整feedback gates、约束扫描每轮进度和stderr。先结算欠反馈，失败不盲重交；完成先双端备份，再比较完整指标。仍没有被接受的物质步、自洽耦合柱或可接整盘的角分辨强度表；也没有模型无解的证据。
+
+## 提交记录
+
+代码`040783b`已同步Mac、学校和GitHub；Linux同组42测试通过。2026-09-20 08:18 CST实测：73675（`outputs/hpc/mixed-followup-20260920`）以32CPU/128GiB、qos_stu_cpu_long在anode16 RUNNING，准备状态preparing；73676（`outputs/hpc/positive-subspace-20260920`）以4CPU/16GiB、qos_stu_default在anode16 RUNNING，扫描状态running；两份stderr为空。此为启动检查，不是运行完成检查。已有30分钟heartbeat已恢复ACTIVE并更新为本轮目标和停止条件，实际完成须读新工件判定。
