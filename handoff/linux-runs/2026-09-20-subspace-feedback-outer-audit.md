@@ -40,3 +40,7 @@ $$
 `subspace-feedback-73824-small.tar.gz`在学校家目录和Mac `outputs/review-20260920/`各一份，52060992 bytes、1074文件，SHA256为`5e2b41b494b6e09bcd3a91af102a283e8ea72ceed13f42ab5690bed213020b00`。整包及1074文件全部SHA已核，原大态保留；Git存state和正式summary小证据。
 
 改前Git保全`pre-outer-audit-db2909e.bundle`。Mac相关19项测试通过，覆盖贡献恒等式、质量权重导致不同范数判决、反向等长向量的抵消信息、非法质量和零分母拒绝，以及既有血缘/物质身份控制。新脚本输出audit.json、逐层CSV和诊断图；图必须取回后实际打开才称视觉核验。此时诊断尚未产生结果。
+
+## 提交
+
+代码`4232ca8`已同步Mac、学校和GitHub；Linux同组19测试通过。只读诊断提交为73846，run为`outputs/hpc/outer-contraction-audit-20260920`，默认4CPU/16GiB、20分钟。旧73824及所有基底run不续跑；诊断没有接受物质步的权限。
