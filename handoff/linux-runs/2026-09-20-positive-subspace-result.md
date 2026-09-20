@@ -47,3 +47,7 @@
 包存学校家目录与Mac `outputs/review-20260920/`；整包与所有清单文件哈希核对后解入独立received目录。大dat原地保留，未入Git。Git只收state、formal summary、扫描prediction、CSV和小图等证据。
 
 POST-RUN核验：73675两端均0/128非正目标热能。最小热能分别6.649814113e12 erg/g（cell114）和6.893513414e12 erg/g（cell106）；按旧热能比例最差层两端仍是cell114，比例0.5754472/0.5975011，不能混用绝对最差与相对最差层。73676新图已实际打开：5012至0及0.0363至1与JSON相符，坐标和标题完整，标题明确无真实map及物质接受。
+
+## 新提交
+
+代码`ad816c2`已同步三端，Linux同组45测试通过。默认4核扫描提交为73693，run为`outputs/hpc/recent-positive-subspace-20260920`，上限60分钟；32核保留给扫描合格后的独立真实map验证。既有30分钟heartbeat保持ACTIVE，已更新当前结果、比较基准和下一步验证公式。Git中的原扫描CSV保留CRLF原字节，因此`git diff --check`会对该工件提示行尾空白；代码和Markdown无此告警，不改写原工件来消除提示。
