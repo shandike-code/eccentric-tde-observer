@@ -1,0 +1,45 @@
+{
+  "candidate": {
+    "path": "outputs/hpc/half-four-map-validation-20260920/half_four_map_candidate.dat",
+    "size_bytes": 10099884032,
+    "sha256": "273e710640bc6992617cfe99d951f92bbda26b50516ff0d5133d5527766baadb"
+  },
+  "candidate_minimum_intensity": 0.0,
+  "actual_map": {
+    "iteration": 1,
+    "input_path": "outputs/hpc/half-four-map-validation-20260920/state_0.dat",
+    "input_sha256": "273e710640bc6992617cfe99d951f92bbda26b50516ff0d5133d5527766baadb",
+    "output_path": "outputs/hpc/half-four-map-validation-20260920/state_1.dat",
+    "output_sha256": "0d6bb32deebe74e0b94e0f479b08c8ba91d5a51466abaf6d2a48ceb19fc24e19",
+    "wall_s": 150.1453403858468,
+    "residual": 2.442668537015916e-05,
+    "boundary_l1": 3.742192341752979e-05,
+    "boundary_bolometric": 3.1778905118195284e-05,
+    "maximum_worker_rss_mib": 3500.921875
+  },
+  "predicted_residual": 2.442668537069619e-05,
+  "actual_minus_predicted_residual": -5.370290529545935e-16,
+  "validation_checks": {
+    "actual_maximum_norm_improves": true,
+    "actual_boundary_spectrum_pass": true,
+    "actual_boundary_bolometric_pass": true,
+    "worker_memory_pass": true,
+    "full_field_prediction_error_resolved": true,
+    "candidate_reconstruction_exact": true
+  },
+  "extrapolation_validated": true,
+  "full_field_error": {
+    "error_l2": 1.3151006029739046e-12,
+    "relative_field_l2": 3.1224622201116036e-15,
+    "maximum_error_over_field_scale": 2.3991130779972345e-14,
+    "error_over_actual_defect_l2": 3.360395057334232e-10,
+    "boundary_prediction_l1_error": 1.7188104113147749e-15,
+    "boundary_prediction_bolometric_error": 7.577637000012161e-16,
+    "candidate_reconstruction_exact": true,
+    "prediction_error_resolved": true
+  },
+  "full_intensity_prediction_error_evaluated": true,
+  "accepted_material_step": false,
+  "feedback_evaluated": false,
+  "note": "One actual map verifies this mixture only, not a global affinity theorem, feedback stability or coupled convergence."
+}

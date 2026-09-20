@@ -1,0 +1,28 @@
+{
+  "config_sha256": "c950bcedebb2b07646b66634796cade00b509c8c1db56a6ed3d1722f5b0fe06a",
+  "status": "radiation",
+  "initialization_blocks": [],
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/half-four-map-validation-20260920/state_0.dat",
+      "input_sha256": "273e710640bc6992617cfe99d951f92bbda26b50516ff0d5133d5527766baadb",
+      "output_path": "outputs/hpc/half-four-map-validation-20260920/state_1.dat",
+      "output_sha256": "0d6bb32deebe74e0b94e0f479b08c8ba91d5a51466abaf6d2a48ceb19fc24e19",
+      "wall_s": 150.1453403858468,
+      "residual": 2.442668537015916e-05,
+      "boundary_l1": 3.742192341752979e-05,
+      "boundary_bolometric": 3.1778905118195284e-05,
+      "maximum_worker_rss_mib": 3500.921875
+    }
+  ],
+  "slots": [
+    "outputs/hpc/half-four-map-validation-20260920/state_0.dat",
+    "outputs/hpc/half-four-map-validation-20260920/state_1.dat",
+    "outputs/hpc/half-four-map-validation-20260920/state_2.dat"
+  ],
+  "current_slot": 1,
+  "active_map": null,
+  "current_sha256": "0d6bb32deebe74e0b94e0f479b08c8ba91d5a51466abaf6d2a48ceb19fc24e19",
+  "trial_sha256": "07a3700d8767f5bd7addf7b2932d3b44742e803e2aed52c83e2e86b82ce07b86"
+}
