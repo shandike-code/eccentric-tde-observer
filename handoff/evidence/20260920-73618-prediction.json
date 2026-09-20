@@ -1,0 +1,84 @@
+{
+  "system": {
+    "eigenvalues": [
+      1.2254387568578862e-07,
+      5.1986239622316804e-06,
+      0.0031819668882535684
+    ],
+    "retained_rank": 3,
+    "relative_cutoff": 1e-12,
+    "gram": [
+      [
+        5.406860394747487e-06,
+        -1.8667603286241587e-05,
+        -1.8938910076107672e-05
+      ],
+      [
+        -1.8667603286241587e-05,
+        0.0016002449311627038,
+        0.0015907764846223877
+      ],
+      [
+        -1.8938910076107672e-05,
+        0.0015907764846223877,
+        0.001581636264534035
+      ]
+    ],
+    "rhs": [
+      -2.0607667744625904e-05,
+      -7.1387725204654645e-06,
+      -3.549616600488567e-19
+    ],
+    "anchor_residual_squared_l2": 0.0002616013389194593
+  },
+  "anchor_weights": [
+    0.0,
+    0.8081370796394135,
+    0.0,
+    0.19186292036058647
+  ],
+  "raw_weights": [
+    -2.307455001398049,
+    3.0118613523651376,
+    -22.730849255542346,
+    23.026442904575255
+  ],
+  "effective_weights": [
+    -0.08368432781329815,
+    0.8880594115319819,
+    -0.8243783039855377,
+    1.0200032202668539
+  ],
+  "bounds": {
+    "positivity_step_upper": 0.036266938147264074,
+    "selected_step": 0.03626693814726407,
+    "raw_candidate_negative_count": 5012,
+    "raw_map_negative_count": 0,
+    "raw_coefficient_l1": 51.076608513880785,
+    "effective_coefficient_l1": 2.8161252635976712
+  },
+  "prediction": {
+    "predicted_residual": 7.299873794510815e-05,
+    "predicted_residual_squared_l2": 0.00024665813936506254,
+    "predicted_boundary_l1": 7.72215069129506e-05,
+    "predicted_boundary_bolometric": 1.9272649899876476e-05,
+    "minimum_candidate": 0.0,
+    "minimum_map": 0.0,
+    "candidate_negative_count": 0,
+    "map_negative_count": 0
+  },
+  "checks": {
+    "resolved_subspace": true,
+    "nonzero_step": true,
+    "bounded_coefficients": true,
+    "nonnegative_prediction": true,
+    "maximum_norm_improves": true,
+    "boundary_l1_pass": true,
+    "boundary_bolometric_pass": true
+  },
+  "algebraic_feasibility": true,
+  "best_measured_residual": 7.657069076118395e-05,
+  "candidate_written": false,
+  "actual_map_performed": false,
+  "accepted_material_step": false
+}
