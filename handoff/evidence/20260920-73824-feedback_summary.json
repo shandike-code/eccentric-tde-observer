@@ -1,0 +1,78 @@
+{
+  "phase": "HPC explicit inner-tolerance experiment",
+  "classification": "[A-preregistered]+[V]+[O]",
+  "protocol_sha256": "c4d2aec2f9e86014b7a87daa16732934d08bc5fd99075550df6e79b130482c68",
+  "comparison": {
+    "photoionization_volume_l1": [
+      1.3432588695506559e-05,
+      2.5026067807538024e-05,
+      3.7513006626684404e-07
+    ],
+    "total_recombination_volume_l1": [
+      2.447159577800187e-07,
+      1.6621823827961876e-08,
+      4.2493835073869143e-13
+    ],
+    "atomic_heating_volume_l1": 0.0005799470724223031,
+    "direct_heating_volume_l1": 0.000579947072421269,
+    "formal_heating_volume_l1": 0.0005799466717377674,
+    "inner_noise_to_trial_signal_l2_ratio": 0.015285174896226586,
+    "candidate_to_base_residual_l2_ratio": 1.0029981148493672,
+    "candidate_to_base_mass_weighted_norm_ratio": 1.026201636503185,
+    "candidate_to_base_maximum_cell_norm_ratio": 0.9959313024766983
+  },
+  "previous_feedback": {
+    "feedback_artifact_path": "outputs/hpc/subspace-feedback-20260920/feedback-round1/previous_feedback.npz",
+    "feedback_artifact_sha256": "7015bf4ce44e8735922c0e44e91fa748f06a4c094500758d582fc71b176122c6",
+    "rate_direct_volume_l1": 1.913311022639784e-12,
+    "rate_formal_volume_l1": 6.693463663576484e-06,
+    "rate_formal_global_fraction": 6.118021922458423e-05,
+    "maximum_parent_mirror_residual": 1.4550056441096594e-11,
+    "maximum_process_peak_rss_mib": 3939.05078125,
+    "accumulated_wall_runtime_s": 162.4971948377788
+  },
+  "final_feedback": {
+    "feedback_artifact_path": "outputs/hpc/subspace-feedback-20260920/feedback-round1/final_feedback.npz",
+    "feedback_artifact_sha256": "d2f4c57810c248fcc4846ad3065058bfa94c208f08e0a8c1932ab6772d7efc97",
+    "rate_direct_volume_l1": 1.9121088899906115e-12,
+    "rate_formal_volume_l1": 6.6940851822244e-06,
+    "rate_formal_global_fraction": 6.142656988019245e-05,
+    "maximum_parent_mirror_residual": 1.4608010157789077e-11,
+    "maximum_process_peak_rss_mib": 3941.94140625,
+    "accumulated_wall_runtime_s": 155.60476425662637
+  },
+  "target_material_path": "outputs/hpc/subspace-feedback-20260920/feedback-round1/target_material.npz",
+  "target_material_sha256": "306ff0f052c5b22055d157add003fa065e72a0ea44c16795dfbfde607eba13e2",
+  "encoded_residual_path": "outputs/hpc/subspace-feedback-20260920/feedback-round1/material_residual.npy",
+  "encoded_residual_sha256": "f6f5059fdf45ac7505520f441ae34b06056d072e1b4748acd10526135309be65",
+  "gate_checks": {
+    "last_two_photoionization_pass": true,
+    "last_two_total_recombination_pass": true,
+    "last_two_atomic_heating_pass": true,
+    "last_two_direct_heating_pass": true,
+    "last_two_formal_heating_pass": true,
+    "inner_noise_resolved_pass": true,
+    "candidate_l2_contraction_pass": false,
+    "candidate_mass_weighted_contraction_pass": false,
+    "candidate_maximum_cell_contraction_pass": true,
+    "two_formal_feedback_states_pass": true,
+    "two_inner_radiation_residuals_pass": true,
+    "two_boundary_spectra_pass": true,
+    "two_boundary_bolometric_pass": true,
+    "candidate_state_bytes_pass": true,
+    "population_nonnegative_pass": true,
+    "all_residual_components_finite_pass": true
+  },
+  "decision": {
+    "formal_h_he_feedback_pair_passed": true,
+    "finite_trial_accepted_as_one_nonlinear_step": false,
+    "finite_trial_rejected": true,
+    "static_approximation_rejected_from_one_failed_trial": false,
+    "dynamic_nlte_solution_accepted": false,
+    "phase4_replacement": false,
+    "real_line_formation": false
+  },
+  "figures": [
+    "feedback.png"
+  ]
+}
