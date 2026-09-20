@@ -1,0 +1,82 @@
+{
+  "config_sha256": "8ff31fbdbf4705e0356952da686bb3f6136254b8463956793aa63cfa7c3210ba",
+  "status": "diagnostic_round_complete",
+  "initialization_blocks": [],
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/half-four-map-feedback-20260920/state_0.dat",
+      "input_sha256": "0d6bb32deebe74e0b94e0f479b08c8ba91d5a51466abaf6d2a48ceb19fc24e19",
+      "output_path": "outputs/hpc/half-four-map-feedback-20260920/state_1.dat",
+      "output_sha256": "e76af5ff5744688c7b11857cb6af6c2073ce7934e44be1c30b205effa2517d9c",
+      "wall_s": 145.6149663263932,
+      "residual": 2.4126043954402227e-05,
+      "boundary_l1": 3.551481369838699e-05,
+      "boundary_bolometric": 3.0466958096550128e-05,
+      "maximum_worker_rss_mib": 3500.94921875
+    },
+    {
+      "iteration": 2,
+      "input_path": "outputs/hpc/half-four-map-feedback-20260920/state_1.dat",
+      "input_sha256": "e76af5ff5744688c7b11857cb6af6c2073ce7934e44be1c30b205effa2517d9c",
+      "output_path": "outputs/hpc/half-four-map-feedback-20260920/state_2.dat",
+      "output_sha256": "c67231a484dd02cc85474ce09ab388f4843d2570bc0dcc7030e58f85da6b1167",
+      "wall_s": 144.85003377404064,
+      "residual": 2.383039200660052e-05,
+      "boundary_l1": 3.3937316453235236e-05,
+      "boundary_bolometric": 2.931709125852936e-05,
+      "maximum_worker_rss_mib": 3498.32421875
+    }
+  ],
+  "slots": [
+    "outputs/hpc/half-four-map-feedback-20260920/state_0.dat",
+    "outputs/hpc/half-four-map-feedback-20260920/state_1.dat",
+    "outputs/hpc/half-four-map-feedback-20260920/state_2.dat"
+  ],
+  "current_slot": 2,
+  "active_map": null,
+  "current_sha256": "c67231a484dd02cc85474ce09ab388f4843d2570bc0dcc7030e58f85da6b1167",
+  "trial_sha256": "07a3700d8767f5bd7addf7b2932d3b44742e803e2aed52c83e2e86b82ce07b86",
+  "diagnostic": {
+    "rounds": [
+      {
+        "round": 1,
+        "endpoints": [
+          1,
+          2
+        ],
+        "protocol_sha256": "aa145b4e1d0f5e75f0bac973fa94771375fd5882190592486ef1484517090e49",
+        "endpoints_claim": {
+          "previous": {
+            "path": "outputs/hpc/half-four-map-feedback-20260920/state_0.dat",
+            "sha256": "0d6bb32deebe74e0b94e0f479b08c8ba91d5a51466abaf6d2a48ceb19fc24e19",
+            "size_bytes": 10099884032
+          },
+          "final": {
+            "path": "outputs/hpc/half-four-map-feedback-20260920/state_1.dat",
+            "sha256": "e76af5ff5744688c7b11857cb6af6c2073ce7934e44be1c30b205effa2517d9c",
+            "size_bytes": 10099884032
+          }
+        },
+        "slot_reuse_note": "radiation state slots rotate across three files; the retained small artifacts stay verifiable, but these large states may later be overwritten and the round may then not be re-runnable at these paths",
+        "feedback_wall_s": 314.03322328440845,
+        "accepted": false,
+        "failed_gates": [
+          "candidate_l2_contraction_pass",
+          "candidate_mass_weighted_contraction_pass"
+        ],
+        "decision": {
+          "formal_h_he_feedback_pair_passed": true,
+          "finite_trial_accepted_as_one_nonlinear_step": false,
+          "finite_trial_rejected": true,
+          "static_approximation_rejected_from_one_failed_trial": false,
+          "dynamic_nlte_solution_accepted": false,
+          "phase4_replacement": false,
+          "real_line_formation": false
+        },
+        "ledger": "outputs/hpc/half-four-map-feedback-20260920/feedback-round1/material_energy_ledger.json",
+        "ledger_heating_ratio": 0.0008692914117369725
+      }
+    ]
+  }
+}
