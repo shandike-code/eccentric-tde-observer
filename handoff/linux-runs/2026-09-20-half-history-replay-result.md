@@ -33,3 +33,7 @@
 ## 保全
 
 `half-history-replay-74031-small.tar.gz`学校家目录与Mac `outputs/review-20260920/`双端，81,617,641 bytes、957文件，SHA256 `b2b32fdb7151d2b36378374211066722e146c800b5013a0390d192d1c6b30058`。整包及全部逐文件SHA已核。Mac独立解包`half-history-replay-74031-received`。包含全部小输入快照、JSON、NPZ、CSV、图和日志，无dat；原结果不改。Git小证据`handoff/evidence/20260920-74031-history-replay-audit.json`保留完整指标与逐层编码差贡献。
+
+## 扫描启动记录
+
+新扫描代码`e6097bb`已同步Mac、学校与GitHub；Mac/Linux各45项相关测试通过，真实73929/73888快照均由新选择器正确取出末次map输入state1及真实输出state2。2026-09-20提交作业74038，`outputs/hpc/half-history-scan-20260920`，默认4CPU/16GiB、20分钟上限。首次检查为RUNNING、status=running、stderr空；仅说明扫描启动，不说明预测通过。作业完成后以`prediction.json`的每个显式检查为准。
