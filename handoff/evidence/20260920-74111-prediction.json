@@ -1,0 +1,183 @@
+{
+  "system": {
+    "eigenvalues": [
+      3.913634223829491e-11,
+      1.0107700271243927e-07,
+      0.0007783029395789437
+    ],
+    "retained_rank": 3,
+    "relative_cutoff": 1e-12,
+    "gram": [
+      [
+        0.0005792238276827058,
+        0.0002402845011409879,
+        0.00023990999637256565
+      ],
+      [
+        0.0002402845011409879,
+        9.97088446256335e-05,
+        9.957893328474698e-05
+      ],
+      [
+        0.00023990999637256565,
+        9.957893328474698e-05,
+        9.947138340965905e-05
+      ]
+    ],
+    "rhs": [
+      8.203508633265988e-07,
+      7.462094746827533e-07,
+      1.128890338279593e-06
+    ],
+    "anchor_residual_squared_l2": 2.1880210589073266e-05
+  },
+  "raw_weights": [
+    0.01925459292288146,
+    -1.9539925233402755e-14,
+    -15.499999999999895,
+    16.480745407077034
+  ],
+  "effective_weights": [
+    0.01925459292288146,
+    -1.9539925233402755e-14,
+    -15.499999999999895,
+    16.480745407077034
+  ],
+  "anchor_weights": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "coefficient_step": 1.0,
+  "prediction": {
+    "predicted_residual": 2.442668537069619e-05,
+    "predicted_residual_squared_l2": 1.5315715106724885e-05,
+    "predicted_boundary_l1": 3.742192341748508e-05,
+    "predicted_boundary_bolometric": 3.1778905117185e-05,
+    "negative_counts": [
+      0,
+      0
+    ],
+    "minimum_fields": [
+      0.0,
+      0.0
+    ]
+  },
+  "checks": {
+    "resolved_rank": true,
+    "constraint_budget_resolved": true,
+    "finite_coefficients": true,
+    "coefficient_sum": true,
+    "coefficient_cap": true,
+    "full_field_nonnegative": true,
+    "maximum_norm_improves_best": true,
+    "boundary_l1": true,
+    "boundary_bolometric": true
+  },
+  "rounds": [
+    {
+      "iteration": 0,
+      "weights": [
+        60.50571756538157,
+        85.05643013161577,
+        -330.35266439312545,
+        185.7905166961281
+      ],
+      "statistics": {
+        "negative_counts": [
+          1095848,
+          1066036
+        ],
+        "minimum_fields": [
+          -8.505571401141723e-309,
+          -5.51710578414962e-309
+        ]
+      },
+      "next_solve": {
+        "iterations": 2,
+        "objective": -0.0042213573196192445,
+        "gram_condition_number": 19886961.71042204,
+        "maximum_linear_constraint_violation": -4.263256414560601e-14,
+        "note": "solver tolerance does not certify field positivity; full-field scan and global backtracking follow"
+      }
+    },
+    {
+      "iteration": 1,
+      "weights": [
+        -0.14956388988005695,
+        -0.23854330434381943,
+        -15.111892805776103,
+        16.49999999999998
+      ],
+      "statistics": {
+        "negative_counts": [
+          1934,
+          2616
+        ],
+        "minimum_fields": [
+          -1.129230654613e-311,
+          -1.129368991255e-311
+        ]
+      },
+      "next_solve": {
+        "iterations": 2,
+        "objective": -0.00421718533265031,
+        "gram_condition_number": 19886961.71042204,
+        "maximum_linear_constraint_violation": 5.684341886080802e-14,
+        "note": "solver tolerance does not certify field positivity; full-field scan and global backtracking follow"
+      }
+    },
+    {
+      "iteration": 2,
+      "weights": [
+        0.019254592922856743,
+        -5.684341886080802e-14,
+        -15.499999999999785,
+        16.480745407076984
+      ],
+      "statistics": {
+        "negative_counts": [
+          2,
+          6
+        ],
+        "minimum_fields": [
+          -5e-324,
+          -5e-324
+        ]
+      },
+      "next_solve": {
+        "iterations": 2,
+        "objective": -0.004217185332650312,
+        "gram_condition_number": 19886961.71042204,
+        "maximum_linear_constraint_violation": 1.9539925233402755e-14,
+        "note": "solver tolerance does not certify field positivity; full-field scan and global backtracking follow"
+      }
+    },
+    {
+      "iteration": 3,
+      "weights": [
+        0.01925459292288146,
+        -1.9539925233402755e-14,
+        -15.499999999999895,
+        16.480745407077034
+      ],
+      "statistics": {
+        "negative_counts": [
+          0,
+          0
+        ],
+        "minimum_fields": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "best_measured_residual": 3.0231933890773347e-05,
+  "algebraic_feasibility": true,
+  "candidate_written": false,
+  "actual_map_performed": false,
+  "accepted_material_step": false,
+  "full_constrained_optimum_proven": false
+}
