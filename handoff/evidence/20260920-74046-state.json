@@ -1,0 +1,28 @@
+{
+  "config_sha256": "5e43a0177a21bf797807a8676fe986337ac8d64796752d4de1f1df045399a13e",
+  "status": "radiation",
+  "initialization_blocks": [],
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/half-history-map-validation-20260920/state_0.dat",
+      "input_sha256": "b2aa8053fb1d456860333692f280616d5baacdf2af150b583b4160b2e65468fa",
+      "output_path": "outputs/hpc/half-history-map-validation-20260920/state_1.dat",
+      "output_sha256": "6df7d78d391c915757cc0f1c06c44516530d1d4df9830cf10847bb9ce349e2f0",
+      "wall_s": 144.7808761158958,
+      "residual": 3.107577053675214e-05,
+      "boundary_l1": 6.12799346376955e-05,
+      "boundary_bolometric": 3.3442065225070426e-06,
+      "maximum_worker_rss_mib": 3501.94140625
+    }
+  ],
+  "slots": [
+    "outputs/hpc/half-history-map-validation-20260920/state_0.dat",
+    "outputs/hpc/half-history-map-validation-20260920/state_1.dat",
+    "outputs/hpc/half-history-map-validation-20260920/state_2.dat"
+  ],
+  "current_slot": 1,
+  "active_map": null,
+  "current_sha256": "6df7d78d391c915757cc0f1c06c44516530d1d4df9830cf10847bb9ce349e2f0",
+  "trial_sha256": "07a3700d8767f5bd7addf7b2932d3b44742e803e2aed52c83e2e86b82ce07b86"
+}
