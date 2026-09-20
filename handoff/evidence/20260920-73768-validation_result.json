@@ -1,0 +1,44 @@
+{
+  "history": "recent four-map constrained subspace",
+  "candidate": {
+    "path": "outputs/hpc/recent-subspace-validation-20260920/subspace_candidate.dat",
+    "size_bytes": 10099884032,
+    "sha256": "787934ded4b358fe7c1dfb49cc8b8918302f32aed061b56571e2417e59326763"
+  },
+  "candidate_minimum_intensity": 0.0,
+  "actual_map": {
+    "iteration": 1,
+    "input_path": "outputs/hpc/recent-subspace-validation-20260920/state_0.dat",
+    "input_sha256": "787934ded4b358fe7c1dfb49cc8b8918302f32aed061b56571e2417e59326763",
+    "output_path": "outputs/hpc/recent-subspace-validation-20260920/state_1.dat",
+    "output_sha256": "c560a8e6b2925ea2a361ad8eda002d78db45c2fe75242c1a491d3ea68f64384e",
+    "wall_s": 155.42360034957528,
+    "residual": 5.668484395008868e-05,
+    "boundary_l1": 5.163995754763947e-05,
+    "boundary_bolometric": 8.609912627169643e-06,
+    "maximum_worker_rss_mib": 3497.55859375
+  },
+  "predicted_residual": 5.668484395491679e-05,
+  "actual_minus_predicted_residual": -4.828108128140246e-15,
+  "validation_checks": {
+    "actual_maximum_norm_improves": true,
+    "actual_boundary_spectrum_pass": true,
+    "actual_boundary_bolometric_pass": true,
+    "worker_memory_pass": true,
+    "full_field_prediction_error_resolved": true
+  },
+  "extrapolation_validated": true,
+  "accepted_material_step": false,
+  "feedback_evaluated": false,
+  "full_intensity_prediction_error_evaluated": true,
+  "full_field_error": {
+    "error_l2": 1.2715724058177066e-12,
+    "relative_field_l2": 3.018949585550424e-15,
+    "maximum_error_over_field_scale": 2.610760892270464e-14,
+    "error_over_actual_defect_l2": 1.4254750528711063e-10,
+    "boundary_prediction_l1_error": 1.6620034135494613e-15,
+    "boundary_prediction_bolometric_error": 0.0,
+    "prediction_error_resolved": true
+  },
+  "note": "Map aggregate enforces complete ownership, finite metrics and nonnegative input/output; full-field agreement is tested for this mixture only; it is not a proof of global operator affinity or feedback stability."
+}

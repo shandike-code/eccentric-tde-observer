@@ -1,0 +1,28 @@
+{
+  "config_sha256": "4db23133ce2d69e9eb1eb2e5ec85c0c3b2476ed5f50835faf2c6b25c50501e46",
+  "status": "radiation",
+  "initialization_blocks": [],
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/recent-subspace-validation-20260920/state_0.dat",
+      "input_sha256": "787934ded4b358fe7c1dfb49cc8b8918302f32aed061b56571e2417e59326763",
+      "output_path": "outputs/hpc/recent-subspace-validation-20260920/state_1.dat",
+      "output_sha256": "c560a8e6b2925ea2a361ad8eda002d78db45c2fe75242c1a491d3ea68f64384e",
+      "wall_s": 155.42360034957528,
+      "residual": 5.668484395008868e-05,
+      "boundary_l1": 5.163995754763947e-05,
+      "boundary_bolometric": 8.609912627169643e-06,
+      "maximum_worker_rss_mib": 3497.55859375
+    }
+  ],
+  "slots": [
+    "outputs/hpc/recent-subspace-validation-20260920/state_0.dat",
+    "outputs/hpc/recent-subspace-validation-20260920/state_1.dat",
+    "outputs/hpc/recent-subspace-validation-20260920/state_2.dat"
+  ],
+  "current_slot": 1,
+  "active_map": null,
+  "current_sha256": "c560a8e6b2925ea2a361ad8eda002d78db45c2fe75242c1a491d3ea68f64384e",
+  "trial_sha256": "1db4370c2f74ac83973d314c19bd65ccf799a7aa99e7ea453575c245df380eca"
+}
