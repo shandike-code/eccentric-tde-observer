@@ -1,0 +1,9 @@
+{
+  "trial_source": {
+    "path": "outputs/hpc/half-step-a001953125-20260920/trial_material.npz",
+    "size_bytes": 27774,
+    "sha256": "07a3700d8767f5bd7addf7b2932d3b44742e803e2aed52c83e2e86b82ce07b86"
+  },
+  "native_mirrored_material_exact": true,
+  "physical_phase_and_dt_exact": true
+}
