@@ -1,0 +1,21 @@
+{
+  "job_id": 74127,
+  "run": "outputs/hpc/half-four-map-validation-20260920",
+  "code_commit": "1705cd6cf34cc4b9d6c36cdb8195bee29ac1c7ba",
+  "resources": {
+    "cpu": 32,
+    "workers": 16,
+    "mem_gib": 128,
+    "maximum_minutes": 60,
+    "qos": "qos_stu_cpu_long"
+  },
+  "new_map_budget": 1,
+  "candidate_write_budget": 1,
+  "formal_feedback_budget": 0,
+  "tests_mac": 63,
+  "tests_linux": 63,
+  "real_scan_verification_mac": true,
+  "real_scan_verification_linux": true,
+  "status_at_submission": "submitted",
+  "accepted_material_step": false
+}
