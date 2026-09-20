@@ -1,0 +1,881 @@
+[
+  {
+    "path": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/phase7b9q_spatial_ali_feasibility_summary.json",
+    "sha256": "4cd739fa2a49e4e2ca1deed8141bf7b7ddf852d14fd7ed78506912b3a5791265",
+    "size_bytes": 4726,
+    "summary": {
+      "phase": "7B9q two-block static-frequency full-spatial ALI feasibility",
+      "classification": "[A-preregistered]+[V]+[O]",
+      "protocol_sha256": "b80241177121c75f25c611c4d72638996f46417deb5591afc5851f46b985f0db",
+      "reports": [
+        {
+          "block_index": 15,
+          "role": "optical fast-mode control",
+          "core_group_start": 1920,
+          "core_group_stop": 2048,
+          "minimum_energy_ev": 1.7737843724316176,
+          "maximum_energy_ev": 2.148626260017894,
+          "raw_original_operator_residual": 0.10877045945515344,
+          "raw_boundary_spectrum_l1": 0.0036288656448052905,
+          "spatial_inverse_converged": true,
+          "spatial_inverse_failure": null,
+          "gmres_iteration_count": 23,
+          "gmres_reported_info": 0,
+          "spatial_inverse_scaled_linf_residual": 3.5753949154226916e-05,
+          "spatial_inverse_mean_consistency_linf": 4.820930726061141e-06,
+          "minimum_local_preconditioner_denominator": 0.7352759922685502,
+          "maximum_local_preconditioner_feedback": 0.2647240077314498,
+          "exact_nonnegative_step": 1.0,
+          "minimum_candidate_intensity": 2.9725048145702986e-06,
+          "fresh_candidate_original_operator_residual": 0.2501758643264403,
+          "fresh_candidate_to_raw_residual_ratio": 2.3000350056403773,
+          "fresh_candidate_boundary_spectrum_l1": 0.00857617051920235,
+          "fresh_candidate_to_raw_boundary_ratio": 2.3633199348339367,
+          "raw_map_runtime_s": 4.591330041992478,
+          "preconditioner_runtime_s": 72.87598058290314,
+          "fresh_validation_runtime_s": 4.331736165913753,
+          "wall_runtime_s": 81.91664220904931,
+          "ali_application_runtime_s": 77.46731062489562,
+          "historical_one_update_runtime_s": 7.938558999914676,
+          "ali_application_runtime_multiplier_over_one_update": 9.758359247028112,
+          "baseline_highwater_rss_mib": 852.1875,
+          "peak_process_rss_mib": 2607.390625
+        },
+        {
+          "block_index": 45,
+          "role": "He I spatial slow-mode target",
+          "core_group_start": 5760,
+          "core_group_stop": 5888,
+          "minimum_energy_ev": 23.584559501689554,
+          "maximum_energy_ev": 25.476245833899263,
+          "raw_original_operator_residual": 0.0009586521498390397,
+          "raw_boundary_spectrum_l1": 0.017729817766849953,
+          "spatial_inverse_converged": false,
+          "spatial_inverse_failure": "static spatial ALI GMRES did not satisfy its declared linear audit: info=4, scaled_linf=6.684018e-03, mean_consistency=8.772186e-05",
+          "gmres_iteration_count": null,
+          "gmres_reported_info": null,
+          "spatial_inverse_scaled_linf_residual": null,
+          "spatial_inverse_mean_consistency_linf": null,
+          "minimum_local_preconditioner_denominator": null,
+          "maximum_local_preconditioner_feedback": null,
+          "exact_nonnegative_step": null,
+          "minimum_candidate_intensity": null,
+          "fresh_candidate_original_operator_residual": null,
+          "fresh_candidate_to_raw_residual_ratio": null,
+          "fresh_candidate_boundary_spectrum_l1": null,
+          "fresh_candidate_to_raw_boundary_ratio": null,
+          "raw_map_runtime_s": 4.73135433299467,
+          "preconditioner_runtime_s": 98.15569912502542,
+          "fresh_validation_runtime_s": 0.0,
+          "wall_runtime_s": 102.95473104098346,
+          "ali_application_runtime_s": 102.88705345802009,
+          "historical_one_update_runtime_s": 8.714141167001799,
+          "ali_application_runtime_multiplier_over_one_update": 11.806906898367309,
+          "baseline_highwater_rss_mib": 1112.0625,
+          "peak_process_rss_mib": 2637.890625
+        }
+      ],
+      "maximum_fresh_candidate_to_raw_residual_ratio": 2.3000350056403773,
+      "median_fresh_candidate_to_raw_residual_ratio": 2.3000350056403773,
+      "selected_ali_application_runtime_multiplier_over_one_update": 10.830337559384,
+      "projected_full_map_wall_time_s": 4434.757780335488,
+      "gate_checks": {
+        "representative_coverage_complete": true,
+        "every_spatial_inverse_passes": false,
+        "every_exact_nonnegative_step_passes": false,
+        "every_fresh_original_residual_improves_enough": false,
+        "median_fresh_original_residual_improves_enough": false,
+        "boundary_residuals_do_not_worsen": false,
+        "candidates_finite_nonnegative_and_within_memory": false,
+        "selected_runtime_multiplier_passes": true,
+        "projected_full_map_cost_passes": true
+      },
+      "decision": {
+        "spatial_ali_two_block_feasibility_passed": false,
+        "four_block_spatial_ali_gate_authorized": false,
+        "one_full_frequency_spatial_ali_map_authorized": false,
+        "full_frequency_accelerated_map_evaluated": false,
+        "trial_formal_feedback_evaluated": false,
+        "trial_true_residual_evaluated": false,
+        "accepted_as_dynamic_nlte_solution": false,
+        "phase7b9q_gate_passed": false
+      },
+      "figures": [
+        "phase7b9q_spatial_ali_feasibility.png"
+      ]
+    }
+  },
+  {
+    "path": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/phase7b9r_full_source_krylov_line_search_summary.json",
+    "sha256": "0af1de00d5347f58b308624e5850e16f565ec256bef3ceabe9fb67b003a64d32",
+    "size_bytes": 5497,
+    "summary": {
+      "phase": "7B9r full mixed-frame source Krylov with affine line search",
+      "classification": "[A-preregistered]+[V]+[O]",
+      "protocol_sha256": "f87a32c5458556c4677303c489247498b6857b8d4f4b5f0abf0cce77cd12fee8",
+      "reports": [
+        {
+          "block_index": 15,
+          "role": "optical exact-source control",
+          "core_group_start": 1920,
+          "core_group_stop": 2048,
+          "minimum_energy_ev": 1.7737843724316176,
+          "maximum_energy_ev": 2.148626260017894,
+          "raw_original_operator_residual": 0.10877045945515344,
+          "raw_boundary_spectrum_l1": 0.0036288656448052905,
+          "krylov_converged": false,
+          "gmres_iteration_count": 16,
+          "gmres_reported_info": 2,
+          "krylov_scaled_linf_residual": 0.0019900275064332895,
+          "krylov_comoving_mean_consistency_linf": 0.0002710713235955211,
+          "endpoint_exact_nonnegative_step": 1.0,
+          "endpoint_original_operator_residual": 7.80175429679496e-06,
+          "endpoint_to_raw_residual_ratio": 7.172677522808166e-05,
+          "line_unconstrained_fraction": 1.0000256528805938,
+          "line_selected_fraction": 1.0,
+          "line_selected_lower_boundary": false,
+          "line_selected_upper_boundary": true,
+          "line_predicted_squared_residual_norm": 1.1745830161546976e-11,
+          "minimum_line_candidate_intensity": 2.8922860196284794e-06,
+          "fresh_line_candidate_original_operator_residual": 7.80175429679496e-06,
+          "fresh_line_candidate_to_raw_residual_ratio": 7.172677522808166e-05,
+          "affine_prediction_to_fresh_residual_linf": 0.0,
+          "fresh_line_candidate_boundary_spectrum_l1": 6.151041501451941e-07,
+          "fresh_line_candidate_to_raw_boundary_ratio": 0.00016950314791227219,
+          "raw_map_runtime_s": 4.566684833960608,
+          "krylov_runtime_s": 73.04604437504895,
+          "endpoint_validation_runtime_s": 4.351174167008139,
+          "fresh_validation_runtime_s": 4.301456916960888,
+          "wall_runtime_s": 86.58982408395968,
+          "application_runtime_s": 86.26536029297858,
+          "historical_one_update_runtime_s": 7.938558999914676,
+          "application_runtime_multiplier_over_one_update": 10.866627091126459,
+          "baseline_highwater_rss_mib": 1038.875,
+          "peak_process_rss_mib": 2891.4375
+        },
+        {
+          "block_index": 45,
+          "role": "He I exact-source slow-mode target",
+          "core_group_start": 5760,
+          "core_group_stop": 5888,
+          "minimum_energy_ev": 23.584559501689554,
+          "maximum_energy_ev": 25.476245833899263,
+          "raw_original_operator_residual": 0.0009586521498390397,
+          "raw_boundary_spectrum_l1": 0.017729817766849953,
+          "krylov_converged": false,
+          "gmres_iteration_count": 16,
+          "gmres_reported_info": 2,
+          "krylov_scaled_linf_residual": 0.09592988890633569,
+          "krylov_comoving_mean_consistency_linf": 0.0013509449593795378,
+          "endpoint_exact_nonnegative_step": 1.0,
+          "endpoint_original_operator_residual": 8.872576864350059e-05,
+          "endpoint_to_raw_residual_ratio": 0.09255262052914386,
+          "line_unconstrained_fraction": 1.0391958933919963,
+          "line_selected_fraction": 1.0,
+          "line_selected_lower_boundary": false,
+          "line_selected_upper_boundary": true,
+          "line_predicted_squared_residual_norm": 4.340639279379653e-06,
+          "minimum_line_candidate_intensity": 2.1708662702089176e-08,
+          "fresh_line_candidate_original_operator_residual": 8.872576864350059e-05,
+          "fresh_line_candidate_to_raw_residual_ratio": 0.09255262052914386,
+          "affine_prediction_to_fresh_residual_linf": 0.0,
+          "fresh_line_candidate_boundary_spectrum_l1": 0.0007261087699942129,
+          "fresh_line_candidate_to_raw_boundary_ratio": 0.04095410226673865,
+          "raw_map_runtime_s": 4.771150209009647,
+          "krylov_runtime_s": 80.83616562501993,
+          "endpoint_validation_runtime_s": 4.769092041067779,
+          "fresh_validation_runtime_s": 4.831237416015938,
+          "wall_runtime_s": 95.52936475002207,
+          "application_runtime_s": 95.2076452911133,
+          "historical_one_update_runtime_s": 8.714141167001799,
+          "application_runtime_multiplier_over_one_update": 10.925648720454523,
+          "baseline_highwater_rss_mib": 1079.65625,
+          "peak_process_rss_mib": 3201.0625
+        }
+      ],
+      "maximum_fresh_line_candidate_to_raw_residual_ratio": 0.09255262052914386,
+      "median_fresh_line_candidate_to_raw_residual_ratio": 0.04631217365218597,
+      "selected_application_runtime_multiplier_over_one_update": 10.89751234124902,
+      "projected_full_map_wall_time_s": 4462.264207063629,
+      "gate_checks": {
+        "representative_coverage_complete": true,
+        "finite_work_krylov_budget_passes": true,
+        "endpoint_positive_steps_pass": true,
+        "line_search_steps_are_useful": true,
+        "every_fresh_line_residual_improves_enough": true,
+        "median_fresh_line_residual_improves_enough": true,
+        "boundary_residuals_do_not_worsen": true,
+        "affine_prediction_is_faithful": true,
+        "candidates_finite_nonnegative_and_within_memory": true,
+        "selected_runtime_multiplier_passes": true,
+        "projected_full_map_cost_passes": true
+      },
+      "decision": {
+        "full_source_krylov_line_search_feasibility_passed": true,
+        "four_block_full_source_krylov_gate_authorized": true,
+        "one_full_frequency_accelerated_map_authorized": false,
+        "full_frequency_accelerated_map_evaluated": false,
+        "trial_formal_feedback_evaluated": false,
+        "trial_true_residual_evaluated": false,
+        "accepted_as_dynamic_nlte_solution": false,
+        "phase7b9r_gate_passed": true
+      },
+      "figures": [
+        "phase7b9r_full_source_krylov_line_search.png"
+      ]
+    }
+  },
+  {
+    "path": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/phase7b9s_four_block_full_source_gate_summary.json",
+    "sha256": "2ad9ae1c0a3b66bbefe75b801fa50710862a5756db7cf69d44d1ccb99eee3eae",
+    "size_bytes": 9345,
+    "summary": {
+      "phase": "7B9s four-block full mixed-frame source Krylov gate",
+      "classification": "[A-preregistered]+[V]+[O]",
+      "protocol_sha256": "24155871acbc4796253ecab5f9d0b4b0a4b04a5a2bd4f797c47555206e07c67d",
+      "reports": [
+        {
+          "block_index": 15,
+          "role": "optical exact-source control",
+          "core_group_start": 1920,
+          "core_group_stop": 2048,
+          "minimum_energy_ev": 1.7737843724316176,
+          "maximum_energy_ev": 2.148626260017894,
+          "raw_original_operator_residual": 0.10877045945515344,
+          "raw_boundary_spectrum_l1": 0.0036288656448052905,
+          "krylov_converged": false,
+          "gmres_iteration_count": 16,
+          "gmres_reported_info": 2,
+          "krylov_scaled_linf_residual": 0.0019900275064332895,
+          "krylov_comoving_mean_consistency_linf": 0.0002710713235955211,
+          "endpoint_exact_nonnegative_step": 1.0,
+          "endpoint_original_operator_residual": 7.80175429679496e-06,
+          "endpoint_to_raw_residual_ratio": 7.172677522808166e-05,
+          "line_unconstrained_fraction": 1.0000256528805938,
+          "line_selected_fraction": 1.0,
+          "line_selected_lower_boundary": false,
+          "line_selected_upper_boundary": true,
+          "line_predicted_squared_residual_norm": 1.1745830161546976e-11,
+          "minimum_line_candidate_intensity": 2.8922860196284794e-06,
+          "fresh_line_candidate_original_operator_residual": 7.80175429679496e-06,
+          "fresh_line_candidate_to_raw_residual_ratio": 7.172677522808166e-05,
+          "affine_prediction_to_fresh_residual_linf": 0.0,
+          "fresh_line_candidate_boundary_spectrum_l1": 6.151041501451941e-07,
+          "fresh_line_candidate_to_raw_boundary_ratio": 0.00016950314791227219,
+          "raw_map_runtime_s": 4.566684833960608,
+          "krylov_runtime_s": 73.04604437504895,
+          "endpoint_validation_runtime_s": 4.351174167008139,
+          "fresh_validation_runtime_s": 4.301456916960888,
+          "wall_runtime_s": 86.58982408395968,
+          "application_runtime_s": 86.26536029297858,
+          "historical_one_update_runtime_s": 7.938558999914676,
+          "application_runtime_multiplier_over_one_update": 10.866627091126459,
+          "baseline_highwater_rss_mib": 1038.875,
+          "peak_process_rss_mib": 2891.4375
+        },
+        {
+          "block_index": 25,
+          "role": "H I threshold target",
+          "core_group_start": 3200,
+          "core_group_stop": 3328,
+          "minimum_energy_ev": 12.064279048148581,
+          "maximum_energy_ev": 13.668079904097533,
+          "raw_original_operator_residual": 0.00613475787934827,
+          "raw_boundary_spectrum_l1": 0.0008562767875214217,
+          "krylov_converged": false,
+          "gmres_iteration_count": 16,
+          "gmres_reported_info": 2,
+          "krylov_scaled_linf_residual": 0.7695736207326292,
+          "krylov_comoving_mean_consistency_linf": 0.029675134039549925,
+          "endpoint_exact_nonnegative_step": 1.0,
+          "endpoint_original_operator_residual": 0.002502367562601222,
+          "endpoint_to_raw_residual_ratio": 0.40789997124826427,
+          "line_unconstrained_fraction": 1.2559011805335318,
+          "line_selected_fraction": 1.0,
+          "line_selected_lower_boundary": false,
+          "line_selected_upper_boundary": true,
+          "line_predicted_squared_residual_norm": 0.0032792301947655858,
+          "minimum_line_candidate_intensity": 9.021784887352065e-07,
+          "fresh_line_candidate_original_operator_residual": 0.002502367562601222,
+          "fresh_line_candidate_to_raw_residual_ratio": 0.40789997124826427,
+          "affine_prediction_to_fresh_residual_linf": 0.0,
+          "fresh_line_candidate_boundary_spectrum_l1": 0.00015129655154153985,
+          "fresh_line_candidate_to_raw_boundary_ratio": 0.17669117480047866,
+          "raw_map_runtime_s": 10.274298082920723,
+          "krylov_runtime_s": 169.26800687494688,
+          "endpoint_validation_runtime_s": 10.619638958014548,
+          "fresh_validation_runtime_s": 10.913440959062427,
+          "wall_runtime_s": 201.40340495901182,
+          "application_runtime_s": 201.07538487494458,
+          "historical_one_update_runtime_s": 18.131362959044054,
+          "application_runtime_multiplier_over_one_update": 11.089921112336826,
+          "baseline_highwater_rss_mib": 1099.5625,
+          "peak_process_rss_mib": 3416.5
+        },
+        {
+          "block_index": 45,
+          "role": "He I exact-source slow-mode target",
+          "core_group_start": 5760,
+          "core_group_stop": 5888,
+          "minimum_energy_ev": 23.584559501689554,
+          "maximum_energy_ev": 25.476245833899263,
+          "raw_original_operator_residual": 0.0009586521498390397,
+          "raw_boundary_spectrum_l1": 0.017729817766849953,
+          "krylov_converged": false,
+          "gmres_iteration_count": 16,
+          "gmres_reported_info": 2,
+          "krylov_scaled_linf_residual": 0.09592988890633569,
+          "krylov_comoving_mean_consistency_linf": 0.0013509449593795378,
+          "endpoint_exact_nonnegative_step": 1.0,
+          "endpoint_original_operator_residual": 8.872576864350059e-05,
+          "endpoint_to_raw_residual_ratio": 0.09255262052914386,
+          "line_unconstrained_fraction": 1.0391958933919963,
+          "line_selected_fraction": 1.0,
+          "line_selected_lower_boundary": false,
+          "line_selected_upper_boundary": true,
+          "line_predicted_squared_residual_norm": 4.340639279379653e-06,
+          "minimum_line_candidate_intensity": 2.1708662702089176e-08,
+          "fresh_line_candidate_original_operator_residual": 8.872576864350059e-05,
+          "fresh_line_candidate_to_raw_residual_ratio": 0.09255262052914386,
+          "affine_prediction_to_fresh_residual_linf": 0.0,
+          "fresh_line_candidate_boundary_spectrum_l1": 0.0007261087699942129,
+          "fresh_line_candidate_to_raw_boundary_ratio": 0.04095410226673865,
+          "raw_map_runtime_s": 4.771150209009647,
+          "krylov_runtime_s": 80.83616562501993,
+          "endpoint_validation_runtime_s": 4.769092041067779,
+          "fresh_validation_runtime_s": 4.831237416015938,
+          "wall_runtime_s": 95.52936475002207,
+          "application_runtime_s": 95.2076452911133,
+          "historical_one_update_runtime_s": 8.714141167001799,
+          "application_runtime_multiplier_over_one_update": 10.925648720454523,
+          "baseline_highwater_rss_mib": 1079.65625,
+          "peak_process_rss_mib": 3201.0625
+        },
+        {
+          "block_index": 60,
+          "role": "soft-X-ray positivity target",
+          "core_group_start": 7680,
+          "core_group_stop": 7808,
+          "minimum_energy_ev": 268.43464853284274,
+          "maximum_energy_ev": 325.17804054683126,
+          "raw_original_operator_residual": 0.03409933504307895,
+          "raw_boundary_spectrum_l1": 4.8143400431098346e-11,
+          "krylov_converged": false,
+          "gmres_iteration_count": 16,
+          "gmres_reported_info": 2,
+          "krylov_scaled_linf_residual": 0.04785448569320838,
+          "krylov_comoving_mean_consistency_linf": 0.0016476315097885262,
+          "endpoint_exact_nonnegative_step": 1.0,
+          "endpoint_original_operator_residual": 0.0018082746619444807,
+          "endpoint_to_raw_residual_ratio": 0.05302961655000077,
+          "line_unconstrained_fraction": 1.0052233348444064,
+          "line_selected_fraction": 1.0,
+          "line_selected_lower_boundary": false,
+          "line_selected_upper_boundary": true,
+          "line_predicted_squared_residual_norm": 1.706350526060532e-41,
+          "minimum_line_candidate_intensity": 3.3667485351221897e-77,
+          "fresh_line_candidate_original_operator_residual": 0.0018082746619444807,
+          "fresh_line_candidate_to_raw_residual_ratio": 0.05302961655000077,
+          "affine_prediction_to_fresh_residual_linf": 2.027400289338357e-17,
+          "fresh_line_candidate_boundary_spectrum_l1": 4.501250999898765e-16,
+          "fresh_line_candidate_to_raw_boundary_ratio": 9.349674014698744e-06,
+          "raw_map_runtime_s": 4.738247167086229,
+          "krylov_runtime_s": 73.47104495798703,
+          "endpoint_validation_runtime_s": 4.274415374966338,
+          "fresh_validation_runtime_s": 4.293468457995914,
+          "wall_runtime_s": 87.09601691691205,
+          "application_runtime_s": 86.77717595803551,
+          "historical_one_update_runtime_s": 7.862746707978658,
+          "application_runtime_multiplier_over_one_update": 11.036496428147569,
+          "baseline_highwater_rss_mib": 1026.375,
+          "peak_process_rss_mib": 3067.75
+        }
+      ],
+      "maximum_fresh_line_candidate_to_raw_residual_ratio": 0.40789997124826427,
+      "median_fresh_line_candidate_to_raw_residual_ratio": 0.07279111853957232,
+      "selected_application_runtime_multiplier_over_one_update": 11.00493960145111,
+      "projected_full_map_wall_time_s": 4506.253037087542,
+      "gate_checks": {
+        "representative_coverage_complete": true,
+        "finite_work_krylov_budget_passes": true,
+        "endpoint_positive_steps_pass": true,
+        "line_search_steps_are_useful": true,
+        "every_fresh_line_residual_improves_enough": true,
+        "median_fresh_line_residual_improves_enough": true,
+        "boundary_residuals_do_not_worsen": true,
+        "affine_prediction_is_faithful": true,
+        "candidates_finite_nonnegative_and_within_memory": true,
+        "selected_runtime_multiplier_passes": true,
+        "projected_full_map_cost_passes": true
+      },
+      "decision": {
+        "full_source_krylov_four_block_gate_passed": true,
+        "one_full_frequency_full_source_krylov_map_authorized": true,
+        "full_frequency_accelerated_map_evaluated": false,
+        "trial_formal_feedback_evaluated": false,
+        "trial_true_residual_evaluated": false,
+        "accepted_as_dynamic_nlte_solution": false,
+        "phase7b9s_gate_passed": true
+      },
+      "figures": [
+        "phase7b9s_four_block_full_source_gate.png"
+      ]
+    }
+  },
+  {
+    "path": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/phase7b9w_deep_krylov_block62_pilot_summary.json",
+    "sha256": "a7401863fe99886cf3a767a888b567e898e5cc76fb5dbc38636d345ac67295e1",
+    "size_bytes": 3318,
+    "summary": {
+      "phase": "7B9w deep full-source Krylov pilot for block 62",
+      "classification": "[A-preregistered]+[V]+[O]",
+      "protocol_sha256": "bdbd31e72e2d4e50ab779359f3afdcb6148cb0f52c001ec6396e0477d9f11c78",
+      "report": {
+        "block_index": 62,
+        "role": "394--477 eV slow-residual block",
+        "core_group_start": 7936,
+        "core_group_stop": 8064,
+        "minimum_energy_ev": 393.91887611722956,
+        "maximum_energy_ev": 477.19258278369546,
+        "raw_original_operator_residual": 0.010075551345895137,
+        "raw_boundary_spectrum_l1": 1.4901244669774157e-09,
+        "krylov_converged": false,
+        "gmres_iteration_count": 32,
+        "gmres_reported_info": 4,
+        "krylov_scaled_linf_residual": 0.05079876361397773,
+        "krylov_comoving_mean_consistency_linf": 0.0006773918043031207,
+        "endpoint_exact_nonnegative_step": 0.25865508116699837,
+        "endpoint_original_operator_residual": 0.008050222907693116,
+        "endpoint_to_raw_residual_ratio": 0.7989858451739064,
+        "line_unconstrained_fraction": 3.8884932180712775,
+        "line_selected_fraction": 1.0,
+        "line_selected_lower_boundary": false,
+        "line_selected_upper_boundary": true,
+        "line_predicted_squared_residual_norm": 9.818781242824123e-60,
+        "minimum_line_candidate_intensity": 2.0721623968279778e-112,
+        "fresh_line_candidate_original_operator_residual": 0.008050222907693116,
+        "fresh_line_candidate_to_raw_residual_ratio": 0.7989858451739064,
+        "affine_prediction_to_fresh_residual_linf": 4.3460903674606896e-42,
+        "fresh_line_candidate_boundary_spectrum_l1": 1.104700371178872e-09,
+        "fresh_line_candidate_to_raw_boundary_ratio": 0.7413477166908466,
+        "raw_map_runtime_s": 4.661872083088383,
+        "krylov_runtime_s": 142.94472666701768,
+        "endpoint_validation_runtime_s": 4.709320707945153,
+        "fresh_validation_runtime_s": 4.763603791012429,
+        "wall_runtime_s": 157.45395879191346,
+        "application_runtime_s": 157.07952324906364,
+        "historical_one_update_runtime_s": 7.678017165977508,
+        "application_runtime_multiplier_over_one_update": 20.458344889499273,
+        "baseline_highwater_rss_mib": 870.59375,
+        "peak_process_rss_mib": 2980.640625,
+        "phase7b9t_sixteen_step_residual_ratio": 0.6432776665105591,
+        "phase7b9w_gate_checks": {
+          "exact_block_identity_pass": true,
+          "finite_work_budget_pass": true,
+          "positive_step_pass": true,
+          "useful_line_step_pass": true,
+          "fresh_original_operator_residual_pass": false,
+          "boundary_does_not_worsen": true,
+          "affine_prediction_pass": true,
+          "physical_domain_and_memory_pass": true,
+          "strictly_better_than_sixteen_steps": false
+        },
+        "phase7b9w_gate_passed": false
+      },
+      "gate_checks": {
+        "exact_block_identity_pass": true,
+        "finite_work_budget_pass": true,
+        "positive_step_pass": true,
+        "useful_line_step_pass": true,
+        "fresh_original_operator_residual_pass": false,
+        "boundary_does_not_worsen": true,
+        "affine_prediction_pass": true,
+        "physical_domain_and_memory_pass": true,
+        "strictly_better_than_sixteen_steps": false
+      },
+      "decision": {
+        "deep_krylov_block62_pilot_passed": false,
+        "hybrid_frequency_solver_repair_authorized": false,
+        "global_candidate_residual_authorized": false,
+        "material_feedback_authorized": false
+      },
+      "figures": [
+        "phase7b9w_deep_krylov_block62_pilot.png"
+      ]
+    }
+  },
+  {
+    "path": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/phase7b9x_restarted_krylov_block62_pilot_summary.json",
+    "sha256": "3b801fb975acf5abea48489710ccbb9bdd973fd067c5cd23bf2b2edc230bb3b3",
+    "size_bytes": 3582,
+    "summary": {
+      "phase": "7B9x two-stage physically restarted full-source Krylov block-62 pilot",
+      "classification": "[A-preregistered]+[V]+[O]",
+      "protocol_sha256": "ede987f3d1f70b8864f746f7eca685cbd56be4d7f6b810c916392852c6655186",
+      "report": {
+        "block_index": 62,
+        "core_group_start": 7936,
+        "core_group_stop": 8064,
+        "minimum_energy_ev": 393.91887611722956,
+        "maximum_energy_ev": 477.19258278369546,
+        "physical_restart_count": 2,
+        "final_to_initial_raw_residual_ratio": 0.6432776665105591,
+        "final_to_initial_raw_boundary_ratio": 0.4951400363015738,
+        "minimum_final_candidate_intensity": 2.0721219551480644e-112,
+        "maximum_restart_consistency_error": 0.0,
+        "baseline_highwater_rss_mib": 880.140625,
+        "peak_process_rss_mib": 3776.65625,
+        "wall_runtime_s": 174.98704691592138,
+        "stages": [
+          {
+            "stage": 1,
+            "raw_original_operator_residual": 0.010075551345895137,
+            "fresh_candidate_original_operator_residual": 0.006481377158594747,
+            "fresh_candidate_to_stage_raw_residual_ratio": 0.6432776665105591,
+            "raw_boundary_spectrum_l1": 1.4901244669774157e-09,
+            "fresh_candidate_boundary_spectrum_l1": 7.37820282673061e-10,
+            "fresh_candidate_to_stage_raw_boundary_ratio": 0.4951400363015738,
+            "gmres_iteration_count": 16,
+            "gmres_reported_info": 2,
+            "krylov_scaled_linf_residual": 0.321729640056967,
+            "krylov_comoving_mean_consistency_linf": 0.0038679814672863675,
+            "endpoint_exact_nonnegative_step": 0.5049212981078707,
+            "line_selected_fraction": 1.0,
+            "line_unconstrained_fraction": 1.9896448774583075,
+            "minimum_candidate_intensity": 2.0721219551480644e-112,
+            "affine_prediction_to_fresh_residual_linf": 1.7719656208796919e-43,
+            "restart_raw_to_previous_fresh_relative_difference": 0.0
+          },
+          {
+            "stage": 2,
+            "raw_original_operator_residual": 0.006481377158594747,
+            "fresh_candidate_original_operator_residual": 0.006481377158594747,
+            "fresh_candidate_to_stage_raw_residual_ratio": 1.0,
+            "raw_boundary_spectrum_l1": 7.37820282673061e-10,
+            "fresh_candidate_boundary_spectrum_l1": 7.37820282673061e-10,
+            "fresh_candidate_to_stage_raw_boundary_ratio": 1.0,
+            "gmres_iteration_count": 16,
+            "gmres_reported_info": 2,
+            "krylov_scaled_linf_residual": 0.3529135071764119,
+            "krylov_comoving_mean_consistency_linf": 0.004629924382700096,
+            "endpoint_exact_nonnegative_step": 6.392746435830517e-17,
+            "line_selected_fraction": 0.0,
+            "line_unconstrained_fraction": -11094671473270.66,
+            "minimum_candidate_intensity": 2.0721219551480644e-112,
+            "affine_prediction_to_fresh_residual_linf": 0.0,
+            "restart_raw_to_previous_fresh_relative_difference": 0.0
+          }
+        ]
+      },
+      "gate_checks": {
+        "two_physical_restarts_complete": true,
+        "each_stage_finite_work_pass": true,
+        "each_stage_positive_step_pass": false,
+        "each_stage_line_step_pass": false,
+        "each_stage_original_residual_descends": false,
+        "final_original_residual_pass": false,
+        "final_boundary_does_not_worsen": true,
+        "restart_is_deterministic": true,
+        "affine_predictions_pass": true,
+        "physical_domain_and_resources_pass": true
+      },
+      "decision": {
+        "restarted_krylov_block62_pilot_passed": false,
+        "hybrid_frequency_solver_repair_authorized": false,
+        "global_candidate_residual_authorized": false,
+        "material_feedback_authorized": false
+      },
+      "figures": [
+        "phase7b9x_restarted_krylov_block62_pilot.png"
+      ]
+    }
+  },
+  {
+    "path": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/phase7b9y_krylov_seeded_picard_block62_pilot_summary.json",
+    "sha256": "f6dbe31ee9151bfb8c543d321f1fda307bec6024cae21eed99fa5c19da1605e0",
+    "size_bytes": 8641,
+    "summary": {
+      "phase": "7B9y Krylov-seeded positive Picard microcycle for block 62",
+      "classification": "[A-preregistered]+[V]+[O]",
+      "protocol_sha256": "2fde40c9e97d53bde36df4d7cb0c9cc4253f1715945b575dd0db5bcf4fe7685f",
+      "report": {
+        "block_index": 62,
+        "core_group_start": 7936,
+        "core_group_stop": 8064,
+        "minimum_energy_ev": 393.91887611722956,
+        "maximum_energy_ev": 477.19258278369546,
+        "positive_picard_update_count": 32,
+        "seed_residual_expected": 0.006481377158594747,
+        "seed_residual_measured": 0.006481377158594747,
+        "seed_restart_relative_difference": 0.0,
+        "final_original_operator_residual": 0.00335899496133821,
+        "final_to_map6_raw_residual_ratio": 0.33338075962529756,
+        "final_to_seed_residual_ratio": 0.5182532784539401,
+        "final_boundary_spectrum_l1": 0.0,
+        "final_to_map6_raw_boundary_ratio": 0.0,
+        "minimum_history_intensity": 2.07204105287916e-112,
+        "minimum_final_candidate_intensity": 2.07204105287916e-112,
+        "baseline_highwater_rss_mib": 1008.96875,
+        "peak_process_rss_mib": 2623.5,
+        "wall_runtime_s": 148.3261002911022,
+        "history": [
+          {
+            "source_state_index": 0,
+            "original_operator_residual": 0.006481377158594747,
+            "boundary_spectrum_l1": 7.37820282673061e-10,
+            "minimum_mapped_intensity": 2.07204205733198e-112
+          },
+          {
+            "source_state_index": 1,
+            "original_operator_residual": 0.0063800481247980045,
+            "boundary_spectrum_l1": 9.88188936788257e-13,
+            "minimum_mapped_intensity": 2.0720410624907655e-112
+          },
+          {
+            "source_state_index": 2,
+            "original_operator_residual": 0.006232392395559655,
+            "boundary_spectrum_l1": 1.2965012031449173e-15,
+            "minimum_mapped_intensity": 2.0720410529573555e-112
+          },
+          {
+            "source_state_index": 3,
+            "original_operator_residual": 0.006082220725646178,
+            "boundary_spectrum_l1": 1.739226988502949e-26,
+            "minimum_mapped_intensity": 2.0720410528797352e-112
+          },
+          {
+            "source_state_index": 4,
+            "original_operator_residual": 0.005930906951235423,
+            "boundary_spectrum_l1": 4.5826070998489856e-30,
+            "minimum_mapped_intensity": 2.0720410528791644e-112
+          },
+          {
+            "source_state_index": 5,
+            "original_operator_residual": 0.005779056780640674,
+            "boundary_spectrum_l1": 2.606093874935915e-32,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 6,
+            "original_operator_residual": 0.005627845004545948,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 7,
+            "original_operator_residual": 0.005477952203539285,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 8,
+            "original_operator_residual": 0.00532936608963244,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 9,
+            "original_operator_residual": 0.005182450578886743,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 10,
+            "original_operator_residual": 0.005038173298986457,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 11,
+            "original_operator_residual": 0.004896278418168143,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 12,
+            "original_operator_residual": 0.004815557903490718,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 13,
+            "original_operator_residual": 0.0047405266043241455,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 14,
+            "original_operator_residual": 0.004665457499887816,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 15,
+            "original_operator_residual": 0.004590369435805155,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 16,
+            "original_operator_residual": 0.004515293982477336,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 17,
+            "original_operator_residual": 0.004440272565529422,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 18,
+            "original_operator_residual": 0.004365356117042748,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 19,
+            "original_operator_residual": 0.0042906011739137296,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 20,
+            "original_operator_residual": 0.00421606033819214,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 21,
+            "original_operator_residual": 0.004141792987665022,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 22,
+            "original_operator_residual": 0.00406785916961286,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 23,
+            "original_operator_residual": 0.003994318567017187,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 24,
+            "original_operator_residual": 0.003921229662308843,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 25,
+            "original_operator_residual": 0.0038486490723388484,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 26,
+            "original_operator_residual": 0.0037766310307638215,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 27,
+            "original_operator_residual": 0.003705226996460015,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 28,
+            "original_operator_residual": 0.0036344853689345485,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 29,
+            "original_operator_residual": 0.0035644512939176365,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 30,
+            "original_operator_residual": 0.003495166544345072,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 31,
+            "original_operator_residual": 0.0034266694638213223,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          },
+          {
+            "source_state_index": 32,
+            "original_operator_residual": 0.00335899496133821,
+            "boundary_spectrum_l1": 0.0,
+            "minimum_mapped_intensity": 2.07204105287916e-112
+          }
+        ]
+      },
+      "gate_checks": {
+        "exact_update_budget_pass": true,
+        "krylov_seed_reproduced": true,
+        "all_picard_states_are_nonnegative": true,
+        "final_candidate_is_nonnegative": true,
+        "final_original_operator_residual_pass": true,
+        "boundary_does_not_worsen": true,
+        "resources_pass": true
+      },
+      "decision": {
+        "krylov_seeded_positive_picard_block62_pilot_passed": true,
+        "hybrid_frequency_solver_repair_authorized": true,
+        "global_candidate_residual_authorized": false,
+        "material_feedback_authorized": false
+      },
+      "figures": [
+        "phase7b9y_krylov_seeded_picard_block62_pilot.png"
+      ]
+    }
+  },
+  {
+    "path": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/phase7b9z_roundoff_affine_audit_summary.json",
+    "sha256": "b608471ddc3d4645319c059062fc1058fc7247ed7f23c745ae46a2d1b0f2f173",
+    "size_bytes": 1129,
+    "summary": {
+      "phase": "7B9z roundoff-resolution audit for affine prediction diagnostics",
+      "classification": "[A-preregistered]+[V]+[O]",
+      "protocol_sha256": "0fd4b9ecdc81cdf13611d1acfeedf5f5ce9f20029b4d3a197778f316c743bf39",
+      "selected_blocks": [
+        4,
+        9,
+        10,
+        52,
+        53,
+        54
+      ],
+      "maximum_fresh_original_operator_residual": 3.367181417594937e-08,
+      "maximum_residual_improvement_ratio": 7.390637734174757e-06,
+      "maximum_unresolved_affine_relative_diagnostic": 6.524494579436488e-05,
+      "gate_checks": {
+        "selected_block_count_pass": true,
+        "fresh_residuals_are_below_physical_resolution_gate": true,
+        "fresh_residual_improvement_is_strong": true,
+        "full_nonnegative_endpoints_were_used": true,
+        "boundaries_do_not_worsen": true,
+        "candidates_are_nonnegative": true
+      },
+      "decision": {
+        "roundoff_resolution_audit_passed": true,
+        "selected_candidate_blocks_retained": true,
+        "phase7b9t_original_failure_status_preserved": true,
+        "global_candidate_residual_authorized": false,
+        "material_feedback_authorized": false
+      },
+      "figures": [
+        "phase7b9z_roundoff_affine_audit.png"
+      ]
+    }
+  }
+]
