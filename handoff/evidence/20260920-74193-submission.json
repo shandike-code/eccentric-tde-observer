@@ -1,0 +1,18 @@
+{
+  "job_id": 74193,
+  "run": "outputs/hpc/four-map-response-audit-20260920",
+  "code_commit": "038b351d7c1359fe9f403034912dd8ec77c456ba",
+  "resources": {
+    "cpu": 4,
+    "mem_gib": 16,
+    "maximum_minutes": 20,
+    "qos": "qos_stu_default"
+  },
+  "new_maps": 0,
+  "new_response_replays": 2,
+  "cached_response_replays_recomputed": 0,
+  "tests_mac": 49,
+  "tests_linux": 49,
+  "status_at_submission": "submitted",
+  "formal_acceptance_changed": false
+}
