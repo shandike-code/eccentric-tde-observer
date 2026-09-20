@@ -39,3 +39,7 @@
 Mac相关62测试通过，包含表达式字节一致、基底不变、短读不发布、负值/超系数拒绝、候选字节不符拒绝、相同标量但不同场拒绝、缺失门和过时比较基准拒绝，及原有物质/连续映射血缘检查。改前bundle为`outputs/review-20260920/pre-subspace-validation-e204058.bundle`。
 
 学校家目录和Mac `outputs/review-20260920/`保存`recent-scan-73693-small.tar.gz`，20086492 bytes、595文件，SHA256为`112cafb1de1a526daf0c8ee598b581a3ca5f9bd5d6ee9de24b3f0c3dccd1d16a`。整包及每个文件SHA全部核对后解入独立目录；大dat原地保留。Git保存prediction、residual_system和已视觉核验的小图。
+
+## 提交记录
+
+代码`ee98a22`已同步学校、Mac与GitHub；Linux同组62测试通过。新作业73768，run为`outputs/hpc/recent-subspace-validation-20260920`，cpu_long32CPU/128GiB/16worker，上限60分钟。旧73693不续跑。30分钟heartbeat保持ACTIVE，已写明逐场验证门、故障恢复边界及通过后才另建反馈对的顺序。
