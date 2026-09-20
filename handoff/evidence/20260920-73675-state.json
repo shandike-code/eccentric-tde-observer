@@ -1,0 +1,85 @@
+{
+  "config_sha256": "14d6c8b05d72346a3017df52f1a12bd789e36530ea0a5ee936ada14f4b7e0831",
+  "status": "diagnostic_round_complete",
+  "initialization_blocks": [],
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/mixed-followup-20260920/state_0.dat",
+      "input_sha256": "c08543273772cafffac835b8d6af5d3694cd29f3af0e9eac751205f29db41840",
+      "output_path": "outputs/hpc/mixed-followup-20260920/state_1.dat",
+      "output_sha256": "fbb72ea0e0dd7382245d14e133e725af97402766a234d81ec5c5d074b86f83cf",
+      "wall_s": 155.79469613544643,
+      "residual": 6.55288674667567e-05,
+      "boundary_l1": 5.870949480793441e-05,
+      "boundary_bolometric": 1.5374189383029697e-05,
+      "maximum_worker_rss_mib": 3495.02734375
+    },
+    {
+      "iteration": 2,
+      "input_path": "outputs/hpc/mixed-followup-20260920/state_1.dat",
+      "input_sha256": "fbb72ea0e0dd7382245d14e133e725af97402766a234d81ec5c5d074b86f83cf",
+      "output_path": "outputs/hpc/mixed-followup-20260920/state_2.dat",
+      "output_sha256": "307624f7bbe2eab759c664432a81ffe00010bd7ea3cd6de300a8411765f95c19",
+      "wall_s": 146.5714180804789,
+      "residual": 6.23244982144065e-05,
+      "boundary_l1": 5.474353318106064e-05,
+      "boundary_bolometric": 1.4807613345174318e-05,
+      "maximum_worker_rss_mib": 3499.828125
+    }
+  ],
+  "slots": [
+    "outputs/hpc/mixed-followup-20260920/state_0.dat",
+    "outputs/hpc/mixed-followup-20260920/state_1.dat",
+    "outputs/hpc/mixed-followup-20260920/state_2.dat"
+  ],
+  "current_slot": 2,
+  "active_map": null,
+  "current_sha256": "307624f7bbe2eab759c664432a81ffe00010bd7ea3cd6de300a8411765f95c19",
+  "trial_sha256": "1db4370c2f74ac83973d314c19bd65ccf799a7aa99e7ea453575c245df380eca",
+  "diagnostic": {
+    "rounds": [
+      {
+        "round": 1,
+        "endpoints": [
+          1,
+          2
+        ],
+        "protocol_sha256": "258362afd4b52173bea6ba5114e6cb589d3c59c917a37b3d3038dff34a1c0917",
+        "endpoints_claim": {
+          "previous": {
+            "path": "outputs/hpc/mixed-followup-20260920/state_0.dat",
+            "sha256": "c08543273772cafffac835b8d6af5d3694cd29f3af0e9eac751205f29db41840",
+            "size_bytes": 10099884032
+          },
+          "final": {
+            "path": "outputs/hpc/mixed-followup-20260920/state_1.dat",
+            "sha256": "fbb72ea0e0dd7382245d14e133e725af97402766a234d81ec5c5d074b86f83cf",
+            "size_bytes": 10099884032
+          }
+        },
+        "slot_reuse_note": "radiation state slots rotate across three files; the retained small artifacts stay verifiable, but these large states may later be overwritten and the round may then not be re-runnable at these paths",
+        "feedback_wall_s": 344.72703441791236,
+        "accepted": false,
+        "failed_gates": [
+          "candidate_l2_contraction_pass",
+          "candidate_mass_weighted_contraction_pass",
+          "last_two_atomic_heating_pass",
+          "last_two_direct_heating_pass",
+          "last_two_formal_heating_pass"
+        ],
+        "decision": {
+          "formal_h_he_feedback_pair_passed": true,
+          "finite_trial_accepted_as_one_nonlinear_step": false,
+          "finite_trial_rejected": true,
+          "static_approximation_rejected_from_one_failed_trial": false,
+          "dynamic_nlte_solution_accepted": false,
+          "phase4_replacement": false,
+          "real_line_formation": false
+        },
+        "ledger": "outputs/hpc/mixed-followup-20260920/feedback-round1/material_energy_ledger.json",
+        "ledger_heating_ratio": 0.0040502774625240465
+      }
+    ]
+  }
+}
