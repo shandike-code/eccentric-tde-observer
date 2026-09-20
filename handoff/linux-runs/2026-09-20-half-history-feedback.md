@@ -23,3 +23,7 @@
 `half-history-validation-74046-small.tar.gz`在学校家目录与Mac `outputs/review-20260920/`双端保存，19,875,233 bytes、721文件，SHA256 `dc8e3123a9301040f875a524b0d67b9b85593cbe256b97e0b5604e4db82ef60a`；整包及全部逐文件SHA已核。Mac解包`half-history-validation-74046-received`，旧dat保留，不下载。Git小证据保留validation_result与state。源map未产新图，无图像质量结论。
 
 新守卫测试覆盖缺失/多余/失败门、只比较标量、旧输出、半态、改物理dt、已有反馈、数值误差超门/非有限、改误差容限、内存假通过；真实74046包通过新seed守卫和完整trial比较。正式提交前在学校复跑同一组测试。
+
+## 提交记录
+
+代码`164fb78`在Mac、学校和GitHub一致；Mac/Linux各77项相关测试通过。作业74057已提交，运行目录`outputs/hpc/half-history-feedback-20260920`，32CPU/128GiB、16worker、60分钟上限。新任务只执行声明的2map/1pair，尚无反馈结果；后续判决以正式summary及完整状态为准。
