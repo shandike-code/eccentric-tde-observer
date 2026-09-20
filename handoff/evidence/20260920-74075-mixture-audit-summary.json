@@ -1,0 +1,325 @@
+{
+  "environment": {
+    "git_commit": "1c41132942003b3f269b36f2dd6f8d7b93197aa2",
+    "tracked_worktree_dirty": false,
+    "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+    "platform": "Linux-6.8.0-53-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "logical_host_cpus": 128,
+    "cpu_affinity_count": 4,
+    "scheduler": {
+      "SLURM_JOB_ID": "74075",
+      "SLURM_JOB_PARTITION": "Students",
+      "SLURM_JOB_QOS": "qos_stu_default",
+      "SLURM_CPUS_PER_TASK": "4",
+      "SLURM_MEM_PER_NODE": "16384",
+      "SLURM_JOB_NODELIST": "anode22"
+    },
+    "cgroup_v2": {},
+    "packages": {
+      "numpy": "2.5.2",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.1",
+      "pytest": "9.1.1"
+    },
+    "project_free_bytes": 989157251342336,
+    "warning": "Host resources are not necessarily this job's allocation."
+  },
+  "formal_gates": {
+    "last_two_photoionization_pass": true,
+    "last_two_total_recombination_pass": true,
+    "last_two_atomic_heating_pass": true,
+    "last_two_direct_heating_pass": true,
+    "last_two_formal_heating_pass": true,
+    "inner_noise_resolved_pass": true,
+    "candidate_l2_contraction_pass": false,
+    "candidate_mass_weighted_contraction_pass": false,
+    "candidate_maximum_cell_contraction_pass": true,
+    "two_formal_feedback_states_pass": true,
+    "two_inner_radiation_residuals_pass": true,
+    "two_boundary_spectra_pass": true,
+    "two_boundary_bolometric_pass": true,
+    "candidate_state_bytes_pass": true,
+    "population_nonnegative_pass": true,
+    "all_residual_components_finite_pass": true
+  },
+  "formal_decision": {
+    "formal_h_he_feedback_pair_passed": true,
+    "finite_trial_accepted_as_one_nonlinear_step": false,
+    "finite_trial_rejected": true,
+    "static_approximation_rejected_from_one_failed_trial": false,
+    "dynamic_nlte_solution_accepted": false,
+    "phase4_replacement": false,
+    "real_line_formation": false
+  },
+  "failed_gates": [
+    "candidate_l2_contraction_pass",
+    "candidate_mass_weighted_contraction_pass"
+  ],
+  "cached_history_hashes": {
+    "audit.json": "78fbaf77c3f6d2e143f4e989ef1739c3709d1f83263641fb1ed9fee71ac63d53",
+    "replayed_arrays.npz": "f5f4fe126fca9b40cddad7133d3d4b9d57ed2975753a61e2bb793402c06ce772",
+    "snapshot-manifest.json": "8c9e2453e99d61eed40124739e01878fbaea17e16b686b4b9abedf13a76d34fa"
+  },
+  "cached_replays_recomputed": false,
+  "new_maps": 0,
+  "formal_acceptance_changed": false,
+  "mixture_final_replay_exact": true,
+  "limitation": "Swapping the baseline below is diagnostic only. Observed adjacent or cross-history drift is not a certified error bound; no new acceptance or Jacobian claim.",
+  "comparisons": {
+    "previous": {
+      "formal_archived": {
+        "base_norms": {
+          "l2": 15.588863511319733,
+          "mass_weighted": 0.6152845019444865,
+          "maximum_cell": 3.476087869801306
+        },
+        "candidate_norms": {
+          "l2": 15.59117320403098,
+          "mass_weighted": 0.6175722561764266,
+          "maximum_cell": 3.470871440240463
+        },
+        "candidate_over_base": {
+          "l2": 1.0001481629953055,
+          "mass_weighted": 1.0037182055207146,
+          "maximum_cell": 0.9984993389821469
+        },
+        "squared_l2_excess": 0.07201630353785088,
+        "squared_mass_norm_excess": 0.002820473265767191,
+        "component_l2_excess": [
+          -0.020584924443126366,
+          0.006426612544912964,
+          0.04308358323730987,
+          0.04309103219875464
+        ],
+        "component_mass_excess": [
+          0.002527812015249578,
+          4.61754705602925e-06,
+          0.00014403620036749397,
+          0.00014400750309408823
+        ]
+      },
+      "zero_control_previous": {
+        "base_norms": {
+          "l2": 15.58886467263105,
+          "mass_weighted": 0.6152849303860868,
+          "maximum_cell": 3.4760878727022866
+        },
+        "candidate_norms": {
+          "l2": 15.59117320403098,
+          "mass_weighted": 0.6175722561764266,
+          "maximum_cell": 3.470871440240463
+        },
+        "candidate_over_base": {
+          "l2": 1.0001480884880591,
+          "mass_weighted": 1.0037175066012174,
+          "maximum_cell": 0.998499338148846
+        },
+        "squared_l2_excess": 0.07198009648927661,
+        "squared_mass_norm_excess": 0.0028199460386303496,
+        "component_l2_excess": [
+          -0.020621131491624256,
+          0.006426612544913596,
+          0.04308358323732612,
+          0.04309103219866098
+        ],
+        "component_mass_excess": [
+          0.002527284788113644,
+          4.617547056030534e-06,
+          0.0001440362003679169,
+          0.00014400750309275529
+        ]
+      },
+      "zero_control_final": {
+        "base_norms": {
+          "l2": 15.58280369930373,
+          "mass_weighted": 0.6147466992044117,
+          "maximum_cell": 3.476589066326584
+        },
+        "candidate_norms": {
+          "l2": 15.59117320403098,
+          "mass_weighted": 0.6175722561764266,
+          "maximum_cell": 3.470871440240463
+        },
+        "candidate_over_base": {
+          "l2": 1.0005370987717457,
+          "mass_weighted": 1.0045962946619666,
+          "maximum_cell": 0.9983553920302228
+        },
+        "squared_l2_excess": 0.26091074705961237,
+        "squared_mass_norm_excess": 0.0034819874161223807,
+        "component_l2_excess": [
+          0.17268296635028937,
+          0.006437454662628359,
+          0.040891607607009266,
+          0.04089871843968523
+        ],
+        "component_mass_excess": [
+          0.0032033697320845516,
+          5.01233264731133e-06,
+          0.0001368180556674452,
+          0.00013678729572307228
+        ]
+      }
+    },
+    "final": {
+      "formal_archived": {
+        "base_norms": {
+          "l2": 15.588863511319733,
+          "mass_weighted": 0.6152845019444865,
+          "maximum_cell": 3.476087869801306
+        },
+        "candidate_norms": {
+          "l2": 15.592211655012111,
+          "mass_weighted": 0.6176547824989089,
+          "maximum_cell": 3.4709446220277544
+        },
+        "candidate_over_base": {
+          "l2": 1.000214777920786,
+          "mass_weighted": 1.0038523326151263,
+          "maximum_cell": 0.9985203918985381
+        },
+        "squared_l2_excess": 0.10439872013969864,
+        "squared_mass_norm_excess": 0.002922412010699714,
+        "component_l2_excess": [
+          0.010047592208252775,
+          0.006454728436722511,
+          0.04394436544389165,
+          0.04395203405083129
+        ],
+        "component_mass_excess": [
+          0.002623884120485059,
+          4.611241161904396e-06,
+          0.000146971941368151,
+          0.00014694470768459897
+        ]
+      },
+      "zero_control_previous": {
+        "base_norms": {
+          "l2": 15.58886467263105,
+          "mass_weighted": 0.6152849303860868,
+          "maximum_cell": 3.4760878727022866
+        },
+        "candidate_norms": {
+          "l2": 15.592211655012111,
+          "mass_weighted": 0.6176547824989089,
+          "maximum_cell": 3.4709446220277544
+        },
+        "candidate_over_base": {
+          "l2": 1.000214703408577,
+          "mass_weighted": 1.0038516336022323,
+          "maximum_cell": 0.9985203910652196
+        },
+        "squared_l2_excess": 0.10436251309112424,
+        "squared_mass_norm_excess": 0.0029218847835628735,
+        "component_l2_excess": [
+          0.010011385159754978,
+          0.006454728436723143,
+          0.043944365443907944,
+          0.04395203405073763
+        ],
+        "component_mass_excess": [
+          0.0026233568933491285,
+          4.61124116190568e-06,
+          0.00014697194136857388,
+          0.00014694470768326603
+        ]
+      },
+      "zero_control_final": {
+        "base_norms": {
+          "l2": 15.58280369930373,
+          "mass_weighted": 0.6147466992044117,
+          "maximum_cell": 3.476589066326584
+        },
+        "candidate_norms": {
+          "l2": 15.592211655012111,
+          "mass_weighted": 0.6176547824989089,
+          "maximum_cell": 3.4709446220277544
+        },
+        "candidate_over_base": {
+          "l2": 1.0006037396023157,
+          "mass_weighted": 1.004730539095632,
+          "maximum_cell": 0.9983764419115563
+        },
+        "squared_l2_excess": 0.29329316366145985,
+        "squared_mass_norm_excess": 0.0035839261610549045,
+        "component_l2_excess": [
+          0.2033154830016692,
+          0.0064655705544379004,
+          0.04175238981359111,
+          0.041759720291761844
+        ],
+        "component_mass_excess": [
+          0.0032994418373200295,
+          5.006026753186473e-06,
+          0.00013975379666810218,
+          0.0001397245003135829
+        ]
+      }
+    }
+  },
+  "observed_adjacent_drifts": {
+    "mixture": {
+      "l2": 0.01556619622883874,
+      "mass_weighted": 0.001931087318090278,
+      "maximum_cell": 0.0031225095700130687
+    },
+    "zero_control": {
+      "l2": 0.027435264678367977,
+      "mass_weighted": 0.0017190200765908083,
+      "maximum_cell": 0.00725547959720328
+    }
+  },
+  "cross_history": {
+    "base_seed": {
+      "l2": 1.9099286917569007,
+      "mass_weighted": 0.24013800881425545,
+      "maximum_cell": 0.37148181404304625
+    },
+    "prior_seed": {
+      "l2": 1.9289840695840081,
+      "mass_weighted": 0.24510273575570254,
+      "maximum_cell": 0.4006977587867663
+    }
+  },
+  "heating_ratios": {
+    "base_seed": {
+      "photoionization_s1": 0.002653950008613793,
+      "total_recombination_cm3_s": 8.507973782829503e-06,
+      "atomic_rate_heating_erg_s_cm3": 0.06256663680843648,
+      "source_direct_heating_erg_s_cm3": 0.06256663680843028,
+      "source_formal_heating_erg_s_cm3": 0.06256658690066268
+    },
+    "prior_seed": {
+      "photoionization_s1": 0.0019227228453133848,
+      "total_recombination_cm3_s": 6.01194427725128e-06,
+      "atomic_rate_heating_erg_s_cm3": 0.04622217881541714,
+      "source_direct_heating_erg_s_cm3": 0.04622217881542425,
+      "source_formal_heating_erg_s_cm3": 0.046222154025042574
+    },
+    "mixture_adjacent": {
+      "photoionization_s1": 2.4120395914102598e-05,
+      "total_recombination_cm3_s": 3.587820892505289e-08,
+      "atomic_rate_heating_erg_s_cm3": 0.0004611991007227454,
+      "source_direct_heating_erg_s_cm3": 0.0004611991007236141,
+      "source_formal_heating_erg_s_cm3": 0.00046119880913364096
+    }
+  },
+  "backup": {
+    "filename": "mixture-material-audit-74075-small.tar.gz",
+    "size_bytes": 82608560,
+    "files": 976,
+    "sha256": "99671add69d082563e345cdbd3b0bb242c73748b163dc411baf72e0a6c0c1616",
+    "all_files_verified": true
+  },
+  "scheduler": {
+    "source": "scontrol show job 74075",
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "start_time_cst": "2026-09-20T20:22:05",
+    "end_time_cst": "2026-09-20T20:22:48",
+    "elapsed_seconds": 43,
+    "sacct_rows_available": false,
+    "stderr_empty": true
+  }
+}
