@@ -40,3 +40,7 @@
 `subspace-validation-73768-small.tar.gz`在学校家目录及Mac `outputs/review-20260920/`各存一份，816972 bytes、96文件，SHA256为`e9c76e718e4d9b175bff743dd90ea57f8e785f7868e1e16ade96dc36d6a6b7b3`。整包及96文件全部SHA核对，解入独立received目录。原大态保留，不入Git。Git小证据为`20260920-73768-state.json`、`validation_status.json`和`validation_result.json`。
 
 改前Git保全`outputs/review-20260920/pre-subspace-feedback-07ac8bb.bundle`。真实工件入口核验通过；相关62项回归用于核对共享验证/物质身份/映射血缘路径。新batch语法检查通过。下一次先读新运行state、round summary、正式gate和逐层账本，完成后先双端备份再决定后续，不能仅看退出码或辐射门。
+
+## 提交
+
+代码`97fcbc3`三端同步，Linux同组62测试通过。新作业73824：`outputs/hpc/subspace-feedback-20260920`，cpu_long32CPU/128GiB/16worker、60分钟。已有30分钟heartbeat更新为本轮完整反馈验收及失败分流，保持ACTIVE。旧73768和全部基底运行停止保全。
