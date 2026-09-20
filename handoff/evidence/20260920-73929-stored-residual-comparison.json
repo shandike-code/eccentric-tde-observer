@@ -1,0 +1,35 @@
+{
+  "scope": "verified stored final residuals only; no feedback response replay",
+  "identical_trial_all_fields": true,
+  "same_physical_reference": true,
+  "norms": {
+    "baseline_seed": {
+      "l2": 15.654153703960965,
+      "mass_weighted": 0.6649235426107305,
+      "maximum_cell": 3.468919186749708
+    },
+    "previous_seed": {
+      "l2": 15.742513673613852,
+      "mass_weighted": 0.661722561025858,
+      "maximum_cell": 3.472119878564688
+    }
+  },
+  "cross_history_vector_difference": {
+    "l2": 3.8364790505809534,
+    "mass_weighted": 0.4850310559701695,
+    "maximum_cell": 0.7721780261631715
+  },
+  "formal_ratios_reproduced": true,
+  "previous_residuals_replayed": false,
+  "true_inner_error_bound": false,
+  "sources": {
+    "baseline_seed": {
+      "protocol_sha256": "a428e0f488104395baa207add6a32d60cc06a0d30b44623f7743ff81f51c1419",
+      "residual_sha256": "f5f5d69aacf3b8a4d2785bcfbced72f26c9229acbea0d8b193bc1d2279c72970"
+    },
+    "previous_seed": {
+      "protocol_sha256": "8401bc88b396f05e63c88ab5fb2e7a4a8e705f63df57fe5a200da901a2c2b8e6",
+      "residual_sha256": "56fdd03259f1fd7865e74435b88c570549e4c01f0a3e31b9f20e6d9c1d1a9a3d"
+    }
+  }
+}
