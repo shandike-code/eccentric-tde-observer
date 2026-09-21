@@ -43,3 +43,11 @@ Slurm 74671在anode19于14:41:16–15:26:19 CST运行，COMPLETED/0:0、45:03，
 按近期map约140秒、pair约320秒，数值核心约30分钟，另加复制/哈希/归档I/O，估计40–60分钟加排队；3小时是资源上限。没有可据以外推完整柱或整盘完成日期的外层序列。
 
 Mac相关测试40 passed、4 Linux专用skip，shell/diff检查通过；新增12项覆盖接受证据缺门/失败/未结算拒绝、已接受子任务不重复、恢复优先账本、资源故障优先和预算计数。学校测试和起跑信息随后追加。
+
+## 74751 已起跑
+
+执行代码 `b36fa4af7e79b869149388c12b15109740b59704`，提交前Mac/学校/GitHub一致且干净。Linux相关44测试通过（22.61秒），包含原信号/资源路径实测；shell语法通过。74671已经结束，不再运行未使用的half候选。
+
+74751于16:05:36 CST提交，16:05:37在anode17 RUNNING，32CPU128GiB、qos_stu_cpu_long、3小时上限到19:05:37。16:05:58时父preparing、0map/0pair、stderr空；科学源重放需要等待source-gate-replay.json，不能把提交成功写成真实源重放已通过。
+
+只读watcher PID3832630，`outputs/review-20260921/scheduler-74751/scheduler-terminal.json`，watch-74751.log；每30秒、最多24小时，不提交/取消。Mac调度启动记录为outputs/review-20260921/scheduler-74751-start.txt。当前批次在同allocation内自动衔接，不重复提交。源74671状态和大态保持只读。
