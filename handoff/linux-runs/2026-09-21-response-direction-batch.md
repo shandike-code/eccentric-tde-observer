@@ -30,3 +30,11 @@ run `outputs/hpc/response-direction-20260921`，32 CPU、128 GiB、16 worker、4
 ## 实现检查
 
 新文件 `response_direction_batch.py/.sbatch`；未改变历史 operations、src、scripts、hpc、diagnostics。测试覆盖新方向定义/物理字段冻结、非法幅度/方向/信赖域拒绝、active/pending 预算、四图反馈边界、恢复先反馈、接受即停、资源故障和批次中断，以及稳定加热不能掩盖非正基态气体热能。Mac/Linux 测试与真实起跑记录随后追加。
+
+## 74671 已实际提交
+
+执行代码 `80238e60657f2e5d54d753a69597e00b7dccb9c0`，起跑前 Mac、学校、GitHub 三端一致且工作树干净。Mac 相关 34 passed/4 Linux 专用 skip；Linux 38 passed（17.00秒），shell 语法通过。原 74663 已正常结束。
+
+74671 于 2026-09-21 14:41:15 CST 提交，14:41:16 在 anode19 RUNNING，QOS `qos_stu_cpu_long`，实际 32CPU/128GiB，4小时上限至18:41:16。14:41:31 现场为 preparing、0 map/0 pair，stderr 空：当时在做输入核验，不能把提交成功写成新候选真实计算已通过。后续状态以实时子 state/协议/门为准。
+
+只读终态 watcher PID2544632，`outputs/review-20260921/scheduler-74671/`，每30秒读取调度、最多24小时，不提交或取消任务。父任务在同一 allocation 自动衔接；禁止重复提交同名 run。学校与 Mac 各有执行前 Git bundle 保全。Mac 启动证据 `outputs/review-20260921/scheduler-74671-start.txt`。
