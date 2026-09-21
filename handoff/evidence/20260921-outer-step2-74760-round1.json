@@ -1,0 +1,175 @@
+{
+  "verified_files": 2052,
+  "candidate": "full",
+  "round": 1,
+  "formal_gates": {
+    "last_two_photoionization_pass": true,
+    "last_two_total_recombination_pass": true,
+    "last_two_atomic_heating_pass": true,
+    "last_two_direct_heating_pass": true,
+    "last_two_formal_heating_pass": true,
+    "inner_noise_resolved_pass": false,
+    "candidate_l2_contraction_pass": true,
+    "candidate_mass_weighted_contraction_pass": true,
+    "candidate_maximum_cell_contraction_pass": true,
+    "two_formal_feedback_states_pass": true,
+    "two_inner_radiation_residuals_pass": false,
+    "two_boundary_spectra_pass": true,
+    "two_boundary_bolometric_pass": true,
+    "candidate_state_bytes_pass": true,
+    "population_nonnegative_pass": true,
+    "all_residual_components_finite_pass": true
+  },
+  "formal_comparison": {
+    "photoionization_volume_l1": [
+      2.284801910831164e-05,
+      2.735540526589074e-05,
+      1.5617426593494249e-06
+    ],
+    "total_recombination_volume_l1": [
+      7.495917136766762e-07,
+      2.6459535544539146e-08,
+      9.124499776475532e-12
+    ],
+    "atomic_heating_volume_l1": 0.0009601110232287319,
+    "direct_heating_volume_l1": 0.0009601110232298095,
+    "formal_heating_volume_l1": 0.0009601102906124853,
+    "inner_noise_to_trial_signal_l2_ratio": 0.12922785589582342,
+    "candidate_to_base_residual_l2_ratio": 0.9865918234161639,
+    "candidate_to_base_mass_weighted_norm_ratio": 0.9784573670980349,
+    "candidate_to_base_maximum_cell_norm_ratio": 0.9938057290936729
+  },
+  "accepted": false,
+  "base_norms": {
+    "l2": 15.248492680763428,
+    "mass_weighted": 0.5883923687104603,
+    "maximum_cell": 3.4575181414553704
+  },
+  "candidate_norms": {
+    "l2": 15.044038198262419,
+    "mass_weighted": 0.5757168479090131,
+    "maximum_cell": 3.4361013374236555
+  },
+  "fresh_control_ratios": {
+    "previous": {
+      "previous": {
+        "l2": 0.988993678093623,
+        "mass_weighted": 0.9822247761976807,
+        "maximum_cell": 0.9941068529231663
+      },
+      "final": {
+        "l2": 0.9889426289888654,
+        "mass_weighted": 0.9823283230696545,
+        "maximum_cell": 0.9940522914023583
+      }
+    },
+    "final": {
+      "previous": {
+        "l2": 0.9866089238418374,
+        "mass_weighted": 0.9787014817876071,
+        "maximum_cell": 0.9937453274178107
+      },
+      "final": {
+        "l2": 0.9865579978314658,
+        "mass_weighted": 0.9788046572312439,
+        "maximum_cell": 0.9936907857393179
+      }
+    }
+  },
+  "endpoints": {
+    "previous": {
+      "iteration": 3,
+      "input_path": "outputs/hpc/outer-step2-20260921/full/state_2.dat",
+      "input_sha256": "987f613e336e741c69f3f7b14f17e6e1ef4d01bf2a96cf4a878e5342c20e89de",
+      "output_path": "outputs/hpc/outer-step2-20260921/full/state_0.dat",
+      "output_sha256": "e8772b6b836df81d7105e339268a6c594b8e99fcbbe31368c969a31a4585af40",
+      "wall_s": 137.22081386717036,
+      "residual": 0.0001119660375538122,
+      "boundary_l1": 0.00020051862916609762,
+      "boundary_bolometric": 0.00013206940076795171,
+      "maximum_worker_rss_mib": 3499.53515625
+    },
+    "final": {
+      "iteration": 4,
+      "input_path": "outputs/hpc/outer-step2-20260921/full/state_0.dat",
+      "input_sha256": "e8772b6b836df81d7105e339268a6c594b8e99fcbbe31368c969a31a4585af40",
+      "output_path": "outputs/hpc/outer-step2-20260921/full/state_1.dat",
+      "output_sha256": "99c34ec63ee707cf054264a0a9e9be427fb4443616eeecdda932fca4ef438a19",
+      "wall_s": 135.62066870508716,
+      "residual": 9.033458310213668e-05,
+      "boundary_l1": 0.00017383614075752613,
+      "boundary_bolometric": 0.0001238344308002417,
+      "maximum_worker_rss_mib": 3497.5703125
+    }
+  },
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/outer-step2-20260921/full/state_0.dat",
+      "input_sha256": "397ed4cac5f4c6e16025d894ee7018b25e6b2036790a287f44d02f3bc445f183",
+      "output_path": "outputs/hpc/outer-step2-20260921/full/state_1.dat",
+      "output_sha256": "cf683dde18ecb5d341f47eda5dd2162c42d013bf338df42881c917f048e360cd",
+      "wall_s": 140.99358785012737,
+      "residual": 0.0001842266515611355,
+      "boundary_l1": 0.00030315086037964846,
+      "boundary_bolometric": 0.00014607351200015054,
+      "maximum_worker_rss_mib": 3497.6015625
+    },
+    {
+      "iteration": 2,
+      "input_path": "outputs/hpc/outer-step2-20260921/full/state_1.dat",
+      "input_sha256": "cf683dde18ecb5d341f47eda5dd2162c42d013bf338df42881c917f048e360cd",
+      "output_path": "outputs/hpc/outer-step2-20260921/full/state_2.dat",
+      "output_sha256": "987f613e336e741c69f3f7b14f17e6e1ef4d01bf2a96cf4a878e5342c20e89de",
+      "wall_s": 134.45126944128424,
+      "residual": 0.00014088239566657247,
+      "boundary_l1": 0.00024056044879780552,
+      "boundary_bolometric": 0.0001364388697090778,
+      "maximum_worker_rss_mib": 3496.171875
+    },
+    {
+      "iteration": 3,
+      "input_path": "outputs/hpc/outer-step2-20260921/full/state_2.dat",
+      "input_sha256": "987f613e336e741c69f3f7b14f17e6e1ef4d01bf2a96cf4a878e5342c20e89de",
+      "output_path": "outputs/hpc/outer-step2-20260921/full/state_0.dat",
+      "output_sha256": "e8772b6b836df81d7105e339268a6c594b8e99fcbbe31368c969a31a4585af40",
+      "wall_s": 137.22081386717036,
+      "residual": 0.0001119660375538122,
+      "boundary_l1": 0.00020051862916609762,
+      "boundary_bolometric": 0.00013206940076795171,
+      "maximum_worker_rss_mib": 3499.53515625
+    },
+    {
+      "iteration": 4,
+      "input_path": "outputs/hpc/outer-step2-20260921/full/state_0.dat",
+      "input_sha256": "e8772b6b836df81d7105e339268a6c594b8e99fcbbe31368c969a31a4585af40",
+      "output_path": "outputs/hpc/outer-step2-20260921/full/state_1.dat",
+      "output_sha256": "99c34ec63ee707cf054264a0a9e9be427fb4443616eeecdda932fca4ef438a19",
+      "wall_s": 135.62066870508716,
+      "residual": 9.033458310213668e-05,
+      "boundary_l1": 0.00017383614075752613,
+      "boundary_bolometric": 0.0001238344308002417,
+      "maximum_worker_rss_mib": 3497.5703125
+    }
+  ],
+  "new_denominator_verified": true,
+  "gas_domain": {
+    "previous": {
+      "failed_cells": 0,
+      "min_gas_erg_g": 8937031547415.627
+    },
+    "final": {
+      "failed_cells": 0,
+      "min_gas_erg_g": 8924735621073.887
+    }
+  },
+  "resources": {
+    "map_reports": 456,
+    "process_receipts": 760,
+    "native_peak_mib": 3499.53515625,
+    "proc_peak_kib": 4036428
+  },
+  "physical_response_replayed": false,
+  "true_error_bound": false,
+  "coupled_column_accepted": false
+}
