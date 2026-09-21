@@ -1,0 +1,822 @@
+{
+  "job": 74437,
+  "actual_maps": 1,
+  "feedback_pairs": 0,
+  "parent_status": {
+    "status": "failed",
+    "updated_unix": 1789957522.941216,
+    "maps_committed_or_active": 0,
+    "feedback_pairs_completed_or_pending": 0,
+    "error": "RuntimeError('child fault: A-base-full')",
+    "failed_at": 1789958381.5858316
+  },
+  "child_state": {
+    "config_sha256": "14a7082d70b01b07b5b265dffcd1068a5ed6dc76d5b64bf455cfd89ed3314d03",
+    "status": "resource_gate_failed",
+    "initialization_blocks": [],
+    "history": [
+      {
+        "iteration": 1,
+        "input_path": "outputs/hpc/composite-hybrid-20260921/A-base-full/state_0.dat",
+        "input_sha256": "8248e5ad072c96398ca30246be15f11e6fbd04ce5fc8b120c518bb1733127dc1",
+        "output_path": "outputs/hpc/composite-hybrid-20260921/A-base-full/state_1.dat",
+        "output_sha256": "58f6ada9bb91f25c6be3f4467df967e0401b7b9341587343776f523802fdef22",
+        "wall_s": 162.2068291977048,
+        "residual": 0.00018055062771452576,
+        "boundary_l1": 0.00017051206447644902,
+        "boundary_bolometric": 7.005217127719916e-05,
+        "maximum_worker_rss_mib": 19486.76171875
+      }
+    ],
+    "slots": [
+      "outputs/hpc/composite-hybrid-20260921/A-base-full/state_0.dat",
+      "outputs/hpc/composite-hybrid-20260921/A-base-full/state_1.dat",
+      "outputs/hpc/composite-hybrid-20260921/A-base-full/state_2.dat"
+    ],
+    "current_slot": 1,
+    "active_map": null,
+    "current_sha256": "58f6ada9bb91f25c6be3f4467df967e0401b7b9341587343776f523802fdef22",
+    "trial_sha256": "14f8b3f76a2c0c3cd7a68d35cdb63fdc36aaf423de405e7cac6ef8a1d4c0cc33"
+  },
+  "original_map": {
+    "iteration": 2,
+    "input_path": "outputs/hpc/baseline-zero-control-20260919/state_1.dat",
+    "input_sha256": "7cb57c29edfec9d0d6c03535723c2679261fa7e20a45377c6cbe808d1ab7f4f4",
+    "output_path": "outputs/hpc/baseline-zero-control-20260919/state_2.dat",
+    "output_sha256": "565a19526e7fb1ab106326b3efc123ba2a589b99525759eca8b3d95fd024a0af",
+    "wall_s": 696.6306056473404,
+    "residual": 5.3201781558811255e-05,
+    "boundary_l1": 0.0001794155099180475,
+    "boundary_bolometric": 7.894878473489718e-05,
+    "maximum_worker_rss_mib": 3501.58203125
+  },
+  "radiation_metric_ratio": 3.393695143741348,
+  "block_summaries": [
+    {
+      "block_index": 0,
+      "core_group_start": 0,
+      "core_group_stop": 128,
+      "maximum_absolute_radiation_change": 4.301436594064678e-16,
+      "maximum_radiation_scale": 1.5316495201624773e-05,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 3.6150066998635424e-08,
+      "minimum_mapped_intensity": 3.615006699864008e-08
+    },
+    {
+      "block_index": 1,
+      "core_group_start": 128,
+      "core_group_stop": 256,
+      "maximum_absolute_radiation_change": 4.443494183714591e-15,
+      "maximum_radiation_scale": 2.2417146463469763e-05,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 4.3644006524980074e-08,
+      "minimum_mapped_intensity": 4.364400652837371e-08
+    },
+    {
+      "block_index": 2,
+      "core_group_start": 256,
+      "core_group_stop": 384,
+      "maximum_absolute_radiation_change": 4.6447354900484676e-14,
+      "maximum_radiation_scale": 3.279198825796043e-05,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 5.4780971536528873e-08,
+      "minimum_mapped_intensity": 5.478097156743795e-08
+    },
+    {
+      "block_index": 3,
+      "core_group_start": 384,
+      "core_group_stop": 512,
+      "maximum_absolute_radiation_change": 4.619737430192625e-13,
+      "maximum_radiation_scale": 4.793709835207283e-05,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 7.0907603362244e-08,
+      "minimum_mapped_intensity": 7.090760365193519e-08
+    },
+    {
+      "block_index": 4,
+      "core_group_start": 512,
+      "core_group_stop": 640,
+      "maximum_absolute_radiation_change": 4.812182167232126e-12,
+      "maximum_radiation_scale": 7.002152626116813e-05,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 9.415988462297457e-08,
+      "minimum_mapped_intensity": 9.415988726511258e-08
+    },
+    {
+      "block_index": 5,
+      "core_group_start": 640,
+      "core_group_stop": 768,
+      "maximum_absolute_radiation_change": 4.22621985557382e-11,
+      "maximum_radiation_scale": 0.00010218173631582614,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.2750728712083085e-07,
+      "minimum_mapped_intensity": 1.2750730911326714e-07
+    },
+    {
+      "block_index": 6,
+      "core_group_start": 768,
+      "core_group_stop": 896,
+      "maximum_absolute_radiation_change": 3.0475226760407403e-10,
+      "maximum_radiation_scale": 0.00014893840174113845,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.7502875816355904e-07,
+      "minimum_mapped_intensity": 1.7502891622418282e-07
+    },
+    {
+      "block_index": 7,
+      "core_group_start": 896,
+      "core_group_stop": 1024,
+      "maximum_absolute_radiation_change": 1.7868462334351453e-09,
+      "maximum_radiation_scale": 0.00021678126108003775,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 2.422482071700665e-07,
+      "minimum_mapped_intensity": 2.4224914785147444e-07
+    },
+    {
+      "block_index": 8,
+      "core_group_start": 1024,
+      "core_group_stop": 1152,
+      "maximum_absolute_radiation_change": 8.353497786737726e-09,
+      "maximum_radiation_scale": 0.0003149806395897907,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 3.365168644593183e-07,
+      "minimum_mapped_intensity": 3.3652137363337863e-07
+    },
+    {
+      "block_index": 9,
+      "core_group_start": 1152,
+      "core_group_stop": 1280,
+      "maximum_absolute_radiation_change": 3.125435163011726e-08,
+      "maximum_radiation_scale": 0.00045669707709752736,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 4.673979504419618e-07,
+      "minimum_mapped_intensity": 4.6741511786725973e-07
+    },
+    {
+      "block_index": 10,
+      "core_group_start": 1280,
+      "core_group_stop": 1408,
+      "maximum_absolute_radiation_change": 9.342050622118008e-08,
+      "maximum_radiation_scale": 0.0006604691109254498,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 6.469516359029125e-07,
+      "minimum_mapped_intensity": 6.470034592469091e-07
+    },
+    {
+      "block_index": 11,
+      "core_group_start": 1408,
+      "core_group_stop": 1536,
+      "maximum_absolute_radiation_change": 2.2672578241190663e-07,
+      "maximum_radiation_scale": 0.000952154912996877,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 8.897300263193412e-07,
+      "minimum_mapped_intensity": 8.898551300268046e-07
+    },
+    {
+      "block_index": 12,
+      "core_group_start": 1536,
+      "core_group_stop": 1664,
+      "maximum_absolute_radiation_change": 4.55253975021469e-07,
+      "maximum_radiation_scale": 0.0013673693570225075,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.2121582201269428e-06,
+      "minimum_mapped_intensity": 1.21240387524854e-06
+    },
+    {
+      "block_index": 13,
+      "core_group_start": 1664,
+      "core_group_stop": 1792,
+      "maximum_absolute_radiation_change": 3.779576912982534e-06,
+      "maximum_radiation_scale": 0.0019543634358853593,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.6307633817321454e-06,
+      "minimum_mapped_intensity": 1.6311651441882399e-06
+    },
+    {
+      "block_index": 14,
+      "core_group_start": 1792,
+      "core_group_stop": 1920,
+      "maximum_absolute_radiation_change": 1.0225874357353004e-10,
+      "maximum_radiation_scale": 0.0027771352923023854,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 2.1589942816218292e-06,
+      "minimum_mapped_intensity": 2.1589942816509244e-06
+    },
+    {
+      "block_index": 15,
+      "core_group_start": 1920,
+      "core_group_stop": 2048,
+      "maximum_absolute_radiation_change": 6.987107473355701e-06,
+      "maximum_radiation_scale": 0.003917818622441867,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 2.797717237776028e-06,
+      "minimum_mapped_intensity": 2.8039942001742337e-06
+    },
+    {
+      "block_index": 16,
+      "core_group_start": 2048,
+      "core_group_stop": 2176,
+      "maximum_absolute_radiation_change": 1.5182716296341988e-06,
+      "maximum_radiation_scale": 0.005478035621088763,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 3.5306378036713834e-06,
+      "minimum_mapped_intensity": 3.5314026737445856e-06
+    },
+    {
+      "block_index": 17,
+      "core_group_start": 2176,
+      "core_group_stop": 2304,
+      "maximum_absolute_radiation_change": 1.5182226622038279e-06,
+      "maximum_radiation_scale": 0.00757523973192106,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 4.305914798330207e-06,
+      "minimum_mapped_intensity": 4.306670928411172e-06
+    },
+    {
+      "block_index": 18,
+      "core_group_start": 2304,
+      "core_group_stop": 2432,
+      "maximum_absolute_radiation_change": 1.364465686738963e-06,
+      "maximum_radiation_scale": 0.010331737942901575,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 5.027783684182223e-06,
+      "minimum_mapped_intensity": 5.028435514393341e-06
+    },
+    {
+      "block_index": 19,
+      "core_group_start": 2432,
+      "core_group_stop": 2560,
+      "maximum_absolute_radiation_change": 9.136662843132679e-07,
+      "maximum_radiation_scale": 0.013849683113113926,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 5.555551234223601e-06,
+      "minimum_mapped_intensity": 5.556008494067197e-06
+    },
+    {
+      "block_index": 20,
+      "core_group_start": 2560,
+      "core_group_stop": 2688,
+      "maximum_absolute_radiation_change": 1.1732198921402329e-06,
+      "maximum_radiation_scale": 0.018165438109475577,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 5.425987287872532e-06,
+      "minimum_mapped_intensity": 5.425953587143476e-06
+    },
+    {
+      "block_index": 21,
+      "core_group_start": 2688,
+      "core_group_stop": 2816,
+      "maximum_absolute_radiation_change": 1.8191814609592322e-06,
+      "maximum_radiation_scale": 0.02317794271966335,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 4.639325083921988e-06,
+      "minimum_mapped_intensity": 4.639123526549308e-06
+    },
+    {
+      "block_index": 22,
+      "core_group_start": 2816,
+      "core_group_stop": 2944,
+      "maximum_absolute_radiation_change": 2.058849477461558e-06,
+      "maximum_radiation_scale": 0.028554365704712134,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 3.5266975580860614e-06,
+      "minimum_mapped_intensity": 3.5264597696239635e-06
+    },
+    {
+      "block_index": 23,
+      "core_group_start": 2944,
+      "core_group_stop": 3072,
+      "maximum_absolute_radiation_change": 2.0585009740912985e-06,
+      "maximum_radiation_scale": 0.0336380875760429,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 2.3630676721603737e-06,
+      "minimum_mapped_intensity": 2.362938207839003e-06
+    },
+    {
+      "block_index": 24,
+      "core_group_start": 3072,
+      "core_group_stop": 3200,
+      "maximum_absolute_radiation_change": 1.7988077594868063e-06,
+      "maximum_radiation_scale": 0.03742240960915715,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.3999731042442563e-06,
+      "minimum_mapped_intensity": 1.4000453285358265e-06
+    },
+    {
+      "block_index": 25,
+      "core_group_start": 3200,
+      "core_group_stop": 3328,
+      "maximum_absolute_radiation_change": 1.4778337577197112e-06,
+      "maximum_radiation_scale": 0.038596768989241775,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 9.068712445788903e-07,
+      "minimum_mapped_intensity": 9.068364192161361e-07
+    },
+    {
+      "block_index": 26,
+      "core_group_start": 3328,
+      "core_group_stop": 3456,
+      "maximum_absolute_radiation_change": 1.4790711146041996e-06,
+      "maximum_radiation_scale": 0.03864767688236417,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 4.923456276174497e-07,
+      "minimum_mapped_intensity": 4.923365179343897e-07
+    },
+    {
+      "block_index": 27,
+      "core_group_start": 3456,
+      "core_group_stop": 3584,
+      "maximum_absolute_radiation_change": 1.437318725366378e-06,
+      "maximum_radiation_scale": 0.038682559832048324,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 4.523036453628904e-07,
+      "minimum_mapped_intensity": 4.522936886066999e-07
+    },
+    {
+      "block_index": 28,
+      "core_group_start": 3584,
+      "core_group_stop": 3712,
+      "maximum_absolute_radiation_change": 1.3760539697392493e-06,
+      "maximum_radiation_scale": 0.03869833279824728,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 4.1352603543964487e-07,
+      "minimum_mapped_intensity": 4.1351525449525e-07
+    },
+    {
+      "block_index": 29,
+      "core_group_start": 3712,
+      "core_group_stop": 3840,
+      "maximum_absolute_radiation_change": 1.3047561502835953e-06,
+      "maximum_radiation_scale": 0.038698882201635074,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 3.760820800100838e-07,
+      "minimum_mapped_intensity": 3.760705466173127e-07
+    },
+    {
+      "block_index": 30,
+      "core_group_start": 3840,
+      "core_group_stop": 3968,
+      "maximum_absolute_radiation_change": 1.2226421266898699e-06,
+      "maximum_radiation_scale": 0.038691107870170695,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 3.4004678591785243e-07,
+      "minimum_mapped_intensity": 3.400346411242046e-07
+    },
+    {
+      "block_index": 31,
+      "core_group_start": 3968,
+      "core_group_stop": 4096,
+      "maximum_absolute_radiation_change": 1.1290991219418782e-06,
+      "maximum_radiation_scale": 0.03865642366018044,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 3.0550890298652845e-07,
+      "minimum_mapped_intensity": 3.0549638379057564e-07
+    },
+    {
+      "block_index": 32,
+      "core_group_start": 4096,
+      "core_group_stop": 4224,
+      "maximum_absolute_radiation_change": 1.023669889679054e-06,
+      "maximum_radiation_scale": 0.03858875003697391,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 2.725487247944234e-07,
+      "minimum_mapped_intensity": 2.7253619631830984e-07
+    },
+    {
+      "block_index": 33,
+      "core_group_start": 4224,
+      "core_group_stop": 4352,
+      "maximum_absolute_radiation_change": 9.061875663493417e-07,
+      "maximum_radiation_scale": 0.03848121972500538,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 2.412509535314471e-07,
+      "minimum_mapped_intensity": 2.4123894853976725e-07
+    },
+    {
+      "block_index": 34,
+      "core_group_start": 4352,
+      "core_group_stop": 4480,
+      "maximum_absolute_radiation_change": 7.768555960879775e-07,
+      "maximum_radiation_scale": 0.038325300575650485,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 2.1169908562776744e-07,
+      "minimum_mapped_intensity": 2.1168834941150979e-07
+    },
+    {
+      "block_index": 35,
+      "core_group_start": 4480,
+      "core_group_stop": 4608,
+      "maximum_absolute_radiation_change": 6.365779972698771e-07,
+      "maximum_radiation_scale": 0.038110307175632074,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.8398346002795123e-07,
+      "minimum_mapped_intensity": 1.839749948848987e-07
+    },
+    {
+      "block_index": 36,
+      "core_group_start": 4608,
+      "core_group_stop": 4736,
+      "maximum_absolute_radiation_change": 4.875070403025095e-07,
+      "maximum_radiation_scale": 0.03782274344762092,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.581821760460796e-07,
+      "minimum_mapped_intensity": 1.5817727821108694e-07
+    },
+    {
+      "block_index": 37,
+      "core_group_start": 4736,
+      "core_group_stop": 4864,
+      "maximum_absolute_radiation_change": 3.3431415414654497e-07,
+      "maximum_radiation_scale": 0.037445410800742866,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.3436716557960955e-07,
+      "minimum_mapped_intensity": 1.3436743451878583e-07
+    },
+    {
+      "block_index": 38,
+      "core_group_start": 4864,
+      "core_group_stop": 4992,
+      "maximum_absolute_radiation_change": 2.077597700475553e-07,
+      "maximum_radiation_scale": 0.036956191905571686,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.1259933032022027e-07,
+      "minimum_mapped_intensity": 1.1260661832230246e-07
+    },
+    {
+      "block_index": 39,
+      "core_group_start": 4992,
+      "core_group_stop": 5120,
+      "maximum_absolute_radiation_change": 2.2309669443017384e-07,
+      "maximum_radiation_scale": 0.03632638573164162,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 9.29200052156021e-08,
+      "minimum_mapped_intensity": 9.293625799580932e-08
+    },
+    {
+      "block_index": 40,
+      "core_group_start": 5120,
+      "core_group_stop": 5248,
+      "maximum_absolute_radiation_change": 3.4079818014170517e-07,
+      "maximum_radiation_scale": 0.03551843993232391,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 7.534612149162455e-08,
+      "minimum_mapped_intensity": 7.537303793866378e-08
+    },
+    {
+      "block_index": 41,
+      "core_group_start": 5248,
+      "core_group_stop": 5376,
+      "maximum_absolute_radiation_change": 4.374813518598971e-07,
+      "maximum_radiation_scale": 0.0344829261908158,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 5.985915702527633e-08,
+      "minimum_mapped_intensity": 5.989760170648237e-08
+    },
+    {
+      "block_index": 42,
+      "core_group_start": 5376,
+      "core_group_stop": 5504,
+      "maximum_absolute_radiation_change": 4.958340069042156e-07,
+      "maximum_radiation_scale": 0.033154601754701654,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 4.6401965585084964e-08,
+      "minimum_mapped_intensity": 4.645111189391167e-08
+    },
+    {
+      "block_index": 43,
+      "core_group_start": 5504,
+      "core_group_stop": 5632,
+      "maximum_absolute_radiation_change": 5.079412459632919e-07,
+      "maximum_radiation_scale": 0.03144794326539432,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 3.4877744198060894e-08,
+      "minimum_mapped_intensity": 3.493414086020859e-08
+    },
+    {
+      "block_index": 44,
+      "core_group_start": 5632,
+      "core_group_stop": 5760,
+      "maximum_absolute_radiation_change": 5.059292179099024e-07,
+      "maximum_radiation_scale": 0.02925368840431429,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 2.5153379958087184e-08,
+      "minimum_mapped_intensity": 2.5210569971135448e-08
+    },
+    {
+      "block_index": 45,
+      "core_group_start": 5760,
+      "core_group_stop": 5888,
+      "maximum_absolute_radiation_change": 4.685190529803889e-07,
+      "maximum_radiation_scale": 0.026441280308401812,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.2659687642538532e-08,
+      "minimum_mapped_intensity": 1.2689125893752683e-08
+    },
+    {
+      "block_index": 46,
+      "core_group_start": 5888,
+      "core_group_stop": 6016,
+      "maximum_absolute_radiation_change": 4.9415178447246265e-06,
+      "maximum_radiation_scale": 0.022883100453404193,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.076825148475793e-08,
+      "minimum_mapped_intensity": 1.076825148475797e-08
+    },
+    {
+      "block_index": 47,
+      "core_group_start": 6016,
+      "core_group_stop": 6144,
+      "maximum_absolute_radiation_change": 1.111185520118619e-07,
+      "maximum_radiation_scale": 0.018526169849557156,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.515254798902161e-09,
+      "minimum_mapped_intensity": 1.515254798902161e-09
+    },
+    {
+      "block_index": 48,
+      "core_group_start": 6144,
+      "core_group_stop": 6272,
+      "maximum_absolute_radiation_change": 6.76465094283504e-06,
+      "maximum_radiation_scale": 0.01351343209734082,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.04771957167298e-10,
+      "minimum_mapped_intensity": 1.0477195716729847e-10
+    },
+    {
+      "block_index": 49,
+      "core_group_start": 6272,
+      "core_group_stop": 6400,
+      "maximum_absolute_radiation_change": 2.550519278536221e-07,
+      "maximum_radiation_scale": 0.008430483618703265,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 2.8527183901209875e-12,
+      "minimum_mapped_intensity": 2.8527183901209988e-12
+    },
+    {
+      "block_index": 50,
+      "core_group_start": 6400,
+      "core_group_stop": 6528,
+      "maximum_absolute_radiation_change": 1.508537449634818e-07,
+      "maximum_radiation_scale": 0.004208580178678254,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 2.4784598585146893e-14,
+      "minimum_mapped_intensity": 2.478459858514702e-14
+    },
+    {
+      "block_index": 51,
+      "core_group_start": 6528,
+      "core_group_stop": 6656,
+      "maximum_absolute_radiation_change": 6.46963894212311e-08,
+      "maximum_radiation_scale": 0.0015650412805135613,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 2.3676569706177957e-16,
+      "minimum_mapped_intensity": 2.3676569706177957e-16
+    },
+    {
+      "block_index": 52,
+      "core_group_start": 6656,
+      "core_group_stop": 6784,
+      "maximum_absolute_radiation_change": 1.1166822945930105e-13,
+      "maximum_radiation_scale": 0.00040269078582488746,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.475903006209393e-19,
+      "minimum_mapped_intensity": 1.475903006209393e-19
+    },
+    {
+      "block_index": 53,
+      "core_group_start": 6784,
+      "core_group_stop": 6912,
+      "maximum_absolute_radiation_change": 9.130335308876573e-13,
+      "maximum_radiation_scale": 6.6779187599625e-05,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.5285672163597498e-23,
+      "minimum_mapped_intensity": 1.5285672163597498e-23
+    },
+    {
+      "block_index": 54,
+      "core_group_start": 6912,
+      "core_group_stop": 7040,
+      "maximum_absolute_radiation_change": 1.2763371574112489e-12,
+      "maximum_radiation_scale": 6.551416335812179e-06,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.8809505735874938e-28,
+      "minimum_mapped_intensity": 1.8809505735874938e-28
+    },
+    {
+      "block_index": 55,
+      "core_group_start": 7040,
+      "core_group_stop": 7168,
+      "maximum_absolute_radiation_change": 1.1130215351914032e-12,
+      "maximum_radiation_scale": 3.4301739941454454e-07,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.8037326122908032e-34,
+      "minimum_mapped_intensity": 1.8037326122908032e-34
+    },
+    {
+      "block_index": 56,
+      "core_group_start": 7168,
+      "core_group_stop": 7296,
+      "maximum_absolute_radiation_change": 2.3243121832038645e-13,
+      "maximum_radiation_scale": 8.442425478430568e-09,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 7.996283084450817e-42,
+      "minimum_mapped_intensity": 7.996283084450817e-42
+    },
+    {
+      "block_index": 57,
+      "core_group_start": 7296,
+      "core_group_stop": 7424,
+      "maximum_absolute_radiation_change": 8.994201756662975e-15,
+      "maximum_radiation_scale": 8.357301941968781e-11,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 8.643258673388234e-51,
+      "minimum_mapped_intensity": 8.643258673388234e-51
+    },
+    {
+      "block_index": 58,
+      "core_group_start": 7424,
+      "core_group_stop": 7552,
+      "maximum_absolute_radiation_change": 6.172351928868166e-17,
+      "maximum_radiation_scale": 2.7503920730758364e-13,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.0449080355685057e-61,
+      "minimum_mapped_intensity": 1.0449080355685057e-61
+    },
+    {
+      "block_index": 59,
+      "core_group_start": 7552,
+      "core_group_stop": 7680,
+      "maximum_absolute_radiation_change": 7.290231736079251e-20,
+      "maximum_radiation_scale": 2.3882343021855177e-16,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 5.482596430067099e-75,
+      "minimum_mapped_intensity": 5.482596430067099e-75
+    },
+    {
+      "block_index": 60,
+      "core_group_start": 7680,
+      "core_group_stop": 7808,
+      "maximum_absolute_radiation_change": 1.4347128653078595e-23,
+      "maximum_radiation_scale": 4.1365687175131083e-20,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 3.9606819571476323e-91,
+      "minimum_mapped_intensity": 3.9606819571476323e-91
+    },
+    {
+      "block_index": 61,
+      "core_group_start": 7808,
+      "core_group_stop": 7936,
+      "maximum_absolute_radiation_change": 4.668510337215327e-28,
+      "maximum_radiation_scale": 1.0181771392662583e-24,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 9.795677469741846e-111,
+      "minimum_mapped_intensity": 9.795677469741846e-111
+    },
+    {
+      "block_index": 62,
+      "core_group_start": 7936,
+      "core_group_stop": 8064,
+      "maximum_absolute_radiation_change": 1.7926055516297814e-33,
+      "maximum_radiation_scale": 2.36153887315847e-30,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.5360789516701305e-134,
+      "minimum_mapped_intensity": 1.5360789516701303e-134
+    },
+    {
+      "block_index": 63,
+      "core_group_start": 8064,
+      "core_group_stop": 8192,
+      "maximum_absolute_radiation_change": 4.112177007988494e-40,
+      "maximum_radiation_scale": 3.1374834891722147e-37,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 8.506362004364475e-163,
+      "minimum_mapped_intensity": 8.506362004364987e-163
+    },
+    {
+      "block_index": 64,
+      "core_group_start": 8192,
+      "core_group_stop": 8320,
+      "maximum_absolute_radiation_change": 2.83982706824353e-48,
+      "maximum_radiation_scale": 1.3040690709948302e-45,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 8.36640562498211e-187,
+      "minimum_mapped_intensity": 8.366405624980014e-187
+    },
+    {
+      "block_index": 65,
+      "core_group_start": 8320,
+      "core_group_stop": 8448,
+      "maximum_absolute_radiation_change": 2.842236043550608e-58,
+      "maximum_radiation_scale": 8.237274894304488e-56,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 9.91863302013494e-209,
+      "minimum_mapped_intensity": 9.918633020154532e-209
+    },
+    {
+      "block_index": 66,
+      "core_group_start": 8448,
+      "core_group_stop": 8576,
+      "maximum_absolute_radiation_change": 1.7487874626076464e-70,
+      "maximum_radiation_scale": 3.267351608990488e-68,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 3.3214241751885224e-212,
+      "minimum_mapped_intensity": 3.4408407587352197e-212
+    },
+    {
+      "block_index": 67,
+      "core_group_start": 8576,
+      "core_group_stop": 8704,
+      "maximum_absolute_radiation_change": 2.3393320806427837e-85,
+      "maximum_radiation_scale": 2.840339542450345e-83,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 5.090361298725581e-183,
+      "minimum_mapped_intensity": 6.3439567930678284e-183
+    },
+    {
+      "block_index": 68,
+      "core_group_start": 8704,
+      "core_group_stop": 8832,
+      "maximum_absolute_radiation_change": 1.9297882197729253e-103,
+      "maximum_radiation_scale": 1.513159949573782e-101,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 3.6677896356081425e-179,
+      "minimum_mapped_intensity": 5.0731065340643725e-179
+    },
+    {
+      "block_index": 69,
+      "core_group_start": 8832,
+      "core_group_stop": 8960,
+      "maximum_absolute_radiation_change": 2.1404489646686267e-125,
+      "maximum_radiation_scale": 1.0672508100114545e-123,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 5.45426761445041e-199,
+      "minimum_mapped_intensity": 7.987381934942404e-199
+    },
+    {
+      "block_index": 70,
+      "core_group_start": 8960,
+      "core_group_stop": 9088,
+      "maximum_absolute_radiation_change": 5.088823521439266e-152,
+      "maximum_radiation_scale": 1.609473223525097e-150,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 1.1026475886719223e-228,
+      "minimum_mapped_intensity": 1.716634584945111e-228
+    },
+    {
+      "block_index": 71,
+      "core_group_start": 9088,
+      "core_group_stop": 9216,
+      "maximum_absolute_radiation_change": 2.8525767896794185e-184,
+      "maximum_radiation_scale": 5.797679149857737e-183,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 2.2649845913069458e-267,
+      "minimum_mapped_intensity": 3.7796077415083253e-267
+    },
+    {
+      "block_index": 72,
+      "core_group_start": 9216,
+      "core_group_stop": 9344,
+      "maximum_absolute_radiation_change": 2.686371063476537e-223,
+      "maximum_radiation_scale": 3.564635091512455e-222,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 0.0,
+      "minimum_mapped_intensity": 0.0
+    },
+    {
+      "block_index": 73,
+      "core_group_start": 9344,
+      "core_group_stop": 9472,
+      "maximum_absolute_radiation_change": 1.852302691640004e-270,
+      "maximum_radiation_scale": 1.58891883848367e-269,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 0.0,
+      "minimum_mapped_intensity": 0.0
+    },
+    {
+      "block_index": 74,
+      "core_group_start": 9472,
+      "core_group_stop": 9600,
+      "maximum_absolute_radiation_change": 0.0,
+      "maximum_radiation_scale": 0.0,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 0.0,
+      "minimum_mapped_intensity": 0.0
+    },
+    {
+      "block_index": 75,
+      "core_group_start": 9600,
+      "core_group_stop": 9632,
+      "maximum_absolute_radiation_change": 0.0,
+      "maximum_radiation_scale": 0.0,
+      "peak_process_rss_mib": 19486.76171875,
+      "minimum_input_intensity": 0.0,
+      "minimum_mapped_intensity": 0.0
+    }
+  ],
+  "archive": {
+    "sha256": "c3859be6c9e69848aa40392f78b9633903891cacf04cbe306cfc35464b54bfd8",
+    "bytes": 20029577,
+    "verified_files": 819
+  },
+  "gate_status_rewritten": false
+}
