@@ -63,3 +63,13 @@ Mac：114 passed / 4 Linux 专用 skipped。测试覆盖新序列跨三步衔接
 首轮测试命令引用不存在的 `test_constrained_hybrid_batch.py`，未运行任何测试；改为实际 `test_constrained_hybrid.py` 后得到上述结果。没有把未运行当作通过。Linux 专用四项需在学校合成测试中实际运行，通过后才提交。
 
 提交前 PRE-RUN：Code 核查上述输入/编号/shape/有限性/预算及回归结果；Logic 核查源重放→同态确认→新基态→候选→原门+fresh control→下一步；Physics 不改模型/单位/守恒/物理时间，有限接受不当收敛。每组反馈后仍由正式协议与独立账本给出 POST 门和物理域证据；完整人工趋势、图与最终解释在心跳审阅中补齐。
+
+## 实际提交及启动核验
+
+- 科学代码提交 `4016d19dabcc1d579ad5ebb6586252b23e5e1715`，Mac、学校与 GitHub 分支引用已核一致。
+- 学校合成回归 **118 passed in 18.42s**，4 项 Linux 专用检查全部实际通过。
+- 作业 **74845**，`outputs/hpc/outer-steps456-20260921`，2026-09-21 19:48:17 CST 在 anode17 启动，32 CPU / 128 GiB，12 小时上限至 2026-09-22 07:48:17。
+- 19:50:51 CST：RUNNING，step4/confirmation 正在准备；`source-gate-replay.json` 已落地，实际原物质响应与第三步保存残差逐位一致，9 个派生门全 true；重算候选三范数与 Mac 审阅一致。stderr 空。这是运行中的源预检，不是第四步接受。
+- 调度终态只读捕获器 PID 2795690，`outputs/review-20260921/scheduler-74845/`；30 秒采样，最多 24 小时，不提交或取消作业。
+- “USTC HHe 运行审阅与决策”已更新至本批完整合同与分支，ACTIVE、30 分钟。工具写入后读回逐字核对 prompt 成功；Mac 备份 `automation-after-outer-sequence.toml`。正常阶段自动衔接，无变化不通知，真正 SSH 认证断线再提醒用户并暂停心跳。
+- Markdown 全仓扫描仅报告六份既有 lecture 文件，未触碰它们。该旧脚本默认扫描 README/docs/lecture，不覆盖 handoff，本报告另行检查；没有将全仓退出码 1 说成全绿。
