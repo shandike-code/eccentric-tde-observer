@@ -1,0 +1,113 @@
+{
+  "status": {
+    "status": "formal_acceptance_requires_review",
+    "updated_unix": 1789975567.766942,
+    "completed_maps": 10,
+    "active_maps": 0,
+    "completed_pairs": 3,
+    "pending_pairs": 0,
+    "current_case": "full",
+    "candidate": "full"
+  },
+  "scheduler": {
+    "job_id": 74671,
+    "state": "COMPLETED",
+    "observed_unix": 1789975592.2321484,
+    "scontrol": "JobId=74671 JobName=tde-response-direction UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:45:03 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-09-21T14:41:15 EligibleTime=2026-09-21T14:41:15 AccrueTime=2026-09-21T14:41:15 StartTime=2026-09-21T14:41:16 EndTime=2026-09-21T15:26:19 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-21T14:41:16 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2544205 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode19 BatchHost=anode19 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/response_direction_batch.sbatch SubmitLine=sbatch --parsable --export=ALL,TDE_RUN=outputs/hpc/response-direction-20260921 operations/response_direction_batch.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-response-direction-74671.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-response-direction-74671.out TresPerTask=cpu=32\n",
+    "stderr": ""
+  },
+  "formal_gates": {
+    "last_two_photoionization_pass": true,
+    "last_two_total_recombination_pass": true,
+    "last_two_atomic_heating_pass": true,
+    "last_two_direct_heating_pass": true,
+    "last_two_formal_heating_pass": true,
+    "inner_noise_resolved_pass": true,
+    "candidate_l2_contraction_pass": true,
+    "candidate_mass_weighted_contraction_pass": true,
+    "candidate_maximum_cell_contraction_pass": true,
+    "two_formal_feedback_states_pass": true,
+    "two_inner_radiation_residuals_pass": true,
+    "two_boundary_spectra_pass": true,
+    "two_boundary_bolometric_pass": true,
+    "candidate_state_bytes_pass": true,
+    "population_nonnegative_pass": true,
+    "all_residual_components_finite_pass": true
+  },
+  "comparison": {
+    "photoionization_volume_l1": [
+      1.569033305028591e-05,
+      2.7105789339177058e-05,
+      5.916214421780158e-08
+    ],
+    "total_recombination_volume_l1": [
+      4.547930287149803e-07,
+      2.5127664241371945e-08,
+      1.2685044347230436e-13
+    ],
+    "atomic_heating_volume_l1": 0.0005477903334037252,
+    "direct_heating_volume_l1": 0.0005477903334031232,
+    "formal_heating_volume_l1": 0.0005477899709200807,
+    "inner_noise_to_trial_signal_l2_ratio": 0.05347375925998559,
+    "candidate_to_base_residual_l2_ratio": 0.9793563359941505,
+    "candidate_to_base_mass_weighted_norm_ratio": 0.9593099062752727,
+    "candidate_to_base_maximum_cell_norm_ratio": 0.9943579111706082
+  },
+  "decision": {
+    "formal_h_he_feedback_pair_passed": true,
+    "finite_trial_accepted_as_one_nonlinear_step": true,
+    "finite_trial_rejected": false,
+    "static_approximation_rejected_from_one_failed_trial": false,
+    "dynamic_nlte_solution_accepted": false,
+    "phase4_replacement": false,
+    "real_line_formation": false
+  },
+  "fresh_ratios": {
+    "previous": {
+      "previous": {
+        "l2": 0.9803408878349856,
+        "mass_weighted": 0.9611368401243062,
+        "maximum_cell": 0.9938903779234773
+      },
+      "final": {
+        "l2": 0.9803784546981837,
+        "mass_weighted": 0.9613748219470228,
+        "maximum_cell": 0.9937916199278026
+      }
+    },
+    "final": {
+      "previous": {
+        "l2": 0.9795917432435302,
+        "mass_weighted": 0.9596359270011393,
+        "maximum_cell": 0.9939701771979118
+      },
+      "final": {
+        "l2": 0.9796292813993545,
+        "mass_weighted": 0.9598735371909876,
+        "maximum_cell": 0.9938714112729758
+      }
+    }
+  },
+  "energy": {
+    "previous": {
+      "nonpositive_cells": 0,
+      "minimum_remaining_erg_g": 9253431069228.076
+    },
+    "final": {
+      "nonpositive_cells": 0,
+      "minimum_remaining_erg_g": 9237653938350.969
+    }
+  },
+  "resources": {
+    "maps": 10,
+    "native_reports": 760,
+    "process_receipts": 760,
+    "native_peak_mib": 3502.16015625,
+    "proc_peak_kib": 3586212
+  },
+  "archive": {
+    "files": 2968,
+    "size_bytes": 93467062,
+    "sha256": "acca3933f3385091aa1d703d11165c3306d2d919f0b91f561c1cf067eb05f2b5"
+  }
+}
