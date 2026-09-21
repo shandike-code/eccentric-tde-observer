@@ -61,3 +61,13 @@ A不通过时绝不创建B；停止信号在A完成后、B开始前也检查。U
 新准备器保留`accepted_step_confirmation.prepare`和`second_outer_step.prepare`的逐项血缘/响应/种子检查，仅显式改源、声明字段和第三步编号；旧源码不改。新增组合状态机和恢复测试。Mac76 passed、4项Linux专用skip；学校须全部通过后才起跑。真实来源预检是batch第一阶段，失败不得进入新map。
 
 改前Mac和学校均保存`outputs/review-20260921/pre-confirm2-to-step3.bundle`；Mac另存`automation-before-confirm2-to-step3.toml`。后续提交ID、Linux测试和作业ID实测后追加。
+
+## 已提交74795
+
+学校Linux80 passed（20.91秒，无skip）；Mac76 passed/4Linux专用skip。代码`dfbab46bf005a5195709bad29c54bbab341f2d0d`在Mac、学校和GitHub三端核验一致后提交。
+
+2026-09-21 18:03:00 CST提交74795，18:03:04在anode17开始，32CPU/128GiB、`qos_stu_cpu_long`、6小时上限（次日00:03:04）。18:03:27为RUNNING，顶层status=`confirmation`、计数0/0，stderr0字节；源重放正在执行，此时不宣称完成。
+
+只读watcher PID1314194，输出`outputs/review-20260921/scheduler-74795/scheduler-terminal.json`及`watch-74795.log`，30秒检查、最长24小时；独立session与关闭标准输入保证不持有SSH管道。Mac启动证据`outputs/review-20260921/scheduler-74795-start.txt`。
+
+已执行：`sbatch --parsable --export=ALL,TDE_RUN=outputs/hpc/confirm2-then-step3-20260921 operations/confirmation_then_outer_step.sbatch`，不要重复提交。进度须同时读取顶层、`confirmation/status.json`及`next-step/status.json`；顶层只在阶段边界刷新，其内部计数可能落后于子状态。完成此次衔接后heartbeat恢复30分钟，阶段自动转换不等待heartbeat。
