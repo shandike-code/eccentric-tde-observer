@@ -1,0 +1,218 @@
+{
+  "rows": [
+    {
+      "exact_nonnegative_step": 1.0,
+      "line_fraction": 1.0,
+      "raw_defect_l2": 0.0014143931553896184,
+      "fresh_defect_l2": 3.1092208023570794e-08,
+      "raw_defect_linf": 1.1142092664027936e-06,
+      "fresh_defect_linf": 1.0225874357353004e-10,
+      "fixed_scale_l2_ratio": 2.1982719518326515e-05,
+      "fixed_scale_linf_ratio": 9.177696385856737e-05,
+      "prediction_error_over_raw_l2": 0.0,
+      "minimum_candidate": 2.1589942816218292e-06,
+      "minimum_mapped": 2.1589942816509244e-06,
+      "checks": {
+        "l2_halved": true,
+        "linf_halved": true,
+        "useful_step": true,
+        "affine_prediction": true,
+        "boundary_not_worse": true,
+        "finite_budget": true,
+        "memory_below_6gib": true,
+        "time_below_20_maps": true
+      },
+      "label": "base",
+      "block_index": 14,
+      "replay": {
+        "field_relative_error": 0.0,
+        "defect_relative_error": 0.0,
+        "array_equal": true
+      },
+      "raw_map_s": 11.436648106202483,
+      "wall_s": 219.40212058182806,
+      "peak_rss_mib": 3160.4921875,
+      "raw_boundary_absolute": 142161025.19881773,
+      "fresh_boundary_absolute": 2418.2912242412567,
+      "gmres_iterations": 16,
+      "gmres_info": 2,
+      "linear_audit_passed": false,
+      "linear_scaled_linf": 0.00014628579572262268,
+      "mean_consistency": 1.122650581983326e-05,
+      "input_block_sha256": "61caaa97fa37fa6f6efcbd37c46c4e074adbffe790f01e8fb761bbee58f577d6",
+      "core_groups": [
+        1792,
+        1920
+      ],
+      "frequency_edges_hz": [
+        354074893955999.06,
+        428899153127610.8
+      ],
+      "eligible_for_further_block_review": true,
+      "global_candidate_written": false,
+      "formal_acceptance_changed": false
+    },
+    {
+      "exact_nonnegative_step": 1.0,
+      "line_fraction": 1.0,
+      "raw_defect_l2": 0.0007549812169434522,
+      "fresh_defect_l2": 7.700154606466343e-05,
+      "raw_defect_linf": 3.395510304407025e-07,
+      "fresh_defect_linf": 1.111185520118619e-07,
+      "fixed_scale_l2_ratio": 0.10199134009771109,
+      "fixed_scale_linf_ratio": 0.3272514056801459,
+      "prediction_error_over_raw_l2": 0.0,
+      "minimum_candidate": 1.515254798902161e-09,
+      "minimum_mapped": 1.515254798902161e-09,
+      "checks": {
+        "l2_halved": true,
+        "linf_halved": true,
+        "useful_step": true,
+        "affine_prediction": true,
+        "boundary_not_worse": true,
+        "finite_budget": true,
+        "memory_below_6gib": true,
+        "time_below_20_maps": true
+      },
+      "label": "base",
+      "block_index": 47,
+      "replay": {
+        "field_relative_error": 0.0,
+        "defect_relative_error": 0.0,
+        "array_equal": true
+      },
+      "raw_map_s": 12.219228046946228,
+      "wall_s": 233.63835601694882,
+      "peak_rss_mib": 3204.875,
+      "raw_boundary_absolute": 2.861779648810625e-07,
+      "fresh_boundary_absolute": 4.307366907596588e-09,
+      "gmres_iterations": 16,
+      "gmres_info": 2,
+      "linear_audit_passed": false,
+      "linear_scaled_linf": 0.33998030619199393,
+      "mean_consistency": 0.00531051139750559,
+      "input_block_sha256": "7e0ea45a80bc22d71099aed5ebfbf99bd4d6e2e0f56c6d2b1bf2b7352ba58c56",
+      "core_groups": [
+        6016,
+        6144
+      ],
+      "frequency_edges_hz": [
+        6755956892516581.0,
+        7547722272133845.0
+      ],
+      "eligible_for_further_block_review": true,
+      "global_candidate_written": false,
+      "formal_acceptance_changed": false
+    },
+    {
+      "exact_nonnegative_step": 1.0,
+      "line_fraction": 1.0,
+      "raw_defect_l2": 0.00018986473282454197,
+      "fresh_defect_l2": 4.936828502494471e-09,
+      "raw_defect_linf": 1.0414234226168665e-07,
+      "fresh_defect_linf": 1.3524609166967738e-11,
+      "fixed_scale_l2_ratio": 2.6001819448252662e-05,
+      "fixed_scale_linf_ratio": 0.0001298665737033587,
+      "prediction_error_over_raw_l2": 0.0,
+      "minimum_candidate": 2.1650045568411e-06,
+      "minimum_mapped": 2.165004556837428e-06,
+      "checks": {
+        "l2_halved": true,
+        "linf_halved": true,
+        "useful_step": true,
+        "affine_prediction": true,
+        "boundary_not_worse": true,
+        "finite_budget": true,
+        "memory_below_6gib": true,
+        "time_below_20_maps": true
+      },
+      "label": "trial",
+      "block_index": 14,
+      "replay": {
+        "field_relative_error": 0.0,
+        "defect_relative_error": 0.0,
+        "array_equal": true
+      },
+      "raw_map_s": 11.425202256068587,
+      "wall_s": 218.67880326602608,
+      "peak_rss_mib": 3160.31640625,
+      "raw_boundary_absolute": 13245377.108589172,
+      "fresh_boundary_absolute": 349.4250750541687,
+      "gmres_iterations": 16,
+      "gmres_info": 2,
+      "linear_audit_passed": false,
+      "linear_scaled_linf": 0.00015887893821675547,
+      "mean_consistency": 1.6670906746108097e-05,
+      "input_block_sha256": "7cc2ee7d826a39b8392a26418b016b67c4c395075fcf2b60b309f3fc9d652748",
+      "core_groups": [
+        1792,
+        1920
+      ],
+      "frequency_edges_hz": [
+        354074893955999.06,
+        428899153127610.8
+      ],
+      "eligible_for_further_block_review": true,
+      "global_candidate_written": false,
+      "formal_acceptance_changed": false
+    },
+    {
+      "exact_nonnegative_step": 1.0,
+      "line_fraction": 1.0,
+      "raw_defect_l2": 0.0005587478804306591,
+      "fresh_defect_l2": 5.531823786518855e-05,
+      "raw_defect_linf": 2.4611629022633363e-07,
+      "fresh_defect_linf": 6.240642688379316e-08,
+      "fixed_scale_l2_ratio": 0.09900393326333803,
+      "fixed_scale_linf_ratio": 0.253564795838597,
+      "prediction_error_over_raw_l2": 0.0,
+      "minimum_candidate": 1.5278887400754537e-09,
+      "minimum_mapped": 1.5278887400754537e-09,
+      "checks": {
+        "l2_halved": true,
+        "linf_halved": true,
+        "useful_step": true,
+        "affine_prediction": true,
+        "boundary_not_worse": true,
+        "finite_budget": true,
+        "memory_below_6gib": true,
+        "time_below_20_maps": true
+      },
+      "label": "trial",
+      "block_index": 47,
+      "replay": {
+        "field_relative_error": 0.0,
+        "defect_relative_error": 0.0,
+        "array_equal": true
+      },
+      "raw_map_s": 12.331106443889439,
+      "wall_s": 235.91271108482033,
+      "peak_rss_mib": 3204.9296875,
+      "raw_boundary_absolute": 0.0,
+      "fresh_boundary_absolute": 0.0,
+      "gmres_iterations": 16,
+      "gmres_info": 2,
+      "linear_audit_passed": false,
+      "linear_scaled_linf": 0.31821882568406035,
+      "mean_consistency": 0.002105572098530374,
+      "input_block_sha256": "677e7916b9424d6974bda268c7e8c9aec5378bbc1b49cf7ee12aedf63630f955",
+      "core_groups": [
+        6016,
+        6144
+      ],
+      "frequency_edges_hz": [
+        6755956892516581.0,
+        7547722272133845.0
+      ],
+      "eligible_for_further_block_review": true,
+      "global_candidate_written": false,
+      "formal_acceptance_changed": false
+    }
+  ],
+  "all_four_local_cases_passed": true,
+  "new_full_maps": 0,
+  "new_feedback_pairs": 0,
+  "formal_acceptance_changed": false,
+  "full_frequency_run_authorized_by_this_pilot": false,
+  "source_bytes_unchanged": true
+}

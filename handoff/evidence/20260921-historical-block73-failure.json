@@ -1,0 +1,31 @@
+{
+  "source": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/phase7b9u_block73_failure_capture_summary.json",
+  "sha256": "3b3ac0827920e0e41471d2783bbcc974f42b963828578a7c5b5c821deb9084a8",
+  "summary": {
+    "phase": "7B9u Phase 7B9t block-73 failure capture",
+    "classification": "[V]+[O]",
+    "phase7b9t_protocol_sha256": "02c27157b13810ae4d6579331515a4da3b69e25560e5be02a58ef14f37ed6fb4",
+    "stopped_manifest_sha256_before_replay": "59bb142928e92115699042a5fd8c43de555ece14333ad33e23206be0a9782b78",
+    "completed_blocks_before_replay": 73,
+    "replayed_block_index": 73,
+    "return_code": 1,
+    "expected_exception": "PhysicalDomainError: no positive affine step preserves non-negativity",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/scripts/phase7b9t_full_frequency_krylov_map.py\", line 472, in <module>\n    main()\n  File \"/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/scripts/phase7b9t_full_frequency_krylov_map.py\", line 459, in main\n    _run_one_worker(\n  File \"/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/scripts/phase7b9t_full_frequency_krylov_map.py\", line 147, in _run_one_worker\n    worker._run_worker(\n  File \"/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/scripts/phase7b9r_full_source_krylov_line_search.py\", line 208, in _run_worker\n    endpoint_positive_step = exact_nonnegative_affine_step(initial, direction)\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/src/eccentric_tde_observer/affine_krylov.py\", line 252, in exact_nonnegative_affine_step\n    raise PhysicalDomainError(\"no positive affine step preserves non-negativity\")\neccentric_tde_observer.source.PhysicalDomainError: no positive affine step preserves non-negativity\n",
+    "stdout": "",
+    "worker_report_absent": true,
+    "candidate_group_start": 9344,
+    "candidate_group_stop": 9472,
+    "candidate_block_sha256_before": "bd76af0327b3a3a463bdb203016441e1f9061233f2f557f51525c65130a5fac4",
+    "candidate_block_sha256_after": "bd76af0327b3a3a463bdb203016441e1f9061233f2f557f51525c65130a5fac4",
+    "candidate_block_not_written_before_exception": true,
+    "failure_reproduced": true,
+    "wall_runtime_s": 85.27895304095,
+    "decision": {
+      "phase7b9t_full_map_passed": false,
+      "unconstrained_affine_krylov_tail_rejected": true,
+      "positive_domain_solver_redesign_required": true,
+      "global_candidate_residual_authorized": false,
+      "material_feedback_authorized": false
+    }
+  }
+}

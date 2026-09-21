@@ -1,0 +1,62 @@
+{
+  "source_sha256": "91812ae368b41a2df0921a3840e5dca4630c7591278183d950c229526cdb2cb0",
+  "cases": [
+    {
+      "case": "base/14",
+      "l2_ratio": 2.1982719518326515e-05,
+      "linf_ratio": 9.177696385856737e-05,
+      "positive_step": 1.0,
+      "line_fraction": 1.0,
+      "interior_affinity_tested": false,
+      "linear_audit_passed": false,
+      "gmres_info": 2,
+      "wall_s": 219.40212058182806,
+      "peak_rss_mib": 3160.4921875,
+      "time_over_one_map": 19.184127949415426,
+      "boundary_ratio": 1.7010929830163943e-05
+    },
+    {
+      "case": "base/47",
+      "l2_ratio": 0.10199134009771109,
+      "linf_ratio": 0.3272514056801459,
+      "positive_step": 1.0,
+      "line_fraction": 1.0,
+      "interior_affinity_tested": false,
+      "linear_audit_passed": false,
+      "gmres_info": 2,
+      "wall_s": 233.63835601694882,
+      "peak_rss_mib": 3204.875,
+      "time_over_one_map": 19.12054960585981,
+      "boundary_ratio": 0.015051357673141462
+    },
+    {
+      "case": "trial/14",
+      "l2_ratio": 2.6001819448252662e-05,
+      "linf_ratio": 0.0001298665737033587,
+      "positive_step": 1.0,
+      "line_fraction": 1.0,
+      "interior_affinity_tested": false,
+      "linear_audit_passed": false,
+      "gmres_info": 2,
+      "wall_s": 218.67880326602608,
+      "peak_rss_mib": 3160.31640625,
+      "time_over_one_map": 19.14003781857543,
+      "boundary_ratio": 2.6380908009601215e-05
+    },
+    {
+      "case": "trial/47",
+      "l2_ratio": 0.09900393326333803,
+      "linf_ratio": 0.253564795838597,
+      "positive_step": 1.0,
+      "line_fraction": 1.0,
+      "interior_affinity_tested": false,
+      "linear_audit_passed": false,
+      "gmres_info": 2,
+      "wall_s": 235.91271108482033,
+      "peak_rss_mib": 3204.9296875,
+      "time_over_one_map": 19.131512014619304,
+      "boundary_ratio": null
+    }
+  ],
+  "interpretation": "Local fixed-halo gains only; no converged linear or global atmosphere solution."
+}
