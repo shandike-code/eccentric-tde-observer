@@ -1,0 +1,14 @@
+{
+  "control": {
+    "feedback_endpoints_and_76_partials_verified": true,
+    "native_identity_verified": true
+  },
+  "confirm2": {
+    "feedback_endpoints_and_76_partials_verified": true,
+    "native_identity_verified": true
+  },
+  "confirm4": {
+    "feedback_endpoints_and_76_partials_verified": true,
+    "native_identity_verified": true
+  }
+}
