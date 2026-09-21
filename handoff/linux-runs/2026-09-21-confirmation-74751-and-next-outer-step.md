@@ -61,3 +61,13 @@ $$
 Mac 64 passed、4项Linux专用skip：新基态/分母/方向/物理旧时间、篡改、恢复接口、正式轮次端到端路径、总预算、反馈优先、接受即停、原信号及内存守卫。Linux专用项须学校端通过后才提交。真实源重放作为allocation内第一阶段，失败不能开始map。提交信息随后追加，不预写虚构job ID。
 
 POST-RUN：74751无NaN/Inf、无负强度、无正气体热能失败，所有原门/对照/资源证据一致。加热与噪声改善、最差单元比值略升均如实保留。一个接受物质步及同态精度确认成立，完整耦合柱与观测强度尚未成立。
+
+## 已提交74760
+
+学校Linux为68 passed（20.40秒，无skip），包括4项Linux专用资源/信号测试。实际执行代码`139bdf3b3f9df9d6ca85d26d0288c20b649a830a`在Mac、学校和GitHub逐一核对一致，之后才提交。
+
+作业74760于2026-09-21 16:58:49 CST提交，16:58:50在anode17开始，32CPU/128GiB、`qos_stu_cpu_long`、4小时上限（20:58:50）。16:59:58观察为`RUNNING`，父`preparing`，0map/0pair、stderr0字节。源哈希/真实重放尚在执行，不提前宣称新源预检通过。
+
+只读调度终态watcher PID403561，30秒检查、最长24小时，输出`outputs/review-20260921/scheduler-74760/scheduler-terminal.json`；它不提交/取消任务。Mac启动证据为`outputs/review-20260921/scheduler-74760-start.txt`。启动watcher的首个SSH子会话持有管道，关闭了该本地子会话；共享SSH master与Slurm作业未重启。后续SSH查询正常。
+
+提交命令：`sbatch --parsable --export=ALL,TDE_RUN=outputs/hpc/outer-step2-20260921 operations/second_outer_step.sbatch`。当前已运行，不能重复提交。恢复前先查队列、源声明及pending状态，区分预算用尽、科学拒绝、程序/资源故障和调度中断。
