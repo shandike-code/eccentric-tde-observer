@@ -1,0 +1,240 @@
+{
+  "verified_files": 3136,
+  "candidate": "full",
+  "round": 1,
+  "formal_gates": {
+    "last_two_photoionization_pass": true,
+    "last_two_total_recombination_pass": true,
+    "last_two_atomic_heating_pass": false,
+    "last_two_direct_heating_pass": false,
+    "last_two_formal_heating_pass": false,
+    "inner_noise_resolved_pass": false,
+    "candidate_l2_contraction_pass": true,
+    "candidate_mass_weighted_contraction_pass": true,
+    "candidate_maximum_cell_contraction_pass": true,
+    "two_formal_feedback_states_pass": true,
+    "two_inner_radiation_residuals_pass": false,
+    "two_boundary_spectra_pass": true,
+    "two_boundary_bolometric_pass": true,
+    "candidate_state_bytes_pass": true,
+    "population_nonnegative_pass": true,
+    "all_residual_components_finite_pass": true
+  },
+  "formal_comparison": {
+    "photoionization_volume_l1": [
+      1.9100737504363623e-05,
+      1.797118908678775e-05,
+      1.06813748782681e-06
+    ],
+    "total_recombination_volume_l1": [
+      7.487796722083067e-07,
+      1.6997383393667955e-08,
+      6.305566982086205e-12
+    ],
+    "atomic_heating_volume_l1": 0.0014091740453402106,
+    "direct_heating_volume_l1": 0.0014091740453389466,
+    "formal_heating_volume_l1": 0.0014091726474762584,
+    "inner_noise_to_trial_signal_l2_ratio": 0.1802687657180313,
+    "candidate_to_base_residual_l2_ratio": 0.9764151511137789,
+    "candidate_to_base_mass_weighted_norm_ratio": 0.9688676154275077,
+    "candidate_to_base_maximum_cell_norm_ratio": 0.987127623914311
+  },
+  "accepted": false,
+  "base_norms": {
+    "l2": 14.062104181842878,
+    "mass_weighted": 0.5218826983215736,
+    "maximum_cell": 3.353634586583867
+  },
+  "candidate_norms": {
+    "l2": 13.730451579691811,
+    "mass_weighted": 0.5056352454556964,
+    "maximum_cell": 3.310465340931385
+  },
+  "fresh_control_ratios": {
+    "previous": {
+      "previous": {
+        "l2": 0.9807538116975482,
+        "mass_weighted": 0.9748207640925691,
+        "maximum_cell": 0.9878943020156088
+      },
+      "final": {
+        "l2": 0.9805126929369244,
+        "mass_weighted": 0.9743841994146522,
+        "maximum_cell": 0.9878533764876573
+      }
+    },
+    "final": {
+      "previous": {
+        "l2": 0.9762133099031013,
+        "mass_weighted": 0.9685077989340614,
+        "maximum_cell": 0.9870826111937014
+      },
+      "final": {
+        "l2": 0.9759733074268624,
+        "mass_weighted": 0.9680740614605933,
+        "maximum_cell": 0.9870417192916908
+      }
+    }
+  },
+  "endpoints": {
+    "previous": {
+      "iteration": 3,
+      "input_path": "outputs/hpc/step7-amplitude-20260922/full/state_2.dat",
+      "input_sha256": "a45a81922f41e8e9dc9b7923dab595913499f472a0eee6f67bd8f9787ddd4c89",
+      "output_path": "outputs/hpc/step7-amplitude-20260922/full/state_0.dat",
+      "output_sha256": "8c6574f1cf515e7fb28eda9485546fa8f337528792b3ec4a906ece0186b14a81",
+      "wall_s": 177.00558612402529,
+      "residual": 0.00017318016637865325,
+      "boundary_l1": 0.00034360738157910225,
+      "boundary_bolometric": 0.00026637281323952077,
+      "maximum_worker_rss_mib": 3500.2265625
+    },
+    "final": {
+      "iteration": 4,
+      "input_path": "outputs/hpc/step7-amplitude-20260922/full/state_0.dat",
+      "input_sha256": "8c6574f1cf515e7fb28eda9485546fa8f337528792b3ec4a906ece0186b14a81",
+      "output_path": "outputs/hpc/step7-amplitude-20260922/full/state_1.dat",
+      "output_sha256": "839f7e8e7f3431b84c47664b8a2efbbbc3de2fa50d3836e3f85e3dce5b37c5bc",
+      "wall_s": 157.21778544411063,
+      "residual": 0.0001340857722937778,
+      "boundary_l1": 0.00029773009171779797,
+      "boundary_bolometric": 0.00025395068247027394,
+      "maximum_worker_rss_mib": 3500.265625
+    }
+  },
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/step7-amplitude-20260922/full/state_0.dat",
+      "input_sha256": "be3d7fb36ef3232eba504a676042e89b3e424afdd0fbcd0b1ce6b8010c6ae946",
+      "output_path": "outputs/hpc/step7-amplitude-20260922/full/state_1.dat",
+      "output_sha256": "d855133b1e40fddd9a04bcbf007e5a7642d012c30c2468173fe9fe7f61e62fad",
+      "wall_s": 166.00183923635632,
+      "residual": 0.0002994032566588134,
+      "boundary_l1": 0.000520092914662202,
+      "boundary_bolometric": 0.0002877953274614791,
+      "maximum_worker_rss_mib": 3500.18359375
+    },
+    {
+      "iteration": 2,
+      "input_path": "outputs/hpc/step7-amplitude-20260922/full/state_1.dat",
+      "input_sha256": "d855133b1e40fddd9a04bcbf007e5a7642d012c30c2468173fe9fe7f61e62fad",
+      "output_path": "outputs/hpc/step7-amplitude-20260922/full/state_2.dat",
+      "output_sha256": "a45a81922f41e8e9dc9b7923dab595913499f472a0eee6f67bd8f9787ddd4c89",
+      "wall_s": 163.95551566127688,
+      "residual": 0.00022502868533155876,
+      "boundary_l1": 0.0004125857793351564,
+      "boundary_bolometric": 0.00027131697906462556,
+      "maximum_worker_rss_mib": 3499.53125
+    },
+    {
+      "iteration": 3,
+      "input_path": "outputs/hpc/step7-amplitude-20260922/full/state_2.dat",
+      "input_sha256": "a45a81922f41e8e9dc9b7923dab595913499f472a0eee6f67bd8f9787ddd4c89",
+      "output_path": "outputs/hpc/step7-amplitude-20260922/full/state_0.dat",
+      "output_sha256": "8c6574f1cf515e7fb28eda9485546fa8f337528792b3ec4a906ece0186b14a81",
+      "wall_s": 177.00558612402529,
+      "residual": 0.00017318016637865325,
+      "boundary_l1": 0.00034360738157910225,
+      "boundary_bolometric": 0.00026637281323952077,
+      "maximum_worker_rss_mib": 3500.2265625
+    },
+    {
+      "iteration": 4,
+      "input_path": "outputs/hpc/step7-amplitude-20260922/full/state_0.dat",
+      "input_sha256": "8c6574f1cf515e7fb28eda9485546fa8f337528792b3ec4a906ece0186b14a81",
+      "output_path": "outputs/hpc/step7-amplitude-20260922/full/state_1.dat",
+      "output_sha256": "839f7e8e7f3431b84c47664b8a2efbbbc3de2fa50d3836e3f85e3dce5b37c5bc",
+      "wall_s": 157.21778544411063,
+      "residual": 0.0001340857722937778,
+      "boundary_l1": 0.00029773009171779797,
+      "boundary_bolometric": 0.00025395068247027394,
+      "maximum_worker_rss_mib": 3500.265625
+    },
+    {
+      "iteration": 5,
+      "input_path": "outputs/hpc/step7-amplitude-20260922/full/state_1.dat",
+      "input_sha256": "839f7e8e7f3431b84c47664b8a2efbbbc3de2fa50d3836e3f85e3dce5b37c5bc",
+      "output_path": "outputs/hpc/step7-amplitude-20260922/full/state_2.dat",
+      "output_sha256": "139fa795be65843daf812d2c241e334a44d9cf230ee8b5d176e357b106546ede",
+      "wall_s": 164.22305494360626,
+      "residual": 0.00010534403126051776,
+      "boundary_l1": 0.00026553918012100954,
+      "boundary_bolometric": 0.00023938775155732693,
+      "maximum_worker_rss_mib": 3501.890625
+    },
+    {
+      "iteration": 6,
+      "input_path": "outputs/hpc/step7-amplitude-20260922/full/state_2.dat",
+      "input_sha256": "139fa795be65843daf812d2c241e334a44d9cf230ee8b5d176e357b106546ede",
+      "output_path": "outputs/hpc/step7-amplitude-20260922/full/state_0.dat",
+      "output_sha256": "fbb4de5cb359d151623c3826414c128277897bb54a78bd9957d38cda021c2716",
+      "wall_s": 165.17712864652276,
+      "residual": 8.314683315639796e-05,
+      "boundary_l1": 0.0002413788676973044,
+      "boundary_bolometric": 0.00022490267408098222,
+      "maximum_worker_rss_mib": 3501.859375
+    },
+    {
+      "iteration": 7,
+      "input_path": "outputs/hpc/step7-amplitude-20260922/full/state_0.dat",
+      "input_sha256": "fbb4de5cb359d151623c3826414c128277897bb54a78bd9957d38cda021c2716",
+      "output_path": "outputs/hpc/step7-amplitude-20260922/full/state_1.dat",
+      "output_sha256": "29b66d8a785399d3aac288d75c9aa6dda375f43bfb79bb4ac49f7f9e4874886d",
+      "wall_s": 165.04213280510157,
+      "residual": 6.626721387740336e-05,
+      "boundary_l1": 0.00022216942879451203,
+      "boundary_bolometric": 0.00021127292290752274,
+      "maximum_worker_rss_mib": 3501.78125
+    },
+    {
+      "iteration": 8,
+      "input_path": "outputs/hpc/step7-amplitude-20260922/full/state_1.dat",
+      "input_sha256": "29b66d8a785399d3aac288d75c9aa6dda375f43bfb79bb4ac49f7f9e4874886d",
+      "output_path": "outputs/hpc/step7-amplitude-20260922/full/state_2.dat",
+      "output_sha256": "9f57694c0f0109f83afb4041f337fa921000a8a211775a88b4c0585680dcc325",
+      "wall_s": 171.73153583146632,
+      "residual": 5.313404840707381e-05,
+      "boundary_l1": 0.00020620879503926458,
+      "boundary_bolometric": 0.0001986926934457836,
+      "maximum_worker_rss_mib": 3502.64453125
+    }
+  ],
+  "new_denominator_verified": true,
+  "gas_domain": {
+    "previous": {
+      "failed_cells": 0,
+      "min_gas_erg_g": 8036992794398.836
+    },
+    "final": {
+      "failed_cells": 0,
+      "min_gas_erg_g": 8033217248713.02
+    }
+  },
+  "resources": {
+    "map_reports": 760,
+    "process_receipts": 1216,
+    "native_peak_mib": 3502.64453125,
+    "proc_peak_kib": 4039560
+  },
+  "physical_response_replayed": false,
+  "true_error_bound": false,
+  "coupled_column_accepted": false,
+  "outer_iteration": {
+    "index": 7,
+    "source": "outputs/hpc/outer-steps456-20260921/final-confirmation/confirm4",
+    "base_is_accepted_trial": true,
+    "physical_time_advanced": false,
+    "replaced_historical_denominator": {
+      "path": "outputs/phase7b9f_base_material_residual.npy",
+      "size_bytes": 4224,
+      "sha256": "217e7fec52ad506214cc997ebe074fac0433700bb84eaeac4bba24a7da55fa3b"
+    },
+    "direction_is_frozen_response_at_new_base": true
+  },
+  "formal_denominator": {
+    "path": "outputs/hpc/step7-amplitude-20260922/base_residual.npy",
+    "size_bytes": 4224,
+    "sha256": "f43b3cf5e790f29856ca20ad43c16af213908f3f82ba6785dc58bfef043e524e"
+  }
+}
