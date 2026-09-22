@@ -1,0 +1,240 @@
+{
+  "verified_files": 3135,
+  "candidate": "full",
+  "round": 2,
+  "formal_gates": {
+    "last_two_photoionization_pass": true,
+    "last_two_total_recombination_pass": true,
+    "last_two_atomic_heating_pass": true,
+    "last_two_direct_heating_pass": true,
+    "last_two_formal_heating_pass": true,
+    "inner_noise_resolved_pass": true,
+    "candidate_l2_contraction_pass": true,
+    "candidate_mass_weighted_contraction_pass": true,
+    "candidate_maximum_cell_contraction_pass": true,
+    "two_formal_feedback_states_pass": true,
+    "two_inner_radiation_residuals_pass": true,
+    "two_boundary_spectra_pass": true,
+    "two_boundary_bolometric_pass": true,
+    "candidate_state_bytes_pass": true,
+    "population_nonnegative_pass": true,
+    "all_residual_components_finite_pass": true
+  },
+  "formal_comparison": {
+    "photoionization_volume_l1": [
+      3.3188915226667916e-06,
+      1.0577856771488868e-05,
+      1.2745295296787838e-08
+    ],
+    "total_recombination_volume_l1": [
+      1.4684503565186031e-07,
+      8.747054716648475e-09,
+      2.867497051019378e-14
+    ],
+    "atomic_heating_volume_l1": 0.00039928691502505795,
+    "direct_heating_volume_l1": 0.0003992869150266154,
+    "formal_heating_volume_l1": 0.00039928655012327354,
+    "inner_noise_to_trial_signal_l2_ratio": 0.04713300721568577,
+    "candidate_to_base_residual_l2_ratio": 0.9433654022879482,
+    "candidate_to_base_mass_weighted_norm_ratio": 0.9296903137386107,
+    "candidate_to_base_maximum_cell_norm_ratio": 0.973565819197
+  },
+  "accepted": true,
+  "base_norms": {
+    "l2": 11.39228875306176,
+    "mass_weighted": 0.3950337756570978,
+    "maximum_cell": 3.060316369056872
+  },
+  "candidate_norms": {
+    "l2": 10.747091062512572,
+    "mass_weighted": 0.3672590748279952,
+    "maximum_cell": 2.979419412842842
+  },
+  "fresh_control_ratios": {
+    "previous": {
+      "previous": {
+        "l2": 0.9442156175293112,
+        "mass_weighted": 0.9310102242795104,
+        "maximum_cell": 0.9733247092702089
+      },
+      "final": {
+        "l2": 0.9438642440359849,
+        "mass_weighted": 0.9305362657561389,
+        "maximum_cell": 0.9732131334119679
+      }
+    },
+    "final": {
+      "previous": {
+        "l2": 0.9430987471310616,
+        "mass_weighted": 0.9293619650627533,
+        "maximum_cell": 0.9734425697980343
+      },
+      "final": {
+        "l2": 0.9427477892617159,
+        "mass_weighted": 0.9288888456348977,
+        "maximum_cell": 0.9733309804289993
+      }
+    }
+  },
+  "endpoints": {
+    "previous": {
+      "iteration": 7,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_0.dat",
+      "input_sha256": "db144d2757d272aecd379f93212fdfd425a3f461d6b87db3ad0973881893c783",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_1.dat",
+      "output_sha256": "26a89a72e2472ecac3f4cffb7e94e017458a77bfb11a5232d4e110eca4c2ecc6",
+      "wall_s": 132.76231154985726,
+      "residual": 5.562851412298387e-05,
+      "boundary_l1": 0.00039917071087553293,
+      "boundary_bolometric": 0.0003815904834000001,
+      "maximum_worker_rss_mib": 3502.703125
+    },
+    "final": {
+      "iteration": 8,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_1.dat",
+      "input_sha256": "26a89a72e2472ecac3f4cffb7e94e017458a77bfb11a5232d4e110eca4c2ecc6",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_2.dat",
+      "output_sha256": "7763fd5cfd69df046e349ddb8cc8597eee435dc614f96e88cf2a2936f541544e",
+      "wall_s": 133.38668045122176,
+      "residual": 5.23707553740147e-05,
+      "boundary_l1": 0.0003670984685082796,
+      "boundary_bolometric": 0.0003552589140095361,
+      "maximum_worker_rss_mib": 3500.671875
+    }
+  },
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_0.dat",
+      "input_sha256": "c7d7f97c0708d157955f0092883e3a89a275935a68a58089c11bef22c4d454f6",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_1.dat",
+      "output_sha256": "c2603ed4529539a0342f1ba31cb456ebfdd0faa007757f3a3c1838bc23799d1c",
+      "wall_s": 142.9534469516948,
+      "residual": 0.00033471797233015427,
+      "boundary_l1": 0.0009363074166471757,
+      "boundary_bolometric": 0.000569559068879996,
+      "maximum_worker_rss_mib": 3502.23828125
+    },
+    {
+      "iteration": 2,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_1.dat",
+      "input_sha256": "c2603ed4529539a0342f1ba31cb456ebfdd0faa007757f3a3c1838bc23799d1c",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_2.dat",
+      "output_sha256": "d3447ffee11bb1d9a6cb7ecce4dbf9198e7e036c04a18da7a76eb6a63c916ec7",
+      "wall_s": 133.9721608608961,
+      "residual": 0.00024018796786178933,
+      "boundary_l1": 0.0007522125884574779,
+      "boundary_bolometric": 0.0005201928625536431,
+      "maximum_worker_rss_mib": 3501.3125
+    },
+    {
+      "iteration": 3,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_2.dat",
+      "input_sha256": "d3447ffee11bb1d9a6cb7ecce4dbf9198e7e036c04a18da7a76eb6a63c916ec7",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_0.dat",
+      "output_sha256": "6f4859bc6b091b6eae4863c8596c2d29802603ad6e6cfbf1df7ee10c520e8a56",
+      "wall_s": 137.92364200297743,
+      "residual": 0.0001741399916706599,
+      "boundary_l1": 0.0006299904105084484,
+      "boundary_bolometric": 0.0005016284332106745,
+      "maximum_worker_rss_mib": 3504.97265625
+    },
+    {
+      "iteration": 4,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_0.dat",
+      "input_sha256": "6f4859bc6b091b6eae4863c8596c2d29802603ad6e6cfbf1df7ee10c520e8a56",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_1.dat",
+      "output_sha256": "f061bf85db611d77a5f445b7a8ce18a1cdc7c605b47209286b89c910e4cf3a26",
+      "wall_s": 137.58233571238816,
+      "residual": 0.00012660098021389563,
+      "boundary_l1": 0.0005456430526447815,
+      "boundary_bolometric": 0.00047259429298328163,
+      "maximum_worker_rss_mib": 3500.94140625
+    },
+    {
+      "iteration": 5,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_1.dat",
+      "input_sha256": "f061bf85db611d77a5f445b7a8ce18a1cdc7c605b47209286b89c910e4cf3a26",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_2.dat",
+      "output_sha256": "630248071f410b93085b275aa5a114d49834a8b704257e5a7196eab1f171d3f4",
+      "wall_s": 141.42819684464484,
+      "residual": 9.221759890239328e-05,
+      "boundary_l1": 0.000484462057177646,
+      "boundary_bolometric": 0.0004410001157622185,
+      "maximum_worker_rss_mib": 3505.0625
+    },
+    {
+      "iteration": 6,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_2.dat",
+      "input_sha256": "630248071f410b93085b275aa5a114d49834a8b704257e5a7196eab1f171d3f4",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_0.dat",
+      "output_sha256": "db144d2757d272aecd379f93212fdfd425a3f461d6b87db3ad0973881893c783",
+      "wall_s": 139.21784764435142,
+      "residual": 6.728341534818515e-05,
+      "boundary_l1": 0.0004373333048723646,
+      "boundary_bolometric": 0.0004102635601011454,
+      "maximum_worker_rss_mib": 3503.67578125
+    },
+    {
+      "iteration": 7,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_0.dat",
+      "input_sha256": "db144d2757d272aecd379f93212fdfd425a3f461d6b87db3ad0973881893c783",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_1.dat",
+      "output_sha256": "26a89a72e2472ecac3f4cffb7e94e017458a77bfb11a5232d4e110eca4c2ecc6",
+      "wall_s": 132.76231154985726,
+      "residual": 5.562851412298387e-05,
+      "boundary_l1": 0.00039917071087553293,
+      "boundary_bolometric": 0.0003815904834000001,
+      "maximum_worker_rss_mib": 3502.703125
+    },
+    {
+      "iteration": 8,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_1.dat",
+      "input_sha256": "26a89a72e2472ecac3f4cffb7e94e017458a77bfb11a5232d4e110eca4c2ecc6",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/state_2.dat",
+      "output_sha256": "7763fd5cfd69df046e349ddb8cc8597eee435dc614f96e88cf2a2936f541544e",
+      "wall_s": 133.38668045122176,
+      "residual": 5.23707553740147e-05,
+      "boundary_l1": 0.0003670984685082796,
+      "boundary_bolometric": 0.0003552589140095361,
+      "maximum_worker_rss_mib": 3500.671875
+    }
+  ],
+  "new_denominator_verified": true,
+  "gas_domain": {
+    "previous": {
+      "failed_cells": 0,
+      "min_gas_erg_g": 5962003546352.109
+    },
+    "final": {
+      "failed_cells": 0,
+      "min_gas_erg_g": 6008646736195.521
+    }
+  },
+  "resources": {
+    "map_reports": 760,
+    "process_receipts": 1216,
+    "native_peak_mib": 3505.16796875,
+    "proc_peak_kib": 4041960
+  },
+  "physical_response_replayed": false,
+  "true_error_bound": false,
+  "coupled_column_accepted": false,
+  "outer_iteration": {
+    "index": 13,
+    "source": "outputs/hpc/outer-steps13to15-20260922/step13/confirmation/confirm4",
+    "base_is_accepted_trial": true,
+    "physical_time_advanced": false,
+    "replaced_historical_denominator": {
+      "path": "outputs/phase7b9f_base_material_residual.npy",
+      "size_bytes": 4224,
+      "sha256": "217e7fec52ad506214cc997ebe074fac0433700bb84eaeac4bba24a7da55fa3b"
+    },
+    "direction_is_frozen_response_at_new_base": true
+  },
+  "formal_denominator": {
+    "path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/base_residual.npy",
+    "size_bytes": 4224,
+    "sha256": "db667179e3d93c0ecd86c1b31c8f3cc23b8a223be0c9bffeda27b8cb14942d03"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "actual_alpha": 0.015625,
+  "step_index": 13,
+  "exact_encoded_displacement": true,
+  "native": {
+    "control": {
+      "passed": true,
+      "trial": {
+        "path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/control/trial_material.npz",
+        "size_bytes": 27774,
+        "sha256": "736f8b5b6274c29337cde50a23693c2d87f53b9f8c227474b4f3bc7518012117"
+      },
+      "native": {
+        "trial_source": {
+          "path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/control/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "736f8b5b6274c29337cde50a23693c2d87f53b9f8c227474b4f3bc7518012117"
+        },
+        "native_mirrored_material_exact": true,
+        "physical_phase_and_dt_exact": true
+      }
+    },
+    "full": {
+      "passed": true,
+      "trial": {
+        "path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/trial_material.npz",
+        "size_bytes": 27774,
+        "sha256": "4891610f8139a3ee84f5d5f322b2832e8ea4e040b48ee6e8979a1b0d6f525896"
+      },
+      "native": {
+        "trial_source": {
+          "path": "outputs/hpc/outer-steps13to15-20260922/step13/next-step/full/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "4891610f8139a3ee84f5d5f322b2832e8ea4e040b48ee6e8979a1b0d6f525896"
+        },
+        "native_mirrored_material_exact": true,
+        "physical_phase_and_dt_exact": true
+      }
+    }
+  },
+  "rounds": {
+    "1": {
+      "all_original_gates": false,
+      "failed_gates": [
+        "last_two_atomic_heating_pass",
+        "last_two_direct_heating_pass",
+        "last_two_formal_heating_pass",
+        "inner_noise_resolved_pass",
+        "two_inner_radiation_residuals_pass"
+      ],
+      "fresh_4x3_complete_finite_contraction": true,
+      "fresh_final_final": {
+        "l2": 0.9545738697012061,
+        "mass_weighted": 0.9454789463886711,
+        "maximum_cell": 0.9737994825022652
+      }
+    },
+    "2": {
+      "all_original_gates": true,
+      "failed_gates": [],
+      "fresh_4x3_complete_finite_contraction": true,
+      "fresh_final_final": {
+        "l2": 0.9427477892617159,
+        "mass_weighted": 0.9288888456348977,
+        "maximum_cell": 0.9733309804289993
+      }
+    }
+  }
+}
