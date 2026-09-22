@@ -54,3 +54,11 @@ Key Issues:
 Decision: RUN — 学校同组测试通过、Git同步及来源检查完成后提交。
 
 POST-RUN CHECK（已完成第八步）：有限性、正值、三范数、全门、新控制、内存、终态和工件完整性均通过；第一对拒绝保留。下一批尚未运行，不预写成功结论。现在仍无可用于整盘观测谱的自洽大气表或最终角分辨强度。
+
+## 提交与启动实录
+
+Mac和学校端同组101项测试均通过，分别1.17s和16.24s，sbatch语法通过。学校快进前备份`outputs/review-20260922/pre-steps9to11.bundle`。数值代码冻结于`869c0530acc4d8e457fc0c858a338bbd3c96c178`，已推送GitHub。
+
+作业75357于2026-09-22 12:54:34在anode23起跑，实际32CPU/128GiB、qos_stu_cpu_long；硬截止2026-09-23 00:54:34。新目录`outputs/hpc/outer-steps9to11-20260922`。12:55:14快照为running、current_outer_step=9、confirmation_then_step，计数仍0，正在第八步源重放/确认准备；stderr为空。这不是第九步已接受。启动证据`handoff/evidence/20260922-75357-launch.json`。
+
+只读调度watcher PID484428，记录于`outputs/review-20260922/scheduler-75357/`，30秒采样、最多14小时，终态写`scheduler-terminal.json`。使用Python detached subprocess启动，三路标准流与SSH脱离，不提交或取消作业。自动科学链由Slurm入口负责，定时审阅负责结果复核和下一批决策；SSH断开不影响运行。此次仅报告启动成功，尚无本批科学结果。

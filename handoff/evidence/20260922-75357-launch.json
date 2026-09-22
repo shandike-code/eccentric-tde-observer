@@ -1,0 +1,79 @@
+{
+  "job_id": 75357,
+  "observed_unix": 1790052914.7670717,
+  "scontrol": "JobId=75357 JobName=tde-outer-steps9to11 UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:40 TimeLimit=12:00:00 TimeMin=N/A SubmitTime=2026-09-22T12:54:33 EligibleTime=2026-09-22T12:54:33 AccrueTime=2026-09-22T12:54:33 StartTime=2026-09-22T12:54:34 EndTime=2026-09-23T00:54:34 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-22T12:54:34 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:484020 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode23 BatchHost=anode23 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/bounded_steps9_to11.sbatch SubmitLine=sbatch --parsable --export=ALL,TDE_RUN=outputs/hpc/outer-steps9to11-20260922 operations/bounded_steps9_to11.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-outer-steps9to11-75357.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-outer-steps9to11-75357.out TresPerTask=cpu=32\n",
+  "numerical_commit": "869c0530acc4d8e457fc0c858a338bbd3c96c178",
+  "run": "outputs/hpc/outer-steps9to11-20260922",
+  "watcher_pid": 484428,
+  "stderr": "",
+  "status": {
+    "status": "running",
+    "updated_unix": 1790052895.1673493,
+    "current_outer_step": 9,
+    "current_stage": "confirmation_then_step",
+    "cycles": {
+      "step9": {
+        "stages": {
+          "confirmation": {
+            "completed_maps": 0,
+            "active_maps": 0,
+            "completed_pairs": 0,
+            "pending_pairs": 0
+          },
+          "next_step": {
+            "completed_maps": 0,
+            "active_maps": 0,
+            "completed_pairs": 0,
+            "pending_pairs": 0
+          }
+        },
+        "maps_committed_or_active": 0,
+        "pairs_completed_or_pending": 0
+      },
+      "step10": {
+        "stages": {
+          "confirmation": {
+            "completed_maps": 0,
+            "active_maps": 0,
+            "completed_pairs": 0,
+            "pending_pairs": 0
+          },
+          "next_step": {
+            "completed_maps": 0,
+            "active_maps": 0,
+            "completed_pairs": 0,
+            "pending_pairs": 0
+          }
+        },
+        "maps_committed_or_active": 0,
+        "pairs_completed_or_pending": 0
+      },
+      "step11": {
+        "stages": {
+          "confirmation": {
+            "completed_maps": 0,
+            "active_maps": 0,
+            "completed_pairs": 0,
+            "pending_pairs": 0
+          },
+          "next_step": {
+            "completed_maps": 0,
+            "active_maps": 0,
+            "completed_pairs": 0,
+            "pending_pairs": 0
+          }
+        },
+        "maps_committed_or_active": 0,
+        "pairs_completed_or_pending": 0
+      }
+    },
+    "final_confirmation": {
+      "completed_maps": 0,
+      "active_maps": 0,
+      "completed_pairs": 0,
+      "pending_pairs": 0
+    },
+    "maps_committed_or_active": 0,
+    "pairs_completed_or_pending": 0
+  }
+}
