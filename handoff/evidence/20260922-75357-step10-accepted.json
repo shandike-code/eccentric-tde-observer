@@ -1,0 +1,240 @@
+{
+  "verified_files": 3135,
+  "candidate": "full",
+  "round": 2,
+  "formal_gates": {
+    "last_two_photoionization_pass": true,
+    "last_two_total_recombination_pass": true,
+    "last_two_atomic_heating_pass": true,
+    "last_two_direct_heating_pass": true,
+    "last_two_formal_heating_pass": true,
+    "inner_noise_resolved_pass": true,
+    "candidate_l2_contraction_pass": true,
+    "candidate_mass_weighted_contraction_pass": true,
+    "candidate_maximum_cell_contraction_pass": true,
+    "two_formal_feedback_states_pass": true,
+    "two_inner_radiation_residuals_pass": true,
+    "two_boundary_spectra_pass": true,
+    "two_boundary_bolometric_pass": true,
+    "candidate_state_bytes_pass": true,
+    "population_nonnegative_pass": true,
+    "all_residual_components_finite_pass": true
+  },
+  "formal_comparison": {
+    "photoionization_volume_l1": [
+      4.9764632199829896e-06,
+      1.3327287782144933e-05,
+      8.101491982047875e-09
+    ],
+    "total_recombination_volume_l1": [
+      1.8938242012519656e-07,
+      1.1134269447247186e-08,
+      1.3515647845251306e-14
+    ],
+    "atomic_heating_volume_l1": 0.0003552040663837476,
+    "direct_heating_volume_l1": 0.00035520406638545255,
+    "formal_heating_volume_l1": 0.0003552037098022214,
+    "inner_noise_to_trial_signal_l2_ratio": 0.04142502641247117,
+    "candidate_to_base_residual_l2_ratio": 0.9720963757455332,
+    "candidate_to_base_mass_weighted_norm_ratio": 0.9641095881609417,
+    "candidate_to_base_maximum_cell_norm_ratio": 0.986793790425158
+  },
+  "accepted": true,
+  "base_norms": {
+    "l2": 12.821840368166786,
+    "mass_weighted": 0.46030564473906965,
+    "maximum_cell": 3.2271979754653217
+  },
+  "candidate_norms": {
+    "l2": 12.464064552282712,
+    "mass_weighted": 0.4437850855775412,
+    "maximum_cell": 3.184578922661821
+  },
+  "fresh_control_ratios": {
+    "previous": {
+      "previous": {
+        "l2": 0.9723461794848465,
+        "mass_weighted": 0.9644613446003997,
+        "maximum_cell": 0.986633436703783
+      },
+      "final": {
+        "l2": 0.9719817001918546,
+        "mass_weighted": 0.9638531821282785,
+        "maximum_cell": 0.986560110946813
+      }
+    },
+    "final": {
+      "previous": {
+        "l2": 0.9717849785908398,
+        "mass_weighted": 0.9636014280376163,
+        "maximum_cell": 0.9867128476475355
+      },
+      "final": {
+        "l2": 0.9714207096613062,
+        "mass_weighted": 0.9629938078049384,
+        "maximum_cell": 0.9866395159888117
+      }
+    }
+  },
+  "endpoints": {
+    "previous": {
+      "iteration": 7,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_0.dat",
+      "input_sha256": "69db9e8e2a350c805f43633b3db7aa9c04b7af1366e1fbf52f205e5dcc66b117",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_1.dat",
+      "output_sha256": "7ed819541af0a156b4f6ccff638ef1825b2d3710fec8e5682a86f5630f924068",
+      "wall_s": 132.94181915465742,
+      "residual": 4.750117349251169e-05,
+      "boundary_l1": 0.00026766448337306546,
+      "boundary_bolometric": 0.00025746273315712623,
+      "maximum_worker_rss_mib": 3502.3046875
+    },
+    "final": {
+      "iteration": 8,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_1.dat",
+      "input_sha256": "7ed819541af0a156b4f6ccff638ef1825b2d3710fec8e5682a86f5630f924068",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_2.dat",
+      "output_sha256": "3eaa6802743e6ca2ad3c9c6217ad44dc2ed7f2e769e35ebe23abbc03d16b245e",
+      "wall_s": 130.46220059413463,
+      "residual": 4.5226627082625054e-05,
+      "boundary_l1": 0.0002491063538990898,
+      "boundary_bolometric": 0.00024209606852918528,
+      "maximum_worker_rss_mib": 3499.7890625
+    }
+  },
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_0.dat",
+      "input_sha256": "628da1193e61ef4bf90252b51ab008e35f16d321e6e0f3172d518b2a257749f2",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_1.dat",
+      "output_sha256": "fda20dee4a9e9727b8b02d27c768e03a35bc88511d75fefb90ffdff6b0902890",
+      "wall_s": 133.98979084193707,
+      "residual": 0.0002420440345268387,
+      "boundary_l1": 0.000571836000977912,
+      "boundary_bolometric": 0.00036033556543005357,
+      "maximum_worker_rss_mib": 3505.421875
+    },
+    {
+      "iteration": 2,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_1.dat",
+      "input_sha256": "fda20dee4a9e9727b8b02d27c768e03a35bc88511d75fefb90ffdff6b0902890",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_2.dat",
+      "output_sha256": "72cbcbe94bcb8ac129093a63ceca9bf26404ed89b72d58dcdb2db3a9e8a2b2d3",
+      "wall_s": 130.3280756501481,
+      "residual": 0.0001773362332207341,
+      "boundary_l1": 0.00046727581246164675,
+      "boundary_bolometric": 0.0003365906007848031,
+      "maximum_worker_rss_mib": 3502.28515625
+    },
+    {
+      "iteration": 3,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_2.dat",
+      "input_sha256": "72cbcbe94bcb8ac129093a63ceca9bf26404ed89b72d58dcdb2db3a9e8a2b2d3",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_0.dat",
+      "output_sha256": "6093a6ebf5517540738e6ababb4cc784e0d6831ff8b3d63e460b8b051cff4a9a",
+      "wall_s": 129.01788274385035,
+      "residual": 0.00013315289989826023,
+      "boundary_l1": 0.0003983006590428422,
+      "boundary_bolometric": 0.0003263651336529019,
+      "maximum_worker_rss_mib": 3501.5234375
+    },
+    {
+      "iteration": 4,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_0.dat",
+      "input_sha256": "6093a6ebf5517540738e6ababb4cc784e0d6831ff8b3d63e460b8b051cff4a9a",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_1.dat",
+      "output_sha256": "4d5127991e6bb38d37714215fa60a3e453820897b826aa3ea4cb1950d6ea7d51",
+      "wall_s": 129.55195172131062,
+      "residual": 0.00010003104524855294,
+      "boundary_l1": 0.00035081686588724965,
+      "boundary_bolometric": 0.00030985193763297136,
+      "maximum_worker_rss_mib": 3502.859375
+    },
+    {
+      "iteration": 5,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_1.dat",
+      "input_sha256": "4d5127991e6bb38d37714215fa60a3e453820897b826aa3ea4cb1950d6ea7d51",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_2.dat",
+      "output_sha256": "588bf58b862ba7e6737a952122b536273e8c2f5ba660449f17c6f819819f013f",
+      "wall_s": 129.16959320940077,
+      "residual": 7.581637707046825e-05,
+      "boundary_l1": 0.0003162899723054651,
+      "boundary_bolometric": 0.00029176184626156557,
+      "maximum_worker_rss_mib": 3502.8203125
+    },
+    {
+      "iteration": 6,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_2.dat",
+      "input_sha256": "588bf58b862ba7e6737a952122b536273e8c2f5ba660449f17c6f819819f013f",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_0.dat",
+      "output_sha256": "69db9e8e2a350c805f43633b3db7aa9c04b7af1366e1fbf52f205e5dcc66b117",
+      "wall_s": 143.6872331891209,
+      "residual": 5.798020260002196e-05,
+      "boundary_l1": 0.00028952597124699256,
+      "boundary_bolometric": 0.0002740704360630967,
+      "maximum_worker_rss_mib": 3498.2578125
+    },
+    {
+      "iteration": 7,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_0.dat",
+      "input_sha256": "69db9e8e2a350c805f43633b3db7aa9c04b7af1366e1fbf52f205e5dcc66b117",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_1.dat",
+      "output_sha256": "7ed819541af0a156b4f6ccff638ef1825b2d3710fec8e5682a86f5630f924068",
+      "wall_s": 132.94181915465742,
+      "residual": 4.750117349251169e-05,
+      "boundary_l1": 0.00026766448337306546,
+      "boundary_bolometric": 0.00025746273315712623,
+      "maximum_worker_rss_mib": 3502.3046875
+    },
+    {
+      "iteration": 8,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_1.dat",
+      "input_sha256": "7ed819541af0a156b4f6ccff638ef1825b2d3710fec8e5682a86f5630f924068",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/full/state_2.dat",
+      "output_sha256": "3eaa6802743e6ca2ad3c9c6217ad44dc2ed7f2e769e35ebe23abbc03d16b245e",
+      "wall_s": 130.46220059413463,
+      "residual": 4.5226627082625054e-05,
+      "boundary_l1": 0.0002491063538990898,
+      "boundary_bolometric": 0.00024209606852918528,
+      "maximum_worker_rss_mib": 3499.7890625
+    }
+  ],
+  "new_denominator_verified": true,
+  "gas_domain": {
+    "previous": {
+      "failed_cells": 0,
+      "min_gas_erg_g": 7506913837482.242
+    },
+    "final": {
+      "failed_cells": 0,
+      "min_gas_erg_g": 7533970891359.219
+    }
+  },
+  "resources": {
+    "map_reports": 760,
+    "process_receipts": 1216,
+    "native_peak_mib": 3505.421875,
+    "proc_peak_kib": 4039700
+  },
+  "physical_response_replayed": false,
+  "true_error_bound": false,
+  "coupled_column_accepted": false,
+  "outer_iteration": {
+    "index": 10,
+    "source": "outputs/hpc/outer-steps9to11-20260922/step10/confirmation/confirm4",
+    "base_is_accepted_trial": true,
+    "physical_time_advanced": false,
+    "replaced_historical_denominator": {
+      "path": "outputs/phase7b9f_base_material_residual.npy",
+      "size_bytes": 4224,
+      "sha256": "217e7fec52ad506214cc997ebe074fac0433700bb84eaeac4bba24a7da55fa3b"
+    },
+    "direction_is_frozen_response_at_new_base": true
+  },
+  "formal_denominator": {
+    "path": "outputs/hpc/outer-steps9to11-20260922/step10/next-step/base_residual.npy",
+    "size_bytes": 4224,
+    "sha256": "7a14067ea2b5129eb8d059b6aa3d5c77d037fd706ceabdd92a9b99c221bec4bb"
+  }
+}
