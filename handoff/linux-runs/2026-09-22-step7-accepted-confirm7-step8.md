@@ -27,3 +27,5 @@ operations/confirm7_then_step8.py/.sbatch从75185的full8map/2pair实际接受�
 同allocation执行两阶段：A，旧第七步base零控制2图，第七步已接受物质态追加2图、再追加2图，总6map/3pair；保留第七步原正式分母，实际源响应位级重放、9派生门、seed/输入SHA。两确认全16门及fresh四组合三范数均通过才写transition并进入B。B，从确认4实际trial作为新base，以实际原响应R作为冻结方向，index8，新零控制2图/1pair，full1/128最多8图/2pair，未接受则half1/256最多8图/2pair。总预算24map/8pair、最多一个新增接受步，32CPU128GiB16worker，6小时硬限。约2–3小时仅本批规划；不推算最终大气日期。
 
 原budget含completed+active/pending；pending反馈/账本先结算，USR1边界停止，故障优先与根单锁复用。确认失败即停在confirmation_not_passed；源失败/程序资源错误停止，不盲重提；ledger欠账只恢复账本。最终若第八步正式接受仍须fresh支持及Mac审阅，不自动第九步。phase1367、dt889.419892762322s、物理旧层/密度/能量定义/原16门保持，不裁剪/加floor。七个有限接受步只有前六个已完成双同态确认，代表柱和整盘I_nu仍未完成。
+
+学校同组95项测试通过（19.82s）后提交作业75274，run outputs/hpc/confirm7-then-step8-20260922；数值代码3ec70b2efc8085d05cc499d2550ef05dcf2745a3。只读终态watcher输出outputs/review-20260922/scheduler-75274，最长8小时，不续交不取消。新run已冻结后不再改数值模块。后续跟进先看confirmation/source-gate-replay、各child initialized_identity，再看确认all16与fresh四组合；通过后同allocation条件进入next-step。
