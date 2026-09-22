@@ -1,0 +1,35 @@
+{
+  "native_exact_rebase": true,
+  "alphas": {
+    "full": 0.0078125,
+    "half": 0.00390625
+  },
+  "sources": [
+    {
+      "path": "outputs/hpc/outer-steps456-20260921/final-confirmation/confirm4/feedback-round1/inputs/trial_material.npz",
+      "size_bytes": 27774,
+      "sha256": "175394e446457044c016f70be04ffd10640cc3296f0d03d149d3902e0e972ff4"
+    },
+    {
+      "path": "outputs/hpc/outer-steps456-20260921/final-confirmation/confirm4/feedback-round1/material_residual.npy",
+      "size_bytes": 4224,
+      "sha256": "f43b3cf5e790f29856ca20ad43c16af213908f3f82ba6785dc58bfef043e524e"
+    },
+    {
+      "path": "outputs/phase7b4r_depth128_phase2048.npz",
+      "size_bytes": 17159976,
+      "sha256": "33f248d5cf35ac07fffd139e1cd99d4edefa590debf7e109f67f2dbc57adf455"
+    },
+    {
+      "path": "outputs/hpc/outer-steps456-20260921/final-confirmation/confirm4/feedback-round1/feedback_protocol.json",
+      "size_bytes": 5919,
+      "sha256": "e32cee388c4325d4bf76db3bd556a68568470a2f68ff436ded9c7a5a95384214"
+    }
+  ],
+  "new_radiation_maps": 0,
+  "physical_response_replayed": false,
+  "formal_trial_accepted": false,
+  "job_id": 75184,
+  "scheduler_state": "COMPLETED",
+  "exit_code": "0:0"
+}

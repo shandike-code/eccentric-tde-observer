@@ -39,3 +39,9 @@ Mac真实Linux工件重建没有通过原位级身份守卫：温度最大差7.2
 预检75182在anode01启动4秒后FAILED/1:0，原因是新脚本把分配CPU数4误作require_allocation的worker数，原6GiB/worker+2GiB守卫正确拒绝16GiB申请；尚未加载数值工件。修为实际单Python进程参数1，仍在4核16GiBallocation；增加回归防止混淆，原守卫不改。没有把该失败算作物理域失败。
 
 预检75183在加载工件后拒绝了trial声明比较：canonical协议引用round/inputs快照，脚本错误地要求它与run根副本的路径也相同。两份27774字节的SHA均为175394e446457044c016f70be04ffd10640cc3296f0d03d149d3902e0e972ff4；这是审计路径错误，不是物质态不同。改为按canonical源加载、核全claim，同时要求run根副本大小和SHA相同；没有放宽字节或物理身份比较。75182/75183失败均保留日志，未产生新的科学接受态。
+
+## 实际起跑
+
+修正后预检75184在anode01于09:26:04–09:26:06 COMPLETED/0:0、stderr空，native_exact_rebase=true，两候选原身份和信赖域通过。Mac差异没有导致任何Linux身份容差放宽。
+
+32核作业75185已提交，run outputs/hpc/step7-amplitude-20260922，数值代码90b4dffd8e82302626670dada1ceab0336d0dd88。最大18map/5pair、4小时，最多一个有限接受步。后续状态以实际作业为准。只读终态watcher写outputs/review-20260922/scheduler-75185，最多6小时，不续交、不取消。恢复前先检查amplitude-probe-error.json，非ledger程序错误必须审阅。最后的amplitude-probe-decision.json区分正式接受和fresh支持，禁止因status正式接受直接进入第八步。
