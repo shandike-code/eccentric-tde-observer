@@ -1,0 +1,103 @@
+{
+  "control": {
+    "canonical_endpoint_partial_feedback_verified": true,
+    "initialized_identity": {
+      "passed": true,
+      "trial": {
+        "path": "outputs/hpc/outer-steps9to11-20260922/step11/confirmation/control/trial_material.npz",
+        "size_bytes": 27774,
+        "sha256": "b258032c17d5d0b6b0bbe4de205ffc183b009ff468217378c07833e9f2a697b3"
+      },
+      "native": {
+        "trial_source": {
+          "path": "outputs/hpc/outer-steps9to11-20260922/step11/confirmation/control/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "b258032c17d5d0b6b0bbe4de205ffc183b009ff468217378c07833e9f2a697b3"
+        },
+        "native_mirrored_material_exact": true,
+        "physical_phase_and_dt_exact": true
+      }
+    }
+  },
+  "confirm2": {
+    "canonical_endpoint_partial_feedback_verified": true,
+    "initialized_identity": {
+      "passed": true,
+      "trial": {
+        "path": "outputs/hpc/outer-steps9to11-20260922/step11/confirmation/confirm2/trial_material.npz",
+        "size_bytes": 27774,
+        "sha256": "cfbed27cb64d1b322959d3b3d2233d1662b15e5df29d771067d4cb79321e4a42"
+      },
+      "native": {
+        "trial_source": {
+          "path": "outputs/hpc/outer-steps9to11-20260922/step11/confirmation/confirm2/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "cfbed27cb64d1b322959d3b3d2233d1662b15e5df29d771067d4cb79321e4a42"
+        },
+        "native_mirrored_material_exact": true,
+        "physical_phase_and_dt_exact": true
+      }
+    },
+    "fresh_complete_finite": true,
+    "base_norms": {
+      "l2": 12.821840368166786,
+      "mass_weighted": 0.46030564473906965,
+      "maximum_cell": 3.2271979754653217
+    },
+    "candidate_norms": {
+      "l2": 12.46089354398481,
+      "mass_weighted": 0.4436057457774177,
+      "maximum_cell": 3.185195185246913
+    }
+  },
+  "confirm4": {
+    "canonical_endpoint_partial_feedback_verified": true,
+    "initialized_identity": {
+      "passed": true,
+      "trial": {
+        "path": "outputs/hpc/outer-steps9to11-20260922/step11/confirmation/confirm4/trial_material.npz",
+        "size_bytes": 27774,
+        "sha256": "cfbed27cb64d1b322959d3b3d2233d1662b15e5df29d771067d4cb79321e4a42"
+      },
+      "native": {
+        "trial_source": {
+          "path": "outputs/hpc/outer-steps9to11-20260922/step11/confirmation/confirm4/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "cfbed27cb64d1b322959d3b3d2233d1662b15e5df29d771067d4cb79321e4a42"
+        },
+        "native_mirrored_material_exact": true,
+        "physical_phase_and_dt_exact": true
+      }
+    },
+    "fresh_complete_finite": true,
+    "base_norms": {
+      "l2": 12.821840368166786,
+      "mass_weighted": 0.46030564473906965,
+      "maximum_cell": 3.2271979754653217
+    },
+    "candidate_norms": {
+      "l2": 12.46602907135096,
+      "mass_weighted": 0.44390696195074736,
+      "maximum_cell": 3.185771012517613
+    }
+  },
+  "transition_verified": {
+    "confirmation": {
+      "path": "outputs/hpc/outer-steps9to11-20260922/step11/confirmation/confirmation.json",
+      "size_bytes": 3026,
+      "sha256": "0efe3e57c2ec358f4421cfa8a2b2c70542942612533784431695bb5a112efb16"
+    },
+    "state": {
+      "path": "outputs/hpc/outer-steps9to11-20260922/step11/confirmation/confirm4/state.json",
+      "size_bytes": 3671,
+      "sha256": "828c6727ee0f7fda0e6336239cdfeeea23691157623a700c9b8e960d79fac875"
+    },
+    "summary": {
+      "path": "outputs/hpc/outer-steps9to11-20260922/step11/confirmation/confirm4/feedback-round1/feedback_summary.json",
+      "size_bytes": 3670,
+      "sha256": "83ef5d9e46c0f141d8e23aee0beb39ead029c3c635199e39dfd56c41d87ae44d"
+    },
+    "next_outer_step_index": 11,
+    "physical_time_advanced": false
+  }
+}
