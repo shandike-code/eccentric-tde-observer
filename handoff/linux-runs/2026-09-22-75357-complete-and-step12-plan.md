@@ -45,3 +45,11 @@ Git证据：handoff/evidence/20260922-75357-confirm11.json/png、confirm11-owner
 这批自动执行控制、候选、必要回溯；接受后审阅其完整证据再决定同态确认，不自动第13步。若无法接受或遇到程序/资源故障，保留状态，先诊断，不无限重投。预计约1—2小时（历史成本规划，排队和回溯另计），4小时为硬墙钟上限，不是全项目完成估计。
 
 PRE-RUN：新源、alpha、冻结物理定义、原信赖域/预算/恢复及错误停止路径检查；增加幅度的物理有效性未知，由原门判定，RUN。POST-RUN：此前终态、正值、有限性、三范数、资源和图审计通过；同态回升及未完成的独立初值、网格、能量/历史适用性审计保留。新入口与原入口回归及numbered恢复测试38 passed，sbatch语法通过。原生预检与实际候选结果另记，不由合成测试推定。
+
+## 实际提交与监督
+
+代码f8c915bf29f622dde86c861160fd1b45cf98d337已同步Mac、GitHub、学校；两端各38测试通过。75542默认4CPU/16GiB预检于19:22:32—19:22:42在anode25正常完成，精确rebase与两幅度检查通过，stderr空。原生预检证据20260922-step12-native-preflight.json；未求新辐射或物理响应，正式接受仍待75543。
+
+75543于19:23:11在anode25起跑，32CPU/128GiB/16worker，硬截止23:23:11。新run outputs/hpc/step12-amplitude-20260922，初查preparing、stderr空。调度证据20260922-75543-launch.json。只读watcher PID2179694位于outputs/review-20260922/scheduler-75543，每30秒记录，最多18000秒；脱离SSH独立运行，不自动重提。学校提交前备份outputs/review-20260922/pre-step12.bundle。
+
+定时任务USTC HHe 运行审阅与决策已更新并保持每30分钟ACTIVE；保留无变化时安静、真实认证断线才提醒Terminal重连的约定。更新前备份outputs/review-20260921/automation-before-step12.toml。新文档独立检查normalize_document无变更，不批量重写历史讲义。第12步若接受1/64，后续审阅/确认不得复用硬编码1/128的身份检查；必须新声明该实际alpha，保留原全部门。

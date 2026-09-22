@@ -1,0 +1,58 @@
+{
+  "native_exact_rebase": true,
+  "alphas": {
+    "full": 0.015625,
+    "half": 0.0078125
+  },
+  "sources": [
+    {
+      "path": "outputs/hpc/outer-steps9to11-20260922/final-confirmation/confirm4/feedback-round1/inputs/trial_material.npz",
+      "size_bytes": 27774,
+      "sha256": "50815ec555a1774deffd675303955fbf85d8eed0774813be87d224d1145c1e86"
+    },
+    {
+      "path": "outputs/hpc/outer-steps9to11-20260922/final-confirmation/confirm4/feedback-round1/material_residual.npy",
+      "size_bytes": 4224,
+      "sha256": "363a5dcaa680c906652fd61b4f385cd9466cfca6fe39975a3e4b02d235cd6666"
+    },
+    {
+      "path": "outputs/phase7b4r_depth128_phase2048.npz",
+      "size_bytes": 17159976,
+      "sha256": "33f248d5cf35ac07fffd139e1cd99d4edefa590debf7e109f67f2dbc57adf455"
+    },
+    {
+      "path": "outputs/hpc/outer-steps9to11-20260922/final-confirmation/confirm4/feedback-round1/feedback_protocol.json",
+      "size_bytes": 5948,
+      "sha256": "c78cf4668b61adecd35ab900c525e79730803e097b361137fc171d2b9dc53688"
+    }
+  ],
+  "environment": {
+    "git_commit": "f8c915bf29f622dde86c861160fd1b45cf98d337",
+    "tracked_worktree_dirty": false,
+    "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+    "platform": "Linux-6.8.0-53-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "logical_host_cpus": 128,
+    "cpu_affinity_count": 4,
+    "scheduler": {
+      "SLURM_JOB_ID": "75542",
+      "SLURM_JOB_PARTITION": "Students",
+      "SLURM_JOB_QOS": "qos_stu_default",
+      "SLURM_CPUS_PER_TASK": "4",
+      "SLURM_MEM_PER_NODE": "16384",
+      "SLURM_JOB_NODELIST": "anode25"
+    },
+    "cgroup_v2": {},
+    "packages": {
+      "numpy": "2.5.2",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.1",
+      "pytest": "9.1.1"
+    },
+    "project_free_bytes": 984980447903744,
+    "warning": "Host resources are not necessarily this job's allocation."
+  },
+  "new_radiation_maps": 0,
+  "physical_response_replayed": false,
+  "formal_trial_accepted": false
+}
