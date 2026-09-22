@@ -1,0 +1,69 @@
+{
+  "actual_alpha": 0.015625,
+  "step_index": 12,
+  "exact_encoded_displacement": true,
+  "native": {
+    "control": {
+      "passed": true,
+      "trial": {
+        "path": "outputs/hpc/step12-amplitude-20260922/control/trial_material.npz",
+        "size_bytes": 27774,
+        "sha256": "4c7b0456c0283f120ff3ab2d397c8329ee124dfe62231d072d687610b37468c6"
+      },
+      "native": {
+        "trial_source": {
+          "path": "outputs/hpc/step12-amplitude-20260922/control/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "4c7b0456c0283f120ff3ab2d397c8329ee124dfe62231d072d687610b37468c6"
+        },
+        "native_mirrored_material_exact": true,
+        "physical_phase_and_dt_exact": true
+      }
+    },
+    "full": {
+      "passed": true,
+      "trial": {
+        "path": "outputs/hpc/step12-amplitude-20260922/full/trial_material.npz",
+        "size_bytes": 27774,
+        "sha256": "0ee41a7bcfb342907b042d61899ea5c825dad95cddce9137ed18d43d382b534a"
+      },
+      "native": {
+        "trial_source": {
+          "path": "outputs/hpc/step12-amplitude-20260922/full/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "0ee41a7bcfb342907b042d61899ea5c825dad95cddce9137ed18d43d382b534a"
+        },
+        "native_mirrored_material_exact": true,
+        "physical_phase_and_dt_exact": true
+      }
+    }
+  },
+  "rounds": {
+    "1": {
+      "all_original_gates": false,
+      "failed_gates": [
+        "last_two_atomic_heating_pass",
+        "last_two_direct_heating_pass",
+        "last_two_formal_heating_pass",
+        "inner_noise_resolved_pass",
+        "two_inner_radiation_residuals_pass"
+      ],
+      "fresh_4x3_complete_finite_contraction": true,
+      "fresh_final_final": {
+        "l2": 0.9535423857704739,
+        "mass_weighted": 0.9425069839977176,
+        "maximum_cell": 0.9733601472996826
+      }
+    },
+    "2": {
+      "all_original_gates": true,
+      "failed_gates": [],
+      "fresh_4x3_complete_finite_contraction": true,
+      "fresh_final_final": {
+        "l2": 0.9403017242888715,
+        "mass_weighted": 0.9233584740984632,
+        "maximum_cell": 0.9725253146296856
+      }
+    }
+  }
+}
