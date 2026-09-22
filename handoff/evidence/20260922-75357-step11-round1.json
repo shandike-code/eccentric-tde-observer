@@ -1,0 +1,240 @@
+{
+  "verified_files": 3135,
+  "candidate": "full",
+  "round": 1,
+  "formal_gates": {
+    "last_two_photoionization_pass": true,
+    "last_two_total_recombination_pass": true,
+    "last_two_atomic_heating_pass": true,
+    "last_two_direct_heating_pass": true,
+    "last_two_formal_heating_pass": true,
+    "inner_noise_resolved_pass": false,
+    "candidate_l2_contraction_pass": true,
+    "candidate_mass_weighted_contraction_pass": true,
+    "candidate_maximum_cell_contraction_pass": true,
+    "two_formal_feedback_states_pass": true,
+    "two_inner_radiation_residuals_pass": false,
+    "two_boundary_spectra_pass": true,
+    "two_boundary_bolometric_pass": true,
+    "candidate_state_bytes_pass": true,
+    "population_nonnegative_pass": true,
+    "all_residual_components_finite_pass": true
+  },
+  "formal_comparison": {
+    "photoionization_volume_l1": [
+      1.1698345315619195e-05,
+      1.3194473809288016e-05,
+      5.304102869040444e-07
+    ],
+    "total_recombination_volume_l1": [
+      4.6000916623703745e-07,
+      1.1733066081913927e-08,
+      3.18004388155734e-12
+    ],
+    "atomic_heating_volume_l1": 0.0009371501383938393,
+    "direct_heating_volume_l1": 0.0009371501383895958,
+    "formal_heating_volume_l1": 0.0009371491641640728,
+    "inner_noise_to_trial_signal_l2_ratio": 0.19110418224634673,
+    "candidate_to_base_residual_l2_ratio": 0.9779362106865475,
+    "candidate_to_base_mass_weighted_norm_ratio": 0.9726604124884236,
+    "candidate_to_base_maximum_cell_norm_ratio": 0.9869699514702936
+  },
+  "accepted": false,
+  "base_norms": {
+    "l2": 12.46602907135096,
+    "mass_weighted": 0.44390696195074736,
+    "maximum_cell": 3.185771012517613
+  },
+  "candidate_norms": {
+    "l2": 12.190981232345301,
+    "mass_weighted": 0.4317707287174969,
+    "maximum_cell": 3.144260261619977
+  },
+  "fresh_control_ratios": {
+    "previous": {
+      "previous": {
+        "l2": 0.9817098444627771,
+        "mass_weighted": 0.9775693978443883,
+        "maximum_cell": 0.9877176994682956
+      },
+      "final": {
+        "l2": 0.981332846112294,
+        "mass_weighted": 0.9769260062748958,
+        "maximum_cell": 0.9876465636569245
+      }
+    },
+    "final": {
+      "previous": {
+        "l2": 0.9776079224456813,
+        "mass_weighted": 0.9721095884877823,
+        "maximum_cell": 0.9868914397478769
+      },
+      "final": {
+        "l2": 0.9772324993242161,
+        "mass_weighted": 0.9714697903156678,
+        "maximum_cell": 0.9868203634440509
+      }
+    }
+  },
+  "endpoints": {
+    "previous": {
+      "iteration": 3,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_2.dat",
+      "input_sha256": "bd70b0d151a7c1fed227e16f859a9704f6f941a5e50c5ef1bdde1132e562f536",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_0.dat",
+      "output_sha256": "59fc5658dfcb3b00b11b29d16b2daed7b885c7515d74ae1bb101dc55c3dc0512",
+      "wall_s": 127.29645558446646,
+      "residual": 0.00012113470132990699,
+      "boundary_l1": 0.00039136781648551895,
+      "boundary_bolometric": 0.00032138245494683036,
+      "maximum_worker_rss_mib": 3503.08203125
+    },
+    "final": {
+      "iteration": 4,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_0.dat",
+      "input_sha256": "59fc5658dfcb3b00b11b29d16b2daed7b885c7515d74ae1bb101dc55c3dc0512",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_1.dat",
+      "output_sha256": "45fc1707a04fb1135d27ab7269eb389276b91c9f8d181186b84f2eb47a247f4d",
+      "wall_s": 126.85918183252215,
+      "residual": 9.061400876854059e-05,
+      "boundary_l1": 0.0003445622061513684,
+      "boundary_bolometric": 0.00030471091465096405,
+      "maximum_worker_rss_mib": 3501.35546875
+    }
+  },
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_0.dat",
+      "input_sha256": "d2e840c395b92f1ed5a293f4a6c0a338d7aa4b354607938c2f17a4388cc3e302",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_1.dat",
+      "output_sha256": "57d373843a165ef2b15cbc05c67be1c4452fd2d0ec170b9bbef8f3d0e862e664",
+      "wall_s": 133.58578185830265,
+      "residual": 0.00022324652840155666,
+      "boundary_l1": 0.0005613777547466818,
+      "boundary_bolometric": 0.00035684335027370026,
+      "maximum_worker_rss_mib": 3502.17578125
+    },
+    {
+      "iteration": 2,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_1.dat",
+      "input_sha256": "57d373843a165ef2b15cbc05c67be1c4452fd2d0ec170b9bbef8f3d0e862e664",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_2.dat",
+      "output_sha256": "bd70b0d151a7c1fed227e16f859a9704f6f941a5e50c5ef1bdde1132e562f536",
+      "wall_s": 128.63167963176966,
+      "residual": 0.00016258671027983957,
+      "boundary_l1": 0.0004590818699515585,
+      "boundary_bolometric": 0.00033208018694920005,
+      "maximum_worker_rss_mib": 3504.01171875
+    },
+    {
+      "iteration": 3,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_2.dat",
+      "input_sha256": "bd70b0d151a7c1fed227e16f859a9704f6f941a5e50c5ef1bdde1132e562f536",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_0.dat",
+      "output_sha256": "59fc5658dfcb3b00b11b29d16b2daed7b885c7515d74ae1bb101dc55c3dc0512",
+      "wall_s": 127.29645558446646,
+      "residual": 0.00012113470132990699,
+      "boundary_l1": 0.00039136781648551895,
+      "boundary_bolometric": 0.00032138245494683036,
+      "maximum_worker_rss_mib": 3503.08203125
+    },
+    {
+      "iteration": 4,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_0.dat",
+      "input_sha256": "59fc5658dfcb3b00b11b29d16b2daed7b885c7515d74ae1bb101dc55c3dc0512",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_1.dat",
+      "output_sha256": "45fc1707a04fb1135d27ab7269eb389276b91c9f8d181186b84f2eb47a247f4d",
+      "wall_s": 126.85918183252215,
+      "residual": 9.061400876854059e-05,
+      "boundary_l1": 0.0003445622061513684,
+      "boundary_bolometric": 0.00030471091465096405,
+      "maximum_worker_rss_mib": 3501.35546875
+    },
+    {
+      "iteration": 5,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_1.dat",
+      "input_sha256": "45fc1707a04fb1135d27ab7269eb389276b91c9f8d181186b84f2eb47a247f4d",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_2.dat",
+      "output_sha256": "f5001d8b9c0785018ce7c53622cedd0555a19f625936d7f0a8f2f13dd92ee216",
+      "wall_s": 125.77812401857227,
+      "residual": 6.788170327918979e-05,
+      "boundary_l1": 0.00031041296512802343,
+      "boundary_bolometric": 0.00028658156755025376,
+      "maximum_worker_rss_mib": 3500.6171875
+    },
+    {
+      "iteration": 6,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_2.dat",
+      "input_sha256": "f5001d8b9c0785018ce7c53622cedd0555a19f625936d7f0a8f2f13dd92ee216",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_0.dat",
+      "output_sha256": "3980e0813a1ba970062e992c3e986bd00bd22887e72db1a576fbf1f49aec5b6f",
+      "wall_s": 125.7225392414257,
+      "residual": 5.1275383324346324e-05,
+      "boundary_l1": 0.0002838785014559146,
+      "boundary_bolometric": 0.00026889731189919645,
+      "maximum_worker_rss_mib": 3503.23828125
+    },
+    {
+      "iteration": 7,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_0.dat",
+      "input_sha256": "3980e0813a1ba970062e992c3e986bd00bd22887e72db1a576fbf1f49aec5b6f",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_1.dat",
+      "output_sha256": "787917aa6ef4ba7cabafe37395e2f6ce7113e942fb0d9aaf8f3636537e72b6ad",
+      "wall_s": 127.43322581704706,
+      "residual": 4.4247145324422674e-05,
+      "boundary_l1": 0.00026217381161908697,
+      "boundary_bolometric": 0.00025231794313637786,
+      "maximum_worker_rss_mib": 3502.7734375
+    },
+    {
+      "iteration": 8,
+      "input_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_1.dat",
+      "input_sha256": "787917aa6ef4ba7cabafe37395e2f6ce7113e942fb0d9aaf8f3636537e72b6ad",
+      "output_path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/full/state_2.dat",
+      "output_sha256": "4213c0a27dddeb7faa1b88b704aa7692e4f83867aa90a5c07214725fbd348185",
+      "wall_s": 127.29967798758298,
+      "residual": 4.211035238557919e-05,
+      "boundary_l1": 0.00024373730080498064,
+      "boundary_bolometric": 0.00023699266074250812,
+      "maximum_worker_rss_mib": 3502.83984375
+    }
+  ],
+  "new_denominator_verified": true,
+  "gas_domain": {
+    "previous": {
+      "failed_cells": 0,
+      "min_gas_erg_g": 7408222800294.492
+    },
+    "final": {
+      "failed_cells": 0,
+      "min_gas_erg_g": 7421011143469.4375
+    }
+  },
+  "resources": {
+    "map_reports": 760,
+    "process_receipts": 1216,
+    "native_peak_mib": 3504.01171875,
+    "proc_peak_kib": 4042560
+  },
+  "physical_response_replayed": false,
+  "true_error_bound": false,
+  "coupled_column_accepted": false,
+  "outer_iteration": {
+    "index": 11,
+    "source": "outputs/hpc/outer-steps9to11-20260922/step11/confirmation/confirm4",
+    "base_is_accepted_trial": true,
+    "physical_time_advanced": false,
+    "replaced_historical_denominator": {
+      "path": "outputs/phase7b9f_base_material_residual.npy",
+      "size_bytes": 4224,
+      "sha256": "217e7fec52ad506214cc997ebe074fac0433700bb84eaeac4bba24a7da55fa3b"
+    },
+    "direction_is_frozen_response_at_new_base": true
+  },
+  "formal_denominator": {
+    "path": "outputs/hpc/outer-steps9to11-20260922/step11/next-step/base_residual.npy",
+    "size_bytes": 4224,
+    "sha256": "0923e8ed630755075d5ffa52939c2cce1ae95a1e437f06883a7e006b73d72673"
+  }
+}
