@@ -59,6 +59,16 @@ def test_prior_program_failure_blocks_retry_before_source_or_maps(monkeypatch,tm
     assert not calls
 
 
+def test_native_preflight_requests_one_actual_process_not_four_workers(monkeypatch):
+    from operations import step7_native_preflight as native
+    calls=[]
+    monkeypatch.setattr(native.pipeline,'require_allocation',lambda n:calls.append(n))
+    def stop(p):raise RuntimeError('stop before data work')
+    monkeypatch.setattr(native.pipeline,'read',stop)
+    with pytest.raises(RuntimeError,match='before data'):native.main()
+    assert calls==[1]
+
+
 def test_formal_acceptance_with_failed_fresh_control_does_not_corroborate(monkeypatch,tmp_path):
     monkeypatch.setattr(probe,'require_source',lambda:None)
     monkeypatch.setattr(probe,'ROOT',tmp_path)

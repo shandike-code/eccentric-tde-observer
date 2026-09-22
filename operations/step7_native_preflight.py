@@ -12,7 +12,9 @@ from operations.prepare_encoded_backtrack import load_arrays
 
 
 def main():
-    pipeline.require_allocation(4)
+    # One small Python process inside the allocated four CPUs, not four
+    # radiation workers (which would require >26 GiB under the original guard).
+    pipeline.require_allocation(1)
     folder=ROOT/probe.CONFIRMATION/'confirm4';rd=folder/'feedback-round1'
     proto=pipeline.read(rd/'feedback_protocol.json');summary=pipeline.read(rd/'feedback_summary.json')
     paths=[folder/'trial_material.npz',rd/'material_residual.npy',
