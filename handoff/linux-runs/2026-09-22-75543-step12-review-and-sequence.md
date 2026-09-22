@@ -43,3 +43,9 @@ Git证据20260922-75543-step12-{accepted,round1}.json/png、step12-identity.json
 PRE-RUN Code：新入口逐项与已验证模板对照，仅来源/index/alpha及对应显式测试改变，旧模块不修改。Logic：先同态确认后新步，独立新控制防止选择有利分母；故障/科学停止/接受形状/预算恢复顺序保留。Physics：增幅有限步已接受，但同态精度仍未知，故条件链首先检查它；物理时间与能量定义冻结。Decision RUN。
 
 Mac新旧序列、确认、预算/恢复、response与幅度共99项测试通过，sbatch语法通过；实际第12步身份工件校验通过。POST-RUN审阅无NaN/Inf/负辐射/资源超限，首轮失败保留，尚不宣称耦合柱或全盘大气解。学校回归、正式提交和调度证据另附。
+
+## 提交记录
+
+学校99项回归通过，代码344a80c89c18114c7f67c07e2a00a0e776c18f23。75577于2026-09-22 20:33:10在anode25 RUNNING，32CPU/128GiB/16worker、12小时墙钟，硬截止2026-09-23 08:33:10。run outputs/hpc/outer-steps13to15-20260922；20:35初查根current_outer_step=13、current_stage=confirmation_then_step，step13/status=confirmation，正在准备第12步同态精度确认，stderr空。调度快照handoff/evidence/20260922-75577-launch.json。
+
+独立只读watcher PID3254495，outputs/review-20260922/scheduler-75577，30秒采样最多50400秒，脱离SSH、不重投。学校提交前备份outputs/review-20260922/pre-steps13to15.bundle。定时审阅每30分钟ACTIVE，已更新为本批准确来源、预算、停止条件和审阅步骤，读回一致；更新前后TOML在Mac outputs/review-20260921/automation-{before,after}-steps13to15.toml。数值提交与后续文档提交分开记录，旧已声明代码未改。
