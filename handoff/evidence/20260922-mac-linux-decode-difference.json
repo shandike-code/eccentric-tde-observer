@@ -1,0 +1,22 @@
+{
+  "temperature_k": {
+    "bitwise_equal": false,
+    "max_absolute_difference": 7.275957614183426e-12,
+    "max_relative_difference": 1.6695771961624079e-16
+  },
+  "hydrogen_fraction": {
+    "bitwise_equal": true,
+    "max_absolute_difference": 0.0,
+    "max_relative_difference": 0.0
+  },
+  "helium_fraction": {
+    "bitwise_equal": false,
+    "max_absolute_difference": 2.7755575615628914e-17,
+    "max_relative_difference": 2.1018834007660202e-16
+  },
+  "specific_material_energy_erg_g": {
+    "bitwise_equal": false,
+    "max_absolute_difference": 0.00390625,
+    "max_relative_difference": 1.6909729069691007e-16
+  }
+}

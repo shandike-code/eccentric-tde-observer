@@ -31,3 +31,7 @@
 新入口只在当前进程中配置已有模块的alpha/预算，退出或异常恢复原值，原文件不改。已有prepare_next冻结输入和代码、实际重放9门、核验seed、先trial后initialize；已有预算包含active/pending，故障停止、USR1边界保全、ledger优先不变。额外记录amplitude-probe-decision.json，formal接受与fresh支持分别列出；若fresh不支持，不得进下一步。程序/资源错误写amplitude-probe-error.json，下次拒绝盲重试；仅ledger欠账可恢复。即使alpha1/128被接受，也不得套旧confirmation硬编码1/256，须下一审阅显式扩展确认合同。旧原始结果全保留，不改不删dat。
 
 事前备份pre-74845-final.bundle及automation-before-74845-final.toml。定时任务已恢复ACTIVE。下一阶段最终接受、同态确认、耦合柱收敛、全定义域大气表及整盘I_nu继续分开报告。
+
+## 提交前新增检查
+
+Mac真实Linux工件重建没有通过原位级身份守卫：温度最大差7.275957614183426e-12 K（相对1.67e-16），He布居最大差2.7755575615628914e-17，物质能最大差0.00390625 erg/g（相对1.69e-16），H逐位相同。这是实测跨平台解码差异；不能据此放宽Linux内部身份门。新step7_native_preflight在默认4核allocation里对原Linux字节执行精确rebase、两个步长make_trial与validate_trial；32核入口必须先验证该预检通过及源哈希。此预检不做物质响应重求，也不宣告候选接受。Mac和学校相关82项合成回归通过；新增预检结果待实际运行。

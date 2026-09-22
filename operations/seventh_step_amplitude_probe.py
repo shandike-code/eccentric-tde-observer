@@ -23,6 +23,7 @@ SOURCE = 'outputs/hpc/outer-steps456-20260921/step6/next-step'
 CONFIRMATION = 'outputs/hpc/outer-steps456-20260921/final-confirmation'
 ALPHAS = {'full': 1/128, 'half': 1/256}
 LIMITS = {'control': 2, 'full': 8, 'half': 8}
+PREFLIGHT = 'outputs/hpc/step7-amplitude-preflight-20260922/result.json'
 
 
 @contextmanager
@@ -40,6 +41,10 @@ def require_source():
     stage.configure(SOURCE, 6)
     if not stage.confirmation_passed(ROOT/CONFIRMATION):
         raise RuntimeError('sixth precision confirmation did not pass')
+    preflight = pipeline.read(ROOT/PREFLIGHT)
+    if preflight.get('native_exact_rebase') is not True or preflight.get('alphas') != ALPHAS:
+        raise RuntimeError('native real-artifact preflight did not pass')
+    reused.verify(preflight['sources'])
 
 
 def execute(out):
