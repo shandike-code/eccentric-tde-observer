@@ -1,0 +1,48 @@
+{
+  "control": {
+    "passed": true,
+    "trial": {
+      "path": "outputs/hpc/outer-steps9to11-20260922/step9/next-step/control/trial_material.npz",
+      "size_bytes": 27774,
+      "sha256": "629d1b74571e9125e58b2f286a2103eee695095304b1b8ebc39710836da1dad2"
+    },
+    "native": {
+      "trial_source": {
+        "path": "outputs/hpc/outer-steps9to11-20260922/step9/next-step/control/trial_material.npz",
+        "size_bytes": 27774,
+        "sha256": "629d1b74571e9125e58b2f286a2103eee695095304b1b8ebc39710836da1dad2"
+      },
+      "native_mirrored_material_exact": true,
+      "physical_phase_and_dt_exact": true
+    }
+  },
+  "full": {
+    "passed": true,
+    "trial": {
+      "path": "outputs/hpc/outer-steps9to11-20260922/step9/next-step/full/trial_material.npz",
+      "size_bytes": 27774,
+      "sha256": "1969fdab00c8b4f74cf0beddfc9443025f7fa49d3ce6e59464cf430174f8ab63"
+    },
+    "native": {
+      "trial_source": {
+        "path": "outputs/hpc/outer-steps9to11-20260922/step9/next-step/full/trial_material.npz",
+        "size_bytes": 27774,
+        "sha256": "1969fdab00c8b4f74cf0beddfc9443025f7fa49d3ce6e59464cf430174f8ab63"
+      },
+      "native_mirrored_material_exact": true,
+      "physical_phase_and_dt_exact": true
+    }
+  },
+  "round1": {
+    "gate_count": 16,
+    "passed_count": 11,
+    "fresh_four_combinations_three_finite_contractions": true
+  },
+  "round2": {
+    "gate_count": 16,
+    "passed_count": 16,
+    "fresh_four_combinations_three_finite_contractions": true
+  },
+  "accepted_alpha": 0.0078125,
+  "exact_encoded_displacement": true
+}
