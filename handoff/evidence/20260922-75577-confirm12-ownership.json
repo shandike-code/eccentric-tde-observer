@@ -1,0 +1,125 @@
+{
+  "control": {
+    "canonical_endpoint_partial_feedback_verified": true,
+    "initialized_identity": {
+      "passed": true,
+      "trial": {
+        "path": "outputs/hpc/outer-steps13to15-20260922/step13/confirmation/control/trial_material.npz",
+        "size_bytes": 27774,
+        "sha256": "4c7b0456c0283f120ff3ab2d397c8329ee124dfe62231d072d687610b37468c6"
+      },
+      "native": {
+        "trial_source": {
+          "path": "outputs/hpc/outer-steps13to15-20260922/step13/confirmation/control/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "4c7b0456c0283f120ff3ab2d397c8329ee124dfe62231d072d687610b37468c6"
+        },
+        "native_mirrored_material_exact": true,
+        "physical_phase_and_dt_exact": true
+      }
+    }
+  },
+  "confirm2": {
+    "canonical_endpoint_partial_feedback_verified": true,
+    "initialized_identity": {
+      "passed": true,
+      "trial": {
+        "path": "outputs/hpc/outer-steps13to15-20260922/step13/confirmation/confirm2/trial_material.npz",
+        "size_bytes": 27774,
+        "sha256": "0ee41a7bcfb342907b042d61899ea5c825dad95cddce9137ed18d43d382b534a"
+      },
+      "native": {
+        "trial_source": {
+          "path": "outputs/hpc/outer-steps13to15-20260922/step13/confirmation/confirm2/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "0ee41a7bcfb342907b042d61899ea5c825dad95cddce9137ed18d43d382b534a"
+        },
+        "native_mirrored_material_exact": true,
+        "physical_phase_and_dt_exact": true
+      }
+    },
+    "actual_alpha": 0.015625,
+    "fresh_complete_finite": true,
+    "base_norms": {
+      "l2": 12.120867469373515,
+      "mass_weighted": 0.4282383285764974,
+      "maximum_cell": 3.1445127179276726
+    },
+    "candidate_norms": {
+      "l2": 11.391402866560375,
+      "mass_weighted": 0.39506831154370575,
+      "maximum_cell": 3.05944464933437
+    }
+  },
+  "confirm4": {
+    "canonical_endpoint_partial_feedback_verified": true,
+    "initialized_identity": {
+      "passed": true,
+      "trial": {
+        "path": "outputs/hpc/outer-steps13to15-20260922/step13/confirmation/confirm4/trial_material.npz",
+        "size_bytes": 27774,
+        "sha256": "0ee41a7bcfb342907b042d61899ea5c825dad95cddce9137ed18d43d382b534a"
+      },
+      "native": {
+        "trial_source": {
+          "path": "outputs/hpc/outer-steps13to15-20260922/step13/confirmation/confirm4/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "0ee41a7bcfb342907b042d61899ea5c825dad95cddce9137ed18d43d382b534a"
+        },
+        "native_mirrored_material_exact": true,
+        "physical_phase_and_dt_exact": true
+      }
+    },
+    "actual_alpha": 0.015625,
+    "fresh_complete_finite": true,
+    "base_norms": {
+      "l2": 12.120867469373515,
+      "mass_weighted": 0.4282383285764974,
+      "maximum_cell": 3.1445127179276726
+    },
+    "candidate_norms": {
+      "l2": 11.39228875306176,
+      "mass_weighted": 0.3950337756570978,
+      "maximum_cell": 3.060316369056872
+    }
+  },
+  "step13_transition": {
+    "confirmation": {
+      "path": "outputs/hpc/outer-steps13to15-20260922/step13/confirmation/confirmation.json",
+      "size_bytes": 3025,
+      "sha256": "3e00e855fdb252cc608dc070f0686c993b3c3e38e2ac1e286fcd5124090409c9"
+    },
+    "state": {
+      "path": "outputs/hpc/outer-steps13to15-20260922/step13/confirmation/confirm4/state.json",
+      "size_bytes": 3677,
+      "sha256": "0db6090d64d198eb6b1c7fcf69e5f74007cf1c921334921e7cdfd1235de47e27"
+    },
+    "summary": {
+      "path": "outputs/hpc/outer-steps13to15-20260922/step13/confirmation/confirm4/feedback-round1/feedback_summary.json",
+      "size_bytes": 3663,
+      "sha256": "0c2836d64dbce0e936faab41c4b7afe9d3ded24cc0caf2b8bb5dae71131fc1cb"
+    },
+    "next_outer_step_index": 13,
+    "physical_time_advanced": false
+  },
+  "step13_source_replay": {
+    "checks": {
+      "last_two_photoionization_pass": true,
+      "last_two_total_recombination_pass": true,
+      "last_two_atomic_heating_pass": true,
+      "last_two_direct_heating_pass": true,
+      "last_two_formal_heating_pass": true,
+      "inner_noise_resolved_pass": true,
+      "candidate_l2_contraction_pass": true,
+      "candidate_mass_weighted_contraction_pass": true,
+      "candidate_maximum_cell_contraction_pass": true
+    },
+    "residual_bitwise_equal": true,
+    "new_base_residual_norms": {
+      "l2": 11.392288753061758,
+      "mass_weighted": 0.3950337756570978,
+      "maximum_cell": 3.060316369056872
+    },
+    "physical_time_advanced": false
+  }
+}
