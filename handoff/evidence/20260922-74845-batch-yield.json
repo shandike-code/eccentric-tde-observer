@@ -1,0 +1,24 @@
+{
+  "final_confirmed_norms": {
+    "l2": 14.062104181842878,
+    "mass_weighted": 0.5218826983215736,
+    "maximum_cell": 3.353634586583867
+  },
+  "before_step4_norms": {
+    "l2": 14.715837431464346,
+    "mass_weighted": 0.5558479257388294,
+    "maximum_cell": 3.4161193760637594
+  },
+  "elapsed_hours": 5.521944444444444,
+  "norm_ratios": {
+    "l2": 0.95557621150233,
+    "mass_weighted": 0.9388947482854967,
+    "maximum_cell": 0.9817088390067062
+  },
+  "percent_of_starting_norm_removed_per_wall_hour": {
+    "l2": 0.8044953900679718,
+    "mass_weighted": 1.1065893967111624,
+    "maximum_cell": 0.33124492970399677
+  },
+  "not_a_completion_time_extrapolation": true
+}

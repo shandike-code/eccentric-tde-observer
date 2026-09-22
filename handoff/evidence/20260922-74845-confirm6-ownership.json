@@ -1,0 +1,71 @@
+{
+  "children": {
+    "control": {
+      "canonical_and_endpoint_ownership": true,
+      "partial_and_feedback_sha_verified": true,
+      "fresh_complete_finite": false,
+      "initialized_identity": {
+        "passed": true,
+        "trial": {
+          "path": "outputs/hpc/outer-steps456-20260921/final-confirmation/control/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "4697f0f91cd13f092c95e925fd239a27d934a508331c68209d10e3af0c6ac671"
+        },
+        "native": {
+          "trial_source": {
+            "path": "outputs/hpc/outer-steps456-20260921/final-confirmation/control/trial_material.npz",
+            "size_bytes": 27774,
+            "sha256": "4697f0f91cd13f092c95e925fd239a27d934a508331c68209d10e3af0c6ac671"
+          },
+          "native_mirrored_material_exact": true,
+          "physical_phase_and_dt_exact": true
+        }
+      }
+    },
+    "confirm2": {
+      "canonical_and_endpoint_ownership": true,
+      "partial_and_feedback_sha_verified": true,
+      "fresh_complete_finite": true,
+      "initialized_identity": {
+        "passed": true,
+        "trial": {
+          "path": "outputs/hpc/outer-steps456-20260921/final-confirmation/confirm2/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "175394e446457044c016f70be04ffd10640cc3296f0d03d149d3902e0e972ff4"
+        },
+        "native": {
+          "trial_source": {
+            "path": "outputs/hpc/outer-steps456-20260921/final-confirmation/confirm2/trial_material.npz",
+            "size_bytes": 27774,
+            "sha256": "175394e446457044c016f70be04ffd10640cc3296f0d03d149d3902e0e972ff4"
+          },
+          "native_mirrored_material_exact": true,
+          "physical_phase_and_dt_exact": true
+        }
+      }
+    },
+    "confirm4": {
+      "canonical_and_endpoint_ownership": true,
+      "partial_and_feedback_sha_verified": true,
+      "fresh_complete_finite": true,
+      "initialized_identity": {
+        "passed": true,
+        "trial": {
+          "path": "outputs/hpc/outer-steps456-20260921/final-confirmation/confirm4/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "175394e446457044c016f70be04ffd10640cc3296f0d03d149d3902e0e972ff4"
+        },
+        "native": {
+          "trial_source": {
+            "path": "outputs/hpc/outer-steps456-20260921/final-confirmation/confirm4/trial_material.npz",
+            "size_bytes": 27774,
+            "sha256": "175394e446457044c016f70be04ffd10640cc3296f0d03d149d3902e0e972ff4"
+          },
+          "native_mirrored_material_exact": true,
+          "physical_phase_and_dt_exact": true
+        }
+      }
+    }
+  },
+  "accepted_step6_five_claims_verified": true
+}

@@ -1,0 +1,74 @@
+{
+  "status": "complete_requires_review",
+  "updated_unix": 1790010822.415216,
+  "current_outer_step": 6,
+  "current_stage": "final_confirmation",
+  "cycles": {
+    "step4": {
+      "stages": {
+        "confirmation": {
+          "completed_maps": 6,
+          "active_maps": 0,
+          "completed_pairs": 3,
+          "pending_pairs": 0
+        },
+        "next_step": {
+          "completed_maps": 10,
+          "active_maps": 0,
+          "completed_pairs": 3,
+          "pending_pairs": 0
+        }
+      },
+      "maps_committed_or_active": 16,
+      "pairs_completed_or_pending": 6
+    },
+    "step5": {
+      "stages": {
+        "confirmation": {
+          "completed_maps": 6,
+          "active_maps": 0,
+          "completed_pairs": 3,
+          "pending_pairs": 0
+        },
+        "next_step": {
+          "completed_maps": 10,
+          "active_maps": 0,
+          "completed_pairs": 3,
+          "pending_pairs": 0
+        }
+      },
+      "maps_committed_or_active": 16,
+      "pairs_completed_or_pending": 6
+    },
+    "step6": {
+      "stages": {
+        "confirmation": {
+          "completed_maps": 6,
+          "active_maps": 0,
+          "completed_pairs": 3,
+          "pending_pairs": 0
+        },
+        "next_step": {
+          "completed_maps": 10,
+          "active_maps": 0,
+          "completed_pairs": 3,
+          "pending_pairs": 0
+        }
+      },
+      "maps_committed_or_active": 16,
+      "pairs_completed_or_pending": 6
+    }
+  },
+  "final_confirmation": {
+    "completed_maps": 6,
+    "active_maps": 0,
+    "completed_pairs": 3,
+    "pending_pairs": 0
+  },
+  "maps_committed_or_active": 54,
+  "pairs_completed_or_pending": 21,
+  "accepted_outer_step": 6,
+  "new_accepted_steps": 3,
+  "final_precision_confirmation_passed": true,
+  "coupled_column_accepted": false
+}
