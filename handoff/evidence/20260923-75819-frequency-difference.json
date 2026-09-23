@@ -1,0 +1,526 @@
+{
+  "source_manifest_sha256": "b92e3aaba33caf63978b27f4b2567c3d6492973b22fe84b55952472748b9f24c",
+  "signed_total": -699406304.8751974,
+  "sum_abs_block_integrals": 7874720907447.229,
+  "top10": [
+    {
+      "block": 24,
+      "signed_column_difference": -722338797185.7146,
+      "difference_depth_l1": 741159307051.9445,
+      "atomic_vs_coefficient_signed": -0.0022977307608830757
+    },
+    {
+      "block": 23,
+      "signed_column_difference": -658998042273.242,
+      "difference_depth_l1": 659453923606.3153,
+      "atomic_vs_coefficient_signed": -0.0026663113672305357
+    },
+    {
+      "block": 49,
+      "signed_column_difference": 655460073584.456,
+      "difference_depth_l1": 655460073584.456,
+      "atomic_vs_coefficient_signed": -0.004393615145569988
+    },
+    {
+      "block": 48,
+      "signed_column_difference": 654771961167.4554,
+      "difference_depth_l1": 655739964965.8584,
+      "atomic_vs_coefficient_signed": 0.006871891109658572
+    },
+    {
+      "block": 47,
+      "signed_column_difference": 548706080992.05334,
+      "difference_depth_l1": 566232576550.6155,
+      "atomic_vs_coefficient_signed": 0.00872646962508705
+    },
+    {
+      "block": 22,
+      "signed_column_difference": -531303871119.7515,
+      "difference_depth_l1": 532304492374.81854,
+      "atomic_vs_coefficient_signed": 0.018588128018502043
+    },
+    {
+      "block": 50,
+      "signed_column_difference": 504724052698.1439,
+      "difference_depth_l1": 504724052698.1439,
+      "atomic_vs_coefficient_signed": -0.0004545344896182967
+    },
+    {
+      "block": 25,
+      "signed_column_difference": -437561206872.47705,
+      "difference_depth_l1": 687770072477.9563,
+      "atomic_vs_coefficient_signed": -0.00843472178094
+    },
+    {
+      "block": 46,
+      "signed_column_difference": 413864000777.0481,
+      "difference_depth_l1": 434765339145.9041,
+      "atomic_vs_coefficient_signed": -0.004937346222751823
+    },
+    {
+      "block": 21,
+      "signed_column_difference": -393140057361.65137,
+      "difference_depth_l1": 395735320205.6627,
+      "atomic_vs_coefficient_signed": 0.0009018369031351827
+    }
+  ],
+  "blocks": [
+    {
+      "block": 0,
+      "signed_column_difference": -637850736.8727342,
+      "difference_depth_l1": 637850736.8727342,
+      "atomic_vs_coefficient_signed": 0.000970325683144441
+    },
+    {
+      "block": 1,
+      "signed_column_difference": 5452656.591976279,
+      "difference_depth_l1": 25661915.031398736,
+      "atomic_vs_coefficient_signed": -0.0014060291861348975
+    },
+    {
+      "block": 2,
+      "signed_column_difference": 948595.6986532419,
+      "difference_depth_l1": 37059200.634308375,
+      "atomic_vs_coefficient_signed": -0.000700073760753213
+    },
+    {
+      "block": 3,
+      "signed_column_difference": -8867191.131126761,
+      "difference_depth_l1": 55674619.03120505,
+      "atomic_vs_coefficient_signed": 0.0011157482376670993
+    },
+    {
+      "block": 4,
+      "signed_column_difference": -28537244.477646068,
+      "difference_depth_l1": 86631998.5431009,
+      "atomic_vs_coefficient_signed": -0.0027123579188032326
+    },
+    {
+      "block": 5,
+      "signed_column_difference": -66230629.46421641,
+      "difference_depth_l1": 139181614.40606263,
+      "atomic_vs_coefficient_signed": -0.00022193692766098497
+    },
+    {
+      "block": 6,
+      "signed_column_difference": -136515563.17781273,
+      "difference_depth_l1": 229351536.9100317,
+      "atomic_vs_coefficient_signed": -0.0011282520941969458
+    },
+    {
+      "block": 7,
+      "signed_column_difference": -265154685.60730463,
+      "difference_depth_l1": 384898411.2317682,
+      "atomic_vs_coefficient_signed": 0.002921284828357568
+    },
+    {
+      "block": 8,
+      "signed_column_difference": -497341706.9557814,
+      "difference_depth_l1": 651148408.6218183,
+      "atomic_vs_coefficient_signed": 0.005298959542321249
+    },
+    {
+      "block": 9,
+      "signed_column_difference": -911725341.3326552,
+      "difference_depth_l1": 1103725520.4044428,
+      "atomic_vs_coefficient_signed": 0.0016452830569362942
+    },
+    {
+      "block": 10,
+      "signed_column_difference": -1643971623.1507967,
+      "difference_depth_l1": 1867886080.6060228,
+      "atomic_vs_coefficient_signed": 0.004053652195036945
+    },
+    {
+      "block": 11,
+      "signed_column_difference": -2925653800.170492,
+      "difference_depth_l1": 3160236367.0823736,
+      "atomic_vs_coefficient_signed": -0.00413044835207931
+    },
+    {
+      "block": 12,
+      "signed_column_difference": -5147040105.827801,
+      "difference_depth_l1": 5448922081.749977,
+      "atomic_vs_coefficient_signed": 6.50258745592189e-05
+    },
+    {
+      "block": 13,
+      "signed_column_difference": -8955619299.168694,
+      "difference_depth_l1": 9403776649.944523,
+      "atomic_vs_coefficient_signed": -7.83822887608143e-05
+    },
+    {
+      "block": 14,
+      "signed_column_difference": -15404654743.672478,
+      "difference_depth_l1": 16076868894.59196,
+      "atomic_vs_coefficient_signed": -0.0005254582359417058
+    },
+    {
+      "block": 15,
+      "signed_column_difference": -26163881070.51326,
+      "difference_depth_l1": 27170051111.96677,
+      "atomic_vs_coefficient_signed": -0.009197003073941147
+    },
+    {
+      "block": 16,
+      "signed_column_difference": -43788640265.10416,
+      "difference_depth_l1": 45264061518.386475,
+      "atomic_vs_coefficient_signed": -0.0017085811944218105
+    },
+    {
+      "block": 17,
+      "signed_column_difference": -71996856125.58615,
+      "difference_depth_l1": 74081476542.97711,
+      "atomic_vs_coefficient_signed": 0.005290949091501299
+    },
+    {
+      "block": 18,
+      "signed_column_difference": -115796132921.17279,
+      "difference_depth_l1": 118571638188.32628,
+      "atomic_vs_coefficient_signed": -0.013698404435159822
+    },
+    {
+      "block": 19,
+      "signed_column_difference": -181102855444.79202,
+      "difference_depth_l1": 184447420066.97363,
+      "atomic_vs_coefficient_signed": 0.006355562263753147
+    },
+    {
+      "block": 20,
+      "signed_column_difference": -273203247236.33197,
+      "difference_depth_l1": 276614677441.26843,
+      "atomic_vs_coefficient_signed": -0.0032690502479182197
+    },
+    {
+      "block": 21,
+      "signed_column_difference": -393140057361.65137,
+      "difference_depth_l1": 395735320205.6627,
+      "atomic_vs_coefficient_signed": 0.0009018369031351827
+    },
+    {
+      "block": 22,
+      "signed_column_difference": -531303871119.7515,
+      "difference_depth_l1": 532304492374.81854,
+      "atomic_vs_coefficient_signed": 0.018588128018502043
+    },
+    {
+      "block": 23,
+      "signed_column_difference": -658998042273.242,
+      "difference_depth_l1": 659453923606.3153,
+      "atomic_vs_coefficient_signed": -0.0026663113672305357
+    },
+    {
+      "block": 24,
+      "signed_column_difference": -722338797185.7146,
+      "difference_depth_l1": 741159307051.9445,
+      "atomic_vs_coefficient_signed": -0.0022977307608830757
+    },
+    {
+      "block": 25,
+      "signed_column_difference": -437561206872.47705,
+      "difference_depth_l1": 687770072477.9563,
+      "atomic_vs_coefficient_signed": -0.00843472178094
+    },
+    {
+      "block": 26,
+      "signed_column_difference": -38376881198.7299,
+      "difference_depth_l1": 50763955502.64563,
+      "atomic_vs_coefficient_signed": -0.020720189859717898
+    },
+    {
+      "block": 27,
+      "signed_column_difference": -39411070706.72139,
+      "difference_depth_l1": 51361050669.608215,
+      "atomic_vs_coefficient_signed": 0.013226616283738599
+    },
+    {
+      "block": 28,
+      "signed_column_difference": -39804314211.145744,
+      "difference_depth_l1": 53877096749.02286,
+      "atomic_vs_coefficient_signed": -0.002953420480649843
+    },
+    {
+      "block": 29,
+      "signed_column_difference": -40029647465.59899,
+      "difference_depth_l1": 56607400552.31576,
+      "atomic_vs_coefficient_signed": 0.01495059753681787
+    },
+    {
+      "block": 30,
+      "signed_column_difference": -40029609974.905205,
+      "difference_depth_l1": 59575676357.56879,
+      "atomic_vs_coefficient_signed": 0.006641363895879833
+    },
+    {
+      "block": 31,
+      "signed_column_difference": -39718495176.48237,
+      "difference_depth_l1": 62794008836.578926,
+      "atomic_vs_coefficient_signed": -0.016891144739888474
+    },
+    {
+      "block": 32,
+      "signed_column_difference": -39000203970.081635,
+      "difference_depth_l1": 66294348143.3359,
+      "atomic_vs_coefficient_signed": -0.02452211784752706
+    },
+    {
+      "block": 33,
+      "signed_column_difference": -37722520524.61423,
+      "difference_depth_l1": 70104047791.63586,
+      "atomic_vs_coefficient_signed": 0.012749431484295925
+    },
+    {
+      "block": 34,
+      "signed_column_difference": -35695490624.38407,
+      "difference_depth_l1": 74301861477.75783,
+      "atomic_vs_coefficient_signed": -0.01690546722927371
+    },
+    {
+      "block": 35,
+      "signed_column_difference": -32648422316.716682,
+      "difference_depth_l1": 78911413074.81125,
+      "atomic_vs_coefficient_signed": 0.0075821337683824345
+    },
+    {
+      "block": 36,
+      "signed_column_difference": -28217252185.833694,
+      "difference_depth_l1": 84102506177.37793,
+      "atomic_vs_coefficient_signed": 0.0030188544282574842
+    },
+    {
+      "block": 37,
+      "signed_column_difference": -21878314648.978508,
+      "difference_depth_l1": 90097691080.37802,
+      "atomic_vs_coefficient_signed": -0.02104597584345201
+    },
+    {
+      "block": 38,
+      "signed_column_difference": -12901943257.630817,
+      "difference_depth_l1": 97179358222.09221,
+      "atomic_vs_coefficient_signed": -0.007856892785665343
+    },
+    {
+      "block": 39,
+      "signed_column_difference": -253240066.8820355,
+      "difference_depth_l1": 105691428907.16722,
+      "atomic_vs_coefficient_signed": -0.01977510498106502
+    },
+    {
+      "block": 40,
+      "signed_column_difference": 17585480243.67859,
+      "difference_depth_l1": 116235987733.35504,
+      "atomic_vs_coefficient_signed": 0.00574203934743987
+    },
+    {
+      "block": 41,
+      "signed_column_difference": 42748146247.54433,
+      "difference_depth_l1": 131034854454.71754,
+      "atomic_vs_coefficient_signed": -0.012550520241756773
+    },
+    {
+      "block": 42,
+      "signed_column_difference": 78298754702.79364,
+      "difference_depth_l1": 151740482753.02942,
+      "atomic_vs_coefficient_signed": -0.004458126872514094
+    },
+    {
+      "block": 43,
+      "signed_column_difference": 128438987700.7149,
+      "difference_depth_l1": 183964031801.1748,
+      "atomic_vs_coefficient_signed": -0.017763527558523142
+    },
+    {
+      "block": 44,
+      "signed_column_difference": 198430233098.3849,
+      "difference_depth_l1": 236285796832.10248,
+      "atomic_vs_coefficient_signed": 0.002916784901613634
+    },
+    {
+      "block": 45,
+      "signed_column_difference": 296178166405.68665,
+      "difference_depth_l1": 322182880817.13916,
+      "atomic_vs_coefficient_signed": -0.016548987902035864
+    },
+    {
+      "block": 46,
+      "signed_column_difference": 413864000777.0481,
+      "difference_depth_l1": 434765339145.9041,
+      "atomic_vs_coefficient_signed": -0.004937346222751823
+    },
+    {
+      "block": 47,
+      "signed_column_difference": 548706080992.05334,
+      "difference_depth_l1": 566232576550.6155,
+      "atomic_vs_coefficient_signed": 0.00872646962508705
+    },
+    {
+      "block": 48,
+      "signed_column_difference": 654771961167.4554,
+      "difference_depth_l1": 655739964965.8584,
+      "atomic_vs_coefficient_signed": 0.006871891109658572
+    },
+    {
+      "block": 49,
+      "signed_column_difference": 655460073584.456,
+      "difference_depth_l1": 655460073584.456,
+      "atomic_vs_coefficient_signed": -0.004393615145569988
+    },
+    {
+      "block": 50,
+      "signed_column_difference": 504724052698.1439,
+      "difference_depth_l1": 504724052698.1439,
+      "atomic_vs_coefficient_signed": -0.0004545344896182967
+    },
+    {
+      "block": 51,
+      "signed_column_difference": 92992718982.12349,
+      "difference_depth_l1": 203573735441.07416,
+      "atomic_vs_coefficient_signed": -0.05425970696587955
+    },
+    {
+      "block": 52,
+      "signed_column_difference": 257597740266.93213,
+      "difference_depth_l1": 257597740266.93213,
+      "atomic_vs_coefficient_signed": 0.416745227164567
+    },
+    {
+      "block": 53,
+      "signed_column_difference": 42624619109.77667,
+      "difference_depth_l1": 42624619109.77667,
+      "atomic_vs_coefficient_signed": -0.036934029456142776
+    },
+    {
+      "block": 54,
+      "signed_column_difference": 4331924742.432783,
+      "difference_depth_l1": 4331924742.432783,
+      "atomic_vs_coefficient_signed": 0.003128030017445574
+    },
+    {
+      "block": 55,
+      "signed_column_difference": 244595718.3165161,
+      "difference_depth_l1": 244595718.3165161,
+      "atomic_vs_coefficient_signed": 7.581842062307368e-05
+    },
+    {
+      "block": 56,
+      "signed_column_difference": 6735548.189173797,
+      "difference_depth_l1": 6735548.189173797,
+      "atomic_vs_coefficient_signed": 6.159409754913028e-07
+    },
+    {
+      "block": 57,
+      "signed_column_difference": 77031.68957111078,
+      "difference_depth_l1": 77031.68957111078,
+      "atomic_vs_coefficient_signed": 7.986896195817591e-10
+    },
+    {
+      "block": 58,
+      "signed_column_difference": 301.1472617650384,
+      "difference_depth_l1": 301.1472617674792,
+      "atomic_vs_coefficient_signed": 6.321778301744845e-13
+    },
+    {
+      "block": 59,
+      "signed_column_difference": 0.3182959088781184,
+      "difference_depth_l1": 0.31829590887820747,
+      "atomic_vs_coefficient_signed": 3.808111987914876e-15
+    },
+    {
+      "block": 60,
+      "signed_column_difference": 6.864711184235287e-05,
+      "difference_depth_l1": 6.864711184235315e-05,
+      "atomic_vs_coefficient_signed": 1.2268727283198143e-19
+    },
+    {
+      "block": 61,
+      "signed_column_difference": 2.1626251471168207e-09,
+      "difference_depth_l1": 2.162625147116821e-09,
+      "atomic_vs_coefficient_signed": -3.6903194029664475e-24
+    },
+    {
+      "block": 62,
+      "signed_column_difference": 6.717269367445847e-15,
+      "difference_depth_l1": 6.717269367445847e-15,
+      "atomic_vs_coefficient_signed": 6.84986077186539e-30
+    },
+    {
+      "block": 63,
+      "signed_column_difference": 1.29075139153451e-21,
+      "difference_depth_l1": 1.29075139153451e-21,
+      "atomic_vs_coefficient_signed": -4.304540032118614e-38
+    },
+    {
+      "block": 64,
+      "signed_column_difference": 8.670837304593408e-30,
+      "difference_depth_l1": 8.670837304593408e-30,
+      "atomic_vs_coefficient_signed": 1.81989651146297e-45
+    },
+    {
+      "block": 65,
+      "signed_column_difference": 1.0113577821402265e-39,
+      "difference_depth_l1": 1.0113577821402265e-39,
+      "atomic_vs_coefficient_signed": 4.376416895112183e-56
+    },
+    {
+      "block": 66,
+      "signed_column_difference": 8.90385034630483e-52,
+      "difference_depth_l1": 8.90385034630483e-52,
+      "atomic_vs_coefficient_signed": 8.363141302168236e-69
+    },
+    {
+      "block": 67,
+      "signed_column_difference": 2.2340165772620918e-66,
+      "difference_depth_l1": 2.2340165772620918e-66,
+      "atomic_vs_coefficient_signed": 4.612660059704423e-85
+    },
+    {
+      "block": 68,
+      "signed_column_difference": 5.129919164967196e-84,
+      "difference_depth_l1": 5.129919164967196e-84,
+      "atomic_vs_coefficient_signed": 3.751739678473403e-102
+    },
+    {
+      "block": 69,
+      "signed_column_difference": 2.8543515499777002e-105,
+      "difference_depth_l1": 2.8543515499777002e-105,
+      "atomic_vs_coefficient_signed": 5.233837551872672e-124
+    },
+    {
+      "block": 70,
+      "signed_column_difference": 8.111201219529542e-131,
+      "difference_depth_l1": 8.111201219529542e-131,
+      "atomic_vs_coefficient_signed": -2.3721527928538625e-150
+    },
+    {
+      "block": 71,
+      "signed_column_difference": 1.913411815393488e-161,
+      "difference_depth_l1": 1.913411815393488e-161,
+      "atomic_vs_coefficient_signed": -4.0065480269945696e-181
+    },
+    {
+      "block": 72,
+      "signed_column_difference": 4.547344932670854e-198,
+      "difference_depth_l1": 4.547344932670854e-198,
+      "atomic_vs_coefficient_signed": 1.5726613160385026e-218
+    },
+    {
+      "block": 73,
+      "signed_column_difference": 9.47770688171052e-242,
+      "difference_depth_l1": 9.47770688171052e-242,
+      "atomic_vs_coefficient_signed": 1.3101666779159836e-262
+    },
+    {
+      "block": 74,
+      "signed_column_difference": 1.0245627359052927e-293,
+      "difference_depth_l1": 1.0250671872385282e-293,
+      "atomic_vs_coefficient_signed": 3.722785554560426e-298
+    },
+    {
+      "block": 75,
+      "signed_column_difference": 0.0,
+      "difference_depth_l1": 0.0,
+      "atomic_vs_coefficient_signed": 0.0
+    }
+  ],
+  "not_a_source_cause_identification": true
+}

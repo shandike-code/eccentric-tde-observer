@@ -34,3 +34,13 @@
 准备时在allocation核.dat及完整来源，声明冻结源claim、全部操作/诊断代码及原依赖；worker核小输入、parent前后核全部claims。完整76块原三数组求和须与存储完整反馈逐位一致；分项及beta0结果仅作诊断。两个内存门、hugepage0、stdlib relay保留。原失败大态不会被写入或删除。
 
 PRE-RUN：Code对照原源函数、测试分项不改物质/强度输入及异常恢复；Logic固定态分项而非反推新响应，先单块再全域；Physics线性成立但差异原因未定，不允许用诊断分项修补正式结果。RUN。首轮测试发现未提交入口一处括号语法错误，已修复；最终4项测试与两个sbatch语法检查通过。POST-RUN：回溯包两端唯一失败独立复现、数据有限且归属完整；源分项实际Linux结果尚待试运行。新数值提交、调度及报告后附。
+
+## 逐块抵消与实际提交
+
+已存final partial的带符号柱积分差逐块相加为-6.994063048751974e8，而逐块积分绝对值之和为7.874720907447229e12 erg s^-1 cm^-2。block24为最大负贡献-7.223387971857146e11，block49正贡献6.55460073584456e11。明细20260923-75819-frequency-difference.json。lab/comoving同名频带并不选择同一组光子，块间频率迁移/抵消不应被逐块误判为总能量误差；必须全76块求和，不能用top块替代完整柱结果。
+
+数值代码bcb248efaf2206628376b8b2bb9ac1876b833321已同步三端，学校4项测试通过。75845默认4CPU/16GiB于13:01:25在anode01启动，单block24试运行、20分钟墙钟。75847于13:02:25提交，32CPU/128GiB/16worker、1小时墙钟，Slurm afterok:75845成功依赖；全频入口还会核pilot报告与源claim。13:04:53初查pilot RUNNING/preparing、stderr空，75847 PENDING/Dependency；没有把排队当作32核已在计算，也未宣称pilot通过。
+
+对应run为outputs/hpc/formal-source-split-{pilot,all}-20260923。只读watchers PID1178849/1178852，outputs/review-20260923/scheduler-{75845,75847}，各30秒采样最多7200秒，均脱离SSH且无提交/取消能力。launch证据20260923-{75845,75847}-launch.json保存资源与依赖状态。学校备份outputs/review-20260923/pre-formal-source-split.bundle。
+
+定时审阅已保持每30分钟ACTIVE并改为源分项诊断，明确不继续缩步、不更改原门、pilot失败后的无效依赖处理、全频审计要求及SSH断线提醒。更新前后TOML在Mac outputs/review-20260921/automation-{before,after}-source-split.toml。数值提交与后续调度说明提交分别记录。

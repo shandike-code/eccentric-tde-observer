@@ -1,0 +1,8 @@
+{
+  "job_id": 75845,
+  "observed_unix": 1790139778.1381383,
+  "watcher_pid": 1178849,
+  "watcher_directory": "outputs/review-20260923/scheduler-75845",
+  "numerical_commit": "bcb248efaf2206628376b8b2bb9ac1876b833321",
+  "scontrol": "JobId=75845 JobName=tde-source-split-pilot UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:01:33 TimeLimit=00:20:00 TimeMin=N/A SubmitTime=2026-09-23T13:01:24 EligibleTime=2026-09-23T13:01:24 AccrueTime=2026-09-23T13:01:24 StartTime=2026-09-23T13:01:25 EndTime=2026-09-23T13:21:25 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-23T13:01:25 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:1167575 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode01 BatchHost=anode01 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/formal_source_split_pilot.sbatch SubmitLine=sbatch --parsable operations/formal_source_split_pilot.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-source-split-pilot-75845.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-source-split-pilot-75845.out TresPerTask=cpu=4\n"
+}
