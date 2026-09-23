@@ -22,3 +22,11 @@ operations/common_confirmation_step17.py和common-confirmation-step17-v1.md：x1
 control种子来自已确认x16的最新后继；物质取step17的alpha0基态输入，物理字段/encoded必须与x16逐位相同，仅迭代元数据为新的r16。confirm1取独立map08后继；confirm2取confirm1后继。旧物理层、phase/dt、信赖域和残差分母不变。终态仍requires_mac_review，接受数16，不自动记17或生成x18。
 
 Mac备份pre-step17-confirmation.bundle与automation-before-step17-confirmation.toml已保存。测试、学校同步及新job将在执行后补记。
+
+## 已执行
+
+Mac46项回归0.97秒、Linux46项15.38秒全部通过，shell语法通过。数值提交742649955ed2c0081fad1651bc64cdac377cf3bb，学校与GitHub已核实；push返回网络中断但随后ls-remote确认实际已经更新，未force重写。
+
+76260于2026-09-24 00:36:47在anode18启动，32CPU128GiB，4小时上限到04:36:47。00:38观察RUNNING，父状态control/mapping，stderr空；该父状态也覆盖child初始化，并不单凭它宣布worker已启动。只读终态watcher tmux confirm17-76260，最长5小时，输出outputs/review-20260924/scheduler-76260。学校备份/home/scc/pb24511938/pre-step17-confirmation.bundle完成。
+
+SSH重连实测通过，USTC HHe 运行审阅与决策更新为76260并读回逐字核对，ACTIVE、30分钟、无变化静默。旧76204不重交，第17步仍未确认。
