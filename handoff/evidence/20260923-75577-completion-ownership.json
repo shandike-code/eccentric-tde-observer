@@ -1,0 +1,337 @@
+{
+  "step14": {
+    "alpha": 0.015625,
+    "native": {
+      "control": {
+        "passed": true,
+        "trial": {
+          "path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/control/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "7761a9e19ac6e41abe63ac6b7ba80eb507b914587c5568bf8ff26b21c9e3b190"
+        },
+        "native": {
+          "trial_source": {
+            "path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/control/trial_material.npz",
+            "size_bytes": 27774,
+            "sha256": "7761a9e19ac6e41abe63ac6b7ba80eb507b914587c5568bf8ff26b21c9e3b190"
+          },
+          "native_mirrored_material_exact": true,
+          "physical_phase_and_dt_exact": true
+        }
+      },
+      "full": {
+        "passed": true,
+        "trial": {
+          "path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "a1f7c71d09231257cdc1cbe3b801294ec2092475540de3f6c41b926794b44a2e"
+        },
+        "native": {
+          "trial_source": {
+            "path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/trial_material.npz",
+            "size_bytes": 27774,
+            "sha256": "a1f7c71d09231257cdc1cbe3b801294ec2092475540de3f6c41b926794b44a2e"
+          },
+          "native_mirrored_material_exact": true,
+          "physical_phase_and_dt_exact": true
+        }
+      }
+    },
+    "rounds": {
+      "1": {
+        "fresh_complete_finite": true,
+        "fresh_final_final": {
+          "l2": 0.95456249893848,
+          "mass_weighted": 0.9474511380982681,
+          "maximum_cell": 0.975567600415659
+        },
+        "failed_gates": [
+          "last_two_atomic_heating_pass",
+          "last_two_direct_heating_pass",
+          "last_two_formal_heating_pass",
+          "inner_noise_resolved_pass",
+          "two_inner_radiation_residuals_pass"
+        ]
+      },
+      "2": {
+        "fresh_complete_finite": true,
+        "fresh_final_final": {
+          "l2": 0.9436524177851662,
+          "mass_weighted": 0.9311809319385896,
+          "maximum_cell": 0.9750356167835571
+        },
+        "failed_gates": []
+      }
+    }
+  },
+  "step15": {
+    "alpha": 0.015625,
+    "native": {
+      "control": {
+        "passed": true,
+        "trial": {
+          "path": "outputs/hpc/outer-steps13to15-20260922/step15/next-step/control/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "0373dec519fbd8d8d96a5a3c213d7326d31aab5fca31f0267900f84ced9d2e4f"
+        },
+        "native": {
+          "trial_source": {
+            "path": "outputs/hpc/outer-steps13to15-20260922/step15/next-step/control/trial_material.npz",
+            "size_bytes": 27774,
+            "sha256": "0373dec519fbd8d8d96a5a3c213d7326d31aab5fca31f0267900f84ced9d2e4f"
+          },
+          "native_mirrored_material_exact": true,
+          "physical_phase_and_dt_exact": true
+        }
+      },
+      "full": {
+        "passed": true,
+        "trial": {
+          "path": "outputs/hpc/outer-steps13to15-20260922/step15/next-step/full/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "a3f31d6e275315d08f720914fe443ec46f7eb2bc976b3ef94a9f8ffef428ce8f"
+        },
+        "native": {
+          "trial_source": {
+            "path": "outputs/hpc/outer-steps13to15-20260922/step15/next-step/full/trial_material.npz",
+            "size_bytes": 27774,
+            "sha256": "a3f31d6e275315d08f720914fe443ec46f7eb2bc976b3ef94a9f8ffef428ce8f"
+          },
+          "native_mirrored_material_exact": true,
+          "physical_phase_and_dt_exact": true
+        }
+      }
+    },
+    "rounds": {
+      "1": {
+        "fresh_complete_finite": true,
+        "fresh_final_final": {
+          "l2": 0.9548558352842432,
+          "mass_weighted": 0.9499590647681858,
+          "maximum_cell": 0.9766931604862292
+        },
+        "failed_gates": [
+          "inner_noise_resolved_pass",
+          "two_inner_radiation_residuals_pass"
+        ]
+      },
+      "2": {
+        "fresh_complete_finite": true,
+        "fresh_final_final": {
+          "l2": 0.9448014576759672,
+          "mass_weighted": 0.9353875451065241,
+          "maximum_cell": 0.9760895487677778
+        },
+        "failed_gates": []
+      }
+    }
+  },
+  "confirm14": {
+    "control": {
+      "canonical_endpoints_and_partials": true,
+      "native_identity": {
+        "passed": true,
+        "trial": {
+          "path": "outputs/hpc/outer-steps13to15-20260922/step15/confirmation/control/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "7761a9e19ac6e41abe63ac6b7ba80eb507b914587c5568bf8ff26b21c9e3b190"
+        },
+        "native": {
+          "trial_source": {
+            "path": "outputs/hpc/outer-steps13to15-20260922/step15/confirmation/control/trial_material.npz",
+            "size_bytes": 27774,
+            "sha256": "7761a9e19ac6e41abe63ac6b7ba80eb507b914587c5568bf8ff26b21c9e3b190"
+          },
+          "native_mirrored_material_exact": true,
+          "physical_phase_and_dt_exact": true
+        }
+      }
+    },
+    "confirm2": {
+      "canonical_endpoints_and_partials": true,
+      "native_identity": {
+        "passed": true,
+        "trial": {
+          "path": "outputs/hpc/outer-steps13to15-20260922/step15/confirmation/confirm2/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "a1f7c71d09231257cdc1cbe3b801294ec2092475540de3f6c41b926794b44a2e"
+        },
+        "native": {
+          "trial_source": {
+            "path": "outputs/hpc/outer-steps13to15-20260922/step15/confirmation/confirm2/trial_material.npz",
+            "size_bytes": 27774,
+            "sha256": "a1f7c71d09231257cdc1cbe3b801294ec2092475540de3f6c41b926794b44a2e"
+          },
+          "native_mirrored_material_exact": true,
+          "physical_phase_and_dt_exact": true
+        }
+      },
+      "fresh_complete_finite": true,
+      "fresh_final_final": {
+        "l2": 0.9421549457784255,
+        "mass_weighted": 0.9284306702992232,
+        "maximum_cell": 0.9751285602641947
+      },
+      "base_norms": {
+        "l2": 10.745396477105363,
+        "mass_weighted": 0.36717144975319727,
+        "maximum_cell": 2.9811028891126905
+      },
+      "candidate_norms": {
+        "l2": 10.145804396367472,
+        "mass_weighted": 0.3421370158642932,
+        "maximum_cell": 2.908111650198902
+      }
+    },
+    "confirm4": {
+      "canonical_endpoints_and_partials": true,
+      "native_identity": {
+        "passed": true,
+        "trial": {
+          "path": "outputs/hpc/outer-steps13to15-20260922/step15/confirmation/confirm4/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "a1f7c71d09231257cdc1cbe3b801294ec2092475540de3f6c41b926794b44a2e"
+        },
+        "native": {
+          "trial_source": {
+            "path": "outputs/hpc/outer-steps13to15-20260922/step15/confirmation/confirm4/trial_material.npz",
+            "size_bytes": 27774,
+            "sha256": "a1f7c71d09231257cdc1cbe3b801294ec2092475540de3f6c41b926794b44a2e"
+          },
+          "native_mirrored_material_exact": true,
+          "physical_phase_and_dt_exact": true
+        }
+      },
+      "fresh_complete_finite": true,
+      "fresh_final_final": {
+        "l2": 0.9427537332318214,
+        "mass_weighted": 0.9291078504324095,
+        "maximum_cell": 0.9753727515084659
+      },
+      "base_norms": {
+        "l2": 10.745396477105363,
+        "mass_weighted": 0.36717144975319727,
+        "maximum_cell": 2.9811028891126905
+      },
+      "candidate_norms": {
+        "l2": 10.152252571802283,
+        "mass_weighted": 0.3423865642661101,
+        "maximum_cell": 2.9088398981769426
+      }
+    }
+  },
+  "confirm15": {
+    "control": {
+      "canonical_endpoints_and_partials": true,
+      "native_identity": {
+        "passed": true,
+        "trial": {
+          "path": "outputs/hpc/outer-steps13to15-20260922/final-confirmation/control/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "0373dec519fbd8d8d96a5a3c213d7326d31aab5fca31f0267900f84ced9d2e4f"
+        },
+        "native": {
+          "trial_source": {
+            "path": "outputs/hpc/outer-steps13to15-20260922/final-confirmation/control/trial_material.npz",
+            "size_bytes": 27774,
+            "sha256": "0373dec519fbd8d8d96a5a3c213d7326d31aab5fca31f0267900f84ced9d2e4f"
+          },
+          "native_mirrored_material_exact": true,
+          "physical_phase_and_dt_exact": true
+        }
+      }
+    },
+    "confirm2": {
+      "canonical_endpoints_and_partials": true,
+      "native_identity": {
+        "passed": true,
+        "trial": {
+          "path": "outputs/hpc/outer-steps13to15-20260922/final-confirmation/confirm2/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "a3f31d6e275315d08f720914fe443ec46f7eb2bc976b3ef94a9f8ffef428ce8f"
+        },
+        "native": {
+          "trial_source": {
+            "path": "outputs/hpc/outer-steps13to15-20260922/final-confirmation/confirm2/trial_material.npz",
+            "size_bytes": 27774,
+            "sha256": "a3f31d6e275315d08f720914fe443ec46f7eb2bc976b3ef94a9f8ffef428ce8f"
+          },
+          "native_mirrored_material_exact": true,
+          "physical_phase_and_dt_exact": true
+        }
+      },
+      "fresh_complete_finite": true,
+      "fresh_final_final": {
+        "l2": 0.9434633989369402,
+        "mass_weighted": 0.9335424304661869,
+        "maximum_cell": 0.9761687654146435
+      },
+      "base_norms": {
+        "l2": 10.152252571802283,
+        "mass_weighted": 0.3423865642661101,
+        "maximum_cell": 2.9088398981769426
+      },
+      "candidate_norms": {
+        "l2": 9.599490106343191,
+        "mass_weighted": 0.3206622590295745,
+        "maximum_cell": 2.8405540403674787
+      }
+    },
+    "confirm4": {
+      "canonical_endpoints_and_partials": true,
+      "native_identity": {
+        "passed": true,
+        "trial": {
+          "path": "outputs/hpc/outer-steps13to15-20260922/final-confirmation/confirm4/trial_material.npz",
+          "size_bytes": 27774,
+          "sha256": "a3f31d6e275315d08f720914fe443ec46f7eb2bc976b3ef94a9f8ffef428ce8f"
+        },
+        "native": {
+          "trial_source": {
+            "path": "outputs/hpc/outer-steps13to15-20260922/final-confirmation/confirm4/trial_material.npz",
+            "size_bytes": 27774,
+            "sha256": "a3f31d6e275315d08f720914fe443ec46f7eb2bc976b3ef94a9f8ffef428ce8f"
+          },
+          "native_mirrored_material_exact": true,
+          "physical_phase_and_dt_exact": true
+        }
+      },
+      "fresh_complete_finite": true,
+      "fresh_final_final": {
+        "l2": 0.9441167533405883,
+        "mass_weighted": 0.9348170566876083,
+        "maximum_cell": 0.9763895994279191
+      },
+      "base_norms": {
+        "l2": 10.152252571802283,
+        "mass_weighted": 0.3423865642661101,
+        "maximum_cell": 2.9088398981769426
+      },
+      "candidate_norms": {
+        "l2": 9.606137814289067,
+        "mass_weighted": 0.32110008007577506,
+        "maximum_cell": 2.841196645387108
+      }
+    }
+  },
+  "batch_cost": {
+    "wall_hours": 6.840277777777778,
+    "allocated_cpu_hours": 218.88888888888889,
+    "initial_norms": {
+      "l2": 11.39228875306176,
+      "mass_weighted": 0.3950337756570978,
+      "maximum_cell": 3.060316369056872
+    },
+    "final_confirmed_norms": {
+      "l2": 9.606137814289067,
+      "mass_weighted": 0.32110008007577506,
+      "maximum_cell": 2.841196645387108
+    },
+    "removed_fraction": {
+      "l2": 0.15678596088013053,
+      "mass_weighted": 0.1871579093669692,
+      "maximum_cell": 0.0716003501746757
+    },
+    "not_a_completion_forecast": true
+  }
+}

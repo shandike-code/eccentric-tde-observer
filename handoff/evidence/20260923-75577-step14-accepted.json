@@ -1,0 +1,240 @@
+{
+  "verified_files": 3135,
+  "candidate": "full",
+  "round": 2,
+  "formal_gates": {
+    "last_two_photoionization_pass": true,
+    "last_two_total_recombination_pass": true,
+    "last_two_atomic_heating_pass": true,
+    "last_two_direct_heating_pass": true,
+    "last_two_formal_heating_pass": true,
+    "inner_noise_resolved_pass": true,
+    "candidate_l2_contraction_pass": true,
+    "candidate_mass_weighted_contraction_pass": true,
+    "candidate_maximum_cell_contraction_pass": true,
+    "two_formal_feedback_states_pass": true,
+    "two_inner_radiation_residuals_pass": true,
+    "two_boundary_spectra_pass": true,
+    "two_boundary_bolometric_pass": true,
+    "candidate_state_bytes_pass": true,
+    "population_nonnegative_pass": true,
+    "all_residual_components_finite_pass": true
+  },
+  "formal_comparison": {
+    "photoionization_volume_l1": [
+      5.423591217745932e-06,
+      1.151572182001951e-05,
+      4.1116180572537885e-08
+    ],
+    "total_recombination_volume_l1": [
+      1.7532286287799332e-07,
+      1.0004713543410808e-08,
+      7.537548414570924e-14
+    ],
+    "atomic_heating_volume_l1": 0.0004592090496602242,
+    "direct_heating_volume_l1": 0.00045920904966243153,
+    "formal_heating_volume_l1": 0.0004592087038307534,
+    "inner_noise_to_trial_signal_l2_ratio": 0.04587312652972579,
+    "candidate_to_base_residual_l2_ratio": 0.9445960286200269,
+    "candidate_to_base_mass_weighted_norm_ratio": 0.9327097740872796,
+    "candidate_to_base_maximum_cell_norm_ratio": 0.9752515696072759
+  },
+  "accepted": true,
+  "base_norms": {
+    "l2": 10.745396477105363,
+    "mass_weighted": 0.36717144975319727,
+    "maximum_cell": 2.9811028891126905
+  },
+  "candidate_norms": {
+    "l2": 10.150058838221353,
+    "mass_weighted": 0.34246439995060357,
+    "maximum_cell": 2.9073252717679363
+  },
+  "fresh_control_ratios": {
+    "previous": {
+      "previous": {
+        "l2": 0.9451026462903291,
+        "mass_weighted": 0.9335706957963329,
+        "maximum_cell": 0.9750327855401579
+      },
+      "final": {
+        "l2": 0.94459678364098,
+        "mass_weighted": 0.9327422935519488,
+        "maximum_cell": 0.9749308974422842
+      }
+    },
+    "final": {
+      "previous": {
+        "l2": 0.9441577746955354,
+        "mass_weighted": 0.932007947481123,
+        "maximum_cell": 0.9751375158254418
+      },
+      "final": {
+        "l2": 0.9436524177851662,
+        "mass_weighted": 0.9311809319385896,
+        "maximum_cell": 0.9750356167835571
+      }
+    }
+  },
+  "endpoints": {
+    "previous": {
+      "iteration": 7,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_0.dat",
+      "input_sha256": "0333473db6aecf6ee6dee93ee485a159d3c85da7bbfa750ed9a5fb5afd872cb9",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_1.dat",
+      "output_sha256": "c75f5d51fd9897dbdcdd9b27cf8057d92b17a0a9504da92fd46ccfa875ebeaf6",
+      "wall_s": 132.8182484069839,
+      "residual": 4.953881999449829e-05,
+      "boundary_l1": 0.00038236417651421855,
+      "boundary_bolometric": 0.00036625252460162306,
+      "maximum_worker_rss_mib": 3503.2265625
+    },
+    "final": {
+      "iteration": 8,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_1.dat",
+      "input_sha256": "c75f5d51fd9897dbdcdd9b27cf8057d92b17a0a9504da92fd46ccfa875ebeaf6",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_2.dat",
+      "output_sha256": "0a593295f2fe0c82aa28a88ebe75e1dbc874ef6d7fc772bffac6427384140d7e",
+      "wall_s": 129.86861144565046,
+      "residual": 4.665574133817317e-05,
+      "boundary_l1": 0.00035051811286402826,
+      "boundary_bolometric": 0.00033979057691524596,
+      "maximum_worker_rss_mib": 3503.65234375
+    }
+  },
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_0.dat",
+      "input_sha256": "1fc7d182f887002fd1551f8d8fb382875f0442359696a6ffe7469e1b37a2b443",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_1.dat",
+      "output_sha256": "57b1a7ebc5a1e27d0696d0158610d22d1aa3170886ac3f320d90691d1d749613",
+      "wall_s": 142.96470447350293,
+      "residual": 0.00027506554894638185,
+      "boundary_l1": 0.0009062037291303445,
+      "boundary_bolometric": 0.0005647034034958412,
+      "maximum_worker_rss_mib": 3452.6015625
+    },
+    {
+      "iteration": 2,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_1.dat",
+      "input_sha256": "57b1a7ebc5a1e27d0696d0158610d22d1aa3170886ac3f320d90691d1d749613",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_2.dat",
+      "output_sha256": "f344c3d6af63de46fb7792a62193f37f79c60b3f916467f2d6837f832b53e9ee",
+      "wall_s": 135.8200499098748,
+      "residual": 0.00019546795744694766,
+      "boundary_l1": 0.0007288360374895169,
+      "boundary_bolometric": 0.0005105932499525317,
+      "maximum_worker_rss_mib": 3499.4453125
+    },
+    {
+      "iteration": 3,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_2.dat",
+      "input_sha256": "f344c3d6af63de46fb7792a62193f37f79c60b3f916467f2d6837f832b53e9ee",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_0.dat",
+      "output_sha256": "dd7b7225072dd364264ababfbacac8b12277424d2fd7674c65072d7708901e8e",
+      "wall_s": 141.2986465021968,
+      "residual": 0.00013945890633059563,
+      "boundary_l1": 0.0006100601007003395,
+      "boundary_bolometric": 0.0004893050977910007,
+      "maximum_worker_rss_mib": 3502.375
+    },
+    {
+      "iteration": 4,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_0.dat",
+      "input_sha256": "dd7b7225072dd364264ababfbacac8b12277424d2fd7674c65072d7708901e8e",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_1.dat",
+      "output_sha256": "49bcf51d559f61b704f997f24d2187844024b4f28f5a14be8c45bc6415bd4de3",
+      "wall_s": 133.84370769932866,
+      "residual": 9.97055067715555e-05,
+      "boundary_l1": 0.0005273836223982587,
+      "boundary_bolometric": 0.00045885528867743594,
+      "maximum_worker_rss_mib": 3503.6484375
+    },
+    {
+      "iteration": 5,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_1.dat",
+      "input_sha256": "49bcf51d559f61b704f997f24d2187844024b4f28f5a14be8c45bc6415bd4de3",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_2.dat",
+      "output_sha256": "0b18366752e5f2ee146a6b6ab8b49f007e871a473f5f801bf854bce1431e0c3e",
+      "wall_s": 137.82426014076918,
+      "residual": 7.13793150371193e-05,
+      "boundary_l1": 0.00046699297480299197,
+      "boundary_bolometric": 0.0004264452138301255,
+      "maximum_worker_rss_mib": 3502.7578125
+    },
+    {
+      "iteration": 6,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_2.dat",
+      "input_sha256": "0b18366752e5f2ee146a6b6ab8b49f007e871a473f5f801bf854bce1431e0c3e",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_0.dat",
+      "output_sha256": "0333473db6aecf6ee6dee93ee485a159d3c85da7bbfa750ed9a5fb5afd872cb9",
+      "wall_s": 131.3987759537995,
+      "residual": 5.2750867846764634e-05,
+      "boundary_l1": 0.0004202681877528771,
+      "boundary_bolometric": 0.00039521311514034723,
+      "maximum_worker_rss_mib": 3503.15234375
+    },
+    {
+      "iteration": 7,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_0.dat",
+      "input_sha256": "0333473db6aecf6ee6dee93ee485a159d3c85da7bbfa750ed9a5fb5afd872cb9",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_1.dat",
+      "output_sha256": "c75f5d51fd9897dbdcdd9b27cf8057d92b17a0a9504da92fd46ccfa875ebeaf6",
+      "wall_s": 132.8182484069839,
+      "residual": 4.953881999449829e-05,
+      "boundary_l1": 0.00038236417651421855,
+      "boundary_bolometric": 0.00036625252460162306,
+      "maximum_worker_rss_mib": 3503.2265625
+    },
+    {
+      "iteration": 8,
+      "input_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_1.dat",
+      "input_sha256": "c75f5d51fd9897dbdcdd9b27cf8057d92b17a0a9504da92fd46ccfa875ebeaf6",
+      "output_path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/full/state_2.dat",
+      "output_sha256": "0a593295f2fe0c82aa28a88ebe75e1dbc874ef6d7fc772bffac6427384140d7e",
+      "wall_s": 129.86861144565046,
+      "residual": 4.665574133817317e-05,
+      "boundary_l1": 0.00035051811286402826,
+      "boundary_bolometric": 0.00033979057691524596,
+      "maximum_worker_rss_mib": 3503.65234375
+    }
+  ],
+  "new_denominator_verified": true,
+  "gas_domain": {
+    "previous": {
+      "failed_cells": 0,
+      "min_gas_erg_g": 5880276856511.309
+    },
+    "final": {
+      "failed_cells": 0,
+      "min_gas_erg_g": 5943204019656.473
+    }
+  },
+  "resources": {
+    "map_reports": 760,
+    "process_receipts": 1216,
+    "native_peak_mib": 3503.65234375,
+    "proc_peak_kib": 4039400
+  },
+  "physical_response_replayed": false,
+  "true_error_bound": false,
+  "coupled_column_accepted": false,
+  "outer_iteration": {
+    "index": 14,
+    "source": "outputs/hpc/outer-steps13to15-20260922/step14/confirmation/confirm4",
+    "base_is_accepted_trial": true,
+    "physical_time_advanced": false,
+    "replaced_historical_denominator": {
+      "path": "outputs/phase7b9f_base_material_residual.npy",
+      "size_bytes": 4224,
+      "sha256": "217e7fec52ad506214cc997ebe074fac0433700bb84eaeac4bba24a7da55fa3b"
+    },
+    "direction_is_frozen_response_at_new_base": true
+  },
+  "formal_denominator": {
+    "path": "outputs/hpc/outer-steps13to15-20260922/step14/next-step/base_residual.npy",
+    "size_bytes": 4224,
+    "sha256": "7057bad316d0b162124218973b120a100d3b7c53424d18cc849ac74879ec0197"
+  }
+}
