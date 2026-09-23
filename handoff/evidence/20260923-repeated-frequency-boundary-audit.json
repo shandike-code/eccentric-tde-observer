@@ -1,0 +1,126 @@
+{
+  "archive": {
+    "path": "outputs/review-20260923/frequency-boundary-75881.tar.gz",
+    "size_bytes": 596699,
+    "sha256": "b96ff7aced732d031aa05002c317fd9f703f3605d0f39c219ee000756d0e52cb",
+    "files": 31
+  },
+  "verified_files": 31,
+  "results": [
+    {
+      "case": "backtrack-previous",
+      "source": "outputs/hpc/step16-backtrack-20260923/full/feedback-round1",
+      "endpoint": "previous",
+      "metrics_erg_s_cm2": {
+        "observed": -699400619.5827302,
+        "boundary": -699400609.6445489,
+        "residual": -9.938181222312416,
+        "residual_depth_l1": 10.345142354205198,
+        "observed_depth_l1": 701415616.8952787,
+        "rate_minus_direct": -40.64317858029139
+      },
+      "boundary_components": {
+        "0": {
+          "absorption": -751117770.8249111,
+          "emission": 74429702.19460434,
+          "scattering": -22712541.01424218
+        },
+        "75": {
+          "absorption": 0.0,
+          "emission": 0.0,
+          "scattering": 0.0
+        }
+      }
+    },
+    {
+      "case": "amplitude-previous",
+      "source": "outputs/hpc/step16-amplitude-20260923/full/feedback-round2",
+      "endpoint": "previous",
+      "metrics_erg_s_cm2": {
+        "observed": -716753317.8596004,
+        "boundary": -716753307.9046953,
+        "residual": -9.9549052149916,
+        "residual_depth_l1": 10.363752487417742,
+        "observed_depth_l1": 718691684.3722395,
+        "rate_minus_direct": -40.59143259616906
+      },
+      "boundary_components": {
+        "0": {
+          "absorption": -767166462.8092332,
+          "emission": 74400221.34391828,
+          "scattering": -23987066.439380363
+        },
+        "75": {
+          "absorption": 0.0,
+          "emission": 0.0,
+          "scattering": 0.0
+        }
+      }
+    },
+    {
+      "case": "amplitude-final",
+      "source": "outputs/hpc/step16-amplitude-20260923/full/feedback-round2",
+      "endpoint": "final",
+      "metrics_erg_s_cm2": {
+        "observed": -716753319.1348581,
+        "boundary": -716753309.1675076,
+        "residual": -9.967350447321621,
+        "residual_depth_l1": 10.374995538273325,
+        "observed_depth_l1": 718691684.819881,
+        "rate_minus_direct": -40.56620003050325
+      },
+      "boundary_components": {
+        "0": {
+          "absorption": -767166462.8991609,
+          "emission": 74400221.34391828,
+          "scattering": -23987067.612265076
+        },
+        "75": {
+          "absorption": 0.0,
+          "emission": 0.0,
+          "scattering": 0.0
+        }
+      }
+    }
+  ],
+  "resource_receipts": [
+    {
+      "case": "backtrack-previous",
+      "block": 0,
+      "native_mib": 1407.62109375,
+      "proc_kib": 1441404
+    },
+    {
+      "case": "backtrack-previous",
+      "block": 75,
+      "native_mib": 595.08203125,
+      "proc_kib": 609364
+    },
+    {
+      "case": "amplitude-previous",
+      "block": 0,
+      "native_mib": 1411.5078125,
+      "proc_kib": 1445384
+    },
+    {
+      "case": "amplitude-previous",
+      "block": 75,
+      "native_mib": 598.69921875,
+      "proc_kib": 613068
+    },
+    {
+      "case": "amplitude-final",
+      "block": 0,
+      "native_mib": 1412.703125,
+      "proc_kib": 1446608
+    },
+    {
+      "case": "amplitude-final",
+      "block": 75,
+      "native_mib": 597.7109375,
+      "proc_kib": 612056
+    }
+  ],
+  "scientific_gates_changed": false,
+  "material_step_accepted": false
+}
