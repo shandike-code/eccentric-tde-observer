@@ -23,3 +23,5 @@ Mac复制`outputs/review-20260921/common-native-pilot-75985-received`，核proto
 完整反馈按新协议依次求map4和map8两对端点，各76+76块，总304个worker上限；32CPU/128GiB、16并发、2小时。实际每态worker批次时间必须小于900秒，原生/proc内存双6GiB。实际输入dat和实现集合前后校验；不用未读取的历史初值充当本次数据，也不更改历史声明。
 
 任何程序/资源/态门故障停止；第一对若物质响应离开正热能域，保存账本并停止后续对；若只是反馈精度或收缩门未过，继续评估已经算好的第二对，不产生新map。即使16门通过，也不直接计第16步，仍需共同频域下的新基态四组合、信赖域和同态双确认。频率截断、耦合柱、全盘$I_{\nu}$尚未验证。
+
+完整反馈作业已提交为75987，提交时HEAD为`7444a590f2c7070bb54a65b6ed6a51c19ba696d2`（数值代码仍`0f4ff30`）。已实测RUNNING并进入map04的previous态，stderr为空；不能在全态未完成时宣称态门或pair门通过。目录`outputs/hpc/common-native-pairs-20260923`，启动记录在`handoff/evidence/20260923-common-native-75987-launch.json`。只读watcher在`outputs/review-20260923/scheduler-75987`捕获终态，最长9000秒，不自动重交。定时跟进改为监督此作业，完成后下载新小工件包复核，再决定基态对照/确认或针对失败门诊断。

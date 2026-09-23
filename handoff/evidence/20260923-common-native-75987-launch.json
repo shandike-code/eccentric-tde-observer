@@ -1,0 +1,13 @@
+{
+  "job_id": 75987,
+  "git_commit": "7444a590f2c7070bb54a65b6ed6a51c19ba696d2",
+  "numerical_code_commit": "0f4ff30c7c2a9cbf09b30fb7efa2e0c6db6a9e45",
+  "submitted_unix": 1790156144.6710231,
+  "run": "outputs/hpc/common-native-pairs-20260923",
+  "cpus": 32,
+  "memory_gib": 128,
+  "workers": 16,
+  "maximum_feedback_blocks": 304,
+  "maximum_pairs": 2,
+  "new_material_steps": 0
+}
