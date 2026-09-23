@@ -1,0 +1,160 @@
+{
+  "observed_unix": 1790165880.9000907,
+  "job_id": 76075,
+  "status": {
+    "status": "mapping",
+    "updated_unix": 1790165682.8805141,
+    "accepted_outer_steps": 15,
+    "new_material_steps": 0,
+    "case": "confirm1",
+    "budget": 2
+  },
+  "control_decision": {
+    "physics_pair_passed": true,
+    "promoted": false,
+    "prior_candidates": {
+      "map04": {
+        "ratios": {
+          "previous_vs_previous": {
+            "l2": 0.9468537953255657,
+            "mass_weighted": 0.9489630641423106,
+            "maximum_cell": 0.9782057846435483
+          },
+          "previous_vs_final": {
+            "l2": 0.9463309889348572,
+            "mass_weighted": 0.9478101309684696,
+            "maximum_cell": 0.9781548503495286
+          },
+          "final_vs_previous": {
+            "l2": 0.9460877441302598,
+            "mass_weighted": 0.9464990264549115,
+            "maximum_cell": 0.9782801423226003
+          },
+          "final_vs_final": {
+            "l2": 0.9455653607155826,
+            "mass_weighted": 0.9453490869389889,
+            "maximum_cell": 0.9782292041568432
+          }
+        },
+        "passed": true
+      },
+      "map08": {
+        "ratios": {
+          "previous_vs_previous": {
+            "l2": 0.9460822174850436,
+            "mass_weighted": 0.9442806792591171,
+            "maximum_cell": 0.9785930721795663
+          },
+          "previous_vs_final": {
+            "l2": 0.9455598371219098,
+            "mass_weighted": 0.9431334349019103,
+            "maximum_cell": 0.9785421177198333
+          },
+          "final_vs_previous": {
+            "l2": 0.9464297270214966,
+            "mass_weighted": 0.9444072504026619,
+            "maximum_cell": 0.9786880246424735
+          },
+          "final_vs_final": {
+            "l2": 0.9459071547805805,
+            "mass_weighted": 0.9432598522691115,
+            "maximum_cell": 0.9786370652386515
+          }
+        },
+        "passed": true
+      }
+    },
+    "continue": true
+  },
+  "control_postcheck": {
+    "responses": {
+      "previous": {
+        "minimum_gas_erg_g": 6520707187710.211,
+        "failed_gas_cells": 0,
+        "full_state_checks": {
+          "block_count": true,
+          "frequency_ownership": true,
+          "positive_intensity": true,
+          "finite_arrays": true,
+          "positive_width": true,
+          "nonnegative_atomic_rates": true,
+          "direct_volume": true,
+          "formal_volume": true,
+          "formal_global": true,
+          "mirror": true,
+          "memory": true,
+          "wall": true
+        },
+        "maximum_native_mib": 3945.4765625,
+        "maximum_proc_kib": 4040168,
+        "state_wall_s": 346.2355254292488,
+        "norms": {
+          "l2": 9.632511866006324,
+          "mass_weighted": 0.3229040565445427,
+          "maximum_cell": 2.8422967389469616
+        }
+      },
+      "final": {
+        "minimum_gas_erg_g": 6600558062083.543,
+        "failed_gas_cells": 0,
+        "full_state_checks": {
+          "block_count": true,
+          "frequency_ownership": true,
+          "positive_intensity": true,
+          "finite_arrays": true,
+          "positive_width": true,
+          "nonnegative_atomic_rates": true,
+          "direct_volume": true,
+          "formal_volume": true,
+          "formal_global": true,
+          "mirror": true,
+          "memory": true,
+          "wall": true
+        },
+        "maximum_native_mib": 3942.16015625,
+        "maximum_proc_kib": 4036772,
+        "state_wall_s": 324.6930257678032,
+        "norms": {
+          "l2": 9.637833406588854,
+          "mass_weighted": 0.32329684280689003,
+          "maximum_cell": 2.8424447424841737
+        }
+      }
+    },
+    "gate_checks": {
+      "last_two_photoionization_pass": true,
+      "last_two_total_recombination_pass": true,
+      "last_two_atomic_heating_pass": true,
+      "last_two_direct_heating_pass": true,
+      "last_two_formal_heating_pass": true,
+      "inner_pair_ready": true,
+      "physical_response_pass": true
+    },
+    "comparison": {
+      "photoionization_volume_l1": [
+        1.8208765915310254e-06,
+        7.367255008934018e-06,
+        3.2987982528936607e-09
+      ],
+      "total_recombination_volume_l1": [
+        3.6641162293008624e-08,
+        5.855834225758494e-09,
+        1.4258746501655408e-14
+      ],
+      "atomic_heating_volume_l1": 0.00037292663720845846,
+      "direct_heating_volume_l1": 0.0003729266372097393,
+      "formal_heating_volume_l1": 0.00037292663720966073
+    },
+    "material_response_failures": {},
+    "pair_decision": {
+      "baseline_control_only": true,
+      "finite_trial_accepted_as_one_nonlinear_step": false,
+      "accept_dynamic_nlte_solution": false
+    },
+    "accepted_outer_steps_remain": 15,
+    "material_step_promoted": false,
+    "frequency_truncation_convergence_established": false
+  },
+  "scheduler": "JobId=76075 JobName=tde-common-confirm UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:35:48 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-09-23T19:42:11 EligibleTime=2026-09-23T19:42:11 AccrueTime=2026-09-23T19:42:11 StartTime=2026-09-23T19:42:12 EndTime=2026-09-23T23:42:12 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-23T19:42:12 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:3205967 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode03 BatchHost=anode03 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/common_confirmation_batch.sbatch SubmitLine=sbatch --parsable operations/common_confirmation_batch.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-common-confirm-76075.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-common-confirm-76075.out TresPerTask=cpu=32\n",
+  "stderr": ""
+}
