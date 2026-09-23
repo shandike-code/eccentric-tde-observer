@@ -1,0 +1,82 @@
+{
+  "archive": {
+    "path": "outputs/review-20260923/common-frequency-pilot-75907.tar.gz",
+    "size_bytes": 614769,
+    "sha256": "6a996ca20a0ec211b9bb5b03ebac0e9d1c9ffd94a22940974799641848a277f7",
+    "files": 11
+  },
+  "verified_files": 11,
+  "results": [
+    {
+      "endpoint": "final",
+      "all_76_blocks": false,
+      "verified_blocks": 1,
+      "metrics": {
+        "atomic_vs_common": {
+          "volume_l1": 8.920193619888485e-12,
+          "net_fraction": 2.3713848835425716e-12,
+          "reference_integral": -1248817010600.9854,
+          "compared_integral": -1248817010598.024,
+          "difference_depth_l1": 11.327453168844574
+        },
+        "direct_vs_common": {
+          "volume_l1": 3.715042206950478e-12,
+          "net_fraction": 3.8649859149008917e-13,
+          "reference_integral": -1248817010597.5413,
+          "compared_integral": -1248817010598.024,
+          "difference_depth_l1": 4.717606860640085
+        },
+        "atomic_vs_old_formal": {
+          "volume_l1": 0.5836514548803975,
+          "net_fraction": 0.5784184480623717,
+          "reference_integral": -1248817010600.9854,
+          "compared_integral": -526478213415.27295,
+          "difference_depth_l1": 741159307051.9421
+        },
+        "atomic_vs_direct": {
+          "volume_l1": 7.337270879235098e-12,
+          "net_fraction": 2.7578834750317442e-12,
+          "reference_integral": -1248817010600.9854,
+          "compared_integral": -1248817010597.5413,
+          "difference_depth_l1": 9.317352942469164
+        }
+      },
+      "local_minus_linux_metrics": {
+        "atomic_vs_common": {
+          "volume_l1": 0.0,
+          "net_fraction": 0.0,
+          "reference_integral": 0.0,
+          "compared_integral": 0.0,
+          "difference_depth_l1": 0.0
+        },
+        "direct_vs_common": {
+          "volume_l1": 0.0,
+          "net_fraction": 0.0,
+          "reference_integral": 0.0,
+          "compared_integral": 0.0,
+          "difference_depth_l1": 0.0
+        },
+        "atomic_vs_old_formal": {
+          "volume_l1": 0.0,
+          "net_fraction": 0.0,
+          "reference_integral": 0.0,
+          "compared_integral": 0.0,
+          "difference_depth_l1": 0.0
+        },
+        "atomic_vs_direct": {
+          "volume_l1": 0.0,
+          "net_fraction": 0.0,
+          "reference_integral": 0.0,
+          "compared_integral": 0.0,
+          "difference_depth_l1": 0.0
+        }
+      },
+      "native_peak_mib": 1478.46484375,
+      "proc_peak_kib": 1513948,
+      "pilot_rate_label_is_source_rate_not_recomputed_atomic_rate": true
+    }
+  ],
+  "old_verdicts_unchanged": true,
+  "material_step_accepted": false,
+  "frequency_truncation_established": false
+}
