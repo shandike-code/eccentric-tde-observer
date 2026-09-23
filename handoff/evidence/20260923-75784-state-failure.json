@@ -1,0 +1,169 @@
+{
+  "verified_files": 3128,
+  "actual_alpha": 0.03125,
+  "native_identity": true,
+  "rounds": {
+    "1": {
+      "previous": {
+        "checks": {
+          "block_count": true,
+          "frequency_ownership": true,
+          "positive_intensity": true,
+          "finite_arrays": true,
+          "nonnegative_atomic_rates": true,
+          "direct_volume": true,
+          "formal_volume": true,
+          "formal_global": true,
+          "mirror": true,
+          "memory": true,
+          "wall": true
+        },
+        "failed_checks": [],
+        "formal": {
+          "volume_l1": 1.3633282724045392e-05,
+          "global_fraction": 0.0008354151456009901,
+          "integrated_rate": -857945372301.2859,
+          "integrated_other": -857228631743.1671,
+          "absolute_integral_difference": 716740558.1187744,
+          "absolute_scale": 52715098955180.38,
+          "net_scale": 857945372301.2859,
+          "absolute_over_net_scale": 61.443421291243176
+        },
+        "direct": {
+          "volume_l1": 1.967345421467191e-12,
+          "global_fraction": 4.794965381467603e-11,
+          "integrated_rate": -857945372301.2859,
+          "integrated_other": -857945372260.1477,
+          "absolute_integral_difference": 41.13818359375,
+          "absolute_scale": 52715076266956.02,
+          "net_scale": 857945372301.2859,
+          "absolute_over_net_scale": 61.443394846407536
+        },
+        "manifest_status": "complete",
+        "all_76_partials_and_assembled_bytes_verified": true
+      },
+      "final": {
+        "checks": {
+          "block_count": true,
+          "frequency_ownership": true,
+          "positive_intensity": true,
+          "finite_arrays": true,
+          "nonnegative_atomic_rates": true,
+          "direct_volume": true,
+          "formal_volume": true,
+          "formal_global": true,
+          "mirror": true,
+          "memory": true,
+          "wall": true
+        },
+        "failed_checks": [],
+        "formal": {
+          "volume_l1": 1.3641150875571306e-05,
+          "global_fraction": 0.0008610183323199637,
+          "integrated_rate": -832447506749.0803,
+          "integrated_other": -831730754185.0753,
+          "absolute_integral_difference": 716752564.0050049,
+          "absolute_scale": 52685517558837.3,
+          "net_scale": 832447506749.0803,
+          "absolute_over_net_scale": 63.28989771930205
+        },
+        "direct": {
+          "volume_l1": 1.9655825357315024e-12,
+          "global_fraction": 4.940251447277872e-11,
+          "integrated_rate": -832447506749.0803,
+          "integrated_other": -832447506707.9553,
+          "absolute_integral_difference": 41.125,
+          "absolute_scale": 52685496165650.83,
+          "net_scale": 832447506749.0803,
+          "absolute_over_net_scale": 63.28987202016031
+        },
+        "manifest_status": "complete",
+        "all_76_partials_and_assembled_bytes_verified": true
+      }
+    },
+    "2": {
+      "previous": {
+        "checks": {
+          "block_count": true,
+          "frequency_ownership": true,
+          "positive_intensity": true,
+          "finite_arrays": true,
+          "nonnegative_atomic_rates": true,
+          "direct_volume": true,
+          "formal_volume": true,
+          "formal_global": false,
+          "mirror": true,
+          "memory": true,
+          "wall": true
+        },
+        "failed_checks": [
+          "formal_global"
+        ],
+        "formal": {
+          "volume_l1": 1.3657005927723412e-05,
+          "global_fraction": 0.0011094781039362113,
+          "integrated_rate": -646027493753.9904,
+          "integrated_other": -645310740395.1295,
+          "absolute_integral_difference": 716753358.8608398,
+          "absolute_scale": 52624398728161.44,
+          "net_scale": 646027493753.9904,
+          "absolute_over_net_scale": 81.45845066495112
+        },
+        "direct": {
+          "volume_l1": 1.968149571435116e-12,
+          "global_fraction": 6.346838134965094e-11,
+          "integrated_rate": -646027493753.9904,
+          "integrated_other": -646027493712.988,
+          "absolute_integral_difference": 41.0023193359375,
+          "absolute_scale": 52624382567794.39,
+          "net_scale": 646027493753.9904,
+          "absolute_over_net_scale": 81.4584256499677
+        },
+        "manifest_status": "gate_failed",
+        "all_76_partials_and_assembled_bytes_verified": true
+      },
+      "final": {
+        "checks": {
+          "block_count": true,
+          "frequency_ownership": true,
+          "positive_intensity": true,
+          "finite_arrays": true,
+          "nonnegative_atomic_rates": true,
+          "direct_volume": true,
+          "formal_volume": true,
+          "formal_global": false,
+          "mirror": true,
+          "memory": true,
+          "wall": true
+        },
+        "failed_checks": [
+          "formal_global"
+        ],
+        "formal": {
+          "volume_l1": 1.365876825095589e-05,
+          "global_fraction": 0.0011668662218283002,
+          "integrated_rate": -614254956373.193,
+          "integrated_other": -613538203013.0105,
+          "absolute_integral_difference": 716753360.1824951,
+          "absolute_scale": 52617608898727.58,
+          "net_scale": 614254956373.193,
+          "absolute_over_net_scale": 85.66086175259048
+        },
+        "direct": {
+          "volume_l1": 1.9708972058915576e-12,
+          "global_fraction": 6.68250324982911e-11,
+          "integrated_rate": -614254956373.193,
+          "integrated_other": -614254956332.1454,
+          "absolute_integral_difference": 41.047607421875,
+          "absolute_scale": 52617592738359.5,
+          "net_scale": 614254956373.193,
+          "absolute_over_net_scale": 85.66083544369722
+        },
+        "manifest_status": "gate_failed",
+        "all_76_partials_and_assembled_bytes_verified": true
+      }
+    }
+  },
+  "round2_material_response_evaluated": false,
+  "coupled_column_accepted": false
+}

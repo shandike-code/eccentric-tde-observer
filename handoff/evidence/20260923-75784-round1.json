@@ -1,0 +1,240 @@
+{
+  "verified_files": 3128,
+  "candidate": "full",
+  "round": 1,
+  "formal_gates": {
+    "last_two_photoionization_pass": true,
+    "last_two_total_recombination_pass": true,
+    "last_two_atomic_heating_pass": false,
+    "last_two_direct_heating_pass": false,
+    "last_two_formal_heating_pass": false,
+    "inner_noise_resolved_pass": false,
+    "candidate_l2_contraction_pass": true,
+    "candidate_mass_weighted_contraction_pass": false,
+    "candidate_maximum_cell_contraction_pass": true,
+    "two_formal_feedback_states_pass": true,
+    "two_inner_radiation_residuals_pass": false,
+    "two_boundary_spectra_pass": true,
+    "two_boundary_bolometric_pass": true,
+    "candidate_state_bytes_pass": true,
+    "population_nonnegative_pass": true,
+    "all_residual_components_finite_pass": true
+  },
+  "formal_comparison": {
+    "photoionization_volume_l1": [
+      3.13389619570952e-05,
+      1.8796959172088758e-05,
+      1.62997549031891e-05
+    ],
+    "total_recombination_volume_l1": [
+      8.566507039068835e-07,
+      1.9004477579567646e-08,
+      9.836242646801928e-11
+    ],
+    "atomic_heating_volume_l1": 0.0026408163270677425,
+    "direct_heating_volume_l1": 0.0026408163270679992,
+    "formal_heating_volume_l1": 0.0026408150711351185,
+    "inner_noise_to_trial_signal_l2_ratio": 0.1131734189112349,
+    "candidate_to_base_residual_l2_ratio": 0.9329954325388893,
+    "candidate_to_base_mass_weighted_norm_ratio": 1.134401439297256,
+    "candidate_to_base_maximum_cell_norm_ratio": 0.9627819862280864
+  },
+  "accepted": false,
+  "base_norms": {
+    "l2": 9.606137814289067,
+    "mass_weighted": 0.32110008007577506,
+    "maximum_cell": 2.841196645387108
+  },
+  "candidate_norms": {
+    "l2": 8.96248270507081,
+    "mass_weighted": 0.3642563929964234,
+    "maximum_cell": 2.7354529495103757
+  },
+  "fresh_control_ratios": {
+    "previous": {
+      "previous": {
+        "l2": 0.9491645286132026,
+        "mass_weighted": 1.1649388648411847,
+        "maximum_cell": 0.9656768888248007
+      },
+      "final": {
+        "l2": 0.9486482613757785,
+        "mass_weighted": 1.1636791986466284,
+        "maximum_cell": 0.9655932566850386
+      }
+    },
+    "final": {
+      "previous": {
+        "l2": 0.9325303635026607,
+        "mass_weighted": 1.13329631681617,
+        "maximum_cell": 0.9626881940753184
+      },
+      "final": {
+        "l2": 0.9320231438794381,
+        "mass_weighted": 1.1320708661922843,
+        "maximum_cell": 0.9626048207705142
+      }
+    }
+  },
+  "endpoints": {
+    "previous": {
+      "iteration": 3,
+      "input_path": "outputs/hpc/step16-amplitude-20260923/full/state_2.dat",
+      "input_sha256": "5b9e62e44789d884ad7e5a1a5c0eaa6dd14e7a5623b11f36cd7ae33180cff63d",
+      "output_path": "outputs/hpc/step16-amplitude-20260923/full/state_0.dat",
+      "output_sha256": "db69ef40db84767b6ab7a853b1792e231e3bfe43da463875d7282f7c2fe6fc0e",
+      "wall_s": 146.2683209683746,
+      "residual": 0.00016881526409852409,
+      "boundary_l1": 0.0008482335785809815,
+      "boundary_bolometric": 0.0006369804206244031,
+      "maximum_worker_rss_mib": 3501.6640625
+    },
+    "final": {
+      "iteration": 4,
+      "input_path": "outputs/hpc/step16-amplitude-20260923/full/state_0.dat",
+      "input_sha256": "db69ef40db84767b6ab7a853b1792e231e3bfe43da463875d7282f7c2fe6fc0e",
+      "output_path": "outputs/hpc/step16-amplitude-20260923/full/state_1.dat",
+      "output_sha256": "f21e48c7b2cc47dd9df211c0b07ae02b144ff158275dbadeaf2cfa7d6ab0a619",
+      "wall_s": 147.67007286753505,
+      "residual": 0.00011843362146135591,
+      "boundary_l1": 0.000710478737922147,
+      "boundary_bolometric": 0.0005912805998857769,
+      "maximum_worker_rss_mib": 3502.28125
+    }
+  },
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/step16-amplitude-20260923/full/state_0.dat",
+      "input_sha256": "c8ec705fc707c7e8de71e7692cbc09de6ba8f502a21553c245334d373a4e23ca",
+      "output_path": "outputs/hpc/step16-amplitude-20260923/full/state_1.dat",
+      "output_sha256": "2018c0754319816dc47d47cf6081269c90ec1e8f584905c4efcf0043c149d75d",
+      "wall_s": 150.692293073982,
+      "residual": 0.00034905273091436335,
+      "boundary_l1": 0.001348108845543675,
+      "boundary_bolometric": 0.0007695165213405455,
+      "maximum_worker_rss_mib": 3502.0546875
+    },
+    {
+      "iteration": 2,
+      "input_path": "outputs/hpc/step16-amplitude-20260923/full/state_1.dat",
+      "input_sha256": "2018c0754319816dc47d47cf6081269c90ec1e8f584905c4efcf0043c149d75d",
+      "output_path": "outputs/hpc/step16-amplitude-20260923/full/state_2.dat",
+      "output_sha256": "5b9e62e44789d884ad7e5a1a5c0eaa6dd14e7a5623b11f36cd7ae33180cff63d",
+      "wall_s": 146.99490008410066,
+      "residual": 0.00024124437227631814,
+      "boundary_l1": 0.0010485175662094716,
+      "boundary_bolometric": 0.0006675897980748455,
+      "maximum_worker_rss_mib": 3505.98046875
+    },
+    {
+      "iteration": 3,
+      "input_path": "outputs/hpc/step16-amplitude-20260923/full/state_2.dat",
+      "input_sha256": "5b9e62e44789d884ad7e5a1a5c0eaa6dd14e7a5623b11f36cd7ae33180cff63d",
+      "output_path": "outputs/hpc/step16-amplitude-20260923/full/state_0.dat",
+      "output_sha256": "db69ef40db84767b6ab7a853b1792e231e3bfe43da463875d7282f7c2fe6fc0e",
+      "wall_s": 146.2683209683746,
+      "residual": 0.00016881526409852409,
+      "boundary_l1": 0.0008482335785809815,
+      "boundary_bolometric": 0.0006369804206244031,
+      "maximum_worker_rss_mib": 3501.6640625
+    },
+    {
+      "iteration": 4,
+      "input_path": "outputs/hpc/step16-amplitude-20260923/full/state_0.dat",
+      "input_sha256": "db69ef40db84767b6ab7a853b1792e231e3bfe43da463875d7282f7c2fe6fc0e",
+      "output_path": "outputs/hpc/step16-amplitude-20260923/full/state_1.dat",
+      "output_sha256": "f21e48c7b2cc47dd9df211c0b07ae02b144ff158275dbadeaf2cfa7d6ab0a619",
+      "wall_s": 147.67007286753505,
+      "residual": 0.00011843362146135591,
+      "boundary_l1": 0.000710478737922147,
+      "boundary_bolometric": 0.0005912805998857769,
+      "maximum_worker_rss_mib": 3502.28125
+    },
+    {
+      "iteration": 5,
+      "input_path": "outputs/hpc/step16-amplitude-20260923/full/state_1.dat",
+      "input_sha256": "f21e48c7b2cc47dd9df211c0b07ae02b144ff158275dbadeaf2cfa7d6ab0a619",
+      "output_path": "outputs/hpc/step16-amplitude-20260923/full/state_2.dat",
+      "output_sha256": "ce07d7f095b8a46599d199e5c779a0d01c2717b8a58f2a24d8344ff34cce0442",
+      "wall_s": 147.16950998920947,
+      "residual": 8.313323281292086e-05,
+      "boundary_l1": 0.00061189225276266,
+      "boundary_bolometric": 0.0005422703234615603,
+      "maximum_worker_rss_mib": 3504.3671875
+    },
+    {
+      "iteration": 6,
+      "input_path": "outputs/hpc/step16-amplitude-20260923/full/state_2.dat",
+      "input_sha256": "ce07d7f095b8a46599d199e5c779a0d01c2717b8a58f2a24d8344ff34cce0442",
+      "output_path": "outputs/hpc/step16-amplitude-20260923/full/state_0.dat",
+      "output_sha256": "d7b3876652454a3e54e20126851b7e389b6ba656c3ff226d8fb841a3ceef56bd",
+      "wall_s": 146.67184421326965,
+      "residual": 7.385025303070097e-05,
+      "boundary_l1": 0.0005375244253528547,
+      "boundary_bolometric": 0.0004953153938426335,
+      "maximum_worker_rss_mib": 3503.46484375
+    },
+    {
+      "iteration": 7,
+      "input_path": "outputs/hpc/step16-amplitude-20260923/full/state_0.dat",
+      "input_sha256": "d7b3876652454a3e54e20126851b7e389b6ba656c3ff226d8fb841a3ceef56bd",
+      "output_path": "outputs/hpc/step16-amplitude-20260923/full/state_1.dat",
+      "output_sha256": "565a923e00f740656f4fd4de2a9dd12985f551d9ec6787294fef4dfc1189d627",
+      "wall_s": 149.27651434578001,
+      "residual": 7.070883638634e-05,
+      "boundary_l1": 0.00047882196609996727,
+      "boundary_bolometric": 0.0004523198965526448,
+      "maximum_worker_rss_mib": 3500.21875
+    },
+    {
+      "iteration": 8,
+      "input_path": "outputs/hpc/step16-amplitude-20260923/full/state_1.dat",
+      "input_sha256": "565a923e00f740656f4fd4de2a9dd12985f551d9ec6787294fef4dfc1189d627",
+      "output_path": "outputs/hpc/step16-amplitude-20260923/full/state_2.dat",
+      "output_sha256": "a08d996ffb11d3ba2775c2cea3d9daae7fa0af496a347969a2f37e28ebbc70d4",
+      "wall_s": 147.1236391607672,
+      "residual": 6.770083772427255e-05,
+      "boundary_l1": 0.0004308337693833476,
+      "boundary_bolometric": 0.0004136661849255641,
+      "maximum_worker_rss_mib": 3502.2109375
+    }
+  ],
+  "new_denominator_verified": true,
+  "gas_domain": {
+    "previous": {
+      "failed_cells": 0,
+      "min_gas_erg_g": 4022846259057.7266
+    },
+    "final": {
+      "failed_cells": 0,
+      "min_gas_erg_g": 4085985003324.9297
+    }
+  },
+  "resources": {
+    "map_reports": 760,
+    "process_receipts": 1216,
+    "native_peak_mib": 3505.98046875,
+    "proc_peak_kib": 4040672
+  },
+  "physical_response_replayed": false,
+  "true_error_bound": false,
+  "coupled_column_accepted": false,
+  "outer_iteration": {
+    "index": 16,
+    "source": "outputs/hpc/outer-steps13to15-20260922/final-confirmation/confirm4",
+    "base_is_accepted_trial": true,
+    "physical_time_advanced": false,
+    "replaced_historical_denominator": {
+      "path": "outputs/phase7b9f_base_material_residual.npy",
+      "size_bytes": 4224,
+      "sha256": "217e7fec52ad506214cc997ebe074fac0433700bb84eaeac4bba24a7da55fa3b"
+    },
+    "direction_is_frozen_response_at_new_base": true
+  },
+  "formal_denominator": {
+    "path": "outputs/hpc/step16-amplitude-20260923/base_residual.npy",
+    "size_bytes": 4224,
+    "sha256": "98b40677d7df8fe9f12939007e18185cb6b9f471381cdcf19699c47ac3dca165"
+  }
+}
