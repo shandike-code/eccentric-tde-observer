@@ -1,0 +1,150 @@
+{
+  "archive": {
+    "path": "outputs/review-20260923/common-frequency-pair-75908.tar.gz",
+    "size_bytes": 26283951,
+    "sha256": "580dc3d36c1a118c70796e6920d4fa8257beecf7485578498ca2849280b70d2c",
+    "files": 468
+  },
+  "verified_files": 468,
+  "results": [
+    {
+      "endpoint": "previous",
+      "all_76_blocks": true,
+      "verified_blocks": 76,
+      "metrics": {
+        "atomic_vs_common": {
+          "volume_l1": 1.9492476908475687e-12,
+          "net_fraction": 6.912635004577219e-11,
+          "reference_integral": 578262044821.0918,
+          "compared_integral": 578262044861.065,
+          "difference_depth_l1": 102.50572538565642
+        },
+        "direct_vs_common": {
+          "volume_l1": 1.6824394175383923e-13,
+          "net_fraction": 9.317892539600383e-13,
+          "reference_integral": 578262044861.6038,
+          "compared_integral": 578262044861.065,
+          "difference_depth_l1": 8.847499151695448
+        },
+        "atomic_vs_old_formal": {
+          "volume_l1": 1.3338102788830914e-05,
+          "net_fraction": 0.0012080263125529619,
+          "reference_integral": 578262044821.0918,
+          "compared_integral": 578961445481.1868,
+          "difference_depth_l1": 701415657.4057206
+        },
+        "atomic_vs_direct": {
+          "volume_l1": 1.9681811789556303e-12,
+          "net_fraction": 7.005813929966782e-11,
+          "reference_integral": 578262044821.0918,
+          "compared_integral": 578262044861.6038,
+          "difference_depth_l1": 103.5013869127729
+        }
+      },
+      "local_minus_linux_metrics": {
+        "atomic_vs_common": {
+          "volume_l1": 0.0,
+          "net_fraction": 0.0,
+          "reference_integral": 0.0,
+          "compared_integral": 0.0,
+          "difference_depth_l1": 0.0
+        },
+        "direct_vs_common": {
+          "volume_l1": 0.0,
+          "net_fraction": 0.0,
+          "reference_integral": 0.0,
+          "compared_integral": 0.0,
+          "difference_depth_l1": 0.0
+        },
+        "atomic_vs_old_formal": {
+          "volume_l1": 0.0,
+          "net_fraction": 0.0,
+          "reference_integral": 0.0,
+          "compared_integral": 0.0,
+          "difference_depth_l1": 0.0
+        },
+        "atomic_vs_direct": {
+          "volume_l1": 0.0,
+          "net_fraction": 0.0,
+          "reference_integral": 0.0,
+          "compared_integral": 0.0,
+          "difference_depth_l1": 0.0
+        }
+      },
+      "native_peak_mib": 2380.734375,
+      "proc_peak_kib": 2437872,
+      "pilot_rate_label_is_source_rate_not_recomputed_atomic_rate": false
+    },
+    {
+      "endpoint": "final",
+      "all_76_blocks": true,
+      "verified_blocks": 76,
+      "metrics": {
+        "atomic_vs_common": {
+          "volume_l1": 1.953217961328533e-12,
+          "net_fraction": 6.632319906066659e-11,
+          "reference_integral": 600791821090.9016,
+          "compared_integral": 600791821130.748,
+          "difference_depth_l1": 102.69014761026088
+        },
+        "direct_vs_common": {
+          "volume_l1": 1.6851501295631456e-13,
+          "net_fraction": 9.025361349027183e-13,
+          "reference_integral": 600791821131.2903,
+          "compared_integral": 600791821130.748,
+          "difference_depth_l1": 8.85965207040054
+        },
+        "atomic_vs_old_formal": {
+          "volume_l1": 1.3341367871401486e-05,
+          "net_fraction": 0.0011627872078922939,
+          "reference_integral": 600791821090.9016,
+          "compared_integral": 601491227395.7769,
+          "difference_depth_l1": 701420945.1405243
+        },
+        "atomic_vs_direct": {
+          "volume_l1": 1.9712094573505496e-12,
+          "net_fraction": 6.722573519550945e-11,
+          "reference_integral": 600791821090.9016,
+          "compared_integral": 600791821131.2903,
+          "difference_depth_l1": 103.63604787270452
+        }
+      },
+      "local_minus_linux_metrics": {
+        "atomic_vs_common": {
+          "volume_l1": 0.0,
+          "net_fraction": 0.0,
+          "reference_integral": 0.0,
+          "compared_integral": 0.0,
+          "difference_depth_l1": 0.0
+        },
+        "direct_vs_common": {
+          "volume_l1": 0.0,
+          "net_fraction": 0.0,
+          "reference_integral": 0.0,
+          "compared_integral": 0.0,
+          "difference_depth_l1": 0.0
+        },
+        "atomic_vs_old_formal": {
+          "volume_l1": 0.0,
+          "net_fraction": 0.0,
+          "reference_integral": 0.0,
+          "compared_integral": 0.0,
+          "difference_depth_l1": 0.0
+        },
+        "atomic_vs_direct": {
+          "volume_l1": 0.0,
+          "net_fraction": 0.0,
+          "reference_integral": 0.0,
+          "compared_integral": 0.0,
+          "difference_depth_l1": 0.0
+        }
+      },
+      "native_peak_mib": 2384.453125,
+      "proc_peak_kib": 2441680,
+      "pilot_rate_label_is_source_rate_not_recomputed_atomic_rate": false
+    }
+  ],
+  "old_verdicts_unchanged": true,
+  "material_step_accepted": false,
+  "frequency_truncation_established": false
+}
