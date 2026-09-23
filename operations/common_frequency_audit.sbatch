@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#SBATCH --job-name=tde-common-pair
+#SBATCH --partition=Students
+#SBATCH --exclude=anode01
+#SBATCH --qos=qos_stu_cpu_long
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=32
+#SBATCH --mem=128G
+#SBATCH --time=02:00:00
+#SBATCH --signal=B:USR1@900
+#SBATCH --output=outputs/hpc/logs/%x-%j.out
+#SBATCH --error=outputs/hpc/logs/%x-%j.err
+set -euo pipefail
+cd "${SLURM_SUBMIT_DIR:?}"
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1
+export NUMPY_MADVISE_HUGEPAGE=0 MPLBACKEND=Agg PYTHONUNBUFFERED=1
+export PYTHONPATH="$PWD:$PWD/src:$PWD/scripts"
+exec "${TDE_PYTHON:-$PWD/.venv-hpc/bin/python}" operations/common_frequency_audit.py --run outputs/hpc/common-frequency-pair-20260923
