@@ -67,7 +67,9 @@ def review(archive,receipt,received,original,output):
             assert np.all(ownership==1)
             oldfb=arrays(oldroot/f'{label}_feedback.npz')
             assert np.array_equal(a['atomic_rate_heating_erg_s_cm3'],oldfb['atomic_rate_heating_erg_s_cm3'])
-        w=a['subcell_width_cm'];assert (w>0).all();rate=a['atomic_rate_heating_erg_s_cm3'];common=a['common_formal_erg_s_cm3']
+        w=a['subcell_width_cm'];assert (w>0).all()
+        assert np.array_equal(w,arrays(oldroot/f'{label}_feedback.npz')['subcell_width_cm'])
+        rate=a['atomic_rate_heating_erg_s_cm3'];common=a['common_formal_erg_s_cm3']
         checks={name:metrics(x,y,w) for name,x,y in (
             ('atomic_vs_common',rate,common),('direct_vs_common',a['original_direct'],common),
             ('atomic_vs_old_formal',rate,a['original_formal']),('atomic_vs_direct',rate,a['original_direct']))}
