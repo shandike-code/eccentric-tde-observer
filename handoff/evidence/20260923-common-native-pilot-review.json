@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "pilot_json_sha256": "510fde614eb328b23511748e95a497b3a5363743300b9abf4e34acc9d06c35b5",
+  "native_all_fields_bitwise": true,
+  "common_all_fields_bitwise": true,
+  "nonformal_fields_unchanged": true,
+  "native_peak_mib": 3290.125,
+  "proc_peak_kib": 3369088,
+  "worker_wall_s": 34.127658773213625,
+  "new_material_steps": 0
+}

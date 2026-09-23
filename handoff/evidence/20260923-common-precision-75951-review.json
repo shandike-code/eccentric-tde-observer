@@ -1,0 +1,151 @@
+{
+  "verified_files": 1228,
+  "maps": 8,
+  "map_blocks": 608,
+  "independent_process_receipts": 608,
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/common-precision-maps-20260923/maps/state_0.dat",
+      "input_sha256": "0ade66d388c90a18ce065867ea5dfccfce4fc6840084541d8af47f666b0c76a6",
+      "output_path": "outputs/hpc/common-precision-maps-20260923/maps/state_1.dat",
+      "output_sha256": "26a50aa65a2699d77f4eadf1cb3a13308dca7e651884d18c1e6ffe422c74efe0",
+      "wall_s": 153.6451623989269,
+      "residual": 4.255073056153993e-05,
+      "boundary_l1": 0.000390290441005006,
+      "boundary_bolometric": 0.00035551220089374385,
+      "maximum_worker_rss_mib": 3501.6953125
+    },
+    {
+      "iteration": 2,
+      "input_path": "outputs/hpc/common-precision-maps-20260923/maps/state_1.dat",
+      "input_sha256": "26a50aa65a2699d77f4eadf1cb3a13308dca7e651884d18c1e6ffe422c74efe0",
+      "output_path": "outputs/hpc/common-precision-maps-20260923/maps/state_2.dat",
+      "output_sha256": "4b4245d4cb2409d875ee2fe7f175994d86be55a2ddaed12805730ba09bf0b4fc",
+      "wall_s": 149.72613849677145,
+      "residual": 3.784700649809483e-05,
+      "boundary_l1": 0.0003477922039180362,
+      "boundary_bolometric": 0.00032671883527829985,
+      "maximum_worker_rss_mib": 3499.4296875
+    },
+    {
+      "iteration": 3,
+      "input_path": "outputs/hpc/common-precision-maps-20260923/maps/state_2.dat",
+      "input_sha256": "4b4245d4cb2409d875ee2fe7f175994d86be55a2ddaed12805730ba09bf0b4fc",
+      "output_path": "outputs/hpc/common-precision-maps-20260923/maps/state_0.dat",
+      "output_sha256": "bbdd6b1883dd815ef0dcc0cb10623a9eab4afe6b6cdba0b4214ec7d59658c0de",
+      "wall_s": 147.1362110823393,
+      "residual": 3.5666890564889405e-05,
+      "boundary_l1": 0.000313637484499669,
+      "boundary_bolometric": 0.00030040189428159897,
+      "maximum_worker_rss_mib": 3502.0
+    },
+    {
+      "iteration": 4,
+      "input_path": "outputs/hpc/common-precision-maps-20260923/maps/state_0.dat",
+      "input_sha256": "bbdd6b1883dd815ef0dcc0cb10623a9eab4afe6b6cdba0b4214ec7d59658c0de",
+      "output_path": "outputs/hpc/common-precision-maps-20260923/maps/state_1.dat",
+      "output_sha256": "348e257bbdfc36ba16e614f38433bca2c41af737ffc8fd42c3b855f914b114f3",
+      "wall_s": 148.16401469893754,
+      "residual": 3.370483585059442e-05,
+      "boundary_l1": 0.00028526580636799363,
+      "boundary_bolometric": 0.00027668335411461524,
+      "maximum_worker_rss_mib": 3502.94921875
+    },
+    {
+      "iteration": 5,
+      "input_path": "outputs/hpc/common-precision-maps-20260923/maps/state_1.dat",
+      "input_sha256": "348e257bbdfc36ba16e614f38433bca2c41af737ffc8fd42c3b855f914b114f3",
+      "output_path": "outputs/hpc/common-precision-maps-20260923/maps/state_2.dat",
+      "output_sha256": "185c967062aefa0722e64b07ec693abd225cdd50743220cd80aaf85228b950d2",
+      "wall_s": 156.99486759398133,
+      "residual": 3.193563467759627e-05,
+      "boundary_l1": 0.0002611217349149883,
+      "boundary_bolometric": 0.0002554004049450055,
+      "maximum_worker_rss_mib": 3503.46875
+    },
+    {
+      "iteration": 6,
+      "input_path": "outputs/hpc/common-precision-maps-20260923/maps/state_2.dat",
+      "input_sha256": "185c967062aefa0722e64b07ec693abd225cdd50743220cd80aaf85228b950d2",
+      "output_path": "outputs/hpc/common-precision-maps-20260923/maps/state_0.dat",
+      "output_sha256": "f6a0688d26da66c8a762befd90a1b43c52961bdeb5d02066d6824f07b287c06d",
+      "wall_s": 147.17639797367156,
+      "residual": 3.0341650611623197e-05,
+      "boundary_l1": 0.00024020944123608588,
+      "boundary_bolometric": 0.00023630389345571023,
+      "maximum_worker_rss_mib": 3503.81640625
+    },
+    {
+      "iteration": 7,
+      "input_path": "outputs/hpc/common-precision-maps-20260923/maps/state_0.dat",
+      "input_sha256": "f6a0688d26da66c8a762befd90a1b43c52961bdeb5d02066d6824f07b287c06d",
+      "output_path": "outputs/hpc/common-precision-maps-20260923/maps/state_1.dat",
+      "output_sha256": "eaa327224e177b59bd73db85396ce41b69ddbeae1855e285957903e0e2528f8c",
+      "wall_s": 148.61072915699333,
+      "residual": 2.889659292055668e-05,
+      "boundary_l1": 0.00022185793407813,
+      "boundary_bolometric": 0.0002191373681812827,
+      "maximum_worker_rss_mib": 3502.1953125
+    },
+    {
+      "iteration": 8,
+      "input_path": "outputs/hpc/common-precision-maps-20260923/maps/state_1.dat",
+      "input_sha256": "eaa327224e177b59bd73db85396ce41b69ddbeae1855e285957903e0e2528f8c",
+      "output_path": "outputs/hpc/common-precision-maps-20260923/maps/state_2.dat",
+      "output_sha256": "0d9ae6311d3184cd308a62ca69a4c6e38c048925de3a6f621a9e792536a5c948",
+      "wall_s": 146.87337923329324,
+      "residual": 2.7580056431578367e-05,
+      "boundary_l1": 0.00020559350569428645,
+      "boundary_bolometric": 0.000203665335045961,
+      "maximum_worker_rss_mib": 3501.26171875
+    }
+  ],
+  "maximum_proc_kib": 3587908,
+  "maximum_native_mib": 3503.81640625,
+  "total_map_wall_s": 1198.3269006349146,
+  "map_wall_range_s": [
+    146.87337923329324,
+    156.99486759398133
+  ],
+  "retained_pairs": {
+    "4": {
+      "previous": {
+        "path": "outputs/hpc/common-precision-maps-20260923/endpoints-map04/previous.dat",
+        "size_bytes": 10099884032,
+        "sha256": "4b4245d4cb2409d875ee2fe7f175994d86be55a2ddaed12805730ba09bf0b4fc"
+      },
+      "final": {
+        "path": "outputs/hpc/common-precision-maps-20260923/endpoints-map04/final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "bbdd6b1883dd815ef0dcc0cb10623a9eab4afe6b6cdba0b4214ec7d59658c0de"
+      },
+      "mapped_final": {
+        "path": "outputs/hpc/common-precision-maps-20260923/endpoints-map04/mapped_final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "348e257bbdfc36ba16e614f38433bca2c41af737ffc8fd42c3b855f914b114f3"
+      }
+    },
+    "8": {
+      "previous": {
+        "path": "outputs/hpc/common-precision-maps-20260923/endpoints-map08/previous.dat",
+        "size_bytes": 10099884032,
+        "sha256": "f6a0688d26da66c8a762befd90a1b43c52961bdeb5d02066d6824f07b287c06d"
+      },
+      "final": {
+        "path": "outputs/hpc/common-precision-maps-20260923/endpoints-map08/final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "eaa327224e177b59bd73db85396ce41b69ddbeae1855e285957903e0e2528f8c"
+      },
+      "mapped_final": {
+        "path": "outputs/hpc/common-precision-maps-20260923/endpoints-map08/mapped_final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "0d9ae6311d3184cd308a62ca69a4c6e38c048925de3a6f621a9e792536a5c948"
+      }
+    }
+  },
+  "retained_dat_rehashed_on_mac": false,
+  "trial_bitwise_equal_to_bridge": true,
+  "new_material_steps": 0,
+  "feedback_evaluated": false
+}
