@@ -22,3 +22,13 @@ map04 final与map08 final残差向量差的L2为0.1428322911、质量加权0.008
 基态使用alpha0单独验证，不调用1/64身份函数或有限步接受；候选保持原冻结残差分母，新基态只是增加比较要求。原科学实现保持不动，新驱动、协议与证据入库；历史检查点不删除。
 
 详细数据见handoff/evidence/20260923-common-native-pairs-review.json及同名png；调度证据见20260923-common-native-75987-terminal.json。确认批次的实际job、测试、Git同步将在提交后记录，不把计划写成已完成。
+
+## 提交与备份
+
+Mac与Linux测试均33 passed，Mac 1.10秒、Linux19.73秒；语法和shell检查通过。代码提交48fbed75803dd037393aabc1ca3e3e15aa594aab，GitHub分支已用ls-remote核实同SHA。首次push报Empty reply，但服务端实际已更新；第二次返回expected-old ref错误后只查询核实，没有force push。
+
+76075于2026-09-23 19:42:12在anode03启动，32CPU128GiB、4小时上限，启动观察status=preparing，stderr为空。输入声明核验和大文件初始化在allocation内进行。只读终态捕获器在tmux common-confirm-76075运行，最长5小时，输出outputs/review-20260923/scheduler-76075；不提交或取消作业。
+
+Mac备份outputs/review-20260921/pre-common-confirmation.bundle与automation-before-common-confirmation.toml；学校备份/home/scc/pb24511938/pre-common-confirmation.bundle。新完整checkpoint始终留校、不进Git。76075尚无科学结果；预计诊断约1–2小时，仅为资源规划估计，不外推到耦合解或整盘光谱完成。
+
+19:45复查76075仍RUNNING，进入control阶段（父状态mapping可能仍处于child初始化/哈希核验），stderr为空。定时任务USTC HHe 运行审阅与决策已更新并逐字读回核对，ACTIVE、30分钟；静默处理无变化，完成/失败/需重连时通知。
