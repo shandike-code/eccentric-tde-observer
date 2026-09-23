@@ -70,3 +70,13 @@ run为outputs/hpc/step16-amplitude-20260923，预检输出step16-amplitude-prefl
 物理旧层phase1367、dt889.419892762322秒及全部原门/信赖域不变；不裁剪、不加floor。trial先于初始化；源/程序/资源故障停；pending反馈/账本优先；恢复不重置预算；单锁、信号边界、6GiB双内存守卫、hugepage0及relay保留。旧代码、协议、历史数值态不改。
 
 PRE-RUN：Code核对模板差异与9项新负路径测试；Logic先原生预检后实际源重放/控制/候选/有限回溯；Physics增幅效果未知但不改物理问题。RUN。Mac新旧幅度与numbered驱动40项测试通过，sbatch语法通过。POST-RUN：现有审阅未见NaN/Inf、负辐射、资源越界；气体域为正但余量需继续跟踪；没有新增网格/独立初值/完整能量积分证明。学校测试、预检与正式调度记录后附。
+
+## 实际提交与监督
+
+代码0248bc3a994bb7a927ca9cd45ca995e8494b20c5已在Mac、学校和GitHub核SHA一致。Mac推送返回ref compare-and-swap冲突，但独立ls-remote确认远端已经是本提交，未强推。学校快进后40项测试通过，未修改数值入口。
+
+预检75783在anode01默认4CPU/16GiB，2026-09-23 10:06:39—10:06:45，COMPLETED 0:0、stderr空；native_exact_rebase=true，full0.03125、half0.015625均通过，原信赖域不改。证据handoff/evidence/20260923-step16-native-preflight.json保存精确源claim、环境与明确未计算新辐射/未接受候选的标志。
+
+正式75784在anode02于10:07:36 RUNNING，cpu_long32CPU/128GiB/16worker，硬截止14:07:36。启动证据20260923-75784-launch.json含两作业调度快照和数值提交。初查状态preparing、stderr空，正在准备实际源检查与种子，不把准备态或零map当作辐射计算已完成。
+
+只读watcher PID2726293，outputs/review-20260923/scheduler-75784，30秒采样、最多18000秒，脱离SSH且无提交/取消能力。学校执行前备份outputs/review-20260923/pre-step16.bundle。heartbeat“USTC HHe 运行审阅与决策”已ACTIVE每30分钟，包含新合同、结果审核、完成后继续有限决策及SSH失败提醒/暂停规则，读回prompt完全一致；更新后TOML备份outputs/review-20260921/automation-after-step16-launch.toml。数值代码保持0248bc3，随后Git提交仅补调度与预检证据。
