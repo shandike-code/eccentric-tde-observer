@@ -10,6 +10,14 @@ COMMON='outputs/hpc/common-frequency-pair-20260923'
 FORMAL='source_formal_heating_erg_s_cm3'
 
 
+def bridge_state_gates(historical):
+    expected=pair._formal_state_gates()
+    # HPC历史协议仅将墙钟资源预算改为7200s；科学门必须完全一致。
+    inherited=dict(expected);inherited['each_state_wall_time_strictly_below_s']=7200.
+    if historical!=inherited:raise RuntimeError('historical HPC thresholds changed')
+    return expected  # 本桥显式采用更严格的900s，不修改历史协议。
+
+
 def validate_identity(trial,base,residual,old):
     alpha=float(trial['relaxation']);phase=int(trial['phase_index'])
     if alpha!=1/64:raise RuntimeError('unexpected candidate amplitude')
@@ -152,7 +160,9 @@ def run_bridge(out):
     pipeline.write_json(out/'status.json',{'status':'verifying_sources','material_step_promoted':False})
     try:
         source=ROOT/SOURCE/'feedback_protocol.json';proto=pipeline.read(source)
-        if proto['formal_state_gates']!=pair._formal_state_gates():raise RuntimeError('formal thresholds changed')
+        historical_gates=deepcopy(proto['formal_state_gates'])
+        proto['formal_state_gates']=bridge_state_gates(historical_gates)
+        proto['resource_change']='Common bridge uses a conservative 900 s state bound; historical HPC budget was 7200 s. Science gates unchanged.'
         pair._require_exact_acceptance_gates({'gates':proto['acceptance_gates'],'authorization':{
             'accept_finite_trial_as_one_nonlinear_step_only_if_all_gates_pass':True,
             'reject_this_trial_if_any_gate_fails':True,'accept_dynamic_nlte_solution':False}})
@@ -175,7 +185,8 @@ def run_bridge(out):
         claims=list(unique.values());reused.verify(claims)
         origin={'phase':'common-frequency-feedback-origin-v1','source_protocol':pipeline.claim(source),'claims':claims,
                 'common_frequency_equations':'handoff/protocols/common-frequency-source-v1.md','environment':pipeline.environment(),
-                'formal_state_gates':proto['formal_state_gates'],'old_verdicts_immutable':True,'new_maps':0,
+                'formal_state_gates':proto['formal_state_gates'],'historical_formal_state_gates':historical_gates,
+                'old_verdicts_immutable':True,'new_maps':0,
                 'material_step_promoted':False,'source_job_full_wall_seconds':common_wall}
         origin_path=out/'origin_protocol.json';reused.immutable(origin_path,origin);origin_sha=pipeline.sha256(origin_path)
         inputs=out/'inputs';inputs.mkdir()
@@ -195,7 +206,7 @@ def run_bridge(out):
         reused.immutable(out/'identity.json',{'alpha':float(t['relaxation']),'phase':int(t['phase_index']),'duration_s':float(t['step_duration_s']),'native_and_encoded_exact':True,'sources':proto['sources']})
         manifests={label:build_state(out,label,proto,origin_sha,started,common_wall) for label in ('previous','final')}
         require_complete_states(manifests)
-        cfg=proto['configuration'];cfg.update(reuse_completed_feedback_manifests=True,feedback_origin_protocol_sha256=origin_sha)
+        cfg=proto['configuration'];cfg.update(reuse_completed_feedback_manifests=True,feedback_origin_protocol_sha256=origin_sha,maximum_concurrent_processes=1)
         paths={'summary_path':'feedback_summary.json','figure_path':'feedback.png','target_material_output':'target_material.npz',
                'encoded_residual_output':'material_residual.npy','feedback_work_directory':'feedback',
                'previous_feedback_output':'previous_feedback.npz','final_feedback_output':'final_feedback.npz'}

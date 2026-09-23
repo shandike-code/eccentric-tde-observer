@@ -6,6 +6,15 @@ import pytest
 from operations import common_feedback_bridge as bridge
 
 
+def test_hpc_resource_budget_is_explicitly_tightened_without_changing_science():
+    historical=bridge.pair._formal_state_gates();historical['each_state_wall_time_strictly_below_s']=7200.
+    actual=bridge.bridge_state_gates(historical)
+    assert actual['each_state_wall_time_strictly_below_s']==900.
+    assert historical['each_state_wall_time_strictly_below_s']==7200.
+    bad=dict(historical);bad['atomic_rate_vs_inverse_four_force_global_fraction_below']=.002
+    with pytest.raises(RuntimeError):bridge.bridge_state_gates(bad)
+
+
 def combined():
     q=np.ones(4096)
     d={k:q.copy() for k in (bridge.FORMAL,'source_direct_heating_erg_s_cm3','atomic_rate_heating_erg_s_cm3','source_rate_heating_erg_s_cm3')}

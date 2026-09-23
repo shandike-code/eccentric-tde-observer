@@ -15,6 +15,6 @@ export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_TH
 export NUMPY_MADVISE_HUGEPAGE=0 MPLBACKEND=Agg PYTHONUNBUFFERED=1
 export PYTHONPATH="$PWD:$PWD/src:$PWD/scripts"
 exec "${TDE_PYTHON:-$PWD/.venv-hpc/bin/python}" operations/native_worker_relay.py \
- --receipt outputs/hpc/common-feedback-bridge-20260923.process.json -- \
+ --receipt outputs/hpc/common-feedback-bridge-v2-20260923.process.json -- \
  "${TDE_PYTHON:-$PWD/.venv-hpc/bin/python}" operations/common_feedback_bridge.py \
- --run outputs/hpc/common-feedback-bridge-20260923
+ --run outputs/hpc/common-feedback-bridge-v2-20260923
