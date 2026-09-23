@@ -1,0 +1,91 @@
+{
+  "verified_files": 2046,
+  "actual_alpha": 0.015625,
+  "native_identity": true,
+  "rounds": {
+    "1": {
+      "previous": {
+        "checks": {
+          "block_count": true,
+          "frequency_ownership": true,
+          "positive_intensity": true,
+          "finite_arrays": true,
+          "nonnegative_atomic_rates": true,
+          "direct_volume": true,
+          "formal_volume": true,
+          "formal_global": false,
+          "mirror": true,
+          "memory": true,
+          "wall": true
+        },
+        "failed_checks": [
+          "formal_global"
+        ],
+        "formal": {
+          "volume_l1": 1.3338102788830914e-05,
+          "global_fraction": 0.0012080263125529619,
+          "integrated_rate": 578262044821.0918,
+          "integrated_other": 578961445481.1868,
+          "absolute_integral_difference": 699400660.0949707,
+          "absolute_scale": 52587363323745.97,
+          "net_scale": 578961445481.1868,
+          "absolute_over_net_scale": 90.83050993151976
+        },
+        "direct": {
+          "volume_l1": 1.9681811789556303e-12,
+          "global_fraction": 7.005813929966782e-11,
+          "integrated_rate": 578262044821.0918,
+          "integrated_other": 578262044861.6038,
+          "absolute_integral_difference": 40.511962890625,
+          "absolute_scale": 52587326827143.78,
+          "net_scale": 578262044861.6038,
+          "absolute_over_net_scale": 90.9403051686188
+        },
+        "manifest_status": "gate_failed",
+        "all_76_partials_and_assembled_bytes_verified": true
+      },
+      "final": {
+        "checks": {
+          "block_count": true,
+          "frequency_ownership": true,
+          "positive_intensity": true,
+          "finite_arrays": true,
+          "nonnegative_atomic_rates": true,
+          "direct_volume": true,
+          "formal_volume": true,
+          "formal_global": false,
+          "mirror": true,
+          "memory": true,
+          "wall": true
+        },
+        "failed_checks": [
+          "formal_global"
+        ],
+        "formal": {
+          "volume_l1": 1.3341367871401486e-05,
+          "global_fraction": 0.0011627872078922939,
+          "integrated_rate": 600791821090.9016,
+          "integrated_other": 601491227395.7769,
+          "absolute_integral_difference": 699406304.8752441,
+          "absolute_scale": 52574889764046.46,
+          "net_scale": 601491227395.7769,
+          "absolute_over_net_scale": 87.40757532188007
+        },
+        "direct": {
+          "volume_l1": 1.9712094573505496e-12,
+          "global_fraction": 6.722573519550945e-11,
+          "integrated_rate": 600791821090.9016,
+          "integrated_other": 600791821131.2903,
+          "absolute_integral_difference": 40.388671875,
+          "absolute_scale": 52574853213214.08,
+          "net_scale": 600791821131.2903,
+          "absolute_over_net_scale": 87.50926920778598
+        },
+        "manifest_status": "gate_failed",
+        "all_76_partials_and_assembled_bytes_verified": true
+      }
+    }
+  },
+  "round1_material_response_evaluated": false,
+  "coupled_column_accepted": false
+}
