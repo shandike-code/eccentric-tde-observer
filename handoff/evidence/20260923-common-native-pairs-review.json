@@ -1,0 +1,132 @@
+{
+  "archive": {
+    "path": "outputs/hpc/common-native-pairs-20260923/archives/complete-1790157618994367391.tar.gz",
+    "size_bytes": 148082726,
+    "sha256": "0c7634db7e92af6d986c45bbc12ddb8c6b92374a0ad39ab2190630aded05798b"
+  },
+  "verified_files": 1854,
+  "pairs": {
+    "map04": {
+      "endpoints": {
+        "previous": {
+          "norms": {
+            "l2": 9.120580418846632,
+            "mass_weighted": 0.30642402292249116,
+            "maximum_cell": 2.7803511117114112
+          },
+          "minimum_gas_erg_g": 5723891049012.207,
+          "maximum_proc_kib": 4041920,
+          "source": {
+            "volume_l1": 1.9520240738209456e-12,
+            "net_fraction": 5.514289271871105e-11,
+            "reference_integral": 723703500531.9127,
+            "compared_integral": 723703500571.8198,
+            "difference_depth_l1": 102.59112174067096
+          }
+        },
+        "final": {
+          "norms": {
+            "l2": 9.113201421617882,
+            "mass_weighted": 0.3056283751577513,
+            "maximum_cell": 2.7805624583000963
+          },
+          "minimum_gas_erg_g": 5804115001889.785,
+          "maximum_proc_kib": 4040460,
+          "source": {
+            "volume_l1": 1.9525187355135006e-12,
+            "net_fraction": 5.341557535252799e-11,
+            "reference_integral": 749370869930.0283,
+            "compared_integral": 749370869970.0564,
+            "difference_depth_l1": 102.61345571113768
+          }
+        }
+      },
+      "comparison": {
+        "photoionization_volume_l1": [
+          8.045328481042224e-06,
+          1.2423340664717399e-05,
+          1.3153667066667527e-07
+        ],
+        "total_recombination_volume_l1": [
+          1.9665458701147623e-07,
+          1.1348887097845515e-08,
+          2.4018598292159637e-13
+        ],
+        "atomic_heating_volume_l1": 0.0005846767175777953,
+        "direct_heating_volume_l1": 0.0005846767175801918,
+        "formal_heating_volume_l1": 0.0005846767175801067,
+        "inner_noise_to_trial_signal_l2_ratio": 0.03830574835740809,
+        "candidate_to_base_residual_l2_ratio": 0.9486852674611908,
+        "candidate_to_base_mass_weighted_norm_ratio": 0.9518165647471261,
+        "candidate_to_base_maximum_cell_norm_ratio": 0.9786589262712753
+      },
+      "all_16_pair_gates": true
+    },
+    "map08": {
+      "endpoints": {
+        "previous": {
+          "norms": {
+            "l2": 9.113148186142258,
+            "mass_weighted": 0.3049120618494051,
+            "maximum_cell": 2.7814518978120697
+          },
+          "minimum_gas_erg_g": 6042715546010.287,
+          "maximum_proc_kib": 4039624,
+          "source": {
+            "volume_l1": 1.9521802426849337e-12,
+            "net_fraction": 4.9519390672096226e-11,
+            "reference_integral": 805262304112.0681,
+            "compared_integral": 805262304151.9442,
+            "difference_depth_l1": 102.59257422606967
+          }
+        },
+        "final": {
+          "norms": {
+            "l2": 9.11649557587569,
+            "mass_weighted": 0.3049529321850972,
+            "maximum_cell": 2.781721780887746
+          },
+          "minimum_gas_erg_g": 6122613474079.648,
+          "maximum_proc_kib": 4040668,
+          "source": {
+            "volume_l1": 1.951400114242828e-12,
+            "net_fraction": 4.8883420444116864e-11,
+            "reference_integral": 819654281898.2709,
+            "compared_integral": 819654281938.3384,
+            "difference_depth_l1": 102.55168187606213
+          }
+        }
+      },
+      "comparison": {
+        "photoionization_volume_l1": [
+          5.890795451836199e-06,
+          1.1839861458958423e-05,
+          4.984010649904387e-09
+        ],
+        "total_recombination_volume_l1": [
+          1.3192120474161846e-07,
+          1.0614164131128091e-08,
+          4.7672457152273814e-14
+        ],
+        "atomic_heating_volume_l1": 0.00027381975598561917,
+        "direct_heating_volume_l1": 0.0002738197559894239,
+        "formal_heating_volume_l1": 0.00027381975598927955,
+        "inner_noise_to_trial_signal_l2_ratio": 0.03362466490679602,
+        "candidate_to_base_residual_l2_ratio": 0.9490281892807081,
+        "candidate_to_base_mass_weighted_norm_ratio": 0.9497130368610704,
+        "candidate_to_base_maximum_cell_norm_ratio": 0.9790669665206302
+      },
+      "all_16_pair_gates": true
+    }
+  },
+  "process_receipts": 304,
+  "maximum_proc_kib": 4041920,
+  "same_material_residual_vector_drift_4_to_8": {
+    "l2": 0.142832291088174,
+    "mass_weighted": 0.008680779762972527,
+    "maximum_cell": 0.05342648698037639
+  },
+  "drift_is_error_bound": false,
+  "material_response_recomputed_on_mac": false,
+  "accepted_outer_steps": 15
+}
