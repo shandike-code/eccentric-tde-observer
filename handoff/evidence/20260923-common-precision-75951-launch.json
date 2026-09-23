@@ -1,0 +1,12 @@
+{
+  "job_id": 75951,
+  "git_commit": "e7348b57e320331b77494ae0729877d204ff5f5d",
+  "submitted_unix": 1790152823.1426706,
+  "run": "outputs/hpc/common-precision-maps-20260923",
+  "cpus": 32,
+  "memory_gib": 128,
+  "workers": 16,
+  "maximum_new_maps": 8,
+  "conditional_second_four": true,
+  "material_step_promoted": false
+}
