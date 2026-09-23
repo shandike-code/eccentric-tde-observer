@@ -1,0 +1,817 @@
+{
+  "verified_files": [
+    233,
+    17
+  ],
+  "all_76_block_original_arrays_match": true,
+  "failed_original_linearity_checks_retained": [
+    {
+      "block": 71,
+      "failed_components": [
+        "direct"
+      ]
+    },
+    {
+      "block": 72,
+      "failed_components": [
+        "direct"
+      ]
+    },
+    {
+      "block": 73,
+      "failed_components": [
+        "direct"
+      ]
+    },
+    {
+      "block": 74,
+      "failed_components": [
+        "formal"
+      ]
+    }
+  ],
+  "metrics": {
+    "original": {
+      "rate_integral": 600791821090.6876,
+      "formal_integral": 601491227395.7769,
+      "signed_difference": -699406305.089378,
+      "difference_depth_l1": 701420945.3546023,
+      "net_relative_difference": 0.0011627872082480583
+    },
+    "absorption": {
+      "rate_integral": 2.403164421779149e+16,
+      "formal_integral": 2.403164496891261e+16,
+      "signed_difference": -751121120.1377763,
+      "difference_depth_l1": 752257603.927407,
+      "net_relative_difference": 3.125550169252467e-08
+    },
+    "emission": {
+      "rate_integral": -2.40310434259704e+16,
+      "formal_integral": -2.4031043500400104e+16,
+      "signed_difference": 74429699.12387797,
+      "difference_depth_l1": 74429699.12387797,
+      "net_relative_difference": 3.0972314622442754e-09
+    },
+    "scattering": {
+      "rate_integral": 0.0,
+      "formal_integral": 22714885.136117365,
+      "signed_difference": -22714885.136117365,
+      "difference_depth_l1": 23586237.21013613,
+      "net_relative_difference": 1.0
+    },
+    "beta0": {
+      "rate_integral": 12173609482001.027,
+      "formal_integral": 12173609482041.586,
+      "signed_difference": -40.559674153321325,
+      "difference_depth_l1": 40.559674153321325,
+      "net_relative_difference": 3.3316818491534267e-12
+    }
+  },
+  "blockwise_triangle_bound_erg_s_cm2": {
+    "rate": 8.46560547991303,
+    "direct": 10.12991164265923,
+    "formal": 46.658843764132634
+  },
+  "tail_only_triangle_bound_erg_s_cm2": {
+    "rate": 4.604245369532591e-180,
+    "direct": 1.0999848845481655e-176,
+    "formal": 3.403479235754765e-176
+  },
+  "assembled_component_closure_l1_erg_s_cm2": {
+    "rate": 5.333948837779718,
+    "direct": 5.373246774060759,
+    "formal": 15.895302220778667
+  },
+  "tail_measurements": [
+    {
+      "block": 71,
+      "original_source_bitwise_replayed": true,
+      "linear_closure_error": {
+        "rate": 1.2546102972163501e-15,
+        "direct": 1.3031218953717531e-12,
+        "formal": 5.2583090829918996e-15
+      },
+      "linear_absolute_error": {
+        "rate": 5.260342437620167e-192,
+        "direct": 5.463742345208147e-189,
+        "formal": 3.0524013718030624e-188
+      },
+      "linear_scale": {
+        "rate": 4.1928098703569405e-177,
+        "direct": 4.192809870368618e-177,
+        "formal": 5.804910520905119e-174
+      },
+      "linear_check_passed": false,
+      "original_check_threshold": 1e-12,
+      "measurement_only_not_acceptance": true,
+      "native_peak_mib": 1479.328125,
+      "wall_s": 37.553907942026854,
+      "arrays": {
+        "path": "outputs/hpc/source-split-tail-evidence-20260923/block71.npz",
+        "size_bytes": 495458,
+        "sha256": "51e432a3714dde7f4c199c16426b72d19efa0a71c268e5d3880aca4758039f4b"
+      }
+    },
+    {
+      "block": 72,
+      "original_source_bitwise_replayed": true,
+      "linear_closure_error": {
+        "rate": 8.276647217250144e-16,
+        "direct": 2.178206631394311e-12,
+        "formal": 5.628769483228422e-15
+      },
+      "linear_absolute_error": {
+        "rate": 3.2978681700337323e-229,
+        "direct": 8.679164556486275e-226,
+        "formal": 8.442542515286355e-225
+      },
+      "linear_scale": {
+        "rate": 3.984546016604807e-214,
+        "direct": 3.9845460166148605e-214,
+        "formal": 1.4998913244612163e-210
+      },
+      "linear_check_passed": false,
+      "original_check_threshold": 1e-12,
+      "measurement_only_not_acceptance": true,
+      "native_peak_mib": 1478.65625,
+      "wall_s": 38.37691854685545,
+      "arrays": {
+        "path": "outputs/hpc/source-split-tail-evidence-20260923/block72.npz",
+        "size_bytes": 495458,
+        "sha256": "7addb6aae4f77adda03c1122e961db27e85bcb3c9d12e7935a2c5dd1e6b09e1a"
+      }
+    },
+    {
+      "block": 73,
+      "original_source_bitwise_replayed": true,
+      "linear_closure_error": {
+        "rate": 2.815342951196209e-16,
+        "direct": 4.10659999568504e-12,
+        "formal": 7.416444581784313e-15
+      },
+      "linear_absolute_error": {
+        "rate": 9.242595204427927e-274,
+        "direct": 1.3481711494938796e-269,
+        "formal": 2.498606217184228e-268
+      },
+      "linear_scale": {
+        "rate": 3.282937590427783e-258,
+        "direct": 3.2829375904895874e-258,
+        "formal": 3.3690081408025458e-254
+      },
+      "linear_check_passed": false,
+      "original_check_threshold": 1e-12,
+      "measurement_only_not_acceptance": true,
+      "native_peak_mib": 1478.68359375,
+      "wall_s": 44.989264108240604,
+      "arrays": {
+        "path": "outputs/hpc/source-split-tail-evidence-20260923/block73.npz",
+        "size_bytes": 495458,
+        "sha256": "bb6fd7fc174f3258f16cd39c04e1b332db422b4d8966ae557e70377726cc9fbb"
+      }
+    },
+    {
+      "block": 74,
+      "original_source_bitwise_replayed": true,
+      "linear_closure_error": {
+        "rate": 0.0,
+        "direct": 0.0,
+        "formal": 0.0010704761684049051
+      },
+      "linear_absolute_error": {
+        "rate": 0.0,
+        "direct": 0.0,
+        "formal": 4.19627416928206e-309
+      },
+      "linear_scale": {
+        "rate": 0.0,
+        "direct": 2.656705405035669e-307,
+        "formal": 3.9200070894944285e-306
+      },
+      "linear_check_passed": false,
+      "original_check_threshold": 1e-12,
+      "measurement_only_not_acceptance": true,
+      "native_peak_mib": 1478.109375,
+      "wall_s": 38.005406852811575,
+      "arrays": {
+        "path": "outputs/hpc/source-split-tail-evidence-20260923/block74.npz",
+        "size_bytes": 495458,
+        "sha256": "b356fe6cb21055fd63c107c78b42acc5aa831884006d4b73379588e565438e19"
+      }
+    }
+  ],
+  "block_signed_contributions": [
+    {
+      "block": 0,
+      "original": -637850736.8737044,
+      "absorption": -600793449.6601012,
+      "emission": -12536396.781960594,
+      "scattering": -24520890.430200882,
+      "beta0": -0.0012124450653055571
+    },
+    {
+      "block": 1,
+      "original": 5452656.593382308,
+      "absorption": 26390327.346624352,
+      "emission": -18478178.158633184,
+      "scattering": -2459492.59455717,
+      "beta0": -0.0014943451990814419
+    },
+    {
+      "block": 2,
+      "original": 948595.6993533121,
+      "absorption": 28767593.168432076,
+      "emission": -22421013.21904856,
+      "scattering": -5397984.264488682,
+      "beta0": -0.001634171410696863
+    },
+    {
+      "block": 3,
+      "original": -8867191.132242512,
+      "absorption": 29868114.77804628,
+      "emission": -27208148.07937421,
+      "scattering": -11527157.823463313,
+      "beta0": -0.0018452890221696576
+    },
+    {
+      "block": 4,
+      "original": -28537244.47493371,
+      "absorption": 28530523.876109164,
+      "emission": -33018278.212825082,
+      "scattering": -24049490.14304872,
+      "beta0": -0.0025104078262937813
+    },
+    {
+      "block": 5,
+      "original": -66230629.46399449,
+      "absorption": 23030422.2142225,
+      "emission": -40064473.93485882,
+      "scattering": -49196577.75335559,
+      "beta0": -0.002830423481823965
+    },
+    {
+      "block": 6,
+      "original": -136515563.17668447,
+      "absorption": 11047011.821514355,
+      "emission": -48597454.51592022,
+      "scattering": -98965120.48261568,
+      "beta0": -0.0035647438939881856
+    },
+    {
+      "block": 7,
+      "original": -265154685.61022592,
+      "absorption": -10099768.797534637,
+      "emission": -58906167.998362854,
+      "scattering": -196148748.78436846,
+      "beta0": -0.004470497746525652
+    },
+    {
+      "block": 8,
+      "original": -497341706.96108043,
+      "absorption": -42747647.180893764,
+      "emission": -71312706.967624,
+      "scattering": -383281352.8310526,
+      "beta0": -0.006038178205316223
+    },
+    {
+      "block": 9,
+      "original": -911725341.3343006,
+      "absorption": -87727029.99546924,
+      "emission": -86156564.12201168,
+      "scattering": -737841747.2192302,
+      "beta0": -0.007825023694229842
+    },
+    {
+      "block": 10,
+      "original": -1643971623.15485,
+      "absorption": -143235990.96414492,
+      "emission": -103760243.91429925,
+      "scattering": -1396975388.2706285,
+      "beta0": -0.0108115692580448
+    },
+    {
+      "block": 11,
+      "original": -2925653800.166362,
+      "absorption": -204638668.0424373,
+      "emission": -124364187.68977886,
+      "scattering": -2596650944.4782357,
+      "beta0": -0.015548635512207015
+    },
+    {
+      "block": 12,
+      "original": -5147040105.827866,
+      "absorption": -265590164.949771,
+      "emission": -148014198.69179657,
+      "scattering": -4733435742.171951,
+      "beta0": -0.02234700630485831
+    },
+    {
+      "block": 13,
+      "original": -8955619299.168613,
+      "absorption": -319712707.7837488,
+      "emission": -174380490.35872933,
+      "scattering": -8461526101.070169,
+      "beta0": -0.03400452857534077
+    },
+    {
+      "block": 14,
+      "original": -15404654743.671951,
+      "absorption": -361491787.0698769,
+      "emission": -202487710.49905437,
+      "scattering": -14840675246.153036,
+      "beta0": -0.051489098068682515
+    },
+    {
+      "block": 15,
+      "original": -26163881070.504063,
+      "absorption": -385911417.2282485,
+      "emission": -230347015.68261313,
+      "scattering": -25547622637.63913,
+      "beta0": -0.08055812807309598
+    },
+    {
+      "block": 16,
+      "original": -43788640265.10244,
+      "absorption": -387650361.82326585,
+      "emission": -254516473.83176386,
+      "scattering": -43146473429.50929,
+      "beta0": -0.13107450670430654
+    },
+    {
+      "block": 17,
+      "original": -71996856125.59145,
+      "absorption": -361029611.7900976,
+      "emission": -269690478.5111994,
+      "scattering": -71366136035.26892,
+      "beta0": -0.2123805968565752
+    },
+    {
+      "block": 18,
+      "original": -115796132921.15909,
+      "absorption": -301203750.4649701,
+      "emission": -268544054.71374726,
+      "scattering": -115226385116.06671,
+      "beta0": -0.3409285967321875
+    },
+    {
+      "block": 19,
+      "original": -181102855444.7984,
+      "absorption": -206261059.4949696,
+      "emission": -242220364.08078837,
+      "scattering": -180654374021.2033,
+      "beta0": -0.5248175469771176
+    },
+    {
+      "block": 20,
+      "original": -273203247236.32867,
+      "absorption": -79530839.63089444,
+      "emission": -181972418.0659766,
+      "scattering": -272941743978.6833,
+      "beta0": -0.8181914105810242
+    },
+    {
+      "block": 21,
+      "original": -393140057361.6522,
+      "absorption": 68446429.68086328,
+      "emission": -82370958.88315502,
+      "scattering": -393126132832.39966,
+      "beta0": -1.3162410785253569
+    },
+    {
+      "block": 22,
+      "original": -531303871119.7701,
+      "absorption": 219436509.52176094,
+      "emission": 54104778.50839296,
+      "scattering": -531577412407.79205,
+      "beta0": -1.8768229662059395
+    },
+    {
+      "block": 23,
+      "original": -658998042273.2393,
+      "absorption": 350433488.07338023,
+      "emission": 212555237.59817642,
+      "scattering": -659561030999.0225,
+      "beta0": -2.651732644651689
+    },
+    {
+      "block": 24,
+      "original": -722338797185.7123,
+      "absorption": 439405189.0160056,
+      "emission": 364315809.09066117,
+      "scattering": -723142518183.8749,
+      "beta0": -3.5465912867280367
+    },
+    {
+      "block": 25,
+      "original": -437561206872.4686,
+      "absorption": -283137622645.3539,
+      "emission": -73086315852.50818,
+      "scattering": -81337268374.54648,
+      "beta0": -2.932841341610491
+    },
+    {
+      "block": 26,
+      "original": -38376881198.709175,
+      "absorption": 6670084445.253206,
+      "emission": -3568430075.124592,
+      "scattering": -41478535568.919754,
+      "beta0": -0.3615299491416856
+    },
+    {
+      "block": 27,
+      "original": -39411070706.73462,
+      "absorption": 8170322675.367783,
+      "emission": 1612483645.7394142,
+      "scattering": -49193877027.67804,
+      "beta0": -0.3680975294117744
+    },
+    {
+      "block": 28,
+      "original": -39804314211.14279,
+      "absorption": 8619576675.78078,
+      "emission": 1720148258.1834798,
+      "scattering": -50144039145.20111,
+      "beta0": -0.39792497953686057
+    },
+    {
+      "block": 29,
+      "original": -40029647465.61394,
+      "absorption": 9098214581.874668,
+      "emission": 1837804403.7642062,
+      "scattering": -50965666451.355606,
+      "beta0": -0.4339974948249865
+    },
+    {
+      "block": 30,
+      "original": -40029609974.91185,
+      "absorption": 9607319687.770248,
+      "emission": 1965922893.4549878,
+      "scattering": -51602852556.04332,
+      "beta0": -0.46962076059524144
+    },
+    {
+      "block": 31,
+      "original": -39718495176.46548,
+      "absorption": 10150006787.833021,
+      "emission": 2107375764.4201367,
+      "scattering": -51975877728.719635,
+      "beta0": -0.470088119446793
+    },
+    {
+      "block": 32,
+      "original": -39000203970.05711,
+      "absorption": 10724536072.76248,
+      "emission": 2261494308.106219,
+      "scattering": -51986234350.91548,
+      "beta0": -0.5476536033721547
+    },
+    {
+      "block": 33,
+      "original": -37722520524.62698,
+      "absorption": 11334219799.26601,
+      "emission": 2431525786.8099084,
+      "scattering": -51488266110.718216,
+      "beta0": -0.5676231454832954
+    },
+    {
+      "block": 34,
+      "original": -35695490624.367165,
+      "absorption": 11975480100.202332,
+      "emission": 2618685369.633821,
+      "scattering": -50289656094.18635,
+      "beta0": -0.6065006834529469
+    },
+    {
+      "block": 35,
+      "original": -32648422316.724266,
+      "absorption": 12649882312.5524,
+      "emission": 2824863836.0067706,
+      "scattering": -48123168465.34886,
+      "beta0": -0.664665912989322
+    },
+    {
+      "block": 36,
+      "original": -28217252185.83671,
+      "absorption": 13349347288.117607,
+      "emission": 3051622763.8978877,
+      "scattering": -44618222237.67767,
+      "beta0": -0.731483409257369
+    },
+    {
+      "block": 37,
+      "original": -21878314648.957466,
+      "absorption": 14063444038.710812,
+      "emission": 3301452675.15857,
+      "scattering": -39243211362.87681,
+      "beta0": -0.7932775414474357
+    },
+    {
+      "block": 38,
+      "original": -12901943257.622963,
+      "absorption": 14780018942.798206,
+      "emission": 3574866419.1638584,
+      "scattering": -31256828619.78161,
+      "beta0": -0.8837293351416069
+    },
+    {
+      "block": 39,
+      "original": -253240066.8622589,
+      "absorption": 15470832934.649376,
+      "emission": 3871790915.8967123,
+      "scattering": -19595863917.44532,
+      "beta0": -0.9954220484933565
+    },
+    {
+      "block": 40,
+      "original": 17585480243.672848,
+      "absorption": 16096101139.648066,
+      "emission": 4190228540.116214,
+      "scattering": -2700849436.1581,
+      "beta0": -1.0787589715863617
+    },
+    {
+      "block": 41,
+      "original": 42748146247.556885,
+      "absorption": 16594100904.841707,
+      "emission": 4522455644.42579,
+      "scattering": 21631589698.179527,
+      "beta0": -1.218287376681044
+    },
+    {
+      "block": 42,
+      "original": 78298754702.7981,
+      "absorption": 16866103176.569489,
+      "emission": 4853507159.143953,
+      "scattering": 56579144367.05519,
+      "beta0": -1.4358550725020058
+    },
+    {
+      "block": 43,
+      "original": 128438987700.73267,
+      "absorption": 16779174002.068512,
+      "emission": 5153221892.402629,
+      "scattering": 106506591806.1014,
+      "beta0": -1.5289959368487072
+    },
+    {
+      "block": 44,
+      "original": 198430233098.38196,
+      "absorption": 16137388098.605522,
+      "emission": 5366483766.582603,
+      "scattering": 176926361233.27563,
+      "beta0": -1.7516372008366359
+    },
+    {
+      "block": 45,
+      "original": 296178166405.7032,
+      "absorption": -16557041794.88289,
+      "emission": 538620102.5470946,
+      "scattering": 312196588098.08875,
+      "beta0": -1.9228192318732777
+    },
+    {
+      "block": 46,
+      "original": 413864000777.0531,
+      "absorption": 23611119000.51941,
+      "emission": 6933933273.021164,
+      "scattering": 383318948503.43646,
+      "beta0": -2.0214482115423937
+    },
+    {
+      "block": 47,
+      "original": 548706080992.0447,
+      "absorption": 18609016465.638077,
+      "emission": 5954326003.541475,
+      "scattering": 524142738522.86597,
+      "beta0": -2.0535598119531997
+    },
+    {
+      "block": 48,
+      "original": 654771961167.4486,
+      "absorption": 11957761164.26331,
+      "emission": 4312568631.337077,
+      "scattering": 638501631371.7987,
+      "beta0": -1.7281585171364908
+    },
+    {
+      "block": 49,
+      "original": 655460073584.4604,
+      "absorption": 5753427923.461987,
+      "emission": 2442369867.6570816,
+      "scattering": 647264275793.3789,
+      "beta0": -1.2844014713269032
+    },
+    {
+      "block": 50,
+      "original": 504724052698.1444,
+      "absorption": 1917407593.1185322,
+      "emission": 1006307135.5392741,
+      "scattering": 501800337969.4842,
+      "beta0": -0.6887307872965619
+    },
+    {
+      "block": 51,
+      "original": 92992718982.17773,
+      "absorption": 552721474837.0563,
+      "emission": -813037589128.2163,
+      "scattering": 353308833272.611,
+      "beta0": -0.6071731015941755
+    },
+    {
+      "block": 52,
+      "original": 257597740266.51538,
+      "absorption": -517698474003.47833,
+      "emission": 742944654859.0874,
+      "scattering": 32351559411.28875,
+      "beta0": -0.313241614220266
+    },
+    {
+      "block": 53,
+      "original": 42624619109.8136,
+      "absorption": -33573913921.921642,
+      "emission": 66580375098.44528,
+      "scattering": 9618157933.36364,
+      "beta0": -0.03288855598270895
+    },
+    {
+      "block": 54,
+      "original": 4331924742.429655,
+      "absorption": -960090683.267759,
+      "emission": 3738149565.5353203,
+      "scattering": 1553865860.1748488,
+      "beta0": -0.0020616683068602143
+    },
+    {
+      "block": 55,
+      "original": 244595718.31644028,
+      "absorption": 1453007.674883286,
+      "emission": 118088788.48070785,
+      "scattering": 125053922.1608732,
+      "beta0": -7.71213861720453e-05
+    },
+    {
+      "block": 56,
+      "original": 6735548.1891731825,
+      "absorption": 471723.94873509894,
+      "emission": 1817978.6856899504,
+      "scattering": 4445845.554750124,
+      "beta0": -1.4756613767566306e-06
+    },
+    {
+      "block": 57,
+      "original": 77031.68957110998,
+      "absorption": 5179.249112996271,
+      "emission": 11535.362685324159,
+      "scattering": 60317.077772794,
+      "beta0": -1.1690819851753514e-08
+    },
+    {
+      "block": 58,
+      "original": 301.1472617650377,
+      "absorption": 14.186844668361408,
+      "emission": 24.785342537192296,
+      "scattering": 262.1750745594629,
+      "beta0": -2.9298341100112245e-11
+    },
+    {
+      "block": 59,
+      "original": 0.31829590887811465,
+      "absorption": 0.009217921497318954,
+      "emission": 0.014253828673289122,
+      "scattering": 0.29482415870751333,
+      "beta0": -2.289460297414451e-14
+    },
+    {
+      "block": 60,
+      "original": 6.864711184235273e-05,
+      "absorption": 1.149816914657582e-06,
+      "emission": 1.6521209550196396e-06,
+      "scattering": 6.584517397267525e-05,
+      "beta0": -4.191197508280713e-18
+    },
+    {
+      "block": 61,
+      "original": 2.1626251471168245e-09,
+      "absorption": 2.0312017811272488e-11,
+      "emission": 2.7398101209822123e-11,
+      "scattering": 2.114915028095779e-09,
+      "beta0": -9.945649015651677e-23
+    },
+    {
+      "block": 62,
+      "original": 6.71726936744584e-15,
+      "absorption": 3.4625224668072715e-17,
+      "emission": 4.297045585508079e-17,
+      "scattering": 6.639673686922676e-15,
+      "beta0": -1.7300836763397384e-28
+    },
+    {
+      "block": 63,
+      "original": 1.29075139153451e-21,
+      "absorption": 3.569310385376669e-24,
+      "emission": 3.8639976976383215e-24,
+      "scattering": 1.2833180834514977e-21,
+      "beta0": -3.128199236061021e-35
+    },
+    {
+      "block": 64,
+      "original": 8.670837304593407e-30,
+      "absorption": 1.2559152487514415e-32,
+      "emission": 1.0874446691845306e-32,
+      "scattering": 8.647403705414042e-30,
+      "beta0": -1.2965333295865023e-43
+    },
+    {
+      "block": 65,
+      "original": 1.0113577821402265e-39,
+      "absorption": 7.51904030799853e-43,
+      "emission": 4.603477076793711e-43,
+      "scattering": 1.0101455304017477e-39,
+      "beta0": -1.1018175012456613e-53
+    },
+    {
+      "block": 66,
+      "original": 8.90385034630483e-52,
+      "absorption": 3.337785551374253e-55,
+      "emission": 1.207321676939887e-55,
+      "scattering": 8.899305239076503e-52,
+      "beta0": -5.226026691846348e-66
+    },
+    {
+      "block": 67,
+      "original": 2.2340165772620918e-66,
+      "absorption": 4.1431000165333794e-70,
+      "emission": 6.699819663854893e-71,
+      "scattering": 2.233535269063801e-66,
+      "beta0": -1.1503055290962041e-80
+    },
+    {
+      "block": 68,
+      "original": 5.129919164967195e-84,
+      "absorption": 4.60832769027875e-88,
+      "emission": 2.1414372139162086e-89,
+      "scattering": 5.129436917826027e-84,
+      "beta0": -1.3525434658762808e-98
+    },
+    {
+      "block": 69,
+      "original": 2.8543515499777006e-105,
+      "absorption": 1.213900390588605e-109,
+      "emission": 8.15166424140027e-112,
+      "scattering": 2.8542293447722157e-105,
+      "beta0": -3.20744582227519e-120
+    },
+    {
+      "block": 70,
+      "original": 8.111201219529543e-131,
+      "absorption": 1.5890076839576676e-135,
+      "emission": 5.4771582440256634e-139,
+      "scattering": 8.111042263989561e-131,
+      "beta0": -9.992799483736095e-146
+    },
+    {
+      "block": 71,
+      "original": 1.913411815393488e-161,
+      "absorption": 1.66624190175924e-166,
+      "emission": 6.432130125137988e-172,
+      "scattering": 1.9133951529101493e-161,
+      "beta0": -1.6875541259069563e-176
+    },
+    {
+      "block": 72,
+      "original": 4.547344932670854e-198,
+      "absorption": 1.6830334007685317e-203,
+      "emission": 8.021592521747974e-212,
+      "scattering": 4.547328102336767e-198,
+      "beta0": -2.9230574262022667e-213
+    },
+    {
+      "block": 73,
+      "original": 9.47770688171052e-242,
+      "absorption": 1.413709066378456e-247,
+      "emission": 3.5726566622409164e-260,
+      "scattering": 9.477692744619859e-242,
+      "beta0": -3.2431389795595548e-257
+    },
+    {
+      "block": 74,
+      "original": 1.0245255080497471e-293,
+      "absorption": 0.0,
+      "emission": 0.0,
+      "scattering": 1.0246125101047924e-293,
+      "beta0": -7.7273138619157e-296
+    },
+    {
+      "block": 75,
+      "original": 0.0,
+      "absorption": 0.0,
+      "emission": 0.0,
+      "scattering": 0.0,
+      "beta0": 0.0
+    }
+  ],
+  "longdouble_used_only_for_stored_integral_audit": true,
+  "full_diagnostic_promoted_to_pass": false,
+  "material_step_accepted": false,
+  "scientific_gates_changed": false
+}
