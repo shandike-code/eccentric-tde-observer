@@ -1,0 +1,58 @@
+{
+  "native_exact_rebase": true,
+  "alphas": {
+    "full": 0.015625,
+    "half": 0.0078125
+  },
+  "sources": [
+    {
+      "path": "outputs/hpc/outer-steps13to15-20260922/final-confirmation/confirm4/feedback-round1/inputs/trial_material.npz",
+      "size_bytes": 27774,
+      "sha256": "a3f31d6e275315d08f720914fe443ec46f7eb2bc976b3ef94a9f8ffef428ce8f"
+    },
+    {
+      "path": "outputs/hpc/outer-steps13to15-20260922/final-confirmation/confirm4/feedback-round1/material_residual.npy",
+      "size_bytes": 4224,
+      "sha256": "98b40677d7df8fe9f12939007e18185cb6b9f471381cdcf19699c47ac3dca165"
+    },
+    {
+      "path": "outputs/phase7b4r_depth128_phase2048.npz",
+      "size_bytes": 17159976,
+      "sha256": "33f248d5cf35ac07fffd139e1cd99d4edefa590debf7e109f67f2dbc57adf455"
+    },
+    {
+      "path": "outputs/hpc/outer-steps13to15-20260922/final-confirmation/confirm4/feedback-round1/feedback_protocol.json",
+      "size_bytes": 5962,
+      "sha256": "4f6fc64028000a51a0c1fe935410c6b59741e1879274251babc662411da79b69"
+    }
+  ],
+  "environment": {
+    "git_commit": "3f0d37badb0fda04d1bdfcf651f11ea049d8c1f6",
+    "tracked_worktree_dirty": false,
+    "python": "3.12.3 (main, Jan  8 2026, 11:30:50) [GCC 13.3.0]",
+    "platform": "Linux-6.8.0-53-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "logical_host_cpus": 128,
+    "cpu_affinity_count": 4,
+    "scheduler": {
+      "SLURM_JOB_ID": "75818",
+      "SLURM_JOB_PARTITION": "Students",
+      "SLURM_JOB_QOS": "qos_stu_default",
+      "SLURM_CPUS_PER_TASK": "4",
+      "SLURM_MEM_PER_NODE": "16384",
+      "SLURM_JOB_NODELIST": "anode01"
+    },
+    "cgroup_v2": {},
+    "packages": {
+      "numpy": "2.5.2",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.1",
+      "pytest": "9.1.1"
+    },
+    "project_free_bytes": 982382393970688,
+    "warning": "Host resources are not necessarily this job's allocation."
+  },
+  "new_radiation_maps": 0,
+  "physical_response_replayed": false,
+  "formal_trial_accepted": false
+}

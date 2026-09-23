@@ -56,3 +56,11 @@ map7/8内层残差已到7.070883638634e-5、6.770083772427255e-5，边界谱/bol
 如果较小步再次触发正式反馈态门，驱动仍以故障停止，禁止盲重交或直接跳到更小步；下一任务转向固定辐射态上两种加热计算差异的来源与离散误差诊断。即使通过也只接受有限步，需同态确认；不自动第17步。不得无限缩步回避源一致性。
 
 PRE-RUN：Code检查新旧入口差异、负路径及净积分抵消测试；Logic保留旧失败，另行有限回溯、独立控制、完整来源；Physics较小位移效果未知，且绝对源差尚未解释。RUN。POST-RUN：3128文件及四端数组复核通过，无NaN/Inf/资源异常；唯一态门失败独立复现，首轮气体为正，第二轮气体未评估。Mac新旧试验+numbered驱动+两项审计测试共42项通过，sbatch语法通过。后附学校预检与提交记录。
+
+## 提交与运行记录
+
+数值代码3f0d37badb0fda04d1bdfcf651f11ea049d8c1f6已同步Mac、学校、GitHub。学校42项测试通过。默认4CPU/16GiB预检75818在anode01于11:39:35—11:39:38 COMPLETED 0:0、stderr空，exactrebase及1/64、1/128检查通过。证据20260923-step16-backtrack-preflight.json记录源claim和环境；预检并未计算新辐射或接受物质候选。
+
+75819于2026-09-23 11:40:40在anode02 RUNNING，32CPU/128GiB/16worker，硬截止15:40:40。初查preparing、stderr空，尚无新反馈结论。launch证据20260923-75819-launch.json保存两作业scontrol、数值提交与watcher。只读watcher PID7009，outputs/review-20260923/scheduler-75819，30秒采样最多18000秒，脱离SSH且不提交/取消作业。
+
+学校备份outputs/review-20260923/pre-step16-backtrack.bundle；heartbeat每30分钟ACTIVE，已改为监控75819、保留75784失败及明确再失败转源一致性诊断的条件，读回完全一致。Mac更新前后TOML为outputs/review-20260921/automation-{before,after}-step16-backtrack.toml。旧75784的pending反馈及错误标志未动。后续文档提交不改变本数值提交。
