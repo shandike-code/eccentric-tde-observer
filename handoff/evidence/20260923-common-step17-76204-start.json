@@ -1,0 +1,15 @@
+{
+  "observed_unix": 1790176146.4287717,
+  "job_id": 76204,
+  "status": {
+    "status": "preparing",
+    "accepted_outer_steps": 16,
+    "new_material_steps": 0,
+    "updated_unix": 1790176021.5030015
+  },
+  "scheduler": "JobId=76204 JobName=tde-common-step17 UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:02:13 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-09-23T23:06:52 EligibleTime=2026-09-23T23:06:52 AccrueTime=2026-09-23T23:06:52 StartTime=2026-09-23T23:06:53 EndTime=2026-09-24T03:06:53 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-23T23:06:53 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2341041 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode24 BatchHost=anode24 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/common_outer_step17.sbatch SubmitLine=sbatch --parsable operations/common_outer_step17.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-common-step17-76204.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-common-step17-76204.out TresPerTask=cpu=32\n",
+  "stderr": "",
+  "code_commit": "816e564c4dfcfdb291f6d7b11c1ae46f3475a7b6",
+  "tests": "Mac 39 passed 0.91s; Linux 39 passed 15.19s",
+  "watcher": "common-step17-76204"
+}

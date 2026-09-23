@@ -25,3 +25,9 @@
 新入口operations/common_outer_step17.py及同名sbatch，协议common-outer-step17-v1.md。allocation内逐位重放确认2响应，r16取final残差；新base=x16、方向=r16，候选x17=x16+r16/64，旧物理层和dt不动。最多8map，第4/8张后原内层门满足才做完整反馈，各自独立保留端点。最多2反馈对；除原16门，还需对已确认x16两端点的四组合三范数收缩。原生/proc内存6GiB、每反馈态900秒、总4小时、32CPU128GiB16worker。物理域或资源异常即停；精度门未过可按声明做到第8张，不扩预算，不自动记17。
 
 Mac新增与相关回归39 passed（0.91秒）；学校测试、实际提交及结果另记，不能把计划当完成。Mac已备份pre-common-step17.bundle；当前程序和审计独立新增，冻结旧代码不动。
+
+## 实际启动
+
+学校39项测试15.19秒通过，数值提交816e564c4dfcfdb291f6d7b11c1ae46f3475a7b6已同步。76204在2026-09-23 23:06:53于anode24启动，32CPU128GiB，4小时到次日03:06:53；23:09观察RUNNING、preparing、stderr空。新节点仍执行原生及/proc双资源门，不沿用旧节点峰值当作本次实测。只读终态watcher为tmux common-step17-76204，结果目录outputs/review-20260923/scheduler-76204，最长5小时。实际物质重放和新候选身份验证尚待作业完成准备，不能把启动成功说成这些检查已过。
+
+学校新增备份/home/scc/pb24511938/pre-common-step17.bundle；Mac automation-before-common-step17.toml已保留。USTC HHe 运行审阅与决策已更新为跟进76204/接受数16，并读回逐字核对，保持30分钟、无变化静默。下一轮读新状态，不重复提交。
