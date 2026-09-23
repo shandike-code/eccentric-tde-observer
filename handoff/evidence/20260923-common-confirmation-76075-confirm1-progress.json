@@ -1,0 +1,151 @@
+{
+  "observed_unix": 1790167805.138591,
+  "job_id": 76075,
+  "status": {
+    "status": "mapping",
+    "updated_unix": 1790167767.402876,
+    "accepted_outer_steps": 15,
+    "new_material_steps": 0,
+    "case": "confirm2",
+    "completed_maps": 1,
+    "budget": 2
+  },
+  "confirm1_decision": {
+    "physics_pair_passed": true,
+    "promoted": false,
+    "fresh_baseline_comparison": {
+      "ratios": {
+        "previous_vs_previous": {
+          "l2": 0.9468452607441152,
+          "mass_weighted": 0.944744141893383,
+          "maximum_cell": 0.9787732611868579
+        },
+        "previous_vs_final": {
+          "l2": 0.9463224590657856,
+          "mass_weighted": 0.9435963344568887,
+          "maximum_cell": 0.9787222973448457
+        },
+        "final_vs_previous": {
+          "l2": 0.9472968254164603,
+          "mass_weighted": 0.9452207836094483,
+          "maximum_cell": 0.9788488200155646
+        },
+        "final_vs_final": {
+          "l2": 0.9467737744061877,
+          "mass_weighted": 0.9440723970818733,
+          "maximum_cell": 0.9787978522392723
+        }
+      },
+      "passed": true
+    },
+    "continue": true
+  },
+  "confirm1_postcheck": {
+    "responses": {
+      "previous": {
+        "minimum_gas_erg_g": 6202107464731.766,
+        "failed_gas_cells": 0,
+        "full_state_checks": {
+          "block_count": true,
+          "frequency_ownership": true,
+          "positive_intensity": true,
+          "finite_arrays": true,
+          "positive_width": true,
+          "nonnegative_atomic_rates": true,
+          "direct_volume": true,
+          "formal_volume": true,
+          "formal_global": true,
+          "mirror": true,
+          "memory": true,
+          "wall": true
+        },
+        "maximum_native_mib": 3942.77734375,
+        "maximum_proc_kib": 4037404,
+        "state_wall_s": 334.58594719320536,
+        "norms": {
+          "l2": 9.120498209389542,
+          "mass_weighted": 0.3050617158140664,
+          "maximum_cell": 2.781964048439889
+        }
+      },
+      "final": {
+        "minimum_gas_erg_g": 6280672632450.873,
+        "failed_gas_cells": 0,
+        "full_state_checks": {
+          "block_count": true,
+          "frequency_ownership": true,
+          "positive_intensity": true,
+          "finite_arrays": true,
+          "positive_width": true,
+          "nonnegative_atomic_rates": true,
+          "direct_volume": true,
+          "formal_volume": true,
+          "formal_global": true,
+          "mirror": true,
+          "memory": true,
+          "wall": true
+        },
+        "maximum_native_mib": 3944.484375,
+        "maximum_proc_kib": 4039152,
+        "state_wall_s": 322.02426018193364,
+        "norms": {
+          "l2": 9.124847911454175,
+          "mass_weighted": 0.30521562535770225,
+          "maximum_cell": 2.7821788090523207
+        }
+      }
+    },
+    "gate_checks": {
+      "last_two_photoionization_pass": true,
+      "last_two_total_recombination_pass": true,
+      "last_two_atomic_heating_pass": true,
+      "last_two_direct_heating_pass": true,
+      "last_two_formal_heating_pass": true,
+      "inner_noise_resolved_pass": true,
+      "candidate_l2_contraction_pass": true,
+      "candidate_mass_weighted_contraction_pass": true,
+      "candidate_maximum_cell_contraction_pass": true,
+      "two_formal_feedback_states_pass": true,
+      "two_inner_radiation_residuals_pass": true,
+      "two_boundary_spectra_pass": true,
+      "two_boundary_bolometric_pass": true,
+      "candidate_state_bytes_pass": true,
+      "population_nonnegative_pass": true,
+      "all_residual_components_finite_pass": true
+    },
+    "comparison": {
+      "photoionization_volume_l1": [
+        5.2520768019493606e-06,
+        1.1581071401553959e-05,
+        5.867571237344609e-09
+      ],
+      "total_recombination_volume_l1": [
+        1.147382430124059e-07,
+        1.0293858382716341e-08,
+        3.260169105857934e-14
+      ],
+      "atomic_heating_volume_l1": 0.00022648869300689214,
+      "direct_heating_volume_l1": 0.00022648869300643265,
+      "formal_heating_volume_l1": 0.0002264886930065387,
+      "inner_noise_to_trial_signal_l2_ratio": 0.03366954126169932,
+      "candidate_to_base_residual_l2_ratio": 0.9498976683304526,
+      "candidate_to_base_mass_weighted_norm_ratio": 0.9505311405891761,
+      "candidate_to_base_maximum_cell_norm_ratio": 0.9792278241526834
+    },
+    "material_response_failures": {},
+    "pair_decision": {
+      "formal_h_he_feedback_pair_passed": true,
+      "finite_trial_accepted_as_one_nonlinear_step": true,
+      "finite_trial_rejected": false,
+      "static_approximation_rejected_from_one_failed_trial": false,
+      "dynamic_nlte_solution_accepted": false,
+      "phase4_replacement": false,
+      "real_line_formation": false
+    },
+    "accepted_outer_steps_remain": 15,
+    "material_step_promoted": false,
+    "frequency_truncation_convergence_established": false
+  },
+  "scheduler": "JobId=76075 JobName=tde-common-confirm UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=01:07:53 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-09-23T19:42:11 EligibleTime=2026-09-23T19:42:11 AccrueTime=2026-09-23T19:42:11 StartTime=2026-09-23T19:42:12 EndTime=2026-09-23T23:42:12 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-23T19:42:12 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:3205967 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode03 BatchHost=anode03 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/common_confirmation_batch.sbatch SubmitLine=sbatch --parsable operations/common_confirmation_batch.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-common-confirm-76075.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-common-confirm-76075.out TresPerTask=cpu=32\n",
+  "stderr": ""
+}
