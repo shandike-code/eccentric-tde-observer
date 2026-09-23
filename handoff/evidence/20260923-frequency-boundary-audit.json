@@ -1,0 +1,32 @@
+{
+  "verified_files": 12,
+  "archive": {
+    "path": "outputs/review-20260923/frequency-boundary-75872.tar.gz",
+    "size_bytes": 258023,
+    "sha256": "5c4e2b9a546c47d9f737851d2677561394354f6e4a7fcdf080af4f783c30250a",
+    "files": 12
+  },
+  "metrics_erg_s_cm2": {
+    "absorption": {
+      "observed": -751121120.0134817,
+      "boundary": -751121120.6403421,
+      "residual": 0.6268603758337217,
+      "residual_depth_l1": 12.238413295370531
+    },
+    "emission": {
+      "observed": 74429700.24188118,
+      "boundary": 74429702.19460434,
+      "residual": -1.952723158149774,
+      "residual_depth_l1": 12.233431119348435
+    },
+    "scattering": {
+      "observed": -22714845.80764647,
+      "boundary": -22714836.09639863,
+      "residual": -9.711247838174437,
+      "residual_depth_l1": 10.157911621497632
+    }
+  },
+  "new_maps": 0,
+  "material_step_accepted": false,
+  "historical_gates_unchanged": true
+}
