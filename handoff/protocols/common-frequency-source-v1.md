@@ -14,16 +14,16 @@ $$
 D=\frac{\nu_{0}}{\nu}=\gamma(1-\beta\mu),\qquad \gamma=(1-\beta^2)^{-1/2}.
 $$
 
-lab积分窗必须为$[A/D,B/D]$。采用原项目的P0表示：$I_\nu$在lab频组内为常数，$\chi_{0}$和$\eta_{0}$在共动频组内为常数。热发射加相干散射发射的定义不变；散射的$J_{0}$仍来自原始冻结辐射态及原变换函数。使用原代码的变换约定
+lab积分窗必须为$[A/D,B/D]$。采用原项目的P0表示：$I_{\nu}$在lab频组内为常数，$\chi_{0}$和$\eta_{0}$在共动频组内为常数。热发射加相干散射发射的定义不变；散射的$J_{0}$仍来自原始冻结辐射态及原变换函数。使用原代码的变换约定
 
 $$
-\chi_\nu=D\chi_{0},\qquad \eta_\nu=D^{-2}\eta_{0}.
+\chi_{\nu}=D\chi_{0},\qquad \eta_{\nu}=D^{-2}\eta_{0}.
 $$
 
 对每个lab组与其射线窗口的非空交集$[\ell,r]$，分别精确积分共动系数：
 
 $$
-C_{\ell r}=\int_{\ell}^{r}(\eta_\nu-\chi_\nu I_\nu)\,d\nu
+C_{\ell r}=\int_{\ell}^{r}(\eta_{\nu}-\chi_{\nu} I_{\nu})\,d\nu
 =D^{-3}\int_{D\ell}^{Dr}\eta_{0}\,d\nu_{0}
 -I_{\nu,\mathrm{lab\ group}}\int_{D\ell}^{Dr}\chi_{0}\,d\nu_{0}.
 $$
@@ -31,12 +31,12 @@ $$
 先沿lab频组累加$C$，再以lab角权计算辐射碰撞源的能量和动量矩，最后逆变换为物质加热：
 
 $$
-S_E=2\pi\sum_m w_m C_m,\qquad
-S_P=\frac{2\pi}{c}\sum_m w_m\mu_m C_m,\qquad
-Q_{\mathrm{common}}=-\gamma(S_E-\beta c S_P).
+S_{\rm E}=2\pi\sum_{m} w_{m} C_{m},\qquad
+S_{\rm P}=\frac{2\pi}{c}\sum_{m} w_{m}\mu_{m} C_{m},\qquad
+Q_{\mathrm{common}}=-\gamma(S_{\rm E}-\beta c S_{\rm P}).
 $$
 
-$S_E$及$Q$的单位为erg s^-1 cm^-3，$S_P$为dyn cm^-3。代码不读原子加热数组来构造$Q_{\mathrm{common}}$，不使用两路径已测差值，也不复用旧边界积分数组。仅在计算之后比较结果。几何max/min只求组区间与声明窗口的交集，不裁剪物理量；窗口超出已供给lab或共动系数范围即报错。
+$S_{\rm E}$及$Q$的单位为erg s^-1 cm^-3，$S_{\rm P}$为dyn cm^-3。代码不读原子加热数组来构造$Q_{\mathrm{common}}$，不使用两路径已测差值，也不复用旧边界积分数组。仅在计算之后比较结果。几何max/min只求组区间与声明窗口的交集，不裁剪物理量；窗口超出已供给lab或共动系数范围即报错。
 
 每块拥有原共动核心组的窗口。全76块汇总要求9632个共动频组各拥有一次；这些窗口在lab射线网格上随角度/深度变化。原direct按共动组累加，新路径按lab组累加并分别求两个矩，二者独立到积分顺序和中间表示，但共享原模型的系数、辐射态及底层P0交叠原语。这不是完全独立的微物理实现；标量测试oracle使用两个网格断点并集的另一种算法。
 
