@@ -55,3 +55,11 @@ map4 final的HeIII/HeI残差1.0528918137766632，到map8为1.0528991608036078，
 control final残差三范数8.178129481408643/0.2622383309644685/2.705265629480948；相对原r20的向量差三范数0.06048268858987067/0.003438370245843222/0.019396916208030593，这是漂移而非严格误差界。对新control重比旧76808 pair08，四组合最大单元比均大于1，最不利1.0057806249464096；旧失败未因更新对照而逆转。原r20方向及原门分母不改。
 
 条件执行已进入half，但01:07:04子state仍initializing、history0、无active map，不能从父mapping宣称worker已完成map。counter20/new0。证据`20260925-probe-76871-control-progress.json`保留来源SHA和完整摘要。这是运行控制核查，尚非本批Mac逐块独立数值审计。继续已声明最多8map，不加预算或修改数值代码；无新科学测试需求。编辑前备份`pre-probe-control-progress.bundle`与`automation-before-probe-control-progress.toml`。
+
+## 半幅第4张反馈尚未通过
+
+快照时间`2026-09-25T01:40:52.827167+08:00`，76871仍RUNNING；half已完成6张map，active={"iteration": 7, "committed_blocks": 16}。第8张反馈尚无结果，计数20/new0。
+
+half pair04原14/16通过，noise=0.17176039801120008>0.1、最大单元原分母比1.002537243327801>1；L2/质量加权比0.9929938574709903/0.9912804373455393过。对新control四组合最大单元比均>1，最不利1.002692992089622。原1/128候选同样第4张对该control最大单元最不利1.0064789156833174；半幅恶化较少，但不能把这一结果当成方向有效或最终通过。
+
+heat=0.0002046731518461649通过，两端点gas正最低6.146934199112307e12 erg/g，完整态门全过。152反馈进程exit0/内存门通过，峰/proc4039648KiB，两反馈态累计批墙钟294.87/300.00秒；stderr空、watcher存活。证据`20260925-probe-76871-half04-progress.json`保存源SHA、摘要与状态。本轮只做运行控制核查，独立逐块审计待终态归档；继续原8map预算，不起第二幅度。数值代码未动，编辑前备份pre-probe-half04-progress.bundle和automation-before-probe-half04-progress.toml。
