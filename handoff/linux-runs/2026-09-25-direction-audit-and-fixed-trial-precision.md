@@ -72,3 +72,13 @@ Decision: RUN — 仅限学校测试、SHA和资源检查通过后的上述24张
 数值提交 `a03b6c07accb78a490d2bca4f1385e7111f93668` 已在Mac、学校与GitHub核对一致。学校139 passed（15.94s），shell/diff通过、工作树干净后提交。作业 **76931** 于2026-09-25 05:04:27提交、05:04:28在anode18启动，32CPU/128GiB，5小时上限至10:04:28。启动阶段日志为空，counter20/new0；详细状态见 `handoff/evidence/20260925-step21-direction-precision-76931-start.json`。
 
 独立watcher：tmux `step21-direction-precision-76931`，21600秒预算，终态写 `outputs/review-20260925/scheduler-76931/scheduler-terminal.json`。定时审阅保持30分钟，仅有实质变化通知。Markdown检查仍只有历史六份lecture被报告，未改写历史文件，不声称全库格式通过。
+
+## 05:53:04监督：control八张map完成，第8张反馈未结算
+
+76931仍RUNNING，父status=feedback/control/after_maps8，control历史8张、active_map=None；thermal和population尚无state。watcher活跃、stderr为空，counter20/new0。此状态不是整批完成，也不代表第8张反馈通过。
+
+control新增map4反馈已完成，七项零控制检查均通过：heat=0.00013841281578990975，两个端点气体热能为正（最低6.522904547399723e12erg/g）、完整态检查全部通过。152份反馈进程回执exit0、memory_guard通过，峰/proc4040452KiB；两反馈态累计worker批墙钟293.9671和300.2226秒，均低于900秒。
+
+map4 final响应三范数8.187797731938714 / 0.26284566357214456 / 2.7055067489828524；与固定r20的向量差三范数0.16423261047541357 / 0.00964431096012722 / 0.0481635025245177。相邻反馈过门不等于响应已不再漂移，这个差也不是误差界。继续原协议，待control8过门才执行后续两候选，没有新增预算或修改数值代码。
+
+小快照 `handoff/evidence/20260925-direction-precision-76931-control-progress.json` 保存所读文件SHA、原始summary/decision/postcheck、state/history、队列和回执汇总。本次为运行控制核查，非完整归档的独立数值复算；终态仍须按协议审计。备份 `outputs/review-20260925/pre-precision-control-progress.bundle`、`automation-before-precision-control-progress.toml`。仅新增证据和报告，不重跑数值测试。

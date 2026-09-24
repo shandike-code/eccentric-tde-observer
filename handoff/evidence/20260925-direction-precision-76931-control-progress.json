@@ -1,0 +1,315 @@
+{
+  "captured_at": "2026-09-25T05:53:04.266638+08:00",
+  "job_id": 76931,
+  "independent_numeric_audit_completed": false,
+  "accepted_outer_steps": 20,
+  "status": {
+    "status": "feedback",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790286544.1949277,
+    "case": "control",
+    "after_maps": 8
+  },
+  "cases": {
+    "control": {
+      "state": {
+        "config_sha256": "cff4e6922bbb9083fbf55ebbfab468cd196a1a934d1eee1e1dc8fc1c34667730",
+        "status": "radiation",
+        "initialization_blocks": [],
+        "history": [
+          {
+            "iteration": 1,
+            "input_path": "outputs/hpc/common-step21-direction-precision-20260925/control/state_0.dat",
+            "input_sha256": "674c4d69c38f940865a2bf3c09cb53aca28210279c24c2b763f28e5b888b3ecb",
+            "output_path": "outputs/hpc/common-step21-direction-precision-20260925/control/state_1.dat",
+            "output_sha256": "39b0244a4c54531a9b5b196330d4033a70bcc8994e86a1b53a454804ce81fe78",
+            "wall_s": 152.22846099548042,
+            "residual": 8.084237480464836e-06,
+            "boundary_l1": 4.020351923656711e-05,
+            "boundary_bolometric": 4.0175667682151125e-05,
+            "maximum_worker_rss_mib": 3504.8828125
+          },
+          {
+            "iteration": 2,
+            "input_path": "outputs/hpc/common-step21-direction-precision-20260925/control/state_1.dat",
+            "input_sha256": "39b0244a4c54531a9b5b196330d4033a70bcc8994e86a1b53a454804ce81fe78",
+            "output_path": "outputs/hpc/common-step21-direction-precision-20260925/control/state_2.dat",
+            "output_sha256": "a35dedc2a140715356f90689eeec73688e769fc921397efb741f8f841fbeba08",
+            "wall_s": 147.2573208566755,
+            "residual": 7.911471476535604e-06,
+            "boundary_l1": 3.816727778854842e-05,
+            "boundary_bolometric": 3.814598584368957e-05,
+            "maximum_worker_rss_mib": 3497.96484375
+          },
+          {
+            "iteration": 3,
+            "input_path": "outputs/hpc/common-step21-direction-precision-20260925/control/state_2.dat",
+            "input_sha256": "a35dedc2a140715356f90689eeec73688e769fc921397efb741f8f841fbeba08",
+            "output_path": "outputs/hpc/common-step21-direction-precision-20260925/control/state_0.dat",
+            "output_sha256": "3e1f07104a3d905bf00c19b0b26f085e6092f1d2e066ed30dcf38d282f8da37f",
+            "wall_s": 140.90237613394856,
+            "residual": 7.743136486645555e-06,
+            "boundary_l1": 3.62883186401785e-05,
+            "boundary_bolometric": 3.6271878809843844e-05,
+            "maximum_worker_rss_mib": 3500.28515625
+          },
+          {
+            "iteration": 4,
+            "input_path": "outputs/hpc/common-step21-direction-precision-20260925/control/state_0.dat",
+            "input_sha256": "3e1f07104a3d905bf00c19b0b26f085e6092f1d2e066ed30dcf38d282f8da37f",
+            "output_path": "outputs/hpc/common-step21-direction-precision-20260925/control/state_1.dat",
+            "output_sha256": "ff56744b932bec61086ebe168c9ac35522b279f27f1748fb42aa59f9934f480e",
+            "wall_s": 140.2576451236382,
+            "residual": 7.5791424296974694e-06,
+            "boundary_l1": 3.4549553500716564e-05,
+            "boundary_bolometric": 3.453674214255316e-05,
+            "maximum_worker_rss_mib": 3503.17578125
+          },
+          {
+            "iteration": 5,
+            "input_path": "outputs/hpc/common-step21-direction-precision-20260925/control/state_1.dat",
+            "input_sha256": "ff56744b932bec61086ebe168c9ac35522b279f27f1748fb42aa59f9934f480e",
+            "output_path": "outputs/hpc/common-step21-direction-precision-20260925/control/state_2.dat",
+            "output_sha256": "4ef9d3f587d834d61bdc568ada069c570c9a939661ad3cb691eaed209786d756",
+            "wall_s": 146.57778351195157,
+            "residual": 7.419426499000726e-06,
+            "boundary_l1": 3.2936273787542e-05,
+            "boundary_bolometric": 3.2926202644944034e-05,
+            "maximum_worker_rss_mib": 3500.75
+          },
+          {
+            "iteration": 6,
+            "input_path": "outputs/hpc/common-step21-direction-precision-20260925/control/state_2.dat",
+            "input_sha256": "4ef9d3f587d834d61bdc568ada069c570c9a939661ad3cb691eaed209786d756",
+            "output_path": "outputs/hpc/common-step21-direction-precision-20260925/control/state_0.dat",
+            "output_sha256": "f6996940dcca72c7a91393db812b7633a9b9ae173d20a6737f4f776801eac911",
+            "wall_s": 145.0162246171385,
+            "residual": 7.263812776421658e-06,
+            "boundary_l1": 3.143574926248793e-05,
+            "boundary_bolometric": 3.1427765977155506e-05,
+            "maximum_worker_rss_mib": 3502.7734375
+          },
+          {
+            "iteration": 7,
+            "input_path": "outputs/hpc/common-step21-direction-precision-20260925/control/state_0.dat",
+            "input_sha256": "f6996940dcca72c7a91393db812b7633a9b9ae173d20a6737f4f776801eac911",
+            "output_path": "outputs/hpc/common-step21-direction-precision-20260925/control/state_1.dat",
+            "output_sha256": "b5ec93a152b248fee192ed71606171216fcb5f745676a6a5f45cf7e1c8954050",
+            "wall_s": 142.7638637199998,
+            "residual": 7.112162831818215e-06,
+            "boundary_l1": 3.003690602243947e-05,
+            "boundary_bolometric": 3.0030527136512902e-05,
+            "maximum_worker_rss_mib": 3504.91015625
+          },
+          {
+            "iteration": 8,
+            "input_path": "outputs/hpc/common-step21-direction-precision-20260925/control/state_1.dat",
+            "input_sha256": "b5ec93a152b248fee192ed71606171216fcb5f745676a6a5f45cf7e1c8954050",
+            "output_path": "outputs/hpc/common-step21-direction-precision-20260925/control/state_2.dat",
+            "output_sha256": "131fe128813f4b915730f421860e88f08f9f083962337788883c79f7378b88c9",
+            "wall_s": 138.5321917301044,
+            "residual": 6.964392172609105e-06,
+            "boundary_l1": 2.873006723720874e-05,
+            "boundary_bolometric": 2.872493142211242e-05,
+            "maximum_worker_rss_mib": 3501.48828125
+          }
+        ],
+        "slots": [
+          "outputs/hpc/common-step21-direction-precision-20260925/control/state_0.dat",
+          "outputs/hpc/common-step21-direction-precision-20260925/control/state_1.dat",
+          "outputs/hpc/common-step21-direction-precision-20260925/control/state_2.dat"
+        ],
+        "current_slot": 2,
+        "active_map": null,
+        "current_sha256": "131fe128813f4b915730f421860e88f08f9f083962337788883c79f7378b88c9",
+        "trial_sha256": "36434a29123e2387195b77713baffaecd046f7d6c0297a5d0d95a74319e22eda"
+      },
+      "pairs": {
+        "4": {
+          "decision": {
+            "diagnostic_only": true,
+            "promoted": false,
+            "feedback_evaluated": true,
+            "original_gates": {
+              "last_two_photoionization_pass": true,
+              "last_two_total_recombination_pass": true,
+              "last_two_atomic_heating_pass": true,
+              "last_two_direct_heating_pass": true,
+              "last_two_formal_heating_pass": true,
+              "inner_pair_ready": true,
+              "physical_response_pass": true
+            },
+            "physical_response_failures": {},
+            "pair_supported": false,
+            "fresh_control_minus_r20_norms": {
+              "l2": 0.16423261047541357,
+              "mass_weighted": 0.00964431096012722,
+              "maximum_cell": 0.0481635025245177
+            },
+            "drift_is_error_bound": false,
+            "baseline_stable": true
+          },
+          "baseline_summary": {
+            "gate_checks": {
+              "last_two_photoionization_pass": true,
+              "last_two_total_recombination_pass": true,
+              "last_two_atomic_heating_pass": true,
+              "last_two_direct_heating_pass": true,
+              "last_two_formal_heating_pass": true,
+              "inner_pair_ready": true,
+              "physical_response_pass": true
+            },
+            "comparison": {
+              "photoionization_volume_l1": [
+                1.1563003706427895e-06,
+                6.8691923559739106e-06,
+                6.611360279261038e-10
+              ],
+              "total_recombination_volume_l1": [
+                2.9077253206952758e-08,
+                5.725925641746639e-09,
+                2.9877008180430497e-15
+              ],
+              "atomic_heating_volume_l1": 0.00013841281578990975,
+              "direct_heating_volume_l1": 0.00013841281578766287,
+              "formal_heating_volume_l1": 0.00013841281578810095
+            },
+            "material_response_failures": {},
+            "decision": {
+              "baseline_control_only": true,
+              "finite_trial_accepted_as_one_nonlinear_step": false,
+              "accept_dynamic_nlte_solution": false
+            },
+            "protocol_sha256": "80134b853ee6eb9030ad81869463ea5d020807d9499a6730ccfc44332f874997"
+          },
+          "postcheck": {
+            "responses": {
+              "previous": {
+                "minimum_gas_erg_g": 6522904547399.723,
+                "failed_gas_cells": 0,
+                "full_state_checks": {
+                  "block_count": true,
+                  "frequency_ownership": true,
+                  "positive_intensity": true,
+                  "finite_arrays": true,
+                  "positive_width": true,
+                  "nonnegative_atomic_rates": true,
+                  "direct_volume": true,
+                  "formal_volume": true,
+                  "formal_global": true,
+                  "mirror": true,
+                  "memory": true,
+                  "wall": true
+                },
+                "maximum_native_mib": 3945.75390625,
+                "maximum_proc_kib": 4040452,
+                "state_wall_s": 293.96714007202536,
+                "norms": {
+                  "l2": 8.18677620987928,
+                  "mass_weighted": 0.2627749141772304,
+                  "maximum_cell": 2.705488339129641
+                }
+              },
+              "final": {
+                "minimum_gas_erg_g": 6542249366352.363,
+                "failed_gas_cells": 0,
+                "full_state_checks": {
+                  "block_count": true,
+                  "frequency_ownership": true,
+                  "positive_intensity": true,
+                  "finite_arrays": true,
+                  "positive_width": true,
+                  "nonnegative_atomic_rates": true,
+                  "direct_volume": true,
+                  "formal_volume": true,
+                  "formal_global": true,
+                  "mirror": true,
+                  "memory": true,
+                  "wall": true
+                },
+                "maximum_native_mib": 3943.6640625,
+                "maximum_proc_kib": 4038312,
+                "state_wall_s": 300.2225758098066,
+                "norms": {
+                  "l2": 8.187797731938714,
+                  "mass_weighted": 0.26284566357214456,
+                  "maximum_cell": 2.7055067489828524
+                }
+              }
+            },
+            "gate_checks": {
+              "last_two_photoionization_pass": true,
+              "last_two_total_recombination_pass": true,
+              "last_two_atomic_heating_pass": true,
+              "last_two_direct_heating_pass": true,
+              "last_two_formal_heating_pass": true,
+              "inner_pair_ready": true,
+              "physical_response_pass": true
+            },
+            "comparison": {
+              "photoionization_volume_l1": [
+                1.1563003706427895e-06,
+                6.8691923559739106e-06,
+                6.611360279261038e-10
+              ],
+              "total_recombination_volume_l1": [
+                2.9077253206952758e-08,
+                5.725925641746639e-09,
+                2.9877008180430497e-15
+              ],
+              "atomic_heating_volume_l1": 0.00013841281578990975,
+              "direct_heating_volume_l1": 0.00013841281578766287,
+              "formal_heating_volume_l1": 0.00013841281578810095
+            },
+            "material_response_failures": {},
+            "pair_decision": {
+              "baseline_control_only": true,
+              "finite_trial_accepted_as_one_nonlinear_step": false,
+              "accept_dynamic_nlte_solution": false
+            },
+            "accepted_outer_steps_remain": 20,
+            "material_step_promoted": false,
+            "frequency_truncation_convergence_established": false
+          },
+          "process_receipts": {
+            "count": 152,
+            "all_exit_zero": true,
+            "all_memory_guard_pass": true,
+            "peak_kib": 4040452
+          }
+        }
+      }
+    }
+  },
+  "claims": [
+    {
+      "path": "outputs/hpc/common-step21-direction-precision-20260925/status.json",
+      "size_bytes": 162,
+      "sha256": "91c71388414ac368ec6d2bd16173ce85f14b64626b81fa6f80ae3d57b3a098aa"
+    },
+    {
+      "path": "outputs/hpc/common-step21-direction-precision-20260925/control/state.json",
+      "size_bytes": 5692,
+      "sha256": "d519c57e0e2e28f12a97afa5a019f580c773a768f1397e8e06169dca460de1d2"
+    },
+    {
+      "path": "outputs/hpc/common-step21-direction-precision-20260925/control/pair04/decision.json",
+      "size_bytes": 666,
+      "sha256": "9b468b0023a831b7c7766bd9704d8f1ca3269108b77c801f38e38e1a3bef6510"
+    },
+    {
+      "path": "outputs/hpc/common-step21-direction-precision-20260925/control/pair04/baseline_summary.json",
+      "size_bytes": 1043,
+      "sha256": "a9d289e49aaadb81f9b1cc4ef620c0b08fa82338d444aa1540dafdf2f2b4c066"
+    },
+    {
+      "path": "outputs/hpc/common-step21-direction-precision-20260925/control/pair04/postcheck.json",
+      "size_bytes": 2649,
+      "sha256": "ab67ca80420c5e8e366962e923230e90a702dbed30e0a4d75aa75858f8034358"
+    }
+  ],
+  "queue": "             JOBID                           NAME      STATE       TIME   CPUS MIN_MEMORY     NODELIST(REASON)\n             76931           tde-step21-precision    RUNNING      48:38     32       128G              anode18\n",
+  "stderr": "",
+  "watcher_alive": true
+}
