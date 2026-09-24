@@ -33,3 +33,13 @@ Linux同组75tests通过（18.78秒）。数值提交`8d5fa03e380adebc27e2ad7534
 76639于19:20:23在anode17启动，32CPU/128GiB/16worker、cpu_long，4小时至23:20:23。19:20:38时preparing且declaration未写；19:22:58时RUNNING/2:35，父仍preparing但declaration已存在，stderr空。未核child完成块数，不能据此宣称第一张map已完成。启动证据`handoff/evidence/20260924-step20-76639-start.json`。
 
 只读tmux watcher `step20-76639`已核在运行，18000秒上限，输出`outputs/review-20260924/scheduler-76639/scheduler-terminal.json`。30分钟heartbeat恢复ACTIVE并改为监督本批；只有完成、实质失败或需要重连才通知，不改变Slurm的有限预算。新批预计1–2小时，旧确认19已接受，新步20未接受。
+
+## 19:55中期反馈：仅内层噪声尚未过门
+
+76639仍RUNNING、32CPU/anode17、stderr空，watcher存活。19:55:54快照已有6张完整map，第7张active且0个提交块；残差依次6.055394299299e-5、3.545251821015e-5、2.114679648713e-5、1.461003512240e-5、1.397046028101e-5、1.335919909159e-5。小全局辐射残差不替代物质反馈误差。
+
+pair04原15/16，唯一失败`inner_noise_resolved_pass`：0.1153912633846高于0.1，不能圆整通过。三种heating约3.43239270273e-4通过。原r19分母三比0.982998636886/0.978433573406/0.998479725958；相对76554confirm2两端点四组合也全部收缩，最不利最大单元比0.999161610154，下降幅度仍很小。
+
+previous/final最低气体热能5.762717462192e12/5.861252586601e12 erg/g，失败单元0，各12项完整态检查通过。152反馈进程回执均exit0且独立memory gate通过，最大/proc4038592KiB、最大native3943.9375MiB；两态累计worker批墙钟290.305806/282.466957秒，均小于900秒。prev三范数8.209517921608/0.263570354243/2.707284468208，final8.188584479944/0.262687423773/2.705533963283。
+
+这是学校中期快照，终态后仍需Mac逐块复算与图审。按原协议继续到第8张再反馈，不增加map或改变alpha/noise门；接受计数仍19/new0，pair04不支持候选20。证据`20260924-step20-76639-pair04-progress.json`。本轮只读监查和保存记录，无运行代码变更、无新作业；备份`pre-step20-pair04-progress.bundle`与`automation-before-step20-pair04-progress.toml`。一次工具输出因误含active records过长被截断，改用只保存active迭代号/块数的摘要重读；未修改远端state或物理结果。
