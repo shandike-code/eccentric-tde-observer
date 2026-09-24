@@ -1,0 +1,368 @@
+{
+  "captured_at": "2026-09-25T03:18:15.226000+08:00",
+  "job_id": 76905,
+  "independent_numeric_audit_completed": false,
+  "accepted_outer_steps": 20,
+  "claims": [
+    {
+      "path": "outputs/hpc/common-step21-directions-20260925/status.json",
+      "size_bytes": 162,
+      "sha256": "22c89eb75bb90cc590c84ed418c61824985389b7eda45d7621b3828242dc8e37"
+    },
+    {
+      "path": "outputs/hpc/common-step21-directions-20260925/control/pair04/baseline_summary.json",
+      "size_bytes": 1039,
+      "sha256": "0f904cde63cf13a24f1457f3ee5be52bbbe8aaaf06ee2ccf83f7d6da5b9c9a4c"
+    },
+    {
+      "path": "outputs/hpc/common-step21-directions-20260925/control/pair04/decision.json",
+      "size_bytes": 2171,
+      "sha256": "3dec3d80f6b3cc2bbc4b9b3833ecf055e3b5d60f807554751a7a13de9d723136"
+    },
+    {
+      "path": "outputs/hpc/common-step21-directions-20260925/control/pair04/postcheck.json",
+      "size_bytes": 2646,
+      "sha256": "58746a17bb8805686f01f665685fd6137ceb4a8928108a181b2ff2b4b19d3181"
+    }
+  ],
+  "queue": "             JOBID                       NAME    STATE         TIME   CPUS   MIN_MEMORY     NODELIST(REASON)\n             76905      tde-step21-directions  RUNNING        53:26     32         128G              anode18\n",
+  "status": {
+    "status": "feedback",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790277407.5854259,
+    "case": "thermal",
+    "after_maps": 4
+  },
+  "control_summary": {
+    "gate_checks": {
+      "last_two_photoionization_pass": true,
+      "last_two_total_recombination_pass": true,
+      "last_two_atomic_heating_pass": true,
+      "last_two_direct_heating_pass": true,
+      "last_two_formal_heating_pass": true,
+      "inner_pair_ready": true,
+      "physical_response_pass": true
+    },
+    "comparison": {
+      "photoionization_volume_l1": [
+        1.417925358943179e-06,
+        7.137923827141863e-06,
+        7.69982887771073e-10
+      ],
+      "total_recombination_volume_l1": [
+        3.519346529434732e-08,
+        6.0347200069735635e-09,
+        3.471396817517505e-15
+      ],
+      "atomic_heating_volume_l1": 0.00013599657546706762,
+      "direct_heating_volume_l1": 0.00013599657547003172,
+      "formal_heating_volume_l1": 0.00013599657546999782
+    },
+    "material_response_failures": {},
+    "decision": {
+      "baseline_control_only": true,
+      "finite_trial_accepted_as_one_nonlinear_step": false,
+      "accept_dynamic_nlte_solution": false
+    },
+    "protocol_sha256": "5979b970448e7f87174016f2493a8cb713b2f4563f268553a098a77079c6943c"
+  },
+  "control_decision": {
+    "diagnostic_only": true,
+    "promoted": false,
+    "feedback_evaluated": true,
+    "original_gates": {
+      "last_two_photoionization_pass": true,
+      "last_two_total_recombination_pass": true,
+      "last_two_atomic_heating_pass": true,
+      "last_two_direct_heating_pass": true,
+      "last_two_formal_heating_pass": true,
+      "inner_pair_ready": true,
+      "physical_response_pass": true
+    },
+    "physical_response_failures": {},
+    "pair_supported": false,
+    "fresh_control_minus_r20_norms": {
+      "l2": 0.11541931529206631,
+      "mass_weighted": 0.006657675492443843,
+      "maximum_cell": 0.035297681329625
+    },
+    "drift_is_error_bound": false,
+    "prior_rejected_candidates": {
+      "pair04": {
+        "ratios": {
+          "previous_vs_previous": {
+            "l2": 0.9928384713659807,
+            "mass_weighted": 0.990440788215647,
+            "maximum_cell": 1.002628436688074
+          },
+          "previous_vs_final": {
+            "l2": 0.9926893029217517,
+            "mass_weighted": 0.9901517927609542,
+            "maximum_cell": 1.0026171242486324
+          },
+          "final_vs_previous": {
+            "l2": 0.991758197283985,
+            "mass_weighted": 0.9891379772408119,
+            "maximum_cell": 1.0023943475775203
+          },
+          "final_vs_final": {
+            "l2": 0.9916091911449132,
+            "mass_weighted": 0.9888493619264108,
+            "maximum_cell": 1.0023830377792553
+          }
+        },
+        "passed": false
+      },
+      "pair08": {
+        "ratios": {
+          "previous_vs_previous": {
+            "l2": 0.9908849001258168,
+            "mass_weighted": 0.988164818268331,
+            "maximum_cell": 1.002273715552742
+          },
+          "previous_vs_final": {
+            "l2": 0.9907360251947736,
+            "mass_weighted": 0.9878764869068154,
+            "maximum_cell": 1.002262407115542
+          },
+          "final_vs_previous": {
+            "l2": 0.9909135910741786,
+            "mass_weighted": 0.9882695333301819,
+            "maximum_cell": 1.0022860496117885
+          },
+          "final_vs_final": {
+            "l2": 0.9907647118324804,
+            "mass_weighted": 0.9879811714144148,
+            "maximum_cell": 1.002274741035426
+          }
+        },
+        "passed": false
+      }
+    }
+  },
+  "control_postcheck": {
+    "responses": {
+      "previous": {
+        "minimum_gas_erg_g": 6434955810863.434,
+        "failed_gas_cells": 0,
+        "full_state_checks": {
+          "block_count": true,
+          "frequency_ownership": true,
+          "positive_intensity": true,
+          "finite_arrays": true,
+          "positive_width": true,
+          "nonnegative_atomic_rates": true,
+          "direct_volume": true,
+          "formal_volume": true,
+          "formal_global": true,
+          "mirror": true,
+          "memory": true,
+          "wall": true
+        },
+        "maximum_native_mib": 3946.94140625,
+        "maximum_proc_kib": 4041668,
+        "state_wall_s": 305.7948266873136,
+        "norms": {
+          "l2": 8.182188296925235,
+          "mass_weighted": 0.2624777150715295,
+          "maximum_cell": 2.7053867264918128
+        }
+      },
+      "final": {
+        "minimum_gas_erg_g": 6458618740002.004,
+        "failed_gas_cells": 0,
+        "full_state_checks": {
+          "block_count": true,
+          "frequency_ownership": true,
+          "positive_intensity": true,
+          "finite_arrays": true,
+          "positive_width": true,
+          "nonnegative_atomic_rates": true,
+          "direct_volume": true,
+          "formal_volume": true,
+          "formal_global": true,
+          "mirror": true,
+          "memory": true,
+          "wall": true
+        },
+        "maximum_native_mib": 3944.9453125,
+        "maximum_proc_kib": 4039624,
+        "state_wall_s": 294.7773713795468,
+        "norms": {
+          "l2": 8.183417809820204,
+          "mass_weighted": 0.26255432440271326,
+          "maximum_cell": 2.7054172511285555
+        }
+      }
+    },
+    "gate_checks": {
+      "last_two_photoionization_pass": true,
+      "last_two_total_recombination_pass": true,
+      "last_two_atomic_heating_pass": true,
+      "last_two_direct_heating_pass": true,
+      "last_two_formal_heating_pass": true,
+      "inner_pair_ready": true,
+      "physical_response_pass": true
+    },
+    "comparison": {
+      "photoionization_volume_l1": [
+        1.417925358943179e-06,
+        7.137923827141863e-06,
+        7.69982887771073e-10
+      ],
+      "total_recombination_volume_l1": [
+        3.519346529434732e-08,
+        6.0347200069735635e-09,
+        3.471396817517505e-15
+      ],
+      "atomic_heating_volume_l1": 0.00013599657546706762,
+      "direct_heating_volume_l1": 0.00013599657547003172,
+      "formal_heating_volume_l1": 0.00013599657546999782
+    },
+    "material_response_failures": {},
+    "pair_decision": {
+      "baseline_control_only": true,
+      "finite_trial_accepted_as_one_nonlinear_step": false,
+      "accept_dynamic_nlte_solution": false
+    },
+    "accepted_outer_steps_remain": 20,
+    "material_step_promoted": false,
+    "frequency_truncation_convergence_established": false
+  },
+  "children": {
+    "control": {
+      "config_sha256": "e3dc87f5fd2035a203b35001decb9db08ad4a7966e8d95a4e4bcc7f9ea8e0cc3",
+      "status": "radiation",
+      "initialization_blocks": [],
+      "history": [
+        {
+          "iteration": 1,
+          "input_path": "outputs/hpc/common-step21-directions-20260925/control/state_0.dat",
+          "input_sha256": "1e57240d0e64d03e9fe40561fd9e31f464f1baad010f2f6d7a64cd778eec24a9",
+          "output_path": "outputs/hpc/common-step21-directions-20260925/control/state_1.dat",
+          "output_sha256": "a5c7d98cd798a5a49803be5bf924ffb9b6d3f2ac96288f05d39380743f684957",
+          "wall_s": 145.56858150474727,
+          "residual": 8.821748588601029e-06,
+          "boundary_l1": 5.037789669175494e-05,
+          "boundary_bolometric": 5.028745037944283e-05,
+          "maximum_worker_rss_mib": 3503.140625
+        },
+        {
+          "iteration": 2,
+          "input_path": "outputs/hpc/common-step21-directions-20260925/control/state_1.dat",
+          "input_sha256": "a5c7d98cd798a5a49803be5bf924ffb9b6d3f2ac96288f05d39380743f684957",
+          "output_path": "outputs/hpc/common-step21-directions-20260925/control/state_2.dat",
+          "output_sha256": "53386029c734d6857f5140639707096df73f1445ab868ce5a2c1c277bbce41d1",
+          "wall_s": 143.5956535153091,
+          "residual": 8.630229223612241e-06,
+          "boundary_l1": 4.7473681208019475e-05,
+          "boundary_bolometric": 4.7407446059446096e-05,
+          "maximum_worker_rss_mib": 3501.2578125
+        },
+        {
+          "iteration": 3,
+          "input_path": "outputs/hpc/common-step21-directions-20260925/control/state_2.dat",
+          "input_sha256": "53386029c734d6857f5140639707096df73f1445ab868ce5a2c1c277bbce41d1",
+          "output_path": "outputs/hpc/common-step21-directions-20260925/control/state_0.dat",
+          "output_sha256": "92e31ca7c9b4bff3ddcc02aacb39d010d56852a8a6089a5ab34fcbcca71f4cf4",
+          "wall_s": 144.04319278895855,
+          "residual": 8.443492492657735e-06,
+          "boundary_l1": 4.4831106673466696e-05,
+          "boundary_bolometric": 4.478201509309579e-05,
+          "maximum_worker_rss_mib": 3501.75390625
+        },
+        {
+          "iteration": 4,
+          "input_path": "outputs/hpc/common-step21-directions-20260925/control/state_0.dat",
+          "input_sha256": "92e31ca7c9b4bff3ddcc02aacb39d010d56852a8a6089a5ab34fcbcca71f4cf4",
+          "output_path": "outputs/hpc/common-step21-directions-20260925/control/state_1.dat",
+          "output_sha256": "674c4d69c38f940865a2bf3c09cb53aca28210279c24c2b763f28e5b888b3ecb",
+          "wall_s": 145.00989881902933,
+          "residual": 8.26155699757714e-06,
+          "boundary_l1": 4.241697999730132e-05,
+          "boundary_bolometric": 4.238019107329046e-05,
+          "maximum_worker_rss_mib": 3498.57421875
+        }
+      ],
+      "slots": [
+        "outputs/hpc/common-step21-directions-20260925/control/state_0.dat",
+        "outputs/hpc/common-step21-directions-20260925/control/state_1.dat",
+        "outputs/hpc/common-step21-directions-20260925/control/state_2.dat"
+      ],
+      "current_slot": 1,
+      "current_sha256": "674c4d69c38f940865a2bf3c09cb53aca28210279c24c2b763f28e5b888b3ecb",
+      "trial_sha256": "36434a29123e2387195b77713baffaecd046f7d6c0297a5d0d95a74319e22eda",
+      "active_map_summary": null
+    },
+    "thermal": {
+      "config_sha256": "e9f58687d8c742eb1d5f877908cf236311a9f1d3aa15d645d504304a2f4cea5d",
+      "status": "radiation",
+      "initialization_blocks": [],
+      "history": [
+        {
+          "iteration": 1,
+          "input_path": "outputs/hpc/common-step21-directions-20260925/thermal/state_0.dat",
+          "input_sha256": "674c4d69c38f940865a2bf3c09cb53aca28210279c24c2b763f28e5b888b3ecb",
+          "output_path": "outputs/hpc/common-step21-directions-20260925/thermal/state_1.dat",
+          "output_sha256": "21b8244da1e4e888cae73d4c76bec9b52540693a1fd0f1414016663d56b2f6dc",
+          "wall_s": 152.79964013956487,
+          "residual": 3.125024815162033e-05,
+          "boundary_l1": 0.00016040778438169677,
+          "boundary_bolometric": 6.353928688533171e-05,
+          "maximum_worker_rss_mib": 3506.359375
+        },
+        {
+          "iteration": 2,
+          "input_path": "outputs/hpc/common-step21-directions-20260925/thermal/state_1.dat",
+          "input_sha256": "21b8244da1e4e888cae73d4c76bec9b52540693a1fd0f1414016663d56b2f6dc",
+          "output_path": "outputs/hpc/common-step21-directions-20260925/thermal/state_2.dat",
+          "output_sha256": "99b6c143e3fd0f60271c481d6345dea135663b98f0279dd0db0ac43173f38092",
+          "wall_s": 145.71885933633894,
+          "residual": 1.8082398572423462e-05,
+          "boundary_l1": 0.00012349937929839492,
+          "boundary_bolometric": 7.136816300895602e-05,
+          "maximum_worker_rss_mib": 3502.5
+        },
+        {
+          "iteration": 3,
+          "input_path": "outputs/hpc/common-step21-directions-20260925/thermal/state_2.dat",
+          "input_sha256": "99b6c143e3fd0f60271c481d6345dea135663b98f0279dd0db0ac43173f38092",
+          "output_path": "outputs/hpc/common-step21-directions-20260925/thermal/state_0.dat",
+          "output_sha256": "375c1e3cda4306650fa861049e7a40cf77dbce4317a784b33c006c5968e59c38",
+          "wall_s": 145.56605270691216,
+          "residual": 1.0587720025790671e-05,
+          "boundary_l1": 9.957269139028151e-05,
+          "boundary_bolometric": 7.213768680158767e-05,
+          "maximum_worker_rss_mib": 3501.4921875
+        },
+        {
+          "iteration": 4,
+          "input_path": "outputs/hpc/common-step21-directions-20260925/thermal/state_0.dat",
+          "input_sha256": "375c1e3cda4306650fa861049e7a40cf77dbce4317a784b33c006c5968e59c38",
+          "output_path": "outputs/hpc/common-step21-directions-20260925/thermal/state_1.dat",
+          "output_sha256": "e2ca0e1141ae91a37a49e14062038e14b2bdbde69d8f6ff98bb3a6fb88304219",
+          "wall_s": 136.52520650811493,
+          "residual": 7.984491385265762e-06,
+          "boundary_l1": 8.348615537390124e-05,
+          "boundary_bolometric": 6.87123086044307e-05,
+          "maximum_worker_rss_mib": 3501.79296875
+        }
+      ],
+      "slots": [
+        "outputs/hpc/common-step21-directions-20260925/thermal/state_0.dat",
+        "outputs/hpc/common-step21-directions-20260925/thermal/state_1.dat",
+        "outputs/hpc/common-step21-directions-20260925/thermal/state_2.dat"
+      ],
+      "current_slot": 1,
+      "current_sha256": "e2ca0e1141ae91a37a49e14062038e14b2bdbde69d8f6ff98bb3a6fb88304219",
+      "trial_sha256": "814dd11e080a2ae12138e2ca0ab798b221ada94797059cb36ac7ad151afc5d0e",
+      "active_map_summary": null
+    }
+  },
+  "process_receipts": 152,
+  "all_processes_ok": true,
+  "maximum_proc_kib": 4041668,
+  "stderr": "",
+  "watcher_alive": true
+}

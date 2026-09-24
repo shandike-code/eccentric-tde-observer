@@ -41,3 +41,11 @@ Mac124tests通过（0.95秒），覆盖两投影在全单元的分解、原方�
 Linux124tests通过（16.23秒），shell与跨两个新提交diff检查通过。数值提交`9e548db66c7ba4d8e13f848398d1a0aacada9ef1`三端一致后提交；学校备份`/home/scc/pb24511938/pre-step21-directions.bundle`。
 
 作业76905于02:24:48提交、02:24:49在anode18启动，32CPU/128GiB、4h至06:24:49。run `outputs/hpc/common-step21-directions-20260925`，启动证据`20260925-step21-directions-76905-start.json`；初始preparing且stderr空，不据此宣称native预检或map完成。watcher tmux `step21-directions-76905`，18000秒，终态目标`outputs/review-20260925/scheduler-76905/scheduler-terminal.json`。
+
+## 03:18 基态通过，热能方向第一对反馈进行中
+
+03:18:15快照76905仍RUNNING，control完成4map/1pair，thermal完成4map、父status=feedback/after_maps4，population尚未建state；不能把进行中的反馈说成通过。基态7门全过，heat=0.00013599657546706762，两端点gas正、最低6.434955810863434e12 erg/g，完整态门通过，152反馈进程exit0/内存门通过、峰/proc4041668KiB，stderr空、watcher存活。
+
+新control与原r20向量差三范数0.11541931529206631/0.006657675492443843/0.035297681329625；这是仍存在的漂移，不是严格误差界。对76871 half08四组合最大单元比仍全>1，最不利1.0022860496117885，失败未逆转，故按协议继续方向诊断。原方向分量与原门分母不改。
+
+证据`20260925-directions-76905-control-progress.json`包含源SHA、摘要、两child历史与回执汇总。本轮为运行控制核查，完整逐块独立数值审计等待整批归档。定时任务原内容曾在本批启动后带旧76871状态再次触发，已根据真实76905状态改正，未重复提交任何作业。启动记录96ae69e已核三端一致；push报ref锁错误时ls-remote显示实际已到目标，未强推。编辑前备份pre-directions-control-progress.bundle与automation-before-directions-control-progress.toml；数值代码未动，counter20/new0。
