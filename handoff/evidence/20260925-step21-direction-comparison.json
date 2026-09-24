@@ -1,0 +1,543 @@
+{
+  "claims": [
+    {
+      "path": "outputs/review-20260925/common-step21-directions-76905-received/control/trial_material.npz",
+      "sha256": "36434a29123e2387195b77713baffaecd046f7d6c0297a5d0d95a74319e22eda"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-directions-76905-received/control/pair04/final_response.npz",
+      "sha256": "9ce6589082cca501960035b10649fa2889472169a3b824975dedd75d49727d47"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-directions-76905-received/control/pair04/final_energy_ledger.npz",
+      "sha256": "76a0282107bca0bf6bd99d974c5627ba69b9398eaae2d7b50765c2c330a44e90"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-directions-76905-received/thermal/trial_material.npz",
+      "sha256": "814dd11e080a2ae12138e2ca0ab798b221ada94797059cb36ac7ad151afc5d0e"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-directions-76905-received/thermal/pair04/final_response.npz",
+      "sha256": "7b321d5663f550eddcc22e9cc6a87a09755537a88fe77c8ee6482a99e2be6115"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-directions-76905-received/thermal/pair04/final_energy_ledger.npz",
+      "sha256": "4f8a052b1c17817f3c3da4ba408c8cc64f51b1a5eb9ec5bd046b7c2f89fca81b"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-directions-76905-received/thermal/trial_material.npz",
+      "sha256": "814dd11e080a2ae12138e2ca0ab798b221ada94797059cb36ac7ad151afc5d0e"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-directions-76905-received/thermal/pair08/final_response.npz",
+      "sha256": "96779640ed7dad1f482c7257d11cef535b8f9f84d2a9155cdc51c4263aa4c497"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-directions-76905-received/thermal/pair08/final_energy_ledger.npz",
+      "sha256": "e93c26882cb69914436c2938fa97b87b041bf005aa73b0b131638c7292cd5543"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-directions-76905-received/population/trial_material.npz",
+      "sha256": "b60fd79e254f87a42455fd88a0e16e6b51d7abcb95e53257c969e5ad56810da4"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-directions-76905-received/population/pair04/final_response.npz",
+      "sha256": "34cf92bc92e247c165e6150b0b6f16bdddde3aa185eebc4bb3d85b61f0f1ec3e"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-directions-76905-received/population/pair04/final_energy_ledger.npz",
+      "sha256": "c1b3f3908f2378eca9ae58bf902d6247b9b3c89ec7d12dcb6928e26ccbeffa03"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-directions-76905-received/population/trial_material.npz",
+      "sha256": "b60fd79e254f87a42455fd88a0e16e6b51d7abcb95e53257c969e5ad56810da4"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-directions-76905-received/population/pair08/final_response.npz",
+      "sha256": "0fd6f3fea9d360a67fd898e6eecf7a9eda0f14ba091d26f8f58b5393ca6f286c"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-directions-76905-received/population/pair08/final_energy_ledger.npz",
+      "sha256": "97e6c0a059893f06dd8081f810f743fcd0dee3caa14f11a0092ee687d4a5a4a7"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-probe-76871-received/control/pair04/final_response.npz",
+      "sha256": "6d145737123ff6ae8841d338888f1e9b5a88232356d5cd41c2e901fc6a17f789"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-probe-76871-received/half/pair08/final_response.npz",
+      "sha256": "1779c2a2279c1b35a3a7ef1074a80ff338911ef0dc241005da27a670898e8962"
+    }
+  ],
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "strict_jacobian_established": false,
+  "drift_is_error_bound": false,
+  "norms": {
+    "control": {
+      "l2": 8.183417809820204,
+      "mass_weighted": 0.26255432440271326,
+      "maximum_cell": 2.7054172511285555
+    },
+    "thermal04": {
+      "l2": 8.139632688384816,
+      "mass_weighted": 0.2608666371438975,
+      "maximum_cell": 2.7143590131499096
+    },
+    "thermal08": {
+      "l2": 8.123433914394576,
+      "mass_weighted": 0.2602476223046095,
+      "maximum_cell": 2.713483519067728
+    },
+    "population04": {
+      "l2": 8.166310634646159,
+      "mass_weighted": 0.2618237497884281,
+      "maximum_cell": 2.7033116254413128
+    },
+    "population08": {
+      "l2": 8.178749884304613,
+      "mass_weighted": 0.2624769635570609,
+      "maximum_cell": 2.7040216195224605
+    },
+    "prior_control": {
+      "l2": 8.178129481408643,
+      "mass_weighted": 0.2622383309644685,
+      "maximum_cell": 2.705265629480948
+    },
+    "full_half": {
+      "l2": 8.107841588151302,
+      "mass_weighted": 0.2593987289833129,
+      "maximum_cell": 2.7115713747676473
+    }
+  },
+  "direction_signals": {
+    "thermal04": {
+      "l2": 0.134324336596832,
+      "mass_weighted": 0.006573753772790759,
+      "maximum_cell": 0.06469548714766535
+    },
+    "thermal08": {
+      "l2": 0.16484563881160935,
+      "mass_weighted": 0.008156175658567646,
+      "maximum_cell": 0.06487933743493812
+    },
+    "population04": {
+      "l2": 0.07293100286714625,
+      "mass_weighted": 0.003538521950431047,
+      "maximum_cell": 0.037095274984842726
+    },
+    "population08": {
+      "l2": 0.047647814018352726,
+      "mass_weighted": 0.0032983392733238323,
+      "maximum_cell": 0.011352769522824444
+    }
+  },
+  "map4_to_map8_drift": {
+    "thermal": {
+      "l2": 0.049188926604729094,
+      "mass_weighted": 0.002614120670485839,
+      "maximum_cell": 0.017443526873705983
+    },
+    "population": {
+      "l2": 0.08065009617577527,
+      "mass_weighted": 0.004438299329933514,
+      "maximum_cell": 0.027386415974093643
+    }
+  },
+  "between_control_drift": {
+    "l2": 0.05506104566523953,
+    "mass_weighted": 0.0032274461185667225,
+    "maximum_cell": 0.01590077886879832
+  },
+  "additive_minus_full_with_own_controls": {
+    "l2": 0.08414859342179193,
+    "mass_weighted": 0.005559982713235563,
+    "maximum_cell": 0.018250940380490768
+  },
+  "cells": {
+    "1": {
+      "control": {
+        "residual": [
+          2.491190931138828,
+          0.49225430792363234,
+          0.034232239123706876,
+          0.9291932351841503
+        ],
+        "norm": 2.704240831280588,
+        "delta_from_control": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "trial_temperature_k": 32807.68421122634,
+        "response_temperature_k": 396173.39992214326,
+        "trial_hydrogen_fraction": [
+          1.808405704073479e-07,
+          0.9999998191594296
+        ],
+        "response_hydrogen_fraction": [
+          1.1053824602304098e-07,
+          0.999999889461754
+        ],
+        "trial_helium_fraction": [
+          0.00023255749011540203,
+          0.9997474992391606,
+          1.994327072396046e-05
+        ],
+        "response_helium_fraction": [
+          0.00022472651823636456,
+          0.9997264685319079,
+          4.88049498557574e-05
+        ],
+        "trial_gas_erg_g": 6255597836538.106,
+        "response_gas_erg_g": 75540402673868.53,
+        "response_ionization_erg_g": 10766435521500.61
+      },
+      "thermal04": {
+        "residual": [
+          2.4773589590639205,
+          0.49440508395143645,
+          0.03535807776602873,
+          0.9923461389623804
+        ],
+        "norm": 2.7143590131499096,
+        "delta_from_control": [
+          -0.013831972074907384,
+          0.0021507760278041133,
+          0.0011258386423218525,
+          0.06315290377823013
+        ],
+        "trial_temperature_k": 33128.45380329967,
+        "response_temperature_k": 394551.4895575265,
+        "trial_hydrogen_fraction": [
+          1.808405704073479e-07,
+          0.9999998191594296
+        ],
+        "response_hydrogen_fraction": [
+          1.1030075852232223e-07,
+          0.9999998896992417
+        ],
+        "trial_helium_fraction": [
+          0.00023255749011540203,
+          0.9997474992391606,
+          1.994327072396046e-05
+        ],
+        "response_helium_fraction": [
+          0.00022447301051944612,
+          0.9997235991042219,
+          5.192788525864492e-05
+        ],
+        "trial_gas_erg_g": 6316760506639.476,
+        "response_gas_erg_g": 75231156307086.72,
+        "response_ionization_erg_g": 10766447336606.871
+      },
+      "thermal08": {
+        "residual": [
+          2.476481962280186,
+          0.4939859748138904,
+          0.03536133711460998,
+          0.9923493997971173
+        ],
+        "norm": 2.713483519067728,
+        "delta_from_control": [
+          -0.014708968858641924,
+          0.0017316668902580545,
+          0.0011290979909031051,
+          0.06315616461296703
+        ],
+        "trial_temperature_k": 33128.45380329967,
+        "response_temperature_k": 394205.6208503811,
+        "trial_hydrogen_fraction": [
+          1.808405704073479e-07,
+          0.9999998191594296
+        ],
+        "response_hydrogen_fraction": [
+          1.1034699626164884e-07,
+          0.9999998896530039
+        ],
+        "trial_helium_fraction": [
+          0.00023255749011540203,
+          0.9997474992391606,
+          1.994327072396046e-05
+        ],
+        "response_helium_fraction": [
+          0.00022447227904906435,
+          0.9997235998355771,
+          5.192788537380605e-05
+        ],
+        "trial_gas_erg_g": 6316760506639.476,
+        "response_gas_erg_g": 75165207747533.03,
+        "response_ionization_erg_g": 10766447337391.621
+      },
+      "population04": {
+        "residual": [
+          2.4895895153181407,
+          0.4917578952668098,
+          0.03423638274049168,
+          0.9271063442478356
+        ],
+        "norm": 2.7019585647798148,
+        "delta_from_control": [
+          -0.0016014158206871798,
+          -0.0004964126568225424,
+          4.143616784801907e-06,
+          -0.002086890936314756
+        ],
+        "trial_temperature_k": 32807.68405551105,
+        "response_temperature_k": 395539.46748148516,
+        "trial_hydrogen_fraction": [
+          1.8049321848234712e-07,
+          0.9999998195067815
+        ],
+        "response_hydrogen_fraction": [
+          1.1038070901620744e-07,
+          0.999999889619291
+        ],
+        "trial_helium_fraction": [
+          0.00023252638767275706,
+          0.9997474604998615,
+          2.001311246560889e-05
+        ],
+        "response_helium_fraction": [
+          0.0002246955323105105,
+          0.9997264309050782,
+          4.8873562611347394e-05
+        ],
+        "trial_gas_erg_g": 6255597836538.106,
+        "response_gas_erg_g": 75419527889154.25,
+        "response_ionization_erg_g": 10766435824376.309
+      },
+      "population08": {
+        "residual": [
+          2.490210159676124,
+          0.4919447797514156,
+          0.03423696836366297,
+          0.9271069298425183
+        ],
+        "norm": 2.7025646588090377,
+        "delta_from_control": [
+          -0.0009807714627037,
+          -0.0003095281722167442,
+          4.7292399560916465e-06,
+          -0.002086305341632011
+        ],
+        "trial_temperature_k": 32807.68405551105,
+        "response_temperature_k": 395785.0330108088,
+        "trial_hydrogen_fraction": [
+          1.8049321848234712e-07,
+          0.9999998195067815
+        ],
+        "response_hydrogen_fraction": [
+          1.1036008250401673e-07,
+          0.9999998896399174
+        ],
+        "trial_helium_fraction": [
+          0.00023252638767275706,
+          0.9997474604998615,
+          2.001311246560889e-05
+        ],
+        "response_helium_fraction": [
+          0.00022469540075320584,
+          0.9997264310366304,
+          4.887356261638618e-05
+        ],
+        "trial_gas_erg_g": 6255597836538.106,
+        "response_gas_erg_g": 75466351122405.12,
+        "response_ionization_erg_g": 10766435824781.287
+      }
+    },
+    "2": {
+      "control": {
+        "residual": [
+          2.548830926639667,
+          0.4431021293770261,
+          0.04170508562636144,
+          0.7903572602839872
+        ],
+        "norm": 2.7054172511285555,
+        "delta_from_control": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "trial_temperature_k": 35214.542221401985,
+        "response_temperature_k": 450467.9684484818,
+        "trial_hydrogen_fraction": [
+          1.8190990536126606e-07,
+          0.9999998180900946
+        ],
+        "response_hydrogen_fraction": [
+          1.1679374020858162e-07,
+          0.9999998832062598
+        ],
+        "trial_helium_fraction": [
+          0.00017737988016498324,
+          0.9997688352485139,
+          5.3784871321053766e-05
+        ],
+        "response_helium_fraction": [
+          0.00017012541243811423,
+          0.9997161713673199,
+          0.00011370322024196441
+        ],
+        "trial_gas_erg_g": 6714552114550.667,
+        "response_gas_erg_g": 85893491273082.1,
+        "response_ionization_erg_g": 10766762282968.195
+      },
+      "thermal04": {
+        "residual": [
+          2.5336735306896507,
+          0.4451902372487151,
+          0.043066874496876295,
+          0.8446285342028517
+        ],
+        "norm": 2.707941658146925,
+        "delta_from_control": [
+          -0.015157395950016195,
+          0.0020881078716890045,
+          0.0013617888705148573,
+          0.05427127391886444
+        ],
+        "trial_temperature_k": 35566.842673451705,
+        "response_temperature_k": 448130.2714244449,
+        "trial_hydrogen_fraction": [
+          1.8190990536126606e-07,
+          0.9999998180900946
+        ],
+        "response_hydrogen_fraction": [
+          1.1655011675326003e-07,
+          0.9999998834498832
+        ],
+        "trial_helium_fraction": [
+          0.00017737988016498324,
+          0.9997688352485139,
+          5.3784871321053766e-05
+        ],
+        "response_helium_fraction": [
+          0.00016989288495866355,
+          0.9997102266332685,
+          0.00011988048177286944
+        ],
+        "trial_gas_erg_g": 6781727196094.959,
+        "response_gas_erg_g": 85447773144251.83,
+        "response_ionization_erg_g": 10766785208200.057
+      },
+      "thermal08": {
+        "residual": [
+          2.5325619668677284,
+          0.4447443941888096,
+          0.04306952482005322,
+          0.8446311868819671
+        ],
+        "norm": 2.706829236950343,
+        "delta_from_control": [
+          -0.01626895977193854,
+          0.0016422648117835337,
+          0.00136443919369178,
+          0.054273926597979916
+        ],
+        "trial_temperature_k": 35566.842673451705,
+        "response_temperature_k": 447632.4227751633,
+        "trial_hydrogen_fraction": [
+          1.8190990536126606e-07,
+          0.9999998180900946
+        ],
+        "response_hydrogen_fraction": [
+          1.1660209139329202e-07,
+          0.9999998833979086
+        ],
+        "trial_helium_fraction": [
+          0.00017737988016498324,
+          0.9997688352485139,
+          5.3784871321053766e-05
+        ],
+        "response_helium_fraction": [
+          0.00016989243476465935,
+          0.9997102270831262,
+          0.00011988048210924537
+        ],
+        "trial_gas_erg_g": 6781727196094.959,
+        "response_gas_erg_g": 85352845259935.7,
+        "response_ionization_erg_g": 10766785208469.582
+      },
+      "population04": {
+        "residual": [
+          2.5471537205277457,
+          0.4426626164192058,
+          0.041709267769187264,
+          0.7888040398317417
+        ],
+        "norm": 2.7033116254413128,
+        "delta_from_control": [
+          -0.0016772061119212367,
+          -0.0004395129578202983,
+          4.182142825825963e-06,
+          -0.001553220452245485
+        ],
+        "trial_temperature_k": 35214.54191795539,
+        "response_temperature_k": 449713.0702608231,
+        "trial_hydrogen_fraction": [
+          1.8159535974948682e-07,
+          0.9999998184046403
+        ],
+        "response_hydrogen_fraction": [
+          1.1664304365725064e-07,
+          0.9999998833569563
+        ],
+        "trial_helium_fraction": [
+          0.0001773509638574623,
+          0.9997687066518538,
+          5.394238428869695e-05
+        ],
+        "response_helium_fraction": [
+          0.00017009696763268774,
+          0.9997160442857375,
+          0.00011385874662986474
+        ],
+        "trial_gas_erg_g": 6714552114550.667,
+        "response_gas_erg_g": 85749550927101.19,
+        "response_ionization_erg_g": 10766762898723.562
+      },
+      "population08": {
+        "residual": [
+          2.547875123281891,
+          0.4428465061244804,
+          0.04170973180800175,
+          0.7888045038487073
+        ],
+        "norm": 2.7040216195224605,
+        "delta_from_control": [
+          -0.0009558033577761194,
+          -0.0002556232525456892,
+          4.646181640310942e-06,
+          -0.0015527564352799672
+        ],
+        "trial_temperature_k": 35214.54191795539,
+        "response_temperature_k": 450037.61155070097,
+        "trial_hydrogen_fraction": [
+          1.8159535974948682e-07,
+          0.9999998184046403
+        ],
+        "response_hydrogen_fraction": [
+          1.166215961768774e-07,
+          0.9999998833784037
+        ],
+        "trial_helium_fraction": [
+          0.0001773509638574623,
+          0.9997687066518538,
+          5.394238428869695e-05
+        ],
+        "response_helium_fraction": [
+          0.00017009688871453722,
+          0.9997160443646491,
+          0.00011385874663636433
+        ],
+        "trial_gas_erg_g": 6714552114550.667,
+        "response_gas_erg_g": 85811433207646.97,
+        "response_ionization_erg_g": 10766762899049.25
+      }
+    }
+  }
+}
