@@ -35,3 +35,11 @@ confirm1final→confirm2final的L2范数8.501401356257→8.505715711377、mass 0
 76509于15:21:55在anode02 RUNNING，cpu_long32CPU128GiB/16worker，4小时至19:21:55；数值代码`8e814e9b20c3fccd87b8660d9048e01cd82f1bc7`。Mac75tests0.92秒、Linux75tests20.14秒，三端SHA一致、工作树干净后提交。启动16秒时status尚未生成、declaration未写、stderr空，只能说进程启动，不能推定native预检或map已完成。真实来源和native预检在allocation内进行。
 
 只读tmux watcher `step19-76509`运行上限5小时，终态写入`outputs/review-20260924/scheduler-76509/scheduler-terminal.json`，不会重交或取消。学校备份`/home/scc/pb24511938/pre-step19.bundle`。起跑证据`handoff/evidence/20260924-step19-76509-start.json`；保持18已接受步、第19步未接受。定时任务继续监督实测资源与第4/8张判决。
+
+## 15:58第一对反馈：仅内层噪声门未过
+
+76509仍RUNNING36:37，stderr空；前4map完成，辐射res依次6.442378168325e-5、3.811557801597e-5、2.319712924674e-5、1.528145872326e-5。pair04原15/16，唯一inner_noise_resolved_pass=False，噪声比0.10712357080956236高于原0.1门，不能因只超约7.1%而圆整成通过。三种heating约3.71905568374e-4，通过；原r18分母三范数比0.981524689053 / 0.975527778648 / 0.996261950182，相对76469confirm2两端点的四组合也全收缩。
+
+两端点最低气体热能5.807187694284e12 / 5.900875275247e12 erg/g，12完整态检查均通过；152反馈进程回执全部exit0/memory guard pass，最大/proc4039544KiB，原生3944.867MiB，每态批墙钟323.1606615 / 339.4780800秒。previous三范数8.371289286090 / 0.270319083510 / 2.711967446085，final为8.348569968784 / 0.269359937772 / 2.710166736835。只是中期学校侧证据，未代替终态Mac独立审计。
+
+父status=mapping/completed_maps4，子active_map5、已提交0块，按既定8map预算继续。不自动加map、改幅度或放宽noise门。小的全局辐射残差不足以保证物质试步信号已与内层反馈变化分开，pair04不支持接受19；计数仍18/new0。备份pre-step19-pair04-progress.bundle与automation-before-step19-pair04-progress.toml，证据20260924-step19-76509-pair04-progress.json。本次无运行代码修改、无新科学作业。
