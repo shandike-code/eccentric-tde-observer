@@ -1,0 +1,19 @@
+{
+  "job_id": 76383,
+  "state": "RUNNING",
+  "start_time": "2026-09-24T09:23:36+08:00",
+  "wall_limit": "04:00:00",
+  "end_limit": "2026-09-24T13:23:36+08:00",
+  "node": "anode02",
+  "cpus": 32,
+  "memory_gib": 128,
+  "workers": 16,
+  "run": "outputs/hpc/common-step18-20260924",
+  "numeric_commit": "ae6b6d7ae184420b3d229954069f854ecdc060aa",
+  "initial_status": "preparing",
+  "stderr_empty_at_elapsed": "00:01:54",
+  "mac_tests": "54 passed in 1.11s",
+  "linux_tests": "54 passed in 19.25s",
+  "watcher": "step18-76383",
+  "heartbeat": "ACTIVE; 30min; exact prompt verified"
+}

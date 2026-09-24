@@ -29,3 +29,9 @@
 从x17及最新确认的r17构造x18=x17+r17/64，allocation内原生重放两端点响应并逐位核对r17；固定物理旧层、rho、phase1367及dt889.419892762322秒。新驱动common_outer_step18、独立run common-step18-20260924。上限8张map，在第4/8张保留独立端点并各评估一对反馈；最多2对反馈，完整原门及四组合收缩，非正气体热能/资源/代码失败立即停。无自动接受第18步、无扩预算。通过后按同态确认路径推进，不等待用户逐小步许可。
 
 32CPU/128GiB、16worker、BLAS1、hugepage0，4小时墙钟上限。复用已验证算法，新版本只更新来源、计数和来源终态检查；旧冻结文件不改。Mac pre-step18.bundle已保存；学校备份、双端测试、提交和新作业信息执行后补记。
+
+## 已执行
+
+Mac54项1.11秒、Linux54项19.25秒全部通过，bash语法及diff检查通过。数值提交ae6b6d7ae184420b3d229954069f854ecdc060aa已同步Mac、学校和GitHub；学校pre-step18.bundle备份完成。76383于09:23:36启动在anode02，32CPU128GiB16worker，4h上限13:23:36；运行1分54秒时仍preparing，stderr空，不将散列/初始化阶段说成已开始worker。只读watcher step18-76383最长5h，终态写outputs/review-20260924/scheduler-76383。
+
+定时任务USTC HHe 运行审阅与决策已切换76383，ACTIVE、30分钟，读回prompt逐字一致。无变化静默；真SSH断线提醒用户并暂停，Slurm继续。
