@@ -1,0 +1,24 @@
+{
+  "scheduler": "JobId=76931 JobName=tde-step21-precision UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:01:13 TimeLimit=05:00:00 TimeMin=N/A SubmitTime=2026-09-25T05:04:27 EligibleTime=2026-09-25T05:04:27 AccrueTime=2026-09-25T05:04:27 StartTime=2026-09-25T05:04:28 EndTime=2026-09-25T10:04:28 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-25T05:04:28 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2127873 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode18 BatchHost=anode18 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/common_step21_direction_precision.sbatch SubmitLine=sbatch --parsable operations/common_step21_direction_precision.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-step21-precision-76931.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-step21-precision-76931.out TresPerTask=cpu=32\n",
+  "status": {
+    "status": "mapping",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790283921.282592,
+    "case": "control",
+    "budget": 8
+  },
+  "declaration_exists": true,
+  "stderr": "",
+  "watcher_alive": true,
+  "job_id": 76931,
+  "observed_at": "2026-09-25T05:05:41.806041+08:00",
+  "numeric_commit": "a03b6c07accb78a490d2bca4f1385e7111f93668",
+  "run": "outputs/hpc/common-step21-direction-precision-20260925",
+  "mac_tests": "139 passed in 1.02s",
+  "linux_tests": "139 passed in 15.94s",
+  "maximum_maps": 24,
+  "maximum_pairs": 6,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0
+}

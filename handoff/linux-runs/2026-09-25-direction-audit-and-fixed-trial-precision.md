@@ -66,3 +66,9 @@ Key Issues:
 3. 整批保持accepted20/new0；任何过门都需另行确认。
 
 Decision: RUN — 仅限学校测试、SHA和资源检查通过后的上述24张map预算。
+
+## 学校测试与启动
+
+数值提交 `a03b6c07accb78a490d2bca4f1385e7111f93668` 已在Mac、学校与GitHub核对一致。学校139 passed（15.94s），shell/diff通过、工作树干净后提交。作业 **76931** 于2026-09-25 05:04:27提交、05:04:28在anode18启动，32CPU/128GiB，5小时上限至10:04:28。启动阶段日志为空，counter20/new0；详细状态见 `handoff/evidence/20260925-step21-direction-precision-76931-start.json`。
+
+独立watcher：tmux `step21-direction-precision-76931`，21600秒预算，终态写 `outputs/review-20260925/scheduler-76931/scheduler-terminal.json`。定时审阅保持30分钟，仅有实质变化通知。Markdown检查仍只有历史六份lecture被报告，未改写历史文件，不声称全库格式通过。
