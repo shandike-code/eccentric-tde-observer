@@ -23,3 +23,11 @@ confirm1final三范数8.169170646219044/0.2617718380452983/2.704811959502182，c
 备份`pre-step20-acceptance-review.bundle`和`automation-before-step20-acceptance-review.toml`。新审计/驱动/测试均另命名，已冻结src/scripts/hpc/operations不改；旧大态不传Mac、不入Git、不删除。
 
 本地75项测试通过（0.99秒），涵盖错误接受来源/旧幅度/方向/分母/物理时间层、trust与完整态/端点保留等控制。shell语法和diff检查通过；Markdown只读检查仍列同样6份历史lecture，日志`step21-markdown-legacy-check.log`保留，未改旧文件、不宣称全库格式通过。
+
+## 第21步已启动
+
+Linux同组75tests通过（19.50秒）。数值提交`b25b57d455fbf8c77196e227a35d8a4fa31b28fd`在Mac/学校/GitHub一致，干净工作树后提交。学校备份`/home/scc/pb24511938/pre-step21.bundle`；本次push仅用单命令HTTP/1.1选项成功，未修改全局Git或网络代理。
+
+76808于2026-09-24 23:11:34在anode17启动，cpu_long32CPU/128GiB/16worker，4h至2026-09-25 03:11:34。23:11:58快照RUNNING/24秒、preparing、declaration尚未生成、stderr空，不据此宣布native预检或map完成。证据`handoff/evidence/20260924-step21-76808-start.json`。本批计数20/new0。
+
+只读watcher tmux `step21-76808`、18000秒，终态目标`outputs/review-20260924/scheduler-76808/scheduler-terminal.json`；不取消或重交。定时监督转到本批，预计1–2小时仅为本批成本参考。第21步支持仍须同态确认与独立审阅，不自动接受。
