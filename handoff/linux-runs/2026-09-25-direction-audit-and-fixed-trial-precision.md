@@ -94,3 +94,13 @@ thermal新增map4原15/16门通过，仅最大单元收缩失败。heat=0.000136
 三个已完成反馈对均无物理响应异常、气体热能正、完整态通过。新增control8与thermal4共304份反馈进程回执exit0/内存通过，峰/proc4038592KiB；连同control4共456份，峰4040452KiB。上述四个新增反馈态累计worker批墙钟均约291—305秒，低于900秒。
 
 小快照 `handoff/evidence/20260925-direction-precision-76931-thermal-progress.json` 保存原始摘要、状态和所读文件SHA。仅运行控制检查，尚非整批独立数值审计；未改冻结代码、未重跑测试。备份 `outputs/review-20260925/pre-precision-thermal-progress.bundle`、`automation-before-precision-thermal-progress.toml`。
+
+## 07:14:56监督：thermal追加预算完成，population新增4张待反馈
+
+76931仍RUNNING，control和thermal各8张/2对完成；population新增4张、active_map=None，尚无pair04 decision。父status=mapping/population/completed_maps4，不能把这个父状态误报成物理反馈已完成。stderr空、watcher活，接受20/new0，继续原定剩余预算。
+
+thermal新增map8仍原15/16门通过，仅最大单元收缩失败。heat=0.00014565485433541082，noise=0.032288704664235265；final三范数8.127156473950212 / 0.26062189179402 / 2.7136147459585147，原r20比0.9945117415629392 / 0.9950802695002179 / 1.003184334858049，新control8四组合最差单元最不利比1.00298053124441。提高本级内层精度并未改变热能方向的拒绝结论；不能由此证明严格方向导数或物理无解。
+
+这对反馈的气体热能正，最低6.664901027172004e12erg/g；完整态全过，152份进程回执exit0/内存通过、峰/proc4040200KiB，两态累计worker批墙钟293.0581和290.3731秒。连同其余三个已完成对共608份反馈进程回执，全部正常，峰4040452KiB。
+
+快照 `handoff/evidence/20260925-direction-precision-76931-population-progress.json` 含文件SHA、原始摘要和状态。此次仅运行控制核查，终态仍需独立数值复算；未改数值代码、未追加预算或重跑测试。备份 `outputs/review-20260925/pre-precision-population-progress.bundle`、`automation-before-precision-population-progress.toml`。
