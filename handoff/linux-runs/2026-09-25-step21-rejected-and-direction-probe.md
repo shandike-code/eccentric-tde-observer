@@ -41,3 +41,9 @@ map4 final的HeIII/HeI残差1.0528918137766632，到map8为1.0528991608036078，
 所有物理定义、dt、阈值、旧大态和已声明代码保留。编辑前保存`pre-step21-failure-audit.bundle`和`automation-before-step21-failure-audit.toml`；仅新增审计、驱动、测试、协议和小记录。Mac100tests通过（1.09秒），shell语法/diff检查通过；未重跑或修改历史讲义格式。
 
 仍然只有20个正式接受的有限非线性步；未证明耦合柱收敛，未交付径向/相位覆盖的大气表或整盘涌现强度，也没有从本次失败得出模型无解。
+
+## 新批已启动
+
+数值提交`51a8f84d8d7eb218792583cfa8e6553bc94d7603`部署后Linux100tests通过（14.14秒）；Mac/学校/GitHub实际SHA一致。push曾报ref lock冲突，但ls-remote确认目标ref已在该SHA，因此未强推或重复推送。学校预部署备份`/home/scc/pb24511938/pre-step21-probe.bundle`。
+
+76871于2026-09-25 00:31:32在anode18启动，32CPU/128GiB、4h至04:31:32，run `outputs/hpc/common-step21-probe-20260925`。启动快照见`20260925-step21-probe-76871-start.json`，处于preparing、stderr空；不据此声称native预检或map已完成。只读watcher tmux `step21-probe-76871`、18000秒，终态目标`outputs/review-20260925/scheduler-76871/scheduler-terminal.json`。定时跟进转到新批，当前正式接受数仍20。
