@@ -1,0 +1,84 @@
+{
+  "job_id": 76405,
+  "observed_unix": 1790217914.1515892,
+  "status": {
+    "status": "feedback",
+    "accepted_outer_steps": 17,
+    "new_material_steps": 0,
+    "updated_unix": 1790217225.2194712,
+    "after_maps": 4
+  },
+  "feedback": {
+    "previous": {
+      "status": "complete",
+      "state_gate_passed": true,
+      "accumulated_wall_runtime_s": 342.17180950939655,
+      "maximum_process_peak_rss_mib": 3943.8203125,
+      "completed_blocks": 76
+    },
+    "final": {
+      "status": "running",
+      "state_gate_passed": null,
+      "accumulated_wall_runtime_s": 287.2653390383348,
+      "maximum_process_peak_rss_mib": null,
+      "completed_blocks": 64
+    }
+  },
+  "feedback_process_receipts": {
+    "count": 141,
+    "all_exit_zero": true,
+    "all_memory_passed": true,
+    "maximum_proc_kib": 4039164
+  },
+  "map_history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/common-step18-precision-20260924/maps/state_0.dat",
+      "input_sha256": "d43bdbe0854d3ff74db38c27257de4f36172f40fa61e66dc8810cd11def76395",
+      "output_path": "outputs/hpc/common-step18-precision-20260924/maps/state_1.dat",
+      "output_sha256": "d627a89c639abf6fdb36928ce8e7b14546a625f87db1e7cd9f3e5eebed411b43",
+      "wall_s": 186.28809889871627,
+      "residual": 0.0000971886413434311,
+      "boundary_l1": 0.0001880361677992795,
+      "boundary_bolometric": 0.00018379514959561508,
+      "maximum_worker_rss_mib": 3501.078125
+    },
+    {
+      "iteration": 2,
+      "input_path": "outputs/hpc/common-step18-precision-20260924/maps/state_1.dat",
+      "input_sha256": "d627a89c639abf6fdb36928ce8e7b14546a625f87db1e7cd9f3e5eebed411b43",
+      "output_path": "outputs/hpc/common-step18-precision-20260924/maps/state_2.dat",
+      "output_sha256": "fa2a79b97e8a742f5d9aea82281f0bb7f601967f2ab13532aaaa14dbd0c1f2b4",
+      "wall_s": 168.60572790261358,
+      "residual": 0.00009263357832415017,
+      "boundary_l1": 0.00017142074626783256,
+      "boundary_bolometric": 0.00016863206135165742,
+      "maximum_worker_rss_mib": 3506.15625
+    },
+    {
+      "iteration": 3,
+      "input_path": "outputs/hpc/common-step18-precision-20260924/maps/state_2.dat",
+      "input_sha256": "fa2a79b97e8a742f5d9aea82281f0bb7f601967f2ab13532aaaa14dbd0c1f2b4",
+      "output_path": "outputs/hpc/common-step18-precision-20260924/maps/state_0.dat",
+      "output_sha256": "a1a78866d8410a3fc0c6f92ee760e4dc5ad58866587e8675c59ec5c50cab09b7",
+      "wall_s": 176.26641513966024,
+      "residual": 0.00008840626161734567,
+      "boundary_l1": 0.00015710162074827533,
+      "boundary_bolometric": 0.0001552329644362336,
+      "maximum_worker_rss_mib": 3501.03125
+    },
+    {
+      "iteration": 4,
+      "input_path": "outputs/hpc/common-step18-precision-20260924/maps/state_0.dat",
+      "input_sha256": "a1a78866d8410a3fc0c6f92ee760e4dc5ad58866587e8675c59ec5c50cab09b7",
+      "output_path": "outputs/hpc/common-step18-precision-20260924/maps/state_1.dat",
+      "output_sha256": "d10d528fa2833938e59fcdd88b6946819d38981677a10eae5d2d5e5907742258",
+      "wall_s": 155.24893721565604,
+      "residual": 0.00008432702035321237,
+      "boundary_l1": 0.00014462180022974797,
+      "boundary_bolometric": 0.00014334942532205885,
+      "maximum_worker_rss_mib": 3500.125
+    }
+  ],
+  "stderr": ""
+}

@@ -15,3 +15,9 @@
 Mac59项0.89秒、Linux59项18.29秒通过，含无资格来源拒绝、4张内层未过不派第5张、物质域失败停在4张、有效情况下仅8张2pairs且不提升接受数的回归。bash语法/diff检查通过。数值提交df762ac23ef5b49c57665245fc452c6909489df4，双端干净；Mac和学校pre-step18-precision.bundle备份完成。GitHub首次push网络SSL失败，ls-remote核实仍旧SHA后重试成功，没有force。
 
 76405于10:10:54启动，anode02，32CPU128GiB16worker，4h上限到14:10:54。1分38秒时仍preparing、stderr空，初始化散列不当成worker计算进度。只读watcher step18-precision-76405最长5h、outputs/review-20260924/scheduler-76405保存终态；定时审阅已切换76405，ACTIVE30分钟，无变化静默。
+
+## 10:45第一组反馈进行中
+
+首4张残差9.718864134e-5、9.263357832e-5、8.840626162e-5、8.432702035e-5，全部低于原1e-4；边界L1和bolometric均低于1e-3且继续下降。作业RUNNING，after_maps=4、status=feedback，无active_map，stderr空。前一态76/76块、complete、state_gate_passed=true，累计worker批墙钟342.172秒、原生峰3943.820MiB。后一态64/76块，running，累计批墙钟287.265秒，完整态门尚未给出。
+
+滚动读取时已有141份进程回执，退出码均0、内存门通过，/proc最大4039164KiB。清单与回执不是原子快照，回执数量可领先清单提交，不能据此宣布整个pair完整。尚无反馈summary/物质门判决；不宣称加热或正气体热能通过，不接受18。未追加作业或改变运行代码，等待既有条件批次自行判定是否进入第5–8张。
