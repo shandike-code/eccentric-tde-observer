@@ -22,3 +22,11 @@ map4final到8final向量差三范数0.0911498895062219/0.005186556857382897/0.03
 备份`pre-step20-review.bundle`与`automation-before-step20-review.toml`。新审计/确认驱动/测试另命名，旧代码不改。初始新驱动草稿的机械替换误改了exact_trial的历史导入路径，在逐行diff审阅时已修回`common_step18_backtrack`，尚未测试或部署前即纠正，未产生任何错误科学作业。
 
 本地71项测试通过（0.87秒），覆盖源物质/种子/方向/幅度/时间层身份、零控制禁接受、顺序失败停止、资源与端点保留；shell语法和diff检查通过。Markdown只读检查仍为同样6份历史lecture，日志`confirmation20-markdown-legacy-check.log`保留，未改旧文件、不宣称全库格式通过。
+
+## 确认批次76727已启动
+
+Linux同组71tests通过（15.32秒），学校备份`/home/scc/pb24511938/pre-confirmation20.bundle`。数值提交`0350808fa2cd48f57ab54b5698bda104dd64e33a`已Mac/学校/GitHub一致；GitHub推送再次报HTTP2错误，但ls-remote确认远端实际已更新，未强推或改代理。
+
+76727于21:24:59提交、21:25:00在anode05启动，cpu_long32CPU/128GiB/16worker，4h至2026-09-25 01:25:00。21:25:18快照RUNNING/18秒、preparing、declaration不存在、stderr空，不能据此宣布native预检或map已完成。启动证据`handoff/evidence/20260924-confirmation20-76727-start.json`，counter19/new0。
+
+只读watcher tmux `confirmation20-76727`、18000秒，终态目标`outputs/review-20260924/scheduler-76727/scheduler-terminal.json`；不取消/重交。定时跟进改为监督本批，不再监督已完成76639。整批预计1–2小时只是参考近期成本，任一门失败停止，全部通过仍需Mac独立审计才能接受20。
