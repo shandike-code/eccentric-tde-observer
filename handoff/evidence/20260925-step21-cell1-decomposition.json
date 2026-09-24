@@ -1,0 +1,56 @@
+{
+  "cell_index": 1,
+  "component_order": [
+    "ln thermal energy",
+    "ln HII/HI",
+    "ln HeII/HeI",
+    "ln HeIII/HeI"
+  ],
+  "squared_norm_change_components": [
+    -0.15614218037306138,
+    0.0027838264148451752,
+    0.00016237968939892666,
+    0.2452006716349614
+  ],
+  "squared_norm_change_total": 0.09200469736614411,
+  "within_pair08_cell_vector_drift": 7.027256476016373e-05,
+  "drift_is_error_bound": false,
+  "states": {
+    "base": {
+      "temperature_k": 32807.68421122634,
+      "hydrogen_fraction": [
+        1.808405704073479e-07,
+        0.9999998191594296
+      ],
+      "helium_fraction": [
+        0.00023255749011540203,
+        0.9997474992391606,
+        1.994327072396046e-05
+      ]
+    },
+    "trial": {
+      "temperature_k": 33452.359328430284,
+      "hydrogen_fraction": [
+        1.8014653391240643e-07,
+        0.9999998198534661
+      ],
+      "helium_fraction": [
+        0.00023249528933194766,
+        0.9997474215118786,
+        2.0083198789468286e-05
+      ]
+    },
+    "response_target": {
+      "temperature_k": 391271.3346637417,
+      "hydrogen_fraction": [
+        1.0981119568334559e-07,
+        0.9999998901888044
+      ],
+      "helium_fraction": [
+        0.0002241505450873187,
+        0.9997203579089743,
+        5.549154593840369e-05
+      ]
+    }
+  }
+}
