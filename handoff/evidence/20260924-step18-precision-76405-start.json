@@ -1,0 +1,19 @@
+{
+  "job_id": 76405,
+  "state": "RUNNING",
+  "start_time": "2026-09-24T10:10:54+08:00",
+  "node": "anode02",
+  "cpus": 32,
+  "memory_gib": 128,
+  "workers": 16,
+  "wall_limit": "04:00:00",
+  "end_limit": "2026-09-24T14:10:54+08:00",
+  "run": "outputs/hpc/common-step18-precision-20260924",
+  "numeric_commit": "df762ac23ef5b49c57665245fc452c6909489df4",
+  "initial_status": "preparing",
+  "stderr_empty_at_elapsed": "00:01:38",
+  "mac_tests": "59 passed in 0.89s",
+  "linux_tests": "59 passed in 18.29s",
+  "watcher": "step18-precision-76405",
+  "heartbeat": "ACTIVE; 30min"
+}

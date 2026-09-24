@@ -9,3 +9,9 @@
 决策：值得开展一次固定物质、有预算条件的精度诊断。不是改物理模型或缩小dt，也不放宽原门。独立新run先4map；若末两态仍未过原门，停；通过且有下降才反馈。物理/资源有效时再4map和第二对反馈，上限8新map2pairs，不自动接受18。此诊断排查内层精度不足；不外推“再N张必过”，也不把未执行反馈作为模型无解证据。
 
 新协议common-step18-precision-v1.md、新驱动common_step18_precision.py/.sbatch；旧run和已冻结文件保持不动。Mac pre-step18-precision.bundle已备份；测试、学校备份、同步和提交情况随后补记。
+
+## 执行记录
+
+Mac59项0.89秒、Linux59项18.29秒通过，含无资格来源拒绝、4张内层未过不派第5张、物质域失败停在4张、有效情况下仅8张2pairs且不提升接受数的回归。bash语法/diff检查通过。数值提交df762ac23ef5b49c57665245fc452c6909489df4，双端干净；Mac和学校pre-step18-precision.bundle备份完成。GitHub首次push网络SSL失败，ls-remote核实仍旧SHA后重试成功，没有force。
+
+76405于10:10:54启动，anode02，32CPU128GiB16worker，4h上限到14:10:54。1分38秒时仍preparing、stderr空，初始化散列不当成worker计算进度。只读watcher step18-precision-76405最长5h、outputs/review-20260924/scheduler-76405保存终态；定时审阅已切换76405，ACTIVE30分钟，无变化静默。
