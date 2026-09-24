@@ -1,0 +1,90 @@
+{
+  "accepted_outer_steps": 17,
+  "previous_accepted_outer_steps": 16,
+  "decision": "confirmed finite nonlinear step under the preregistered common-domain criteria",
+  "candidate": "outputs/hpc/common-confirmation17-20260924/confirm2/trial_material.npz",
+  "accepted_target_is_response": false,
+  "coupled_column_converged": false,
+  "whole_disk_intensity_ready": false,
+  "physical_time_advanced": false,
+  "job_id": 76260,
+  "claims": [
+    {
+      "path": "outputs/hpc/common-confirmation17-20260924/confirm1/trial_material.npz",
+      "size_bytes": 27774,
+      "sha256": "962eb4617d6f6d112f5dff903fca1424a7322149e6c662dd53169cc947171249"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation17-20260924/confirm1/common-feedback/feedback_protocol.json",
+      "size_bytes": 247879,
+      "sha256": "db50364d5ce71ae6961749865022c1b1785d7393bd6143c1a4ca886b10cc9f12"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation17-20260924/confirm1/common-feedback/feedback_summary.json",
+      "size_bytes": 3613,
+      "sha256": "b936556af3ee05e455eb6dd055c8ad61d5b1d0099386b61dd38b413f5f8d38ef"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation17-20260924/confirm1/common-feedback/final_response.npz",
+      "size_bytes": 12626,
+      "sha256": "6eb102f85d9ac8ef0c52289365e265ef21eafc35b67409c142b7aad4fb823413"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation17-20260924/confirm1/decision.json",
+      "size_bytes": 794,
+      "sha256": "768c1207849e03fe3446d80681e643390e210eb7bda3f3d526e3b3941653a519"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation17-20260924/confirm2/trial_material.npz",
+      "size_bytes": 27774,
+      "sha256": "962eb4617d6f6d112f5dff903fca1424a7322149e6c662dd53169cc947171249"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation17-20260924/confirm2/common-feedback/feedback_protocol.json",
+      "size_bytes": 247877,
+      "sha256": "01c5aa10f2bf96757ca5aac4495dd8cdda677ecc95bb5cde9dc13015e3e6674a"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation17-20260924/confirm2/common-feedback/feedback_summary.json",
+      "size_bytes": 3605,
+      "sha256": "c07f9ec15d1e5323f0709434d552a8e19e7daa8b6e40b37a587c89aa0cb534a4"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation17-20260924/confirm2/common-feedback/final_response.npz",
+      "size_bytes": 12626,
+      "sha256": "643935a455b6271c6076b2a3175e927ebc529c86ff007d0b97c422fc9de664d8"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation17-20260924/confirm2/decision.json",
+      "size_bytes": 792,
+      "sha256": "943def6206164516bd11efddbcd6812f925a4374f113b490f0a26b2f771bfeef"
+    },
+    {
+      "path": "handoff/evidence/20260924-common-confirmation17-review.json",
+      "size_bytes": 9202,
+      "sha256": "629caa41f0627dff31e42fdf8917797f5becc46ba1db5359f926d18918d13f03"
+    },
+    {
+      "path": "handoff/evidence/20260924-confirmation17-76260-terminal.json",
+      "size_bytes": 1598,
+      "sha256": "31340a521d68189570bb38518ce422779e12f135133c02f33114b0df4359951d"
+    }
+  ],
+  "audit_archive": {
+    "path": "outputs/hpc/common-confirmation17-20260924/archives/complete-1790185634378054663.tar.gz",
+    "size_bytes": 222988430,
+    "sha256": "e2ded86fa0629e0cb8e73a3389cbd504db78a8ca3e2c2ea6462e5fc681b8ad05"
+  },
+  "same_material_drift": {
+    "l2": 0.053737084314973226,
+    "mass_weighted": 0.003178624375722636,
+    "maximum_cell": 0.02009760892743177
+  },
+  "baseline_drift": {
+    "l2": 0.029273583557415533,
+    "mass_weighted": 0.0015882241631102563,
+    "maximum_cell": 0.009789219366492566
+  },
+  "drift_is_error_bound": false,
+  "cross_platform_decode_note": "exact files/encoded identity; Mac decode and new cross-norm recomputation tolerance 8 eps; largest cross-norm difference 2.22e-16; Linux science gates unchanged"
+}
