@@ -48,3 +48,15 @@ Mac82项1.17秒、Linux82项19.39秒通过；shell语法和diff检查通过。�
 两端点气体热能最低5.681362200e12/5.808497972e12 erg/g；完整态12检查均过。152反馈进程回执exit0和memorypass，最大/proc4038812KiB，两反馈态批墙钟328.069/299.309秒，stderr空。此为平台中期记录，独立Mac逐块审计仍待整批结束。
 
 12:41作业RUNNING，half已提交4张，active_map=5且首批16块已提交；quarter子state尚不存在。父status暂留feedback/half/after_maps=4是代码只在整张提交后更新父进度造成的滞后，实际子状态和块回执证明第5张在跑，不是反馈停滞或重复计算。按原协议，half首对加热未过但物理/资源有效，可继续该候选既定第5–8张；只有half最终反馈解决加热/内层/噪声等但仍收缩失败，才可能进入quarter。不改代码、不扩预算、不重交，正式接受17、新增0。
+
+## 13:21终态复核与下一批决策
+
+76434于13:07:59 COMPLETED/0:0，运行1:35:28；12map、3pairs完成，quarter未运行。Mac下载complete-1790226442986437199.tar.gz（223487037bytes，SHA256 82ac83734f949e9e88449adcf0a328b60647468aa9b429181168ae36210ccdb8），新审计`operations/review_common_step18_backtrack.py`核验4629文件、456反馈和912map回执。全文件SHA、源/编码/方向/alpha、逐块代数替换与汇总、half归层、完整态、能量账本/响应编码、原门和四组合均复现。代码未产生warning或NaN/Inf；六端点正气体热能，最低5.681362200093e12 erg/g；最大/proc4043584KiB，map计算累计1962.944701秒，未将其冒充总作业墙钟。图已查看，保留低编号峰与96–127的尾部变化，不擅自给half编号贴表面/中面标签。
+
+half08原16门全过：原子加热7.887543519852317e-4，direct/formal同尺度；噪声比0.03646955517357。对新control四组合最不利L2 0.9748437352、mass 0.9136425366、max 0.9940181111。final范数8.49936044243 / 0.276239551523 / 2.71987198725。half04仍13/16，失败原样保留，不追认。
+
+同一half物质的map4→8 final残差向量差范数0.235429918923 / 0.0264673531991 / 0.0521759210745，只是有限间隔漂移，不是误差界；最差单元收缩幅度仍很小。支持有限候选不允许跳过同态确认。
+
+下一步采用`common-confirmation-step18-v1.md`：新control4map，再同一1/128候选2+2map及3pairs，任一失败止步，全部通过仍需Mac独立审计，接受数保持17。未改变物理dt、门限或共同频域算子。备份`outputs/review-20260924/pre-backtrack-review.bundle`及`automation-before-backtrack-review.toml`。新脚本只扩展审计和运行控制，旧src/scripts/hpc和声明文件不改。
+
+确认驱动本地75tests通过（0.75秒），涵盖身份/物理dt/错误方向拒绝、协议祖先端点不误标、零控制禁有限接受、条件顺序和完整态。bash语法与git diff检查通过。旧Markdown检查器只读执行仍报6份既有lecture文件（清单保存在`confirmation18-markdown-legacy-check.log`）；未用write改历史讲义，此项不宣称全库通过。新确认从原反馈模板生成协议并核对固定sources，避免把共同域wrapper误写成legacy adapter；这不改变反馈算子。
