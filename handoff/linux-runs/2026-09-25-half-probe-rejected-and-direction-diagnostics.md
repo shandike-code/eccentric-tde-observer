@@ -35,3 +35,9 @@ half4→8全场残差向量差三范数0.06322597155843437/0.0035915583946810993
 Mac124tests通过（0.95秒），覆盖两投影在全单元的分解、原方向分母/物理时间保持、布居方向固定热能而非温度、错误幅度/方向/解码/来源与条件停止。首轮一项越界测试输入只造成约48%温升，未超过50%门，程序正确未拒绝；修正测试为明确越界后全过，数值阈值/物理核未改。shell语法与diff检查通过；历史讲义未改、未宣称全库格式通过。
 
 首次暂存后diff检查发现CSV默认CRLF被识别为行尾空白；已显式设CSV writer使用LF并转换这份CSV，数值未变，部署前再次核diff。
+
+## 方向批次启动
+
+Linux124tests通过（16.23秒），shell与跨两个新提交diff检查通过。数值提交`9e548db66c7ba4d8e13f848398d1a0aacada9ef1`三端一致后提交；学校备份`/home/scc/pb24511938/pre-step21-directions.bundle`。
+
+作业76905于02:24:48提交、02:24:49在anode18启动，32CPU/128GiB、4h至06:24:49。run `outputs/hpc/common-step21-directions-20260925`，启动证据`20260925-step21-directions-76905-start.json`；初始preparing且stderr空，不据此宣称native预检或map完成。watcher tmux `step21-directions-76905`，18000秒，终态目标`outputs/review-20260925/scheduler-76905/scheduler-terminal.json`。
