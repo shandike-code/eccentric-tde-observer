@@ -74,3 +74,11 @@ half08原16门全过：原子加热7.887543519852317e-4，direct/formal同尺度
 76434 half pair08对更新基态四组合仍全收缩，最不利L2 0.9730077084 / mass 0.9057201946 / maximum cell 0.9938603843。基态final三范数8.7401852028 / 0.30609477865 / 2.7367510944；较上一基态仍有漂移，不解释为固定点误差界。此处只是学校侧中期快照，完整Mac逐块审计在终态后执行。
 
 父状态mapping/confirm1，但子state为initializing、history0、active_map=None，因此只能报告首轮确认初始化，不能说确认map或反馈已过。confirm2未开始、接受数17、新增0。按既定4+2+2预算继续，不新提交、不扩预算。证据`20260924-confirmation18-76469-control-progress.json`；备份`pre-confirm18-control-progress.bundle`及`automation-before-confirm18-control-progress.toml`。本次没有科学代码改动或新科学运行。
+
+## 14:39–14:40第一轮确认通过，第二轮反馈计算中
+
+76469仍RUNNING，首查已1:09:40，stderr空。confirm1两map完成，末辐射res3.925838726388e-5；原16门全过，原子heat4.751954201532168e-4、noise0.02788431590746，对固定r17三范数比0.9762501327 / 0.9165068743 / 0.9942919285。对本批control四组合最不利0.9731186567 / 0.9039704187 / 0.9939475490，均收缩。
+
+confirm1两端点气体热能最小6.176483838083e12 / 6.229607580124e12 erg/g，完整态12检查全过，152进程回执exit0/memory pass，/proc最高4035084KiB、反馈态批墙钟305.0935515 / 301.0629851秒。final范数8.501401356257 / 0.276022745916 / 2.720110528726；与76434 half08 final相比L2及最大单元小幅回升、质量范数小幅下降，不能概括为全部单调改善。
+
+confirm2两map也已完成，末res3.505033708364e-5；父status=feedback/confirm2。14:40快照previous反馈32/76块，32回执exit0/memory pass、最高4034216KiB，尚无final反馈/summary/postcheck/decision，不能推断本轮通过。接受仍17/new0，不新交、不扩预算。完整小归档待终态后Mac独立审阅。本次只保存中期学校证据，不修改运行代码。备份pre-confirm18-first-pair.bundle及automation-before-confirm18-first-pair.toml，证据20260924-confirmation18-76469-first-pair-progress.json。
