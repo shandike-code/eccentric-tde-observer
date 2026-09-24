@@ -1,0 +1,157 @@
+{
+  "verified_files": 1233,
+  "maps": 8,
+  "map_blocks": 608,
+  "independent_process_receipts": 608,
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/common-step18-20260924/maps/state_0.dat",
+      "input_sha256": "1129ec6aa88968a471c7620f0bb394c6f7b856b0c6f485c6bcc44ff6c7b6b1b7",
+      "output_path": "outputs/hpc/common-step18-20260924/maps/state_1.dat",
+      "output_sha256": "2cf7d7abe11fdb325c5bec975335f991f655c07ab3a6ec54dec8860a819854ed",
+      "wall_s": 171.93883322831243,
+      "residual": 0.00017400408994653355,
+      "boundary_l1": 0.0006514684784987392,
+      "boundary_bolometric": 0.00040166497725651663,
+      "maximum_worker_rss_mib": 3500.8359375
+    },
+    {
+      "iteration": 2,
+      "input_path": "outputs/hpc/common-step18-20260924/maps/state_1.dat",
+      "input_sha256": "2cf7d7abe11fdb325c5bec975335f991f655c07ab3a6ec54dec8860a819854ed",
+      "output_path": "outputs/hpc/common-step18-20260924/maps/state_2.dat",
+      "output_sha256": "dd60d1c2effaf3b30551c0da0b22ebca0cfa573785c6855cebe19a0d84391f0d",
+      "wall_s": 171.80575718637556,
+      "residual": 0.00015354611521039337,
+      "boundary_l1": 0.0005080636907803302,
+      "boundary_bolometric": 0.0003411550795053078,
+      "maximum_worker_rss_mib": 3499.39453125
+    },
+    {
+      "iteration": 3,
+      "input_path": "outputs/hpc/common-step18-20260924/maps/state_2.dat",
+      "input_sha256": "dd60d1c2effaf3b30551c0da0b22ebca0cfa573785c6855cebe19a0d84391f0d",
+      "output_path": "outputs/hpc/common-step18-20260924/maps/state_0.dat",
+      "output_sha256": "1c047bf76617b6262befd95cff6312df54c11630d831668bc294847c2a9148a9",
+      "wall_s": 172.84862767066807,
+      "residual": 0.000136667329919229,
+      "boundary_l1": 0.00041168097268408246,
+      "boundary_bolometric": 0.0003198932216560461,
+      "maximum_worker_rss_mib": 3496.96875
+    },
+    {
+      "iteration": 4,
+      "input_path": "outputs/hpc/common-step18-20260924/maps/state_0.dat",
+      "input_sha256": "1c047bf76617b6262befd95cff6312df54c11630d831668bc294847c2a9148a9",
+      "output_path": "outputs/hpc/common-step18-20260924/maps/state_1.dat",
+      "output_sha256": "7d7d3b11c87851f7da1d56cbb73a53c01d7849a98aebd622ddaec39600dd6289",
+      "wall_s": 153.4775092881173,
+      "residual": 0.0001285423515233917,
+      "boundary_l1": 0.00034469378185710816,
+      "boundary_bolometric": 0.00029367700123148133,
+      "maximum_worker_rss_mib": 3499.2421875
+    },
+    {
+      "iteration": 5,
+      "input_path": "outputs/hpc/common-step18-20260924/maps/state_1.dat",
+      "input_sha256": "7d7d3b11c87851f7da1d56cbb73a53c01d7849a98aebd622ddaec39600dd6289",
+      "output_path": "outputs/hpc/common-step18-20260924/maps/state_2.dat",
+      "output_sha256": "ea538c1efa163fde950bd56823860ecb9db251dad7b5692c5dc5f935eef46bc9",
+      "wall_s": 148.03239038493484,
+      "residual": 0.00012026198968381991,
+      "boundary_l1": 0.00029639111016515013,
+      "boundary_bolometric": 0.0002672089869988309,
+      "maximum_worker_rss_mib": 3500.25390625
+    },
+    {
+      "iteration": 6,
+      "input_path": "outputs/hpc/common-step18-20260924/maps/state_2.dat",
+      "input_sha256": "ea538c1efa163fde950bd56823860ecb9db251dad7b5692c5dc5f935eef46bc9",
+      "output_path": "outputs/hpc/common-step18-20260924/maps/state_0.dat",
+      "output_sha256": "10988a6513e2cb8880ca06773949519f87dcb3832e9e7a4b14f4108f82ae70bf",
+      "wall_s": 148.42537682689726,
+      "residual": 0.00011347058147614764,
+      "boundary_l1": 0.00025984942671866034,
+      "boundary_bolometric": 0.00024260718871168177,
+      "maximum_worker_rss_mib": 3500.26171875
+    },
+    {
+      "iteration": 7,
+      "input_path": "outputs/hpc/common-step18-20260924/maps/state_0.dat",
+      "input_sha256": "10988a6513e2cb8880ca06773949519f87dcb3832e9e7a4b14f4108f82ae70bf",
+      "output_path": "outputs/hpc/common-step18-20260924/maps/state_1.dat",
+      "output_sha256": "55ddfc2054c70b3ab4830b9f037fd10ba1f91d13cb5008c0e3c871728124bdde",
+      "wall_s": 149.98665768653154,
+      "residual": 0.00010759866424057054,
+      "boundary_l1": 0.0002310423520188254,
+      "boundary_bolometric": 0.0002205311647309369,
+      "maximum_worker_rss_mib": 3500.17578125
+    },
+    {
+      "iteration": 8,
+      "input_path": "outputs/hpc/common-step18-20260924/maps/state_1.dat",
+      "input_sha256": "55ddfc2054c70b3ab4830b9f037fd10ba1f91d13cb5008c0e3c871728124bdde",
+      "output_path": "outputs/hpc/common-step18-20260924/maps/state_2.dat",
+      "output_sha256": "d43bdbe0854d3ff74db38c27257de4f36172f40fa61e66dc8810cd11def76395",
+      "wall_s": 149.60852570086718,
+      "residual": 0.00010218293345179629,
+      "boundary_l1": 0.0002075932936969683,
+      "boundary_bolometric": 0.00020100030647023266,
+      "maximum_worker_rss_mib": 3502.57421875
+    }
+  ],
+  "maximum_proc_kib": 3586636,
+  "maximum_native_mib": 3502.57421875,
+  "total_map_wall_s": 1266.1236779727042,
+  "map_wall_range_s": [
+    148.03239038493484,
+    172.84862767066807
+  ],
+  "retained_pairs": {
+    "4": {
+      "previous": {
+        "path": "outputs/hpc/common-step18-20260924/endpoints-map04/previous.dat",
+        "size_bytes": 10099884032,
+        "sha256": "dd60d1c2effaf3b30551c0da0b22ebca0cfa573785c6855cebe19a0d84391f0d"
+      },
+      "final": {
+        "path": "outputs/hpc/common-step18-20260924/endpoints-map04/final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "1c047bf76617b6262befd95cff6312df54c11630d831668bc294847c2a9148a9"
+      },
+      "mapped_final": {
+        "path": "outputs/hpc/common-step18-20260924/endpoints-map04/mapped_final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "7d7d3b11c87851f7da1d56cbb73a53c01d7849a98aebd622ddaec39600dd6289"
+      }
+    },
+    "8": {
+      "previous": {
+        "path": "outputs/hpc/common-step18-20260924/endpoints-map08/previous.dat",
+        "size_bytes": 10099884032,
+        "sha256": "10988a6513e2cb8880ca06773949519f87dcb3832e9e7a4b14f4108f82ae70bf"
+      },
+      "final": {
+        "path": "outputs/hpc/common-step18-20260924/endpoints-map08/final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "55ddfc2054c70b3ab4830b9f037fd10ba1f91d13cb5008c0e3c871728124bdde"
+      },
+      "mapped_final": {
+        "path": "outputs/hpc/common-step18-20260924/endpoints-map08/mapped_final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "d43bdbe0854d3ff74db38c27257de4f36172f40fa61e66dc8810cd11def76395"
+      }
+    }
+  },
+  "retained_dat_rehashed_on_mac": false,
+  "candidate_identity_verified": true,
+  "accepted_outer_steps": 17,
+  "archive": {
+    "path": "outputs/hpc/common-step18-20260924/archives/complete-1790215143410683992.tar.gz",
+    "size_bytes": 670443,
+    "sha256": "9f2ffa225406d8e0a339be981f1bb5a6b618095f6976c49a2feb0bbcb2012382"
+  },
+  "new_material_steps": 0,
+  "feedback_evaluated": false
+}
