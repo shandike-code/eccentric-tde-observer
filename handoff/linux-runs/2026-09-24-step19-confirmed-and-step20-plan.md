@@ -25,3 +25,11 @@ confirm1final三范数8.326871088189/0.268298244616/2.709449685973；confirm2fin
 下一批详见`handoff/protocols/common-outer-step20-v1.md`：新基态为已接受trial x19，r19为本次confirm2 final响应；固定1/128幅度，最多8map/2pairs，第4/8张各审阅一次，支持也不自动接受20。不减dt，不回到无依据的1/64，不提前扫全轨道。预计本批1–2小时；仍无可用于整盘光谱的自洽大气强度，也没有证据断言模型无解。
 
 本地75项测试通过（0.99秒），覆盖错误接受来源/旧幅度/方向/分母/物理时间层、trust与完整态/保留端点等已有控制。shell语法和diff检查通过。旧Markdown只读检查仍列出同样6份历史lecture，日志`step20-markdown-legacy-check.log`已保留；未改这些文件，不宣称全库格式通过。
+
+## 第20步已启动
+
+Linux同组75tests通过（18.78秒）。数值提交`8d5fa03e380adebc27e2ad75344fbab4008b63c9`已在Mac/学校/GitHub一致；push曾报HTTP2错误，随后ls-remote确认远端实际已更新，未强推或修改全局代理。学校额外备份`/home/scc/pb24511938/pre-step20.bundle`。三端同步、工作树干净后提交76639。
+
+76639于19:20:23在anode17启动，32CPU/128GiB/16worker、cpu_long，4小时至23:20:23。19:20:38时preparing且declaration未写；19:22:58时RUNNING/2:35，父仍preparing但declaration已存在，stderr空。未核child完成块数，不能据此宣称第一张map已完成。启动证据`handoff/evidence/20260924-step20-76639-start.json`。
+
+只读tmux watcher `step20-76639`已核在运行，18000秒上限，输出`outputs/review-20260924/scheduler-76639/scheduler-terminal.json`。30分钟heartbeat恢复ACTIVE并改为监督本批；只有完成、实质失败或需要重连才通知，不改变Slurm的有限预算。新批预计1–2小时，旧确认19已接受，新步20未接受。
