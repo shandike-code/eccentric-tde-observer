@@ -1,0 +1,253 @@
+{
+  "job_id": 76727,
+  "observed_unix": 1790258371.2048166,
+  "scontrol": "JobId=76727 JobName=tde-confirm20 UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:34:31 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-09-24T21:24:59 EligibleTime=2026-09-24T21:24:59 AccrueTime=2026-09-24T21:24:59 StartTime=2026-09-24T21:25:00 EndTime=2026-09-25T01:25:00 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-24T21:25:00 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:420675 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode05 BatchHost=anode05 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/common_confirmation_step20.sbatch SubmitLine=sbatch --parsable operations/common_confirmation_step20.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-confirm20-76727.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-confirm20-76727.out TresPerTask=cpu=32\n",
+  "status": {
+    "status": "mapping",
+    "updated_unix": 1790258166.1395884,
+    "accepted_outer_steps": 19,
+    "new_material_steps": 0,
+    "case": "confirm1",
+    "budget": 2
+  },
+  "states": {
+    "control": {
+      "config_sha256": "ebdd0c28c681428bdd5e6d064832626086d48e7de5b635b3f8412985665d0a50",
+      "status": "radiation",
+      "initialization_blocks": [],
+      "history": [
+        {
+          "iteration": 1,
+          "input_path": "outputs/hpc/common-confirmation20-20260924/control/state_0.dat",
+          "input_sha256": "7367715e274402ce458b7f422e142e28f6375da34ab6c59bc55556a8651d73fb",
+          "output_path": "outputs/hpc/common-confirmation20-20260924/control/state_1.dat",
+          "output_sha256": "7ea6292d4883bc6acec17c72fed97de69ba9512d40ef798d2dd7c77e51622b00",
+          "wall_s": 148.28581198304892,
+          "residual": 0.000011337399667888426,
+          "boundary_l1": 0.00007558299751800548,
+          "boundary_bolometric": 0.00007517973444638471,
+          "maximum_worker_rss_mib": 3498.58984375
+        },
+        {
+          "iteration": 2,
+          "input_path": "outputs/hpc/common-confirmation20-20260924/control/state_1.dat",
+          "input_sha256": "7ea6292d4883bc6acec17c72fed97de69ba9512d40ef798d2dd7c77e51622b00",
+          "output_path": "outputs/hpc/common-confirmation20-20260924/control/state_2.dat",
+          "output_sha256": "ab600b8e08dcfd1d36d6053a6a5d2380da5ab2ca4680507154655087b58c8df0",
+          "wall_s": 146.40841900371015,
+          "residual": 0.000011065463539407564,
+          "boundary_l1": 0.00007060387470469053,
+          "boundary_bolometric": 0.00007032173927221227,
+          "maximum_worker_rss_mib": 3496.67578125
+        },
+        {
+          "iteration": 3,
+          "input_path": "outputs/hpc/common-confirmation20-20260924/control/state_2.dat",
+          "input_sha256": "ab600b8e08dcfd1d36d6053a6a5d2380da5ab2ca4680507154655087b58c8df0",
+          "output_path": "outputs/hpc/common-confirmation20-20260924/control/state_0.dat",
+          "output_sha256": "c2970fc36a51dbe6005e85b94baab8258074915ff2ebc8a256abce8e50366045",
+          "wall_s": 146.17544138804078,
+          "residual": 0.000010801305396203449,
+          "boundary_l1": 0.00006614471131094147,
+          "boundary_bolometric": 0.00006594479610425365,
+          "maximum_worker_rss_mib": 3498.84765625
+        },
+        {
+          "iteration": 4,
+          "input_path": "outputs/hpc/common-confirmation20-20260924/control/state_0.dat",
+          "input_sha256": "c2970fc36a51dbe6005e85b94baab8258074915ff2ebc8a256abce8e50366045",
+          "output_path": "outputs/hpc/common-confirmation20-20260924/control/state_1.dat",
+          "output_sha256": "21f37b1cecda16a6c0a199aefa77a79325c936bffed80c9a46aea48a91953fc9",
+          "wall_s": 146.26024980284274,
+          "residual": 0.00001054475663197474,
+          "boundary_l1": 0.00006212850136248069,
+          "boundary_bolometric": 0.0000619846715868868,
+          "maximum_worker_rss_mib": 3502.60546875
+        }
+      ],
+      "slots": [
+        "outputs/hpc/common-confirmation20-20260924/control/state_0.dat",
+        "outputs/hpc/common-confirmation20-20260924/control/state_1.dat",
+        "outputs/hpc/common-confirmation20-20260924/control/state_2.dat"
+      ],
+      "current_slot": 1,
+      "current_sha256": "21f37b1cecda16a6c0a199aefa77a79325c936bffed80c9a46aea48a91953fc9",
+      "trial_sha256": "88d276b5f316473d975d205112f9984c28bc82059b09662daac4e94603fd821f",
+      "active_map_summary": null
+    },
+    "confirm1": {
+      "config_sha256": "64d4fe74e89eb4a8d4deb528c91880cd691afd4db62614f2c4e233358d2485bf",
+      "status": "initializing",
+      "initialization_blocks": [],
+      "history": [],
+      "slots": [
+        "outputs/hpc/common-confirmation20-20260924/confirm1/state_0.dat",
+        "outputs/hpc/common-confirmation20-20260924/confirm1/state_1.dat",
+        "outputs/hpc/common-confirmation20-20260924/confirm1/state_2.dat"
+      ],
+      "current_slot": 0,
+      "active_map_summary": null
+    },
+    "confirm2": null
+  },
+  "control_summary": {
+    "gate_checks": {
+      "last_two_photoionization_pass": true,
+      "last_two_total_recombination_pass": true,
+      "last_two_atomic_heating_pass": true,
+      "last_two_direct_heating_pass": true,
+      "last_two_formal_heating_pass": true,
+      "inner_pair_ready": true,
+      "physical_response_pass": true
+    },
+    "comparison": {
+      "photoionization_volume_l1": [
+        0.0000016698499543656578,
+        0.000007420075483487729,
+        5.741891893358124e-10
+      ],
+      "total_recombination_volume_l1": [
+        4.2678992173152664e-8,
+        6.3032881505200214e-9,
+        3.1886411735097888e-15
+      ],
+      "atomic_heating_volume_l1": 0.00012324698589316014,
+      "direct_heating_volume_l1": 0.00012324698589013237,
+      "formal_heating_volume_l1": 0.00012324698589005054
+    },
+    "material_response_failures": {},
+    "decision": {
+      "baseline_control_only": true,
+      "finite_trial_accepted_as_one_nonlinear_step": false,
+      "accept_dynamic_nlte_solution": false
+    },
+    "protocol_sha256": "47bd542edc85fb5614c97ae3745a402f3eedd4175b9c5d9acd2b497f700ef48c"
+  },
+  "control_decision": {
+    "physics_pair_passed": true,
+    "promoted": false,
+    "prior_candidates": {
+      "pair08": {
+        "ratios": {
+          "previous_vs_previous": {
+            "l2": 0.9799286796544463,
+            "mass_weighted": 0.973782550873061,
+            "maximum_cell": 0.998032805100059
+          },
+          "previous_vs_final": {
+            "l2": 0.9797159210049363,
+            "mass_weighted": 0.9733806257271336,
+            "maximum_cell": 0.998011470554423
+          },
+          "final_vs_previous": {
+            "l2": 0.9798420333249065,
+            "mass_weighted": 0.9736291241099152,
+            "maximum_cell": 0.9980555606655376
+          },
+          "final_vs_final": {
+            "l2": 0.9796292934877412,
+            "mass_weighted": 0.9732272622903168,
+            "maximum_cell": 0.9980342256334651
+          }
+        },
+        "passed": true
+      }
+    },
+    "continue": true
+  },
+  "control_postcheck": {
+    "responses": {
+      "previous": {
+        "minimum_gas_erg_g": 6374365797152.031,
+        "failed_gas_cells": 0,
+        "full_state_checks": {
+          "block_count": true,
+          "frequency_ownership": true,
+          "positive_intensity": true,
+          "finite_arrays": true,
+          "positive_width": true,
+          "nonnegative_atomic_rates": true,
+          "direct_volume": true,
+          "formal_volume": true,
+          "formal_global": true,
+          "mirror": true,
+          "memory": true,
+          "wall": true
+        },
+        "maximum_native_mib": 3944.26171875,
+        "maximum_proc_kib": 4038924,
+        "state_wall_s": 304.91114330105484,
+        "norms": {
+          "l2": 8.335819597276675,
+          "mass_weighted": 0.2688021346967238,
+          "maximum_cell": 2.7098826281383452
+        }
+      },
+      "final": {
+        "minimum_gas_erg_g": 6405896961560.273,
+        "failed_gas_cells": 0,
+        "full_state_checks": {
+          "block_count": true,
+          "frequency_ownership": true,
+          "positive_intensity": true,
+          "finite_arrays": true,
+          "positive_width": true,
+          "nonnegative_atomic_rates": true,
+          "direct_volume": true,
+          "formal_volume": true,
+          "formal_global": true,
+          "mirror": true,
+          "memory": true,
+          "wall": true
+        },
+        "maximum_native_mib": 3942.63671875,
+        "maximum_proc_kib": 4037260,
+        "state_wall_s": 307.7383133582771,
+        "norms": {
+          "l2": 8.337629833981062,
+          "mass_weighted": 0.2689131275954502,
+          "maximum_cell": 2.7099405574470796
+        }
+      }
+    },
+    "gate_checks": {
+      "last_two_photoionization_pass": true,
+      "last_two_total_recombination_pass": true,
+      "last_two_atomic_heating_pass": true,
+      "last_two_direct_heating_pass": true,
+      "last_two_formal_heating_pass": true,
+      "inner_pair_ready": true,
+      "physical_response_pass": true
+    },
+    "comparison": {
+      "photoionization_volume_l1": [
+        0.0000016698499543656578,
+        0.000007420075483487729,
+        5.741891893358124e-10
+      ],
+      "total_recombination_volume_l1": [
+        4.2678992173152664e-8,
+        6.3032881505200214e-9,
+        3.1886411735097888e-15
+      ],
+      "atomic_heating_volume_l1": 0.00012324698589316014,
+      "direct_heating_volume_l1": 0.00012324698589013237,
+      "formal_heating_volume_l1": 0.00012324698589005054
+    },
+    "material_response_failures": {},
+    "pair_decision": {
+      "baseline_control_only": true,
+      "finite_trial_accepted_as_one_nonlinear_step": false,
+      "accept_dynamic_nlte_solution": false
+    },
+    "accepted_outer_steps_remain": 19,
+    "material_step_promoted": false,
+    "frequency_truncation_convergence_established": false
+  },
+  "confirm1_decision": null,
+  "feedback_process_receipts": 152,
+  "all_processes_ok": true,
+  "maximum_proc_kib": 4038924,
+  "stderr": "",
+  "watcher_alive": true
+}

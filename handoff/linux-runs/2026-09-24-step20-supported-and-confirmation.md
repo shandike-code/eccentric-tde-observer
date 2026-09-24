@@ -30,3 +30,13 @@ Linux同组71tests通过（15.32秒），学校备份`/home/scc/pb24511938/pre-c
 76727于21:24:59提交、21:25:00在anode05启动，cpu_long32CPU/128GiB/16worker，4h至2026-09-25 01:25:00。21:25:18快照RUNNING/18秒、preparing、declaration不存在、stderr空，不能据此宣布native预检或map已完成。启动证据`handoff/evidence/20260924-confirmation20-76727-start.json`，counter19/new0。
 
 只读watcher tmux `confirmation20-76727`、18000秒，终态目标`outputs/review-20260924/scheduler-76727/scheduler-terminal.json`；不取消/重交。定时跟进改为监督本批，不再监督已完成76639。整批预计1–2小时只是参考近期成本，任一门失败停止，全部通过仍需Mac独立审计才能接受20。
+
+## 21:59基态对照通过，第一轮确认初始化中
+
+76727仍RUNNING、32CPU/anode05、stderr空，watcher存活。21:59:31快照：control完成4张map，内层残差依次1.133739966789e-5、1.106546353941e-5、1.080130539620e-5、1.054475663197e-5；无active map。父case=confirm1/mapping，但child确切为initializing、history空；不能把父状态说成第一轮map完成。confirm2尚不存在。
+
+control七门全部通过，加热变化1.232469858932e-4；零位移对照未接受为有限物质步。76639pair08相对新control的四组合三范数全收缩，最不利L2/质量加权/最大单元比0.9799286796544463/0.973782550873061/0.9980555606655376，因此允许按既定顺序继续confirm1。
+
+control两端点最低气体热能6.374365797152031e12/6.405896961560273e12 erg/g，0失败单元；各12项完整态检查通过。152反馈进程回执exit0/memory门通过，峰/proc4038924KiB，原生3944.26171875MiB，两态累计worker批墙钟304.911143/307.738313秒。prev三范数8.335819597277/0.268802134697/2.709882628138，final8.337629833981/0.268913127595/2.709940557447，仍有小幅漂移。
+
+这是学校中期读数，未替代终态Mac逐块审阅。原r19和候选均不变，接受数19/new0；不追加map、不改门、不提交新作业。证据`20260924-confirmation20-76727-control-progress.json`；备份`pre-confirmation20-control-progress.bundle`、`automation-before-confirmation20-control-progress.toml`。本轮仅保存小记录，未改运行代码或旧数值工件。
