@@ -59,7 +59,7 @@ def analyze(full, probe, output):
     plt.close(fig)
     output.with_suffix('.json').write_text(json.dumps(record, indent=2, allow_nan=False)+'\n')
     with output.with_suffix('.csv').open('w') as f:
-        w=csv.writer(f);w.writerow(['cell', 'case', 'alpha', *labels, 'cell_norm']);w.writerows(rows)
+        w=csv.writer(f, lineterminator='\n');w.writerow(['cell', 'case', 'alpha', *labels, 'cell_norm']);w.writerows(rows)
     print(json.dumps(record, indent=2))
 
 
