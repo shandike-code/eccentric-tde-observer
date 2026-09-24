@@ -66,3 +66,11 @@ half08原16门全过：原子加热7.887543519852317e-4，direct/formal同尺度
 新作业76469于13:30:09在anode17 RUNNING，cpu_long 32CPU/128GiB/16worker，4小时至17:30:09，数值提交`ba5f86ed464fe567ae1451dd7e6e2021a9baac64`。Mac75tests 0.75秒、Linux75tests 19.47秒，shell与diff检查通过，三端同步、工作树干净后起跑。最初9秒尚未出现status，25秒时已preparing、stderr空、declaration尚未写；这是输入散列/native适配阶段，不能称为已开始map。
 
 只读watcher在tmux `confirmation18-76469`，5小时上限，记录到`outputs/review-20260924/scheduler-76469/scheduler-terminal.json`，不重交或取消。学校备份`/home/scc/pb24511938/pre-confirmation18.bundle`，Mac备份见上。所有新代码/小型审计/说明已入Git，大dat保持平台原位。此次完整批次按近期实测预计约1–2小时，不保证通过；第18步尚未接受，代表柱和整盘强度尚未完成。
+
+## 14:04新基态通过，首轮确认初始化
+
+76469仍RUNNING，34分钟巡检时control完成4map，末残差3.379238791316225e-5、boundary L1 9.490074385658026e-5、bolometric 9.476925352013728e-5。基态七门全过，原子加热4.840830518548303e-4；两端点最低气体热能6.279237348935406e12 / 6.329564959103926e12 erg/g，完整态12门全过。152反馈进程回执均exit0且memory guard通过，最大/proc4037028KiB；每态反馈批墙钟310.1265 / 306.4884秒。stderr空。
+
+76434 half pair08对更新基态四组合仍全收缩，最不利L2 0.9730077084 / mass 0.9057201946 / maximum cell 0.9938603843。基态final三范数8.7401852028 / 0.30609477865 / 2.7367510944；较上一基态仍有漂移，不解释为固定点误差界。此处只是学校侧中期快照，完整Mac逐块审计在终态后执行。
+
+父状态mapping/confirm1，但子state为initializing、history0、active_map=None，因此只能报告首轮确认初始化，不能说确认map或反馈已过。confirm2未开始、接受数17、新增0。按既定4+2+2预算继续，不新提交、不扩预算。证据`20260924-confirmation18-76469-control-progress.json`；备份`pre-confirm18-control-progress.bundle`及`automation-before-confirm18-control-progress.toml`。本次没有科学代码改动或新科学运行。
