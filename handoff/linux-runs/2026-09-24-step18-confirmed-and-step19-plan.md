@@ -29,3 +29,9 @@ confirm1final→confirm2final的L2范数8.501401356257→8.505715711377、mass 0
 ## 起跑前验证
 
 新驱动及依赖75项本地测试通过（0.92秒），覆盖接受来源被替换、物理dt被改、非零基态、错误方向/分母、超trust、旧1/64幅度、原native完整态/零控制/保留端点；shell语法和diff检查通过。旧Markdown只读检查仍报告同样6份既有lecture，清单保留在`step19-markdown-legacy-check.log`，未修改历史讲义，不宣称全库格式通过。新审计代码和第19步驱动另建，已冻结文件不改。
+
+## 15:21第19步试探已启动
+
+76509于15:21:55在anode02 RUNNING，cpu_long32CPU128GiB/16worker，4小时至19:21:55；数值代码`8e814e9b20c3fccd87b8660d9048e01cd82f1bc7`。Mac75tests0.92秒、Linux75tests20.14秒，三端SHA一致、工作树干净后提交。启动16秒时status尚未生成、declaration未写、stderr空，只能说进程启动，不能推定native预检或map已完成。真实来源和native预检在allocation内进行。
+
+只读tmux watcher `step19-76509`运行上限5小时，终态写入`outputs/review-20260924/scheduler-76509/scheduler-terminal.json`，不会重交或取消。学校备份`/home/scc/pb24511938/pre-step19.bundle`。起跑证据`handoff/evidence/20260924-step19-76509-start.json`；保持18已接受步、第19步未接受。定时任务继续监督实测资源与第4/8张判决。

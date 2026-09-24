@@ -1,0 +1,9 @@
+{
+  "job_id": 76509,
+  "observed_unix": 1790234531.51422,
+  "scontrol": "JobId=76509 JobName=tde-common-step19 UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:16 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-09-24T15:21:55 EligibleTime=2026-09-24T15:21:55 AccrueTime=2026-09-24T15:21:55 StartTime=2026-09-24T15:21:55 EndTime=2026-09-24T19:21:55 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-24T15:21:55 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:3944747 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/common_outer_step19.sbatch SubmitLine=sbatch --parsable operations/common_outer_step19.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-common-step19-76509.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-common-step19-76509.out TresPerTask=cpu=32\n",
+  "git_commit": "8e814e9b20c3fccd87b8660d9048e01cd82f1bc7",
+  "status": null,
+  "declaration_exists": false,
+  "stderr": ""
+}
