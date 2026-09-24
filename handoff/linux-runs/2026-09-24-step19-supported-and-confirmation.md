@@ -18,3 +18,11 @@ pair08 final三范数8.325304426688/0.268222104175/2.709235925361；相对r18原
 备份`pre-step19-review.bundle`和`automation-before-step19-review.toml`，新脚本/测试/协议/报告独立入Git，旧字节冻结。此前4核可用于轻量诊断，但本批无独立必要实算，不为占用资源另起无目的作业。
 
 本地72tests通过（1.02秒），包括第19步来源/基态/方向、旧幅度拒绝、协议counter和r18标签、零控制禁有限接受、顺序停止/资源/保留端点；shell与diff检查通过。旧Markdown只读检查仍列同样6份历史lecture，清单保留在confirmation19-markdown-legacy-check.log，未写改旧讲义、不宣称全库通过。
+
+## 确认批次已启动（16:37）
+
+Linux同组72tests通过（15.52秒）。数值提交`c7e8c3c30db775d424e9fc81af4d85b75469680c`已在Mac、学校与GitHub同步，提交前工作树干净；学校备份`/home/scc/pb24511938/pre-confirmation19.bundle`。
+
+作业76554（tde-confirm19）16:37:05提交、16:37:06在anode02启动，cpu_long、32CPU、128GiB、16worker，4小时上限至20:37:06。run为`outputs/hpc/common-confirmation19-20260924`。16:37:24快照RUNNING/18秒、status=preparing、declaration尚未生成、stderr空；这里只确认启动，不能称native预检或任何新map已通过。接受数18、新物质步0。启动证据为`handoff/evidence/20260924-confirmation19-76554-start.json`。
+
+只读watcher在tmux `confirmation19-76554`，最长18000秒，输出`outputs/review-20260924/scheduler-76554/scheduler-terminal.json`；不取消、不重交作业。按近期成本整批估计1–2小时，不保证门通过，也不代表完整大气解的完成时间。后续先核control，再核confirm1/2，完成后下载小工件独立审阅；全过仍不由学校驱动自动接受第19步。
