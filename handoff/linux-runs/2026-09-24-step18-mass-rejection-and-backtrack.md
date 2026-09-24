@@ -32,3 +32,11 @@
 Mac82项1.17秒、Linux82项19.39秒通过；shell语法和diff检查通过。数值提交9f874d27eae484cfe42de64c868c5457fdacd856三端同步；GitHub push曾报告ref锁冲突但错误中远端已到目标，随后ls-remote核实SHA一致，未force。学校pre-step18-backtrack.bundle已完成。
 
 76434于11:32:31在anode03启动，32CPU128GiB16worker、4h上限到15:32:31。2分22秒时status=mapping/control，declaration已写出，说明三种真实trial的native身份预检及来源散列已通过；父mapping也包含child初始化，不单凭它宣称worker已开始。stderr空。只读watcher step18-backtrack-76434最长5h，终态保存在outputs/review-20260924/scheduler-76434；定时任务ACTIVE30分钟并读回逐字核对新提示内容。
+
+## 12:07基态完成，半步初始化
+
+学校侧中期记录：control 4map完整，末res4.056926930e-5，边界L1 1.215631158e-4、bolometric1.211369125e-4。基态反馈7门全过，heat4.595081856e-4；两端点最低气体热能6.058401995e12和6.116157530e12 erg/g，完整态12检查均过。152反馈进程回执exit0、memorypass，最大/proc4043584KiB，两个反馈态批墙钟314.211和319.830秒，stderr空。
+
+新基态final三范数8.723946531/0.3033790283/2.736371193。相对固定r17残差向量漂移三范数0.1153737157/0.007580825761/0.03934683689，不是误差界。旧1/64候选pair08相对新基态四组合质量比1.151109299至1.156295300，final/final1.153901273；仍不收缩，不能仅以旧基态稍旧解释失败。原r17、分母及科学门没有改。
+
+作业RUNNING；父status=mapping/half，但half子状态initializing、history空、active_map空，因此只报告1/128候选初始化，未声明它已完成任何map或过门。quarter未运行，接受数17、新增0。这是中期小记录审阅，完整批次的小工件仍待Mac逐块独立审计。未新增/重交作业、未修改冻结代码。

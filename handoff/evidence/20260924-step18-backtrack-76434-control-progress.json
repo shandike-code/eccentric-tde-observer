@@ -1,0 +1,284 @@
+{
+  "job_id": 76434,
+  "observed_unix": 1790222865.5122678,
+  "status": {
+    "status": "mapping",
+    "accepted_outer_steps": 17,
+    "new_material_steps": 0,
+    "updated_unix": 1790222797.9350066,
+    "case": "half",
+    "budget": 8
+  },
+  "scheduler": "       JOBID      STATE         TIME NODELIST(REASON)\n       76434    RUNNING        35:14 anode03\n",
+  "stderr": "",
+  "control/state.json": {
+    "config_sha256": "c93590b788439e40ad1b7d503393185c444d1eda4ec5191a7784bd03546ac379",
+    "status": "radiation",
+    "initialization_blocks": [],
+    "history": [
+      {
+        "iteration": 1,
+        "input_path": "outputs/hpc/common-step18-backtrack-20260924/control/state_0.dat",
+        "input_sha256": "1129ec6aa88968a471c7620f0bb394c6f7b856b0c6f485c6bcc44ff6c7b6b1b7",
+        "output_path": "outputs/hpc/common-step18-backtrack-20260924/control/state_1.dat",
+        "output_sha256": "3916f738622ceca90a9325632ff3c16cef5d747d896495099d460fc081d17510",
+        "wall_s": 176.84118581935763,
+        "residual": 0.00004661192937919283,
+        "boundary_l1": 0.00014971791065915464,
+        "boundary_bolometric": 0.00014859675391529407,
+        "maximum_worker_rss_mib": 3433.58203125
+      },
+      {
+        "iteration": 2,
+        "input_path": "outputs/hpc/common-step18-backtrack-20260924/control/state_1.dat",
+        "input_sha256": "3916f738622ceca90a9325632ff3c16cef5d747d896495099d460fc081d17510",
+        "output_path": "outputs/hpc/common-step18-backtrack-20260924/control/state_2.dat",
+        "output_sha256": "a7b901aa7f25ba694bc02b6d41ab6cecceb181b3f2978affee3d460b99915e0b",
+        "wall_s": 157.3730116263032,
+        "residual": 0.00004450935960432205,
+        "boundary_l1": 0.0001393137138305795,
+        "boundary_bolometric": 0.0001385097638349737,
+        "maximum_worker_rss_mib": 3502.21875
+      },
+      {
+        "iteration": 3,
+        "input_path": "outputs/hpc/common-step18-backtrack-20260924/control/state_2.dat",
+        "input_sha256": "a7b901aa7f25ba694bc02b6d41ab6cecceb181b3f2978affee3d460b99915e0b",
+        "output_path": "outputs/hpc/common-step18-backtrack-20260924/control/state_0.dat",
+        "output_sha256": "1fd6c17405b4573795d8b84b91b910029b62aa57da33b5eb1e790a78295bf648",
+        "wall_s": 162.78438322246075,
+        "residual": 0.00004250563110257167,
+        "boundary_l1": 0.00012997970463887124,
+        "boundary_bolometric": 0.00012939695656782608,
+        "maximum_worker_rss_mib": 3502.68359375
+      },
+      {
+        "iteration": 4,
+        "input_path": "outputs/hpc/common-step18-backtrack-20260924/control/state_0.dat",
+        "input_sha256": "1fd6c17405b4573795d8b84b91b910029b62aa57da33b5eb1e790a78295bf648",
+        "output_path": "outputs/hpc/common-step18-backtrack-20260924/control/state_1.dat",
+        "output_sha256": "593526236101956e5cc354218765b00a22f2f093a8039533408632a9a68919ee",
+        "wall_s": 163.30267978087068,
+        "residual": 0.00004056926930220946,
+        "boundary_l1": 0.00012156311576480547,
+        "boundary_bolometric": 0.00012113691249122593,
+        "maximum_worker_rss_mib": 3501.3828125
+      }
+    ],
+    "slots": [
+      "outputs/hpc/common-step18-backtrack-20260924/control/state_0.dat",
+      "outputs/hpc/common-step18-backtrack-20260924/control/state_1.dat",
+      "outputs/hpc/common-step18-backtrack-20260924/control/state_2.dat"
+    ],
+    "current_slot": 1,
+    "active_map": null,
+    "current_sha256": "593526236101956e5cc354218765b00a22f2f093a8039533408632a9a68919ee",
+    "trial_sha256": "8bc1d132db3b5e96289c6156d8006be4d42bcf2603c8720e911a8a9309e8b39b"
+  },
+  "control/pair04/decision.json": {
+    "feedback_evaluated": true,
+    "original_gates": {
+      "last_two_photoionization_pass": true,
+      "last_two_total_recombination_pass": true,
+      "last_two_atomic_heating_pass": true,
+      "last_two_direct_heating_pass": true,
+      "last_two_formal_heating_pass": true,
+      "inner_pair_ready": true,
+      "physical_response_pass": true
+    },
+    "physical_response_failures": {},
+    "pair_supported": false,
+    "fresh_control_minus_r17_norms": {
+      "l2": 0.11537371565134756,
+      "mass_weighted": 0.0075808257609922495,
+      "maximum_cell": 0.03934683689423658
+    },
+    "drift_is_error_bound": false,
+    "prior_rejected_candidates": {
+      "pair04": {
+        "ratios": {
+          "previous_vs_previous": {
+            "l2": 0.9708264182007157,
+            "mass_weighted": 1.1511426296618819,
+            "maximum_cell": 0.9898927698775815
+          },
+          "previous_vs_final": {
+            "l2": 0.9703638021229919,
+            "mass_weighted": 1.14875927172192,
+            "maximum_cell": 0.98984526327681
+          },
+          "final_vs_previous": {
+            "l2": 0.9709954651672233,
+            "mass_weighted": 1.1498113546789952,
+            "maximum_cell": 0.9899659704433844
+          },
+          "final_vs_final": {
+            "l2": 0.9705327685356095,
+            "mass_weighted": 1.1474307530480423,
+            "maximum_cell": 0.9899184603295961
+          }
+        },
+        "passed": false
+      },
+      "pair08": {
+        "ratios": {
+          "previous_vs_previous": {
+            "l2": 0.9722091995441775,
+            "mass_weighted": 1.1534975321166616,
+            "maximum_cell": 0.9901383561649427
+          },
+          "previous_vs_final": {
+            "l2": 0.9717459245465176,
+            "mass_weighted": 1.1511092985207048,
+            "maximum_cell": 0.9900908377780768
+          },
+          "final_vs_previous": {
+            "l2": 0.9727336251219854,
+            "mass_weighted": 1.1562952995342364,
+            "maximum_cell": 0.9901817244166405
+          },
+          "final_vs_final": {
+            "l2": 0.9722701002261981,
+            "mass_weighted": 1.1539012733622624,
+            "maximum_cell": 0.9901342039484601
+          }
+        },
+        "passed": false
+      }
+    }
+  },
+  "control/pair04/baseline_summary.json": {
+    "gate_checks": {
+      "last_two_photoionization_pass": true,
+      "last_two_total_recombination_pass": true,
+      "last_two_atomic_heating_pass": true,
+      "last_two_direct_heating_pass": true,
+      "last_two_formal_heating_pass": true,
+      "inner_pair_ready": true,
+      "physical_response_pass": true
+    },
+    "comparison": {
+      "photoionization_volume_l1": [
+        0.000007662863188840842,
+        0.000005021431859967527,
+        1.1265467821779175e-8
+      ],
+      "total_recombination_volume_l1": [
+        1.410291496044245e-7,
+        5.00501023929419e-9,
+        5.182123998531118e-14
+      ],
+      "atomic_heating_volume_l1": 0.0004595081856261111,
+      "direct_heating_volume_l1": 0.0004595081856277131,
+      "formal_heating_volume_l1": 0.00045950818562847745
+    },
+    "material_response_failures": {},
+    "decision": {
+      "baseline_control_only": true,
+      "finite_trial_accepted_as_one_nonlinear_step": false,
+      "accept_dynamic_nlte_solution": false
+    },
+    "protocol_sha256": "11ffc5c08b5a21aec6a5550746f94d1ab625921c2a1e0e4ec120b41622874f9b"
+  },
+  "control/pair04/postcheck.json": {
+    "responses": {
+      "previous": {
+        "minimum_gas_erg_g": 6058401995006.59,
+        "failed_gas_cells": 0,
+        "full_state_checks": {
+          "block_count": true,
+          "frequency_ownership": true,
+          "positive_intensity": true,
+          "finite_arrays": true,
+          "positive_width": true,
+          "nonnegative_atomic_rates": true,
+          "direct_volume": true,
+          "formal_volume": true,
+          "formal_global": true,
+          "mirror": true,
+          "memory": true,
+          "wall": true
+        },
+        "maximum_native_mib": 3944.0234375,
+        "maximum_proc_kib": 4038680,
+        "state_wall_s": 314.2105844132602,
+        "norms": {
+          "l2": 8.719789415536912,
+          "mass_weighted": 0.3027509039130706,
+          "maximum_cell": 2.736239870232499
+        }
+      },
+      "final": {
+        "minimum_gas_erg_g": 6116157529812.723,
+        "failed_gas_cells": 0,
+        "full_state_checks": {
+          "block_count": true,
+          "frequency_ownership": true,
+          "positive_intensity": true,
+          "finite_arrays": true,
+          "positive_width": true,
+          "nonnegative_atomic_rates": true,
+          "direct_volume": true,
+          "formal_volume": true,
+          "formal_global": true,
+          "mirror": true,
+          "memory": true,
+          "wall": true
+        },
+        "maximum_native_mib": 3948.8125,
+        "maximum_proc_kib": 4043584,
+        "state_wall_s": 319.8298161774874,
+        "norms": {
+          "l2": 8.72394653142393,
+          "mass_weighted": 0.30337902834996,
+          "maximum_cell": 2.736371193238177
+        }
+      }
+    },
+    "gate_checks": {
+      "last_two_photoionization_pass": true,
+      "last_two_total_recombination_pass": true,
+      "last_two_atomic_heating_pass": true,
+      "last_two_direct_heating_pass": true,
+      "last_two_formal_heating_pass": true,
+      "inner_pair_ready": true,
+      "physical_response_pass": true
+    },
+    "comparison": {
+      "photoionization_volume_l1": [
+        0.000007662863188840842,
+        0.000005021431859967527,
+        1.1265467821779175e-8
+      ],
+      "total_recombination_volume_l1": [
+        1.410291496044245e-7,
+        5.00501023929419e-9,
+        5.182123998531118e-14
+      ],
+      "atomic_heating_volume_l1": 0.0004595081856261111,
+      "direct_heating_volume_l1": 0.0004595081856277131,
+      "formal_heating_volume_l1": 0.00045950818562847745
+    },
+    "material_response_failures": {},
+    "pair_decision": {
+      "baseline_control_only": true,
+      "finite_trial_accepted_as_one_nonlinear_step": false,
+      "accept_dynamic_nlte_solution": false
+    },
+    "accepted_outer_steps_remain": 17,
+    "material_step_promoted": false,
+    "frequency_truncation_convergence_established": false
+  },
+  "half_progress": {
+    "status": "initializing",
+    "history": [],
+    "active_map": null,
+    "initialization_blocks": []
+  },
+  "control_process_receipts": {
+    "count": 152,
+    "all_exit_zero": true,
+    "all_memory_passed": true,
+    "maximum_proc_kib": 4043584
+  }
+}
