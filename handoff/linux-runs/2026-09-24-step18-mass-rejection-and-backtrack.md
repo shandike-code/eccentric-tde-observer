@@ -60,3 +60,9 @@ half08原16门全过：原子加热7.887543519852317e-4，direct/formal同尺度
 下一步采用`common-confirmation-step18-v1.md`：新control4map，再同一1/128候选2+2map及3pairs，任一失败止步，全部通过仍需Mac独立审计，接受数保持17。未改变物理dt、门限或共同频域算子。备份`outputs/review-20260924/pre-backtrack-review.bundle`及`automation-before-backtrack-review.toml`。新脚本只扩展审计和运行控制，旧src/scripts/hpc和声明文件不改。
 
 确认驱动本地75tests通过（0.75秒），涵盖身份/物理dt/错误方向拒绝、协议祖先端点不误标、零控制禁有限接受、条件顺序和完整态。bash语法与git diff检查通过。旧Markdown检查器只读执行仍报6份既有lecture文件（清单保存在`confirmation18-markdown-legacy-check.log`）；未用write改历史讲义，此项不宣称全库通过。新确认从原反馈模板生成协议并核对固定sources，避免把共同域wrapper误写成legacy adapter；这不改变反馈算子。
+
+## 13:30确认批次已提交
+
+新作业76469于13:30:09在anode17 RUNNING，cpu_long 32CPU/128GiB/16worker，4小时至17:30:09，数值提交`ba5f86ed464fe567ae1451dd7e6e2021a9baac64`。Mac75tests 0.75秒、Linux75tests 19.47秒，shell与diff检查通过，三端同步、工作树干净后起跑。最初9秒尚未出现status，25秒时已preparing、stderr空、declaration尚未写；这是输入散列/native适配阶段，不能称为已开始map。
+
+只读watcher在tmux `confirmation18-76469`，5小时上限，记录到`outputs/review-20260924/scheduler-76469/scheduler-terminal.json`，不重交或取消。学校备份`/home/scc/pb24511938/pre-confirmation18.bundle`，Mac备份见上。所有新代码/小型审计/说明已入Git，大dat保持平台原位。此次完整批次按近期实测预计约1–2小时，不保证通过；第18步尚未接受，代表柱和整盘强度尚未完成。
