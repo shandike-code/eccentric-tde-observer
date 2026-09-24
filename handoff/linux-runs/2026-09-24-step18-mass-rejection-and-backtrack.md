@@ -26,3 +26,9 @@
 不继续对同一1/64候选增加map。新基态对照4map，稳定后沿原r17依次尝试1/128、条件1/256，每个最多8map2pairs；上限20map5pairs。原门和物理dt保持不变，不接受18。只有已解决内层/加热/噪声/物质域而收缩仍失败，才允许第二个幅度；若两者都失败，停止并审查方向。新协议common-step18-backtrack-v1.md中有完整条件。
 
 代码把原固定1/64身份检查留在旧模块；新独立函数仅允许预先声明的三种幅度，并核查全部encoded和物理身份、解码及原信赖域。原native worker、共同频域算子和物质求解器均未改。Mac pre-step18-backtrack.bundle已备份，执行结果随后补记。
+
+## 执行结果
+
+Mac82项1.17秒、Linux82项19.39秒通过；shell语法和diff检查通过。数值提交9f874d27eae484cfe42de64c868c5457fdacd856三端同步；GitHub push曾报告ref锁冲突但错误中远端已到目标，随后ls-remote核实SHA一致，未force。学校pre-step18-backtrack.bundle已完成。
+
+76434于11:32:31在anode03启动，32CPU128GiB16worker、4h上限到15:32:31。2分22秒时status=mapping/control，declaration已写出，说明三种真实trial的native身份预检及来源散列已通过；父mapping也包含child初始化，不单凭它宣称worker已开始。stderr空。只读watcher step18-backtrack-76434最长5h，终态保存在outputs/review-20260924/scheduler-76434；定时任务ACTIVE30分钟并读回逐字核对新提示内容。

@@ -1,0 +1,26 @@
+{
+  "job_id": 76434,
+  "state": "RUNNING",
+  "start_time": "2026-09-24T11:32:31+08:00",
+  "node": "anode03",
+  "cpus": 32,
+  "memory_gib": 128,
+  "workers": 16,
+  "wall_limit": "04:00:00",
+  "end_limit": "2026-09-24T15:32:31+08:00",
+  "run": "outputs/hpc/common-step18-backtrack-20260924",
+  "numeric_commit": "9f874d27eae484cfe42de64c868c5457fdacd856",
+  "observed_status_at_elapsed_00222": "mapping/control; declaration exists after native input checks; child initialization may still be ongoing",
+  "stderr_empty": true,
+  "alphas": {
+    "control": 0.0,
+    "half": 0.0078125,
+    "quarter": 0.00390625
+  },
+  "maximum_maps": 20,
+  "maximum_pairs": 5,
+  "mac_tests": "82 passed in 1.17s",
+  "linux_tests": "82 passed in 19.39s",
+  "watcher": "step18-backtrack-76434",
+  "heartbeat": "ACTIVE; 30min; exact readback verified"
+}
