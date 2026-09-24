@@ -1,0 +1,90 @@
+{
+  "accepted_outer_steps": 20,
+  "previous_accepted_outer_steps": 19,
+  "decision": "confirmed finite nonlinear step under the preregistered common-domain criteria",
+  "candidate": "outputs/hpc/common-confirmation20-20260924/confirm2/trial_material.npz",
+  "accepted_target_is_response": false,
+  "coupled_column_converged": false,
+  "whole_disk_intensity_ready": false,
+  "physical_time_advanced": false,
+  "job_id": 76727,
+  "claims": [
+    {
+      "path": "outputs/hpc/common-confirmation20-20260924/confirm1/trial_material.npz",
+      "size_bytes": 27774,
+      "sha256": "1f62cf333ecb37034b4aa4d85d63e849067259f9c73c51781ad71c9591b92d28"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation20-20260924/confirm1/common-feedback/feedback_protocol.json",
+      "size_bytes": 254126,
+      "sha256": "8115172448befa607e2ebe98a36d3f738a5e4fa399ff4870f07aacfc9da64214"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation20-20260924/confirm1/common-feedback/feedback_summary.json",
+      "size_bytes": 3613,
+      "sha256": "c4363c3fe83751b6ad24578229b08cab8da122e8ad54f7483082af8864310ef0"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation20-20260924/confirm1/common-feedback/final_response.npz",
+      "size_bytes": 12626,
+      "sha256": "73ad0428056c9cba68d2e0292327ae1f2b7c36ef4e9b60b6070d8378652b6afd"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation20-20260924/confirm1/decision.json",
+      "size_bytes": 793,
+      "sha256": "738a29c04940251ed29ae402917d9552f957aeec9782c9c4a07c04bdb28f410d"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation20-20260924/confirm2/trial_material.npz",
+      "size_bytes": 27774,
+      "sha256": "1f62cf333ecb37034b4aa4d85d63e849067259f9c73c51781ad71c9591b92d28"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation20-20260924/confirm2/common-feedback/feedback_protocol.json",
+      "size_bytes": 254126,
+      "sha256": "28451bc65e3b7cdd4433ccacd0fc7a781dc7e8c672e8ad53df4ffe192e4428a6"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation20-20260924/confirm2/common-feedback/feedback_summary.json",
+      "size_bytes": 3602,
+      "sha256": "f159348d0736c0dcf1913e504b9ee3c522d61a435ecf9ecd57e5702e38587574"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation20-20260924/confirm2/common-feedback/final_response.npz",
+      "size_bytes": 12626,
+      "sha256": "098e0cd28beafd9ffc83c04bf9fefca596e27543078190d386fab5f0a2f103f5"
+    },
+    {
+      "path": "outputs/hpc/common-confirmation20-20260924/confirm2/decision.json",
+      "size_bytes": 793,
+      "sha256": "0f1695c97a5afe0397ac38547521ee0f6eae197abfce850b3ceff06e913d82df"
+    },
+    {
+      "path": "handoff/evidence/20260924-common-confirmation20-review.json",
+      "size_bytes": 9203,
+      "sha256": "dabd84d9829c112a957cb5fba8ea634ab59c2c6a1f092c279b44d1dfe01b196b"
+    },
+    {
+      "path": "handoff/evidence/20260924-confirmation20-76727-terminal.json",
+      "size_bytes": 1597,
+      "sha256": "fff6b89559636f1032eb43f0a55e319e8117a377e2a626e21ee69f78084e344d"
+    }
+  ],
+  "audit_archive": {
+    "path": "outputs/hpc/common-confirmation20-20260924/archives/complete-1790261266759412163.tar.gz",
+    "size_bytes": 224227340,
+    "sha256": "b3bf48eac5de9ea1854b3dcc7017a2bed63050ecc631cb40254e831ce1b35106"
+  },
+  "same_material_drift": {
+    "l2": 0.03141504142093107,
+    "mass_weighted": 0.0017808270901026972,
+    "maximum_cell": 0.011209422299893995
+  },
+  "baseline_drift": {
+    "l2": 0.015818893114291743,
+    "mass_weighted": 0.0008826765755924003,
+    "maximum_cell": 0.004934506191195582
+  },
+  "drift_is_error_bound": false,
+  "cross_platform_decode_note": "exact files and encoded identity; independently recomputed decode permits existing 8 eps tolerance; science gates unchanged"
+}
