@@ -47,3 +47,11 @@ map4 final的HeIII/HeI残差1.0528918137766632，到map8为1.0528991608036078，
 数值提交`51a8f84d8d7eb218792583cfa8e6553bc94d7603`部署后Linux100tests通过（14.14秒）；Mac/学校/GitHub实际SHA一致。push曾报ref lock冲突，但ls-remote确认目标ref已在该SHA，因此未强推或重复推送。学校预部署备份`/home/scc/pb24511938/pre-step21-probe.bundle`。
 
 76871于2026-09-25 00:31:32在anode18启动，32CPU/128GiB、4h至04:31:32，run `outputs/hpc/common-step21-probe-20260925`。启动快照见`20260925-step21-probe-76871-start.json`，处于preparing、stderr空；不据此声称native预检或map已完成。只读watcher tmux `step21-probe-76871`、18000秒，终态目标`outputs/review-20260925/scheduler-76871/scheduler-terminal.json`。定时跟进转到新批，当前正式接受数仍20。
+
+## 01:07 基态对照完成，半幅候选初始化
+
+76871仍RUNNING。control完成4map与1pair，7个基态门全过，heat=0.00013499250432116722。两端点完整态门全部过、gas均正，最低6.328162949909898e12 erg/g。152个反馈进程回执exit0和内存门通过，最大/proc4041832KiB；两反馈态累计worker批墙钟295.14/283.79秒，stderr空、watcher存活。
+
+control final残差三范数8.178129481408643/0.2622383309644685/2.705265629480948；相对原r20的向量差三范数0.06048268858987067/0.003438370245843222/0.019396916208030593，这是漂移而非严格误差界。对新control重比旧76808 pair08，四组合最大单元比均大于1，最不利1.0057806249464096；旧失败未因更新对照而逆转。原r20方向及原门分母不改。
+
+条件执行已进入half，但01:07:04子state仍initializing、history0、无active map，不能从父mapping宣称worker已完成map。counter20/new0。证据`20260925-probe-76871-control-progress.json`保留来源SHA和完整摘要。这是运行控制核查，尚非本批Mac逐块独立数值审计。继续已声明最多8map，不加预算或修改数值代码；无新科学测试需求。编辑前备份`pre-probe-control-progress.bundle`与`automation-before-probe-control-progress.toml`。
