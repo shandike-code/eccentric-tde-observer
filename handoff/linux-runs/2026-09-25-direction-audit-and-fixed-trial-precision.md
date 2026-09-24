@@ -82,3 +82,15 @@ control新增map4反馈已完成，七项零控制检查均通过：heat=0.00013
 map4 final响应三范数8.187797731938714 / 0.26284566357214456 / 2.7055067489828524；与固定r20的向量差三范数0.16423261047541357 / 0.00964431096012722 / 0.0481635025245177。相邻反馈过门不等于响应已不再漂移，这个差也不是误差界。继续原协议，待control8过门才执行后续两候选，没有新增预算或修改数值代码。
 
 小快照 `handoff/evidence/20260925-direction-precision-76931-control-progress.json` 保存所读文件SHA、原始summary/decision/postcheck、state/history、队列和回执汇总。本次为运行控制核查，非完整归档的独立数值复算；终态仍须按协议审计。备份 `outputs/review-20260925/pre-precision-control-progress.bundle`、`automation-before-precision-control-progress.toml`。仅新增证据和报告，不重跑数值测试。
+
+## 06:41:54监督：control两轮完成，thermal第8张进行中
+
+76931仍RUNNING，control8map及两对反馈完成；thermal历史7张，第8张已提交65/76块，首对反馈完成；population尚无state。stderr空、watcher活，counter20/new0。未触发原协议停止条件，继续既定预算，不提前接受或追加任务。
+
+control新增map8七门全过，heat=0.00014104704491574703，final三范数8.191483113279789 / 0.26311744907262197 / 2.7055624902297626。对原r20的向量差三范数0.20745484198910874 / 0.01242251395335983 / 0.05853962224253224，较新增map4进一步增大；这表明原基态响应与当前更精细辐射态之间仍有漂移，不能把相邻加热过门等同于完整响应收敛，也不能把该差当严格误差界。
+
+thermal新增map4原15/16门通过，仅最大单元收缩失败。heat=0.00013658213824362087，noise=0.034676398608881415；final三范数8.124244425750867 / 0.26037542683871495 / 2.7135432059724547；原r20比0.9941553972332184 / 0.9941392418203898 / 1.0031578875543417，新control对应map4四组合最大单元最不利比1.0029772321419077。该失败机制与76905的thermal08一致，但整批精度检验仍待完成。
+
+三个已完成反馈对均无物理响应异常、气体热能正、完整态通过。新增control8与thermal4共304份反馈进程回执exit0/内存通过，峰/proc4038592KiB；连同control4共456份，峰4040452KiB。上述四个新增反馈态累计worker批墙钟均约291—305秒，低于900秒。
+
+小快照 `handoff/evidence/20260925-direction-precision-76931-thermal-progress.json` 保存原始摘要、状态和所读文件SHA。仅运行控制检查，尚非整批独立数值审计；未改冻结代码、未重跑测试。备份 `outputs/review-20260925/pre-precision-thermal-progress.bundle`、`automation-before-precision-thermal-progress.toml`。
