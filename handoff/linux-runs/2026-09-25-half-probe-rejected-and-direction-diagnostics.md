@@ -49,3 +49,11 @@ Linux124tests通过（16.23秒），shell与跨两个新提交diff检查通过�
 新control与原r20向量差三范数0.11541931529206631/0.006657675492443843/0.035297681329625；这是仍存在的漂移，不是严格误差界。对76871 half08四组合最大单元比仍全>1，最不利1.0022860496117885，失败未逆转，故按协议继续方向诊断。原方向分量与原门分母不改。
 
 证据`20260925-directions-76905-control-progress.json`包含源SHA、摘要、两child历史与回执汇总。本轮为运行控制核查，完整逐块独立数值审计等待整批归档。定时任务原内容曾在本批启动后带旧76871状态再次触发，已根据真实76905状态改正，未重复提交任何作业。启动记录96ae69e已核三端一致；push报ref锁错误时ls-remote显示实际已到目标，未强推。编辑前备份pre-directions-control-progress.bundle与automation-before-directions-control-progress.toml；数值代码未动，counter20/new0。
+
+## 热能方向完成8map，布居方向起跑
+
+快照`2026-09-25T04:02:10.688606+08:00`，76905仍RUNNING，thermal8map/2pairs完成，population history=0，active={"iteration": 1, "committed_blocks": 48}。
+
+thermal pair08原15/16过，仅最大单元失败；heat0.00012826763529093701、noise0.03945624721344333过。final三范数8.123433914394576/0.2602476223046095/2.713483519067728；对原r20比0.9940562157958874/0.9936512714148128/1.0031358221642905。对本批control四组合最大单元比全>1，最不利1.0030031007936693；没有形成可接受方向。pair08 gas均正、最低6.578228092673969e12 erg/g，全态门过。
+
+两个thermal反馈对共304进程回执exit0/内存门通过，峰/proc4039088KiB，stderr空、watcher存活。原始pair04/08摘要和来源SHA保存于`20260925-directions-76905-thermal-progress.json`。此为平台结果及运行控制核查，尚未完成本批Mac逐块独立数值审计。不据此预判布居方向或构造组合，继续同一预算的population8map/2pairs。counter20/new0、diagnostic_only不变；数值代码未改。编辑前备份pre-directions-thermal-progress.bundle及automation-before-directions-thermal-progress.toml。
