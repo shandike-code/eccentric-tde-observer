@@ -36,3 +36,13 @@ Key Issues:
 Decision: RUN — 学校同组测试及三端Git一致后提交。
 
 Mac备份`outputs/review-20260925/pre-affine-step21-validation.bundle`和`automation-before-affine-step21-validation.toml`；学校备份`/home/scc/pb24511938/pre-affine-step21-validation.bundle`。旧`.dat`、旧代码和协议保持原字节。Markdown机械检查仍只报告既有六份lecture；没有批量重写，也不宣称全库通过。审计画图初次把字典直接传给Matplotlib导致类型错误，已改为显式case列表后重跑完整审计并查看图；不涉及数值结果改动。
+
+## 学校验证与启动记录
+
+Mac65 passed（1.33s），学校同组65 passed（16.61s），Shell/diff通过。数值提交`7096c0434053a7fdf09a7150120466852168b4d5`；仅新讲义下标格式随后提交`bdb4b0f568f1592ee51862d437ba7101a4cd2b1f`。起跑前Mac／学校／GitHub完整SHA一致、工作树干净、队列为空、新目录不存在。
+
+作业**76957**于2026-09-25 09:42:07提交、09:42:08在anode18启动，qos_stu_cpu_long、32CPU128GiB，截止14:42:08。09:43:09实测RUNNING/preparing、stderr空、独立watcher存活；准备阶段包括大态和历史依赖SHA，不等于死锁。运行目录`outputs/hpc/step21-radiation-affine-validation-20260925`。
+
+watcher会话`step21-affine-76957`，21600秒，输出`outputs/review-20260925/scheduler-76957/scheduler-terminal.json`。启动证据`handoff/evidence/20260925-step21-affine-76957-start.json`。30分钟定时审阅切换至76957，原76946不再提交。下一轮取得检验或反馈小归档后独立核SHA、全場差异与原门；尚不把起跑称为通过。
+
+补充讲义`lecture/项目讲义/2026-09-25_辐射慢模外推与真实映射检验.md`已根据真实数据、代码和图重写。Claude初稿中关于整盘范围、只读扫描是否执行map及最大范数的错误均已纠正；最终讲义数学规范只调整该新文件，没有改历史六份文件。
