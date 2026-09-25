@@ -1,0 +1,59 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-wide-plane-validation-20260925/archives/true-map-validation-1790344071440319568.tar.gz",
+    "size_bytes": 1634045,
+    "sha256": "51feab45e8c5e18774ebe4fc99d2d39e19d6e727417b690fe0c951694fab5e28"
+  },
+  "final_summary_present": false,
+  "verified_files": 164,
+  "verified_code_claims": 688,
+  "maps": [
+    {
+      "iteration": 1,
+      "residual": 3.2487565237894585e-06,
+      "boundary_l1": 5.690838976932627e-06,
+      "boundary_bolometric": 5.686579625300755e-06,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.1567607369993955,
+      "wall_s": 177.56556652858853
+    }
+  ],
+  "field_validation": {
+    "actual_over_prior": 0.701651775290317,
+    "prediction_error_over_field": 1.2335284521858484e-13,
+    "prediction_error_over_actual_change": 3.79692489465791e-08,
+    "worst_slab": {
+      "start": 9488,
+      "stop": 9504,
+      "error_max": 4.3542225778737e-311,
+      "field_scale": 1.23200516068376e-307,
+      "actual_change_max": 2.005646669039295e-308,
+      "error_relative_to_local_field": 0.0003534256768418972,
+      "actual_local_residual": 0.1627953139357116
+    },
+    "checks": {
+      "actual_maximum_norm_improves": true,
+      "actual_boundary_spectrum_pass": true,
+      "actual_boundary_bolometric_pass": true,
+      "worker_memory_pass": true,
+      "strict_inner_pass": true,
+      "full_field_prediction_error_small": true,
+      "prediction_error_below_tenth_actual_change": true,
+      "actual_cost_gain_pass": true
+    },
+    "full_field_l2_recomputed_on_mac": false
+  },
+  "feedback_rounds": [],
+  "windows": {},
+  "map_process_receipts": 76,
+  "feedback_process_receipts": 0,
+  "maximum_proc_kib": 3587196,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "full_large_fields_recomputed_on_mac": false,
+  "material_ode_recomputed_on_mac": false,
+  "full_field_l2_recomputed_on_mac": false,
+  "production_window_reducer_reused": false,
+  "baseline_replaced": false,
+  "strict_error_bound": false
+}

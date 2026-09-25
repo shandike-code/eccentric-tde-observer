@@ -1,0 +1,30 @@
+{
+  "observed_unix": 1790344236.5149395,
+  "job_id": 77371,
+  "scontrol": "JobId=77371 JobName=tde-wide-validate UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:41:09 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-09-25T21:09:27 EligibleTime=2026-09-25T21:09:27 AccrueTime=2026-09-25T21:09:27 StartTime=2026-09-25T21:09:27 EndTime=2026-09-26T01:09:27 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-25T21:09:27 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:1890848 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode04 BatchHost=anode04 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/validate_step21_wide_plane.sbatch SubmitLine=sbatch --parsable operations/validate_step21_wide_plane.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-wide-validate-77371.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-wide-validate-77371.out TresPerTask=cpu=32\n",
+  "run_status": {
+    "status": "mapping",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790344072.8256233,
+    "completed_maps": 1
+  },
+  "completed_maps": 1,
+  "active_map_iteration": 2,
+  "active_block_count": 48,
+  "last_map": {
+    "iteration": 1,
+    "input_path": "outputs/hpc/step21-wide-plane-validation-20260925/control/state_0.dat",
+    "input_sha256": "cf9f91e29ddae30e6fcb5beb22948aadc0d07847adf83b7eeae25cb79b7b071a",
+    "output_path": "outputs/hpc/step21-wide-plane-validation-20260925/control/state_1.dat",
+    "output_sha256": "d66195b79c24983a497a41cfd99bfb2901cea4d51c30592700e22dda94f25a89",
+    "wall_s": 177.56556652858853,
+    "residual": 3.2487565237894585e-06,
+    "boundary_l1": 5.690838976932627e-06,
+    "boundary_bolometric": 5.686579625300755e-06,
+    "maximum_worker_rss_mib": 3503.12109375
+  },
+  "stderr": "",
+  "watcher_alive": true,
+  "claude_first_review_is_error": false
+}
