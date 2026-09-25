@@ -51,3 +51,16 @@ Decision: RUN — Linux测试与真实小工件身份核验通过、三端Git一
 
 Mac：`outputs/review-20260925/pre-positive-plane-review.bundle`和`automation-before-positive-plane-review.toml`。
 学校：`/home/scc/pb24511938/pre-positive-plane-review.bundle`。旧77102/76957目录、协议、dat均未改。
+
+## 已起跑77126
+
+2026-09-25 14:49:28提交并启动，anode04，`qos_stu_cpu_long`，32CPU/128GiB，硬上限19:49:28。
+数值代码`d08c32dffdaa036585ef6bbe8f9e1bb35fdf9e0b`。Linux52tests通过（20.53秒），三个真实trial本机逐位解码与四态身份检查全通过。
+提交前三端代码一致且clean。14:50:18快照仍在准备校验、stderr0；尚未声称完成新map。
+watcher为tmux `step21-posval-77126`，21600秒，终态写入`outputs/review-20260925/scheduler-77126/scheduler-terminal.json`。
+
+新增Mac入口`handoff/audit_tools/review_step21_positive_plane_maps.py`，用于三case首张真实map归档的独立聚合。
+对应完整三反馈对入口`handoff/audit_tools/review_step21_positive_plane_feedback.py`复用已有已验证的逐块率/加热/物质账本审计逻辑，
+改为新四态血缘及76957基准。两个入口尚未在本轮真实新工件上端到端运行，不能预称通过。
+若批次因control、映射或物理域失败提前停止，应按实际产物做部分审计，不能删掉完整审计器断言强行套成六端点成功。
+审计工具不被作业导入，不在当前运行数值代码声明内；只追加它们与报告不会改变运行依赖。
