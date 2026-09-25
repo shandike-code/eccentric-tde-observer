@@ -1,0 +1,44 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-radiation-history-scan-20260925/archives/complete-1790295259081734442.tar.gz",
+    "size_bytes": 45388,
+    "sha256": "a99b83daf35e972fb4058ea5f871e47c020b3c9722e1cff00b42849faf14c8f5"
+  },
+  "files_verified": 3,
+  "code_claims_verified": 677,
+  "cases": {
+    "control": {
+      "fraction": 30.751896769310196,
+      "old_residual": 6.964392172609105e-06,
+      "predicted_residual": 5.136888821963253e-06,
+      "predicted_ratio": 0.7375932737054345,
+      "boundary_l1": 1.0126843559864428e-05,
+      "worst_block_relative": 0.16048557254275841,
+      "peak_rss_bytes": 1071538176
+    },
+    "thermal": {
+      "fraction": 28.15916186629937,
+      "old_residual": 6.230185646361354e-06,
+      "predicted_residual": 4.801202428654642e-06,
+      "predicted_ratio": 0.7706355317772451,
+      "boundary_l1": 1.772239946573818e-05,
+      "worst_block_relative": 0.15938984143622217,
+      "peak_rss_bytes": 1071538176
+    },
+    "population": {
+      "fraction": 34.544798224747225,
+      "old_residual": 5.908954984186453e-06,
+      "predicted_residual": 4.8745769318067304e-06,
+      "predicted_ratio": 0.8249473798416259,
+      "boundary_l1": 6.8619458447938335e-06,
+      "worst_block_relative": 0.15936810433186893,
+      "peak_rss_bytes": 1071538176
+    }
+  },
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "new_maps": 0,
+  "full_large_arrays_recomputed_on_mac": false,
+  "fresh_map_required": true,
+  "source_metadata_matches_independently_audited_76931": true
+}
