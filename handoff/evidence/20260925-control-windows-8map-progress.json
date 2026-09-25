@@ -1,0 +1,114 @@
+{
+  "observed_unix": 1790332297.3478787,
+  "job_id": 77264,
+  "queue": "77264 RUNNING 43:13 32 anode04\n",
+  "status": {
+    "status": "mapping",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790332105.4068851,
+    "completed_maps": 7
+  },
+  "history": [
+    {
+      "iteration": 1,
+      "input_path": "outputs/hpc/step21-control-windows-20260925/control/state_0.dat",
+      "input_sha256": "a852ff2519d13213add5f188c4ae4611a635acb1b77c73ed9ac728710c10cd24",
+      "output_path": "outputs/hpc/step21-control-windows-20260925/control/state_1.dat",
+      "output_sha256": "5346ec576621ea65a12556739b8924737ec1415b200bd90a1a41ae11dbb08cca",
+      "wall_s": 167.6025768071413,
+      "residual": 4.9310322221475354e-06,
+      "boundary_l1": 3.359303794731785e-06,
+      "boundary_bolometric": 1.5766226520551275e-06,
+      "maximum_worker_rss_mib": 3502.22265625
+    },
+    {
+      "iteration": 2,
+      "input_path": "outputs/hpc/step21-control-windows-20260925/control/state_1.dat",
+      "input_sha256": "5346ec576621ea65a12556739b8924737ec1415b200bd90a1a41ae11dbb08cca",
+      "output_path": "outputs/hpc/step21-control-windows-20260925/control/state_2.dat",
+      "output_sha256": "dac8d067e9593afd3803d4e34f3345a30526825917308ffd3e5128d589785dd1",
+      "wall_s": 162.826213426888,
+      "residual": 4.910321347432344e-06,
+      "boundary_l1": 3.252703640695429e-06,
+      "boundary_bolometric": 1.2708915555815541e-06,
+      "maximum_worker_rss_mib": 3501.609375
+    },
+    {
+      "iteration": 3,
+      "input_path": "outputs/hpc/step21-control-windows-20260925/control/state_2.dat",
+      "input_sha256": "dac8d067e9593afd3803d4e34f3345a30526825917308ffd3e5128d589785dd1",
+      "output_path": "outputs/hpc/step21-control-windows-20260925/control/state_0.dat",
+      "output_sha256": "8df0cebd4514797eab9e27075e3bf652df2702319f4b4fa1fccec5868699e20b",
+      "wall_s": 169.92832641676068,
+      "residual": 4.889718488716445e-06,
+      "boundary_l1": 3.1574590310033936e-06,
+      "boundary_bolometric": 9.937266005078617e-07,
+      "maximum_worker_rss_mib": 3503.23046875
+    },
+    {
+      "iteration": 4,
+      "input_path": "outputs/hpc/step21-control-windows-20260925/control/state_0.dat",
+      "input_sha256": "8df0cebd4514797eab9e27075e3bf652df2702319f4b4fa1fccec5868699e20b",
+      "output_path": "outputs/hpc/step21-control-windows-20260925/control/state_1.dat",
+      "output_sha256": "3206ba05180d664a1f6c8d4d00e1d99a7894101ca6103540640b9fd3da682efc",
+      "wall_s": 166.19768220186234,
+      "residual": 4.869201565053541e-06,
+      "boundary_l1": 3.071439471526543e-06,
+      "boundary_bolometric": 7.425646481348432e-07,
+      "maximum_worker_rss_mib": 3499.828125
+    },
+    {
+      "iteration": 5,
+      "input_path": "outputs/hpc/step21-control-windows-20260925/control/state_1.dat",
+      "input_sha256": "3206ba05180d664a1f6c8d4d00e1d99a7894101ca6103540640b9fd3da682efc",
+      "output_path": "outputs/hpc/step21-control-windows-20260925/control/state_2.dat",
+      "output_sha256": "7e056793a2603b818a6d93a1cfe7af5d639ef764863e673130b44e45ffbaa59a",
+      "wall_s": 161.43583738058805,
+      "residual": 4.848773489814171e-06,
+      "boundary_l1": 2.9931371422106046e-06,
+      "boundary_bolometric": 5.150713796507463e-07,
+      "maximum_worker_rss_mib": 3502.1796875
+    },
+    {
+      "iteration": 6,
+      "input_path": "outputs/hpc/step21-control-windows-20260925/control/state_2.dat",
+      "input_sha256": "7e056793a2603b818a6d93a1cfe7af5d639ef764863e673130b44e45ffbaa59a",
+      "output_path": "outputs/hpc/step21-control-windows-20260925/control/state_0.dat",
+      "output_sha256": "5e111147e334b25a3ac561f00999b2396e0aff828d80636c0b24df04dc943731",
+      "wall_s": 168.433294467628,
+      "residual": 4.8284629884932455e-06,
+      "boundary_l1": 2.9213028330991464e-06,
+      "boundary_bolometric": 3.0912346172465216e-07,
+      "maximum_worker_rss_mib": 3501.15625
+    },
+    {
+      "iteration": 7,
+      "input_path": "outputs/hpc/step21-control-windows-20260925/control/state_0.dat",
+      "input_sha256": "5e111147e334b25a3ac561f00999b2396e0aff828d80636c0b24df04dc943731",
+      "output_path": "outputs/hpc/step21-control-windows-20260925/control/state_1.dat",
+      "output_sha256": "e6b2ef3af05a87e212da5d7e5eb4d4e5dd7583cd494f1efc579f3fa4953433ec",
+      "wall_s": 171.5590538084507,
+      "residual": 4.808237057139962e-06,
+      "boundary_l1": 2.854930826652259e-06,
+      "boundary_bolometric": 1.2279108193069736e-07,
+      "maximum_worker_rss_mib": 3502.7578125
+    },
+    {
+      "iteration": 8,
+      "input_path": "outputs/hpc/step21-control-windows-20260925/control/state_1.dat",
+      "input_sha256": "e6b2ef3af05a87e212da5d7e5eb4d4e5dd7583cd494f1efc579f3fa4953433ec",
+      "output_path": "outputs/hpc/step21-control-windows-20260925/control/state_2.dat",
+      "output_sha256": "39ad33948a06777f0a29569255e14dda8df37e84a1615dfc2a836df5e1022d0d",
+      "wall_s": 170.96863136813045,
+      "residual": 4.788095358658144e-06,
+      "boundary_l1": 2.7931984988410453e-06,
+      "boundary_bolometric": 4.5678766298333474e-08,
+      "maximum_worker_rss_mib": 3498.8359375
+    }
+  ],
+  "active_iteration": null,
+  "active_completed_blocks": 0,
+  "archives": [],
+  "stderr_bytes": 0
+}

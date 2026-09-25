@@ -1,0 +1,97 @@
+{
+  "scope": "legacy 77126 control pair replay plus independent 76957-to-77126 window; not new 77264 end-to-end",
+  "feedback_process_receipts": 152,
+  "max_proc_kib": 4040836,
+  "report": {
+    "endpoints": {
+      "previous": {
+        "norms": {
+          "l2": 8.22043907931987,
+          "mass_weighted": 0.26607087088386533,
+          "maximum_cell": 2.7057656783042665
+        },
+        "minimum_gas_erg_g": 7025761208913.484,
+        "maximum_proc_kib": 4039548,
+        "source": {
+          "volume_l1": 1.9606981440230963e-12,
+          "net_fraction": 2.6390804191496006e-11,
+          "reference_integral": 1528732589127.0342,
+          "compared_integral": 1528732589167.3787,
+          "difference_depth_l1": 102.77913329275768
+        }
+      },
+      "final": {
+        "norms": {
+          "l2": 8.22040520154392,
+          "mass_weighted": 0.2661139626632066,
+          "maximum_cell": 2.705760594942855
+        },
+        "minimum_gas_erg_g": 7021699656539.164,
+        "maximum_proc_kib": 4040836,
+        "source": {
+          "volume_l1": 1.961750711994831e-12,
+          "net_fraction": 2.613122727993925e-11,
+          "reference_integral": 1536920584037.4863,
+          "compared_integral": 1536920584077.648,
+          "difference_depth_l1": 102.83441436251297
+        }
+      }
+    },
+    "comparison": {
+      "photoionization_volume_l1": [
+        4.567720416204613e-07,
+        4.5148524103779805e-06,
+        1.1097644244531206e-09
+      ],
+      "total_recombination_volume_l1": [
+        4.093224894595787e-09,
+        3.2769574296666257e-09,
+        4.826075640405616e-15
+      ],
+      "atomic_heating_volume_l1": 0.0001626491325639275,
+      "direct_heating_volume_l1": 0.00016264913256075703,
+      "formal_heating_volume_l1": 0.00016264913256055287
+    },
+    "gate_checks": {
+      "last_two_photoionization_pass": true,
+      "last_two_total_recombination_pass": true,
+      "last_two_atomic_heating_pass": true,
+      "last_two_direct_heating_pass": true,
+      "last_two_formal_heating_pass": true,
+      "inner_pair_ready": true,
+      "physical_response_pass": true
+    }
+  },
+  "window": {
+    "vector_difference_over_frozen_r20_norms": {
+      "previous_vs_previous": [
+        0.005203961101850033,
+        0.01647049919956314,
+        0.0024247728529295425
+      ],
+      "previous_vs_final": [
+        0.004395957777947408,
+        0.013955394786803556,
+        0.0020330202426776735
+      ],
+      "final_vs_previous": [
+        0.005876815610236645,
+        0.01884100660875262,
+        0.0026385484696845175
+      ],
+      "final_vs_final": [
+        0.005069877365813195,
+        0.01632726012755323,
+        0.002246795951856899
+      ]
+    },
+    "passed": false,
+    "tolerance": 0.001,
+    "strict_error_bound": false,
+    "baseline_replaced": false
+  },
+  "old_population_and_total_energy_anchored": true,
+  "new_unit_tests_passed": 14,
+  "production_regression_tests_passed": 6,
+  "new_77264_end_to_end_verified": false
+}
