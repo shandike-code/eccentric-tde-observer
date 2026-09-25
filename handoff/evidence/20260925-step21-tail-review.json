@@ -1,0 +1,64 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-affine-tail-diagnostic-20260925/archives/complete-1790313220749040604.tar.gz",
+    "size_bytes": 97308,
+    "sha256": "93c4845e618872f0dc9d36e36e82f619b2d4da583bcd5abc7364186f055b216f"
+  },
+  "verified_files": 3,
+  "verified_code_claims": 682,
+  "exact_witnesses_replayed": 60,
+  "cases": {
+    "control": [
+      {
+        "eta": 0.125,
+        "native_negative_count": 567894,
+        "extended_negative_count": 567894,
+        "exact_negative_witnesses": 10,
+        "exact_zero_base_obstructions": 0
+      }
+    ],
+    "thermal": [
+      {
+        "eta": 0.5,
+        "native_negative_count": 468990,
+        "extended_negative_count": 468992,
+        "exact_negative_witnesses": 10,
+        "exact_zero_base_obstructions": 0
+      },
+      {
+        "eta": 0.25,
+        "native_negative_count": 446158,
+        "extended_negative_count": 446160,
+        "exact_negative_witnesses": 10,
+        "exact_zero_base_obstructions": 0
+      },
+      {
+        "eta": 0.125,
+        "native_negative_count": 398836,
+        "extended_negative_count": 409898,
+        "exact_negative_witnesses": 10,
+        "exact_zero_base_obstructions": 0
+      }
+    ],
+    "population": [
+      {
+        "eta": 0.25,
+        "native_negative_count": 517202,
+        "extended_negative_count": 517204,
+        "exact_negative_witnesses": 10,
+        "exact_zero_base_obstructions": 0
+      },
+      {
+        "eta": 0.125,
+        "native_negative_count": 496046,
+        "extended_negative_count": 496050,
+        "exact_negative_witnesses": 10,
+        "exact_zero_base_obstructions": 0
+      }
+    ]
+  },
+  "large_field_cells_recomputed_on_mac": false,
+  "witnesses_not_exhaustive": true,
+  "accepted_outer_steps": 20,
+  "new_maps": 0
+}
