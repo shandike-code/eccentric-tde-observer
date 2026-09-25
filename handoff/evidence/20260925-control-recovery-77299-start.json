@@ -1,0 +1,27 @@
+{
+  "job_id": 77299,
+  "observed_unix": 1790333375.4753282,
+  "code_commit": "b8ccf237bf4f1bed7db9202d46412bddce3b6871",
+  "scontrol": "JobId=77299 JobName=tde-control-resume UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:01:22 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-09-25T18:48:13 EligibleTime=2026-09-25T18:48:13 AccrueTime=2026-09-25T18:48:13 StartTime=2026-09-25T18:48:13 EndTime=2026-09-25T22:48:13 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-25T18:48:13 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:65242 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode03 BatchHost=anode03 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/recover_step21_control_windows.sbatch SubmitLine=sbatch --parsable operations/recover_step21_control_windows.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-control-resume-77299.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-control-resume-77299.out TresPerTask=cpu=32\n",
+  "status": {
+    "status": "preparing_recovery",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790333306.6981742
+  },
+  "stderr_bytes": 0,
+  "watcher_alive": true,
+  "mac_tests": {
+    "passed": 40,
+    "seconds": 1.08
+  },
+  "linux_tests": {
+    "passed": 40,
+    "seconds": 16.67
+  },
+  "source_job": 77264,
+  "inherited_maps": 8,
+  "maximum_new_maps": 8,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0
+}

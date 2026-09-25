@@ -37,3 +37,17 @@ Linux回归和真实旧端点协议构造预检必须通过后才能提交；提
 PRE-RUN：原构造契约已定位；新协议的零接受授权不变；原8张只读复用，欠反馈优先，剩余预算8张。RUN（先测试与预检）。
 POST-RUN：失败工件完整，暂无物理反馈判决；Mac回归无warning/NaN/Inf或掩盖域错误。当前接受步数20。
 备份Mac `outputs/review-20260925/pre-control-window-recovery.bundle`；学校`/home/scc/pb24511938/pre-control-window-recovery.bundle`。
+
+## 实测预检与恢复提交
+
+Linux相关40 tests也通过（16.67秒）。实际学校旧端点完成control_protocol构造与native物质身份核验，
+原zero协议未改，最终accept_material_step/两种finite接受授权均False，zero_displacement_control=True，
+physical_time_advanced=False。证据`20260925-control-window-recovery-preflight.json`。
+9.41GiB端点全SHA明确留在allocation，预检没有冒称已在登录节点重哈希。
+
+代码提交`b8ccf237bf4f1bed7db9202d46412bddce3b6871`三端同步后，提交77299。
+18:48:13开始，anode03，32CPU/128GiB、16worker、cpu_long；4小时硬上限22:48:13（不是完成预测）。
+首快照RUNNING/preparing_recovery、stderr0；只读tmux watcher `step21-control-recovery-77299`，18000秒预算。
+终态将存`outputs/review-20260925/scheduler-77299/scheduler-terminal.json`。
+启动证据`handoff/evidence/20260925-control-recovery-77299-start.json`。当前仍0新反馈结论，接受20。
+讲义追加第17节；Claude草稿中的Linux/预检“进行中”按实测更新为通过，未把启动写成恢复成功。

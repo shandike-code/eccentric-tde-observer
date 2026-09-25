@@ -1,0 +1,19 @@
+{
+  "real_control_protocol_constructed": true,
+  "native_material_identity_passed": true,
+  "old_zero_protocol_unchanged": true,
+  "final_control_authorization": {
+    "accept_dynamic_nlte_solution": false,
+    "phase4_replacement": false,
+    "full_orbit": false,
+    "accept_finite_trial_as_one_nonlinear_step_only_if_all_gates_pass": false,
+    "reject_this_trial_if_any_gate_fails": true,
+    "accept_finite_trial_only_if_all_acceptance_gates_pass": false,
+    "accept_material_step": false,
+    "zero_displacement_control": true
+  },
+  "physical_time_advanced": false,
+  "inherited_history_count": 8,
+  "new_maps_started": 0,
+  "full_retained_field_hash_deferred_to_allocation": true
+}
