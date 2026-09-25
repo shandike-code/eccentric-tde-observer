@@ -1,0 +1,23 @@
+{
+  "job_id": 77066,
+  "observed_unix": 1790308951.525818,
+  "run": "outputs/hpc/step21-anderson2-scan-20260925",
+  "numeric_code_commit": "bc6879cdd909d03ad67bd816f936bc04deed2d4b",
+  "resources": {
+    "cpus": 4,
+    "mem_gib": 16,
+    "qos": "qos_stu_default",
+    "time_limit_s": 3600
+  },
+  "mac_tests": "31 passed in 0.89s",
+  "linux_tests": "31 passed in 19.96s",
+  "scope": {
+    "new_maps": 0,
+    "candidate_written": false,
+    "new_material_steps": 0,
+    "accepted_outer_steps": 20
+  },
+  "watcher": "step21-a2scan-77066",
+  "stdout": "JobId=77066 JobName=tde-step21-a2scan UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:01:19 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-09-25T12:01:11 EligibleTime=2026-09-25T12:01:11 AccrueTime=2026-09-25T12:01:11 StartTime=2026-09-25T12:01:12 EndTime=2026-09-25T13:01:12 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-25T12:01:12 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:3194012 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode05 BatchHost=anode05 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/scan_step21_anderson2.sbatch SubmitLine=sbatch --parsable operations/scan_step21_anderson2.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-step21-a2scan-77066.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-step21-a2scan-77066.out TresPerTask=cpu=4\n{\n  \"status\": \"preparing\",\n  \"updated_unix\": 1790308877.3509307,\n  \"accepted_outer_steps\": 20,\n  \"new_material_steps\": 0,\n  \"new_maps\": 0,\n  \"candidate_written\": false\n}\n0 outputs/hpc/logs/tde-step21-a2scan-77066.err\n",
+  "stderr": ""
+}

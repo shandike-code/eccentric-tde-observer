@@ -53,3 +53,22 @@ Mac `outputs/review-20260925/pre-affine-final-review.bundle`及同目录`automat
 school `/home/scc/pb24511938/pre-affine-final-review.bundle`。旧数值态未改。
 新增扫描测试与相关已有回归：Mac 31 passed in 0.90s；Shell语法和diff检查通过。
 学校端测试与提交编号在后续启动回执中补充，不预先宣称。
+
+## 已提交下一批
+
+数值代码 `bc6879cdd909d03ad67bd816f936bc04deed2d4b` 三端一致。Mac重检31 passed in 0.89s，Linux 31 passed in 19.96s。
+77066于12:01:11提交、12:01:12在anode05启动，默认4CPU/16GiB、1小时上限至13:01:12。
+启动检查RUNNING，status preparing（正在校验源），stderr 0 bytes。
+Watcher tmux `step21-a2scan-77066` 已存在；终态回执将写入
+`outputs/review-20260925/scheduler-77066/scheduler-terminal.json`。
+代码不会续交；中断或失败需先审现场。启动证据在
+`handoff/evidence/20260925-step21-anderson2-77066-start.json`。
+
+完整审计脚本已准备：`handoff/audit_tools/review_step21_anderson2.py`，参数为
+`--archive`、`--receipt`、`--prior outputs/review-20260925/step21-affine-76957-complete-received`、`--output`。
+下一次取新归档重聚合602片Gram/正性/边界/残差与选系数，核对源元数据与本次已审工件；
+图须目视检验，明确Mac未读取大场。若支持真实试验，再冻结新的32核验证协议。
+
+Claude讲义草稿出现把辐射端点称接受态、误将噪声门通过解读为排除内层误差、混淆辐射与物质方向等错误，
+已逐条纠正后写入原讲义第8节；未直接采纳草稿。
+新改3份Markdown格式检查通过；全库机械检查仍有6份既有讲义问题，未批量修改旧文件。
