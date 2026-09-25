@@ -1,0 +1,23 @@
+{
+  "scheduler": "JobId=76946 JobName=tde-step21-scan UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:01:00 TimeLimit=00:30:00 TimeMin=N/A SubmitTime=2026-09-25T08:06:29 EligibleTime=2026-09-25T08:06:29 AccrueTime=2026-09-25T08:06:29 StartTime=2026-09-25T08:06:29 EndTime=2026-09-25T08:36:29 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-25T08:06:29 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:229360 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode18 BatchHost=anode18 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/scan_step21_radiation_history.sbatch SubmitLine=sbatch --parsable operations/scan_step21_radiation_history.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-step21-scan-76946.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-step21-scan-76946.out TresPerTask=cpu=4\n",
+  "status": {
+    "status": "preparing",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "new_maps": 0,
+    "candidate_written": false
+  },
+  "declaration_exists": false,
+  "stderr": "",
+  "watcher_alive": true,
+  "job_id": 76946,
+  "observed_at": "2026-09-25T08:07:29.711963+08:00",
+  "numeric_commit": "5ef2463e1389e491369e8791646b504e659860d2",
+  "run": "outputs/hpc/step21-radiation-history-scan-20260925",
+  "mac_tests": "57 passed in 0.84s",
+  "linux_tests": "57 passed in 15.01s",
+  "maximum_maps": 0,
+  "candidate_written": false,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0
+}

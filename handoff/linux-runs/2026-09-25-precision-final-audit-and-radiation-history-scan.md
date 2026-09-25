@@ -68,3 +68,9 @@ Key Issues:
 Decision: RUN — 限学校测试通过后的只读30分钟诊断。
 
 备份 `outputs/review-20260925/pre-direction-precision-final-audit.bundle`、`automation-before-direction-precision-final-audit.toml`。旧大态与旧协议不动。Markdown机械检查仍仅历史六份lecture，不改写历史、不宣称全库通过。
+
+## 学校测试与启动
+
+代码 `5ef2463e1389e491369e8791646b504e659860d2` 三端一致，学校57 passed（15.01s），Shell/diff通过后提交。只读扫描作业 **76946** 于2026-09-25 08:06:29在anode18启动，默认4CPU16GiB，30分钟上限至08:36:29。启动日志为空，接受20/new0，map0，不写候选。详见 `handoff/evidence/20260925-step21-radiation-scan-76946-start.json`。
+
+独立watcher tmux `step21-radiation-scan-76946`，5400秒，终态 `outputs/review-20260925/scheduler-76946/scheduler-terminal.json`。学校改动前备份 `/home/scc/pb24511938/pre-step21-radiation-history-scan.bundle`。定时审阅切换到76946；76931及更早作业不重复提交。
