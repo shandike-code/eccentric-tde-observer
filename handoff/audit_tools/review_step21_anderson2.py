@@ -51,7 +51,11 @@ def review(archive, receipt, prior, output):
         g = sum((np.array(s['gram']) for s in gs), np.zeros((2, 2)))
         b = sum((np.array(s['rhs']) for s in gs), np.zeros(2))
         np.testing.assert_array_equal(g, h['gram']); np.testing.assert_array_equal(b, h['rhs'])
-        assert sum(s['r2_squared'] for s in gs) == h['r2_squared']
+        # 生产端逐片 +=；Python sum 的补偿算法与此不一定逐位一致。
+        accumulated_r2 = 0.
+        for s in gs:
+            accumulated_r2 += s['r2_squared']
+        assert accumulated_r2 == h['r2_squared']
         scale = np.max(abs(g)); eig = np.linalg.eigvalsh(g/scale) if scale else np.zeros(2)
         resolved = bool(eig[0] > 0 and eig[-1]/eig[0] < 1e10)
         assert h['solve']['resolved'] == resolved
@@ -60,6 +64,11 @@ def review(archive, receipt, prior, output):
             rows[case] = {'resolved': False, 'selected': None}; continue
         uv = np.linalg.solve(g/scale, -b/scale)
         np.testing.assert_allclose(uv, h['solve']['uv'], rtol=1e-12, atol=0)
+        # 跨CPU线性求解不要求逐位一致；上行独立复算系数用1e-12核对。
+        # 随后严格验证Linux声明系数到候选记录的算术血缘，不放宽任何科学门。
+        solve_scale = float(np.max(np.abs(h['solve']['uv'])))
+        solve_relative_difference = float(np.max(np.abs(uv-np.array(h['solve']['uv'])))/solve_scale) if solve_scale else 0.
+        uv = np.array(h['solve']['uv'])
         assert [c['eta'] for c in h['candidates']] == d['etas']
         for candidate in h['candidates']:
             u, v = uv*candidate['eta']; coef = [v, u, 1-u-v]
@@ -87,7 +96,8 @@ def review(archive, receipt, prior, output):
         eligible = [c for c in h['candidates'] if c['feasible']]
         selected = min(eligible, key=lambda c: c['predicted_global_residual']) if eligible else None
         assert h['selected'] == ({k: selected[k] for k in ('eta', 'coefficients', 'predicted_ratio', 'predicted_global_residual')} if selected else None)
-        rows[case] = dict(resolved=True, selected=h['selected'], condition=h['solve']['condition'])
+        rows[case] = dict(resolved=True, selected=h['selected'], condition=h['solve']['condition'],
+                         cross_cpu_solve_relative_difference=solve_relative_difference)
     result = dict(archive=claim, verified_files=len(manifest['files']), verified_code_claims=len(d['code']), cases=rows,
                   large_fields_recomputed_on_mac=False, fresh_map_required=True, accepted_outer_steps=20, new_maps=0)
     output.with_suffix('.json').write_text(json.dumps(result, indent=2, allow_nan=False)+'\n')

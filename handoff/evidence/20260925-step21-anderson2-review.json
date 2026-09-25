@@ -1,0 +1,33 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-anderson2-scan-20260925/archives/complete-1790309530157168659.tar.gz",
+    "size_bytes": 550821,
+    "sha256": "d852e238c22d2170f0e660fb14d7e29b7958610dbcf1133a41b4eab9ac83d48c"
+  },
+  "verified_files": 3,
+  "verified_code_claims": 681,
+  "cases": {
+    "control": {
+      "resolved": true,
+      "selected": null,
+      "condition": 12133.252936786526,
+      "cross_cpu_solve_relative_difference": 3.337189118301569e-15
+    },
+    "thermal": {
+      "resolved": true,
+      "selected": null,
+      "condition": 2737.567622143684,
+      "cross_cpu_solve_relative_difference": 6.197605173265929e-16
+    },
+    "population": {
+      "resolved": true,
+      "selected": null,
+      "condition": 3171.3149761472037,
+      "cross_cpu_solve_relative_difference": 7.946395757880509e-16
+    }
+  },
+  "large_fields_recomputed_on_mac": false,
+  "fresh_map_required": true,
+  "accepted_outer_steps": 20,
+  "new_maps": 0
+}
