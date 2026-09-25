@@ -1,0 +1,20 @@
+{
+  "job_id": 77094,
+  "observed_unix": 1790312992.582473,
+  "numeric_code_commit": "c4e5ab1d499230c4f1952336dc84adda31d408ed",
+  "run": "outputs/hpc/step21-affine-tail-diagnostic-20260925",
+  "mac_tests": "40 passed in 1.05s",
+  "linux_tests": "40 passed in 20.60s",
+  "resources": {
+    "cpus": 4,
+    "mem_gib": 16,
+    "qos": "qos_stu_default",
+    "walltime_s": 1800
+  },
+  "watcher": "step21-tail-77094",
+  "accepted_outer_steps": 20,
+  "new_maps": 0,
+  "candidate_written": false,
+  "stdout": "JobId=77094 JobName=tde-step21-tail UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:01:16 TimeLimit=00:30:00 TimeMin=N/A SubmitTime=2026-09-25T13:08:36 EligibleTime=2026-09-25T13:08:36 AccrueTime=2026-09-25T13:08:36 StartTime=2026-09-25T13:08:36 EndTime=2026-09-25T13:38:36 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-25T13:08:36 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:4030497 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode04 BatchHost=anode04 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/diagnose_step21_affine_tail.sbatch SubmitLine=sbatch --parsable operations/diagnose_step21_affine_tail.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-step21-tail-77094.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-step21-tail-77094.out TresPerTask=cpu=4\n{\n  \"status\": \"preparing\",\n  \"updated_unix\": 1790312922.9813318,\n  \"new_maps\": 0,\n  \"new_material_steps\": 0,\n  \"accepted_outer_steps\": 20,\n  \"candidate_written\": false\n}\n0 outputs/hpc/logs/tde-step21-tail-77094.err\n",
+  "stderr": ""
+}

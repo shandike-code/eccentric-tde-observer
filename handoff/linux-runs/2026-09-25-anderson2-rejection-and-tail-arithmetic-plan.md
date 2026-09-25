@@ -59,3 +59,17 @@ Mac备份 `outputs/review-20260925/pre-anderson2-audit.bundle` 与
 `automation-before-anderson2-audit.toml`；school `/home/scc/pb24511938/pre-anderson2-audit.bundle`。
 新增与相关回归在Mac 40 passed in 1.05s，Shell/py_compile/diff通过；学校端结果和job编号另记启动回执。
 完整科学解仍未得到。后续只按确证的数值障碍选择保持正性的辐射算法，不用候选失败推出无静态解。
+
+## 已启动77094
+
+数值代码 `c4e5ab1d499230c4f1952336dc84adda31d408ed` 已三端同步。
+Linux 40 passed in 20.60s，Shell/diff通过。77094于13:08:36在anode04启动，4CPU/16GiB，
+硬上限13:38:36，USR1提前120秒。启动快照RUNNING、status preparing、stderr为空。
+watcher tmux `step21-tail-77094` 已启动，终态保存到
+`outputs/review-20260925/scheduler-77094/scheduler-terminal.json`。
+启动证据 `handoff/evidence/20260925-step21-tail-77094-start.json`。
+
+下一次Mac复核命令入口为 `handoff/audit_tools/review_step21_affine_tail.py`，参数
+`--archive <new archive> --receipt <new receipt> --scan-archive outputs/review-20260925/complete-1790309530157168659.tar.gz --output handoff/evidence/20260925-step21-tail-review`。
+当前没有真实尾部有理数结果；不能把合成测试的零基态例子当成真实数据已经出现的证据。
+Claude补充草稿已独立修订，去掉“Gram过门即可排除系数噪声”的过强结论，讲义第9节已更新。
