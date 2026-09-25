@@ -50,3 +50,15 @@ Mac新增/复用58项测试通过（0.97秒），覆盖六态写入、八态实�
 真实构造器契约、先验审计选择、11map硬上限、首映射/首反馈/中断停止及已有恢复预算测试。
 本轮备份Mac`outputs/review-20260925/pre-wide-plane-audit.bundle`、`automation-before-wide-plane-audit.toml`，
 学校`/home/scc/pb24511938/pre-wide-plane-audit.bundle`。学校测试/实际预检/启动证据后续另记，不预填。
+
+## 学校验证与提交
+
+数字代码`5f675cb9bd8ce5b409b9b76ca3c7e6d744b5fa2b`已三端同步。
+Linux同58项测试通过（14.41秒）；实际学校finite/zero模板构造、native身份和精确control trial预检通过，
+全部物质接受授权false。证据`handoff/evidence/20260925-wide-validation-preflight.json`。
+
+已提交77371，资源32CPU/128GiB/qos_stu_cpu_long，最多4小时；启动/排队状态以
+`handoff/evidence/20260925-wide-validation-77371-start.json`和现场为准，不预写计算成功。
+只读监督用`watch_readonly_scan.py --mode wide-validation`区分本次真实映射与上次只读扫描，
+5小时监督预算，输出`outputs/review-20260925/wide-validation-watch-77371`，tmux名`step21-wide-validation-77371`。
+Claude只读摘要不拥有提交权，终态交Mac独立审计；旧77366不重交。

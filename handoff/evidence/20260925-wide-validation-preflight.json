@@ -1,0 +1,19 @@
+{
+  "selected": "x6-x14-x15",
+  "actual_protocol_construction_pass": true,
+  "native_identity_pass": true,
+  "exact_control_trial_pass": true,
+  "authorization": {
+    "accept_dynamic_nlte_solution": false,
+    "phase4_replacement": false,
+    "full_orbit": false,
+    "accept_finite_trial_as_one_nonlinear_step_only_if_all_gates_pass": false,
+    "reject_this_trial_if_any_gate_fails": true,
+    "accept_finite_trial_only_if_all_acceptance_gates_pass": false,
+    "accept_material_step": false,
+    "zero_displacement_control": true
+  },
+  "new_map_budget": 11,
+  "maximum_pairs": 2,
+  "full_large_state_hashes_deferred_to_allocation": true
+}
