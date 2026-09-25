@@ -57,3 +57,9 @@ POST-RUN：20测试与旧真实反馈回放通过，无warning/NaN/Inf/域或资
 
 Claude讲义草稿已核对并追加第16节：其“独立求解保证结论不依赖工件是否正确”的表述过强，
 改为独立求解仍须检验共享方程/初值/离散化与物理假设。仅窗口归约独立实现；反馈核验仍复用已有编码器、能量定义和state_checks，未宣称整条微物理实现独立。
+
+## 后续故障勘记
+
+18:33:11，77264在首反馈协议构造阶段FAILED/1:0；上文18:31快照仍属当时实测，不代表后续持续运行。
+根因、8张map工件复核及有界恢复见`2026-09-25-control-window-failure-and-recovery.md`。
+恢复工件使用新审计入口时必须额外传`--prior-failed outputs/review-20260925/step21-control-windows-77264-failed-received`，并换独立received/输出前缀。

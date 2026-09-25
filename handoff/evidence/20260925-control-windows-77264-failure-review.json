@@ -1,0 +1,96 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-control-windows-20260925/archives/failed-1790332388257895194.tar.gz",
+    "size_bytes": 1431619,
+    "sha256": "80369fbc80e07f14961005baee4637d052a5a2372814d4b6eb4d031fcc34305a"
+  },
+  "job_id": 77264,
+  "terminal_state": "FAILED",
+  "failure_stage": "protocol construction before feedback",
+  "error": "RuntimeError('trial-residual acceptance authorization changed')",
+  "verified_files": 1228,
+  "verified_code_claims": 685,
+  "maps": [
+    {
+      "iteration": 1,
+      "residual": 4.9310322221475354e-06,
+      "boundary_l1": 3.359303794731785e-06,
+      "boundary_bolometric": 1.5766226520551275e-06,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.15947737083531802,
+      "wall_s": 167.6025768071413
+    },
+    {
+      "iteration": 2,
+      "residual": 4.910321347432344e-06,
+      "boundary_l1": 3.252703640695429e-06,
+      "boundary_bolometric": 1.2708915555815541e-06,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.15934004331633994,
+      "wall_s": 162.826213426888
+    },
+    {
+      "iteration": 3,
+      "residual": 4.889718488716445e-06,
+      "boundary_l1": 3.1574590310033936e-06,
+      "boundary_bolometric": 9.937266005078617e-07,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.1592029795509044,
+      "wall_s": 169.92832641676068
+    },
+    {
+      "iteration": 4,
+      "residual": 4.869201565053541e-06,
+      "boundary_l1": 3.071439471526543e-06,
+      "boundary_bolometric": 7.425646481348432e-07,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.15906617798540695,
+      "wall_s": 166.19768220186234
+    },
+    {
+      "iteration": 5,
+      "residual": 4.848773489814171e-06,
+      "boundary_l1": 2.9931371422106046e-06,
+      "boundary_bolometric": 5.150713796507463e-07,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.15892963709009125,
+      "wall_s": 161.43583738058805
+    },
+    {
+      "iteration": 6,
+      "residual": 4.8284629884932455e-06,
+      "boundary_l1": 2.9213028330991464e-06,
+      "boundary_bolometric": 3.0912346172465216e-07,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.1587933554039326,
+      "wall_s": 168.433294467628
+    },
+    {
+      "iteration": 7,
+      "residual": 4.808237057139962e-06,
+      "boundary_l1": 2.854930826652259e-06,
+      "boundary_bolometric": 1.2279108193069736e-07,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.15865733141385469,
+      "wall_s": 171.5590538084507
+    },
+    {
+      "iteration": 8,
+      "residual": 4.788095358658144e-06,
+      "boundary_l1": 2.7931984988410453e-06,
+      "boundary_bolometric": 4.5678766298333474e-08,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.15852156368115888,
+      "wall_s": 170.96863136813045
+    }
+  ],
+  "map_process_receipts": 608,
+  "maximum_proc_kib": 3587308,
+  "retained_endpoint_lineage_verified": true,
+  "feedback_pairs_executed": 0,
+  "new_material_steps": 0,
+  "accepted_outer_steps": 20,
+  "total_original_map_budget": 16,
+  "remaining_new_map_budget": 8,
+  "large_field_bytes_rehashed_on_mac": false
+}

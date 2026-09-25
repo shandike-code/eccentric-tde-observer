@@ -192,7 +192,7 @@ def audit_maps(out):
     return reports,peaks
 
 
-def review(archive,receipt,out,reference,physical_old,prior_confirmed,prior_control,output):
+def review(archive,receipt,out,reference,physical_old,prior_confirmed,prior_control,output,prior_failed=None):
     manifest=receive(archive,receipt,out);complete=(out/'summary.json').exists();d=read(out/'declaration.json')
     status=read(out/'status.json');assert status['accepted_outer_steps']==20 and status['new_material_steps']==0
     # 旧包已独立审过；再次核清单和来源字节，不能把新窗口基准偷换为旧target。
@@ -203,7 +203,24 @@ def review(archive,receipt,out,reference,physical_old,prior_confirmed,prior_cont
     seed=prior_ret['endpoints']['mapped_final'];assert seed['sha256']==prior_state['history'][-1]['output_sha256']
     verify_declaration(d,seed)
     history=read(out/'control/state.json')['history'];assert history[0]['input_sha256']==seed['sha256']
-    assert read(out/'control/config.json')['warm_seed']==seed
+    if 'recovery' in d:
+        assert prior_failed is not None
+        verified_inventory(prior_failed);recovery=d['recovery'];old_state=read(prior_failed/'control/state.json')
+        assert recovery['source_job']==77264 and recovery['inherited_map_count']==8 and recovery['maximum_new_maps']==8 and recovery['feedback_due_before_new_map'] is True
+        assert old_state['active_map'] is None and len(old_state['history'])==8 and history[:8]==old_state['history']
+        assert digest(prior_failed/'control/state.json')==recovery['source_state']['sha256']
+        failed=read(prior_failed/'status.json');assert failed['status']=='failed' and failed['error']=="RuntimeError('trial-residual acceptance authorization changed')"
+        assert d['resume_seed']==read(prior_failed/'control/endpoints-map08/manifest.json')['endpoints']['mapped_final']
+        assert read(out/'control/config.json')['warm_seed']==d['resume_seed']
+        assert read(out/'control/state.json')['inherited_map_count']==8
+        expected={p.relative_to(prior_failed).as_posix() for p in (prior_failed/'control').glob('map*/*.json')}|{'control/endpoints-map08/manifest.json'}
+        assert {x['relative_path'] for x in recovery['inherited_files']}==expected
+        for item in recovery['inherited_files']:
+            c=item['source'];rel=item['relative_path']
+            assert c['path']==recovery['source']+'/'+rel
+            assert digest(out/rel)==digest(prior_failed/rel)==c['sha256'] and (out/rel).stat().st_size==c['size_bytes']
+    else:
+        assert prior_failed is None and read(out/'control/config.json')['warm_seed']==seed
     assert digest(out/'control/trial_material.npz')==digest(prior_control/'control/trial_material.npz')
     for c in d['cases']['control'].values():
         f=out/'inputs'/Path(c['path']).name;assert f.stat().st_size==c['size_bytes'] and digest(f)==c['sha256']
@@ -219,6 +236,7 @@ def review(archive,receipt,out,reference,physical_old,prior_confirmed,prior_cont
         assert summary['status']=='control_window_diagnostic_complete' and summary['accepted_outer_steps']==20 and summary['new_material_steps']==0
         assert summary['baseline_replaced'] is False and summary['strict_error_bound'] is False
         assert set(summary['windows'])=={'8','16'}
+        if 'recovery' in d:assert summary['inherited_maps']==8 and summary['new_maps']==8
     else:assert manifest['stage'] in ('control-map08-feedback','control-map16-feedback')
     reports={};peaks=[];residuals={}
     for n in selected:
@@ -255,6 +273,8 @@ def review(archive,receipt,out,reference,physical_old,prior_confirmed,prior_cont
             'audited_windows':selected,'windows':reports,'maps':maps,'feedback_process_receipts':feedback_count,'map_process_receipts':len(map_peaks),'maximum_proc_kib':max(peaks),
             'production_window_function_reused':False,'large_radiation_field_recomputed':False,'material_response_recomputed_on_mac':False,
             'accepted_outer_steps':20,'new_material_steps':0,'baseline_replaced':False,'strict_error_bound':False}
+    result['inherited_maps']=8 if 'recovery' in d else 0
+    result['new_maps_in_this_run']=len(maps)-result['inherited_maps']
     output.with_suffix('.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
     print(json.dumps({k:result[k] for k in ('final_summary_present','verified_files','audited_windows','maximum_proc_kib')},indent=2))
     return result
@@ -263,6 +283,7 @@ def review(archive,receipt,out,reference,physical_old,prior_confirmed,prior_cont
 def main():
     parser=argparse.ArgumentParser()
     for k in ('archive','receipt','received','reference','physical-old','prior-confirmed','prior-control','output'):parser.add_argument('--'+k,type=Path,required=True)
-    a=parser.parse_args();review(a.archive,a.receipt,a.received,a.reference,a.physical_old,a.prior_confirmed,a.prior_control,a.output)
+    parser.add_argument('--prior-failed',type=Path)
+    a=parser.parse_args();review(a.archive,a.receipt,a.received,a.reference,a.physical_old,a.prior_confirmed,a.prior_control,a.output,a.prior_failed)
 
 if __name__=='__main__':main()
