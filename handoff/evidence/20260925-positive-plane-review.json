@@ -1,0 +1,76 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-positive-plane-scan-20260925/archives/complete-1790316648108354528.tar.gz",
+    "size_bytes": 1076531,
+    "sha256": "492dfc12993113c06e179ca88cd8dd92d8bb93f5c1b229a7ee6ba8a00fa9d89a"
+  },
+  "verified_files": 6,
+  "verified_code_claims": 683,
+  "cases": {
+    "control": {
+      "passes": 3,
+      "cuts": 40,
+      "feasible": true,
+      "reason": "positive_candidate_review_required",
+      "effective_uv": [
+        -5.502252447101244,
+        0.44724228959376544
+      ],
+      "predicted_ratio": 0.980458868751369,
+      "gates": {
+        "positive": true,
+        "coefficient_l1": true,
+        "coefficient_sum": true,
+        "strict_inner": true,
+        "maximum_improves": true,
+        "boundary_l1": true,
+        "boundary_bolometric": true
+      }
+    },
+    "thermal": {
+      "passes": 3,
+      "cuts": 18,
+      "feasible": true,
+      "reason": "positive_candidate_review_required",
+      "effective_uv": [
+        -8.045775330593539,
+        0.7368322658967155
+      ],
+      "predicted_ratio": 0.9725097569529314,
+      "gates": {
+        "positive": true,
+        "coefficient_l1": true,
+        "coefficient_sum": true,
+        "strict_inner": true,
+        "maximum_improves": true,
+        "boundary_l1": true,
+        "boundary_bolometric": true
+      }
+    },
+    "population": {
+      "passes": 2,
+      "cuts": 22,
+      "feasible": true,
+      "reason": "positive_candidate_review_required",
+      "effective_uv": [
+        -7.000621134139923,
+        0.6144693479691827
+      ],
+      "predicted_ratio": 0.975764149996243,
+      "gates": {
+        "positive": true,
+        "coefficient_l1": true,
+        "coefficient_sum": true,
+        "strict_inner": true,
+        "maximum_improves": true,
+        "boundary_l1": true,
+        "boundary_bolometric": true
+      }
+    }
+  },
+  "full_fields_recomputed_on_mac": false,
+  "optimizer_independently_reimplemented": false,
+  "full_constrained_optimum_proven": false,
+  "accepted_outer_steps": 20,
+  "new_maps": 0
+}
