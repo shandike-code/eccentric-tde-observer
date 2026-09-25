@@ -1,0 +1,69 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-wide-plane-scan-20260925/archives/complete-1790340321567141965.tar.gz",
+    "size_bytes": 756731,
+    "sha256": "05727ff19ad504fa6f1a0b8a5edf8b36ebd0b55dab692a5fd6ffc5d84a168e69"
+  },
+  "verified_files": 7,
+  "verified_code_claims": 687,
+  "cases": {
+    "x6-x14-x15": {
+      "feasible": true,
+      "cost_eligible": true,
+      "effective_uv": [
+        -80.37545614416956,
+        0.99
+      ],
+      "predicted_ratio": 0.7016517740493879,
+      "predicted_global_residual": 3.2487565180437647e-06,
+      "predicted_boundary_l1": 5.690838977011825e-06,
+      "predicted_boundary_bolometric": 5.686579625300755e-06,
+      "cuts": 18,
+      "passes": 2,
+      "gram_condition": 8767.114258124413,
+      "peak_rss_bytes": 317632512,
+      "gates": {
+        "positive": true,
+        "coefficient_l1": true,
+        "coefficient_sum": true,
+        "strict_inner": true,
+        "maximum_improves": true,
+        "boundary_l1": true,
+        "boundary_bolometric": true
+      }
+    },
+    "x7-x14-x15": {
+      "feasible": true,
+      "cost_eligible": true,
+      "effective_uv": [
+        -79.12080484563582,
+        0.99
+      ],
+      "predicted_ratio": 0.7026180501644627,
+      "predicted_global_residual": 3.2532305262956954e-06,
+      "predicted_boundary_l1": 5.76740749397428e-06,
+      "predicted_boundary_bolometric": 5.762837245368252e-06,
+      "cuts": 18,
+      "passes": 2,
+      "gram_condition": 9084.516155478368,
+      "peak_rss_bytes": 319856640,
+      "gates": {
+        "positive": true,
+        "coefficient_l1": true,
+        "coefficient_sum": true,
+        "strict_inner": true,
+        "maximum_improves": true,
+        "boundary_l1": true,
+        "boundary_bolometric": true
+      }
+    }
+  },
+  "selected": "x6-x14-x15",
+  "accepted_outer_steps": 20,
+  "new_maps": 0,
+  "new_material_steps": 0,
+  "full_fields_recomputed_on_mac": false,
+  "optimizer_independently_reimplemented": false,
+  "strict_error_bound": false,
+  "baseline_replaced": false
+}
