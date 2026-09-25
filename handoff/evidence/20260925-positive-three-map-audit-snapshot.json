@@ -1,0 +1,44 @@
+{
+  "job_id": 77126,
+  "observed_unix": 1790324190.6935122,
+  "observed_local": "2026-09-25T16:16:30.693514",
+  "status": {
+    "status": "feedback",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790324046.7088292,
+    "case": "control"
+  },
+  "cases": {
+    "control": {
+      "status": "radiation",
+      "maps": 3,
+      "active_map": null,
+      "feedback_block_json_counts": {
+        "previous": 30,
+        "final": 0
+      }
+    },
+    "thermal": {
+      "status": "radiation",
+      "maps": 1,
+      "active_map": null,
+      "feedback_block_json_counts": {
+        "previous": 0,
+        "final": 0
+      }
+    },
+    "population": {
+      "status": "radiation",
+      "maps": 1,
+      "active_map": null,
+      "feedback_block_json_counts": {
+        "previous": 0,
+        "final": 0
+      }
+    }
+  },
+  "stderr_bytes": 0,
+  "squeue": "77126 RUNNING 1:27:02 32 anode04\n",
+  "watcher_alive": true
+}

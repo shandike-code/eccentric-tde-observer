@@ -1,0 +1,122 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-positive-plane-validation-20260925/archives/population-validation-1790323533732813363.tar.gz",
+    "size_bytes": 3990700,
+    "sha256": "0fdbd6d17be4a42923e53528bdd3b8f693d31b64cd2cfce2754502042bc40eaf"
+  },
+  "verified_files": 488,
+  "verified_code_claims": 684,
+  "map_process_receipts": 228,
+  "audited_cases": [
+    "control",
+    "thermal",
+    "population"
+  ],
+  "cases": {
+    "control": {
+      "actual_residual": 4.9937817096107006e-06,
+      "actual_over_prior": 0.9804588686808425,
+      "boundary_l1": 3.773778449305713e-06,
+      "boundary_bolometric": 2.6946363478745092e-06,
+      "prediction_error_over_field": 9.698960299799072e-15,
+      "prediction_error_over_actual_change": 1.9422075020085704e-09,
+      "worst_slab_prediction_relative": 0.008552997290154296,
+      "worst_slab": {
+        "start": 9488,
+        "stop": 9504,
+        "error_max": 3.09450244646e-312,
+        "field_scale": 3.618032768489e-310,
+        "actual_change_max": 6.1031709786127e-311,
+        "error_relative_to_local_field": 0.008552997290154296,
+        "actual_local_residual": 0.16868755395937454
+      },
+      "maximum_field_scale": 0.03863303480258114,
+      "worst_slab_scale_subnormal": true,
+      "worst_block_index": 74,
+      "worst_block_relative": 0.15989095169793915,
+      "map_wall_s": 206.4135620445013,
+      "max_proc_kib": 3520640,
+      "checks": {
+        "actual_maximum_norm_improves": true,
+        "actual_boundary_spectrum_pass": true,
+        "actual_boundary_bolometric_pass": true,
+        "worker_memory_pass": true,
+        "strict_inner_pass": true,
+        "full_field_prediction_error_small": true,
+        "prediction_error_below_tenth_actual_change": true
+      }
+    },
+    "thermal": {
+      "actual_residual": 4.630388765273045e-06,
+      "actual_over_prior": 0.972509756688872,
+      "boundary_l1": 4.914130664303702e-06,
+      "boundary_bolometric": 2.1070184627609915e-06,
+      "prediction_error_over_field": 1.2033725656500876e-14,
+      "prediction_error_over_actual_change": 2.5988585983862354e-09,
+      "worst_slab_prediction_relative": 0.0024797336471136418,
+      "worst_slab": {
+        "start": 9488,
+        "stop": 9504,
+        "error_max": 4.198220072204e-312,
+        "field_scale": 1.69301250442373e-309,
+        "actual_change_max": 2.7910919826318e-310,
+        "error_relative_to_local_field": 0.0024797336471136418,
+        "actual_local_residual": 0.16485950194336335
+      },
+      "maximum_field_scale": 0.0386335790620781,
+      "worst_slab_scale_subnormal": true,
+      "worst_block_index": 74,
+      "worst_block_relative": 0.15873709491479449,
+      "map_wall_s": 160.33952909335494,
+      "max_proc_kib": 3585036,
+      "checks": {
+        "actual_maximum_norm_improves": true,
+        "actual_boundary_spectrum_pass": true,
+        "actual_boundary_bolometric_pass": true,
+        "worker_memory_pass": true,
+        "strict_inner_pass": true,
+        "full_field_prediction_error_small": true,
+        "prediction_error_below_tenth_actual_change": true
+      }
+    },
+    "population": {
+      "actual_residual": 4.716680200994407e-06,
+      "actual_over_prior": 0.9757641495132294,
+      "boundary_l1": 2.5828356732756277e-06,
+      "boundary_bolometric": 1.5336311516407502e-06,
+      "prediction_error_over_field": 1.16740732440662e-14,
+      "prediction_error_over_actual_change": 2.47506143019936e-09,
+      "worst_slab_prediction_relative": 0.002065788184259694,
+      "worst_slab": {
+        "start": 9488,
+        "stop": 9504,
+        "error_max": 3.901286137794e-312,
+        "field_scale": 1.888521856945215e-309,
+        "actual_change_max": 3.11748999603415e-310,
+        "error_relative_to_local_field": 0.002065788184259694,
+        "actual_local_residual": 0.16507566404748172
+      },
+      "maximum_field_scale": 0.03863502432479789,
+      "worst_slab_scale_subnormal": true,
+      "worst_block_index": 74,
+      "worst_block_relative": 0.15873968633551866,
+      "map_wall_s": 187.35297771915793,
+      "max_proc_kib": 3581504,
+      "checks": {
+        "actual_maximum_norm_improves": true,
+        "actual_boundary_spectrum_pass": true,
+        "actual_boundary_bolometric_pass": true,
+        "worker_memory_pass": true,
+        "strict_inner_pass": true,
+        "full_field_prediction_error_small": true,
+        "prediction_error_below_tenth_actual_change": true
+      }
+    }
+  },
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "feedback_reviewed": false,
+  "raw_large_states_recomputed_on_mac": false,
+  "field_extrema_reaggregated_from_602_slabs_per_case": true,
+  "full_field_l2_recomputed_on_mac": false
+}
