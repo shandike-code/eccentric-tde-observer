@@ -59,3 +59,15 @@ Mac新增和复用测试32 passed（0.87秒）：非连续映射配对/错配拒
 Mac备份`outputs/review-20260925/pre-control-window-final-audit.bundle`和`automation-before-control-window-final-audit.toml`；
 学校`/home/scc/pb24511938/pre-control-window-final-audit.bundle`。旧77264/77299工件、代码与协议均未改。
 完整结果核查图没有数值伪迹；强度不是发射率，单柱控制诊断不是全域大气或整盘观测谱。
+
+## 已启动
+
+代码提交`bf7b8708873fc775d7e7013e1aedecc6f0605357`已同步Mac/学校/GitHub。
+Linux同32项测试通过（19.43秒）。学校实际两组配对、固定物质身份声明一致、全部大态大小通过预检；
+完整SHA仍由allocation执行，不把文件大小预检称为完整校验。
+
+作业77366于20:19:18启动，anode04，qos_stu_default，4CPU/16GiB、1小时硬上限21:19:18。
+run为`outputs/hpc/step21-wide-plane-scan-20260925`。启动证据`handoff/evidence/20260925-wide-plane-77366-start.json`。
+只读平台监督工具`handoff/audit_tools/watch_readonly_scan.py`只记录调度/状态摘要；Claude只在启动和终态作无工具审阅，
+不会提交/取消/重试、改数值代码或科学门。监督预算90分钟，独立于数值作业；故障显式留档，不将模型审阅视为独立数值审计。
+平台Claude位于`/home/scc/pb24511938/opt/node-v22.18.0-linux-x64/bin/claude`，需同目录node加入本次进程PATH。
