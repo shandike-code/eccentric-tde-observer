@@ -1,0 +1,95 @@
+{
+  "job_id": 77299,
+  "observed_unix": 1790335609.5068653,
+  "scontrol": "JobId=77299 JobName=tde-control-resume UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:38:36 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-09-25T18:48:13 EligibleTime=2026-09-25T18:48:13 AccrueTime=2026-09-25T18:48:13 StartTime=2026-09-25T18:48:13 EndTime=2026-09-25T22:48:13 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-25T18:48:13 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:65242 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode03 BatchHost=anode03 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/recover_step21_control_windows.sbatch SubmitLine=sbatch --parsable operations/recover_step21_control_windows.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-control-resume-77299.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-control-resume-77299.out TresPerTask=cpu=32\n",
+  "status": {
+    "status": "mapping",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790335604.6197221,
+    "completed_maps": 11,
+    "inherited_maps": 8
+  },
+  "committed_maps": 11,
+  "inherited_maps": 8,
+  "new_committed_maps": 3,
+  "active_map": null,
+  "pair08_decision": {
+    "zero_control_stable": true,
+    "window_comparison": {
+      "vector_difference_over_frozen_r20_norms": {
+        "previous_vs_previous": [
+          0.005194131941882201,
+          0.01845561773720238,
+          0.002416335270591328
+        ],
+        "previous_vs_final": [
+          0.004508706619573367,
+          0.016070014664354957,
+          0.0021096511074596316
+        ],
+        "final_vs_previous": [
+          0.005801297101377457,
+          0.0206627935569406,
+          0.002711097998759984
+        ],
+        "final_vs_final": [
+          0.005116309307926281,
+          0.018277596911874867,
+          0.0024044138357759903
+        ]
+      },
+      "passed": false,
+      "tolerance": 0.001,
+      "strict_error_bound": false,
+      "baseline_replaced": false
+    },
+    "from_77126_comparison": {
+      "vector_difference_over_frozen_r20_norms": {
+        "previous_vs_previous": [
+          0.005194131941882201,
+          0.01845561773720238,
+          0.002416335270591328
+        ],
+        "previous_vs_final": [
+          0.004508706619573367,
+          0.016070014664354957,
+          0.0021096511074596316
+        ],
+        "final_vs_previous": [
+          0.005801297101377457,
+          0.0206627935569406,
+          0.002711097998759984
+        ],
+        "final_vs_final": [
+          0.005116309307926281,
+          0.018277596911874867,
+          0.0024044138357759903
+        ]
+      },
+      "passed": false,
+      "tolerance": 0.001,
+      "strict_error_bound": false,
+      "baseline_replaced": false
+    },
+    "fresh_control_minus_r20_norms": {
+      "l2": 0.5457057936353154,
+      "mass_weighted": 0.03930952290937848,
+      "maximum_cell": 0.11584354974877434
+    },
+    "original_gates": {
+      "last_two_photoionization_pass": true,
+      "last_two_total_recombination_pass": true,
+      "last_two_atomic_heating_pass": true,
+      "last_two_direct_heating_pass": true,
+      "last_two_formal_heating_pass": true,
+      "inner_pair_ready": true,
+      "physical_response_pass": true
+    },
+    "baseline_replaced": false,
+    "promoted": false,
+    "parent_peak_rss_bytes": 230260736
+  },
+  "stderr_bytes": 0,
+  "watcher_alive": true
+}

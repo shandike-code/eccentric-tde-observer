@@ -263,7 +263,7 @@ def review(archive,receipt,out,reference,physical_old,prior_confirmed,prior_cont
     for c in d['code']:
         f=Path(c['path']);assert f.stat().st_size==c['size_bytes'] and digest(f)==c['sha256']
     fig,axs=plt.subplots(1,3,figsize=(15,4),layout='constrained')
-    axs[0].plot([m['iteration'] for m in maps],[m['residual'] for m in maps],marker='o');axs[0].set(xlabel='New map',ylabel='Global radiation residual')
+    axs[0].plot([m['iteration'] for m in maps],[m['residual'] for m in maps],marker='o');axs[0].set(xlabel='Experiment map index (includes inherited maps)',ylabel='Global radiation residual')
     for k,name in enumerate(NAMES):axs[1].plot(selected,[max(v[k] for v in reports[str(n)]['window']['vector_difference_over_frozen_r20_norms'].values()) for n in selected],marker='o',label=name)
     axs[1].axhline(.001,color='black',linestyle='--');axs[1].set(xlabel='Window end map',ylabel='Worst vector drift / frozen r20 norm');axs[1].legend()
     for n in selected:axs[2].plot(np.linalg.norm(residuals[n]['final'].reshape(128,4),axis=1),label=f'pair{n:02d}')
