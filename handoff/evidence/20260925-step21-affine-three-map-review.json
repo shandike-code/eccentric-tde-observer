@@ -1,0 +1,117 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-radiation-affine-validation-20260925/archives/population-validation-1790304399314204202.tar.gz",
+    "size_bytes": 3267693,
+    "sha256": "0f3641c7a23dc7ec2a055fcf2a8b9c2e906370cf7f3366bfcc81fe630eae67bb"
+  },
+  "verified_files": 488,
+  "verified_code_claims": 680,
+  "map_process_receipts": 228,
+  "cases": {
+    "control": {
+      "actual_residual": 5.136888820526378e-06,
+      "actual_over_prior": 0.7375932734991171,
+      "boundary_l1": 1.0126843560051766e-05,
+      "boundary_bolometric": 1.0084632443626839e-05,
+      "prediction_error_over_field": 4.2928011116669484e-14,
+      "prediction_error_over_actual_change": 8.356811411828652e-09,
+      "worst_slab_prediction_relative": 0.10486730439517186,
+      "worst_slab": {
+        "start": 9488,
+        "stop": 9504,
+        "error_max": 1.482083571796e-311,
+        "field_scale": 1.4132942391761e-310,
+        "actual_change_max": 2.738381539739e-311,
+        "error_relative_to_local_field": 0.10486730439517186,
+        "actual_local_residual": 0.19375877038424316
+      },
+      "maximum_field_scale": 0.03863201671576748,
+      "worst_slab_scale_subnormal": true,
+      "worst_block_index": 74,
+      "worst_block_relative": 0.16048557238586614,
+      "map_wall_s": 141.92115875612944,
+      "max_proc_kib": 3584940,
+      "checks": {
+        "actual_maximum_norm_improves": true,
+        "actual_boundary_spectrum_pass": true,
+        "actual_boundary_bolometric_pass": true,
+        "worker_memory_pass": true,
+        "strict_inner_pass": true,
+        "full_field_prediction_error_small": true,
+        "prediction_error_below_tenth_actual_change": true
+      }
+    },
+    "thermal": {
+      "actual_residual": 4.801202431528445e-06,
+      "actual_over_prior": 0.770635532238516,
+      "boundary_l1": 1.772239946559974e-05,
+      "boundary_bolometric": 1.6933492491671077e-05,
+      "prediction_error_over_field": 4.2927189261386986e-14,
+      "prediction_error_over_actual_change": 8.940924669098241e-09,
+      "worst_slab_prediction_relative": 0.02380731686426128,
+      "worst_slab": {
+        "start": 9488,
+        "stop": 9504,
+        "error_max": 1.3326018078558e-311,
+        "field_scale": 5.59744642982514e-310,
+        "actual_change_max": 9.331322889588e-311,
+        "error_relative_to_local_field": 0.02380731686426128,
+        "actual_local_residual": 0.16670678329081426
+      },
+      "maximum_field_scale": 0.03863275633854637,
+      "worst_slab_scale_subnormal": true,
+      "worst_block_index": 74,
+      "worst_block_relative": 0.15938984159327094,
+      "map_wall_s": 143.26938254013658,
+      "max_proc_kib": 3586816,
+      "checks": {
+        "actual_maximum_norm_improves": true,
+        "actual_boundary_spectrum_pass": true,
+        "actual_boundary_bolometric_pass": true,
+        "worker_memory_pass": true,
+        "strict_inner_pass": true,
+        "full_field_prediction_error_small": true,
+        "prediction_error_below_tenth_actual_change": true
+      }
+    },
+    "population": {
+      "actual_residual": 4.87457690863752e-06,
+      "actual_over_prior": 0.8249473759205924,
+      "boundary_l1": 6.86194584435872e-06,
+      "boundary_bolometric": 6.861945844136149e-06,
+      "prediction_error_over_field": 4.597922150105838e-14,
+      "prediction_error_over_actual_change": 9.432453803238889e-09,
+      "worst_slab_prediction_relative": 0.024440995448608605,
+      "worst_slab": {
+        "start": 9488,
+        "stop": 9504,
+        "error_max": 1.631654514339e-311,
+        "field_scale": 6.6758922228435e-310,
+        "actual_change_max": 1.11384272352884e-310,
+        "error_relative_to_local_field": 0.024440995448608605,
+        "actual_local_residual": 0.16684552211875217
+      },
+      "maximum_field_scale": 0.03863390421604596,
+      "worst_slab_scale_subnormal": true,
+      "worst_block_index": 74,
+      "worst_block_relative": 0.1593681045242904,
+      "map_wall_s": 146.3231694214046,
+      "max_proc_kib": 3587520,
+      "checks": {
+        "actual_maximum_norm_improves": true,
+        "actual_boundary_spectrum_pass": true,
+        "actual_boundary_bolometric_pass": true,
+        "worker_memory_pass": true,
+        "strict_inner_pass": true,
+        "full_field_prediction_error_small": true,
+        "prediction_error_below_tenth_actual_change": true
+      }
+    }
+  },
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "feedback_reviewed": false,
+  "raw_large_states_recomputed_on_mac": false,
+  "field_extrema_reaggregated_from_602_slabs_per_case": true,
+  "full_field_l2_recomputed_on_mac": false
+}
