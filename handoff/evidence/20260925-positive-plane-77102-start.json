@@ -1,0 +1,17 @@
+{
+  "job_id": 77102,
+  "observed_unix": 1790316102.0968242,
+  "numeric_code_commit": "24b7a57c023fbee1ab69c4f711c0d83ce6a791f2",
+  "run": "outputs/hpc/step21-positive-plane-scan-20260925",
+  "mac_tests": "50 passed in 0.80s",
+  "linux_tests": "50 passed in 20.40s",
+  "cpus": 4,
+  "mem_gib": 16,
+  "walltime_s": 3600,
+  "accepted_outer_steps": 20,
+  "new_maps": 0,
+  "candidate_written": false,
+  "watcher": "step21-positive-77102",
+  "stdout": "JobId=77102 JobName=tde-step21-positive UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:01:27 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-09-25T14:00:14 EligibleTime=2026-09-25T14:00:14 AccrueTime=2026-09-25T14:00:14 StartTime=2026-09-25T14:00:15 EndTime=2026-09-25T15:00:15 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-25T14:00:15 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:499732 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode04 BatchHost=anode04 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/scan_step21_positive_plane.sbatch SubmitLine=sbatch --parsable operations/scan_step21_positive_plane.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-step21-positive-77102.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-step21-positive-77102.out TresPerTask=cpu=4\n{\n  \"status\": \"preparing\",\n  \"updated_unix\": 1790316022.1405659,\n  \"new_maps\": 0,\n  \"accepted_outer_steps\": 20,\n  \"new_material_steps\": 0,\n  \"candidate_written\": false\n}\n0 outputs/hpc/logs/tde-step21-positive-77102.err\n",
+  "stderr": ""
+}

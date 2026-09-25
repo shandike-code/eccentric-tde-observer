@@ -58,3 +58,17 @@ Mac最终相关50 tests passed in 0.80s，包含每轮结果在下一轮中断�
 Mac `outputs/review-20260925/pre-tail-result-review.bundle` 与 `automation-before-tail-result-review.toml`；
 school `/home/scc/pb24511938/pre-tail-result-review.bundle`。旧数值文件一律未改。
 本报告不声称获得耦合柱或整盘自洽强度；阶段仍是固定物质辐射求解的数值改进。
+
+## 下一批已提交
+
+数值代码 `24b7a57c023fbee1ab69c4f711c0d83ce6a791f2`，Mac/学校/GitHub一致；学校50 tests passed in 20.40s。
+Git推送曾报ref锁的旧预期不匹配，但ls-remote确认目标已是同一提交，未强推、未重写历史。
+77102于14:00:14提交、14:00:15在anode04启动，默认4CPU/16GiB、上限15:00:15。
+启动快照RUNNING，status preparing，stderr空；每轮进展将写到case-progress.json。
+watcher tmux `step21-positive-77102`，终态将写入
+`outputs/review-20260925/scheduler-77102/scheduler-terminal.json`。
+完整启动记录 `handoff/evidence/20260925-positive-plane-77102-start.json`。
+
+结束后审计入口 `handoff/audit_tools/review_step21_positive_plane.py`，参数
+`--archive <new> --receipt <new> --scan-archive outputs/review-20260925/complete-1790309530157168659.tar.gz --tail-archive outputs/review-20260925/complete-1790313220749040604.tar.gz --output handoff/evidence/20260925-positive-plane-review`。
+审计工具尚待真实新归档端到端执行；不预先声称已验证新候选。
