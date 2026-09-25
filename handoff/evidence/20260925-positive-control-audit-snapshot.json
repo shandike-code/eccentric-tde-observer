@@ -1,0 +1,25 @@
+{
+  "job_id": 77126,
+  "observed_unix": 1790322073.9735637,
+  "status": {
+    "status": "writing_candidate",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790321673.611624,
+    "case": "thermal"
+  },
+  "cases": {
+    "control": {
+      "status": "radiation",
+      "maps": 1,
+      "active_map": null
+    },
+    "thermal": {
+      "status": "initializing",
+      "maps": 0,
+      "active_map": null
+    }
+  },
+  "stderr_bytes": 0,
+  "squeue": "77126 RUNNING 51:45 32 anode04\n"
+}

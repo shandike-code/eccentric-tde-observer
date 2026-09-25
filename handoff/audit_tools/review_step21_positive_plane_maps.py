@@ -22,7 +22,8 @@ def guarded_ratio(a,b):
     return a/b
 
 
-def review(archive,receipt,received,prior,scan,output):
+def review(archive,receipt,received,prior,scan,output,cases=('control','thermal','population')):
+    assert cases and len(set(cases))==len(cases) and set(cases)<=set(('control','thermal','population'))
     claim=read(receipt);assert archive.stat().st_size==claim['size_bytes'] and sha(archive)==claim['sha256']
     with tarfile.open(archive) as t:
         manifest=json.load(t.extractfile('ARCHIVE_MANIFEST.json'))
@@ -42,7 +43,7 @@ def review(archive,receipt,received,prior,scan,output):
     for c in plan['code']:
         p=Path(c['path']);assert p.stat().st_size==c['size_bytes'] and sha(p)==c['sha256']
     rows={};total_receipts=0
-    for case in ('control','thermal','population'):
+    for case in cases:
         folder=received/case;v=read(folder/'validation.json');s=read(folder/'state.json');cfg=read(folder/'config.json')
         assert s['active_map'] is None and 1<=len(s['history'])<=3 and s['history'][0]==v['actual_map']
         assert sha(folder/'config.json')==s['config_sha256'] and sha(folder/'trial_material.npz')==s['trial_sha256']
@@ -104,7 +105,7 @@ def review(archive,receipt,received,prior,scan,output):
                     'worst_block_index':worst['block_index'],'worst_block_relative':worst['block_relative_radiation_change'],
                     'map_wall_s':v['actual_map']['wall_s'],'max_proc_kib':max(peaks),'checks':checks}
     result={'archive':claim,'verified_files':len(manifest['files']),'verified_code_claims':len(plan['code']),
-            'map_process_receipts':total_receipts,'cases':rows,'accepted_outer_steps':20,'new_material_steps':0,
+            'map_process_receipts':total_receipts,'audited_cases':list(cases),'cases':rows,'accepted_outer_steps':20,'new_material_steps':0,
             'feedback_reviewed':False,'raw_large_states_recomputed_on_mac':False,
             'field_extrema_reaggregated_from_602_slabs_per_case':True,
             'full_field_l2_recomputed_on_mac':False}
@@ -122,4 +123,5 @@ def review(archive,receipt,received,prior,scan,output):
 if __name__=='__main__':
     p=argparse.ArgumentParser()
     for k in ('archive','receipt','received','prior','scan','output'):p.add_argument('--'+k,type=Path,required=True)
+    p.add_argument('--cases',nargs='+',choices=('control','thermal','population'),default=['control','thermal','population'])
     print(json.dumps(review(**vars(p.parse_args())),indent=2))
