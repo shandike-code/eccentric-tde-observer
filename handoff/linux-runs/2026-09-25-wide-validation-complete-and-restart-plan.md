@@ -59,3 +59,15 @@ Mac新增身份/判决拒绝路径测试及复用代数测试38 passed（0.87s�
 备份Mac `outputs/review-20260925/pre-wide-final-audit.bundle`、`automation-before-wide-final-audit.toml`，
 学校`/home/scc/pb24511938/pre-wide-final-audit.bundle`。旧数值代码、协议、工件均保留。
 讲义CLI草稿已纠正“剔除r20”“气体热能正证明方向正确”“两类距离矛盾”等错误；不能照用模型摘要作科学判决。
+
+## 收尾：SSH通道失去响应，新任务未提交
+
+代码与审计提交`945a344`已在Mac和GitHub；向学校发送增量bundle时通道停止响应，
+随后学校验证命令也无输出。独立`ssh ... true`在20秒超时；两个等待中的本地scp/ssh操作已中断。
+无法确认远端是否收到完整bundle、是否已快进或执行测试，不能报告三端同步或Linux测试通过。
+没有执行任何sbatch命令，新4核扫描尚未提交。原77371已取得COMPLETED终态和完整独立审计，不受影响。
+
+恢复后先检查学校工作树/HEAD、bundle完整性及队列；必要时重传
+`outputs/review-20260925/restarted-plane-code.bundle`（基于facc518）。
+确认同一版本，跑三个scan测试文件和batch语法检查后，才提交新命名扫描。
+禁止在传输状态不明时假定已启动；自动跟进暂停，待用户确认重新连接后恢复。
