@@ -74,6 +74,28 @@ C/T/P 分别是同轮 control/thermal/population 的完整物质残差向量。
 测试覆盖完整向量差、跨端点最差条件、缺端点拒绝、预算/停止和基准冻结，连同复用依赖共 47 项 Mac 通过。
 Linux 测试、真实小工件预检与实际提交号在后续启动记录中补齐，不把计划写成已启动。
 
+## 启动记录（17:51 更新）
+
+数值代码提交 `8d04e08f38b0e891a6a9ac430cc1f710ec561d35` 已同步 Mac、学校与 GitHub。
+Mac 47 tests/0.91秒，Linux 47 tests/19.06秒，均通过；shell语法与变更检查通过。
+新增 CSV 使用 csv.writer 标准 CRLF；Git空白检查按允许CRLF检查，没有修改科学数值或历史工件。
+真实小工件预检确认 control trial 与基态逐位一致、原 r20 与接受20残差一致、物理旧层有效、
+源末两张连续、种子为最后 mapped_final 且大小正确；9.41 GiB 种子全 SHA 留在 allocation 内核验。
+前后两旧批 control 窗口最坏 mass 比 0.018841006608752625，超过新诊断0.001，符合新实验动机；
+该比是向量差除以原 r20 范数，不能混作物质收缩比。
+
+77264 已于 17:48:24 启动，anode04，32 CPU/128 GiB，QOS `qos_stu_cpu_long`；
+4小时硬上限至21:48:24，不是预计完成时刻。17:51:02快照 RUNNING 00:02:38、preparing、stderr0。
+尚未得到本批反馈或科学结论。证据 `20260925-control-windows-77264-start.json` 和
+`20260925-control-windows-small-preflight.json`。
+只读终态记录器 tmux `step21-control-windows-77264` 已启动，18000秒预算，终态存入
+`outputs/review-20260925/scheduler-77264/scheduler-terminal.json`。
+现有30分钟自动任务 `ustc-hhe` 已转向本作业，保留失败/重连通知与每阶段备份。
+
+下次取pair08/pair16或complete归档时，需要新的独立审计入口；原三case审计器假定每case3张/pair03，
+不能原样套用。复用已验证的反馈核验步骤，但单独核对本轮固定control、8/16连续端点、
+原r20分母与窗口四组合。不能把生产window_comparison自身再调用一次作为独立复算。
+
 ## 备份与讲义校正
 
 Mac `outputs/review-20260925/pre-positive-final-audit.bundle` 与 `automation-before-positive-final-audit.toml`；
