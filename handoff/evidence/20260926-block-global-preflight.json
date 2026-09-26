@@ -1,0 +1,6 @@
+{
+  "real_finite_and_zero_protocol_factory": true,
+  "base_residual_preserved": true,
+  "material_acceptance": false,
+  "native_operator_recomputed": false
+}

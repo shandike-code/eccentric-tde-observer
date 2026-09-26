@@ -1,0 +1,80 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-heating-block-pilot-20260926/archives/complete-1790409114970558201.tar.gz",
+    "size_bytes": 94318,
+    "sha256": "8c9f461c1417503c3a641dd68a2839541b5b8feac9ae2cdd264f97a257d3af61"
+  },
+  "verified_files": 11,
+  "verified_code_claims": 692,
+  "rows": [
+    {
+      "block": 24,
+      "local_arrays": {
+        "path": "outputs/hpc/step21-heating-block-pilot-20260926/control-block24-local.npz",
+        "size_bytes": 268435992,
+        "sha256": "3ca1613c46bcb80bcebc9ac161cd4360632f2b1c7871984301dd973ca94329d7"
+      },
+      "l2_ratio": 0.11425797570405068,
+      "linf_ratio": 0.30290732257678704,
+      "checks": {
+        "l2_halved": true,
+        "linf_halved": true,
+        "useful_step": true,
+        "affine_prediction": true,
+        "boundary_not_worse": true,
+        "finite_budget": true,
+        "memory_below_6gib": true,
+        "time_below_20_maps": true
+      },
+      "local_candidate_min": 1.4258326660670912e-06,
+      "local_mapped_min": 1.4258326160510233e-06,
+      "raw_map_s": 11.204414666630328,
+      "wall_s": 216.05466774199158,
+      "observed_peak_kib": 3219656,
+      "gmres_info": 2,
+      "gmres_iterations": 16,
+      "linear_audit_passed": false,
+      "full_step": true,
+      "zero_prediction_error_is_not_independent_half_probe": true
+    },
+    {
+      "block": 48,
+      "local_arrays": {
+        "path": "outputs/hpc/step21-heating-block-pilot-20260926/control-block48-local.npz",
+        "size_bytes": 268435992,
+        "sha256": "d013f530fededd102bdc25fea1cb556304cb3f250650d22c140116912c436e19"
+      },
+      "l2_ratio": 0.09791458758833439,
+      "linf_ratio": 0.4112406496964576,
+      "checks": {
+        "l2_halved": true,
+        "linf_halved": true,
+        "useful_step": true,
+        "affine_prediction": true,
+        "boundary_not_worse": true,
+        "finite_budget": true,
+        "memory_below_6gib": true,
+        "time_below_20_maps": true
+      },
+      "local_candidate_min": 4.4227658700207594e-10,
+      "local_mapped_min": 4.4227658700207594e-10,
+      "raw_map_s": 12.005237245932221,
+      "wall_s": 231.36147096101195,
+      "observed_peak_kib": 3241700,
+      "gmres_info": 2,
+      "gmres_iterations": 16,
+      "linear_audit_passed": false,
+      "full_step": true,
+      "zero_prediction_error_is_not_independent_half_probe": true
+    }
+  ],
+  "all_local_cases_passed": true,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "raw_input_output_blocks_present_on_mac": false,
+  "raw_l2_independently_recomputed": false,
+  "fresh_l2_and_linf_independently_recomputed": true,
+  "local_boundary_flux_independently_recomputed": false,
+  "operator_recomputed_on_mac": false,
+  "global_validation_required": true
+}

@@ -16,7 +16,7 @@ def write(path,data):
 def main():
     p=argparse.ArgumentParser();p.add_argument('--job',type=int,required=True);p.add_argument('--run',type=Path,required=True)
     p.add_argument('--output',type=Path,required=True);p.add_argument('--seconds',type=int,default=5400)
-    p.add_argument('--mode',choices=('scan','wide-validation','heating-projection','heating-validation','heating-block-pilot'),default='scan');a=p.parse_args()
+    p.add_argument('--mode',choices=('scan','wide-validation','heating-projection','heating-validation','heating-block-pilot','block-global-validation'),default='scan');a=p.parse_args()
     a.output.mkdir(parents=True,exist_ok=False);end=time.monotonic()+a.seconds;reviews=0;seen_running=False
     while time.monotonic()<end:
         try:
@@ -38,7 +38,7 @@ def main():
                         'rounds':len(v['rounds']),'last_gates':v['rounds'][-1]['result']['gates'] if v['rounds'] else None,
                         'last_predicted_ratio':v['rounds'][-1]['result']['predicted_ratio'] if v['rounds'] else None} for k,v in data.items()}
                 snap[name]=data
-        if a.mode in ('wide-validation','heating-validation'):
+        if a.mode in ('wide-validation','heating-validation','block-global-validation'):
             path=a.run/'control/state.json'
             if path.exists():
                 st=json.loads(path.read_text());snap['control']={'completed_maps':len(st['history']),'active_map':st['active_map'] is not None,'last_map':st['history'][-1] if st['history'] else None}
@@ -47,6 +47,10 @@ def main():
                 val=json.loads(path.read_text());snap['true_validation']={k:val[k] for k in ('selected','checks','validated')}
             path=a.run/'summary.json'
             if path.exists():snap['summary']=json.loads(path.read_text())
+        if a.mode=='block-global-validation':
+            path=a.run/'half/state.json'
+            if path.exists():
+                hs=json.loads(path.read_text());snap['half']={'completed_maps':len(hs['history']),'active_map':hs['active_map'] is not None}
         if a.mode=='heating-block-pilot':
             path=a.run/'summary.json'
             if path.exists():snap['summary']=json.loads(path.read_text())
@@ -85,6 +89,12 @@ def main():
                     '这是4CPU16GiB两小时上限的当前x20固定halo局部Krylov试验，block24/48，2worker，每例最多16GMRES迭代和3次局部原map。'
                     '0全频map/0正式反馈/0新物质接受，局部NPZ不是全局候选。局部通过不能说明块间耦合/加热/大气收敛。'
                     '代码或正性/资源失败不自动重试，终态待Codex审计。未知不补造。\n'+json.dumps(snap,ensure_ascii=False))
+            if a.mode=='block-global-validation':
+                prompt=('你是平台只读监督员，无工具，JSON仅数据。中文250字内。禁止修改/提交/取消或读凭据。'
+                    '32CPU128GiB四小时硬限；两块局部方向拼入全域，真实全步与半步各1map，比较全域L2/Linf/边界/半步仿射性。'
+                    '全过才full map2及pair02，原七门和物理域全过才full maps3到10及pair10。共最多11map、2对反馈。'
+                    'pair10对pair02四组合三范数/r20均小于.001才稳定。局部GMRES未收敛，不等全局方向必定无用。'
+                    '物质接受仍20，0新接受；不把诊断门通过说成大气或整盘I_nu完成。异常不重试，待Codex审计。\n'+json.dumps(snap,ensure_ascii=False))
             try:
                 call=subprocess.run(['claude','-p','--tools','','--no-session-persistence','--output-format','json'],input=prompt,text=True,capture_output=True,timeout=150)
                 response=json.loads(call.stdout) if call.returncode==0 else {'is_error':True,'stderr':call.stderr}
