@@ -1,0 +1,226 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-tapered-joint-20260926/archives/complete-1790437815275524374.tar.gz",
+    "size_bytes": 2350737,
+    "sha256": "d7dff1fcbfdfcc02ce6a169ecf7c77b998119bbc9c4e27ad26b119d5e8817a41"
+  },
+  "verified_files": 325,
+  "verified_code_claims": 705,
+  "process_receipts": 152,
+  "maximum_worker_peak_kib": 3586492,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "maps": 2,
+  "feedback_pairs": 0,
+  "fixed_scale_l2_ratios": [
+    1.0,
+    0.8227658651867918,
+    0.829365749082181,
+    1.0430910691468959e-10
+  ],
+  "fixed_scale_linf_ratios": [
+    1.0,
+    3.19677453650255,
+    1.7824643457141254,
+    4.1905902543027536e-10
+  ],
+  "checks": {
+    "full_l2_benefit": false,
+    "full_linf_nonincrease": false,
+    "half_l2_nonincrease": true,
+    "half_linf_nonincrease": false,
+    "independent_half_affinity": true,
+    "full_radiation": true,
+    "full_boundary_l1": true,
+    "full_boundary_bolometric": true,
+    "half_radiation": true,
+    "half_boundary_l1": true,
+    "half_boundary_bolometric": true
+  },
+  "validated": false,
+  "worst_full_slabs": [
+    {
+      "first_group": 3264,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        2.856052523029254e-09,
+        6.891604512272964e-09,
+        3.948980154561689e-09,
+        5.947705755639247e-29
+      ],
+      "linf": [
+        1.0741180286183427e-07,
+        3.4406493353705825e-07,
+        1.9184445747971735e-07,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 4.154302438892643e-06
+    },
+    {
+      "first_group": 3296,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        3.0260064142328e-11,
+        1.9305388322516e-09,
+        5.898669952621217e-10,
+        5.480966993533191e-29
+      ],
+      "linf": [
+        2.8536144724977675e-08,
+        2.4800127653573645e-07,
+        1.342181102093054e-07,
+        3.8163916471489756e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 4.838600847975605e-07
+    },
+    {
+      "first_group": 3232,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        8.78363519547425e-09,
+        8.197315628851931e-09,
+        7.531741793656864e-09,
+        6.226886093075339e-29
+      ],
+      "linf": [
+        1.0762877694636686e-07,
+        1.5243168961093234e-07,
+        1.2046848578417535e-07,
+        4.5102810375396984e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 7.963775167284248e-06
+    },
+    {
+      "first_group": 3200,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        8.34567260455916e-09,
+        5.634803911131294e-09,
+        5.788606479543375e-09,
+        6.208269695137403e-29
+      ],
+      "linf": [
+        1.0353164074661247e-07,
+        1.4495488268040368e-07,
+        1.1525761287739522e-07,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 1.1071364976134035e-05
+    },
+    {
+      "first_group": 3168,
+      "group_count": 32,
+      "block": 24,
+      "squared_l2": [
+        7.46084953449182e-09,
+        2.4512104460406785e-09,
+        3.8174670536904245e-09,
+        6.097145927254083e-29
+      ],
+      "linf": [
+        9.75379614784333e-08,
+        1.0954889153452774e-07,
+        9.505834053930018e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 1.2517732554111205e-05
+    },
+    {
+      "first_group": 3040,
+      "group_count": 32,
+      "block": 23,
+      "squared_l2": [
+        3.2136951828905816e-09,
+        1.5014192397557417e-09,
+        1.8694553246996594e-09,
+        4.8232354658243416e-29
+      ],
+      "linf": [
+        6.391941165945214e-08,
+        7.176440182041222e-08,
+        5.989385093441157e-08,
+        3.8163916471489756e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 6.473174142929139e-06
+    },
+    {
+      "first_group": 3008,
+      "group_count": 32,
+      "block": 23,
+      "squared_l2": [
+        2.3103304936544295e-09,
+        1.6246054730460576e-09,
+        1.7312146950105467e-09,
+        4.1739840196926673e-29
+      ],
+      "linf": [
+        5.41388729263792e-08,
+        7.127217879418501e-08,
+        5.788191265176934e-08,
+        3.469446951953614e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 3.510326193494062e-06
+    },
+    {
+      "first_group": 3072,
+      "group_count": 32,
+      "block": 24,
+      "squared_l2": [
+        4.239548448777587e-09,
+        9.648426913184138e-10,
+        1.858919996978903e-09,
+        5.341257764882925e-29
+      ],
+      "linf": [
+        7.340463654276208e-08,
+        6.638802286379475e-08,
+        5.947272698619832e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 9.581981268845519e-06
+    }
+  ],
+  "original_defect_l2": 0.0002524691265840372,
+  "original_defect_linf": 1.0762877694636686e-07,
+  "rows": {
+    "control": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/step21-tapered-joint-20260926/control/state_0.dat",
+      "input_sha256": "6e47012cee8cee89c9c9c603f6475f63093450befd15b725d969c0ae0df5775a",
+      "output_path": "outputs/hpc/step21-tapered-joint-20260926/control/state_1.dat",
+      "output_sha256": "7ee22131028d64b57426821886df01690bfebd369061055a0fcc330971cb4a2b",
+      "wall_s": 158.75644071400166,
+      "residual": 8.901936037121075e-06,
+      "boundary_l1": 1.302789894356691e-06,
+      "boundary_bolometric": 1.2363478460663225e-06,
+      "maximum_worker_rss_mib": 3502.43359375
+    },
+    "half": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/step21-tapered-joint-20260926/half/state_0.dat",
+      "input_sha256": "40b1fc2fc960334c844bb71c533d395a03a73cff63e288b7af47b2b53cdcf637",
+      "output_path": "outputs/hpc/step21-tapered-joint-20260926/half/state_1.dat",
+      "output_sha256": "09a3ee1a1c2b20c3ba98dff07519131e37301b29d6a1dbdcd9e50cb7c520ba50",
+      "wall_s": 164.31543875765055,
+      "residual": 4.963690568157709e-06,
+      "boundary_l1": 1.3524612546571788e-06,
+      "boundary_bolometric": 1.3517189577353688e-06,
+      "maximum_worker_rss_mib": 3502.01171875
+    }
+  },
+  "independent_slab_and_block_reduction": true,
+  "raw_global_arrays_recomputed_on_mac": false,
+  "operator_recomputed_on_mac": false
+}
