@@ -1,0 +1,36 @@
+{
+  "job_id": 77473,
+  "observed_unix": 1790389446.7978597,
+  "code_commit": "2a76fa36222a8f29c6b3c6e9b84076e0b73014cc",
+  "scontrol": "JobId=77473 JobName=tde-step21-restart UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:36 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-09-26T10:23:30 EligibleTime=2026-09-26T10:23:30 AccrueTime=2026-09-26T10:23:30 StartTime=2026-09-26T10:23:30 EndTime=2026-09-26T11:23:30 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-26T10:23:30 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2152115 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/scan_step21_restarted_plane.sbatch SubmitLine=sbatch --parsable operations/scan_step21_restarted_plane.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-step21-restart-77473.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-step21-restart-77473.out TresPerTask=cpu=4\n",
+  "status": {
+    "status": "preparing",
+    "updated_unix": 1790389418.6121812,
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "new_maps": 0,
+    "candidate_written": false
+  },
+  "stderr_bytes": 0,
+  "linux_tests": {
+    "passed": 38,
+    "seconds": 20.51
+  },
+  "watch_alive": true,
+  "review": {
+    "is_error": false,
+    "result": "**进度**：作业77473（tde-step21-restart，anode02）RUNNING，已运行约13秒，4CPU/16G，时限1小时，退避正常（ExitCode 0:0）。观测状态为preparing，accepted_outer_steps=20，new_material_steps=0，new_maps=0，candidate_written=false。属固定已接受物质态20的两组辐射历史外推只读扫描，尚无新map或物质接受。\n\n**故障**：无作业级故障，但仅处preparing阶段，两组各6遍4096约束的扫描结果、feasible与cost_eligible（残差比<0.8）均未产出，无可判定结论。\n\n**审计**：暂不待Codex审计——因候选未写出，尚无可审计产物。后续即使feasible/cost_eligible通过，仍须独立审计与32CPU真实算子验证，不得据此宣称自洽大气或发射率完成。\n\n（未观测到的字段未补造。）",
+    "modelUsage": {
+      "deepseek-v4-flash[1m]": {
+        "inputTokens": 2435,
+        "outputTokens": 380,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 0.021675,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 32000
+      }
+    }
+  }
+}
