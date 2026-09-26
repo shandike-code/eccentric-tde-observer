@@ -1,0 +1,112 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-joint-taper-plane-20260927/archives/complete-1790448078036541242.tar.gz",
+    "size_bytes": 831760,
+    "sha256": "d099675f5591958041cd8eeeff01b5a59a2d3ff6851c1fcc4544b3c4068380cd"
+  },
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "verified_files": 5,
+  "verified_code_claims": 708,
+  "passes": 5,
+  "cuts": 9,
+  "rounds": [
+    {
+      "uv": [
+        0.99,
+        0.0
+      ],
+      "l2_ratio": 0.41352278652436475,
+      "linf_ratio": 3.816234882437921,
+      "checks": {
+        "nonzero": true,
+        "convex": true,
+        "full_l2_cost": true,
+        "quadratic_l2_cost": true,
+        "linf_nonincrease": false,
+        "strict_radiation": true,
+        "affine_roundoff": true,
+        "full_boundary_l1": true,
+        "full_boundary_bolometric": true,
+        "half_boundary_l1": true,
+        "half_boundary_bolometric": true
+      },
+      "new_witnesses": 4
+    },
+    {
+      "uv": [
+        0.2231632122390382,
+        0.620700343366076
+      ],
+      "l2_ratio": 0.6824049048836301,
+      "linf_ratio": 2.067511432274487,
+      "checks": {
+        "nonzero": true,
+        "convex": true,
+        "full_l2_cost": true,
+        "quadratic_l2_cost": true,
+        "linf_nonincrease": false,
+        "strict_radiation": true,
+        "affine_roundoff": true,
+        "full_boundary_l1": true,
+        "full_boundary_bolometric": true,
+        "half_boundary_l1": true,
+        "half_boundary_bolometric": true
+      },
+      "new_witnesses": 4
+    },
+    {
+      "uv": [
+        0.22323708522371855,
+        0.2410766800838793
+      ],
+      "l2_ratio": 0.7456515287670987,
+      "linf_ratio": 1.0115838311805703,
+      "checks": {
+        "nonzero": true,
+        "convex": true,
+        "full_l2_cost": true,
+        "quadratic_l2_cost": true,
+        "linf_nonincrease": false,
+        "strict_radiation": true,
+        "affine_roundoff": true,
+        "full_boundary_l1": true,
+        "full_boundary_bolometric": true,
+        "half_boundary_l1": true,
+        "half_boundary_bolometric": true
+      },
+      "new_witnesses": 1
+    },
+    {
+      "uv": [
+        0.2232383685126496,
+        0.2344820251208071
+      ],
+      "l2_ratio": 0.7477294763397686,
+      "linf_ratio": 0.9946061793626918,
+      "checks": {
+        "nonzero": true,
+        "convex": true,
+        "full_l2_cost": true,
+        "quadratic_l2_cost": true,
+        "linf_nonincrease": true,
+        "strict_radiation": true,
+        "affine_roundoff": true,
+        "full_boundary_l1": true,
+        "full_boundary_bolometric": true,
+        "half_boundary_l1": true,
+        "half_boundary_bolometric": true
+      },
+      "new_witnesses": 0
+    }
+  ],
+  "selected_uv": [
+    0.2232383685126496,
+    0.2344820251208071
+  ],
+  "eligible_for_independent_review": true,
+  "peak_rss_bytes": 828317696,
+  "independent_active_set_and_scalar_reduction": true,
+  "raw_fields_recomputed_on_mac": false,
+  "operator_recomputed_on_mac": false
+}

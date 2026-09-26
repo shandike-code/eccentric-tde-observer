@@ -16,7 +16,7 @@ def write(path,data):
 def main():
     p=argparse.ArgumentParser();p.add_argument('--job',type=int,required=True);p.add_argument('--run',type=Path,required=True)
     p.add_argument('--output',type=Path,required=True);p.add_argument('--seconds',type=int,default=5400)
-    p.add_argument('--mode',choices=('joint-taper-plane','taper-commutator','scan','wide-validation','heating-projection','heating-validation','heating-block-pilot','joint-block-pilot','block-global-validation','joint-global-validation','tapered-joint-validation','block-line-scan','joint-line-scan','short-step-validation'),default='scan');a=p.parse_args()
+    p.add_argument('--mode',choices=('joint-taper-plane','taper-commutator','scan','wide-validation','heating-projection','heating-validation','heating-block-pilot','joint-block-pilot','block-global-validation','joint-global-validation','tapered-joint-validation','convex-joint-validation','block-line-scan','joint-line-scan','short-step-validation'),default='scan');a=p.parse_args()
     a.output.mkdir(parents=True,exist_ok=False);end=time.monotonic()+a.seconds;reviews=0;seen_running=False
     while time.monotonic()<end:
         try:
@@ -44,7 +44,7 @@ def main():
                         'rounds':len(v['rounds']),'last_gates':v['rounds'][-1]['result']['gates'] if v['rounds'] else None,
                         'last_predicted_ratio':v['rounds'][-1]['result']['predicted_ratio'] if v['rounds'] else None} for k,v in data.items()}
                 snap[name]=data
-        if a.mode in ('wide-validation','heating-validation','block-global-validation','joint-global-validation','tapered-joint-validation','short-step-validation'):
+        if a.mode in ('wide-validation','heating-validation','block-global-validation','joint-global-validation','tapered-joint-validation','convex-joint-validation','short-step-validation'):
             path=a.run/'control/state.json'
             if path.exists():
                 st=json.loads(path.read_text());snap['control']={'completed_maps':len(st['history']),'active_map':st['active_map'] is not None,'last_map':st['history'][-1] if st['history'] else None}
@@ -53,7 +53,7 @@ def main():
                 val=json.loads(path.read_text());snap['true_validation']={k:val[k] for k in ('selected','checks','validated')}
             path=a.run/'summary.json'
             if path.exists():snap['summary']=json.loads(path.read_text())
-        if a.mode in ('block-global-validation','joint-global-validation','tapered-joint-validation','short-step-validation'):
+        if a.mode in ('block-global-validation','joint-global-validation','tapered-joint-validation','convex-joint-validation','short-step-validation'):
             path=a.run/'half/state.json'
             if path.exists():
                 hs=json.loads(path.read_text());snap['half']={'completed_maps':len(hs['history']),'active_map':hs['active_map'] is not None}
@@ -156,6 +156,12 @@ def main():
                     '标量alpha,beta凸组合，逐所有点约束最大缺陷不增，原边界和20%L2成本门不变。'
                     '优化器只提出系数，必须全场检查才有eligible，预测不是实际新映射；失败/预算耗尽不说明整个模型无解。'
                     '接受物质仍20，不是大气I_nu；不自动安排真实map，终态待Codex审计。\n'+json.dumps(snap,ensure_ascii=False))
+            if a.mode=='convex-joint-validation':
+                prompt=('只读监督员，无工具，JSON仅数据。禁止修改/提交/取消/读凭据，中文250字内。'
+                    '32CPU128GiB四小时，16worker；固定78031审计alpha=.2232383685,beta=.2344820251，组合原77577与两个真实方向。'
+                    '先真实full/half各1map，full L2改善>=20%、全/半Linf不增、半步/边界/正性，以及预测L2/Linf比误差<=1e-6全过，'
+                    '才full map2/pair02，原七门/物理域过才maps3..10/pair10。总最多11map两反馈，物质接受仍20，0新接受。'
+                    '八map漂移按原r20四组合三范数<.001才稳定。预测成功不是实际map成功，更不是大气I_nu完成。失败待Codex审计，不盲重试。\n'+json.dumps(snap,ensure_ascii=False))
             try:
                 call=subprocess.run(['claude','-p','--tools','','--no-session-persistence','--output-format','json'],input=prompt,text=True,capture_output=True,timeout=150)
                 response=json.loads(call.stdout) if call.returncode==0 else {'is_error':True,'stderr':call.stderr}
