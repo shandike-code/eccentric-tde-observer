@@ -1,0 +1,226 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-heating-block-global-20260926/archives/complete-1790414187041810474.tar.gz",
+    "size_bytes": 2347490,
+    "sha256": "0787a94cb371b398499ddf888f675ab3e2e7871ea750066f8890fa282dae8d4c"
+  },
+  "verified_files": 325,
+  "verified_code_claims": 694,
+  "process_receipts": 152,
+  "maximum_worker_peak_kib": 3590172,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "maps": 2,
+  "feedback_pairs": 0,
+  "fixed_scale_l2_ratios": [
+    1.0,
+    0.9682159387460836,
+    0.900594535619869,
+    6.248743843712654e-11
+  ],
+  "fixed_scale_linf_ratios": [
+    1.0,
+    14.020492745356142,
+    7.420683906170783,
+    3.8682371578179266e-10
+  ],
+  "checks": {
+    "full_l2_benefit": true,
+    "full_linf_nonincrease": false,
+    "half_l2_nonincrease": true,
+    "half_linf_nonincrease": false,
+    "independent_half_affinity": true,
+    "full_radiation": true,
+    "full_boundary_l1": true,
+    "full_boundary_bolometric": true,
+    "half_radiation": true,
+    "half_boundary_l1": true,
+    "half_boundary_bolometric": true
+  },
+  "validated": false,
+  "worst_full_slabs": [
+    {
+      "first_group": 3200,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        8.34567260455916e-09,
+        2.3037281179884857e-08,
+        1.2661801879304225e-08,
+        2.9131376391016968e-30
+      ],
+      "linf": [
+        1.0353164074661247e-07,
+        1.5090084863680908e-06,
+        7.986791329267495e-07,
+        3.122502256758253e-17
+      ],
+      "selected_input": false,
+      "output_change_linf": 1.4220790830118957e-06
+    },
+    {
+      "first_group": 3040,
+      "group_count": 32,
+      "block": 23,
+      "squared_l2": [
+        3.2136951828905816e-09,
+        8.056886105332073e-09,
+        4.670206340039235e-09,
+        2.397271418495311e-30
+      ],
+      "linf": [
+        6.391941165945214e-08,
+        8.567440208731569e-07,
+        4.576672006581517e-07,
+        3.122502256758253e-17
+      ],
+      "selected_input": false,
+      "output_change_linf": 7.982366690903464e-07
+    },
+    {
+      "first_group": 6272,
+      "group_count": 32,
+      "block": 49,
+      "squared_l2": [
+        7.829128057825674e-10,
+        2.430541529167072e-09,
+        1.2620297375753276e-09,
+        7.510802413445416e-32
+      ],
+      "linf": [
+        2.928988377878805e-08,
+        4.892934845780045e-07,
+        2.556818700562985e-07,
+        6.071532165918825e-18
+      ],
+      "selected_input": false,
+      "output_change_linf": 4.6722322904167723e-07
+    },
+    {
+      "first_group": 6112,
+      "group_count": 32,
+      "block": 47,
+      "squared_l2": [
+        4.883122970034839e-10,
+        1.2410750832766024e-09,
+        7.133482656100385e-10,
+        2.1540543743550324e-31
+      ],
+      "linf": [
+        2.635340631482186e-08,
+        3.5533761545344933e-07,
+        1.8752910906083553e-07,
+        9.540979117872439e-18
+      ],
+      "selected_input": false,
+      "output_change_linf": 3.3561701278175815e-07
+    },
+    {
+      "first_group": 3232,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        8.78363519547425e-09,
+        8.78363519547425e-09,
+        8.78363519547425e-09,
+        0.0
+      ],
+      "linf": [
+        1.0762877694636686e-07,
+        1.0762877694636686e-07,
+        1.0762877694636686e-07,
+        0.0
+      ],
+      "selected_input": false,
+      "output_change_linf": 0.0
+    },
+    {
+      "first_group": 3264,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        2.856052523029254e-09,
+        2.856052523029254e-09,
+        2.856052523029254e-09,
+        0.0
+      ],
+      "linf": [
+        1.0741180286183427e-07,
+        1.0741180286183427e-07,
+        1.0741180286183427e-07,
+        0.0
+      ],
+      "selected_input": false,
+      "output_change_linf": 0.0
+    },
+    {
+      "first_group": 3008,
+      "group_count": 32,
+      "block": 23,
+      "squared_l2": [
+        2.3103304936544295e-09,
+        2.3103304936544295e-09,
+        2.3103304936544295e-09,
+        0.0
+      ],
+      "linf": [
+        5.41388729263792e-08,
+        5.41388729263792e-08,
+        5.41388729263792e-08,
+        0.0
+      ],
+      "selected_input": false,
+      "output_change_linf": 0.0
+    },
+    {
+      "first_group": 2976,
+      "group_count": 32,
+      "block": 23,
+      "squared_l2": [
+        1.5628168081391086e-09,
+        1.5628168081391086e-09,
+        1.5628168081391086e-09,
+        0.0
+      ],
+      "linf": [
+        4.436307066840728e-08,
+        4.436307066840728e-08,
+        4.436307066840728e-08,
+        0.0
+      ],
+      "selected_input": false,
+      "output_change_linf": 0.0
+    }
+  ],
+  "original_defect_l2": 0.0002524691265840372,
+  "original_defect_linf": 1.0762877694636686e-07,
+  "rows": {
+    "control": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/step21-heating-block-global-20260926/control/state_0.dat",
+      "input_sha256": "1072035973c23903241db43af149c2f4aba1e70e50080b903b99304d3f6dab42",
+      "output_path": "outputs/hpc/step21-heating-block-global-20260926/control/state_1.dat",
+      "output_sha256": "2650ab75a7aca93a8e44ca02f0d46ee5b98b370d5b16de0e3626f2a4e24844e6",
+      "wall_s": 133.21213152073324,
+      "residual": 3.9044378341066376e-05,
+      "boundary_l1": 1.3379181338774867e-06,
+      "boundary_bolometric": 1.3371811095155662e-06,
+      "maximum_worker_rss_mib": 3501.80859375
+    },
+    "half": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/step21-heating-block-global-20260926/half/state_0.dat",
+      "input_sha256": "20172e1957e6499fb474f71dd895b761a6ffa03caf61a05b11871f18e14325a0",
+      "output_path": "outputs/hpc/step21-heating-block-global-20260926/half/state_1.dat",
+      "output_sha256": "3a598b5d67ba14707a711289f5a79c9989b8e424b6d91f3a4701a7c8459adee5",
+      "wall_s": 144.25588066037744,
+      "residual": 2.066517883816605e-05,
+      "boundary_l1": 1.4028723271568553e-06,
+      "boundary_bolometric": 1.402135304577802e-06,
+      "maximum_worker_rss_mib": 3506.02734375
+    }
+  },
+  "independent_slab_and_block_reduction": true,
+  "raw_global_arrays_recomputed_on_mac": false,
+  "operator_recomputed_on_mac": false
+}
