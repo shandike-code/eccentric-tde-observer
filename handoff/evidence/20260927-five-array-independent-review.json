@@ -1,0 +1,44 @@
+{
+  "job_id": 78038,
+  "rows": [
+    {
+      "block": 24,
+      "norms": {
+        "raw": {
+          "l2": 0.0002294744107970417,
+          "linf": 1.0762877694636686e-07
+        },
+        "fresh": {
+          "l2": 7.123401593974304e-05,
+          "linf": 4.401350685995231e-08
+        }
+      },
+      "l2_ratio": 0.31042248106149783,
+      "linf_ratio": 0.40893809359075917
+    },
+    {
+      "block": 48,
+      "norms": {
+        "raw": {
+          "l2": 9.62416918874254e-05,
+          "linf": 2.9551641566108455e-08
+        },
+        "fresh": {
+          "l2": 1.0587515969025315e-05,
+          "linf": 1.10313135362472e-08
+        }
+      },
+      "l2_ratio": 0.11000966173173272,
+      "linf_ratio": 0.37328936572168475
+    }
+  ],
+  "verified_frequency_rows": 1280,
+  "peak_rss_bytes": 4041310208,
+  "wall_s": 53.90949452389032,
+  "school_raw_arrays_scanned": true,
+  "mac_full_arrays_read": false,
+  "mac_independent_fsum": true,
+  "operator_recomputed": false,
+  "global_validation_required": true,
+  "new_material_steps": 0
+}
