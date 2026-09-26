@@ -1,0 +1,658 @@
+{
+  "sources": [
+    {
+      "path": "outputs/hpc/step21-heating-validation-20260926/archives/complete-1790407360172479630.tar.gz",
+      "size_bytes": 151245942,
+      "sha256": "d18262f0bff934c1dbeb969eadd99bf9c91bbef55274ec574ccbaf2c6516096b"
+    },
+    {
+      "path": "outputs/hpc/step21-wide-plane-validation-20260925/archives/complete-1790348222232820529.tar.gz",
+      "size_bytes": 151077043,
+      "sha256": "d8966055fb1fb702579e23e504f16f5e9156fb72b808d26bf5cd5952138ee3b8"
+    }
+  ],
+  "affine_proxy_lower_bound": {
+    "pair_sources": [
+      "77371 pair11",
+      "77577 pair02",
+      "77577 pair10"
+    ],
+    "coefficients": [
+      -1.0159471561913282,
+      -2.919524143021071,
+      4.9354712992123995
+    ],
+    "singular_values": [
+      9.740324826767998e-05,
+      1.7048706818560715e-05
+    ],
+    "condition": 5.713233813231996,
+    "rank": 2,
+    "ratio_to_latest": 0.9083390904883979,
+    "coefficient_l1": 8.870942598424799,
+    "normal_equation_residual_norm": 3.751642403707221e-25,
+    "old_twenty_percent_cost_pass": false,
+    "constrained_field_candidate_checked": false,
+    "scope": "unconstrained optimum in exactly these three paired histories; not a bound on all solvers"
+  },
+  "block_contributions": [
+    {
+      "block": 0,
+      "mass_norm": 0.0
+    },
+    {
+      "block": 1,
+      "mass_norm": 1.713139030919768e-21
+    },
+    {
+      "block": 2,
+      "mass_norm": 2.9706418614902913e-21
+    },
+    {
+      "block": 3,
+      "mass_norm": 7.007706838418951e-19
+    },
+    {
+      "block": 4,
+      "mass_norm": 1.7833450549571566e-16
+    },
+    {
+      "block": 5,
+      "mass_norm": 2.1904313485356274e-14
+    },
+    {
+      "block": 6,
+      "mass_norm": 1.2063913302168006e-12
+    },
+    {
+      "block": 7,
+      "mass_norm": 1.838210587792791e-11
+    },
+    {
+      "block": 8,
+      "mass_norm": 4.255795675901436e-10
+    },
+    {
+      "block": 9,
+      "mass_norm": 1.3251807884751132e-08
+    },
+    {
+      "block": 10,
+      "mass_norm": 9.861303785215883e-08
+    },
+    {
+      "block": 11,
+      "mass_norm": 4.101195438185483e-08
+    },
+    {
+      "block": 12,
+      "mass_norm": 2.5269465651068428e-06
+    },
+    {
+      "block": 13,
+      "mass_norm": 1.289311491198805e-05
+    },
+    {
+      "block": 14,
+      "mass_norm": 3.123851968298382e-05
+    },
+    {
+      "block": 15,
+      "mass_norm": 4.317281209248122e-05
+    },
+    {
+      "block": 16,
+      "mass_norm": 4.272050445709108e-05
+    },
+    {
+      "block": 17,
+      "mass_norm": 7.491264412821574e-05
+    },
+    {
+      "block": 18,
+      "mass_norm": 3.9060526029231386e-05
+    },
+    {
+      "block": 19,
+      "mass_norm": 1.7916827907494225e-05
+    },
+    {
+      "block": 20,
+      "mass_norm": 4.126726226912052e-05
+    },
+    {
+      "block": 21,
+      "mass_norm": 3.077979900163606e-05
+    },
+    {
+      "block": 22,
+      "mass_norm": 7.276785958205039e-05
+    },
+    {
+      "block": 23,
+      "mass_norm": 0.00018327347186391593
+    },
+    {
+      "block": 24,
+      "mass_norm": 0.0002343209820505209
+    },
+    {
+      "block": 25,
+      "mass_norm": 0.00013904212101790907
+    },
+    {
+      "block": 26,
+      "mass_norm": 2.798041868603977e-05
+    },
+    {
+      "block": 27,
+      "mass_norm": 2.866085749305725e-05
+    },
+    {
+      "block": 28,
+      "mass_norm": 2.9101703795101582e-05
+    },
+    {
+      "block": 29,
+      "mass_norm": 2.916154910831703e-05
+    },
+    {
+      "block": 30,
+      "mass_norm": 2.8732807324731462e-05
+    },
+    {
+      "block": 31,
+      "mass_norm": 2.774856816927899e-05
+    },
+    {
+      "block": 32,
+      "mass_norm": 2.619358796642775e-05
+    },
+    {
+      "block": 33,
+      "mass_norm": 2.4116837245556292e-05
+    },
+    {
+      "block": 34,
+      "mass_norm": 2.1643016337312677e-05
+    },
+    {
+      "block": 35,
+      "mass_norm": 1.897772930553872e-05
+    },
+    {
+      "block": 36,
+      "mass_norm": 1.6401301206976574e-05
+    },
+    {
+      "block": 37,
+      "mass_norm": 1.4260625330501662e-05
+    },
+    {
+      "block": 38,
+      "mass_norm": 1.3025467142188426e-05
+    },
+    {
+      "block": 39,
+      "mass_norm": 1.3465019255286465e-05
+    },
+    {
+      "block": 40,
+      "mass_norm": 1.6504362300499267e-05
+    },
+    {
+      "block": 41,
+      "mass_norm": 2.2319963922129135e-05
+    },
+    {
+      "block": 42,
+      "mass_norm": 2.9721146693966957e-05
+    },
+    {
+      "block": 43,
+      "mass_norm": 3.617617666541736e-05
+    },
+    {
+      "block": 44,
+      "mass_norm": 3.9955849221322765e-05
+    },
+    {
+      "block": 45,
+      "mass_norm": 4.6324699771557397e-05
+    },
+    {
+      "block": 46,
+      "mass_norm": 9.433981335932105e-05
+    },
+    {
+      "block": 47,
+      "mass_norm": 0.00016117510234458707
+    },
+    {
+      "block": 48,
+      "mass_norm": 0.0002100327220973081
+    },
+    {
+      "block": 49,
+      "mass_norm": 0.0001889981565867471
+    },
+    {
+      "block": 50,
+      "mass_norm": 0.00011582416192267761
+    },
+    {
+      "block": 51,
+      "mass_norm": 3.489645282252766e-05
+    },
+    {
+      "block": 52,
+      "mass_norm": 0.0
+    },
+    {
+      "block": 53,
+      "mass_norm": 8.325355837385638e-14
+    },
+    {
+      "block": 54,
+      "mass_norm": 1.2146215965864997e-11
+    },
+    {
+      "block": 55,
+      "mass_norm": 1.1287053278116886e-10
+    },
+    {
+      "block": 56,
+      "mass_norm": 1.500320424700489e-10
+    },
+    {
+      "block": 57,
+      "mass_norm": 2.3339498855515902e-11
+    },
+    {
+      "block": 58,
+      "mass_norm": 5.168043070917221e-13
+    },
+    {
+      "block": 59,
+      "mass_norm": 2.1411489132072577e-16
+    },
+    {
+      "block": 60,
+      "mass_norm": 2.710058682294897e-21
+    },
+    {
+      "block": 61,
+      "mass_norm": 3.0724762603696804e-25
+    },
+    {
+      "block": 62,
+      "mass_norm": 5.537892528064146e-31
+    },
+    {
+      "block": 63,
+      "mass_norm": 4.83793971821537e-37
+    },
+    {
+      "block": 64,
+      "mass_norm": 7.428326453405316e-45
+    },
+    {
+      "block": 65,
+      "mass_norm": 1.5870522423407312e-54
+    },
+    {
+      "block": 66,
+      "mass_norm": 2.3232037660432372e-66
+    },
+    {
+      "block": 67,
+      "mass_norm": 1.0477663121953396e-80
+    },
+    {
+      "block": 68,
+      "mass_norm": 5.4460743837921774e-98
+    },
+    {
+      "block": 69,
+      "mass_norm": 9.911026938814636e-119
+    },
+    {
+      "block": 70,
+      "mass_norm": 1.5418538369034234e-143
+    },
+    {
+      "block": 71,
+      "mass_norm": 0.0
+    },
+    {
+      "block": 72,
+      "mass_norm": 0.0
+    },
+    {
+      "block": 73,
+      "mass_norm": 0.0
+    },
+    {
+      "block": 74,
+      "mass_norm": 0.0
+    },
+    {
+      "block": 75,
+      "mass_norm": 0.0
+    }
+  ],
+  "ranking": [
+    {
+      "block": 24,
+      "mass_norm": 0.0002343209820505209
+    },
+    {
+      "block": 48,
+      "mass_norm": 0.0002100327220973081
+    },
+    {
+      "block": 49,
+      "mass_norm": 0.0001889981565867471
+    },
+    {
+      "block": 23,
+      "mass_norm": 0.00018327347186391593
+    },
+    {
+      "block": 47,
+      "mass_norm": 0.00016117510234458707
+    },
+    {
+      "block": 25,
+      "mass_norm": 0.00013904212101790907
+    },
+    {
+      "block": 50,
+      "mass_norm": 0.00011582416192267761
+    },
+    {
+      "block": 46,
+      "mass_norm": 9.433981335932105e-05
+    },
+    {
+      "block": 17,
+      "mass_norm": 7.491264412821574e-05
+    },
+    {
+      "block": 22,
+      "mass_norm": 7.276785958205039e-05
+    },
+    {
+      "block": 45,
+      "mass_norm": 4.6324699771557397e-05
+    },
+    {
+      "block": 15,
+      "mass_norm": 4.317281209248122e-05
+    },
+    {
+      "block": 16,
+      "mass_norm": 4.272050445709108e-05
+    },
+    {
+      "block": 20,
+      "mass_norm": 4.126726226912052e-05
+    },
+    {
+      "block": 44,
+      "mass_norm": 3.9955849221322765e-05
+    },
+    {
+      "block": 18,
+      "mass_norm": 3.9060526029231386e-05
+    },
+    {
+      "block": 43,
+      "mass_norm": 3.617617666541736e-05
+    },
+    {
+      "block": 51,
+      "mass_norm": 3.489645282252766e-05
+    },
+    {
+      "block": 14,
+      "mass_norm": 3.123851968298382e-05
+    },
+    {
+      "block": 21,
+      "mass_norm": 3.077979900163606e-05
+    },
+    {
+      "block": 42,
+      "mass_norm": 2.9721146693966957e-05
+    },
+    {
+      "block": 29,
+      "mass_norm": 2.916154910831703e-05
+    },
+    {
+      "block": 28,
+      "mass_norm": 2.9101703795101582e-05
+    },
+    {
+      "block": 30,
+      "mass_norm": 2.8732807324731462e-05
+    },
+    {
+      "block": 27,
+      "mass_norm": 2.866085749305725e-05
+    },
+    {
+      "block": 26,
+      "mass_norm": 2.798041868603977e-05
+    },
+    {
+      "block": 31,
+      "mass_norm": 2.774856816927899e-05
+    },
+    {
+      "block": 32,
+      "mass_norm": 2.619358796642775e-05
+    },
+    {
+      "block": 33,
+      "mass_norm": 2.4116837245556292e-05
+    },
+    {
+      "block": 41,
+      "mass_norm": 2.2319963922129135e-05
+    },
+    {
+      "block": 34,
+      "mass_norm": 2.1643016337312677e-05
+    },
+    {
+      "block": 35,
+      "mass_norm": 1.897772930553872e-05
+    },
+    {
+      "block": 19,
+      "mass_norm": 1.7916827907494225e-05
+    },
+    {
+      "block": 40,
+      "mass_norm": 1.6504362300499267e-05
+    },
+    {
+      "block": 36,
+      "mass_norm": 1.6401301206976574e-05
+    },
+    {
+      "block": 37,
+      "mass_norm": 1.4260625330501662e-05
+    },
+    {
+      "block": 39,
+      "mass_norm": 1.3465019255286465e-05
+    },
+    {
+      "block": 38,
+      "mass_norm": 1.3025467142188426e-05
+    },
+    {
+      "block": 13,
+      "mass_norm": 1.289311491198805e-05
+    },
+    {
+      "block": 12,
+      "mass_norm": 2.5269465651068428e-06
+    },
+    {
+      "block": 10,
+      "mass_norm": 9.861303785215883e-08
+    },
+    {
+      "block": 11,
+      "mass_norm": 4.101195438185483e-08
+    },
+    {
+      "block": 9,
+      "mass_norm": 1.3251807884751132e-08
+    },
+    {
+      "block": 8,
+      "mass_norm": 4.255795675901436e-10
+    },
+    {
+      "block": 56,
+      "mass_norm": 1.500320424700489e-10
+    },
+    {
+      "block": 55,
+      "mass_norm": 1.1287053278116886e-10
+    },
+    {
+      "block": 57,
+      "mass_norm": 2.3339498855515902e-11
+    },
+    {
+      "block": 7,
+      "mass_norm": 1.838210587792791e-11
+    },
+    {
+      "block": 54,
+      "mass_norm": 1.2146215965864997e-11
+    },
+    {
+      "block": 6,
+      "mass_norm": 1.2063913302168006e-12
+    },
+    {
+      "block": 58,
+      "mass_norm": 5.168043070917221e-13
+    },
+    {
+      "block": 53,
+      "mass_norm": 8.325355837385638e-14
+    },
+    {
+      "block": 5,
+      "mass_norm": 2.1904313485356274e-14
+    },
+    {
+      "block": 59,
+      "mass_norm": 2.1411489132072577e-16
+    },
+    {
+      "block": 4,
+      "mass_norm": 1.7833450549571566e-16
+    },
+    {
+      "block": 3,
+      "mass_norm": 7.007706838418951e-19
+    },
+    {
+      "block": 2,
+      "mass_norm": 2.9706418614902913e-21
+    },
+    {
+      "block": 60,
+      "mass_norm": 2.710058682294897e-21
+    },
+    {
+      "block": 1,
+      "mass_norm": 1.713139030919768e-21
+    },
+    {
+      "block": 61,
+      "mass_norm": 3.0724762603696804e-25
+    },
+    {
+      "block": 62,
+      "mass_norm": 5.537892528064146e-31
+    },
+    {
+      "block": 63,
+      "mass_norm": 4.83793971821537e-37
+    },
+    {
+      "block": 64,
+      "mass_norm": 7.428326453405316e-45
+    },
+    {
+      "block": 65,
+      "mass_norm": 1.5870522423407312e-54
+    },
+    {
+      "block": 66,
+      "mass_norm": 2.3232037660432372e-66
+    },
+    {
+      "block": 67,
+      "mass_norm": 1.0477663121953396e-80
+    },
+    {
+      "block": 68,
+      "mass_norm": 5.4460743837921774e-98
+    },
+    {
+      "block": 69,
+      "mass_norm": 9.911026938814636e-119
+    },
+    {
+      "block": 70,
+      "mass_norm": 1.5418538369034234e-143
+    },
+    {
+      "block": 0,
+      "mass_norm": 0.0
+    },
+    {
+      "block": 52,
+      "mass_norm": 0.0
+    },
+    {
+      "block": 71,
+      "mass_norm": 0.0
+    },
+    {
+      "block": 72,
+      "mass_norm": 0.0
+    },
+    {
+      "block": 73,
+      "mass_norm": 0.0
+    },
+    {
+      "block": 74,
+      "mass_norm": 0.0
+    },
+    {
+      "block": 75,
+      "mass_norm": 0.0
+    }
+  ],
+  "selected_local_pilot_blocks": [
+    24,
+    48
+  ],
+  "quantity": "fixed dt/rho/u_ref times per-block Q change, pair10 final minus pair02 previous; norms do not add without cancellation",
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "new_maps": 0
+}
