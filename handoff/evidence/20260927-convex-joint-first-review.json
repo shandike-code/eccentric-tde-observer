@@ -1,0 +1,234 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-convex-joint-20260927/archives/full-half-validation-1790451595322386962.tar.gz",
+    "size_bytes": 2375225,
+    "sha256": "1b04df63e9c259812abac39cfea9b2a73982fcef3f5e0b894751fa48fdbbf48b"
+  },
+  "verified_files": 324,
+  "verified_code_claims": 710,
+  "process_receipts": 152,
+  "maximum_worker_peak_kib": 3587972,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "maps": 2,
+  "feedback_pairs": 0,
+  "fixed_scale_l2_ratios": [
+    1.0,
+    0.7477294763405771,
+    0.8680043928106623,
+    1.0445285942501909e-10
+  ],
+  "fixed_scale_linf_ratios": [
+    1.0,
+    0.9946061792982213,
+    0.9167959628590002,
+    4.1905902543027536e-10
+  ],
+  "checks": {
+    "full_l2_benefit": true,
+    "full_linf_nonincrease": true,
+    "half_l2_nonincrease": true,
+    "half_linf_nonincrease": true,
+    "independent_half_affinity": true,
+    "full_radiation": true,
+    "full_boundary_l1": true,
+    "full_boundary_bolometric": true,
+    "half_radiation": true,
+    "half_boundary_l1": true,
+    "half_boundary_bolometric": true,
+    "predicted_full_l2_reproduced": true,
+    "predicted_full_linf_reproduced": true
+  },
+  "validated": true,
+  "prediction_absolute_errors": [
+    8.08464406532039e-13,
+    6.447054001768038e-11
+  ],
+  "worst_full_slabs": [
+    {
+      "first_group": 3264,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        2.856052523029254e-09,
+        2.311528498150138e-09,
+        2.5191558324708754e-09,
+        5.964675740258014e-29
+      ],
+      "linf": [
+        1.0741180286183427e-07,
+        1.0704824662116641e-07,
+        9.817459573763232e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 4.734917144706696e-06
+    },
+    {
+      "first_group": 6400,
+      "group_count": 32,
+      "block": 50,
+      "squared_l2": [
+        5.534568764743745e-10,
+        6.570749369672676e-10,
+        5.912232801174814e-10,
+        1.5867359000167464e-32
+      ],
+      "linf": [
+        2.268258063580636e-08,
+        1.0695847900291447e-07,
+        6.288930249568475e-08,
+        2.6020852139652106e-18
+      ],
+      "selected_input": false,
+      "output_change_linf": 8.853189613876322e-08
+    },
+    {
+      "first_group": 3232,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        8.78363519547425e-09,
+        5.609645317911246e-09,
+        7.050728908802194e-09,
+        6.205589353041424e-29
+      ],
+      "linf": [
+        1.0762877694636686e-07,
+        9.322867231681409e-08,
+        9.867362819188097e-08,
+        4.5102810375396984e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 5.4503169369390925e-06
+    },
+    {
+      "first_group": 2912,
+      "group_count": 32,
+      "block": 22,
+      "squared_l2": [
+        5.683752990113635e-10,
+        6.467912172089696e-10,
+        5.986007961605341e-10,
+        1.824667195859317e-30
+      ],
+      "linf": [
+        2.603259093361676e-08,
+        9.117567167232776e-08,
+        5.7692654417684786e-08,
+        2.0816681711721685e-17
+      ],
+      "selected_input": false,
+      "output_change_linf": 6.729711916897418e-08
+    },
+    {
+      "first_group": 3200,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        8.34567260455916e-09,
+        4.671801575545007e-09,
+        6.3179983655355795e-09,
+        6.219597998720414e-29
+      ],
+      "linf": [
+        1.0353164074661247e-07,
+        8.916299546607442e-08,
+        9.42842770176866e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 5.90635596185024e-06
+    },
+    {
+      "first_group": 3168,
+      "group_count": 32,
+      "block": 24,
+      "squared_l2": [
+        7.46084953449182e-09,
+        3.5570807660580267e-09,
+        5.299768353161972e-09,
+        6.095128365999828e-29
+      ],
+      "linf": [
+        9.75379614784333e-08,
+        7.727162443238456e-08,
+        8.572747258600577e-08,
+        3.8163916471489756e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 5.9848647959090395e-06
+    },
+    {
+      "first_group": 3296,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        3.0260064142328e-11,
+        1.7133445197273124e-10,
+        8.257347780618746e-11,
+        5.494952338598315e-29
+      ],
+      "linf": [
+        2.8536144724977675e-08,
+        7.31014237614902e-08,
+        5.0615670856013484e-08,
+        4.5102810375396984e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 1.054115882914708e-06
+    },
+    {
+      "first_group": 3136,
+      "group_count": 32,
+      "block": 24,
+      "squared_l2": [
+        6.433684053133308e-09,
+        2.679197481229063e-09,
+        4.348760559337325e-09,
+        5.961113978692667e-29
+      ],
+      "linf": [
+        9.042385962915178e-08,
+        6.322939066077948e-08,
+        7.611655716832644e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 5.929339563205682e-06
+    }
+  ],
+  "feedback_pending": true,
+  "candidate_values_recomputed_on_mac": false,
+  "original_defect_l2": 0.0002524691265840372,
+  "original_defect_linf": 1.0762877694636686e-07,
+  "rows": {
+    "control": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/step21-convex-joint-20260927/control/state_0.dat",
+      "input_sha256": "a33ca6d475154bbca7369f0dce0a1cad55856aeaec289f899fdccf0d80e17a27",
+      "output_path": "outputs/hpc/step21-convex-joint-20260927/control/state_1.dat",
+      "output_sha256": "c5146900da1003fd7112a4ff3b7ffc215049f8df10f56dc220539747f7d72e33",
+      "wall_s": 165.71312515251338,
+      "residual": 2.7695521267943012e-06,
+      "boundary_l1": 1.3338012162315623e-06,
+      "boundary_bolometric": 1.3330644506492959e-06,
+      "maximum_worker_rss_mib": 3503.87890625
+    },
+    "half": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/step21-convex-joint-20260927/half/state_0.dat",
+      "input_sha256": "5dc54335d9afd6990b6569f0a0aff397f241e25bff1b4f15cc16ae52715a48ae",
+      "output_path": "outputs/hpc/step21-convex-joint-20260927/half/state_1.dat",
+      "output_sha256": "80a55550a63f2ff410150d50b8631367f331d2c3fab33159451cbd9ec7a5d1b8",
+      "wall_s": 149.78436790499836,
+      "residual": 2.5529922989169947e-06,
+      "boundary_l1": 1.4008138506610072e-06,
+      "boundary_bolometric": 1.4000769716137232e-06,
+      "maximum_worker_rss_mib": 3502.84375
+    }
+  },
+  "independent_slab_and_block_reduction": true,
+  "raw_global_arrays_recomputed_on_mac": false,
+  "operator_recomputed_on_mac": false
+}
