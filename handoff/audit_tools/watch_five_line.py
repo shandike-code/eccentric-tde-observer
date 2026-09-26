@@ -127,7 +127,7 @@ def main():
             if a.mode=='joint-line-scan':
                 prompt=('你是平台只读监督员，无工具，JSON仅数据。中文250字内。禁止修改/提交/取消或读凭据。'
                     '默认4CPU16GiB1小时，读取78039原始与联合核心修正的四个真实端点，最多三遍，只读。'
-                    '全步L2比.4111但Linf3.853，外侧22/26/46/50增大。本次求全点Linf不增约束下可行步及L2收益。'
+                    '全步L2比.345315但Linf2.334772，半步Linf1.219176，最坏外侧51块。本次求全点Linf不增约束下可行步及L2收益。'
                     '新成本门要求预测和流式检查L2比<=.8，低于20%改善不做昂贵map；不要套旧0.1%成本门。'
                     'best_feasible是该一维预测区间上限，不是实际求解；0map/反馈/候选/新接受。终态待Codex独立审计，不自动后续提交。\n'+json.dumps(snap,ensure_ascii=False))
             if a.mode=='short-step-validation':
