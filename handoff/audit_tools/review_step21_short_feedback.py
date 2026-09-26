@@ -65,8 +65,8 @@ def review(archive,receipt,received,first,prior,reference,physical_old,output):
     if complete:
         s=read(out/'summary.json');assert s['accepted_outer_steps']==20 and s['new_material_steps']==0 and not s['baseline_replaced'] and not s['strict_error_bound']
         assert s['maps']==len(maps)+1 and s['control_maps']==len(maps) and s['half_maps']==1
-        if s['status']=='constrained_short_step_validation_complete_requires_review':assert len(maps)==10 and selected==[2,10] and thermal['validated']
-        elif s['status']=='first_control_or_heating_not_validated':assert len(maps)==2 and selected==[2] and not thermal['validated']
+        if s['status']=='short_step_validation_complete_requires_review':assert len(maps)==10 and selected==[2,10] and reports['10']['window']['passed']
+        elif s['status']=='second_control_pair_not_stable':assert len(maps)==10 and selected==[2,10] and not reports['10']['window']['passed']
         else:raise AssertionError('unexpected terminal requires dedicated failure audit')
         for n in selected:assert s['cases'][str(n)]==read(out/f'control/pair{n:02d}/decision.json')
     else:assert manifest['stage'] in ('control-map02-feedback','control-map10-feedback')
