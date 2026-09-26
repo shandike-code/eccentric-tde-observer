@@ -1,0 +1,85 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-five-block-pilot-20260927/archives/complete-1790461087073776500.tar.gz",
+    "size_bytes": 95897,
+    "sha256": "fb8125c24c8da6ab5f1c742a54be0d87389dcad92b74d1bce6c27c92777fe4c5"
+  },
+  "verified_files": 13,
+  "verified_code_claims": 712,
+  "rows": [
+    {
+      "block": 24,
+      "local_arrays": {
+        "path": "outputs/hpc/step21-five-block-pilot-20260927/control-block24-local.npz",
+        "size_bytes": 1342177816,
+        "sha256": "1451a6f4267b33feaacb8bd7cd13b3e8f7e43fa636e3131f1a45f01e196e8ee9"
+      },
+      "l2_ratio": 0.31042248106148373,
+      "linf_ratio": 0.40893809359075917,
+      "checks": {
+        "l2_halved": true,
+        "linf_halved": true,
+        "useful_step": true,
+        "affine_prediction": true,
+        "boundary_not_worse": true,
+        "finite_budget": true,
+        "memory_below_24gib": true,
+        "time_below_24_maps": true,
+        "independent_half_affinity": true
+      },
+      "local_candidate_min": 3.8319359903764374e-07,
+      "local_mapped_min": 3.831935990618844e-07,
+      "raw_map_s": 105.62234420888126,
+      "wall_s": 1937.866170078516,
+      "half_affinity_over_raw_l2": 1.363111796106177e-10,
+      "observed_peak_kib": 15380272,
+      "gmres_info": 2,
+      "gmres_iterations": 16,
+      "linear_audit_passed": false,
+      "full_step": true,
+      "zero_prediction_error_is_not_independent_half_probe": true
+    },
+    {
+      "block": 48,
+      "local_arrays": {
+        "path": "outputs/hpc/step21-five-block-pilot-20260927/control-block48-local.npz",
+        "size_bytes": 1342177816,
+        "sha256": "355a0cdfcdc9e6811784aae23f52cb30adadda71ec429fae5a24b83aa3b3b896"
+      },
+      "l2_ratio": 0.11000966173173932,
+      "linf_ratio": 0.37328936572168475,
+      "checks": {
+        "l2_halved": true,
+        "linf_halved": true,
+        "useful_step": true,
+        "affine_prediction": true,
+        "boundary_not_worse": true,
+        "finite_budget": true,
+        "memory_below_24gib": true,
+        "time_below_24_maps": true,
+        "independent_half_affinity": true
+      },
+      "local_candidate_min": 1.1119818205575273e-12,
+      "local_mapped_min": 1.1119818205575273e-12,
+      "raw_map_s": 54.5680403476581,
+      "wall_s": 1021.0289929630235,
+      "half_affinity_over_raw_l2": 1.0036181454294057e-10,
+      "observed_peak_kib": 14959332,
+      "gmres_info": 2,
+      "gmres_iterations": 16,
+      "linear_audit_passed": false,
+      "full_step": true,
+      "zero_prediction_error_is_not_independent_half_probe": true
+    }
+  ],
+  "all_local_cases_passed": true,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "raw_input_output_blocks_present_on_mac": false,
+  "raw_l2_independently_recomputed": false,
+  "fresh_l2_and_linf_independently_recomputed": false,
+  "local_boundary_flux_independently_recomputed": false,
+  "operator_recomputed_on_mac": false,
+  "half_operator_recomputed_on_mac": false,
+  "global_validation_required": true
+}
