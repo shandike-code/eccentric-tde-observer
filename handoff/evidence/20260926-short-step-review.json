@@ -1,0 +1,58 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-block-short-step-v2-20260926/archives/complete-1790418555016652305.tar.gz",
+    "size_bytes": 480312,
+    "sha256": "2ad331007f88bdc89f1e9ad6bebe4824526e825daf157df014d46362956db990"
+  },
+  "job_id": 77783,
+  "verified_files": 3,
+  "verified_code_claims": 696,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "actual_map_performed": false,
+  "candidate_written": false,
+  "original_l2": 0.0002524691265840372,
+  "original_maximum": 1.0762877694636686e-07,
+  "unconstrained_l2_optimum": 0.5496017157372735,
+  "linf_upper": 0.009780775264504405,
+  "witness": {
+    "index": [
+      3200,
+      0,
+      2144
+    ],
+    "raw": 9.615491416287147e-08,
+    "delta": 1.1731036112377913e-06,
+    "maximum": 1.0762877694636686e-07,
+    "delta_over_original_maximum": 10.899534906193049,
+    "upper": 0.009780775264504405,
+    "relative_to_measured_half_affinity_max": 28177007927.666664
+  },
+  "choice": {
+    "fraction": 0.008802697738053965,
+    "unconstrained_l2_optimum": 0.5496017157372735,
+    "predicted_l2_ratio": 0.9969689992745943,
+    "l2_cost_pass": true,
+    "reason": "fixed constrained optimum with ten percent step margin",
+    "streamed_l2_ratio": 0.9969689992710291,
+    "streamed_linf_ratio": 1.0,
+    "predicted_minimum": 0.0
+  },
+  "checks": {
+    "nonzero_step": true,
+    "l2_cost_pass": true,
+    "streamed_l2_cost_pass": true,
+    "streamed_linf_nonincrease": true,
+    "radiation_upper_bound": true,
+    "selected_boundary_l1": true,
+    "selected_boundary_bolometric": true,
+    "half_boundary_l1": true,
+    "half_boundary_bolometric": true
+  },
+  "eligible_for_independent_review": true,
+  "peak_rss_bytes": 651628544,
+  "passes": 3,
+  "independent_scalar_and_witness_reduction": true,
+  "all_field_constraints_recomputed_on_mac": false,
+  "third_pass_raw_fields_recomputed_on_mac": false
+}
