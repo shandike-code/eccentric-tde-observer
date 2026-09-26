@@ -1,0 +1,60 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-joint-line-cost-20260926/archives/complete-1790433571496095027.tar.gz",
+    "size_bytes": 481711,
+    "sha256": "232faeeff489de81ceace5970926d5b67c4cf290c4a85c0add1c1a2e7c3adbc1"
+  },
+  "job_id": 77905,
+  "verified_files": 3,
+  "verified_code_claims": 703,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "actual_map_performed": false,
+  "candidate_written": false,
+  "original_l2": 0.0002524691265840372,
+  "original_maximum": 1.0762877694636686e-07,
+  "unconstrained_l2_optimum": 1.1493376327264868,
+  "linf_upper": 0.22497727284556118,
+  "witness": {
+    "index": [
+      6400,
+      31,
+      1647
+    ],
+    "raw": 1.882012598758767e-08,
+    "delta": 3.9474498839597513e-07,
+    "maximum": 1.0762877694636686e-07,
+    "delta_over_original_maximum": 3.667652830364159,
+    "upper": 0.22497727284556118,
+    "relative_to_measured_half_affinity_max": 8752115114.567308
+  },
+  "choice": {
+    "fraction": 0.20247954556100506,
+    "best_fraction_without_safety": 0.22497727284556118,
+    "best_feasible_l2_ratio": 0.8375450174224208,
+    "unconstrained_l2_optimum": 1.1493376327264868,
+    "predicted_l2_ratio": 0.8534744897164847,
+    "l2_cost_pass": false,
+    "reason": "fixed constrained optimum with ten percent step margin",
+    "streamed_l2_ratio": 0.8534744897135895,
+    "streamed_linf_ratio": 0.9174861468444103,
+    "predicted_minimum": 0.0
+  },
+  "checks": {
+    "nonzero_step": true,
+    "l2_cost_pass": false,
+    "streamed_l2_cost_pass": false,
+    "streamed_linf_nonincrease": true,
+    "radiation_upper_bound": true,
+    "selected_boundary_l1": true,
+    "selected_boundary_bolometric": true,
+    "half_boundary_l1": true,
+    "half_boundary_bolometric": true
+  },
+  "eligible_for_independent_review": false,
+  "peak_rss_bytes": 641306624,
+  "passes": 3,
+  "independent_scalar_and_witness_reduction": true,
+  "all_field_constraints_recomputed_on_mac": false,
+  "third_pass_raw_fields_recomputed_on_mac": false
+}
