@@ -1,0 +1,198 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-heating-validation-20260926/archives/control-map02-feedback-1790404140149815517.tar.gz",
+    "size_bytes": 76503230,
+    "sha256": "bb3c0aba69ade455309cede2a517907ecedaaf4cae1a2f5d529da3401e458e22"
+  },
+  "verified_files": 1244,
+  "verified_code_claims": 691,
+  "maps": [
+    {
+      "iteration": 1,
+      "residual": 2.891787541923786e-06,
+      "boundary_l1": 3.005159096589859e-06,
+      "boundary_bolometric": 3.000739305528564e-06,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.15536729993244525,
+      "wall_s": 184.34477458056062
+    },
+    {
+      "iteration": 2,
+      "residual": 2.8797031821174924e-06,
+      "boundary_l1": 2.7615266223524593e-06,
+      "boundary_bolometric": 2.7579548932605366e-06,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.15524205867893584,
+      "wall_s": 167.9990682983771
+    }
+  ],
+  "thermal_validation": {
+    "actual_proxy_ratio": 0.7827750126391803,
+    "predicted_proxy_ratio": 0.7827750126445282,
+    "source_proxy_norm": 0.00018972716729363516,
+    "actual_proxy_norm": 0.00014851368577627113,
+    "independent_alpha": -2.2222504218978347,
+    "prediction_errors": {
+      "previous": {
+        "mass_over_source": 2.9317449545944124e-10,
+        "max_over_source": 4.125789479010304e-10
+      },
+      "final": {
+        "mass_over_source": 2.9090355281208486e-10,
+        "max_over_source": 3.3720281430369876e-10
+      },
+      "difference": {
+        "mass_over_source": 3.9505097152277393e-10,
+        "max_over_source": 5.553693651136821e-10
+      }
+    },
+    "checks": {
+      "actual_heating_cost_pass": true,
+      "previous_prediction_error_pass": true,
+      "final_prediction_error_pass": true,
+      "difference_prediction_error_pass": true
+    },
+    "validated": true,
+    "independent_cell_norm_reducer": true
+  },
+  "feedback_rounds": [
+    2
+  ],
+  "windows": {
+    "2": {
+      "endpoints": {
+        "previous": {
+          "norms": {
+            "l2": 8.24602325171388,
+            "mass_weighted": 0.2752356240452899,
+            "maximum_cell": 2.7057457209408473
+          },
+          "minimum_gas_erg_g": 7050480365888.646,
+          "maximum_proc_kib": 4038652,
+          "source": {
+            "volume_l1": 1.9609353859798223e-12,
+            "net_fraction": 1.803377381029078e-11,
+            "reference_integral": 2232979263887.8887,
+            "compared_integral": 2232979263928.1577,
+            "difference_depth_l1": 102.83380968897214
+          }
+        },
+        "final": {
+          "norms": {
+            "l2": 8.245985964321058,
+            "mass_weighted": 0.27526639617868487,
+            "maximum_cell": 2.7057422719163413
+          },
+          "minimum_gas_erg_g": 7048040138728.635,
+          "maximum_proc_kib": 4042824,
+          "source": {
+            "volume_l1": 1.9622686928838657e-12,
+            "net_fraction": 1.8093750865781664e-11,
+            "reference_integral": 2234833658135.5635,
+            "compared_integral": 2234833658176.0,
+            "difference_depth_l1": 102.9039074096188
+          }
+        }
+      },
+      "comparison": {
+        "photoionization_volume_l1": [
+          1.1144010124742454e-07,
+          1.4930993569762645e-06,
+          6.965242429991705e-10
+        ],
+        "total_recombination_volume_l1": [
+          9.262733746203788e-10,
+          7.283003416238066e-10,
+          3.0100602258911807e-15
+        ],
+        "atomic_heating_volume_l1": 3.9312633356484655e-05,
+        "direct_heating_volume_l1": 3.931263335944269e-05,
+        "formal_heating_volume_l1": 3.9312633359660595e-05
+      },
+      "gate_checks": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": true,
+        "last_two_direct_heating_pass": true,
+        "last_two_formal_heating_pass": true,
+        "inner_pair_ready": true,
+        "physical_response_pass": true
+      },
+      "comparison_kind": "post_extrapolation_shift",
+      "window": {
+        "vector_difference_over_frozen_r20_norms": {
+          "previous_vs_previous": [
+            0.004724766431261383,
+            0.014081216357439039,
+            0.003691977946235003
+          ],
+          "previous_vs_final": [
+            0.004506320733358405,
+            0.013360629155767962,
+            0.0035462472555193663
+          ],
+          "final_vs_previous": [
+            0.004739427937962518,
+            0.01449055857890293,
+            0.0035640025219371733
+          ],
+          "final_vs_final": [
+            0.004519814141483247,
+            0.013768136820881004,
+            0.0034182718312050007
+          ]
+        },
+        "passed": false,
+        "tolerance": 0.001,
+        "strict_error_bound": false,
+        "baseline_replaced": false
+      },
+      "from_77371": {
+        "vector_difference_over_frozen_r20_norms": {
+          "previous_vs_previous": [
+            0.004724766431261383,
+            0.014081216357439039,
+            0.003691977946235003
+          ],
+          "previous_vs_final": [
+            0.004506320733358405,
+            0.013360629155767962,
+            0.0035462472555193663
+          ],
+          "final_vs_previous": [
+            0.004739427937962518,
+            0.01449055857890293,
+            0.0035640025219371733
+          ],
+          "final_vs_final": [
+            0.004519814141483247,
+            0.013768136820881004,
+            0.0034182718312050007
+          ]
+        },
+        "passed": false,
+        "tolerance": 0.001,
+        "strict_error_bound": false,
+        "baseline_replaced": false
+      },
+      "final_minus_r20": {
+        "l2": 0.8322725102180233,
+        "mass_weighted": 0.08042982243087402,
+        "maximum_cell": 0.12263370468561412
+      }
+    }
+  },
+  "final_summary_present": false,
+  "maximum_proc_kib": 4042824,
+  "map_process_receipts": 152,
+  "feedback_process_receipts": 152,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "baseline_replaced": false,
+  "strict_error_bound": false,
+  "production_thermal_reducer_reused": false,
+  "production_window_reducer_reused": false,
+  "original_seven_gate_reducer_reused": true,
+  "material_ode_recomputed_on_mac": false,
+  "full_large_fields_recomputed_on_mac": false
+}
