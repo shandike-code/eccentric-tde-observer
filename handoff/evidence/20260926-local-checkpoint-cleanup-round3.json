@@ -1,0 +1,925 @@
+{
+  "created_at": "2026-09-26T22:06:06.510594+08:00",
+  "authorization": "User requested further deletion after two completed cleanup rounds.",
+  "scope": "Rejected phase7b9ab full trial and superseded phase7b9i work fields; Mac only.",
+  "protected": [
+    "outputs/checkpoints/phase7b6f_full_frequency_iteration4.dat",
+    "outputs/checkpoints/phase7b6h_full_frequency_iteration8.dat",
+    "outputs/checkpoints/phase7b6h_full_frequency_residual8.dat",
+    "outputs/checkpoints/phase7b9cs_resource_adjusted_tail_anchor.dat",
+    "outputs/checkpoints/phase7b9e2_work/state_a.dat",
+    "outputs/checkpoints/phase7b9e2_work/state_b.dat",
+    "outputs/checkpoints/phase7b9k_retained_trial_map3.dat"
+  ],
+  "old_bytes_backed_up": false,
+  "content_hash_recomputed": false,
+  "historical_reports_retained": true,
+  "recovery": "Old large-field replay requires regeneration; original bytes not guaranteed.",
+  "open_file_check": "No open descriptor on the four exact paths",
+  "free_bytes_before": 123487424512,
+  "files": [
+    {
+      "path": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/checkpoints/phase7b9ab_global_trial/state_trial.dat",
+      "relative_path": "outputs/checkpoints/phase7b9ab_global_trial/state_trial.dat",
+      "size_bytes": 10099884032,
+      "allocated_bytes": 10099884032,
+      "inode": 26868770,
+      "mtime_ns": 1788202854844283606,
+      "historical_inventory_entry": {
+        "path": "outputs/checkpoints/phase7b9ab_global_trial/state_trial.dat",
+        "apparent_size_bytes": 10099884032,
+        "allocated_size_bytes": 10099884032,
+        "mtime_unix_ns": 1788202854844283606,
+        "mtime_utc": "2026-08-31T19:00:54.844284+00:00",
+        "filename": "state_trial.dat",
+        "apparent_size_gib": 9.40625,
+        "allocated_size_gib": 9.40625,
+        "matches_active_full_state_size": true,
+        "direct_referencer_count": 26,
+        "direct_reference_occurrence_count": 112,
+        "ambiguous_basename_reference_occurrence_count": 0,
+        "direct_referencers": [
+          {
+            "path": "outputs/phase7b9ab_global_trial_residual_audit_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ab_preregistered_global_trial_residual_audit.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ac_global_positive_picard_map_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ac_preregistered_global_positive_picard_map.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9aq_anderson_triple_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9aq_preregistered_anderson_triple.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ar_global_anderson_coefficients_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ar_preregistered_global_anderson_coefficients.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9as_preregistered_damped_anderson_candidate.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9at_preregistered_constrained_anderson_candidate.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9aw_preregistered_fixed_overrelaxation_scan.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ax_preregistered_second_candidate_picard_map.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ax_second_candidate_picard_map_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ay_fused_constrained_anderson_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ay_preregistered_fused_constrained_anderson.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9az_preregistered_second_constrained_candidate.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ba_final_positive_picard_summary.json",
+            "exact_path_occurrence_count": 77,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bc_preregistered_third_fused_anderson.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bc_third_fused_anderson_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bd_preregistered_third_constrained_candidate.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bh_positive_affine_krylov_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bh_preregistered_positive_affine_krylov.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bm_augmented_affine_krylov_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bm_preregistered_augmented_affine_krylov.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9ab_preregister_global_trial_residual_audit.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9aq_preregister_anderson_triple.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          }
+        ],
+        "active_phase7b9dd_roles": [],
+        "active_runtime_roles_at_snapshot": [],
+        "classification": "referenced"
+      },
+      "deleted": true
+    },
+    {
+      "path": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/checkpoints/phase7b9i_work/state_a.dat",
+      "relative_path": "outputs/checkpoints/phase7b9i_work/state_a.dat",
+      "size_bytes": 10099884032,
+      "allocated_bytes": 10099884032,
+      "inode": 26825076,
+      "mtime_ns": 1788224475816187872,
+      "historical_inventory_entry": {
+        "path": "outputs/checkpoints/phase7b9i_work/state_a.dat",
+        "apparent_size_bytes": 10099884032,
+        "allocated_size_bytes": 10099884032,
+        "mtime_unix_ns": 1788224475816187872,
+        "mtime_utc": "2026-09-01T01:01:15.816188+00:00",
+        "filename": "state_a.dat",
+        "apparent_size_gib": 9.40625,
+        "allocated_size_gib": 9.40625,
+        "matches_active_full_state_size": true,
+        "direct_referencer_count": 67,
+        "direct_reference_occurrence_count": 1018,
+        "ambiguous_basename_reference_occurrence_count": 32,
+        "direct_referencers": [
+          {
+            "path": "outputs/phase7b9aa_hybrid_candidate_repair_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9aa_preregistered_hybrid_candidate_repair.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ab_preregistered_global_trial_residual_audit.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ac_global_positive_picard_map_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ac_preregistered_global_positive_picard_map.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ad_picard_contraction_audit_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ad_preregistered_picard_contraction_audit.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ae_preregistered_second_positive_picard_map.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ae_second_positive_picard_map_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ai_dominant_band_krylov_candidate_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ai_preregistered_dominant_band_krylov_candidate.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9aj_krylov_candidate_global_audit_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9aj_preregistered_krylov_candidate_global_audit.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ak_preregistered_global_convex_krylov_line.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9al_positive_picard_convergence_summary.json",
+            "exact_path_occurrence_count": 308,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9al_preregistered_positive_picard_convergence.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9am_global_picard_overrelaxation_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9am_preregistered_global_picard_overrelaxation.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9an_preregistered_write_overrelaxed_state.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9an_write_overrelaxed_state_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ao_overrelaxed_candidate_audit_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ao_preregistered_overrelaxed_candidate_audit.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ap_accelerated_positive_iteration_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ap_preregistered_accelerated_positive_iteration.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9aq_anderson_triple_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9aq_preregistered_anderson_triple.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ar_global_anderson_coefficients_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ar_preregistered_global_anderson_coefficients.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9as_preregistered_damped_anderson_candidate.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9at_preregistered_constrained_anderson_candidate.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9av_candidate_picard_map_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9av_preregistered_candidate_picard_map.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9aw_fixed_overrelaxation_scan_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9aw_preregistered_fixed_overrelaxation_scan.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ax_preregistered_second_candidate_picard_map.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ax_second_candidate_picard_map_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ay_fused_constrained_anderson_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ay_preregistered_fused_constrained_anderson.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9az_preregistered_second_constrained_candidate.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ba_final_positive_picard_summary.json",
+            "exact_path_occurrence_count": 616,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ba_preregistered_final_positive_picard.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bc_preregistered_third_fused_anderson.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bc_third_fused_anderson_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bd_preregistered_third_constrained_candidate.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bd_third_constrained_candidate_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9be_preregistered_third_candidate_audit.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9be_third_candidate_audit_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bf_candidate_affine_map_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bf_preregistered_candidate_affine_map.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bh_positive_affine_krylov_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bh_preregistered_positive_affine_krylov.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bi_preregistered_targeted_full_source_krylov.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bl_preregistered_global_damped_line.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bm_augmented_affine_krylov_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bm_preregistered_augmented_affine_krylov.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bn_preregistered_even_block_candidate.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bs_preregistered_damped_red_black_line.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bt_preregistered_long_positive_picard.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9j_finite_trial_pause_snapshot.json",
+            "exact_path_occurrence_count": 4,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9k_block_aitken_pilot_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9t_preregistered_full_frequency_krylov_map.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9y_preregistered_krylov_seeded_picard_block62_pilot.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9aa_preregister_hybrid_candidate_repair.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9ac_preregister_global_positive_picard_map.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9ai_preregister_dominant_band_krylov_candidate.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9t_preregister_full_frequency_krylov_map.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9y_preregister_krylov_seeded_picard_block62_pilot.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          }
+        ],
+        "active_phase7b9dd_roles": [],
+        "active_runtime_roles_at_snapshot": [],
+        "classification": "referenced"
+      },
+      "deleted": true
+    },
+    {
+      "path": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/checkpoints/phase7b9i_work/state_b.dat",
+      "relative_path": "outputs/checkpoints/phase7b9i_work/state_b.dat",
+      "size_bytes": 10099884032,
+      "allocated_bytes": 10099884032,
+      "inode": 26825077,
+      "mtime_ns": 1788160824176534510,
+      "historical_inventory_entry": {
+        "path": "outputs/checkpoints/phase7b9i_work/state_b.dat",
+        "apparent_size_bytes": 10099884032,
+        "allocated_size_bytes": 10099884032,
+        "mtime_unix_ns": 1788160824176534510,
+        "mtime_utc": "2026-08-31T07:20:24.176534+00:00",
+        "filename": "state_b.dat",
+        "apparent_size_gib": 9.40625,
+        "allocated_size_gib": 9.40625,
+        "matches_active_full_state_size": true,
+        "direct_referencer_count": 16,
+        "direct_reference_occurrence_count": 24,
+        "ambiguous_basename_reference_occurrence_count": 31,
+        "direct_referencers": [
+          {
+            "path": "outputs/phase7b9aa_preregistered_hybrid_candidate_repair.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9j_finite_trial_pause_snapshot.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9k_block_aitken_pilot_summary.json",
+            "exact_path_occurrence_count": 3,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9l_preregistered_block_implicit_pilot.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9m_preregistered_exact_positive_mode_pilot.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9n_preregistered_multimode_krylov_pilot.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9o_preregistered_static_diagonal_ali_pilot.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9p_preregistered_doppler_coupled_ali_pilot.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9q_preregistered_spatial_ali_feasibility.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9r_preregistered_full_source_krylov_line_search.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9s_preregistered_four_block_full_source_gate.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9t_preregistered_full_frequency_krylov_map.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9v_preregistered_positive_convex_picard_pilot.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9w_preregistered_deep_krylov_block62_pilot.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9x_preregistered_restarted_krylov_block62_pilot.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9y_preregistered_krylov_seeded_picard_block62_pilot.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          }
+        ],
+        "active_phase7b9dd_roles": [],
+        "active_runtime_roles_at_snapshot": [],
+        "classification": "referenced"
+      },
+      "deleted": true
+    },
+    {
+      "path": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/checkpoints/phase7b9i_work/block_aitken_residual.dat",
+      "relative_path": "outputs/checkpoints/phase7b9i_work/block_aitken_residual.dat",
+      "size_bytes": 10099884032,
+      "allocated_bytes": 10099884032,
+      "inode": 26830955,
+      "mtime_ns": 1788203403841486266,
+      "historical_inventory_entry": {
+        "path": "outputs/checkpoints/phase7b9i_work/block_aitken_residual.dat",
+        "apparent_size_bytes": 10099884032,
+        "allocated_size_bytes": 10099884032,
+        "mtime_unix_ns": 1788203403841486266,
+        "mtime_utc": "2026-08-31T19:10:03.841486+00:00",
+        "filename": "block_aitken_residual.dat",
+        "apparent_size_gib": 9.40625,
+        "allocated_size_gib": 9.40625,
+        "matches_active_full_state_size": true,
+        "direct_referencer_count": 47,
+        "direct_reference_occurrence_count": 913,
+        "ambiguous_basename_reference_occurrence_count": 0,
+        "direct_referencers": [
+          {
+            "path": "outputs/phase7b9ae_preregistered_second_positive_picard_map.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ae_second_positive_picard_map_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9af_preregistered_second_picard_contraction_audit.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9af_second_picard_contraction_audit_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ag_preregistered_current_state_krylov_pilot.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ah_preregistered_eight_step_krylov_pilot.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ai_dominant_band_krylov_candidate_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ai_preregistered_dominant_band_krylov_candidate.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ak_preregistered_global_convex_krylov_line.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9al_positive_picard_convergence_summary.json",
+            "exact_path_occurrence_count": 308,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9al_preregistered_positive_picard_convergence.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9am_global_picard_overrelaxation_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9am_preregistered_global_picard_overrelaxation.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9an_preregistered_write_overrelaxed_state.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ap_preregistered_accelerated_positive_iteration.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9aq_anderson_triple_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9aq_preregistered_anderson_triple.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ar_global_anderson_coefficients_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ar_preregistered_global_anderson_coefficients.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9as_preregistered_damped_anderson_candidate.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9at_constrained_anderson_candidate_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9at_preregistered_constrained_anderson_candidate.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9au_constrained_anderson_audit_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9au_preregistered_constrained_anderson_audit.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9av_candidate_picard_map_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9av_preregistered_candidate_picard_map.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9aw_fixed_overrelaxation_scan_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9aw_preregistered_fixed_overrelaxation_scan.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ay_fused_constrained_anderson_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ay_preregistered_fused_constrained_anderson.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9az_preregistered_second_constrained_candidate.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ba_final_positive_picard_summary.json",
+            "exact_path_occurrence_count": 539,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ba_preregistered_final_positive_picard.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bc_preregistered_third_fused_anderson.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bc_third_fused_anderson_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bd_preregistered_third_constrained_candidate.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bg_i12_affine_map_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bg_i12_map_reference.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bg_preregistered_i12_affine_map.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bh_positive_affine_krylov_summary.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bh_preregistered_positive_affine_krylov.json",
+            "exact_path_occurrence_count": 3,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bm_augmented_affine_krylov_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bm_preregistered_augmented_affine_krylov.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9k_preregistered_block_aitken_pilot.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9m_preregistered_exact_positive_mode_pilot.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9ae_preregister_second_positive_picard_map.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9k_preregister_block_aitken_pilot.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          }
+        ],
+        "active_phase7b9dd_roles": [],
+        "active_runtime_roles_at_snapshot": [],
+        "classification": "referenced"
+      },
+      "deleted": true
+    }
+  ],
+  "deleted_bytes": 40399536128,
+  "remaining_full_fields": [
+    "outputs/checkpoints/phase7b6h_full_frequency_residual8.dat",
+    "outputs/checkpoints/phase7b6h_full_frequency_iteration8.dat",
+    "outputs/checkpoints/phase7b9k_retained_trial_map3.dat",
+    "outputs/checkpoints/phase7b6f_full_frequency_iteration4.dat",
+    "outputs/checkpoints/phase7b9cs_resource_adjusted_tail_anchor.dat",
+    "outputs/checkpoints/phase7b9e2_work/state_b.dat",
+    "outputs/checkpoints/phase7b9e2_work/state_a.dat"
+  ],
+  "free_bytes_after": 163888779264
+}

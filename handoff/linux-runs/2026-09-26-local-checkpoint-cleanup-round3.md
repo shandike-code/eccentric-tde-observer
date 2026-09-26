@@ -1,0 +1,9 @@
+# 本地旧辐射检查点第三轮清理（2026-09-26）
+
+用户再次要求进一步清理。本轮删除phase7b9ab_global_trial/state_trial.dat及phase7b9i_work下state_a.dat、state_b.dat、block_aitken_residual.dat，共37.625 GiB；三轮累计删除16份大场，共150.5 GiB。
+
+phase7b9ab报告明确global_trial_residual_audit_passed=false且trial_promoted_to_committed_candidate=false；它是历史被拒候选。另三个文件属于被后续迁移保留态替代的旧迭代工作链，不作为当前学校作业输入。旧manifest中的running是历史快照，不能冒充当前进程。删除前lsof核对四个精确路径无打开描述符。没有远端数据删除。
+
+七份保留完整检查点：正式历史验收phase7b6f iteration4、phase7b6h iteration8及residual8；后续基态收敛端点phase7b9e2_work/state_a.dat和state_b.dat；迁移种子phase7b9k_retained_trial_map3.dat及phase7b9cs_resource_adjusted_tail_anchor.dat。合计65.84375 GiB。其余分块小工件、所有小报告、代码、旧协议以及学校审计下载目录不动。
+
+删除前stat、历史引用、逐项删除回执见../evidence/20260926-local-checkpoint-cleanup-round3.json。未备份大场或重新算内容SHA；旧阶段全场重放需要重新生成，不能保证恢复旧字节。历史库存JSON保留原快照，应合并三份清理回执理解当前存量。
