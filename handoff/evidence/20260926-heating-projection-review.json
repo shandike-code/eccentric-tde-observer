@@ -1,0 +1,33 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-heating-projection-20260926/archives/complete-1790397071676225864.tar.gz",
+    "size_bytes": 215327,
+    "sha256": "1f9ec1c87031fe2e9b99a509cd5471bc2c561cf3d0c27a3f4a7bcb3b42ea65cc"
+  },
+  "verified_files": 4,
+  "verified_code_claims": 690,
+  "alpha": -2.2222504218978347,
+  "proxy_ratio": 0.7827750126445282,
+  "predicted_radiation_ratio": 0.9281833102456314,
+  "predicted_global_residual": 2.89178754246241e-06,
+  "boundary_l1": 3.005159096579182e-06,
+  "boundary_bolometric": 3.000739305409263e-06,
+  "negative_q": 0,
+  "negative_p": 0,
+  "gates": {
+    "positive": true,
+    "coefficient_l1": true,
+    "coefficient_sum": true,
+    "strict_inner": true,
+    "maximum_improves": true,
+    "boundary_l1": true,
+    "boundary_bolometric": true,
+    "heating_proxy_cost_pass": true
+  },
+  "eligible_for_independent_review": true,
+  "peak_rss_bytes": 290807808,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "actual_candidate_heating_computed": false,
+  "full_fields_recomputed_on_mac": false
+}
