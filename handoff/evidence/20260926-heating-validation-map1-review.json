@@ -1,0 +1,48 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-heating-validation-20260926/archives/true-map-validation-1790403145953819690.tar.gz",
+    "size_bytes": 1679221,
+    "sha256": "1b1195e9c5562c6066a4c18bbf9f35a7cb97f4af76e6ff6686e382716e9d0e2a"
+  },
+  "verified_files": 165,
+  "verified_code_claims": 691,
+  "map_process_receipts": 76,
+  "actual_map": {
+    "iteration": 1,
+    "residual": 2.891787541923786e-06,
+    "boundary_l1": 3.005159096589859e-06,
+    "boundary_bolometric": 3.000739305528564e-06,
+    "worst_self_scaled_block": 74,
+    "worst_self_scaled_change": 0.15536729993244525,
+    "wall_s": 184.34477458056062
+  },
+  "actual_over_77371_map11": 0.928183310072748,
+  "prediction_error_over_global_field": 4.129459663685071e-15,
+  "prediction_error_over_actual_change": 1.4279955231212855e-09,
+  "worst_local_slab": {
+    "start": 9488,
+    "stop": 9504,
+    "error_max": 1.55730096887e-312,
+    "field_scale": 1.623496938206347e-306,
+    "actual_change_max": 2.6196418935297353e-307,
+    "error_relative_to_local_field": 9.592263047879757e-07,
+    "actual_local_residual": 0.16135798176644162
+  },
+  "checks": {
+    "actual_maximum_norm_improves": true,
+    "actual_boundary_spectrum_pass": true,
+    "actual_boundary_bolometric_pass": true,
+    "worker_memory_pass": true,
+    "strict_inner_pass": true,
+    "full_field_prediction_error_small": true,
+    "prediction_error_below_tenth_actual_change": true
+  },
+  "maximum_proc_kib": 3584904,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "feedback_audited": false,
+  "thermal_reference_values_independently_recomputed": false,
+  "full_large_fields_recomputed_on_mac": false,
+  "full_field_l2_recomputed_on_mac": false,
+  "material_ode_recomputed_on_mac": false
+}
