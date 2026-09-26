@@ -1,0 +1,40 @@
+{
+  "job_id": 77531,
+  "scheduler_state": "RUNNING",
+  "scontrol": "JobId=77531 JobName=tde-heat-projection UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:35:29 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-09-26T11:50:01 EligibleTime=2026-09-26T11:50:01 AccrueTime=2026-09-26T11:50:01 StartTime=2026-09-26T11:50:01 EndTime=2026-09-26T12:50:01 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-26T11:50:01 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:3200340 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/probe_step21_heating_projection.sbatch SubmitLine=sbatch --parsable operations/probe_step21_heating_projection.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-heat-projection-77531.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-heat-projection-77531.out TresPerTask=cpu=4\n",
+  "scheduler_stderr": "",
+  "observed_unix": 1790396730.0375855,
+  "status": {
+    "status": "scanning",
+    "updated_unix": 1790396244.4303176,
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "new_maps": 0,
+    "candidate_written": false,
+    "frequency": 9600
+  },
+  "prediction": {
+    "proxy": {
+      "alpha": -2.222250421897835,
+      "proxy_ratio": 0.7827750126445281,
+      "source_proxy_norm": 0.00018972716729363516,
+      "predicted_proxy_norm": 0.00014851368577728575,
+      "reference_energy_min_erg_g": 6983172347396.547
+    },
+    "gates": {
+      "positive": true,
+      "coefficient_l1": true,
+      "coefficient_sum": true,
+      "strict_inner": true,
+      "maximum_improves": true,
+      "boundary_l1": true,
+      "boundary_bolometric": true,
+      "heating_proxy_cost_pass": true
+    },
+    "eligible_for_independent_review": true,
+    "peak_rss_bytes": 290807808,
+    "actual_map_performed": false,
+    "actual_candidate_heating_computed": false,
+    "accepted_material_step": false
+  }
+}
