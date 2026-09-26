@@ -1,0 +1,664 @@
+{
+  "created_at": "2026-09-26T21:40:07.173940+08:00",
+  "authorization": "User explicitly requested deletion of unnecessary old radiation checkpoints to free local disk.",
+  "scope": "Six superseded local phase7b6 working/iteration/residual fields only; remote untouched.",
+  "protected": [
+    "outputs/checkpoints/phase7b6f_full_frequency_iteration4.dat",
+    "outputs/checkpoints/phase7b6h_full_frequency_iteration8.dat",
+    "outputs/checkpoints/phase7b6h_full_frequency_residual8.dat",
+    "outputs/checkpoints/phase7b9cs_resource_adjusted_tail_anchor.dat",
+    "outputs/checkpoints/phase7b9k_retained_trial_map3.dat"
+  ],
+  "historical_reports_retained": true,
+  "old_bytes_backed_up": false,
+  "recovery": "Regenerate from retained historical code/protocols/inputs; exact old bytes not guaranteed.",
+  "content_hash_recomputed": false,
+  "free_bytes_before": 2229723136,
+  "files": [
+    {
+      "path": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/checkpoints/phase7b6i_work/residual_b.dat",
+      "relative_path": "outputs/checkpoints/phase7b6i_work/residual_b.dat",
+      "size_bytes": 10099884032,
+      "allocated_bytes": 10099884032,
+      "inode": 26738997,
+      "mtime_ns": 1788094246203699340,
+      "historical_inventory_entry": {
+        "path": "outputs/checkpoints/phase7b6i_work/residual_b.dat",
+        "apparent_size_bytes": 10099884032,
+        "allocated_size_bytes": 10099884032,
+        "mtime_unix_ns": 1788094246203699340,
+        "mtime_utc": "2026-08-30T12:50:46.203699+00:00",
+        "filename": "residual_b.dat",
+        "apparent_size_gib": 9.40625,
+        "allocated_size_gib": 9.40625,
+        "matches_active_full_state_size": true,
+        "direct_referencer_count": 5,
+        "direct_reference_occurrence_count": 5,
+        "ambiguous_basename_reference_occurrence_count": 0,
+        "direct_referencers": [
+          {
+            "path": "outputs/phase7b6j_preregistered_positivity_line_search.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9k_storage_reclamation_audit.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b6h_full_frequency_aitken.py",
+            "exact_path_occurrence_count": 0,
+            "unique_basename_only_occurrence_count": 1
+          },
+          {
+            "path": "scripts/phase7b6i_converged_full_frequency.py",
+            "exact_path_occurrence_count": 0,
+            "unique_basename_only_occurrence_count": 1
+          },
+          {
+            "path": "scripts/phase7b6o_fixed2_continuation.py",
+            "exact_path_occurrence_count": 0,
+            "unique_basename_only_occurrence_count": 1
+          }
+        ],
+        "active_phase7b9dd_roles": [],
+        "active_runtime_roles_at_snapshot": [],
+        "classification": "referenced"
+      },
+      "deleted": true
+    },
+    {
+      "path": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/checkpoints/phase7b6i_work/state_b.dat",
+      "relative_path": "outputs/checkpoints/phase7b6i_work/state_b.dat",
+      "size_bytes": 10099884032,
+      "allocated_bytes": 10099884032,
+      "inode": 26738993,
+      "mtime_ns": 1788094363212260660,
+      "historical_inventory_entry": {
+        "path": "outputs/checkpoints/phase7b6i_work/state_b.dat",
+        "apparent_size_bytes": 10099884032,
+        "allocated_size_bytes": 10099884032,
+        "mtime_unix_ns": 1788094363212260660,
+        "mtime_utc": "2026-08-30T12:52:43.212261+00:00",
+        "filename": "state_b.dat",
+        "apparent_size_gib": 9.40625,
+        "allocated_size_gib": 9.40625,
+        "matches_active_full_state_size": true,
+        "direct_referencer_count": 2,
+        "direct_reference_occurrence_count": 2,
+        "ambiguous_basename_reference_occurrence_count": 53,
+        "direct_referencers": [
+          {
+            "path": "outputs/phase7b6j_preregistered_positivity_line_search.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9k_storage_reclamation_audit.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          }
+        ],
+        "active_phase7b9dd_roles": [],
+        "active_runtime_roles_at_snapshot": [],
+        "classification": "referenced"
+      },
+      "deleted": true
+    },
+    {
+      "path": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/checkpoints/phase7b6j_line_search_iteration14.dat",
+      "relative_path": "outputs/checkpoints/phase7b6j_line_search_iteration14.dat",
+      "size_bytes": 10099884032,
+      "allocated_bytes": 10099884032,
+      "inode": 26742990,
+      "mtime_ns": 1788257402846529113,
+      "historical_inventory_entry": {
+        "path": "outputs/checkpoints/phase7b6j_line_search_iteration14.dat",
+        "apparent_size_bytes": 10099884032,
+        "allocated_size_bytes": 10099884032,
+        "mtime_unix_ns": 1788257402846529113,
+        "mtime_utc": "2026-09-01T10:10:02.846529+00:00",
+        "filename": "phase7b6j_line_search_iteration14.dat",
+        "apparent_size_gib": 9.40625,
+        "allocated_size_gib": 9.40625,
+        "matches_active_full_state_size": true,
+        "direct_referencer_count": 47,
+        "direct_reference_occurrence_count": 1356,
+        "ambiguous_basename_reference_occurrence_count": 0,
+        "direct_referencers": [
+          {
+            "path": "outputs/phase7b6j_positivity_line_search_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b6j_preregistered_positivity_line_search.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b6m_preregistered_science_functionals.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b6n_preregistered_formal_face_flux.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b6o_preregistered_fixed2_continuation.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bh_preregistered_positive_affine_krylov.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bm_preregistered_augmented_affine_krylov.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bn_even_block_candidate_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bn_preregistered_even_block_candidate.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bo_even_block_map_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bo_preregistered_even_block_map.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bp_preregistered_odd_block_krylov.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bx_preregistered_slow_mode_anderson.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bx_slow_mode_anderson_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9by_preregistered_slow_mode_candidate_map.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9by_slow_mode_candidate_map_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ca_accelerated_picard_summary.json",
+            "exact_path_occurrence_count": 78,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ca_preregistered_accelerated_picard.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cb_preregistered_second_slow_mode.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cb_second_slow_mode_summary.json",
+            "exact_path_occurrence_count": 155,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cc_preregistered_second_slow_mode_anderson.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cc_second_slow_mode_anderson_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cf_preregistered_third_accelerated_picard.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cf_third_accelerated_picard_summary.json",
+            "exact_path_occurrence_count": 154,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cg_preregistered_third_slow_mode_anderson.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cg_third_slow_mode_anderson_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cj_fourth_accelerated_picard_summary.json",
+            "exact_path_occurrence_count": 154,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cj_preregistered_fourth_accelerated_picard.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ck_fourth_slow_mode_anderson_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ck_preregistered_fourth_slow_mode_anderson.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cn_fifth_accelerated_picard_summary.json",
+            "exact_path_occurrence_count": 154,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cn_preregistered_fifth_accelerated_picard.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9co_fifth_slow_mode_anderson_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9co_preregistered_fifth_slow_mode_anderson.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cp_long_positive_picard_summary.json",
+            "exact_path_occurrence_count": 154,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cq_memory_reduced_picard_summary.json",
+            "exact_path_occurrence_count": 154,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cr_resource_adjusted_picard_summary.json",
+            "exact_path_occurrence_count": 154,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ct_two_map_tail_summary.json",
+            "exact_path_occurrence_count": 154,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9k_storage_reclamation_audit.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b6j_preregister_positivity_line_search.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9bh_preregister_positive_affine_krylov.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9bm_preregister_augmented_affine_krylov.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9bn_preregister_even_block_candidate.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9bx_preregister_slow_mode_anderson.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9cf_preregister_third_accelerated_picard.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9cj_preregister_fourth_accelerated_picard.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9cn_preregister_fifth_accelerated_picard.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          }
+        ],
+        "active_phase7b9dd_roles": [],
+        "active_runtime_roles_at_snapshot": [],
+        "classification": "referenced"
+      },
+      "deleted": true
+    },
+    {
+      "path": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/checkpoints/phase7b6j_line_search_residual14.dat",
+      "relative_path": "outputs/checkpoints/phase7b6j_line_search_residual14.dat",
+      "size_bytes": 10099884032,
+      "allocated_bytes": 10099884032,
+      "inode": 26742991,
+      "mtime_ns": 1788251687224122218,
+      "historical_inventory_entry": {
+        "path": "outputs/checkpoints/phase7b6j_line_search_residual14.dat",
+        "apparent_size_bytes": 10099884032,
+        "allocated_size_bytes": 10099884032,
+        "mtime_unix_ns": 1788251687224122218,
+        "mtime_utc": "2026-09-01T08:34:47.224122+00:00",
+        "filename": "phase7b6j_line_search_residual14.dat",
+        "apparent_size_gib": 9.40625,
+        "allocated_size_gib": 9.40625,
+        "matches_active_full_state_size": true,
+        "direct_referencer_count": 23,
+        "direct_reference_occurrence_count": 256,
+        "ambiguous_basename_reference_occurrence_count": 0,
+        "direct_referencers": [
+          {
+            "path": "outputs/phase7b6j_positivity_line_search_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b6j_preregistered_positivity_line_search.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b6m_preregistered_science_functionals.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b6n_preregistered_formal_face_flux.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b6o_preregistered_fixed2_continuation.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bm_preregistered_augmented_affine_krylov.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bo_even_block_map_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bo_preregistered_even_block_map.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9by_preregistered_slow_mode_candidate_map.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9by_slow_mode_candidate_map_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bz_accelerated_anchor_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9bz_preregistered_accelerated_anchor.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ca_accelerated_picard_summary.json",
+            "exact_path_occurrence_count": 78,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9ca_preregistered_accelerated_picard.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cb_preregistered_second_slow_mode.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cb_second_slow_mode_summary.json",
+            "exact_path_occurrence_count": 155,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cc_preregistered_second_slow_mode_anderson.json",
+            "exact_path_occurrence_count": 2,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9cc_second_slow_mode_anderson_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9k_storage_reclamation_audit.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b6j_preregister_positivity_line_search.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9bm_preregister_augmented_affine_krylov.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9bo_preregister_even_block_map.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b9by_preregister_slow_mode_candidate_map.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          }
+        ],
+        "active_phase7b9dd_roles": [],
+        "active_runtime_roles_at_snapshot": [],
+        "classification": "referenced"
+      },
+      "deleted": true
+    },
+    {
+      "path": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/checkpoints/phase7b6o_full_frequency_iteration30.dat",
+      "relative_path": "outputs/checkpoints/phase7b6o_full_frequency_iteration30.dat",
+      "size_bytes": 10099884032,
+      "allocated_bytes": 10099884032,
+      "inode": 26749610,
+      "mtime_ns": 1788103819888844778,
+      "historical_inventory_entry": {
+        "path": "outputs/checkpoints/phase7b6o_full_frequency_iteration30.dat",
+        "apparent_size_bytes": 10099884032,
+        "allocated_size_bytes": 10099884032,
+        "mtime_unix_ns": 1788103819888844778,
+        "mtime_utc": "2026-08-30T15:30:19.888845+00:00",
+        "filename": "phase7b6o_full_frequency_iteration30.dat",
+        "apparent_size_gib": 9.40625,
+        "allocated_size_gib": 9.40625,
+        "matches_active_full_state_size": true,
+        "direct_referencer_count": 9,
+        "direct_reference_occurrence_count": 9,
+        "ambiguous_basename_reference_occurrence_count": 0,
+        "direct_referencers": [
+          {
+            "path": "outputs/phase7b6o_fixed2_continuation_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b6o_preregistered_fixed2_continuation.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b6p_preregistered_final_formal_flux.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b6q_preregistered_resource_recheck.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b6r_preregistered_worker_recycling.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b7a_preregistered_feedback_coefficients.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b7e_preregistered_radiation_direction.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9h_storage_reclamation_audit.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b6o_preregister_fixed2_continuation.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          }
+        ],
+        "active_phase7b9dd_roles": [],
+        "active_runtime_roles_at_snapshot": [],
+        "classification": "referenced"
+      },
+      "deleted": true
+    },
+    {
+      "path": "/Users/shandike/Downloads/A_USTCer/8.3/eccentric_tde_observer/outputs/checkpoints/phase7b6o_full_frequency_residual30.dat",
+      "relative_path": "outputs/checkpoints/phase7b6o_full_frequency_residual30.dat",
+      "size_bytes": 10099884032,
+      "allocated_bytes": 10099884032,
+      "inode": 26749612,
+      "mtime_ns": 1788103747515407344,
+      "historical_inventory_entry": {
+        "path": "outputs/checkpoints/phase7b6o_full_frequency_residual30.dat",
+        "apparent_size_bytes": 10099884032,
+        "allocated_size_bytes": 10099884032,
+        "mtime_unix_ns": 1788103747515407344,
+        "mtime_utc": "2026-08-30T15:29:07.515407+00:00",
+        "filename": "phase7b6o_full_frequency_residual30.dat",
+        "apparent_size_gib": 9.40625,
+        "allocated_size_gib": 9.40625,
+        "matches_active_full_state_size": true,
+        "direct_referencer_count": 9,
+        "direct_reference_occurrence_count": 9,
+        "ambiguous_basename_reference_occurrence_count": 0,
+        "direct_referencers": [
+          {
+            "path": "outputs/phase7b6o_fixed2_continuation_summary.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b6o_preregistered_fixed2_continuation.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b6p_preregistered_final_formal_flux.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b6q_preregistered_resource_recheck.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b6r_preregistered_worker_recycling.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b7a_preregistered_feedback_coefficients.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b7e_preregistered_radiation_direction.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "outputs/phase7b9h_storage_reclamation_audit.json",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          },
+          {
+            "path": "scripts/phase7b6o_preregister_fixed2_continuation.py",
+            "exact_path_occurrence_count": 1,
+            "unique_basename_only_occurrence_count": 0
+          }
+        ],
+        "active_phase7b9dd_roles": [],
+        "active_runtime_roles_at_snapshot": [],
+        "classification": "referenced"
+      },
+      "deleted": true
+    }
+  ],
+  "free_bytes_after": 62830968832,
+  "deleted_bytes": 60599304192
+}

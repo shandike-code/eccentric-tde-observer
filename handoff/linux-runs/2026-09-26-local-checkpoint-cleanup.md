@@ -1,0 +1,11 @@
+# 本地旧辐射检查点清理（2026-09-26）
+
+用户明确要求删除不需要的旧辐射检查点，缓解Mac磁盘不足。本次按当前续算依赖和历史保护链筛选，不以文件年代判定。实际删除6个phase7b6旧工作态/迭代态/残差文件，共56.43750 GiB；完整逐文件清单、删除前stat、历史引用与执行回执见../evidence/20260926-local-checkpoint-cleanup.json。
+
+保留历史验收三态phase7b6f iteration4、phase7b6h iteration8/residual8；保留迁移manifest指定phase7b9k_retained_trial_map3.dat与phase7b9cs_resource_adjusted_tail_anchor.dat；全部近期学校审计数据、其他检查点、旧协议与小报告保持原样。lsof未发现六个候选被本地进程打开；学校当前77843声明的.dat输入位于学校outputs/hpc，未使用这些Mac旧场，未执行任何远端删除。
+
+删除的大场没有另复制备份，旧阶段若需完整重放必须重新生成，不能保证重获相同旧字节。小报告和源代码不能代替完整场数据。未重新读取六个大文件计算内容SHA；仅记录删除前文件身份、大小、mtime及历史引用，不把旧清单哈希冒充新验算。
+
+原outputs/phase7_checkpoint_inventory.json保留历史快照，不再代表当前存量；删除前副本在review/outputs/review-20260925/checkpoint-inventory-before-cleanup-20260926.json。需检查现有文件时应参考本删除清单或重新生成当前目录清单，不回写历史判决。此前文档要求等待Phase7全部完成再统一清理；本次依据用户新的明确清理授权，仅裁撤已退出当前链的六个场，保护正式端点。
+
+剩余空间由清理后df实测核对。原项目根已放置LOCAL_CHECKPOINT_CLEANUP_20260926.md指向本记录。
