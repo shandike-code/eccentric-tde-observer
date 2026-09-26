@@ -1,0 +1,226 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-joint-block-global-20260926/archives/complete-1790430251654118312.tar.gz",
+    "size_bytes": 2350913,
+    "sha256": "066a4bdc9b93d34014687e87ccc80a28f0b5bedb7c316cf9fd60c29146de027d"
+  },
+  "verified_files": 325,
+  "verified_code_claims": 702,
+  "process_receipts": 152,
+  "maximum_worker_peak_kib": 3586968,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "maps": 2,
+  "feedback_pairs": 0,
+  "fixed_scale_l2_ratios": [
+    1.0,
+    0.41112771343080684,
+    0.6515729400008122,
+    1.0441796636987865e-10
+  ],
+  "fixed_scale_linf_ratios": [
+    1.0,
+    3.853074385366714,
+    2.011510078089566,
+    4.1905902543027536e-10
+  ],
+  "checks": {
+    "full_l2_benefit": true,
+    "full_linf_nonincrease": false,
+    "half_l2_nonincrease": true,
+    "half_linf_nonincrease": false,
+    "independent_half_affinity": true,
+    "full_radiation": true,
+    "full_boundary_l1": true,
+    "full_boundary_bolometric": true,
+    "half_radiation": true,
+    "half_boundary_l1": true,
+    "half_boundary_bolometric": true
+  },
+  "validated": false,
+  "worst_full_slabs": [
+    {
+      "first_group": 6400,
+      "group_count": 32,
+      "block": 50,
+      "squared_l2": [
+        5.534568764743745e-10,
+        1.89268154964817e-09,
+        9.41391663912959e-10,
+        1.596308908682347e-32
+      ],
+      "linf": [
+        2.268258063580636e-08,
+        4.1470168358039364e-07,
+        2.1649636952007084e-07,
+        2.6020852139652106e-18
+      ],
+      "selected_input": false,
+      "output_change_linf": 3.964990643499054e-07
+    },
+    {
+      "first_group": 2912,
+      "group_count": 32,
+      "block": 22,
+      "squared_l2": [
+        5.683752990113635e-10,
+        1.47944180762867e-09,
+        8.437163255016908e-10,
+        1.855079207525218e-30
+      ],
+      "linf": [
+        2.603259093361676e-08,
+        3.2523260177358404e-07,
+        1.7451250728869883e-07,
+        2.42861286636753e-17
+      ],
+      "selected_input": false,
+      "output_change_linf": 3.0144018896977043e-07
+    },
+    {
+      "first_group": 3328,
+      "group_count": 32,
+      "block": 26,
+      "squared_l2": [
+        7.564194090132981e-12,
+        3.07146312065101e-10,
+        8.29708114268675e-11,
+        1.8217165066726464e-29
+      ],
+      "linf": [
+        3.439602148241905e-09,
+        2.2393558087030474e-07,
+        1.1249535933344212e-07,
+        2.7755575615628914e-17
+      ],
+      "selected_input": false,
+      "output_change_linf": 2.2288044307025578e-07
+    },
+    {
+      "first_group": 5984,
+      "group_count": 32,
+      "block": 46,
+      "squared_l2": [
+        1.9009599705916474e-10,
+        3.936984858927032e-10,
+        2.530264213738413e-10,
+        5.2751027238330185e-31
+      ],
+      "linf": [
+        1.785230840933849e-08,
+        1.988254520260413e-07,
+        1.0622519084832471e-07,
+        1.3877787807814457e-17
+      ],
+      "selected_input": false,
+      "output_change_linf": 1.852005223589026e-07
+    },
+    {
+      "first_group": 3232,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        8.78363519547425e-09,
+        8.417062993435909e-10,
+        3.751039379057115e-09,
+        6.235125047255129e-29
+      ],
+      "linf": [
+        1.0762877694636686e-07,
+        3.6531736739842113e-08,
+        7.208025685351283e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 1.6890367346679425e-05
+    },
+    {
+      "first_group": 3264,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        2.856052523029254e-09,
+        2.790595050915353e-10,
+        1.2241986457825104e-09,
+        5.946064303941705e-29
+      ],
+      "linf": [
+        1.0741180286183427e-07,
+        3.62880301432722e-08,
+        7.184991649561434e-08,
+        4.5102810375396984e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 1.684825209755797e-05
+    },
+    {
+      "first_group": 3200,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        8.34567260455916e-09,
+        6.807415970500166e-10,
+        3.434735411249183e-09,
+        6.189081332840959e-29
+      ],
+      "linf": [
+        1.0353164074661247e-07,
+        3.260606725591364e-08,
+        6.806884841198402e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 1.6016035661772787e-05
+    },
+    {
+      "first_group": 3168,
+      "group_count": 32,
+      "block": 24,
+      "squared_l2": [
+        7.46084953449182e-09,
+        4.778363554013554e-10,
+        2.917643137718069e-09,
+        6.093704201560337e-29
+      ],
+      "linf": [
+        9.75379614784333e-08,
+        2.7407974098614396e-08,
+        6.247285424393345e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 1.4788292741242659e-05
+    }
+  ],
+  "original_defect_l2": 0.0002524691265840372,
+  "original_defect_linf": 1.0762877694636686e-07,
+  "rows": {
+    "control": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/step21-joint-block-global-20260926/control/state_0.dat",
+      "input_sha256": "0301d0a860c6664b5a8944d0a5cd83c492069fd02a7915ec2a515da920e938be",
+      "output_path": "outputs/hpc/step21-joint-block-global-20260926/control/state_1.dat",
+      "output_sha256": "996ec34914b296e2195de2eede00a674921c622e1e5722ad8e58808cde318021",
+      "wall_s": 168.05044010095298,
+      "residual": 1.0726585975746641e-05,
+      "boundary_l1": 1.1101324501094347e-06,
+      "boundary_bolometric": 1.1090824864594945e-06,
+      "maximum_worker_rss_mib": 3502.8984375
+    },
+    "half": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/step21-joint-block-global-20260926/half/state_0.dat",
+      "input_sha256": "8235909ea1a9734f39475894324830ed9e412a8322d93e60bc620c1035b4536f",
+      "output_path": "outputs/hpc/step21-joint-block-global-20260926/half/state_1.dat",
+      "output_sha256": "f959a9c5035407622388fa5ac297bb11611761dcc50c8858f4a6dae9173b3aa9",
+      "wall_s": 174.012295845896,
+      "residual": 5.600759022276461e-06,
+      "boundary_l1": 1.2888239010423049e-06,
+      "boundary_bolometric": 1.2880869443008588e-06,
+      "maximum_worker_rss_mib": 3500.58203125
+    }
+  },
+  "independent_slab_and_block_reduction": true,
+  "raw_global_arrays_recomputed_on_mac": false,
+  "operator_recomputed_on_mac": false
+}
