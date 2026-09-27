@@ -1,0 +1,101 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-seven-refresh-pilot-20260927/archives/complete-1790492660158109702.tar.gz",
+    "size_bytes": 98944,
+    "sha256": "bf65f6357f16a116085dd014575f836dd0998ba14de48a39ee4cb321f019bfe2"
+  },
+  "verified_files": 13,
+  "verified_code_claims": 726,
+  "rows": [
+    {
+      "warning": "",
+      "block": 24,
+      "local_arrays": {
+        "path": "outputs/hpc/step21-seven-refresh-pilot-20260927/control-block24-local.npz",
+        "size_bytes": 1879048728,
+        "sha256": "de06d59f6fab2d773d110b2a0567142a27653c9a6f3607906bb869378867daae"
+      },
+      "l2_ratio": 0.3548285088282914,
+      "linf_ratio": 0.42674801487247704,
+      "checks": {
+        "l2_halved": true,
+        "linf_halved": true,
+        "useful_step": true,
+        "affine_prediction": true,
+        "boundary_not_worse": true,
+        "finite_budget": true,
+        "memory_below_32gib": true,
+        "time_below_24_maps": true,
+        "independent_half_affinity": true
+      },
+      "local_candidate_min": 3.5723577066321165e-07,
+      "local_mapped_min": 3.572357706672956e-07,
+      "raw_map_s": 156.02649299614131,
+      "wall_s": 2785.1519236043096,
+      "half_affinity_over_raw_l2": 3.851677032148447e-10,
+      "observed_peak_kib": 21213520,
+      "gmres_info": 2,
+      "gmres_iterations": 16,
+      "linear_audit_passed": false,
+      "full_step": true,
+      "zero_prediction_error_is_not_independent_half_probe": true
+    },
+    {
+      "warning": "/home/scc/pb24511938/eccentric-tde-observer/src/eccentric_tde_observer/affine_krylov.py:250: RuntimeWarning: overflow encountered in divide\n  boundary = float(np.min(current[negative] / (-update[negative])))\n",
+      "block": 48,
+      "local_arrays": {
+        "path": "outputs/hpc/step21-seven-refresh-pilot-20260927/control-block48-local.npz",
+        "size_bytes": 1879048728,
+        "sha256": "077449bfff14982377a522f8b222a7e376714e6f59eae0079feee2cc3d573dc3"
+      },
+      "l2_ratio": 0.23235419853963563,
+      "linf_ratio": 0.2886860951151553,
+      "checks": {
+        "l2_halved": true,
+        "linf_halved": true,
+        "useful_step": true,
+        "affine_prediction": true,
+        "boundary_not_worse": true,
+        "finite_budget": true,
+        "memory_below_32gib": true,
+        "time_below_24_maps": true,
+        "independent_half_affinity": true
+      },
+      "local_candidate_min": 3.4555999984137475e-16,
+      "local_mapped_min": 3.4555999984137475e-16,
+      "raw_map_s": 81.14614522084594,
+      "wall_s": 1510.8648477923125,
+      "half_affinity_over_raw_l2": 5.491575659949575e-10,
+      "observed_peak_kib": 20832652,
+      "gmres_info": 2,
+      "gmres_iterations": 16,
+      "linear_audit_passed": false,
+      "full_step": true,
+      "zero_prediction_error_is_not_independent_half_probe": true
+    }
+  ],
+  "source_job_id": 78161,
+  "refreshed_halo": true,
+  "source_pair": [
+    {
+      "path": "outputs/hpc/step21-seven-short-validation-20260927/control/endpoints-map10/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "21c2e92324d2dac19d13e532d65c1d98683c225a8b99e2858b1c31ebb1e7ff00"
+    },
+    {
+      "path": "outputs/hpc/step21-seven-short-validation-20260927/control/endpoints-map10/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "99fdb1331f197d78d115f1b0e6dba602d9ee6eef966ce10e8cb6036fe2868f89"
+    }
+  ],
+  "all_local_cases_passed": true,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "raw_input_output_blocks_present_on_mac": false,
+  "raw_l2_independently_recomputed": false,
+  "fresh_l2_and_linf_independently_recomputed": false,
+  "local_boundary_flux_independently_recomputed": false,
+  "operator_recomputed_on_mac": false,
+  "half_operator_recomputed_on_mac": false,
+  "global_validation_required": true
+}
