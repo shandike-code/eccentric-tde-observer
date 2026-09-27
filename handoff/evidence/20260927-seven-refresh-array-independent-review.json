@@ -1,0 +1,55 @@
+{
+  "job_id": 78405,
+  "rows": [
+    {
+      "block": 24,
+      "legacy_l2_relative_differences": {
+        "raw": 3.6504133049675147e-13,
+        "fresh": 3.7347902548390266e-13
+      },
+      "norms": {
+        "raw": {
+          "l2": 9.367296944099672e-05,
+          "linf": 5.3079172952774645e-08
+        },
+        "fresh": {
+          "l2": 3.323784006426726e-05,
+          "linf": 2.2651431688669454e-08
+        }
+      },
+      "l2_ratio": 0.3548285088282944,
+      "linf_ratio": 0.42674801487247704
+    },
+    {
+      "block": 48,
+      "legacy_l2_relative_differences": {
+        "raw": 1.3233858453531866e-13,
+        "fresh": 7.993605777301127e-14
+      },
+      "norms": {
+        "raw": {
+          "l2": 2.3082141575076732e-05,
+          "linf": 7.516933350944222e-09
+        },
+        "fresh": {
+          "l2": 5.363232506255076e-06,
+          "linf": 2.1700341363249664e-09
+        }
+      },
+      "l2_ratio": 0.23235419853962347,
+      "linf_ratio": 0.2886860951151553
+    }
+  ],
+  "verified_frequency_rows": 1792,
+  "peak_rss_bytes": 5649977344,
+  "wall_s": 72.72467535547912,
+  "school_raw_arrays_scanned": true,
+  "mac_full_arrays_read": false,
+  "mac_independent_fsum": true,
+  "legacy_l2_rtol": 2e-11,
+  "mac_to_scan_rtol": 2e-13,
+  "linf_exact": true,
+  "operator_recomputed": false,
+  "global_validation_required": true,
+  "new_material_steps": 0
+}
