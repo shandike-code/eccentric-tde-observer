@@ -1,0 +1,87 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-seven-block-pilot-20260927/archives/complete-1790475181807825390.tar.gz",
+    "size_bytes": 96557,
+    "sha256": "d88e46c2ced53294120be1f7ba1ff4ca0a6d973d10fea59c0bc0116854d4a62b"
+  },
+  "verified_files": 13,
+  "verified_code_claims": 719,
+  "rows": [
+    {
+      "warning": "",
+      "block": 24,
+      "local_arrays": {
+        "path": "outputs/hpc/step21-seven-block-pilot-20260927/control-block24-local.npz",
+        "size_bytes": 1879048728,
+        "sha256": "4ab5a849cb557aaa3478eb01e28a25d3c3e7edc91244c701121b43a28c83c52a"
+      },
+      "l2_ratio": 0.31617544944255677,
+      "linf_ratio": 0.41422754055048644,
+      "checks": {
+        "l2_halved": true,
+        "linf_halved": true,
+        "useful_step": true,
+        "affine_prediction": true,
+        "boundary_not_worse": true,
+        "finite_budget": true,
+        "memory_below_32gib": true,
+        "time_below_24_maps": true,
+        "independent_half_affinity": true
+      },
+      "local_candidate_min": 3.5723577041472755e-07,
+      "local_mapped_min": 3.572357704523661e-07,
+      "raw_map_s": 122.06320158299059,
+      "wall_s": 2206.5192752620205,
+      "half_affinity_over_raw_l2": 1.5678001222205747e-10,
+      "observed_peak_kib": 21216336,
+      "gmres_info": 2,
+      "gmres_iterations": 16,
+      "linear_audit_passed": false,
+      "full_step": true,
+      "zero_prediction_error_is_not_independent_half_probe": true
+    },
+    {
+      "warning": "/home/scc/pb24511938/eccentric-tde-observer/src/eccentric_tde_observer/affine_krylov.py:250: RuntimeWarning: overflow encountered in divide\n  boundary = float(np.min(current[negative] / (-update[negative])))\n",
+      "block": 48,
+      "local_arrays": {
+        "path": "outputs/hpc/step21-seven-block-pilot-20260927/control-block48-local.npz",
+        "size_bytes": 1879048728,
+        "sha256": "4906b9327f3b34e93b4a7b21afc604f855c9210954b65e40fc0e280f451a7ddb"
+      },
+      "l2_ratio": 0.11758443462692574,
+      "linf_ratio": 0.15965809527258434,
+      "checks": {
+        "l2_halved": true,
+        "linf_halved": true,
+        "useful_step": true,
+        "affine_prediction": true,
+        "boundary_not_worse": true,
+        "finite_budget": true,
+        "memory_below_32gib": true,
+        "time_below_24_maps": true,
+        "independent_half_affinity": true
+      },
+      "local_candidate_min": 3.4555999984137475e-16,
+      "local_mapped_min": 3.4555999984137475e-16,
+      "raw_map_s": 63.307483850978315,
+      "wall_s": 1192.7092724079266,
+      "half_affinity_over_raw_l2": 1.290007935040345e-10,
+      "observed_peak_kib": 20837936,
+      "gmres_info": 2,
+      "gmres_iterations": 16,
+      "linear_audit_passed": false,
+      "full_step": true,
+      "zero_prediction_error_is_not_independent_half_probe": true
+    }
+  ],
+  "all_local_cases_passed": true,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "raw_input_output_blocks_present_on_mac": false,
+  "raw_l2_independently_recomputed": false,
+  "fresh_l2_and_linf_independently_recomputed": false,
+  "local_boundary_flux_independently_recomputed": false,
+  "operator_recomputed_on_mac": false,
+  "half_operator_recomputed_on_mac": false,
+  "global_validation_required": true
+}
