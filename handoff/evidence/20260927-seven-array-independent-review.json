@@ -1,0 +1,55 @@
+{
+  "job_id": 78097,
+  "rows": [
+    {
+      "block": 24,
+      "legacy_l2_relative_differences": {
+        "raw": 2.3292479056635784e-13,
+        "fresh": 3.0397906414236786e-13
+      },
+      "norms": {
+        "raw": {
+          "l2": 0.00023012879310750395,
+          "linf": 1.0762877694636686e-07
+        },
+        "fresh": {
+          "l2": 7.276107459044339e-05,
+          "linf": 4.4582803566950435e-08
+        }
+      },
+      "l2_ratio": 0.31617544944257925,
+      "linf_ratio": 0.41422754055048644
+    },
+    {
+      "block": 48,
+      "legacy_l2_relative_differences": {
+        "raw": 1.5409895581797173e-13,
+        "fresh": 1.0502709812953981e-13
+      },
+      "norms": {
+        "raw": {
+          "l2": 9.828731890814119e-05,
+          "linf": 2.9551641566108455e-08
+        },
+        "fresh": {
+          "l2": 1.1557058824809564e-05,
+          "linf": 4.718158804623007e-09
+        }
+      },
+      "l2_ratio": 0.11758443462691998,
+      "linf_ratio": 0.15965809527258434
+    }
+  ],
+  "verified_frequency_rows": 1792,
+  "peak_rss_bytes": 5665079296,
+  "wall_s": 59.32626312458888,
+  "school_raw_arrays_scanned": true,
+  "mac_full_arrays_read": false,
+  "mac_independent_fsum": true,
+  "legacy_l2_rtol": 2e-11,
+  "mac_to_scan_rtol": 2e-13,
+  "linf_exact": true,
+  "operator_recomputed": false,
+  "global_validation_required": true,
+  "new_material_steps": 0
+}
