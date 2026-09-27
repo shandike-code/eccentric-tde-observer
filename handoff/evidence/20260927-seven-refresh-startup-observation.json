@@ -1,0 +1,37 @@
+{
+  "observed_unix": 1790489869.849121,
+  "queue": "78253 RUNNING 3:20 32 anode16\n",
+  "status.json": {
+    "status": "local_pilot",
+    "updated_unix": 1790489769.7080908,
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "new_full_maps": 0
+  },
+  "declaration.json": {
+    "source_job_id": 78161,
+    "source_run": "outputs/hpc/step21-seven-short-validation-20260927",
+    "refreshed_halo": true,
+    "core_intervals": [
+      [
+        2688,
+        3584
+      ],
+      [
+        5760,
+        6656
+      ]
+    ],
+    "workers": 2
+  },
+  "readonly_cli": {
+    "is_error": false,
+    "result": "只读监督，作业78253：RUNNING，14:14:29起，限2h，32CPU/128G单节点，但仅2worker各32GiB/3600s，与申请不符，需留意；当前status=preparing，accepted_outer_steps=20、new_material_steps=0、new_full_maps=0，尚无产出，运行1分钟属正常。任务限定：刷78161外侧场后按原map逐位重放，GMRES≤16且独立半步，守局部收益/边界/正性/资源门；不扩域、不改dt，不做全域map、正式反馈或新接受，全局候选未授权。.001323仍未过.001，故本次仅验证局部方向重算，非收敛声明。非零GMRES info不得称线性收敛。失败勿自动重复或扩预算，终态待Codex审计与4核复核。",
+    "model_names": [
+      "deepseek-v4-flash[1m]"
+    ]
+  },
+  "control-block24.err": "",
+  "control-block48.err": "",
+  "stderr": ""
+}

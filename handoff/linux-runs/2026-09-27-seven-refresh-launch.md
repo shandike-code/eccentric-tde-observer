@@ -15,3 +15,7 @@ Mac26tests/1.01s，Linux26tests/30.04s；compile/bash-n通过。测试输出无w
 下一次先查78253末态与complete/failed小包，已有源场与旧审计不重复取回。审查declaration是否声明source_job_id=78161、refreshed_halo=true；两组逐位重放、九门、真实局部范数、GMRES info、warning和资源回执都要保留。通过后使用默认4核对本次两份原数组做只读归约，Mac检查小统计。只有这些均过，才制定新全域真实验证，基场必须改为78161，绝不能把新方向拼回77577；物质参照仍是r20，不随源场刷新。
 
 若局部失败，分析实际门与耦合，不增加同种试验预算。当前20次非线性物质更新接受保持、第21次未接受；未获得耦合自洽柱、整盘大气表或整盘I_nu。SSH断开不代表Slurm停止；须提醒用户在Terminal重连密码及动态码，恢复后先查既有job，不重交。
+
+14:17:49再次观察：78253 RUNNING/3:20，status=local_pilot。声明source_job_id=78161、refreshed_halo=true、核心区间2688:3584与5760:6656、workers=2均吻合，父/两worker stderr暂空；两份逐位重放报告尚未出现，不提前判重放通过。记录见20260927-seven-refresh-startup-observation.json。
+
+只读CLI实际模型deepseek-v4-flash[1m]。其首报称“32CPU但仅2worker，与申请不符”是错误推断：allocation上限与算法实际并发数本来不同，本次协议事先声明两组核心、两个worker；没有越配，也不声称实际用满32核。其“运行1分钟属正常”仅为观察，不能证明进程健康或物理正确。状态与数值以回执和独立审计为准。
