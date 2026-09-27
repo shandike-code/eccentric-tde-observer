@@ -1,0 +1,365 @@
+{
+  "job_id": 78548,
+  "archive": {
+    "path": "outputs/hpc/step21-seven-refresh-short-validation-20260927/archives/complete-1790518608710094128.tar.gz",
+    "size_bytes": 152112504,
+    "sha256": "36396e2b88c455d9d7f60fdc4b558f4f56de1029de47eeaf9cb04e56d76d6b86"
+  },
+  "verified_files": 3545,
+  "verified_code_claims": 730,
+  "maps": [
+    {
+      "iteration": 1,
+      "residual": 1.2532609684055615e-06,
+      "boundary_l1": 3.904429967104422e-07,
+      "boundary_bolometric": 3.90278200067793e-07,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.15305311920062856,
+      "wall_s": 159.0023292293772
+    },
+    {
+      "iteration": 2,
+      "residual": 7.496691306915921e-07,
+      "boundary_l1": 3.600506196156964e-07,
+      "boundary_bolometric": 3.599090678519987e-07,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.15292609486177114,
+      "wall_s": 155.19909020140767
+    },
+    {
+      "iteration": 3,
+      "residual": 7.464934238215727e-07,
+      "boundary_l1": 3.348300033273052e-07,
+      "boundary_bolometric": 3.3470764748232835e-07,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.15279928343408306,
+      "wall_s": 143.98346851114184
+    },
+    {
+      "iteration": 4,
+      "residual": 7.433312683371736e-07,
+      "boundary_l1": 3.1179709712808084e-07,
+      "boundary_bolometric": 3.11691021774433e-07,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.1526726840519588,
+      "wall_s": 151.5628822511062
+    },
+    {
+      "iteration": 5,
+      "residual": 7.401826011901293e-07,
+      "boundary_l1": 2.906870932310535e-07,
+      "boundary_bolometric": 2.90594870152229e-07,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.15254629585933124,
+      "wall_s": 147.62771271169186
+    },
+    {
+      "iteration": 6,
+      "residual": 7.370473578969295e-07,
+      "boundary_l1": 2.713069908806526e-07,
+      "boundary_bolometric": 2.712265930181549e-07,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.15242011800950847,
+      "wall_s": 143.46579455770552
+    },
+    {
+      "iteration": 7,
+      "residual": 7.339254764872405e-07,
+      "boundary_l1": 2.5349420728419643e-07,
+      "boundary_bolometric": 2.534239365844683e-07,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.15229414966501678,
+      "wall_s": 148.07217239402235
+    },
+    {
+      "iteration": 8,
+      "residual": 7.30816892478631e-07,
+      "boundary_l1": 2.3710576710559857e-07,
+      "boundary_bolometric": 2.3704419694910898e-07,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.15216838999744486,
+      "wall_s": 152.3169858502224
+    },
+    {
+      "iteration": 9,
+      "residual": 7.277215455170932e-07,
+      "boundary_l1": 2.2201400165707744e-07,
+      "boundary_bolometric": 2.2195992944698727e-07,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.1520428381872939,
+      "wall_s": 146.80146966222674
+    },
+    {
+      "iteration": 10,
+      "residual": 7.246393739928249e-07,
+      "boundary_l1": 2.0810414260692376e-07,
+      "boundary_bolometric": 2.0805655066140062e-07,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.15191749342382446,
+      "wall_s": 145.03420706372708
+    }
+  ],
+  "half_maps": 1,
+  "feedback_rounds": [
+    2,
+    10
+  ],
+  "windows": {
+    "2": {
+      "endpoints": {
+        "previous": {
+          "norms": {
+            "l2": 8.26047219168673,
+            "mass_weighted": 0.28204254382896915,
+            "maximum_cell": 2.7057144859768547
+          },
+          "minimum_gas_erg_g": 7029129096616.031,
+          "maximum_proc_kib": 4040332,
+          "source": {
+            "volume_l1": 1.959135780647947e-12,
+            "net_fraction": 1.5823349922431715e-11,
+            "reference_integral": 2549664797807.3384,
+            "compared_integral": 2549664797847.6826,
+            "difference_depth_l1": 102.7791212054054
+          }
+        },
+        "final": {
+          "norms": {
+            "l2": 8.260456747813745,
+            "mass_weighted": 0.28204519719820187,
+            "maximum_cell": 2.705714041362389
+          },
+          "minimum_gas_erg_g": 7028711612307.932,
+          "maximum_proc_kib": 4041280,
+          "source": {
+            "volume_l1": 1.958862585594178e-12,
+            "net_fraction": 1.5826706540107433e-11,
+            "reference_integral": 2549802788460.459,
+            "compared_integral": 2549802788500.814,
+            "difference_depth_l1": 102.7648159417065
+          }
+        }
+      },
+      "comparison": {
+        "photoionization_volume_l1": [
+          1.2029013354680929e-08,
+          1.0109245762752425e-07,
+          1.0618232814203644e-10
+        ],
+        "total_recombination_volume_l1": [
+          1.375433231990407e-10,
+          3.119947998493798e-11,
+          4.560713858409913e-16
+        ],
+        "atomic_heating_volume_l1": 3.5324208115060967e-06,
+        "direct_heating_volume_l1": 3.532420811507244e-06,
+        "formal_heating_volume_l1": 3.532420811294053e-06
+      },
+      "gate_checks": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": true,
+        "last_two_direct_heating_pass": true,
+        "last_two_formal_heating_pass": true,
+        "inner_pair_ready": true,
+        "physical_response_pass": true
+      },
+      "comparison_kind": "post_extrapolation_shift",
+      "window": {
+        "vector_difference_over_frozen_r20_norms": {
+          "previous_vs_previous": [
+            0.004289037739148273,
+            0.016880046930803028,
+            0.002536775754156158
+          ],
+          "previous_vs_final": [
+            0.004253091848255382,
+            0.01673822317386413,
+            0.0025152398691421765
+          ],
+          "final_vs_previous": [
+            0.004300993859127792,
+            0.016927989839582398,
+            0.0025446202661464083
+          ],
+          "final_vs_final": [
+            0.0042649422179590725,
+            0.01678609712706517,
+            0.002523084381114135
+          ]
+        },
+        "passed": false,
+        "tolerance": 0.001,
+        "strict_error_bound": false,
+        "baseline_replaced": false
+      },
+      "from_78161": {
+        "vector_difference_over_frozen_r20_norms": {
+          "previous_vs_previous": [
+            0.004289037739148273,
+            0.016880046930803028,
+            0.002536775754156158
+          ],
+          "previous_vs_final": [
+            0.004253091848255382,
+            0.01673822317386413,
+            0.0025152398691421765
+          ],
+          "final_vs_previous": [
+            0.004300993859127792,
+            0.016927989839582398,
+            0.0025446202661464083
+          ],
+          "final_vs_final": [
+            0.0042649422179590725,
+            0.01678609712706517,
+            0.002523084381114135
+          ]
+        },
+        "passed": false,
+        "tolerance": 0.001,
+        "strict_error_bound": false,
+        "baseline_replaced": false
+      },
+      "final_minus_r20": {
+        "l2": 0.9757151337266002,
+        "mass_weighted": 0.10205751022550541,
+        "maximum_cell": 0.1310893969551184
+      }
+    },
+    "10": {
+      "endpoints": {
+        "previous": {
+          "norms": {
+            "l2": 8.260390976316293,
+            "mass_weighted": 0.28206719938527747,
+            "maximum_cell": 2.705711888985696
+          },
+          "minimum_gas_erg_g": 7026540024809.389,
+          "maximum_proc_kib": 4035668,
+          "source": {
+            "volume_l1": 1.9598477000616305e-12,
+            "net_fraction": 1.5807736289799774e-11,
+            "reference_integral": 2550854938849.2695,
+            "compared_integral": 2550854938889.593,
+            "difference_depth_l1": 102.81670208379902
+          }
+        },
+        "final": {
+          "norms": {
+            "l2": 8.260386273333364,
+            "mass_weighted": 0.2820707110639354,
+            "maximum_cell": 2.7057116815426463
+          },
+          "minimum_gas_erg_g": 7026313085045.115,
+          "maximum_proc_kib": 4038524,
+          "source": {
+            "volume_l1": 1.9609896943840317e-12,
+            "net_fraction": 1.5843882201536035e-11,
+            "reference_integral": 2551014217048.469,
+            "compared_integral": 2551014217088.887,
+            "difference_depth_l1": 102.87664391464268
+          }
+        }
+      },
+      "comparison": {
+        "photoionization_volume_l1": [
+          9.38558926430029e-09,
+          9.638965672388288e-08,
+          1.0233457836352877e-10
+        ],
+        "total_recombination_volume_l1": [
+          7.992262855197745e-11,
+          2.8661176499982957e-11,
+          4.378816223104606e-16
+        ],
+        "atomic_heating_volume_l1": 3.669517859535353e-06,
+        "direct_heating_volume_l1": 3.6695178604947716e-06,
+        "formal_heating_volume_l1": 3.6695178608006077e-06
+      },
+      "gate_checks": {
+        "last_two_photoionization_pass": true,
+        "last_two_total_recombination_pass": true,
+        "last_two_atomic_heating_pass": true,
+        "last_two_direct_heating_pass": true,
+        "last_two_formal_heating_pass": true,
+        "inner_pair_ready": true,
+        "physical_response_pass": true
+      },
+      "comparison_kind": "eight_map_drift",
+      "window": {
+        "vector_difference_over_frozen_r20_norms": {
+          "previous_vs_previous": [
+            0.00015955705628421481,
+            0.0004537352098455242,
+            0.00013619325177673857
+          ],
+          "previous_vs_final": [
+            0.00013699088742461752,
+            0.0003968692850280703,
+            0.00011423566817476254
+          ],
+          "final_vs_previous": [
+            0.00017667573334548305,
+            0.000509925508195912,
+            0.0001481333835817387
+          ],
+          "final_vs_final": [
+            0.00015419748815567876,
+            0.0004531934331990263,
+            0.00012617579998896975
+          ]
+        },
+        "passed": true,
+        "tolerance": 0.001,
+        "strict_error_bound": false,
+        "baseline_replaced": false
+      },
+      "from_78161": {
+        "vector_difference_over_frozen_r20_norms": {
+          "previous_vs_previous": [
+            0.0043912683497170845,
+            0.01728612317781011,
+            0.0026036361330829976
+          ],
+          "previous_vs_final": [
+            0.004354682744379989,
+            0.017143879633498185,
+            0.00258210024783662
+          ],
+          "final_vs_previous": [
+            0.004404752043779254,
+            0.017339441686391403,
+            0.0026124584473269084
+          ],
+          "final_vs_final": [
+            0.004368112699758676,
+            0.017197162528417423,
+            0.002590922562043549
+          ]
+        },
+        "passed": false,
+        "tolerance": 0.001,
+        "strict_error_bound": false,
+        "baseline_replaced": false
+      },
+      "final_minus_r20": {
+        "l2": 0.9759560819052615,
+        "mass_weighted": 0.10214475060064551,
+        "maximum_cell": 0.1312675136309738
+      }
+    }
+  },
+  "final_summary_present": true,
+  "maximum_proc_kib": 4041280,
+  "map_process_receipts": 836,
+  "feedback_process_receipts": 304,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "baseline_replaced": false,
+  "strict_error_bound": false,
+  "production_window_reducer_reused": false,
+  "original_seven_gate_reducer_reused": true,
+  "material_ode_recomputed_on_mac": false,
+  "full_large_fields_recomputed_on_mac": false
+}
