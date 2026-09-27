@@ -1,0 +1,237 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-seven-refresh-short-validation-20260927/archives/full-half-validation-1790515559175697982.tar.gz",
+    "size_bytes": 2870661,
+    "sha256": "60c105ccf828aafff0c272c6ca88777d98f56d8baae6905028421eea05a49768"
+  },
+  "verified_files": 324,
+  "verified_code_claims": 730,
+  "process_receipts": 152,
+  "maximum_worker_peak_kib": 3584664,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "maps": 2,
+  "feedback_pairs": 0,
+  "fixed_scale_l2_ratios": [
+    1.0,
+    0.5200968554386884,
+    0.7545701952466926,
+    3.899309084329648e-10
+  ],
+  "fixed_scale_linf_ratios": [
+    1.0,
+    0.9128625462222164,
+    0.7741872222512552,
+    8.497270749777064e-10
+  ],
+  "checks": {
+    "full_l2_benefit": true,
+    "full_linf_nonincrease": true,
+    "half_l2_nonincrease": true,
+    "half_linf_nonincrease": true,
+    "independent_half_affinity": true,
+    "full_radiation": true,
+    "full_boundary_l1": true,
+    "full_boundary_bolometric": true,
+    "half_radiation": true,
+    "half_boundary_l1": true,
+    "half_boundary_bolometric": true,
+    "predicted_l2_matches_actual": true,
+    "predicted_linf_matches_actual": true
+  },
+  "validated": true,
+  "prediction_relative_errors": {
+    "l2": 2.360919225707345e-13,
+    "linf": 3.580138799057223e-11
+  },
+  "worst_full_slabs": [
+    {
+      "first_group": 2656,
+      "group_count": 32,
+      "block": 20,
+      "squared_l2": [
+        6.029863963871941e-11,
+        7.782740991057784e-11,
+        6.67555096211917e-11,
+        9.923232227853129e-31
+      ],
+      "linf": [
+        9.006621655947844e-09,
+        4.8453988973039264e-08,
+        2.7641007070873524e-08,
+        1.5612511283791264e-17
+      ],
+      "selected_input": false,
+      "output_change_linf": 4.162686337728233e-08
+    },
+    {
+      "first_group": 3232,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        1.943415267120409e-09,
+        5.499677952528966e-10,
+        1.1397780368319563e-09,
+        6.241750453430588e-29
+      ],
+      "linf": [
+        5.3079172952774645e-08,
+        2.9107261968752685e-08,
+        4.109321746770256e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 5.654803616611526e-06
+    },
+    {
+      "first_group": 3264,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        6.343117344526337e-10,
+        1.8176216356111506e-10,
+        3.7362776132170525e-10,
+        5.98283781411883e-29
+      ],
+      "linf": [
+        5.2848286150042334e-08,
+        2.8949800369437728e-08,
+        4.0899043256270584e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 5.629017682570736e-06
+    },
+    {
+      "first_group": 3200,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        1.7123115409507844e-09,
+        4.55392706844618e-10,
+        9.83050803101051e-10,
+        6.181813785414212e-29
+      ],
+      "linf": [
+        4.9223568256151484e-08,
+        2.625558253449567e-08,
+        3.773957410468931e-08,
+        4.5102810375396984e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 5.174766799488639e-06
+    },
+    {
+      "first_group": 3168,
+      "group_count": 32,
+      "block": 24,
+      "squared_l2": [
+        1.3763326015677942e-09,
+        3.3527531970276696e-10,
+        7.67278343911841e-10,
+        6.098452098144578e-29
+      ],
+      "linf": [
+        4.396859556304866e-08,
+        2.245255437821614e-08,
+        3.321055053184807e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 4.526938168485095e-06
+    },
+    {
+      "first_group": 3136,
+      "group_count": 32,
+      "block": 24,
+      "squared_l2": [
+        1.0538807549259159e-09,
+        2.328056710176775e-10,
+        5.69165657380789e-10,
+        5.960371632891592e-29
+      ],
+      "linf": [
+        3.837556230429362e-08,
+        1.8658219580469648e-08,
+        2.8516799470412746e-08,
+        4.5102810375396984e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 3.858628837574707e-06
+    },
+    {
+      "first_group": 5728,
+      "group_count": 32,
+      "block": 44,
+      "squared_l2": [
+        2.529674925454736e-12,
+        3.7371736274789545e-12,
+        2.957810187007175e-12,
+        1.4910727261412748e-30
+      ],
+      "linf": [
+        2.749553758285561e-09,
+        1.5148556634786425e-08,
+        8.603097904208434e-09,
+        1.9081958235744878e-17
+      ],
+      "selected_input": false,
+      "output_change_linf": 1.3138781358029705e-08
+    },
+    {
+      "first_group": 3104,
+      "group_count": 32,
+      "block": 24,
+      "squared_l2": [
+        7.649465764547234e-10,
+        1.5157834801001937e-10,
+        3.9929158934279215e-10,
+        5.672822309630534e-29
+      ],
+      "linf": [
+        3.263653501617281e-08,
+        1.501887179206074e-08,
+        2.382765257324948e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 3.194651369629875e-06
+    }
+  ],
+  "feedback_pending": true,
+  "job_id": 78548,
+  "parent_peak_rss_bytes": 2212093952,
+  "fraction": 0.7878307756816162,
+  "candidate_values_recomputed_on_mac": false,
+  "original_defect_l2": 9.87060594321821e-05,
+  "original_defect_linf": 5.3079172952774645e-08,
+  "rows": {
+    "control": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/step21-seven-refresh-short-validation-20260927/control/state_0.dat",
+      "input_sha256": "c1faddfa285e1f7f75e389a4bffbbf088223d8e8e3abf4843adf8c3d17e8f948",
+      "output_path": "outputs/hpc/step21-seven-refresh-short-validation-20260927/control/state_1.dat",
+      "output_sha256": "8961507dd16a26aa178cf2c68a0275dc358e1163ef396da0f5be9439fcc909bc",
+      "wall_s": 159.0023292293772,
+      "residual": 1.2532609684055615e-06,
+      "boundary_l1": 3.904429967104422e-07,
+      "boundary_bolometric": 3.90278200067793e-07,
+      "maximum_worker_rss_mib": 3500.6484375
+    },
+    "half": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/step21-seven-refresh-short-validation-20260927/half/state_0.dat",
+      "input_sha256": "77abc81ec04530effd3bdbedf69fcb23c3be851c002badffd6992dbcd4a1c5ea",
+      "output_path": "outputs/hpc/step21-seven-refresh-short-validation-20260927/half/state_1.dat",
+      "output_sha256": "9dcfc20ce923a2deda835b4828a166811d10918e2cbd10ac13ed6da524dc7bb3",
+      "wall_s": 152.26461825333536,
+      "residual": 1.0629319591210364e-06,
+      "boundary_l1": 4.266310352410898e-07,
+      "boundary_bolometric": 4.26466683526492e-07,
+      "maximum_worker_rss_mib": 3500.3671875
+    }
+  },
+  "independent_slab_and_block_reduction": true,
+  "raw_global_arrays_recomputed_on_mac": false,
+  "operator_recomputed_on_mac": false
+}
