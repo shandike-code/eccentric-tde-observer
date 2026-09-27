@@ -1,0 +1,226 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-seven-refresh-global-20260927/archives/complete-1790500919145982132.tar.gz",
+    "size_bytes": 2477350,
+    "sha256": "b53bff70d113204634d5a05f6d333096a4a118665bf69f6413b8e2d3387af53e"
+  },
+  "verified_files": 325,
+  "verified_code_claims": 727,
+  "process_receipts": 152,
+  "maximum_worker_peak_kib": 3582348,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "maps": 2,
+  "feedback_pairs": 0,
+  "fixed_scale_l2_ratios": [
+    1.0,
+    0.4051087204631033,
+    0.6898723005012385,
+    3.9008639563499157e-10
+  ],
+  "fixed_scale_linf_ratios": [
+    1.0,
+    1.12406396024695,
+    0.7133740072401477,
+    9.150906961298376e-10
+  ],
+  "checks": {
+    "full_l2_benefit": true,
+    "full_linf_nonincrease": false,
+    "half_l2_nonincrease": true,
+    "half_linf_nonincrease": true,
+    "independent_half_affinity": true,
+    "full_radiation": true,
+    "full_boundary_l1": true,
+    "full_boundary_bolometric": true,
+    "half_radiation": true,
+    "half_boundary_l1": true,
+    "half_boundary_bolometric": true
+  },
+  "validated": false,
+  "worst_full_slabs": [
+    {
+      "first_group": 2656,
+      "group_count": 32,
+      "block": 20,
+      "squared_l2": [
+        6.029863963871941e-11,
+        8.57032076655527e-11,
+        6.928318653199835e-11,
+        1.0100647562494981e-30
+      ],
+      "linf": [
+        9.006621655947844e-09,
+        5.966438535592866e-08,
+        3.324585924700113e-08,
+        1.5612511283791264e-17
+      ],
+      "selected_input": false,
+      "output_change_linf": 5.283731565209476e-08
+    },
+    {
+      "first_group": 3232,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        1.943415267120409e-09,
+        3.208881673103109e-10,
+        9.59898778369426e-10,
+        6.202339772676474e-29
+      ],
+      "linf": [
+        5.3079172952774645e-08,
+        2.2651431688669454e-08,
+        3.786530231031371e-08,
+        4.5102810375396984e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 7.177688142109839e-06
+    },
+    {
+      "first_group": 3264,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        6.343117344526337e-10,
+        1.069359460631928e-10,
+        3.1518571490817666e-10,
+        5.957143213322192e-29
+      ],
+      "linf": [
+        5.2848286150042334e-08,
+        2.2513744112051537e-08,
+        3.7681015120638595e-08,
+        3.8163916471489756e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 7.144957846684508e-06
+    },
+    {
+      "first_group": 3200,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        1.7123115409507844e-09,
+        2.5472393057975565e-10,
+        8.211123831834131e-10,
+        6.198879472891799e-29
+      ],
+      "linf": [
+        4.9223568256151484e-08,
+        2.007015217908581e-08,
+        3.4646841291785524e-08,
+        3.8163916471489756e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 6.5683735127261555e-06
+    },
+    {
+      "first_group": 5728,
+      "group_count": 32,
+      "block": 44,
+      "squared_l2": [
+        2.529674925454736e-12,
+        4.302486988127621e-12,
+        3.13314152811261e-12,
+        1.483807499706883e-30
+      ],
+      "linf": [
+        2.749553758285561e-09,
+        1.8686278684121316e-08,
+        1.0354691649255843e-08,
+        1.734723475976807e-17
+      ],
+      "selected_input": false,
+      "output_change_linf": 1.6677161849415478e-08
+    },
+    {
+      "first_group": 3168,
+      "group_count": 32,
+      "block": 24,
+      "squared_l2": [
+        1.3763326015677942e-09,
+        1.759547517179537e-10,
+        6.335162399914005e-10,
+        6.120702930505337e-29
+      ],
+      "linf": [
+        4.396859556304866e-08,
+        1.6658269430536166e-08,
+        3.0313322553487954e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 5.746079371642121e-06
+    },
+    {
+      "first_group": 3136,
+      "group_count": 32,
+      "block": 24,
+      "squared_l2": [
+        1.0538807549259159e-09,
+        1.1310941810565311e-10,
+        4.6398442957464586e-10,
+        5.957646119344147e-29
+      ],
+      "linf": [
+        3.837556230429362e-08,
+        1.3348338649687985e-08,
+        2.5861787350534016e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 4.897788911877032e-06
+    },
+    {
+      "first_group": 3104,
+      "group_count": 32,
+      "block": 24,
+      "squared_l2": [
+        7.649465764547234e-10,
+        6.702653322471347e-11,
+        3.2097603982259964e-10,
+        5.730414882158276e-29
+      ],
+      "linf": [
+        3.263653501617281e-08,
+        1.0274391934461669e-08,
+        2.145536081438193e-08,
+        3.8163916471489756e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 4.054996920958842e-06
+    }
+  ],
+  "original_defect_l2": 9.87060594321821e-05,
+  "original_defect_linf": 5.3079172952774645e-08,
+  "rows": {
+    "control": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/step21-seven-refresh-global-20260927/control/state_0.dat",
+      "input_sha256": "c63c2f0d2ae66218dc944a0837dd568b0f5100dd2850c45370d6b7883489d7aa",
+      "output_path": "outputs/hpc/step21-seven-refresh-global-20260927/control/state_1.dat",
+      "output_sha256": "bf8611381adb0be2e5faf78deac401f7248ae16649d49eb4fbc1541ac0efdebf",
+      "wall_s": 190.22584137879312,
+      "residual": 1.5431728644434558e-06,
+      "boundary_l1": 3.710715061958692e-07,
+      "boundary_bolometric": 3.707864516172428e-07,
+      "maximum_worker_rss_mib": 3498.38671875
+    },
+    "half": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/step21-seven-refresh-global-20260927/half/state_0.dat",
+      "input_sha256": "dd4f90828ee5a932c2a4c1a9d25d5882c0eafd5b90951a9a426362b808c2a7f2",
+      "output_path": "outputs/hpc/step21-seven-refresh-global-20260927/half/state_1.dat",
+      "output_sha256": "500db765b355da2624992f6be0f621819308f8e68cf4ca035ff87c8c677e6585",
+      "wall_s": 174.842010660097,
+      "residual": 9.794233672092972e-07,
+      "boundary_l1": 4.168851201192277e-07,
+      "boundary_bolometric": 4.167208413886372e-07,
+      "maximum_worker_rss_mib": 3497.62890625
+    }
+  },
+  "independent_slab_and_block_reduction": true,
+  "raw_global_arrays_recomputed_on_mac": false,
+  "operator_recomputed_on_mac": false
+}
