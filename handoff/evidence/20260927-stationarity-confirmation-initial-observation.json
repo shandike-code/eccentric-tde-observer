@@ -1,0 +1,28 @@
+{
+  "job_id": 78594,
+  "observed_unix": 1790520943.7574925,
+  "scontrol": "JobId=78594 JobName=tde-stationarity UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:02:11 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-09-27T22:53:31 EligibleTime=2026-09-27T22:53:31 AccrueTime=2026-09-27T22:53:31 StartTime=2026-09-27T22:53:32 EndTime=2026-09-28T02:53:32 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-27T22:53:32 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:488386 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode17 BatchHost=anode17 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/confirm_step21_stationarity.sbatch SubmitLine=sbatch --parsable operations/confirm_step21_stationarity.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-stationarity-78594.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-stationarity-78594.out TresPerTask=cpu=32\n",
+  "stderr": "",
+  "status.json": {
+    "status": "preparing",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790520828.25531
+  },
+  "declaration.json": {
+    "source": "outputs/hpc/step21-seven-refresh-short-validation-20260927",
+    "source_job": 78548,
+    "seed": {
+      "path": "outputs/hpc/step21-seven-refresh-short-validation-20260927/control/endpoints-map10/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "21e17d2fc6382b35471f0e514bb52f47222ea1279e8dd36333af4dd681ef16b0"
+    },
+    "maximum_maps": 16,
+    "maximum_feedback_pairs": 2,
+    "cadence": [
+      8,
+      16
+    ],
+    "baseline_replacement_authorized": false
+  }
+}

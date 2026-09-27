@@ -1,0 +1,21 @@
+{
+  "job_id": 78594,
+  "source_commit": "e6935344da00598aac1f370818e737e0307e4dcb",
+  "run": "outputs/hpc/step21-stationarity-confirmation-20260927",
+  "submitted_unix": 1790520811.1051826,
+  "tmux_session": "step21-stationarity-78594",
+  "watch_directory": "outputs/review-20260925/stationarity-watch-78594",
+  "watch_start_returncode": 0,
+  "watch_stderr": "",
+  "scontrol": "JobId=78594 JobName=tde-stationarity UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=PENDING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-09-27T22:53:31 EligibleTime=2026-09-27T22:53:31 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-27T22:53:31 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:488386 ReqNodeList=(null) ExcNodeList=anode01 NodeList= NumNodes=1-1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/confirm_step21_stationarity.sbatch SubmitLine=sbatch --parsable operations/confirm_step21_stationarity.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-stationarity-78594.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-stationarity-78594.out TresPerTask=cpu=32\n",
+  "school_tests": "49 passed in 15.15s",
+  "mac_tests": "49 passed in 1.10s",
+  "maximum_maps": 16,
+  "maximum_feedback_pairs": 2,
+  "cadence": [
+    8,
+    16
+  ],
+  "new_material_steps": 0,
+  "baseline_replaced": false
+}
