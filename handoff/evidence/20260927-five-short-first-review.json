@@ -1,0 +1,234 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-five-short-validation-20260927/archives/full-half-validation-1790468395846182025.tar.gz",
+    "size_bytes": 2747968,
+    "sha256": "2aebb910e2a0c5837acc6cf656414fcc0c8df6606b54bc2a784416751f85ee9d"
+  },
+  "verified_files": 324,
+  "verified_code_claims": 717,
+  "process_receipts": 152,
+  "maximum_worker_peak_kib": 3585804,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "maps": 2,
+  "feedback_pairs": 0,
+  "fixed_scale_l2_ratios": [
+    1.0,
+    0.7448509080527358,
+    0.871468643667493,
+    1.3098266773617595e-10
+  ],
+  "fixed_scale_linf_ratios": [
+    1.0,
+    0.9103580772793498,
+    0.8931388546422822,
+    4.1905902543027536e-10
+  ],
+  "checks": {
+    "full_l2_benefit": true,
+    "full_linf_nonincrease": true,
+    "half_l2_nonincrease": true,
+    "half_linf_nonincrease": true,
+    "independent_half_affinity": true,
+    "full_radiation": true,
+    "full_boundary_l1": true,
+    "full_boundary_bolometric": true,
+    "half_radiation": true,
+    "half_boundary_l1": true,
+    "half_boundary_bolometric": true,
+    "predicted_l2_matches_actual": true,
+    "predicted_linf_matches_actual": true
+  },
+  "validated": true,
+  "prediction_relative_errors": {
+    "l2": 1.095539945346761e-13,
+    "linf": 0.0
+  },
+  "worst_full_slabs": [
+    {
+      "first_group": 6528,
+      "group_count": 32,
+      "block": 51,
+      "squared_l2": [
+        1.9193740984631675e-10,
+        2.7622350484121033e-10,
+        2.202843417765743e-10,
+        1.776408733804229e-33
+      ],
+      "linf": [
+        1.2815980487143955e-08,
+        9.798072644082254e-08,
+        5.4631017941874846e-08,
+        9.75781955236954e-19
+      ],
+      "selected_input": false,
+      "output_change_linf": 8.68324545503325e-08
+    },
+    {
+      "first_group": 3232,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        8.78363519547425e-09,
+        5.2883743280338914e-09,
+        6.92517767255168e-09,
+        6.214828997865511e-29
+      ],
+      "linf": [
+        1.0762877694636686e-07,
+        8.462610816273308e-08,
+        9.612744256842776e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 5.4638141492452386e-06
+    },
+    {
+      "first_group": 3264,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        2.856052523029254e-09,
+        1.7220517429443537e-09,
+        2.2531303630076275e-09,
+        5.968715357634747e-29
+      ],
+      "linf": [
+        1.0741180286183427e-07,
+        8.439898085271791e-08,
+        9.59053918503372e-08,
+        3.8163916471489756e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 5.450004984884627e-06
+    },
+    {
+      "first_group": 3200,
+      "group_count": 32,
+      "block": 25,
+      "squared_l2": [
+        8.34567260455916e-09,
+        4.927189657453604e-09,
+        6.523994162015093e-09,
+        6.201165995445832e-29
+      ],
+      "linf": [
+        1.0353164074661247e-07,
+        8.060275630966673e-08,
+        9.206719852467016e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 5.177442834083945e-06
+    },
+    {
+      "first_group": 3168,
+      "group_count": 32,
+      "block": 24,
+      "squared_l2": [
+        7.46084953449182e-09,
+        4.288627896186655e-09,
+        5.7652983972183635e-09,
+        6.106858790687369e-29
+      ],
+      "linf": [
+        9.75379614784333e-08,
+        7.488830668089808e-08,
+        8.621313408313513e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 4.775892593504583e-06
+    },
+    {
+      "first_group": 3136,
+      "group_count": 32,
+      "block": 24,
+      "squared_l2": [
+        6.433684053133308e-09,
+        3.593475579139577e-09,
+        4.9106822603057545e-09,
+        5.959546006358931e-29
+      ],
+      "linf": [
+        9.042385962915178e-08,
+        6.83821984662214e-08,
+        7.94030290407477e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 4.322645278893866e-06
+    },
+    {
+      "first_group": 3104,
+      "group_count": 32,
+      "block": 24,
+      "squared_l2": [
+        5.3352654495317534e-09,
+        2.889426482030626e-09,
+        4.019183565425627e-09,
+        5.690330245811002e-29
+      ],
+      "linf": [
+        8.231792773816249e-08,
+        6.124165724541442e-08,
+        7.177979247791066e-08,
+        4.163336342344337e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 3.829479479758313e-06
+    },
+    {
+      "first_group": 3072,
+      "group_count": 32,
+      "block": 24,
+      "squared_l2": [
+        4.239548448777587e-09,
+        2.2215276446451937e-09,
+        3.149646926082832e-09,
+        5.32677433592752e-29
+      ],
+      "linf": [
+        7.340463654276208e-08,
+        5.366386707228443e-08,
+        6.353425059668627e-08,
+        3.8163916471489756e-17
+      ],
+      "selected_input": true,
+      "output_change_linf": 3.3110873473921054e-06
+    }
+  ],
+  "feedback_pending": true,
+  "candidate_values_recomputed_on_mac": false,
+  "original_defect_l2": 0.0002524691265840372,
+  "original_defect_linf": 1.0762877694636686e-07,
+  "rows": {
+    "control": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/step21-five-short-validation-20260927/control/state_0.dat",
+      "input_sha256": "d138c493fa7cc2380fca66e9a10ce0c1e95edd6c5f868732fa25228880c7517d",
+      "output_path": "outputs/hpc/step21-five-short-validation-20260927/control/state_1.dat",
+      "output_sha256": "ab0470756893c9442a79a18934e0f04d865535ac9a83a00fcd4ef3d0577bcbaa",
+      "wall_s": 160.45656415913254,
+      "residual": 2.534905899526924e-06,
+      "boundary_l1": 1.2907815176477042e-06,
+      "boundary_bolometric": 1.2900450904285098e-06,
+      "maximum_worker_rss_mib": 3500.86328125
+    },
+    "half": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/step21-five-short-validation-20260927/half/state_0.dat",
+      "input_sha256": "791f9d3a1a1b4c6f79f4c48e5a2b74e6631336ddb4e4587ae88bad82b7febc4c",
+      "output_path": "outputs/hpc/step21-five-short-validation-20260927/half/state_1.dat",
+      "output_sha256": "5d7833ccdc3462ab6947eb6e1466977c1aa816ff2e6d0d4aedb81475f5c9e33e",
+      "wall_s": 160.7073630699888,
+      "residual": 2.487089398767293e-06,
+      "boundary_l1": 1.379304095221785e-06,
+      "boundary_bolometric": 1.37856737121031e-06,
+      "maximum_worker_rss_mib": 3501.76171875
+    }
+  },
+  "independent_slab_and_block_reduction": true,
+  "raw_global_arrays_recomputed_on_mac": false,
+  "operator_recomputed_on_mac": false
+}
