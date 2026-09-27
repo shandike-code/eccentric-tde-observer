@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/scc/pb24511938/eccentric-tde-observer/operations/scan_step21_seven_refresh_line.py", line 139, in <module>
+    execute(pipeline.safe_path(ROOT,a.run))
+  File "/home/scc/pb24511938/eccentric-tde-observer/operations/scan_step21_seven_refresh_line.py", line 121, in execute
+    pipeline.require_allocation(4)
+  File "/home/scc/pb24511938/eccentric-tde-observer/hpc/pipeline.py", line 65, in require_allocation
+    raise RuntimeError("Request at least 6 GiB per worker plus 2 GiB parent headroom.")
+RuntimeError: Request at least 6 GiB per worker plus 2 GiB parent headroom.
+/var/spool/slurmd/job78513/slurm_script: line 32: outputs/hpc/step21-seven-refresh-line-20260927/scheduler-before-exit.txt: No such file or directory
