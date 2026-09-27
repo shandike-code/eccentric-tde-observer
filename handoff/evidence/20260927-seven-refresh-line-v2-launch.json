@@ -1,0 +1,16 @@
+{
+  "job_id": 78516,
+  "source_commit": "baffde4c062c9225a9774a429d0d5e5835400939",
+  "run": "outputs/hpc/step21-seven-refresh-line-v2-20260927",
+  "submitted_unix": 1790511359.1902616,
+  "tmux_session": "step21-refresh-line-78516",
+  "watch_directory": "outputs/review-20260925/seven-refresh-line-watch-78516",
+  "watch_start_returncode": 0,
+  "scontrol": "JobId=78516 JobName=tde-refresh-line2 UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=PENDING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-09-27T20:15:59 EligibleTime=2026-09-27T20:15:59 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-27T20:15:59 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2667404 ReqNodeList=(null) ExcNodeList=anode01 NodeList= NumNodes=1-1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/scan_step21_seven_refresh_line_v2.sbatch SubmitLine=sbatch --parsable operations/scan_step21_seven_refresh_line_v2.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-refresh-line2-78516.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-refresh-line2-78516.out TresPerTask=cpu=4\n",
+  "school_tests": "21 passed in 14.74s",
+  "mac_tests": "21 passed in 0.93s",
+  "new_material_steps": 0,
+  "maximum_global_maps": 0,
+  "maximum_feedback_pairs": 0,
+  "corrected_resource_interface": true
+}
