@@ -1,0 +1,105 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-population-defect-pilot-20260928/archives/complete-1790603129264916005.tar.gz",
+    "size_bytes": 103028,
+    "sha256": "a56667ebfffc51f5dae357584fe496e753354e084f5fee2f2caa3eeaafa3f60f"
+  },
+  "verified_files": 13,
+  "verified_code_claims": 738,
+  "rows": [
+    {
+      "warning": "",
+      "block": 23,
+      "local_arrays": {
+        "path": "outputs/hpc/step21-population-defect-pilot-20260928/population-block23-local.npz",
+        "size_bytes": 1879048728,
+        "sha256": "53425f5fefc1052a2e2da822005e429048aae26e0e10a1c6077ade00861496c6"
+      },
+      "l2_ratio": 0.359958178070005,
+      "linf_ratio": 0.41906451024717667,
+      "checks": {
+        "l2_halved": true,
+        "linf_halved": true,
+        "useful_step": true,
+        "affine_prediction": true,
+        "boundary_not_worse": true,
+        "finite_budget": true,
+        "memory_below_32gib": true,
+        "time_below_24_maps": true,
+        "independent_half_affinity": true
+      },
+      "local_candidate_min": 3.8339102857099107e-07,
+      "local_mapped_min": 3.8339102867684504e-07,
+      "raw_map_s": 118.7893235180527,
+      "wall_s": 2152.3496134299785,
+      "half_affinity_over_raw_l2": 9.186905368861234e-10,
+      "observed_peak_kib": 21239032,
+      "gmres_info": 2,
+      "gmres_iterations": 16,
+      "linear_audit_passed": false,
+      "full_step": true,
+      "zero_prediction_error_is_not_independent_half_probe": true
+    },
+    {
+      "warning": "",
+      "block": 30,
+      "local_arrays": {
+        "path": "outputs/hpc/step21-population-defect-pilot-20260928/population-block30-local.npz",
+        "size_bytes": 1879048728,
+        "sha256": "2e6865380a74e00b23041600bb58d86770e02feb546cd0fbde0b156faa23860d"
+      },
+      "l2_ratio": 0.004932913804783828,
+      "linf_ratio": 0.0023300650422712265,
+      "checks": {
+        "l2_halved": true,
+        "linf_halved": true,
+        "useful_step": true,
+        "affine_prediction": true,
+        "boundary_not_worse": true,
+        "finite_budget": true,
+        "memory_below_32gib": true,
+        "time_below_24_maps": true,
+        "independent_half_affinity": true
+      },
+      "local_candidate_min": 2.1587920689796449e-07,
+      "local_mapped_min": 2.1587920691162437e-07,
+      "raw_map_s": 65.88549394439906,
+      "wall_s": 1250.6330361310393,
+      "half_affinity_over_raw_l2": 4.376034470870662e-09,
+      "observed_peak_kib": 21556032,
+      "gmres_info": 2,
+      "gmres_iterations": 16,
+      "linear_audit_passed": false,
+      "full_step": true,
+      "zero_prediction_error_is_not_independent_half_probe": true
+    }
+  ],
+  "source_job_id": 79631,
+  "job_id": 79747,
+  "frozen_material_case": "population",
+  "refreshed_halo": true,
+  "source_pair": [
+    {
+      "path": "outputs/hpc/step21-late-population-global-20260928/full-candidate.dat",
+      "size_bytes": 10099884032,
+      "sha256": "216a31295427601920d77569c31f6433f400fbdc7bbe1f6c17c39d11e35c0fa4"
+    },
+    {
+      "path": "outputs/hpc/step21-late-population-global-20260928/population/state_1.dat",
+      "sha256": "f95b96e06d81347209344904d44e7c27a06b632eb1e4b7254cc27b8278ed4a01",
+      "size_bytes": 10099884032
+    }
+  ],
+  "all_local_cases_passed": true,
+  "selected_squared_defect_fraction": 0.9595429264209813,
+  "source_rejected": true,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "raw_input_output_blocks_present_on_mac": false,
+  "raw_l2_independently_recomputed": false,
+  "fresh_l2_and_linf_independently_recomputed": false,
+  "local_boundary_flux_independently_recomputed": false,
+  "operator_recomputed_on_mac": false,
+  "half_operator_recomputed_on_mac": false,
+  "global_validation_required": true
+}
