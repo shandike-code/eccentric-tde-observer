@@ -1,0 +1,44 @@
+{
+  "theta": 9.840461898811255e-09,
+  "flux_envelope": 16371650629043.742,
+  "vertices": [
+    {
+      "a": 0,
+      "b": 0,
+      "total_input": 16371647580315.531,
+      "total_mapped": 16371647419210.957,
+      "signed_block_sum": -161104.5730688572
+    },
+    {
+      "a": 1,
+      "b": 0,
+      "total_input": 16371650629043.742,
+      "total_mapped": 16371650123584.752,
+      "signed_block_sum": -505458.9914648533
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "total_input": 16371628072770.66,
+      "total_mapped": 16371628241254.842,
+      "signed_block_sum": 168484.18372130394
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "total_input": 16371631121498.871,
+      "total_mapped": 16371630945628.637,
+      "signed_block_sum": -175870.23467469215
+    }
+  ],
+  "current_absolute_signed_defect": 505458.9914648533,
+  "maximum_passing_defect_under_affine_model": 483313.81270726275,
+  "excess_over_capacity": 22145.178757590533,
+  "conditional_infeasible": true,
+  "measured_half_signed_error": 0.000606536865234375,
+  "observed_error_is_not_uniform_bound": true,
+  "global_operator_affinity_proved": false,
+  "minimum_required_flux_envelope": 17121790848927.314,
+  "required_envelope_ratio": 1.0458194617562142,
+  "previous_rejection_unchanged": true
+}
