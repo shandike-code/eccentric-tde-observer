@@ -1,0 +1,26 @@
+{
+  "recorded_local_time": "2026-09-28T18:39:54+08:00",
+  "host": "107.ustc.edu.cn",
+  "user": "pb24511938",
+  "control_socket": "/Users/shandike/.ssh/tde-control/ustc.sock",
+  "read_only_remote_check": {
+    "exit_code": 255,
+    "stderr": "pb24511938@107.ustc.edu.cn: Permission denied (publickey)."
+  },
+  "master_check": {
+    "exit_code": 255,
+    "stderr": "Control socket connect(/Users/shandike/.ssh/tde-control/ustc.sock): No such file or directory"
+  },
+  "job_id": 79151,
+  "current_remote_job_state": "unverified_due_to_missing_connection",
+  "last_verified_local_time": "2026-09-28T18:01:20+08:00",
+  "last_verified_job_state": "RUNNING",
+  "last_verified_control_maps": 8,
+  "last_verified_thermal_maps": 8,
+  "last_verified_population_state": "initializing",
+  "last_verified_population_maps": 0,
+  "remote_cancel_or_resubmit_sent": false,
+  "remote_data_changed": false,
+  "new_large_artifacts_downloaded": false,
+  "required_user_action": "Reconnect in Terminal using the existing connect-ustc.command; enter password and dynamic code there, not in chat."
+}
