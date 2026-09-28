@@ -1,0 +1,58 @@
+{
+  "source_job": 78950,
+  "cases": {
+    "control": {
+      "exact_trial": true,
+      "native_identity": true,
+      "original_gates_unchanged": true,
+      "own_seed": {
+        "path": "outputs/hpc/step21-refreshed-directions-20260928/control/endpoints-map16/mapped_final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "2cb5320984731a38300c43a58ef9c38cd4bf917155ba2fad94bd69af2510e0cb"
+      },
+      "seed_exists_and_size_verified": true,
+      "large_seed_sha_verified": false,
+      "trial": {
+        "path": "outputs/hpc/step21-refreshed-directions-20260928/control/trial_material.npz",
+        "size_bytes": 27774,
+        "sha256": "36434a29123e2387195b77713baffaecd046f7d6c0297a5d0d95a74319e22eda"
+      }
+    },
+    "thermal": {
+      "exact_trial": true,
+      "native_identity": true,
+      "original_gates_unchanged": true,
+      "own_seed": {
+        "path": "outputs/hpc/step21-refreshed-directions-20260928/thermal/endpoints-map16/mapped_final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "e3a4199fcae498992ec6792f82a1577001eb170c1428bd0969f8b38427b8a17f"
+      },
+      "seed_exists_and_size_verified": true,
+      "large_seed_sha_verified": false,
+      "trial": {
+        "path": "outputs/hpc/step21-refreshed-directions-20260928/thermal/trial_material.npz",
+        "size_bytes": 27774,
+        "sha256": "814dd11e080a2ae12138e2ca0ab798b221ada94797059cb36ac7ad151afc5d0e"
+      }
+    },
+    "population": {
+      "exact_trial": true,
+      "native_identity": true,
+      "original_gates_unchanged": true,
+      "own_seed": {
+        "path": "outputs/hpc/step21-refreshed-directions-20260928/population/endpoints-map16/mapped_final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "13b1e1ca3e3b7d54aee164a499833b6d51acb88ee24067acf544b3949f2098c9"
+      },
+      "seed_exists_and_size_verified": true,
+      "large_seed_sha_verified": false,
+      "trial": {
+        "path": "outputs/hpc/step21-refreshed-directions-20260928/population/trial_material.npz",
+        "size_bytes": 27774,
+        "sha256": "b60fd79e254f87a42455fd88a0e16e6b51d7abcb95e53257c969e5ad56810da4"
+      }
+    }
+  },
+  "physics_map_run": false,
+  "large_seed_hashes_deferred_to_batch": true
+}
