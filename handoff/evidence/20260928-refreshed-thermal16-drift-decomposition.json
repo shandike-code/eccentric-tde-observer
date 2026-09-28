@@ -1,0 +1,510 @@
+{
+  "source_audit_sha256": "81758566cbdfb1d530add0e4bdaff1574784cd395352ea20f60d8d178927bbae",
+  "response_claims": {
+    "control8/previous": {
+      "path": "outputs/review-20260925/refreshed-directions-78950-thermal16-received/control/pair08/previous_response.npz",
+      "sha256": "b2837270d2e2219cfb7bdeb14b5735183a91e681332e63a181e78623730110b3"
+    },
+    "control8/final": {
+      "path": "outputs/review-20260925/refreshed-directions-78950-thermal16-received/control/pair08/final_response.npz",
+      "sha256": "b8567534cb0de3c7b1c82ab62b16a430f52967fd899a9a868454df97ccfdcccd"
+    },
+    "control16/previous": {
+      "path": "outputs/review-20260925/refreshed-directions-78950-thermal16-received/control/pair16/previous_response.npz",
+      "sha256": "9ae7bbdffa3abda5570bfaf99f87d254f4267ef255b05ce71f675b91e23dbdce"
+    },
+    "control16/final": {
+      "path": "outputs/review-20260925/refreshed-directions-78950-thermal16-received/control/pair16/final_response.npz",
+      "sha256": "fed799c483a039c16d6b5be53f4ed2fb678f049af004ea4d43fb2d4534a62039"
+    },
+    "thermal8/previous": {
+      "path": "outputs/review-20260925/refreshed-directions-78950-thermal16-received/thermal/pair08/previous_response.npz",
+      "sha256": "2181da5ef04ce17ffe0030ed715dcab205b07e9b08b0d8eb3bbb8ba46cc1215f"
+    },
+    "thermal8/final": {
+      "path": "outputs/review-20260925/refreshed-directions-78950-thermal16-received/thermal/pair08/final_response.npz",
+      "sha256": "92ff2565cfd099f82ab81936facadc74f20bc481ffcc67487a6f59c0b963f0cb"
+    },
+    "thermal16/previous": {
+      "path": "outputs/review-20260925/refreshed-directions-78950-thermal16-received/thermal/pair16/previous_response.npz",
+      "sha256": "3ec094fd9790f01fe00917e0469ba2792bf19463ded26cf08c74fef9d5877106"
+    },
+    "thermal16/final": {
+      "path": "outputs/review-20260925/refreshed-directions-78950-thermal16-received/thermal/pair16/final_response.npz",
+      "sha256": "664dadffa30cc757a81b744776a816cf74091c2f750306cf4e28f0985b13f8ab"
+    }
+  },
+  "norm_order": [
+    "l2",
+    "mass_weighted",
+    "maximum_cell"
+  ],
+  "formula": "S16-S08 = (T16-T08) - (C16-C08), all 16 endpoint combinations; norms are not additive",
+  "minimum_current_signal_norms": [
+    0.18101061312975242,
+    0.007657622733415188,
+    0.06488677631559497
+  ],
+  "combinations": [
+    {
+      "signal16": "previous_vs_previous",
+      "signal08": "previous_vs_previous",
+      "signal_change_norms": [
+        0.019100391543638805,
+        0.0009431543495123841,
+        0.005956848730729953
+      ],
+      "candidate_change_norms": [
+        0.01930228508266303,
+        0.000960307649196611,
+        0.005971549902466934
+      ],
+      "control_change_norms": [
+        0.0008837564076769752,
+        0.00011049671300662074,
+        0.0001849324245284522
+      ],
+      "drift_over_current_minimum_signal": [
+        0.10552083777511555,
+        0.12316542383275011,
+        0.0918037398214569
+      ]
+    },
+    {
+      "signal16": "previous_vs_previous",
+      "signal08": "previous_vs_final",
+      "signal_change_norms": [
+        0.01912659878584135,
+        0.0009447796948686998,
+        0.0059591304513091446
+      ],
+      "candidate_change_norms": [
+        0.01930228508266303,
+        0.000960307649196611,
+        0.005971549902466934
+      ],
+      "control_change_norms": [
+        0.0007709748877653146,
+        9.646062738894998e-05,
+        0.000161423356360686
+      ],
+      "drift_over_current_minimum_signal": [
+        0.10566562067899841,
+        0.12337767578259132,
+        0.09183890446838117
+      ]
+    },
+    {
+      "signal16": "previous_vs_previous",
+      "signal08": "final_vs_previous",
+      "signal_change_norms": [
+        0.012799982489107988,
+        0.0006699433831315918,
+        0.003369662095680867
+      ],
+      "candidate_change_norms": [
+        0.013035897558698745,
+        0.0006929929429098529,
+        0.0033843619893693592
+      ],
+      "control_change_norms": [
+        0.0008837564076769752,
+        0.00011049671300662074,
+        0.0001849324245284522
+      ],
+      "drift_over_current_minimum_signal": [
+        0.07071398890811269,
+        0.08748712315222754,
+        0.051931414796931405
+      ]
+    },
+    {
+      "signal16": "previous_vs_previous",
+      "signal08": "final_vs_final",
+      "signal_change_norms": [
+        0.012829609030230948,
+        0.0006720559237698989,
+        0.003371943617357556
+      ],
+      "candidate_change_norms": [
+        0.013035897558698745,
+        0.0006929929429098529,
+        0.0033843619893693592
+      ],
+      "control_change_norms": [
+        0.0007709748877653146,
+        9.646062738894998e-05,
+        0.000161423356360686
+      ],
+      "drift_over_current_minimum_signal": [
+        0.07087766185861379,
+        0.08776299736434935,
+        0.051966576378477576
+      ]
+    },
+    {
+      "signal16": "previous_vs_final",
+      "signal08": "previous_vs_previous",
+      "signal_change_norms": [
+        0.019081355836477302,
+        0.000942090299994417,
+        0.0059554793138372145
+      ],
+      "candidate_change_norms": [
+        0.01930228508266303,
+        0.000960307649196611,
+        0.005971549902466934
+      ],
+      "control_change_norms": [
+        0.000991242184223222,
+        0.00012400953968993265,
+        0.00020752330716107106
+      ],
+      "drift_over_current_minimum_signal": [
+        0.10541567428866375,
+        0.12302647085021104,
+        0.09178263510689877
+      ]
+    },
+    {
+      "signal16": "previous_vs_final",
+      "signal08": "previous_vs_final",
+      "signal_change_norms": [
+        0.01910695534116171,
+        0.0009435165144193034,
+        0.005957761034230533
+      ],
+      "candidate_change_norms": [
+        0.01930228508266303,
+        0.000960307649196611,
+        0.005971549902466934
+      ],
+      "control_change_norms": [
+        0.000878473570394085,
+        0.00010997376865156198,
+        0.00018401423899395053
+      ],
+      "drift_over_current_minimum_signal": [
+        0.10555709972356936,
+        0.12321271852452684,
+        0.09181779975095845
+      ]
+    },
+    {
+      "signal16": "previous_vs_final",
+      "signal08": "final_vs_previous",
+      "signal_change_norms": [
+        0.01277814629506839,
+        0.0006684945284632351,
+        0.003368292799692166
+      ],
+      "candidate_change_norms": [
+        0.013035897558698745,
+        0.0006929929429098529,
+        0.0033843619893693592
+      ],
+      "control_change_norms": [
+        0.000991242184223222,
+        0.00012400953968993265,
+        0.00020752330716107106
+      ],
+      "drift_over_current_minimum_signal": [
+        0.07059335402564894,
+        0.08729791891498634,
+        0.05191031194568108
+      ]
+    },
+    {
+      "signal16": "previous_vs_final",
+      "signal08": "final_vs_final",
+      "signal_change_norms": [
+        0.012806877712460798,
+        0.0006703287980267656,
+        0.0033705743208776594
+      ],
+      "candidate_change_norms": [
+        0.013035897558698745,
+        0.0006929929429098529,
+        0.0033843619893693592
+      ],
+      "control_change_norms": [
+        0.000878473570394085,
+        0.00010997376865156198,
+        0.00018401423899395053
+      ],
+      "drift_over_current_minimum_signal": [
+        0.07075208183113851,
+        0.08753745403278816,
+        0.05194547351965721
+      ]
+    },
+    {
+      "signal16": "final_vs_previous",
+      "signal08": "previous_vs_previous",
+      "signal_change_norms": [
+        0.019066161032165678,
+        0.0009556327996522384,
+        0.005778059125044686
+      ],
+      "candidate_change_norms": [
+        0.019282100556046365,
+        0.0009763529450201622,
+        0.005792760012099637
+      ],
+      "control_change_norms": [
+        0.0008837564076769752,
+        0.00011049671300662074,
+        0.0001849324245284522
+      ],
+      "drift_over_current_minimum_signal": [
+        0.10533173001573466,
+        0.12479497004758291,
+        0.08904833084851496
+      ]
+    },
+    {
+      "signal16": "final_vs_previous",
+      "signal08": "previous_vs_final",
+      "signal_change_norms": [
+        0.01909416676120498,
+        0.0009577277958508357,
+        0.005780340801517123
+      ],
+      "candidate_change_norms": [
+        0.019282100556046365,
+        0.0009763529450201622,
+        0.005792760012099637
+      ],
+      "control_change_norms": [
+        0.0007709748877653146,
+        9.646062738894998e-05,
+        0.000161423356360686
+      ],
+      "drift_over_current_minimum_signal": [
+        0.105486448728384,
+        0.12506855315183477,
+        0.08908349481568971
+      ]
+    },
+    {
+      "signal16": "final_vs_previous",
+      "signal08": "final_vs_previous",
+      "signal_change_norms": [
+        0.012892267179046086,
+        0.0006901464952754541,
+        0.0031909022713879124
+      ],
+      "candidate_change_norms": [
+        0.01314660714831965,
+        0.0007177030295595972,
+        0.0032056014427846325
+      ],
+      "control_change_norms": [
+        0.0008837564076769752,
+        0.00011049671300662074,
+        0.0001849324245284522
+      ],
+      "drift_over_current_minimum_signal": [
+        0.07122381917907003,
+        0.09012542394702942,
+        0.04917646479874524
+      ]
+    },
+    {
+      "signal16": "final_vs_previous",
+      "signal08": "final_vs_final",
+      "signal_change_norms": [
+        0.012924269920154661,
+        0.000692875999985179,
+        0.003193183680806525
+      ],
+      "candidate_change_norms": [
+        0.01314660714831965,
+        0.0007177030295595972,
+        0.0032056014427846325
+      ],
+      "control_change_norms": [
+        0.0007709748877653146,
+        9.646062738894998e-05,
+        0.000161423356360686
+      ],
+      "drift_over_current_minimum_signal": [
+        0.07140061953654761,
+        0.09048186677592647,
+        0.04921162465023048
+      ]
+    },
+    {
+      "signal16": "final_vs_final",
+      "signal08": "previous_vs_previous",
+      "signal_change_norms": [
+        0.019045402149615847,
+        0.0009541118957263508,
+        0.005776689734950676
+      ],
+      "candidate_change_norms": [
+        0.019282100556046365,
+        0.0009763529450201622,
+        0.005792760012099637
+      ],
+      "control_change_norms": [
+        0.000991242184223222,
+        0.00012400953968993265,
+        0.00020752330716107106
+      ],
+      "drift_over_current_minimum_signal": [
+        0.10521704678147066,
+        0.12459635698203571,
+        0.08902722654696436
+      ]
+    },
+    {
+      "signal16": "final_vs_final",
+      "signal08": "previous_vs_final",
+      "signal_change_norms": [
+        0.019072803378042433,
+        0.0009560118867184506,
+        0.005778971411210457
+      ],
+      "candidate_change_norms": [
+        0.019282100556046365,
+        0.0009763529450201622,
+        0.005792760012099637
+      ],
+      "control_change_norms": [
+        0.000878473570394085,
+        0.00010997376865156198,
+        0.00018401423899395053
+      ],
+      "drift_over_current_minimum_signal": [
+        0.10536842590754955,
+        0.12484447458435749,
+        0.08906239051086179
+      ]
+    },
+    {
+      "signal16": "final_vs_final",
+      "signal08": "final_vs_previous",
+      "signal_change_norms": [
+        0.012868087936083173,
+        0.0006880875223257477,
+        0.0031895330434981647
+      ],
+      "candidate_change_norms": [
+        0.01314660714831965,
+        0.0007177030295595972,
+        0.0032056014427846325
+      ],
+      "control_change_norms": [
+        0.000991242184223222,
+        0.00012400953968993265,
+        0.00020752330716107106
+      ],
+      "drift_over_current_minimum_signal": [
+        0.07109024003393129,
+        0.08985654507673438,
+        0.049155362996999255
+      ]
+    },
+    {
+      "signal16": "final_vs_final",
+      "signal08": "final_vs_final",
+      "signal_change_norms": [
+        0.012899211795319807,
+        0.0006905506061116531,
+        0.003191814452301238
+      ],
+      "candidate_change_norms": [
+        0.01314660714831965,
+        0.0007177030295595972,
+        0.0032056014427846325
+      ],
+      "control_change_norms": [
+        0.000878473570394085,
+        0.00010997376865156198,
+        0.00018401423899395053
+      ],
+      "drift_over_current_minimum_signal": [
+        0.07126218497516146,
+        0.09017819630867054,
+        0.049190522838998135
+      ]
+    }
+  ],
+  "worst_for_each_norm": {
+    "l2": {
+      "signal16": "previous_vs_previous",
+      "signal08": "previous_vs_final",
+      "signal_change_norms": [
+        0.01912659878584135,
+        0.0009447796948686998,
+        0.0059591304513091446
+      ],
+      "candidate_change_norms": [
+        0.01930228508266303,
+        0.000960307649196611,
+        0.005971549902466934
+      ],
+      "control_change_norms": [
+        0.0007709748877653146,
+        9.646062738894998e-05,
+        0.000161423356360686
+      ],
+      "drift_over_current_minimum_signal": [
+        0.10566562067899841,
+        0.12337767578259132,
+        0.09183890446838117
+      ]
+    },
+    "mass_weighted": {
+      "signal16": "final_vs_previous",
+      "signal08": "previous_vs_final",
+      "signal_change_norms": [
+        0.01909416676120498,
+        0.0009577277958508357,
+        0.005780340801517123
+      ],
+      "candidate_change_norms": [
+        0.019282100556046365,
+        0.0009763529450201622,
+        0.005792760012099637
+      ],
+      "control_change_norms": [
+        0.0007709748877653146,
+        9.646062738894998e-05,
+        0.000161423356360686
+      ],
+      "drift_over_current_minimum_signal": [
+        0.105486448728384,
+        0.12506855315183477,
+        0.08908349481568971
+      ]
+    },
+    "maximum_cell": {
+      "signal16": "previous_vs_previous",
+      "signal08": "previous_vs_final",
+      "signal_change_norms": [
+        0.01912659878584135,
+        0.0009447796948686998,
+        0.0059591304513091446
+      ],
+      "candidate_change_norms": [
+        0.01930228508266303,
+        0.000960307649196611,
+        0.005971549902466934
+      ],
+      "control_change_norms": [
+        0.0007709748877653146,
+        9.646062738894998e-05,
+        0.000161423356360686
+      ],
+      "drift_over_current_minimum_signal": [
+        0.10566562067899841,
+        0.12337767578259132,
+        0.09183890446838117
+      ]
+    }
+  },
+  "strict_error_bound": false,
+  "material_promoted": false
+}
