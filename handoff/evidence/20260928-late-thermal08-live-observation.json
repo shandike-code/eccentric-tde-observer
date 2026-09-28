@@ -1,0 +1,349 @@
+{
+  "job_id": 79151,
+  "scheduler_state": "RUNNING",
+  "scontrol": "JobId=79151 JobName=tde-late-dir UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=01:41:23 TimeLimit=08:00:00 TimeMin=N/A SubmitTime=2026-09-28T16:19:02 EligibleTime=2026-09-28T16:19:03 AccrueTime=2026-09-28T16:19:03 StartTime=2026-09-28T16:19:04 EndTime=2026-09-29T00:19:04 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-28T16:19:04 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:1035782 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode18 BatchHost=anode18 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/confirm_late_direction_windows.sbatch SubmitLine=sbatch --parsable operations/confirm_late_direction_windows.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-late-dir-79151.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-late-dir-79151.out TresPerTask=cpu=32\n",
+  "scheduler_stderr": "",
+  "observed_unix": 1790589627.8280065,
+  "status": {
+    "status": "feedback",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790588690.303989,
+    "case": "thermal",
+    "after_maps": 8,
+    "absolute_after_maps": 24
+  },
+  "cases": {
+    "control": {
+      "completed_maps": 8,
+      "active_map": false,
+      "last_map": {
+        "iteration": 8,
+        "input_path": "outputs/hpc/step21-late-direction-windows-20260928/control/state_1.dat",
+        "input_sha256": "2b6fc149d4773023d3ed74cd344ef2af3d391f51279205a449fde293128a4589",
+        "output_path": "outputs/hpc/step21-late-direction-windows-20260928/control/state_2.dat",
+        "output_sha256": "1602f43ab375381aa754cf75c9f3c08c4f72396d9324f330ea06e366a26a49c0",
+        "wall_s": 163.7002214193344,
+        "residual": 6.115003326086194e-07,
+        "boundary_l1": 3.35244196202577e-08,
+        "boundary_bolometric": 3.3495083341552066e-08,
+        "maximum_worker_rss_mib": 3499.23828125
+      },
+      "pair08": {
+        "feedback_evaluated": true,
+        "absolute_maps": 24,
+        "original_gates": {
+          "last_two_photoionization_pass": true,
+          "last_two_total_recombination_pass": true,
+          "last_two_atomic_heating_pass": true,
+          "last_two_direct_heating_pass": true,
+          "last_two_formal_heating_pass": true,
+          "inner_pair_ready": true,
+          "physical_response_pass": true
+        },
+        "physical_response_failures": {},
+        "promoted": false,
+        "baseline_replaced": false,
+        "zero_control_stable": true,
+        "window_comparison": {
+          "vector_difference_over_frozen_r20_norms": {
+            "previous_vs_previous": [
+              0.00010310276921619817,
+              0.00040541909836951735,
+              6.5545969537983e-05
+            ],
+            "previous_vs_final": [
+              8.994650403372804e-05,
+              0.00035382336171249645,
+              5.719444521007692e-05
+            ],
+            "final_vs_previous": [
+              0.00011564683017912074,
+              0.0004549028328967012,
+              7.353387390377347e-05
+            ],
+            "final_vs_final": [
+              0.00010249131509912712,
+              0.00040330772296621906,
+              6.518234957624022e-05
+            ]
+          },
+          "passed": true,
+          "tolerance": 0.001,
+          "strict_error_bound": false,
+          "baseline_replaced": false
+        },
+        "from_78950_map16_comparison": {
+          "vector_difference_over_frozen_r20_norms": {
+            "previous_vs_previous": [
+              0.00010310276921619817,
+              0.00040541909836951735,
+              6.5545969537983e-05
+            ],
+            "previous_vs_final": [
+              8.994650403372804e-05,
+              0.00035382336171249645,
+              5.719444521007692e-05
+            ],
+            "final_vs_previous": [
+              0.00011564683017912074,
+              0.0004549028328967012,
+              7.353387390377347e-05
+            ],
+            "final_vs_final": [
+              0.00010249131509912712,
+              0.00040330772296621906,
+              6.518234957624022e-05
+            ]
+          },
+          "passed": true,
+          "tolerance": 0.001,
+          "strict_error_bound": false,
+          "baseline_replaced": false
+        },
+        "from_78594_comparison": {
+          "vector_difference_over_frozen_r20_norms": {
+            "previous_vs_previous": [
+              0.00032436216192111695,
+              0.0012635964721927169,
+              0.00020472115491847046
+            ],
+            "previous_vs_final": [
+              0.00030992811851317546,
+              0.001208376196327581,
+              0.00019576085705783639
+            ],
+            "final_vs_previous": [
+              0.00033686481124395795,
+              0.0013130481707491642,
+              0.00021270905927734104
+            ],
+            "final_vs_final": [
+              0.00032243597149485384,
+              0.0012578317792271603,
+              0.0002037487614171943
+            ]
+          },
+          "passed": false,
+          "tolerance": 0.001,
+          "strict_error_bound": false,
+          "baseline_replaced": false
+        },
+        "control_pass": true,
+        "historical_78594_cumulative_pass": false,
+        "original_78594_cumulative_stability_claim": false,
+        "parent_peak_rss_bytes": 236793856
+      }
+    },
+    "thermal": {
+      "completed_maps": 8,
+      "active_map": false,
+      "last_map": {
+        "iteration": 8,
+        "input_path": "outputs/hpc/step21-late-direction-windows-20260928/thermal/state_1.dat",
+        "input_sha256": "22fb03a1a1ff9cae287cd29303600d5c265ca5989aa8c2a3f3e3dfc39922602b",
+        "output_path": "outputs/hpc/step21-late-direction-windows-20260928/thermal/state_2.dat",
+        "output_sha256": "d8114ec770c48afb3b98cc062df6507b1b85cd27d276a6dd46d50e7f19b9cef7",
+        "wall_s": 151.15942115802318,
+        "residual": 1.0531046081335239e-06,
+        "boundary_l1": 4.502694585603598e-06,
+        "boundary_bolometric": 4.4935133142283915e-06,
+        "maximum_worker_rss_mib": 3503.046875
+      },
+      "pair08": {
+        "feedback_evaluated": true,
+        "absolute_maps": 24,
+        "original_gates": {
+          "last_two_photoionization_pass": true,
+          "last_two_total_recombination_pass": true,
+          "last_two_atomic_heating_pass": true,
+          "last_two_direct_heating_pass": true,
+          "last_two_formal_heating_pass": true,
+          "inner_noise_resolved_pass": true,
+          "candidate_l2_contraction_pass": false,
+          "candidate_mass_weighted_contraction_pass": false,
+          "candidate_maximum_cell_contraction_pass": false,
+          "two_formal_feedback_states_pass": true,
+          "two_inner_radiation_residuals_pass": true,
+          "two_boundary_spectra_pass": true,
+          "two_boundary_bolometric_pass": true,
+          "candidate_state_bytes_pass": true,
+          "population_nonnegative_pass": true,
+          "all_residual_components_finite_pass": true
+        },
+        "physical_response_failures": {},
+        "promoted": false,
+        "baseline_replaced": false,
+        "response_measurement": {
+          "signal_norms": {
+            "previous_vs_previous": {
+              "l2": 0.1785925381872424,
+              "mass_weighted": 0.007663274722973706,
+              "maximum_cell": 0.06487663131583685
+            },
+            "previous_vs_final": {
+              "l2": 0.17857494968557583,
+              "mass_weighted": 0.0076580773515582765,
+              "maximum_cell": 0.06487662971362972
+            },
+            "final_vs_previous": {
+              "l2": 0.17825556315889468,
+              "mass_weighted": 0.007663918858639471,
+              "maximum_cell": 0.06487584366738401
+            },
+            "final_vs_final": {
+              "l2": 0.17823785064726871,
+              "mass_weighted": 0.007658671703643163,
+              "maximum_cell": 0.06487584206557817
+            }
+          },
+          "finite_response_norms": {
+            "previous_vs_previous": {
+              "l2": 45.71968977593406,
+              "mass_weighted": 1.9617983290812688,
+              "maximum_cell": 16.608417616854233
+            },
+            "previous_vs_final": {
+              "l2": 45.71518711950741,
+              "mass_weighted": 1.9604678019989188,
+              "maximum_cell": 16.608417206689207
+            },
+            "final_vs_previous": {
+              "l2": 45.63342416867704,
+              "mass_weighted": 1.9619632278117045,
+              "maximum_cell": 16.608215978850307
+            },
+            "final_vs_final": {
+              "l2": 45.62888976570079,
+              "mass_weighted": 1.9606199561326498,
+              "maximum_cell": 16.60821556878801
+            }
+          },
+          "minimum_signal_norms": {
+            "l2": 0.17823785064726871,
+            "mass_weighted": 0.0076580773515582765,
+            "maximum_cell": 0.06487584206557817
+          },
+          "endpoint_spread_over_signal": {
+            "l2": 0.004902481707435845,
+            "mass_weighted": 0.008266751057453869,
+            "maximum_cell": 0.004422111106289214
+          },
+          "endpoint_signal_resolved": true,
+          "signal_tolerance": 0.1,
+          "strict_error_bound": false,
+          "exact_jacobian": false,
+          "baseline_replaced": false,
+          "material_step_promoted": false,
+          "eight_map_signal_drift_over_signal": {
+            "l2": 0.03771810868211926,
+            "mass_weighted": 0.05350381972913804,
+            "maximum_cell": 0.033704832078796876
+          },
+          "eight_map_signal_persistent": true
+        },
+        "from_78950_map16_signal": {
+          "signal_norms": {
+            "previous_vs_previous": {
+              "l2": 0.1785925381872424,
+              "mass_weighted": 0.007663274722973706,
+              "maximum_cell": 0.06487663131583685
+            },
+            "previous_vs_final": {
+              "l2": 0.17857494968557583,
+              "mass_weighted": 0.0076580773515582765,
+              "maximum_cell": 0.06487662971362972
+            },
+            "final_vs_previous": {
+              "l2": 0.17825556315889468,
+              "mass_weighted": 0.007663918858639471,
+              "maximum_cell": 0.06487584366738401
+            },
+            "final_vs_final": {
+              "l2": 0.17823785064726871,
+              "mass_weighted": 0.007658671703643163,
+              "maximum_cell": 0.06487584206557817
+            }
+          },
+          "finite_response_norms": {
+            "previous_vs_previous": {
+              "l2": 45.71968977593406,
+              "mass_weighted": 1.9617983290812688,
+              "maximum_cell": 16.608417616854233
+            },
+            "previous_vs_final": {
+              "l2": 45.71518711950741,
+              "mass_weighted": 1.9604678019989188,
+              "maximum_cell": 16.608417206689207
+            },
+            "final_vs_previous": {
+              "l2": 45.63342416867704,
+              "mass_weighted": 1.9619632278117045,
+              "maximum_cell": 16.608215978850307
+            },
+            "final_vs_final": {
+              "l2": 45.62888976570079,
+              "mass_weighted": 1.9606199561326498,
+              "maximum_cell": 16.60821556878801
+            }
+          },
+          "minimum_signal_norms": {
+            "l2": 0.17823785064726871,
+            "mass_weighted": 0.0076580773515582765,
+            "maximum_cell": 0.06487584206557817
+          },
+          "endpoint_spread_over_signal": {
+            "l2": 0.004902481707435845,
+            "mass_weighted": 0.008266751057453869,
+            "maximum_cell": 0.004422111106289214
+          },
+          "endpoint_signal_resolved": true,
+          "signal_tolerance": 0.1,
+          "strict_error_bound": false,
+          "exact_jacobian": false,
+          "baseline_replaced": false,
+          "material_step_promoted": false,
+          "eight_map_signal_drift_over_signal": {
+            "l2": 0.03771810868211926,
+            "mass_weighted": 0.05350381972913804,
+            "maximum_cell": 0.033704832078796876
+          },
+          "eight_map_signal_persistent": true
+        },
+        "late_direction_pass": true,
+        "fresh_baseline_comparison": {
+          "ratios": {
+            "previous_vs_previous": {
+              "l2": 0.9915751685812234,
+              "mass_weighted": 0.9919907778148411,
+              "maximum_cell": 1.0029626899700717
+            },
+            "previous_vs_final": {
+              "l2": 0.9915743765616623,
+              "mass_weighted": 0.9919771125914022,
+              "maximum_cell": 1.002962693216481
+            },
+            "final_vs_previous": {
+              "l2": 0.9915925212208592,
+              "mass_weighted": 0.9920431979833222,
+              "maximum_cell": 1.0029639716172092
+            },
+            "final_vs_final": {
+              "l2": 0.9915917291874377,
+              "mass_weighted": 0.9920295320377664,
+              "maximum_cell": 1.0029639748636225
+            }
+          },
+          "passed": false
+        },
+        "all_16_pair_gates": false,
+        "parent_peak_rss_bytes": 236793856
+      }
+    },
+    "population": {
+      "completed_maps": 0,
+      "active_map": false,
+      "last_map": null
+    }
+  }
+}
