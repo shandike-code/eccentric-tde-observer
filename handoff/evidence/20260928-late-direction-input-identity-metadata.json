@@ -1,0 +1,564 @@
+{
+  "observed_unix": 1790586377.4040022,
+  "config_path": "outputs/hpc/step21-late-direction-windows-20260928/control/config.json",
+  "large_claim_count": 55,
+  "unique_claim_count": 55,
+  "unique_paths": 55,
+  "unique_content_hashes": 55,
+  "unique_inodes": 55,
+  "declared_gib": 517.34375,
+  "shared_inode_groups": [],
+  "rows": [
+    {
+      "path": "outputs/hpc/constrained-hybrid-20260921/base-selected.dat",
+      "size_bytes": 10099884032,
+      "sha256": "6688940c6d0fc6b9edc213a4173b0746c9ba1d6d8f057e72f089e947d71184c0",
+      "device": 42,
+      "inode": 4240237582,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/constrained-hybrid-20260921/B-base/state_2.dat",
+      "sha256": "7c2873ed33fc66fc549fe80cdb14979ae44fde79d4e392c311e0858b8465cace",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3500414213,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/accepted-confirmation-20260921/confirm2/state_2.dat",
+      "sha256": "36b6f1c9ad590f97d11052b2726e508fc25db96dbcef009df0c9dba5c7301227",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4833075469,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/accepted-confirmation-20260921/confirm4/state_2.dat",
+      "sha256": "397ed4cac5f4c6e16025d894ee7018b25e6b2036790a287f44d02f3bc445f183",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4232534283,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/confirm2-then-step3-20260921/confirmation/confirm2/state_2.dat",
+      "sha256": "451ed69a3959ca5717d8570d5e0716a18044c00e76ab44bc17de812ffa740715",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3602486531,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/confirm2-then-step3-20260921/confirmation/confirm4/state_2.dat",
+      "sha256": "1cf3eb394bd608c77a3bdf82608717a29c149bdf767e8bf6ac4d5cb33de8e25b",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4253770510,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps456-20260921/step4/confirmation/confirm2/state_2.dat",
+      "sha256": "94264b4231c9b447fcf0b05e3f05ab57f93550370535ed9a58a9c766d9da68ad",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3846398468,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps456-20260921/step4/confirmation/confirm4/state_2.dat",
+      "sha256": "0ab5d87fb5b056bef96ca0d782745e44b70f9a021a7561dc4084ae9a851dc50e",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3597303809,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps456-20260921/step5/confirmation/confirm2/state_2.dat",
+      "sha256": "e970201c27c33f2e1145dc9f10700bec3ebf6518eaf56f1f59992922c8e10c0f",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4210792976,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps456-20260921/step5/confirmation/confirm4/state_2.dat",
+      "sha256": "390392e1931b7113d5d476685955a448a1751a372bd9e11e5f45f2c49e7cc22d",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4224551951,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps456-20260921/step6/confirmation/confirm2/state_2.dat",
+      "sha256": "a55012835a0cd26badec0c4ba3189d1a2b1214add67461ebfef6c04d4f10e630",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3501666566,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps456-20260921/step6/confirmation/confirm4/state_2.dat",
+      "sha256": "883352b727ee2d8d558162503bf43af8a93efcad151adf00b7d4936960f9d187",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3856716804,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps456-20260921/final-confirmation/confirm2/state_2.dat",
+      "sha256": "4b1c46b0a72974559281a432e67d4a90d111ef8c4fdb995429c5cb469c887c5f",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3606394627,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps456-20260921/final-confirmation/confirm4/state_2.dat",
+      "sha256": "be3d7fb36ef3232eba504a676042e89b3e424afdd0fbcd0b1ce6b8010c6ae946",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3432591106,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/confirm7-then-step8-20260922/confirmation/confirm2/state_2.dat",
+      "sha256": "55fb273297fa16ef40680425a1899686379dd94945dabdc2da7db3a0bc41f4de",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3524526341,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/confirm7-then-step8-20260922/confirmation/confirm4/state_2.dat",
+      "sha256": "9e3b06c925cdfebdb030005729baeec79739a8f5bd5ada285f276b4941a248f7",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4276898574,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps9to11-20260922/step9/confirmation/confirm2/state_2.dat",
+      "sha256": "78a0281d087be50b11d42d7547b6acb1b2e00ec972ba8aef6f85ebfeae3a5e28",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3879168772,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps9to11-20260922/step9/confirmation/confirm4/state_2.dat",
+      "sha256": "2f3c71a87a08323cfea42369b392900ab14cb98e363a30f74be2ab0d91916028",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3527753478,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps9to11-20260922/step10/confirmation/confirm2/state_2.dat",
+      "sha256": "58f578958cea24c86429f06174a174daa9cc62ef8f4a47fc827ea2f108f5b83c",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4398271756,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps9to11-20260922/step10/confirmation/confirm4/state_2.dat",
+      "sha256": "628da1193e61ef4bf90252b51ab008e35f16d321e6e0f3172d518b2a257749f2",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4152208650,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps9to11-20260922/step11/confirmation/confirm2/state_2.dat",
+      "sha256": "8bdc0b3bddd72bfcc0d63db77edc76ab989388aa876315e9169965c242053afa",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4217789448,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps9to11-20260922/step11/confirmation/confirm4/state_2.dat",
+      "sha256": "d2e840c395b92f1ed5a293f4a6c0a338d7aa4b354607938c2f17a4388cc3e302",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4286074123,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps9to11-20260922/final-confirmation/confirm2/state_2.dat",
+      "sha256": "59f420acb11c6cc76a2cbfa487e156fc664c65d96ff96a7f346283a98a56e089",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4411664396,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps9to11-20260922/final-confirmation/confirm4/state_2.dat",
+      "sha256": "99d8a2fcd74991a56811dd2546d29de0b6df5212a509afd1fca499ac95b276f7",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4288967691,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps13to15-20260922/step13/confirmation/confirm2/state_2.dat",
+      "sha256": "14eb802a18e9375db4cee137c3028fee3e95cd41d4311aa011074e5830585e17",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4165483018,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps13to15-20260922/step13/confirmation/confirm4/state_2.dat",
+      "sha256": "c7d7f97c0708d157955f0092883e3a89a275935a68a58089c11bef22c4d454f6",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3902663940,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps13to15-20260922/step14/confirmation/confirm2/state_2.dat",
+      "sha256": "5bd2de4170735a544d53497225cd16b8e6353677879255121e1caebdab8bd564",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4234368008,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps13to15-20260922/step14/confirmation/confirm4/state_2.dat",
+      "sha256": "1fc7d182f887002fd1551f8d8fb382875f0442359696a6ffe7469e1b37a2b443",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4235471880,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps13to15-20260922/step15/confirmation/confirm2/state_2.dat",
+      "sha256": "437d5d9d009ca8e7b7b6b7709757a7304a8dacc6efd95478bac4dad5f58ba588",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4289887759,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps13to15-20260922/step15/confirmation/confirm4/state_2.dat",
+      "sha256": "0ffef7a9beed4dea423d360392edbab4cdd0b5dcb5f07a774791ca65a7f8efed",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3663268097,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps13to15-20260922/final-confirmation/confirm2/state_2.dat",
+      "sha256": "d563221a0b0e152fc52751d5aae0e33c1203979fc9c1541be49cdf0c344a32b1",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4311151371,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/outer-steps13to15-20260922/final-confirmation/confirm4/state_2.dat",
+      "sha256": "c8ec705fc707c7e8de71e7692cbc09de6ba8f502a21553c245334d373a4e23ca",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4309990672,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/step16-backtrack-20260923/full/state_1.dat",
+      "sha256": "0ade66d388c90a18ce065867ea5dfccfce4fc6840084541d8af47f666b0c76a6",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3658217987,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/common-confirmation-20260923/confirm1/state_2.dat",
+      "sha256": "b845ba37e2806619492564dce6c0b6d20ec7bb9d35ee8e02120358d87c71da53",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4326942223,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/common-confirmation-20260923/confirm2/state_2.dat",
+      "sha256": "4c63f133dad83bcb99f6fbdae9f30e8dcf579d1d838f1137ac65173503bfc81f",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3932686340,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/common-confirmation17-20260924/confirm1/state_2.dat",
+      "sha256": "2074f47cd9fad5c59f42ea2775a1e80fd3a6834030733ccd068a9064adefddd7",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3938686468,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/common-step18-backtrack-20260924/control/state_1.dat",
+      "sha256": "593526236101956e5cc354218765b00a22f2f093a8039533408632a9a68919ee",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4450098695,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/common-confirmation18-20260924/confirm1/state_2.dat",
+      "sha256": "b613c8d2eb46dede186af2a0ba9725c8e2cb1ac49899e05c2d403d00cc2464f5",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3542565634,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/common-confirmation18-20260924/confirm2/state_2.dat",
+      "sha256": "6c81ab3035fc79e3253f4400496f4ff1e34106af39461b19aec13c11e1a15d2f",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4368685070,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/common-confirmation19-20260924/confirm1/state_2.dat",
+      "sha256": "2683919171a19749ce664659e23d91cfac1f1428ecbfb5688543d785ced8ccf4",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 3710426369,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/common-confirmation19-20260924/confirm2/state_2.dat",
+      "sha256": "7367715e274402ce458b7f422e142e28f6375da34ab6c59bc55556a8651d73fb",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4314705672,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/common-confirmation20-20260924/confirm1/state_2.dat",
+      "sha256": "d7206fa2e0b49a3ad85c767a48f352c5c287e25de2f0367aaefd39f9bc957df6",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4989169677,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/common-step21-probe-20260925/control/state_1.dat",
+      "sha256": "1e57240d0e64d03e9fe40561fd9e31f464f1baad010f2f6d7a64cd778eec24a9",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4330487304,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/common-step21-directions-20260925/control/state_1.dat",
+      "sha256": "674c4d69c38f940865a2bf3c09cb53aca28210279c24c2b763f28e5b888b3ecb",
+      "size_bytes": 10099884032,
+      "device": 42,
+      "inode": 4379165967,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/step21-radiation-affine-validation-20260925/control-affine-candidate.dat",
+      "size_bytes": 10099884032,
+      "sha256": "9b39a92fa14ece465890eea18e3290cff6f3f123bbbc1e81c766994ebc59f862",
+      "device": 42,
+      "inode": 4254402570,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/step21-positive-plane-validation-20260925/control-positive-plane-candidate.dat",
+      "size_bytes": 10099884032,
+      "sha256": "445b44ad80a02b3500894350fc9d08909cb0646dcd0252a98c0850742f7574f2",
+      "device": 42,
+      "inode": 3628474886,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/step21-positive-plane-validation-20260925/control/endpoints-map03/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "a852ff2519d13213add5f188c4ae4611a635acb1b77c73ed9ac728710c10cd24",
+      "device": 42,
+      "inode": 3718441731,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/step21-control-windows-20260925/control/endpoints-map08/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "39ad33948a06777f0a29569255e14dda8df37e84a1615dfc2a836df5e1022d0d",
+      "device": 42,
+      "inode": 7326941961,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/step21-wide-plane-validation-20260925/wide-plane-candidate.dat",
+      "size_bytes": 10099884032,
+      "sha256": "cf9f91e29ddae30e6fcb5beb22948aadc0d07847adf83b7eeae25cb79b7b071a",
+      "device": 42,
+      "inode": 4426571791,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/step21-heating-validation-20260926/heating-projection-candidate.dat",
+      "size_bytes": 10099884032,
+      "sha256": "40d1ea92b95447475c54f82fbfd91c88a724ab19ac3fb647e7d9ffd5094846c0",
+      "device": 42,
+      "inode": 3609533442,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/step21-seven-short-validation-20260927/full-candidate.dat",
+      "size_bytes": 10099884032,
+      "sha256": "631abb9fbc6947b51fe4d208ddaadb2bdc111b80989d7059c0c5cb088863321c",
+      "device": 42,
+      "inode": 4463032846,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/step21-seven-refresh-short-validation-20260927/full-candidate.dat",
+      "size_bytes": 10099884032,
+      "sha256": "c1faddfa285e1f7f75e389a4bffbbf088223d8e8e3abf4843adf8c3d17e8f948",
+      "device": 42,
+      "inode": 4328650762,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/step21-seven-refresh-short-validation-20260927/control/endpoints-map10/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "21e17d2fc6382b35471f0e514bb52f47222ea1279e8dd36333af4dd681ef16b0",
+      "device": 42,
+      "inode": 3808597761,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/step21-stationarity-confirmation-20260927/control/endpoints-map16/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "87e18e8dbbeb70779712fc49f9ae9f827991619e9ddbc7e7717565708de826c7",
+      "device": 42,
+      "inode": 4639474700,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    },
+    {
+      "path": "outputs/hpc/step21-refreshed-directions-20260928/control/endpoints-map16/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "2cb5320984731a38300c43a58ef9c38cd4bf917155ba2fad94bd69af2510e0cb",
+      "device": 42,
+      "inode": 4468875536,
+      "actual_size": 10099884032,
+      "nlink": 1,
+      "symlink": false
+    }
+  ],
+  "large_bytes_rehashed": false
+}
