@@ -1,4 +1,6 @@
 from copy import deepcopy
+import json
+from pathlib import Path
 import numpy as np
 import pytest
 from handoff.audit_tools import review_refreshed_directions as a
@@ -73,3 +75,17 @@ def plan():
 def test_wrong_protocol_and_budget_rejected(field,value):
     p=plan();a.verify_plan(p,{'sha256':'frozen'});p[field]=value
     with pytest.raises(AssertionError):a.verify_plan(p,{'sha256':'frozen'})
+
+
+@pytest.mark.parametrize('child',['thermal','population'])
+def test_real_finite_feedback_report_can_be_saved_as_strict_json(child):
+    root=Path('outputs/review-20260925/step21-positive-validation-77126-complete-received')
+    if not root.exists():pytest.skip('requires received historical evidence')
+    reference=Path('outputs/review-20260925/common-step21-76808-received/inputs')
+    old=Path('outputs/review-20260921/common-feedback-bridge-75943-received/inputs/physical_old_time_level.npz')
+    report,_,receipts=a.audit_pair(root,3,reference,old,root/'inputs'/child/'trial_material.npz',child)
+    saved=json.loads(json.dumps(report,allow_nan=False))
+    assert len(saved['gate_checks'])==16 and len(receipts)==152
+    assert len(saved['comparison']['photoionization_volume_l1'])==3
+    assert len(saved['comparison']['total_recombination_volume_l1'])==3
+    assert isinstance(saved['comparison']['atomic_heating_volume_l1'],float)

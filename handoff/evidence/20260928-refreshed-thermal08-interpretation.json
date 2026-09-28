@@ -1,0 +1,190 @@
+{
+  "scope": "Audited residual arrays; cell indices are not an asserted physical depth",
+  "archive": {
+    "path": "outputs/hpc/step21-refreshed-directions-20260928/archives/thermal-map08-feedback-1790571500142230365.tar.gz",
+    "size_bytes": 154113037,
+    "sha256": "247b4e10210debfc4c0c8771e9ee5f30dc6721be96f1d714f465a69b119a4901"
+  },
+  "accepted_outer_steps": 20,
+  "cases": {
+    "control": {
+      "previous": {
+        "response_sha256": "b2837270d2e2219cfb7bdeb14b5735183a91e681332e63a181e78623730110b3",
+        "norms_over_r20": {
+          "l2": 1.0108202320223083,
+          "mass_weighted": 1.0773187616739588,
+          "maximum_cell": 1.0002619608685983
+        },
+        "worst_cell_index": 2,
+        "worst_cell_vector": [
+          2.5491336408658753,
+          0.4431443905317245,
+          0.04170623441938304,
+          0.7903584090539211
+        ],
+        "squared_component_fractions": [
+          0.8876112638357861,
+          0.026824282147261,
+          0.00023759623582276284,
+          0.08532685778112996
+        ],
+        "minimum_gas_erg_g": 7023789576976.387
+      },
+      "final": {
+        "response_sha256": "b8567534cb0de3c7b1c82ab62b16a430f52967fd899a9a868454df97ccfdcccd",
+        "norms_over_r20": {
+          "l2": 1.010820885980239,
+          "mass_weighted": 1.0773342074260939,
+          "maximum_cell": 1.0002619507142638
+        },
+        "worst_cell_index": 2,
+        "worst_cell_vector": [
+          2.5491336124014268,
+          0.44314438659009525,
+          0.0417062344041792,
+          0.7903584090387177
+        ],
+        "squared_component_fractions": [
+          0.8876112620345613,
+          0.026824282214696786,
+          0.00023759624047353306,
+          0.08532685951026837
+        ],
+        "minimum_gas_erg_g": 7023742423521.707
+      }
+    },
+    "thermal": {
+      "previous": {
+        "response_sha256": "2181da5ef04ce17ffe0030ed715dcab205b07e9b08b0d8eb3bbb8ba46cc1215f",
+        "norms_over_r20": {
+          "l2": 1.0027010707969852,
+          "mass_weighted": 1.0693891424340516,
+          "maximum_cell": 1.0031926007504923
+        },
+        "worst_cell_index": 1,
+        "worst_cell_vector": [
+          2.476640650014435,
+          0.49403349241375416,
+          0.03536162046560776,
+          0.9923496831373275
+        ],
+        "squared_component_fractions": [
+          0.8329567574159847,
+          0.0331443301890509,
+          0.00016980902922339612,
+          0.1337291033657409
+        ],
+        "minimum_gas_erg_g": 7007463017185.4
+      },
+      "final": {
+        "response_sha256": "92ff2565cfd099f82ab81936facadc74f20bc481ffcc67487a6f59c0b963f0cb",
+        "norms_over_r20": {
+          "l2": 1.00244982726393,
+          "mass_weighted": 1.0689882395889976,
+          "maximum_cell": 1.0031788127575407
+        },
+        "worst_cell_index": 1,
+        "worst_cell_vector": [
+          2.476604991128319,
+          0.4940064195849114,
+          0.03536208710107225,
+          0.9923501497654357
+        ],
+        "squared_component_fractions": [
+          0.832955667939012,
+          0.03314160869550932,
+          0.0001698181788552451,
+          0.13373290518662348
+        ],
+        "minimum_gas_erg_g": 7000506221769.67
+      }
+    }
+  },
+  "thermal_signal": {
+    "signal_norms": {
+      "previous_vs_previous": {
+        "l2": 0.16845299435727853,
+        "mass_weighted": 0.007033355703412615,
+        "maximum_cell": 0.06489846449679003
+      },
+      "previous_vs_final": {
+        "l2": 0.16843041520755306,
+        "mass_weighted": 0.007027350087196368,
+        "maximum_cell": 0.06489845938331815
+      },
+      "final_vs_previous": {
+        "l2": 0.17332269753924762,
+        "mass_weighted": 0.00723506737598381,
+        "maximum_cell": 0.06490634862758447
+      },
+      "final_vs_final": {
+        "l2": 0.17330005318374772,
+        "mass_weighted": 0.007229213180945602,
+        "maximum_cell": 0.06490634350041194
+      }
+    },
+    "finite_response_norms": {
+      "previous_vs_previous": {
+        "l2": 43.123966555463305,
+        "mass_weighted": 1.8005390600736295,
+        "maximum_cell": 16.614006911178247
+      },
+      "previous_vs_final": {
+        "l2": 43.11818629313358,
+        "mass_weighted": 1.7990016223222702,
+        "maximum_cell": 16.614005602129446
+      },
+      "final_vs_previous": {
+        "l2": 44.37061057004739,
+        "mass_weighted": 1.8521772482518553,
+        "maximum_cell": 16.616025248661625
+      },
+      "final_vs_final": {
+        "l2": 44.36481361503942,
+        "mass_weighted": 1.8506785743220742,
+        "maximum_cell": 16.616023936105456
+      }
+    },
+    "minimum_signal_norms": {
+      "l2": 0.16843041520755306,
+      "mass_weighted": 0.007027350087196368,
+      "maximum_cell": 0.06489845938331815
+    },
+    "endpoint_spread_over_signal": {
+      "l2": 0.041078722077083865,
+      "mass_weighted": 0.045007034852985114,
+      "maximum_cell": 0.040228442490016995
+    },
+    "endpoint_signal_resolved": true,
+    "signal_tolerance": 0.1,
+    "strict_error_bound": false,
+    "exact_jacobian": false,
+    "baseline_replaced": false,
+    "material_step_promoted": false
+  },
+  "thermal_cross": {
+    "ratios": {
+      "previous_vs_previous": {
+        "l2": 0.9919677495877983,
+        "mass_weighted": 0.9926394865456662,
+        "maximum_cell": 1.002929872369983
+      },
+      "previous_vs_final": {
+        "l2": 0.9919671078270416,
+        "mass_weighted": 0.9926252550626566,
+        "maximum_cell": 1.0029298825514015
+      },
+      "final_vs_previous": {
+        "l2": 0.9917191954679894,
+        "mass_weighted": 0.9922673563467723,
+        "maximum_cell": 1.0029160879880001
+      },
+      "final_vs_final": {
+        "l2": 0.9917185538680364,
+        "mass_weighted": 0.9922531301989974,
+        "maximum_cell": 1.0029160981692786
+      }
+    },
+    "passed": false
+  }
+}

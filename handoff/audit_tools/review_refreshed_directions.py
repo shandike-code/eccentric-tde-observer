@@ -125,6 +125,8 @@ def audit_pair(out,n,reference,physical_old,input_trial,child="control"):
     for k,value in comparison.items():np.testing.assert_allclose(value,s['comparison'][k],rtol=1e-12,atol=0)
     assert post['material_step_promoted'] is False and post['accepted_outer_steps_remain']==20
     assert np.array_equal(vectors['final'],np.load(folder/'material_residual.npy',allow_pickle=False))
+    # 有限试探的率比较来自dataclass，含ndarray；显式转列表，不放宽非有限值检查。
+    comparison={k:v.tolist() if isinstance(v,np.ndarray) else v for k,v in comparison.items()}
     return {'endpoints':ends,'comparison':comparison,'gate_checks':checks},vectors,peaks
 
 
