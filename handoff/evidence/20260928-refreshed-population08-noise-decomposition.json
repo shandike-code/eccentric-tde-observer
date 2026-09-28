@@ -1,0 +1,109 @@
+{
+  "audit_sha256": "dfded0d822b68b9d5b33bd7956f8335db8cf290c2af26365ba7a72bb5deb236b",
+  "response_claims": {
+    "control/previous": {
+      "path": "outputs/review-20260925/refreshed-directions-78950-population08-received/control/pair08/previous_response.npz",
+      "sha256": "b2837270d2e2219cfb7bdeb14b5735183a91e681332e63a181e78623730110b3"
+    },
+    "control/final": {
+      "path": "outputs/review-20260925/refreshed-directions-78950-population08-received/control/pair08/final_response.npz",
+      "sha256": "b8567534cb0de3c7b1c82ab62b16a430f52967fd899a9a868454df97ccfdcccd"
+    },
+    "thermal/previous": {
+      "path": "outputs/review-20260925/refreshed-directions-78950-population08-received/thermal/pair08/previous_response.npz",
+      "sha256": "2181da5ef04ce17ffe0030ed715dcab205b07e9b08b0d8eb3bbb8ba46cc1215f"
+    },
+    "thermal/final": {
+      "path": "outputs/review-20260925/refreshed-directions-78950-population08-received/thermal/pair08/final_response.npz",
+      "sha256": "92ff2565cfd099f82ab81936facadc74f20bc481ffcc67487a6f59c0b963f0cb"
+    },
+    "population/previous": {
+      "path": "outputs/review-20260925/refreshed-directions-78950-population08-received/population/pair08/previous_response.npz",
+      "sha256": "6104eddba21f84611fca3af8e7775e8b48069d3a38bf33a6ee898029c16131d2"
+    },
+    "population/final": {
+      "path": "outputs/review-20260925/refreshed-directions-78950-population08-received/population/pair08/final_response.npz",
+      "sha256": "60c60dec84856f0f369988abd633a16e4f9d9360ee5e012b75354a28adf37eab"
+    }
+  },
+  "r20_sha256": "b6f337ce30d323acada31ea9f3e1772ccb2be1075753f432ab13a8e299ee2a45",
+  "old_time_sha256": "33f248d5cf35ac07fffd139e1cd99d4edefa590debf7e109f67f2dbc57adf455",
+  "norm_order": [
+    "l2",
+    "mass_weighted",
+    "maximum_cell"
+  ],
+  "scope": "Compare the unchanged original L2 noise gate with the additional matched-control signal diagnostic; neither is a rigorous error bound.",
+  "control_endpoint_spread": [
+    0.0001128344029264735,
+    1.403735846866069e-05,
+    2.3509068170604884e-05
+  ],
+  "control_final_minus_r20_norms": [
+    0.9772752488923061,
+    0.10243223402507146,
+    0.1318273937377275
+  ],
+  "cases": {
+    "thermal": {
+      "candidate_endpoint_spread": [
+        0.0068060718127124385,
+        0.00030224283182991423,
+        0.002587254872821913
+      ],
+      "original_signal_candidate_final_minus_r20_norms": [
+        0.9673830769594176,
+        0.10367333675249273,
+        0.1401083210888627
+      ],
+      "matched_control_minimum_signal_norms": [
+        0.16843041520755306,
+        0.007027350087196368,
+        0.06489845938331815
+      ],
+      "original_l2_noise_ratio": 0.007035549799056447,
+      "new_three_norm_noise_ratios": [
+        0.041078722077083865,
+        0.045007034852985114,
+        0.040228442490016995
+      ],
+      "candidate_final_norms_over_r20": [
+        1.00244982726393,
+        1.0689882395889976,
+        1.0031788127575407
+      ],
+      "worst_cell_index": 1,
+      "step_promoted": false
+    },
+    "population": {
+      "candidate_endpoint_spread": [
+        0.006865846736075526,
+        0.00033601546132547516,
+        0.0026608682785563744
+      ],
+      "original_signal_candidate_final_minus_r20_norms": [
+        0.9434503836473557,
+        0.1007926458261593,
+        0.13061055345886327
+      ],
+      "matched_control_minimum_signal_norms": [
+        0.06444712379473265,
+        0.0033826752243398877,
+        0.028380128272746944
+      ],
+      "original_l2_noise_ratio": 0.007277379770128805,
+      "new_three_norm_noise_ratios": [
+        0.10828537765671983,
+        0.10348401681466388,
+        0.09458651211611156
+      ],
+      "candidate_final_norms_over_r20": [
+        1.0089605575522387,
+        1.0732683809695336,
+        0.9996923617895651
+      ],
+      "worst_cell_index": 2,
+      "step_promoted": false
+    }
+  }
+}
