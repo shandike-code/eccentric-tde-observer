@@ -91,7 +91,7 @@ def main():
         l2_ratios=l2,linf_ratios=linf,boundary_l1=l1,boundary_bolometric=bol,checks=checks,
         all_predicted_checks_passed=all(checks.values()),gram_to_field_squared_relative_differences=differences,gram_to_field_absolute_roundoff_bounds=bounds,
         original_nonincrease_bolometric=original['boundary_bolometric'],peak_rss_bytes=s['peak_rss_bytes'],wall_s=s['wall_s'],
-        raw_arrays_read_on_mac=False,independent_small_statistic_reduction=True,actual_map_required=True,new_material_steps=0)
+        raw_arrays_read_on_mac=False,independent_small_statistic_reduction=True,actual_map_required=True,accepted_outer_steps=20,new_material_steps=0)
     target=Path('handoff/evidence/20260928-boundary-proposal-independent-review');target.with_suffix('.json').write_text(json.dumps(result,indent=2)+'\n')
     import matplotlib.pyplot as plt
     grid=np.linspace(lo,hi,121);bg=intercept+slope*grid

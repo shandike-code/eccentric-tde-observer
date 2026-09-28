@@ -1,0 +1,36 @@
+{
+  "job_id": 80005,
+  "state": "COMPLETED",
+  "scontrol": "JobId=80005 JobName=tde-boundary-proposal UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:08:52 TimeLimit=00:30:00 TimeMin=N/A SubmitTime=2026-09-28T22:53:06 EligibleTime=2026-09-28T22:53:06 AccrueTime=2026-09-28T22:53:06 StartTime=2026-09-28T22:53:07 EndTime=2026-09-28T23:01:59 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-28T22:53:07 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2334013 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode18 BatchHost=anode18 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/boundary_constrained_proposal.sbatch SubmitLine=sbatch --parsable operations/boundary_constrained_proposal.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-boundary-proposal-80005.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-boundary-proposal-80005.out TresPerTask=cpu=4\n",
+  "observed_unix": 1790607758.9548466,
+  "status": {
+    "status": "complete_requires_review"
+  },
+  "summary": {
+    "status": "complete_requires_review",
+    "coefficients": {
+      "a": 0.4892755093069306,
+      "b": 1.0,
+      "interval": [
+        0.0,
+        0.4892755093069306
+      ],
+      "unconstrained_a": 0.9207745019346215,
+      "predicted_squared_l2": 2.8118028596948947e-10,
+      "predicted_signed_flux": 0.0,
+      "boundary_neutral_constraint": true
+    },
+    "all_predicted_checks_passed": true,
+    "wall_s": 519.1741792196408,
+    "peak_rss_bytes": 1163288576,
+    "source_unchanged": true,
+    "source_job_id": 79878,
+    "field_scans": 2,
+    "new_maps": 0,
+    "new_feedback_pairs": 0,
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "production_candidate_written": false,
+    "operator_recomputed": false
+  }
+}
