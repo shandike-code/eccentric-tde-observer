@@ -1,0 +1,103 @@
+{
+  "archive": {
+    "path": "outputs/hpc/step21-late-population-pilot-20260928/archives/complete-1790594806309787304.tar.gz",
+    "size_bytes": 99636,
+    "sha256": "ac5a216be7b8fb908e7d34d3591eb63fd4ff69f96507da786c36fc3e0e717831"
+  },
+  "verified_files": 13,
+  "verified_code_claims": 736,
+  "rows": [
+    {
+      "warning": "",
+      "block": 37,
+      "local_arrays": {
+        "path": "outputs/hpc/step21-late-population-pilot-20260928/population-block37-local.npz",
+        "size_bytes": 1879048728,
+        "sha256": "ab20f3a939e3894d9998e3fb387b94344eea221a94dce51bc253b62726531703"
+      },
+      "l2_ratio": 0.01636612036245365,
+      "linf_ratio": 0.05975301614027145,
+      "checks": {
+        "l2_halved": true,
+        "linf_halved": true,
+        "useful_step": true,
+        "affine_prediction": true,
+        "boundary_not_worse": true,
+        "finite_budget": true,
+        "memory_below_32gib": true,
+        "time_below_24_maps": true,
+        "independent_half_affinity": true
+      },
+      "local_candidate_min": 9.649608937266349e-08,
+      "local_mapped_min": 9.649608981259465e-08,
+      "raw_map_s": 69.74693343788385,
+      "wall_s": 1275.475652910769,
+      "half_affinity_over_raw_l2": 3.779766594528857e-09,
+      "observed_peak_kib": 21226888,
+      "gmres_info": 2,
+      "gmres_iterations": 16,
+      "linear_audit_passed": false,
+      "full_step": true,
+      "zero_prediction_error_is_not_independent_half_probe": true
+    },
+    {
+      "warning": "",
+      "block": 44,
+      "local_arrays": {
+        "path": "outputs/hpc/step21-late-population-pilot-20260928/population-block44-local.npz",
+        "size_bytes": 1879048728,
+        "sha256": "cddafebe994bda5cfc20ad3958fc2da1158854f4278dfad9b093eb9b5694edf5"
+      },
+      "l2_ratio": 0.08430637658466895,
+      "linf_ratio": 0.23055178239936736,
+      "checks": {
+        "l2_halved": true,
+        "linf_halved": true,
+        "useful_step": true,
+        "affine_prediction": true,
+        "boundary_not_worse": true,
+        "finite_budget": true,
+        "memory_below_32gib": true,
+        "time_below_24_maps": true,
+        "independent_half_affinity": true
+      },
+      "local_candidate_min": 2.955610126811984e-09,
+      "local_mapped_min": 2.955610126811984e-09,
+      "raw_map_s": 69.62028416525573,
+      "wall_s": 1247.8056272026151,
+      "half_affinity_over_raw_l2": 4.421377382415534e-09,
+      "observed_peak_kib": 20935824,
+      "gmres_info": 2,
+      "gmres_iterations": 16,
+      "linear_audit_passed": false,
+      "full_step": true,
+      "zero_prediction_error_is_not_independent_half_probe": true
+    }
+  ],
+  "source_job_id": 79151,
+  "job_id": 79296,
+  "frozen_material_case": "population",
+  "refreshed_halo": true,
+  "source_pair": [
+    {
+      "path": "outputs/hpc/step21-late-direction-windows-20260928/population/endpoints-map08/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "a6addd2bd50f55ebc222bfbcc4d992f8c34d518ddc96e65f1b37b3e074a41151"
+    },
+    {
+      "path": "outputs/hpc/step21-late-direction-windows-20260928/population/endpoints-map08/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "b37287a5418eb6c34bb8cd1e83f2509f630ca69d9b3f27fa39c962a2ecdc3c8a"
+    }
+  ],
+  "all_local_cases_passed": true,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "raw_input_output_blocks_present_on_mac": false,
+  "raw_l2_independently_recomputed": false,
+  "fresh_l2_and_linf_independently_recomputed": false,
+  "local_boundary_flux_independently_recomputed": false,
+  "operator_recomputed_on_mac": false,
+  "half_operator_recomputed_on_mac": false,
+  "global_validation_required": true
+}
