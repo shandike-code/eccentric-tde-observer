@@ -41,3 +41,7 @@ PYTHONPATH=.:src:scripts MPLBACKEND=Agg .venv/bin/python handoff/audit_tools/rev
 如两个晚期窗口最终均通过，再审查新的混合方向是否有三范数共同下降证据；另声明候选、真实映射反馈和同态确认，不能自动接受21。若失败，分解候选与控制变化，禁止无限重复同配置。没有自洽大气/整盘I_nu，不给未经验证的完成时间。
 
 Mac备份`pre-refreshed-complete-review-20260928.bundle`，学校备份`pre-late-direction-20260928.bundle`，代码以增量bundle快进；GitHub已验证eecd62a。旧自动化全文备份`automation-before-late-direction-79151.toml`，均在`outputs/review-20260925`。只同步代码/报告/小工件，不传回或删除学校大场。
+
+启动I/O补充：16:29:08仍RUNNING/10:04，control初始化0map。随后只读检查发现control/config.json继承55条>1GiB来源声明，按条目累计517.34375GiB；包含重复来源，不是新增存储占用。native_trial_audit.json已存在，三个工作态尚未创建。结合hpc/pipeline.py的执行顺序，这是进入run_pipeline后、创建工作态前的完整来源哈希阶段。不能据此声称死锁或物理失败。当前源码/配置冻结，不在运行中去重；未来另起版本可评估在保留每条身份断言的前提下避免同一字节重复读取。父stderr仍0，未有首map或新反馈结果。
+
+独立审计与启动记录已同步到Mac/学校/GitHub的62abdc4；定时任务已切换到79151，每30分钟ACTIVE，健康静默、实质变化或需重连通知。这个文档后续补充不改变数值运行eecd62a。
