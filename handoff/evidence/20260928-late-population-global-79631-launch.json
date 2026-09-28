@@ -1,0 +1,57 @@
+{
+  "job_id": 79631,
+  "run": "outputs/hpc/step21-late-population-global-20260928",
+  "frozen_commit": "7f56c529e93aa7929c9e27f45cb7a10e6d29ee8e",
+  "scontrol": "JobId=79631 JobName=tde-pop-global UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:03:21 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-09-28T20:10:49 EligibleTime=2026-09-28T20:10:49 AccrueTime=2026-09-28T20:10:49 StartTime=2026-09-28T20:10:50 EndTime=2026-09-29T02:10:50 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-28T20:10:50 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:82672 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode16 BatchHost=anode16 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/validate_late_population_global.sbatch SubmitLine=sbatch --parsable operations/validate_late_population_global.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-pop-global-79631.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-pop-global-79631.out TresPerTask=cpu=32\n",
+  "scheduler_stderr": "",
+  "observed_unix": 1790597651.3673458,
+  "status": {
+    "status": "writing_candidates",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790597540.474157
+  },
+  "summary": null,
+  "declaration_exists": true,
+  "cases": {
+    "population": {
+      "maps": 0,
+      "active_map": null,
+      "last": null
+    }
+  },
+  "stderr_bytes": 0,
+  "stderr": "",
+  "watch_latest": {
+    "job_id": 79631,
+    "scheduler_state": "RUNNING",
+    "scontrol": "JobId=79631 JobName=tde-pop-global UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:02:42 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-09-28T20:10:49 EligibleTime=2026-09-28T20:10:49 AccrueTime=2026-09-28T20:10:49 StartTime=2026-09-28T20:10:50 EndTime=2026-09-29T02:10:50 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-28T20:10:50 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:82672 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode16 BatchHost=anode16 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/validate_late_population_global.sbatch SubmitLine=sbatch --parsable operations/validate_late_population_global.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-pop-global-79631.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-pop-global-79631.out TresPerTask=cpu=32\n",
+    "scheduler_stderr": "",
+    "observed_unix": 1790597612.2967858,
+    "status": {
+      "status": "writing_candidates",
+      "accepted_outer_steps": 20,
+      "new_material_steps": 0,
+      "updated_unix": 1790597540.474157
+    },
+    "cases": {
+      "control": {},
+      "population": {
+        "completed_maps": 0,
+        "active_map": false,
+        "last_map": null
+      },
+      "half": {}
+    }
+  },
+  "watch_terminal": null,
+  "tmux_watch_active": true,
+  "cli": {
+    "file": "claude-review-00.json",
+    "is_error": false,
+    "models": [
+      "deepseek-v4-flash[1m]"
+    ],
+    "result": "79631（tde-pop-global）RUNNING：anode16单节点32CPU/128G，已运行33秒，6小时硬限至09-29 02:10。status=preparing，accepted_outer_steps=20，new_material_steps=0；control/population/half三组均空。76块map、全L2降20%、Linf非增、half仿射与边界原门均无数据可判；亦无S=P-C、端点散布<.1、三范数漂移<.001及八map信号漂移证据，无自洽柱或整盘I_nu完成证据。历史78594/78950/79151失败保留，r20与dt不变，接受20不变、无第21自动接受。继续只读等候，出图后按control2→population2→control10→population10顺序核对，失败即停待Codex审阅。"
+  }
+}
