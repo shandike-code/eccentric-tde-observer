@@ -1,0 +1,9 @@
+{
+  "run": "outputs/hpc/step21-boundary-seed-response-20260929",
+  "commit": "994d5e19f84898e68ad0cecbcb66323d4b013700",
+  "submitted_unix": 1790611649.2042265,
+  "returncode": 0,
+  "stdout": "80195\n",
+  "stderr": "",
+  "job_id": 80195
+}
