@@ -1,0 +1,48 @@
+{
+  "observed_at": "2026-09-28T11:34:51.792324+08:00",
+  "job_id": 78950,
+  "scontrol": "JobId=78950 JobName=tde-refresh-dir UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:03:35 TimeLimit=08:00:00 TimeMin=N/A SubmitTime=2026-09-28T11:31:15 EligibleTime=2026-09-28T11:31:15 AccrueTime=2026-09-28T11:31:15 StartTime=2026-09-28T11:31:16 EndTime=2026-09-28T19:31:16 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-28T11:31:16 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:1798618 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode20 BatchHost=anode20 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/remeasure_step21_directions.sbatch SubmitLine=sbatch --parsable operations/remeasure_step21_directions.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-refresh-dir-78950.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-refresh-dir-78950.out TresPerTask=cpu=32\n",
+  "git_commit": "579be9bd2dad6770ac0f7db63efc8ed00189f01b",
+  "status": {
+    "status": "preparing",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790566298.3238735
+  },
+  "declaration": {
+    "source_job": 78594,
+    "seed": {
+      "path": "outputs/hpc/step21-stationarity-confirmation-20260927/control/endpoints-map16/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "87e18e8dbbeb70779712fc49f9ae9f827991619e9ddbc7e7717565708de826c7"
+    },
+    "maximum_maps": 48,
+    "maximum_feedback_pairs": 6,
+    "automatic_promotion": false,
+    "baseline_replacement_authorized": false,
+    "physical_dt_changed": false
+  },
+  "control": {
+    "maps": 0,
+    "active_map": false,
+    "status": "initializing"
+  },
+  "stderr_bytes": 0,
+  "stderr": "",
+  "cli": {
+    "modelUsage": {
+      "deepseek-v4-flash[1m]": {
+        "inputTokens": 2499,
+        "outputTokens": 357,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 0.02142,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 32000
+      }
+    },
+    "result": "监督记录（只读，78950）：作业于11:31:16启动，现RUNNING，已跑33秒，8小时硬限，预计19:31:16结束。资源32CPU/128GiB单节点anode20，16worker配置，与既定方案一致。\n\n状态字段为preparing，三组（control/thermal/population）cases均空，尚未产出map；new_material_steps=0，accepted_outer_steps=20不变。control须先过原七门、原r20尺度窗口与累计.001门方可继续，方向固定原r20分量、幅度1/256。有限方向原16门失败属诊断结果，不自动接受；物理域/代码/资源失败应停不重试。信号为候选减同期控制完整残差向量，端点及八map漂移或信号小于.1均非严格误差界/Jacobian证明。终态待Mac审核，不宣称耦合柱/整盘I_nu完成；未知不补造。当前无异常，继续观察。",
+    "is_error": false
+  }
+}

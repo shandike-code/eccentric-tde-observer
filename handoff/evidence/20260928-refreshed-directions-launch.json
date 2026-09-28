@@ -1,0 +1,14 @@
+{
+  "submitted_at": "2026-09-28T11:31:15.189742+08:00",
+  "run": "outputs/hpc/step21-refreshed-directions-20260928",
+  "code_commit": "579be9bd2dad6770ac0f7db63efc8ed00189f01b",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "operations/remeasure_step21_directions.sbatch"
+  ],
+  "returncode": 0,
+  "stdout": "78950\n",
+  "stderr": "",
+  "job_id": 78950
+}

@@ -1,0 +1,45 @@
+{
+  "source_job": 78594,
+  "seed": {
+    "path": "outputs/hpc/step21-stationarity-confirmation-20260927/control/endpoints-map16/mapped_final.dat",
+    "size_bytes": 10099884032,
+    "sha256": "87e18e8dbbeb70779712fc49f9ae9f827991619e9ddbc7e7717565708de826c7"
+  },
+  "cases": {
+    "control": {
+      "exact_trial": true,
+      "native_identity": true,
+      "original_gates_unchanged": true,
+      "zero_authorization": true,
+      "trial": {
+        "path": "outputs/review-20260925/refreshed-directions-preflight-20260928/control-trial.npz",
+        "size_bytes": 27774,
+        "sha256": "36434a29123e2387195b77713baffaecd046f7d6c0297a5d0d95a74319e22eda"
+      }
+    },
+    "thermal": {
+      "exact_trial": true,
+      "native_identity": true,
+      "original_gates_unchanged": true,
+      "zero_authorization": false,
+      "trial": {
+        "path": "outputs/review-20260925/refreshed-directions-preflight-20260928/thermal-trial.npz",
+        "size_bytes": 27774,
+        "sha256": "814dd11e080a2ae12138e2ca0ab798b221ada94797059cb36ac7ad151afc5d0e"
+      }
+    },
+    "population": {
+      "exact_trial": true,
+      "native_identity": true,
+      "original_gates_unchanged": true,
+      "zero_authorization": false,
+      "trial": {
+        "path": "outputs/review-20260925/refreshed-directions-preflight-20260928/population-trial.npz",
+        "size_bytes": 27774,
+        "sha256": "b60fd79e254f87a42455fd88a0e16e6b51d7abcb95e53257c969e5ad56810da4"
+      }
+    }
+  },
+  "large_seed_bytes_verified": false,
+  "physics_map_run": false
+}
