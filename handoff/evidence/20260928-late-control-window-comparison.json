@@ -1,0 +1,61 @@
+{
+  "rows": [
+    {
+      "maps_since_78594": 8,
+      "local": [
+        0.00012737689057375253,
+        0.000490227101058053,
+        7.949929277480606e-05
+      ],
+      "historical": [
+        0.00012737689057375253,
+        0.000490227101058053,
+        7.949929277480606e-05
+      ]
+    },
+    {
+      "maps_since_78594": 16,
+      "local": [
+        0.00012129728203243743,
+        0.0004734807399555816,
+        7.671838132954499e-05
+      ],
+      "historical": [
+        0.00023468486721781617,
+        0.0009099780079968491,
+        0.00014752670975153216
+      ]
+    },
+    {
+      "maps_since_78594": 24,
+      "local": [
+        0.00011564683017912077,
+        0.0004549028328967011,
+        7.353387390377349e-05
+      ],
+      "historical": [
+        0.000336864811243958,
+        0.0013130481707491642,
+        0.00021270905927734106
+      ]
+    }
+  ],
+  "norm_order": [
+    "L2",
+    "mass weighted",
+    "maximum cell"
+  ],
+  "tolerance": 0.001,
+  "sources": [
+    {
+      "path": "handoff/evidence/20260928-refreshed-directions-complete-review.json",
+      "sha256": "eeb74286de430ad985cced42447dc3602948959afc008633040e939f13370974"
+    },
+    {
+      "path": "handoff/evidence/20260928-late-direction-control08-review.json",
+      "sha256": "9b1e4d298f8eeed1f29c9800c191a5251c6f687827e87fb96ed5ccf120528301"
+    }
+  ],
+  "physical_time_advanced": false,
+  "strict_error_bound": false
+}

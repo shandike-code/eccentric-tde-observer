@@ -1,0 +1,145 @@
+{
+  "job_id": 79151,
+  "scheduler_state": "RUNNING",
+  "scontrol": "JobId=79151 JobName=tde-late-dir UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:57:12 TimeLimit=08:00:00 TimeMin=N/A SubmitTime=2026-09-28T16:19:02 EligibleTime=2026-09-28T16:19:03 AccrueTime=2026-09-28T16:19:03 StartTime=2026-09-28T16:19:04 EndTime=2026-09-29T00:19:04 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-28T16:19:04 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:1035782 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode18 BatchHost=anode18 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/confirm_late_direction_windows.sbatch SubmitLine=sbatch --parsable operations/confirm_late_direction_windows.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-late-dir-79151.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-late-dir-79151.out TresPerTask=cpu=32\n",
+  "scheduler_stderr": "",
+  "observed_unix": 1790586976.2787948,
+  "status": {
+    "status": "feedback",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790585940.8012064,
+    "case": "control",
+    "after_maps": 8,
+    "absolute_after_maps": 24
+  },
+  "cases": {
+    "control": {
+      "completed_maps": 8,
+      "active_map": false,
+      "last_map": {
+        "iteration": 8,
+        "input_path": "outputs/hpc/step21-late-direction-windows-20260928/control/state_1.dat",
+        "input_sha256": "2b6fc149d4773023d3ed74cd344ef2af3d391f51279205a449fde293128a4589",
+        "output_path": "outputs/hpc/step21-late-direction-windows-20260928/control/state_2.dat",
+        "output_sha256": "1602f43ab375381aa754cf75c9f3c08c4f72396d9324f330ea06e366a26a49c0",
+        "wall_s": 163.7002214193344,
+        "residual": 6.115003326086194e-07,
+        "boundary_l1": 3.35244196202577e-08,
+        "boundary_bolometric": 3.3495083341552066e-08,
+        "maximum_worker_rss_mib": 3499.23828125
+      },
+      "pair08": {
+        "feedback_evaluated": true,
+        "absolute_maps": 24,
+        "original_gates": {
+          "last_two_photoionization_pass": true,
+          "last_two_total_recombination_pass": true,
+          "last_two_atomic_heating_pass": true,
+          "last_two_direct_heating_pass": true,
+          "last_two_formal_heating_pass": true,
+          "inner_pair_ready": true,
+          "physical_response_pass": true
+        },
+        "physical_response_failures": {},
+        "promoted": false,
+        "baseline_replaced": false,
+        "zero_control_stable": true,
+        "window_comparison": {
+          "vector_difference_over_frozen_r20_norms": {
+            "previous_vs_previous": [
+              0.00010310276921619817,
+              0.00040541909836951735,
+              6.5545969537983e-05
+            ],
+            "previous_vs_final": [
+              8.994650403372804e-05,
+              0.00035382336171249645,
+              5.719444521007692e-05
+            ],
+            "final_vs_previous": [
+              0.00011564683017912074,
+              0.0004549028328967012,
+              7.353387390377347e-05
+            ],
+            "final_vs_final": [
+              0.00010249131509912712,
+              0.00040330772296621906,
+              6.518234957624022e-05
+            ]
+          },
+          "passed": true,
+          "tolerance": 0.001,
+          "strict_error_bound": false,
+          "baseline_replaced": false
+        },
+        "from_78950_map16_comparison": {
+          "vector_difference_over_frozen_r20_norms": {
+            "previous_vs_previous": [
+              0.00010310276921619817,
+              0.00040541909836951735,
+              6.5545969537983e-05
+            ],
+            "previous_vs_final": [
+              8.994650403372804e-05,
+              0.00035382336171249645,
+              5.719444521007692e-05
+            ],
+            "final_vs_previous": [
+              0.00011564683017912074,
+              0.0004549028328967012,
+              7.353387390377347e-05
+            ],
+            "final_vs_final": [
+              0.00010249131509912712,
+              0.00040330772296621906,
+              6.518234957624022e-05
+            ]
+          },
+          "passed": true,
+          "tolerance": 0.001,
+          "strict_error_bound": false,
+          "baseline_replaced": false
+        },
+        "from_78594_comparison": {
+          "vector_difference_over_frozen_r20_norms": {
+            "previous_vs_previous": [
+              0.00032436216192111695,
+              0.0012635964721927169,
+              0.00020472115491847046
+            ],
+            "previous_vs_final": [
+              0.00030992811851317546,
+              0.001208376196327581,
+              0.00019576085705783639
+            ],
+            "final_vs_previous": [
+              0.00033686481124395795,
+              0.0013130481707491642,
+              0.00021270905927734104
+            ],
+            "final_vs_final": [
+              0.00032243597149485384,
+              0.0012578317792271603,
+              0.0002037487614171943
+            ]
+          },
+          "passed": false,
+          "tolerance": 0.001,
+          "strict_error_bound": false,
+          "baseline_replaced": false
+        },
+        "control_pass": true,
+        "historical_78594_cumulative_pass": false,
+        "original_78594_cumulative_stability_claim": false,
+        "parent_peak_rss_bytes": 236793856
+      }
+    },
+    "thermal": {
+      "completed_maps": 0,
+      "active_map": false,
+      "last_map": null
+    },
+    "population": {}
+  }
+}
