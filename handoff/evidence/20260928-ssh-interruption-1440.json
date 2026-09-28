@@ -1,0 +1,13 @@
+{
+  "observed_local": "2026-09-28T14:41:06.415745+08:00",
+  "job_id": 78950,
+  "ssh_exit_code": 255,
+  "ssh_error": "Permission denied (publickey).",
+  "control_check_exit_code": 255,
+  "control_check_error": "Control socket connect(/Users/shandike/.ssh/tde-control/ustc.sock): No such file or directory",
+  "scheduler_current_state": "unknown; authentication failed before remote command execution",
+  "last_verified_remote_at": "2026-09-28T14:06:16+08:00",
+  "last_verified_remote_status": "RUNNING; control16 feedback",
+  "resubmitted": false,
+  "automation_status": "PAUSED"
+}
