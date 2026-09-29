@@ -1,0 +1,9 @@
+{
+  "job_id": 80826,
+  "run": "outputs/hpc/x20-history-scan-v2-20260929",
+  "code_commit": "86cb1aa475d08b15eaae77dabd4442260644e93f",
+  "submitted_unix": 1790664219.7378535,
+  "replaces_failed_job": 80822,
+  "watch": "outputs/review-20260925/x20-scan-v2-watch-80826",
+  "watch_pid": 2177299
+}

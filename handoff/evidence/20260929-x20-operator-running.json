@@ -1,0 +1,43 @@
+{
+  "observed_unix": 1790664351.2216747,
+  "jobs": {
+    "scan": {
+      "scontrol": "JobId=80826 JobName=tde-x20-scan-v2 UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:02:11 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-09-29T14:43:39 EligibleTime=2026-09-29T14:43:39 AccrueTime=2026-09-29T14:43:39 StartTime=2026-09-29T14:43:40 EndTime=2026-09-29T15:43:40 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-29T14:43:40 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2177293 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode18 BatchHost=anode18 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_history_scan_v2.sbatch SubmitLine=sbatch --parsable --export=ALL,TDE_RUN=outputs/hpc/x20-history-scan-v2-20260929 operations/x20_history_scan_v2.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-scan-v2-80826.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-scan-v2-80826.out TresPerTask=cpu=4\n",
+      "status": {
+        "status": "scanning",
+        "mode": "scan",
+        "accepted_outer_steps": 20,
+        "new_material_steps": 0,
+        "updated_unix": 1790664282.8707812
+      },
+      "stderr": "",
+      "watch_files": [
+        "claude-review-00.json",
+        "latest.json"
+      ],
+      "watch_age_seconds": 71.39825510978699
+    },
+    "midpoint": {
+      "scontrol": "JobId=80823 JobName=tde-x20-midpoint UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:05:51 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-09-29T14:39:59 EligibleTime=2026-09-29T14:39:59 AccrueTime=2026-09-29T14:39:59 StartTime=2026-09-29T14:40:00 EndTime=2026-09-29T16:40:00 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-29T14:40:00 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2106963 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode18 BatchHost=anode18 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_history_midpoint.sbatch SubmitLine=sbatch --parsable --export=ALL,TDE_RUN=outputs/hpc/x20-history-midpoint-20260929 operations/x20_history_midpoint.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-midpoint-80823.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-midpoint-80823.out TresPerTask=cpu=32\n",
+      "status": {
+        "status": "initializing_midpoint",
+        "mode": "midpoint",
+        "accepted_outer_steps": 20,
+        "new_material_steps": 0,
+        "updated_unix": 1790664116.995934
+      },
+      "map_state": {
+        "status": "initializing",
+        "history": 0,
+        "active_blocks": 0
+      },
+      "stderr": "",
+      "watch_files": [
+        "latest.json",
+        "claude-review-00.json",
+        "claude-review-01.json"
+      ],
+      "watch_age_seconds": 38.04337930679321
+    }
+  }
+}

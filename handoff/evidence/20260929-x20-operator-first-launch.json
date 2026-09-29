@@ -1,0 +1,21 @@
+{
+  "code_commit": "0a6523bb2cbe885a4b7a03a274db00e4567e36ee",
+  "started_unix": 1790663999.8916166,
+  "jobs": {
+    "scan": {
+      "job_id": 80822,
+      "run": "outputs/hpc/x20-history-scan-20260929",
+      "submitted_unix": 1790663999.9209316,
+      "watch": "outputs/review-20260925/x20-scan-watch-80822",
+      "watch_pid": 2106984
+    },
+    "midpoint": {
+      "job_id": 80823,
+      "run": "outputs/hpc/x20-history-midpoint-20260929",
+      "submitted_unix": 1790663999.940886,
+      "watch": "outputs/review-20260925/x20-midpoint-watch-80823",
+      "watch_pid": 2106986
+    }
+  },
+  "queue_before": "             JOBID                     NAME ST       TIME   CPUS          QOS\n"
+}
