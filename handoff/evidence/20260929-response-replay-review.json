@@ -1,0 +1,111 @@
+{
+  "job_id": 80542,
+  "archive": {
+    "path": "outputs/hpc/step21-response-witness-replay-20260929/archives/complete-1790650114570419376.tar.gz",
+    "size_bytes": 140608,
+    "sha256": "d02839bde7f4f677005ba448e6e2774c6b15a6e5f45f1c5a2147319a01e43114"
+  },
+  "verified_files": 23,
+  "verified_code_claims": 744,
+  "all_ten_endpoints_bitwise_equal": true,
+  "independent_array_comparison": true,
+  "physical_state_x20_unchanged": true,
+  "endpoints": {
+    "accepted/previous": {
+      "all_five_fields_bitwise_equal": true,
+      "independent_norms": {
+        "l2": 8.17050745431626,
+        "mass_weighted": 0.26183586417660004,
+        "maximum_cell": 2.7049109153774262
+      },
+      "minimum_gas_erg_g": 6200684633490.256
+    },
+    "accepted/final": {
+      "all_five_fields_bitwise_equal": true,
+      "independent_norms": {
+        "l2": 8.172006557889262,
+        "mass_weighted": 0.26191042047785573,
+        "maximum_cell": 2.705001116611826
+      },
+      "minimum_gas_erg_g": 6234628338512.59
+    },
+    "control02/previous": {
+      "all_five_fields_bitwise_equal": true,
+      "independent_norms": {
+        "l2": 8.26053991667457,
+        "mass_weighted": 0.2822325160040751,
+        "maximum_cell": 2.7057094363608387
+      },
+      "minimum_gas_erg_g": 7023228355737.148
+    },
+    "control02/final": {
+      "all_five_fields_bitwise_equal": true,
+      "independent_norms": {
+        "l2": 8.260546577580559,
+        "mass_weighted": 0.2822363759760705,
+        "maximum_cell": 2.7057094286735603
+      },
+      "minimum_gas_erg_g": 7023209393966.48
+    },
+    "population02/previous": {
+      "all_five_fields_bitwise_equal": true,
+      "independent_norms": {
+        "l2": 8.252781654530489,
+        "mass_weighted": 0.28205197218897354,
+        "maximum_cell": 2.7043425553663982
+      },
+      "minimum_gas_erg_g": 6961620482201.109
+    },
+    "population02/final": {
+      "all_five_fields_bitwise_equal": true,
+      "independent_norms": {
+        "l2": 8.252823288936295,
+        "mass_weighted": 0.282058209324722,
+        "maximum_cell": 2.704343022506981
+      },
+      "minimum_gas_erg_g": 6962151916276.768
+    },
+    "control10/previous": {
+      "all_five_fields_bitwise_equal": true,
+      "independent_norms": {
+        "l2": 8.26059379023108,
+        "mass_weighted": 0.2822629833215336,
+        "maximum_cell": 2.7057093864619657
+      },
+      "minimum_gas_erg_g": 7023097324206.684
+    },
+    "control10/final": {
+      "all_five_fields_bitwise_equal": true,
+      "independent_norms": {
+        "l2": 8.26060058874605,
+        "mass_weighted": 0.2822667233692358,
+        "maximum_cell": 2.705709381759514
+      },
+      "minimum_gas_erg_g": 7023083812894.084
+    },
+    "population10/previous": {
+      "all_five_fields_bitwise_equal": true,
+      "independent_norms": {
+        "l2": 8.253039661228165,
+        "mass_weighted": 0.2820958693109725,
+        "maximum_cell": 2.704344958190995
+      },
+      "minimum_gas_erg_g": 6964635234137.074
+    },
+    "population10/final": {
+      "all_five_fields_bitwise_equal": true,
+      "independent_norms": {
+        "l2": 8.253063007846427,
+        "mass_weighted": 0.28210059020925105,
+        "maximum_cell": 2.704345116532339
+      },
+      "minimum_gas_erg_g": 6964868565466.637
+    }
+  },
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "baseline_replaced": false,
+  "material_ode_recomputed_on_school": true,
+  "material_ode_recomputed_on_mac": false,
+  "radiation_operator_recomputed": false
+}
