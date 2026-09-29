@@ -50,3 +50,15 @@ def test_impossible_quadratic_returns_valid_exclusion():
 
 def test_nonconvex_gram_rejected():
     with pytest.raises(ValueError,match='convex'):solve(np.diag([1,1,1,-1]),np.ones((6,2)))
+
+
+def test_positive_lp_multiplier_cannot_raise_certificate_above_true_minimum(monkeypatch):
+    from types import SimpleNamespace
+    from operations import x20_fullspace_feasibility as module
+    _,a,b=cap_geometry()
+    monkeypatch.setattr(module,'linprog',lambda *args,**kwargs:SimpleNamespace(success=True,message='synthetic inexact dual',ineqlin=SimpleNamespace(marginals=np.full(len(b),1e-8))))
+    result=dual_certificate(np.eye(4),np.array([.2,.1,-.1]),a,b)
+    assert result['positive_raw_dual_indices']==list(range(len(b)))
+    assert all(y<=0 for y in result['dual_multipliers'])
+    assert Decimal(result['residual_box_correction_70digit'])>0
+    assert Decimal(result['squared_lower_70digit'])<1

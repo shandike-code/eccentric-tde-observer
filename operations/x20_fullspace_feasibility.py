@@ -80,8 +80,11 @@ def dual_certificate(gram,point,aa,bb,fraction=.9):
     gradient=2*fraction*(g[1:,0]+fraction*g[1:,1:]@c)
     lp=linprog(gradient,A_ub=aa,b_ub=bb,bounds=[(None,None)]*3,method='highs',options={'time_limit':10.})
     if not lp.success:raise RuntimeError('linear support problem unresolved: '+lp.message)
-    y=np.asarray(lp.ineqlin.marginals)
-    if not np.isfinite(y).all() or np.any(y>0):raise RuntimeError('dual signs invalid')
+    raw_y=np.asarray(lp.ineqlin.marginals)
+    if not np.isfinite(raw_y).all():raise RuntimeError('nonfinite dual')
+    # LP容差可能给出微小正乘子。只选非正乘子构造有效的数学对偶点；
+    # 改动后的全部梯度残差在下方由有限系数盒补偿，不裁剪任何物理数组。
+    y=np.array([min(v,0.) for v in raw_y])
     with localcontext() as ctx:
         ctx.prec=70;gd=[[D(v)/D(gram[0,0]) for v in row] for row in gram]
         p=list(map(D,c));t=D(fraction);u=[D(1)]+[t*x for x in p]
@@ -96,7 +99,8 @@ def dual_certificate(gram,point,aa,bb,fraction=.9):
         if lower<0:l2=0.
         else:l2=math.nextafter(float(lower.sqrt()),-math.inf)
         return dict(squared_value_70digit=str(value),squared_lower_70digit=str(lower),l2_lower=l2,
-            dual_multipliers=y.tolist(),gradient_70digit=list(map(str,grad)),dual_residual_70digit=list(map(str,residual)),
+            raw_dual_multipliers=raw_y.tolist(),dual_multipliers=y.tolist(),positive_raw_dual_indices=np.flatnonzero(raw_y>0).tolist(),
+            gradient_70digit=list(map(str,grad)),dual_residual_70digit=list(map(str,residual)),
             residual_box_correction_70digit=str(correction),decimal_allowance=str(allowance),lp_status=lp.message)
 
 
