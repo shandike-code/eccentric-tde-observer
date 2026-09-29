@@ -1,0 +1,8 @@
+{
+  "job_id": 81647,
+  "watch_path": "outputs/review-20260925/x20-long-chord-watch-81647",
+  "watch_pid": 1632452,
+  "maximum_seconds": 10800,
+  "readonly": true,
+  "started_at": "2026-09-30T06:27:55.965615+08:00"
+}

@@ -1,0 +1,34 @@
+{
+  "sections": [
+    86,
+    87
+  ],
+  "drafts": [
+    {
+      "path": "outputs/review-20260925/x20-fullspace-lecture-cli.json",
+      "sha256": "01895a65de957c137c74de54f47706254f47422289d2a3c28d3a2aef7083babe",
+      "models": [
+        "deepseek-v4-flash[1m]"
+      ],
+      "is_error": false
+    },
+    {
+      "path": "outputs/review-20260925/x20-fullspace-lecture-retry-cli.json",
+      "sha256": "04b95fe1f6c13c2be90aa5dcc1659aeac3ad5113728ed5af02c071515fa0e64f",
+      "models": [
+        "deepseek-v4-flash[1m]"
+      ],
+      "is_error": false
+    }
+  ],
+  "first_draft_usable": false,
+  "first_draft_reason": "Returned textual DSML tool requests despite no-tool invocation; commands not executed.",
+  "independent_corrections": [
+    "Positive LP dual sign violates certificate requirements; small magnitude itself is not the reason.",
+    "L2 numbers are relative defect norms, not dimensional field norms.",
+    "The0.9/0.45 fractions scale displacement coefficients, not all affine weights.",
+    "Dual projection changes proof variables and includes the full residual correction; no physical-array clipping."
+  ],
+  "source_review": "handoff/evidence/20260930-x20-fullspace-review.json",
+  "figure_visually_checked": true
+}

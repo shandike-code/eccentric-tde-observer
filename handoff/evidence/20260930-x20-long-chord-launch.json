@@ -1,0 +1,21 @@
+{
+  "job_id": 81647,
+  "run": "outputs/hpc/x20-long-chord-20260930",
+  "git_commit": "bd0060b255dd24208d0a602f2b7008d7d7f9424f",
+  "submitted_at": "2026-09-30T06:27:55.959862+08:00",
+  "batch": "operations/x20_long_chord.sbatch",
+  "batch_sha256": "ba748d24dc9f228f0d86a64449af39cca8a815cccc267a5067695aba60440628",
+  "queue_before": "",
+  "resource_request": {
+    "cpus": 32,
+    "memory_gib": 128,
+    "workers": 16,
+    "qos": "qos_stu_cpu_long",
+    "time_limit": "02:00:00"
+  },
+  "maximum_maps": 4,
+  "maximum_feedback_pairs": 0,
+  "maximum_field_scans": 1,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0
+}

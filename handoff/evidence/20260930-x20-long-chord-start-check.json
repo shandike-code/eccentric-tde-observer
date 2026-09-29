@@ -1,0 +1,75 @@
+{
+  "checked_at": "2026-09-30T06:30:07.104909+08:00",
+  "job_id": 81647,
+  "scontrol": "JobId=81647 JobName=tde-x20-longchord UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:02:11 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-09-30T06:27:55 EligibleTime=2026-09-30T06:27:55 AccrueTime=2026-09-30T06:27:55 StartTime=2026-09-30T06:27:56 EndTime=2026-09-30T08:27:56 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-30T06:27:56 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:1632439 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode06 BatchHost=anode06 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_long_chord.sbatch SubmitLine=sbatch --parsable --export=ALL,TDE_RUN=outputs/hpc/x20-long-chord-20260930 operations/x20_long_chord.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-longchord-81647.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-longchord-81647.out TresPerTask=cpu=32\n",
+  "status": {
+    "status": "preparing",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790720893.4110131
+  },
+  "watch": {
+    "job_id": 81647,
+    "scheduler_state": "RUNNING",
+    "scontrol": "JobId=81647 JobName=tde-x20-longchord UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:01:09 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-09-30T06:27:55 EligibleTime=2026-09-30T06:27:55 AccrueTime=2026-09-30T06:27:55 StartTime=2026-09-30T06:27:56 EndTime=2026-09-30T08:27:56 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-30T06:27:56 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:1632439 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode06 BatchHost=anode06 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_long_chord.sbatch SubmitLine=sbatch --parsable --export=ALL,TDE_RUN=outputs/hpc/x20-long-chord-20260930 operations/x20_long_chord.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-longchord-81647.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-longchord-81647.out TresPerTask=cpu=32\n",
+    "scheduler_stderr": "",
+    "observed_unix": 1790720945.6804602,
+    "status": {
+      "status": "preparing",
+      "accepted_outer_steps": 20,
+      "new_material_steps": 0,
+      "updated_unix": 1790720893.4110131
+    }
+  },
+  "cli_first": {
+    "type": "result",
+    "subtype": "success",
+    "is_error": false,
+    "api_error_status": null,
+    "duration_ms": 6302,
+    "duration_api_ms": 6121,
+    "ttft_ms": 5916,
+    "ttft_stream_ms": 378,
+    "time_to_request_ms": 182,
+    "num_turns": 1,
+    "result": "只读核查:81647 RUNNING,06:27:56 启动,时限 02:00:00,cpu32/mem128G,与 cpu_long 32CPU128GiB 约束相符,暂未超预算;RunTime=0,尚无 worker 回执或 SHA/材料身份可核,无法确认新增地图≤4、无外推候选数据。完成采集仍须独立 Codex 审计,不得自动扩图。不编辑/提交/取消。",
+    "stop_reason": "end_turn",
+    "session_id": "66ff9fe0-90f5-4c99-824b-429ef2c91b68",
+    "total_cost_usd": 0.02447,
+    "usage": {
+      "input_tokens": 2474,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 484,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "modelUsage": {
+      "deepseek-v4-flash[1m]": {
+        "inputTokens": 2474,
+        "outputTokens": 484,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 0.02447,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 32000
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "uuid": "1f64c486-c809-48ac-ae26-10143b7807b4"
+  },
+  "stderr": ""
+}
