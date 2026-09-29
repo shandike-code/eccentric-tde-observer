@@ -1,0 +1,169 @@
+{
+  "job_id": 80826,
+  "archive": {
+    "path": "outputs/hpc/x20-history-scan-v2-20260929/archives/complete-1790664777804282278.tar.gz",
+    "size_bytes": 1540740,
+    "sha256": "abef7520b6969ed5f82da512af4d8d3dc00dea6a622ab5c44d30463ea4fad6e1"
+  },
+  "verified_files": 8,
+  "verified_code_claims": 749,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "baseline_replaced": false,
+  "independent_small_statistic_reduction": true,
+  "large_fields_recomputed_on_mac": false,
+  "strict_error_bound": false,
+  "parent_peak_rss_bytes": 746471424,
+  "choice": {
+    "alpha": -0.008098589894033703,
+    "unconstrained_alpha": -0.008998433215593004,
+    "direction_resolved": true,
+    "alpha_interval": [
+      -8.0,
+      1.0
+    ],
+    "coefficient_l1": 1.0161971797880676,
+    "difference_gain_l2": 0.9919564810139724,
+    "difference_projection": 0.9919379270567302,
+    "strict_error_bound": false
+  },
+  "l2_ratio": 0.9293448689015187,
+  "linf_ratio": 0.924031730901894,
+  "original_boundary": {
+    "boundary_l1": 1.7060450465557875e-08,
+    "boundary_bolometric": 1.6785216869121085e-08
+  },
+  "predicted_boundary": {
+    "boundary_l1": 1.913624036425857e-07,
+    "boundary_bolometric": 1.9135139995257174e-07
+  },
+  "checks": {
+    "resolved_nonzero_direction": true,
+    "coefficient_l1_bounded": true,
+    "l2_benefit": false,
+    "linf_nonincrease": true,
+    "boundary_l1": false,
+    "boundary_bolometric": false
+  },
+  "feasible": false,
+  "largest_anchor_defect_slabs": [
+    {
+      "first_group": 3232,
+      "squared_fraction": 0.2689936642756796
+    },
+    {
+      "first_group": 3200,
+      "squared_fraction": 0.21541601077771577
+    },
+    {
+      "first_group": 3168,
+      "squared_fraction": 0.15119597267316462
+    },
+    {
+      "first_group": 3136,
+      "squared_fraction": 0.09948245694805599
+    },
+    {
+      "first_group": 3264,
+      "squared_fraction": 0.08947018851492511
+    },
+    {
+      "first_group": 3104,
+      "squared_fraction": 0.06096817651146198
+    },
+    {
+      "first_group": 3072,
+      "squared_fraction": 0.03455590301730365
+    },
+    {
+      "first_group": 3040,
+      "squared_fraction": 0.017981846939164332
+    },
+    {
+      "first_group": 3008,
+      "squared_fraction": 0.008528492101525967
+    },
+    {
+      "first_group": 6432,
+      "squared_fraction": 0.004354334843318924
+    }
+  ],
+  "largest_history_difference_slabs": [
+    {
+      "first_group": 3232,
+      "squared_fraction": 0.10028974179378707
+    },
+    {
+      "first_group": 3200,
+      "squared_fraction": 0.09679182678689195
+    },
+    {
+      "first_group": 3168,
+      "squared_fraction": 0.08866138014856417
+    },
+    {
+      "first_group": 3136,
+      "squared_fraction": 0.07919138317747319
+    },
+    {
+      "first_group": 3104,
+      "squared_fraction": 0.06908067656536458
+    },
+    {
+      "first_group": 3072,
+      "squared_fraction": 0.05902352140760814
+    },
+    {
+      "first_group": 3040,
+      "squared_fraction": 0.049610076259132926
+    },
+    {
+      "first_group": 3008,
+      "squared_fraction": 0.04125599613701113
+    },
+    {
+      "first_group": 2976,
+      "squared_fraction": 0.0341733858707934
+    },
+    {
+      "first_group": 3264,
+      "squared_fraction": 0.032006412142288505
+    }
+  ],
+  "difference_nonparallel_fraction": 0.0061162458360388494,
+  "gram": [
+    [
+      1.0510168377949701e-09,
+      1.6082781151295277e-08,
+      -3.339644468464343e-06,
+      -3.323561687313048e-06
+    ],
+    [
+      1.6082781151295277e-08,
+      1.7872868271585442e-06,
+      -0.00014153606757965565,
+      -0.0001397487807524971
+    ],
+    [
+      -3.339644468464343e-06,
+      -0.00014153606757965565,
+      0.017555790995144746,
+      0.01741425492756509
+    ],
+    [
+      -3.323561687313048e-06,
+      -0.0001397487807524971,
+      0.01741425492756509,
+      0.017274506146812595
+    ]
+  ],
+  "subnormal_gram_roundoff": [
+    {
+      "first_group": 9056,
+      "normalized_min_eigenvalue": -0.057097576517774834,
+      "normalized_bound": 0.2222222222222222
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "job_id": 80823,
+  "archive": {
+    "path": "outputs/hpc/x20-history-midpoint-20260929/archives/complete-1790665125911355612.tar.gz",
+    "size_bytes": 2170907,
+    "sha256": "eba411c10469c87e91326667ba9e195e11e5a3044777544ea2a891fd8770d619"
+  },
+  "verified_files": 167,
+  "verified_code_claims": 748,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "new_maps": 1,
+  "new_feedback_pairs": 0,
+  "baseline_replaced": false,
+  "independent_small_statistic_reduction": true,
+  "large_fields_recomputed_on_mac": false,
+  "strict_error_bound": false,
+  "parent_peak_rss_bytes": 729251840,
+  "affinity_pass": true,
+  "affinity_l2": [
+    2.1253440788825625e-09,
+    5.106676399943809e-11
+  ],
+  "affinity_linf": [
+    2.2941768715625023e-09,
+    2.0851207603166992e-10
+  ],
+  "actual_map": {
+    "iteration": 1,
+    "input_path": "outputs/hpc/x20-history-midpoint-20260929/midpoint/state_0.dat",
+    "input_sha256": "de463db60d395858349b50f9c6b56a71e2af379585f6fe503710edd857d7240a",
+    "output_path": "outputs/hpc/x20-history-midpoint-20260929/midpoint/state_1.dat",
+    "output_sha256": "261bc1415341d8efeef3344a8b688a6e2f83f747789d37f4755a1018c153d127",
+    "wall_s": 167.245324825868,
+    "residual": 3.1217445838790094e-06,
+    "boundary_l1": 1.0765546471756767e-05,
+    "boundary_bolometric": 1.0764871318799948e-05,
+    "maximum_worker_rss_mib": 3502.3046875
+  },
+  "maps": [
+    {
+      "iteration": 1,
+      "residual": 3.1217445838790094e-06,
+      "boundary_l1": 1.0765546471756767e-05,
+      "boundary_bolometric": 1.0764871318799948e-05,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.1440679943008718,
+      "wall_s": 167.245324825868
+    }
+  ],
+  "map_process_receipts": 76,
+  "maximum_proc_kib": 3586360,
+  "field_squares": [
+    1.0510168377949701e-09,
+    1.8205034062989298e-06,
+    4.6395550477867774e-07,
+    4.747534971569275e-27,
+    0.017555790995144746
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "outputs/review-20260925/x20-operator-result-lecture-cli.json",
+  "sections": [
+    79,
+    80
+  ],
+  "corrections": [
+    "Recomputed frequency-slab fraction as 0.9200823727183067; retracted preliminary 96 percent estimate.",
+    "Removed unproven invariant-direction claim for the boundary constraint.",
+    "Picard uses a fixed update rule, not necessarily a fixed vector direction.",
+    "Limited affinity evidence to the tested segment and retained all prior failures."
+  ],
+  "evidence": [
+    "20260929-x20-scan-review.json",
+    "20260929-x20-midpoint-review.json"
+  ]
+}
