@@ -1,0 +1,24 @@
+{
+  "draft_path": "outputs/review-20260925/x20-spectral-lecture-cli.json",
+  "draft_sha256": "495a08100d5ae03979207531f51e11c1ecbc25ad79a01af1bb83d00a13747d3e",
+  "cli_is_error": false,
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "lecture_sections": [
+    83,
+    84
+  ],
+  "independent_corrections": [
+    "Use per-bin frequency-integrated flux, including frequency width and angular measure, not an unweighted sum of spectral density.",
+    "Compare L2-ratio lower bound to 0.8, or squared ratio to 0.64.",
+    "Changes compare a candidate to its predicted map, not physical time evolution or error from the true solution.",
+    "Exclusion only in the registered boundary equality plane, cap17 and full fraction0.9; no model nonexistence claim."
+  ],
+  "source_review": "handoff/evidence/20260929-x20-capped-review.json",
+  "normalizer_readonly_exit_code": 1,
+  "normalizer_log": "outputs/review-20260925/x20-spectral-markdown-check.log",
+  "normalizer_write_used": false,
+  "new_sections_manually_checked": true,
+  "normalizer_limitation": "Read-only legacy checker also flags old documents and would incorrectly turn D_{gi}, two mathematical indices, into a roman descriptive label. No write used; new sections manually checked including normalization of numerator and denominator."
+}
