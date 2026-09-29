@@ -1,0 +1,75 @@
+{
+  "checked_at": "2026-09-29T23:46:18.103051+08:00",
+  "job_id": 81453,
+  "scontrol": "JobId=81453 JobName=tde-x20-spectrum UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:02:11 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-09-29T23:44:06 EligibleTime=2026-09-29T23:44:06 AccrueTime=2026-09-29T23:44:06 StartTime=2026-09-29T23:44:07 EndTime=2026-09-30T00:44:07 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-29T23:44:07 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:745368 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode06 BatchHost=anode06 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_spectral_feasibility.sbatch SubmitLine=sbatch --parsable --export=ALL,TDE_RUN=outputs/hpc/x20-spectral-feasibility-20260929 operations/x20_spectral_feasibility.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-spectrum-81453.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-spectrum-81453.out TresPerTask=cpu=4\n",
+  "status": {
+    "status": "preparing",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790696665.6831863
+  },
+  "watch": {
+    "job_id": 81453,
+    "scheduler_state": "RUNNING",
+    "scontrol": "JobId=81453 JobName=tde-x20-spectrum UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:59 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-09-29T23:44:06 EligibleTime=2026-09-29T23:44:06 AccrueTime=2026-09-29T23:44:06 StartTime=2026-09-29T23:44:07 EndTime=2026-09-30T00:44:07 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-29T23:44:07 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:745368 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode06 BatchHost=anode06 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_spectral_feasibility.sbatch SubmitLine=sbatch --parsable --export=ALL,TDE_RUN=outputs/hpc/x20-spectral-feasibility-20260929 operations/x20_spectral_feasibility.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-spectrum-81453.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-spectrum-81453.out TresPerTask=cpu=4\n",
+    "scheduler_stderr": "",
+    "observed_unix": 1790696706.8998475,
+    "status": {
+      "status": "preparing",
+      "accepted_outer_steps": 20,
+      "new_material_steps": 0,
+      "updated_unix": 1790696665.6831863
+    }
+  },
+  "cli_first": {
+    "type": "result",
+    "subtype": "success",
+    "is_error": false,
+    "api_error_status": null,
+    "duration_ms": 7105,
+    "duration_api_ms": 6390,
+    "ttft_ms": 6327,
+    "ttft_stream_ms": 1267,
+    "time_to_request_ms": 664,
+    "num_turns": 1,
+    "result": "监督：81453 RUNNING(preparing)，59秒，接受外层步20，新增材料步0，映射/反馈/候选dat为0，未越界。权重上限17与零净边界平面固定，整/半分数.9/.45，割≤64。整/半谱L1不得高于原晚期，整L2≤.8。下界>.8仅排除本登记平面/上限/安全规则，不排除全部辐射或物理解。代数候选仍缺全场正性/Linf与真映射检验；空/退化割、数值停滞待独立复核。80925因整/半边界L1被拒(L2=.784)，保留。不编辑/提交/取消，不宣称耦合大气/I_nu。",
+    "stop_reason": "end_turn",
+    "session_id": "b07ca9a5-cba2-4ef5-b883-a70d963f2c52",
+    "total_cost_usd": 0.049635,
+    "usage": {
+      "input_tokens": 2502,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 1485,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "modelUsage": {
+      "deepseek-v4-flash[1m]": {
+        "inputTokens": 2502,
+        "outputTokens": 1485,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 0.049635,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 32000
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "uuid": "111648ce-ac0a-4788-85b3-c8df89666ab6"
+  },
+  "stderr": ""
+}

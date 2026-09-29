@@ -1,0 +1,8 @@
+{
+  "job_id": 81453,
+  "watch_path": "outputs/review-20260925/x20-spectral-watch-81453",
+  "watch_pid": 745379,
+  "maximum_seconds": 7200,
+  "readonly": true,
+  "started_at": "2026-09-29T23:44:06.783285+08:00"
+}

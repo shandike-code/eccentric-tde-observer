@@ -1,0 +1,21 @@
+{
+  "job_id": 81453,
+  "run": "outputs/hpc/x20-spectral-feasibility-20260929",
+  "git_commit": "0c2d63b22bae8ebed3db4b9fd992a1d9908e0c36",
+  "submitted_at": "2026-09-29T23:44:06.779739+08:00",
+  "batch": "operations/x20_spectral_feasibility.sbatch",
+  "batch_sha256": "b2d990240d9062fc830402c06554a9e116175cb28c2dfbe325a15238d126edb3",
+  "queue_before": "",
+  "resource_request": {
+    "cpus": 4,
+    "memory_gib": 16,
+    "qos": "qos_stu_default",
+    "time_limit": "01:00:00"
+  },
+  "maximum_maps": 0,
+  "maximum_feedback_pairs": 0,
+  "maximum_field_scans": 1,
+  "maximum_cut_iterations": 64,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0
+}
