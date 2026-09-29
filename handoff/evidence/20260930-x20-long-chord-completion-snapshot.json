@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-09-30T07:07:43.014399+08:00",
+  "job_id": 81647,
+  "scontrol": "JobId=81647 JobName=tde-x20-longchord UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:37:31 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-09-30T06:27:55 EligibleTime=2026-09-30T06:27:55 AccrueTime=2026-09-30T06:27:55 StartTime=2026-09-30T06:27:56 EndTime=2026-09-30T07:05:27 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-30T06:27:56 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:1632439 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode06 BatchHost=anode06 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_long_chord.sbatch SubmitLine=sbatch --parsable --export=ALL,TDE_RUN=outputs/hpc/x20-long-chord-20260930 operations/x20_long_chord.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-longchord-81647.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-longchord-81647.out TresPerTask=cpu=32\n",
+  "status": {
+    "status": "expanded_basis_collected_requires_review",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790723120.4152188,
+    "completed_maps": 4
+  },
+  "summary": {
+    "status": "expanded_basis_collected_requires_review",
+    "new_maps": 4,
+    "new_feedback_pairs": 0,
+    "new_material_steps": 0,
+    "accepted_outer_steps": 20,
+    "baseline_replaced": false,
+    "candidate_written": false,
+    "parent_peak_rss_bytes": 1029259264,
+    "wall_s": 2227.0013441480696,
+    "coefficient_dimension": 4,
+    "predicted_benefit_not_yet_evaluated": true
+  },
+  "history": {
+    "history": [
+      {
+        "iteration": 1,
+        "input_path": "outputs/hpc/x20-long-chord-20260930/chord/state_0.dat",
+        "input_sha256": "26226a1db10bbc90e4b24e5aaf64aa68f08f68956de4315b12261b0df4be17f6",
+        "output_path": "outputs/hpc/x20-long-chord-20260930/chord/state_1.dat",
+        "output_sha256": "e55e74e4b92e94fb0e5fb886c13e710dc94588ae8f432c73457a3948fc5515be",
+        "wall_s": 163.12759549543262,
+        "residual": 5.452727357678818e-07,
+        "boundary_l1": 1.6676029787431374e-08,
+        "boundary_bolometric": 1.6402751323321712e-08,
+        "maximum_worker_rss_mib": 3494.68359375
+      },
+      {
+        "iteration": 2,
+        "input_path": "outputs/hpc/x20-long-chord-20260930/chord/state_1.dat",
+        "input_sha256": "e55e74e4b92e94fb0e5fb886c13e710dc94588ae8f432c73457a3948fc5515be",
+        "output_path": "outputs/hpc/x20-long-chord-20260930/chord/state_2.dat",
+        "output_sha256": "ba6d128d0629492e69dca6f6597e708dcb5468e7e1bd1f9e21dd9ca299f772a7",
+        "wall_s": 155.8499445039779,
+        "residual": 5.429620570933514e-07,
+        "boundary_l1": 1.6302781272715403e-08,
+        "boundary_bolometric": 1.6031905413867558e-08,
+        "maximum_worker_rss_mib": 3498.125
+      },
+      {
+        "iteration": 3,
+        "input_path": "outputs/hpc/x20-long-chord-20260930/chord/state_2.dat",
+        "input_sha256": "ba6d128d0629492e69dca6f6597e708dcb5468e7e1bd1f9e21dd9ca299f772a7",
+        "output_path": "outputs/hpc/x20-long-chord-20260930/chord/state_0.dat",
+        "output_sha256": "7d89ccb9e49b2b58bff9dc0cf6353771a2b07e5674ec48dbdf9ffce01e333ea6",
+        "wall_s": 151.04731692746282,
+        "residual": 5.406611233923649e-07,
+        "boundary_l1": 1.594032111782028e-08,
+        "boundary_bolometric": 1.5672187027853884e-08,
+        "maximum_worker_rss_mib": 3499.83984375
+      },
+      {
+        "iteration": 4,
+        "input_path": "outputs/hpc/x20-long-chord-20260930/chord/state_0.dat",
+        "input_sha256": "7d89ccb9e49b2b58bff9dc0cf6353771a2b07e5674ec48dbdf9ffce01e333ea6",
+        "output_path": "outputs/hpc/x20-long-chord-20260930/chord/state_1.dat",
+        "output_sha256": "746a5528c49bc7037270eb8f28cf3f0efa4960245f457d898e9567b3a838fecb",
+        "wall_s": 153.53382502123713,
+        "residual": 5.383698938986325e-07,
+        "boundary_l1": 1.558816765878767e-08,
+        "boundary_bolometric": 1.5323131942169057e-08,
+        "maximum_worker_rss_mib": 3497.13671875
+      }
+    ],
+    "active_map": null,
+    "status": "radiation"
+  },
+  "stderr_bytes": 0
+}

@@ -1,0 +1,11 @@
+{
+  "archive": {
+    "path": "outputs/hpc/x20-long-chord-20260930/archives/complete-1790723120419269285.tar.gz",
+    "size_bytes": 2935212,
+    "sha256": "f1d8d8025c18571c08cacb872a883c5ebc2d3d7054a5fa3f73fdedaf816fa7e3"
+  },
+  "verified_inventory_files": 626,
+  "sha_inventory_verified": true,
+  "scientific_independent_audit_completed": false,
+  "received_directory": "outputs/review-20260925/x20-long-chord-81647-received"
+}
