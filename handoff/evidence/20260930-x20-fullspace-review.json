@@ -1,0 +1,45 @@
+{
+  "trace": [
+    {
+      "iteration": 0,
+      "vertices": 12,
+      "independent_vertex_squared_lower": "0.5959635846257700127687499048148074987958754125822732034521971062321319",
+      "independent_vertex_l2_lower": "0.7719867774941291135123848915318093237229818708925084466011630631083254",
+      "verified_dual_squared_lower": "0.5959635846244711637865465027017094050847303014702647253232177817968267",
+      "spectral_relaxed_ratios": [
+        6.252339693078702,
+        3.1858476637928597
+      ]
+    },
+    {
+      "iteration": 1,
+      "vertices": 16,
+      "independent_vertex_squared_lower": "0.7703925850012915162612719666497012249812614190385833762851234048666261",
+      "independent_vertex_l2_lower": "0.8777201062988653652716663756650543555309257231202227745802042098001518",
+      "verified_dual_squared_lower": "0.7703925850009457863589110937163092413516265916109481325579726200796267",
+      "spectral_relaxed_ratios": [
+        6.071429846449427,
+        3.530716929118515
+      ]
+    }
+  ],
+  "decimal_precision": 70,
+  "positive_hessian_ldl_pivots": [
+    "0.00002869244313034934086863500369707589748804054639101818706629863953808584",
+    "1649.101027126265001996255102370852963882861177986799045006857642714271",
+    "0.230636699487417901382420673826293293423831302184811648531297008987"
+  ],
+  "no_20pct_candidate_in_full_registered_cap": true,
+  "physical_model_nonexistence": false,
+  "scope": "three original directions, raw affine-weight L1 cap17, full/half fractions0.9/0.45",
+  "source_job": 81453,
+  "run": "outputs/review-20260925/x20-fullspace-feasibility-v2-20260930",
+  "result_sha256": "f27379d2c941ad08dee6b9d779f86b1413ecb9aad43a8f2f1ceb7a877756de1d",
+  "declaration_sha256": "358e853e01bca63e68c6e41fef4fc37b181a44813730cdf9efd3f8cb98138b46",
+  "independent_vertex_and_dual_audit": true,
+  "large_fields_recomputed": false,
+  "strict_physical_error_bound": false,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "wall_s": 0.2772840829566121
+}

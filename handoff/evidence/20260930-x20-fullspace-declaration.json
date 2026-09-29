@@ -1,0 +1,126 @@
+{
+  "source_files": [
+    {
+      "path": "outputs/review-20260925/x20-spectral-81453-received/boundary-spectra.npz",
+      "size_bytes": 463296,
+      "sha256": "acf79786d3a91ecb0815e4c8ac6279240d0b504a5c1b7ba2ed14d9f2e0992765"
+    },
+    {
+      "path": "outputs/review-20260925/x20-spectral-81453-received/declaration.json",
+      "size_bytes": 291123,
+      "sha256": "20dcc85da7dac61939dca6723234e1bb040fb7d6d921adf46560cff3ae027a58"
+    },
+    {
+      "path": "outputs/review-20260925/x20-spectral-81453-received/feasibility.json",
+      "size_bytes": 5847,
+      "sha256": "ea4a1514bf33c8a3a5fd1d6e0d5f3ac8f66e9d7341de14917f26edd19f0c385f"
+    },
+    {
+      "path": "outputs/review-20260925/x20-spectral-81453-received/source-preflight/boundary_geometry.npz",
+      "size_bytes": 78312,
+      "sha256": "aeff8f1753e461572354d5e4b4d035b8465c731dee23d97ff2094076e83133cc"
+    },
+    {
+      "path": "outputs/review-20260925/x20-spectral-81453-received/source-preflight/declaration.json",
+      "size_bytes": 149568,
+      "sha256": "a1b7833744c1c21c1e5fc55b0a7d0917750b7a43313371d370b053a5f4b14978"
+    },
+    {
+      "path": "outputs/review-20260925/x20-spectral-81453-received/source-preflight/inputs/config.json",
+      "size_bytes": 4121623,
+      "sha256": "fa76eb9c802047ca0c236c82f3ad41a152e059c32395bdbd54071aa57915f69c"
+    },
+    {
+      "path": "outputs/review-20260925/x20-spectral-81453-received/source-preflight/inputs/trial_material.npz",
+      "size_bytes": 27774,
+      "sha256": "36434a29123e2387195b77713baffaecd046f7d6c0297a5d0d95a74319e22eda"
+    },
+    {
+      "path": "outputs/review-20260925/x20-spectral-81453-received/status.json",
+      "size_bytes": 152,
+      "sha256": "4035368aa63ddf6cb6e81b8f7138c366f2d8e933b5f368061811c14015f76f2c"
+    },
+    {
+      "path": "outputs/review-20260925/x20-spectral-81453-received/summary.json",
+      "size_bytes": 402,
+      "sha256": "0eac2eb975e3e9e12c182031e9576a00490e40a43dfffd5bd9cdb96262ed3ec3"
+    }
+  ],
+  "source_audit": {
+    "path": "handoff/evidence/20260929-x20-spectral-review.json",
+    "size_bytes": 1872,
+    "sha256": "811e0ffbe51c5746533c9d0e2cc2787142915daa7eb23528b6af1aebcfefff83"
+  },
+  "source_archive": {
+    "path": "outputs/review-20260925/complete-1790696920776063589.tar.gz",
+    "size_bytes": 1603681,
+    "sha256": "fa5e3e610dc5f6b9bfec1ac37f6c662e75ab9fefa694a1728b448762b046b195"
+  },
+  "source_manifest": {
+    "path": "outputs/review-20260925/x20-spectral-81453-received/ARCHIVE_MANIFEST.json",
+    "size_bytes": 1535,
+    "sha256": "d918cced5487011e60abb20f8d24bf0a71a10ea0bbe49575ea679b8f7d2fd6fb"
+  },
+  "code": [
+    {
+      "path": "operations/x20_fullspace_feasibility.py",
+      "size_bytes": 11576,
+      "sha256": "9b4d92f2a91df9e19387d99ba222038fa99a974c51090416d03deb0feb375530"
+    },
+    {
+      "path": "handoff/protocols/x20-fullspace-feasibility-v1.md",
+      "size_bytes": 2472,
+      "sha256": "654f77b08335182067e841589c5169a38120b9ba0f1a11a4e2e37aeeb121366c"
+    },
+    {
+      "path": "tests/test_x20_fullspace_feasibility.py",
+      "size_bytes": 3191,
+      "sha256": "d0bb94aba87cdac0ad169e1de1bb0db63b156f92e7fe1dcffefb5733d5ac07b9"
+    }
+  ],
+  "source_basis": [
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/late/endpoints-map16/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "5c8b337e805c38c7ee5549aa9cff5382775d22f4dd226576777e8570d86b4c94"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/late/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "0d10808607e4f26b0dcabf5a58f22c1243b5778e45da5ac094e7f5339cdf1470"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/late/endpoints-map16/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "26226a1db10bbc90e4b24e5aaf64aa68f08f68956de4315b12261b0df4be17f6"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/historical/endpoints-map24/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "a509cd48c6e0867b67ac6188a531eeeec2178417e63753211ae42649f4b79e76"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/historical/endpoints-map24/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "140da23ba51895945668c37a3c83aea95295a114b6e0594fba0aade37f1a7575"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/historical/endpoints-map24/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "c558b84cd3d00ca45855afed9d47303b6452723eebfce2623eb1eb555241266e"
+    }
+  ],
+  "source_job": 81453,
+  "git_commit": "2e9cfb2118c8eefd81728d35c79d9df25152db36",
+  "python": "3.12.9",
+  "numpy": "2.5.2",
+  "scipy": "1.18.1",
+  "host": "wangweitiandeMacBook-Pro.local",
+  "maximum_cut_iterations": 64,
+  "large_fields_read": 0,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false
+}
