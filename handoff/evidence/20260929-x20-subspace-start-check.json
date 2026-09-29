@@ -1,0 +1,44 @@
+{
+  "observed_unix": 1790668385.3134773,
+  "scontrol": "JobId=80862 JobName=tde-x20-subspace UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:43 TimeLimit=03:00:00 TimeMin=N/A SubmitTime=2026-09-29T15:52:21 EligibleTime=2026-09-29T15:52:21 AccrueTime=2026-09-29T15:52:21 StartTime=2026-09-29T15:52:22 EndTime=2026-09-29T18:52:22 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-29T15:52:22 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:3077285 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode16 BatchHost=anode16 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_boundary_subspace.sbatch SubmitLine=sbatch --parsable --export=ALL,TDE_RUN=outputs/hpc/x20-boundary-subspace-20260929 operations/x20_boundary_subspace.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-subspace-80862.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-subspace-80862.out TresPerTask=cpu=32\n",
+  "job_id": 80862,
+  "status": {
+    "status": "preparing",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790668357.0057678
+  },
+  "stderr": "",
+  "watch_latest": {
+    "job_id": 80862,
+    "scheduler_state": "RUNNING",
+    "scontrol": "JobId=80862 JobName=tde-x20-subspace UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:18 TimeLimit=03:00:00 TimeMin=N/A SubmitTime=2026-09-29T15:52:21 EligibleTime=2026-09-29T15:52:21 AccrueTime=2026-09-29T15:52:21 StartTime=2026-09-29T15:52:22 EndTime=2026-09-29T18:52:22 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-29T15:52:22 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:3077285 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode16 BatchHost=anode16 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_boundary_subspace.sbatch SubmitLine=sbatch --parsable --export=ALL,TDE_RUN=outputs/hpc/x20-boundary-subspace-20260929 operations/x20_boundary_subspace.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-subspace-80862.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-subspace-80862.out TresPerTask=cpu=32\n",
+    "scheduler_stderr": "",
+    "observed_unix": 1790668360.327927,
+    "status": {
+      "status": "preparing",
+      "accepted_outer_steps": 20,
+      "new_material_steps": 0,
+      "updated_unix": 1790668357.0057678
+    }
+  },
+  "reviews": [
+    "claude-review-00.json"
+  ],
+  "claude-review-00.json": {
+    "is_error": false,
+    "result": "只读监督确认：80862 RUNNING，状态preparing，accepted_outer_steps=20、new_material_steps=0、baseline_replaced=false，与固定约束一致。预算32CPU/128GiB/16worker/3h，大态留学校，合规。当前无候选、无map产出，尚处三遍扫描前，未触发prediction_rejected。80554窗口失败、80826单向外推失败保留，80823仅核历史连线中点一致。恪守最多一候选、5遍场扫描、2张真实full/half map、0反馈0物质接受，且不自动改系数或预算。成功仍须Codex独立复核，不得声称耦合柱或整盘I_nu完成。",
+    "modelUsage": {
+      "deepseek-v4-flash[1m]": {
+        "inputTokens": 2513,
+        "outputTokens": 606,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 0.027715,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 32000
+      }
+    }
+  }
+}

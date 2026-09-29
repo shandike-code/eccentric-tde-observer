@@ -1,0 +1,16 @@
+{
+  "submitted_unix": 1790668341.0464487,
+  "commit": "463da2af06e7334b15962d7bd2ec4ed81c880952",
+  "run": "outputs/hpc/x20-boundary-subspace-20260929",
+  "pre_queue": "",
+  "cpus": 32,
+  "memory": "128G",
+  "qos": "qos_stu_cpu_long",
+  "wall_limit": "03:00:00",
+  "maximum_maps": 2,
+  "maximum_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "tests": "21 passed, 1 skipped (Mac-only audit fixture)",
+  "sbatch": "80862",
+  "job_id": 80862
+}
