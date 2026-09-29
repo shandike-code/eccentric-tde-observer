@@ -45,3 +45,5 @@ late种子SHA为 `48ab49de2b5b0dac5ec8db74457257b460b65eacfbbc29dd52202416a00882
 启动回执和初始快照存于 `handoff/evidence/20260929-x20-history-80554-{launch,start}.json`。讲义新增§74–75；CLI草稿经独立修订，修正三项实质概念/公式问题，记录见 `20260929-x20-history-lecture-review.json`。全仓Markdown检查仍报告原七份历史文档，未批量改写；新节及新协议/报告机械格式通过。
 
 两端备份为 `outputs/review-20260925/pre-x20-history-20260929.bundle`，自动化旧配置在Mac同目录 `automation-before-x20-history-20260929.toml`。后续只添加本节、起跑小证据与讲义，不改变d1dfeca的数值文件和本轮协议。
+
+11:13:29仍处初始化时，定位到原流水线在初始化前顺序校验全部继承来源：22251条声明、1114个不同路径/SHA，总声明字节576241501980（约536.7GiB）；大文件本身占主导，单纯去除重复条目不会消掉主要I/O。sstat父平均CPU时间由3:43增至5:47，RSS约170MiB，尚无提交map。该观测与正在扫描输入相符，不把长初始化误报为已完成映射或科学失败；本轮不跳过完整性检查、不修改运行中代码。记录见 `20260929-x20-history-initialization-cost.json`。

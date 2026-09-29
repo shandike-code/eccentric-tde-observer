@@ -1,0 +1,16 @@
+{
+  "job_id": 80554,
+  "observed_unix": 1790651609.061163,
+  "stage": "initializing",
+  "committed_maps": 0,
+  "source_entries": 22251,
+  "unique_claims": 1114,
+  "declared_bytes_with_repeats": 576241501980,
+  "unique_declared_bytes": 575750400122,
+  "slurm_average_cpu": "00:05:47",
+  "earlier_slurm_average_cpu": "00:03:43",
+  "slurm_average_rss_kib": 174348,
+  "slurm_max_rss_kib": 176696,
+  "code_location": "hpc/pipeline.py:332 -> hpc/preflight.py:36",
+  "interpretation": "Sequential source SHA verification before run.lock/environment/initial radiation slots; full source chain retained, no bypass or mutation during running job."
+}
