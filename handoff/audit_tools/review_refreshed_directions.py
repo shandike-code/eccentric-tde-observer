@@ -19,10 +19,13 @@ from scripts import phase7b9_formal_feedback_pair_adapter as pair
 read,digest,arrays,metrics=cw.read,cw.digest,cw.arrays,cw.metrics
 NAMES=('control','thermal','population')
 
-def audit_pair(out,n,reference,physical_old,input_trial,child="control"):
-    assert child in ('control','thermal','population')
+def audit_pair(out,n,reference,physical_old,input_trial,child="control",*,material_kind=None,max_maps=16):
+    # 文件夹名与物质位移类型分离；历史实验仍默认原来的16张硬限。
+    kind=child if material_kind is None else material_kind
+    assert kind in ('control','thermal','population')
+    assert isinstance(max_maps,int) and 2<=n<=max_maps
     peaks=[];formal='source_formal_heating_erg_s_cm3'
-    folder=out/child/f'pair{n:02d}';p=read(folder/'feedback_protocol.json');s=read(folder/('baseline_summary.json' if child=='control' else 'feedback_summary.json'));post=read(folder/'postcheck.json')
+    folder=out/child/f'pair{n:02d}';p=read(folder/'feedback_protocol.json');s=read(folder/('baseline_summary.json' if kind=='control' else 'feedback_summary.json'));post=read(folder/'postcheck.json')
     assert digest(folder/'feedback_protocol.json')==s['protocol_sha256']
     assert 'reuse_completed_feedback_manifests' not in p['configuration']
     for key in ('outer_base_material','physical_old_time_level','base_residual'):
@@ -30,20 +33,20 @@ def audit_pair(out,n,reference,physical_old,input_trial,child="control"):
     t=arrays(out/child/'trial_material.npz');assert digest(out/child/'trial_material.npz')==p['sources']['trial_material']['sha256'];base=arrays(reference/'outer_base_material.npz');old=arrays(physical_old);r=np.load(reference/'base_residual.npy',allow_pickle=False)
     # 只投影候选位移；全部四分量反馈与残差保留，原r20不变。
     direction=r.copy().reshape(128,4)
-    if child=='thermal':direction[:,1:]=0
-    if child=='population':direction[:,0]=0
-    direction=direction.ravel();alpha=0. if child=='control' else 1/256
+    if kind=='thermal':direction[:,1:]=0
+    if kind=='population':direction[:,0]=0
+    direction=direction.ravel();alpha=0. if kind=='control' else 1/256
     assert np.array_equal(t['base_encoded_state'],base['encoded_state']) and np.array_equal(t['base_residual'],r)
     assert np.array_equal(t['finite_direction'],direction) and float(t['relaxation'])==alpha
     assert np.array_equal(t['encoded_state'],base['encoded_state']+alpha*direction)
-    if child=='control':assert set(t)==set(base) and all(np.array_equal(t[k],base[k]) for k in t)
+    if kind=='control':assert set(t)==set(base) and all(np.array_equal(t[k],base[k]) for k in t)
     decoded=GroundStateLogSimplexCodec(128).decode(t['encoded_state'])
     # 只容许跨CPU指数/softmax的8个机器epsilon；字节/向量身份与科学门不放宽。
     for key in ('temperature_k','hydrogen_fraction','helium_fraction','specific_material_energy_erg_g'):
         np.testing.assert_allclose(t[key],getattr(decoded,key),rtol=8*np.finfo(float).eps,atol=0)
 
     assert ground_state_material_trial_within_trust_region(GroundStateLogSimplexCodec(128),base['encoded_state'],t['encoded_state'],maximum_relative_temperature_change=.5,maximum_absolute_material_energy_increment_fraction=.25,maximum_population_fraction_change=.05)
-    state=read(out/child/'state.json');assert n<=len(state['history'])<=16 and state['active_map'] is None
+    state=read(out/child/'state.json');assert n<=len(state['history'])<=max_maps and state['active_map'] is None
     rows=state['history'][n-2:n]
     retained=read(out/child/f'endpoints-map{n:02d}/manifest.json')
     assert retained['history_rows']==rows
@@ -96,7 +99,7 @@ def audit_pair(out,n,reference,physical_old,input_trial,child="control"):
         ends[label]={'norms':norms,'minimum_gas_erg_g':float(book['remaining'].min()),'maximum_proc_kib':maxproc,
             'source':metrics(fb['atomic_rate_heating_erg_s_cm3'],fb[formal],fb['subcell_width_cm'])}
     assert not s.get('material_response_failures')
-    if child=='control':
+    if kind=='control':
         comparison=pair._feedback_stability_comparison(feedbacks['previous'],feedbacks['final'])
         checks=pair._feedback_stability_gate_checks(comparison,p['acceptance_gates'])
         checks.update(inner_pair_ready=all(0<=row['residual']<1e-4 and 0<=row['boundary_l1']<1e-3 and 0<=row['boundary_bolometric']<1e-3 for row in rows),physical_response_pass=True)
@@ -130,9 +133,9 @@ def audit_pair(out,n,reference,physical_old,input_trial,child="control"):
     return {'endpoints':ends,'comparison':comparison,'gate_checks':checks},vectors,peaks
 
 
-def audit_maps(out,child):
+def audit_maps(out,child,*,max_maps=16):
     folder=out/child;state=read(folder/'state.json');history=state['history']
-    assert 1<=len(history)<=16 and state['active_map'] is None
+    assert 1<=len(history)<=max_maps and state['active_map'] is None
     assert [r['iteration'] for r in history]==list(range(1,len(history)+1))
     assert all(a['output_sha256']==b['input_sha256'] for a,b in zip(history,history[1:]))
     assert digest(folder/'config.json')==state['config_sha256'] and read(folder/'initialized_identity.json')['passed']

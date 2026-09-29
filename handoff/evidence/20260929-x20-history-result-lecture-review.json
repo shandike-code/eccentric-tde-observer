@@ -1,0 +1,16 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "outputs/review-20260925/x20-history-review-lecture-cli.json",
+  "corrections": [
+    "Removed false claim that an affine operator forces radiation defects and material response differences to have the same scale.",
+    "Separated 8878 artifact files from 746 source-code claims.",
+    "Distinguished log-energy component fractions from physical energy-error fractions.",
+    "Limited midpoint affinity to the measured segment; difference gain is not a spectral radius or strict error bound."
+  ],
+  "independently_checked_against": "handoff/evidence/20260929-x20-history-review.json",
+  "lecture_sections": [
+    76,
+    77,
+    78
+  ]
+}
