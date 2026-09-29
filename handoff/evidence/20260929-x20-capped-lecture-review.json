@@ -1,0 +1,16 @@
+{
+  "draft": "outputs/review-20260925/x20-capped-lecture-cli.json",
+  "actual_model": "deepseek-v4-flash[1m]",
+  "cli_is_error": false,
+  "independently_reviewed": true,
+  "sections": [81, 82],
+  "corrections": [
+    "The original small system included only the boundary equality; positivity was checked subsequently.",
+    "Backtracking scales the three displacement coefficients; four affine weights obey w(beta)=(1-beta)e_B+beta*w, not beta*w.",
+    "The normalized quantity is the candidate map defect relative to the original late map defect, not a difference from one shared unspecified y.",
+    "The 70-digit KKT certificate applies only to the stored Gram, not to large-field integration errors or a physical solution error bound.",
+    "Lecture coefficients use indices 1,2,3 whereas code uses 0,1,2; the active facet is translated explicitly."
+  ],
+  "new_material_steps": 0,
+  "baseline_replaced": false
+}
