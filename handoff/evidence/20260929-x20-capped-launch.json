@@ -1,0 +1,17 @@
+{
+  "submitted_unix": 1790671283.5672317,
+  "commit": "55f70b2ab900bedf912959373fc9742c94e8b989",
+  "run": "outputs/hpc/x20-capped-subspace-20260929",
+  "pre_queue": "80919_[1-8] gomoku-q PENDING\n80919_0 gomoku-q RUNNING",
+  "cpus": 32,
+  "memory": "128G",
+  "qos": "qos_stu_cpu_long",
+  "wall_limit": "03:00:00",
+  "maximum_maps": 2,
+  "maximum_field_scans": 4,
+  "maximum_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "tests": "25 passed, 2 skipped (Mac-only received artifacts)",
+  "sbatch": "80925",
+  "job_id": 80925
+}

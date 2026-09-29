@@ -1,0 +1,44 @@
+{
+  "observed_unix": 1790671434.7041793,
+  "job_id": 80925,
+  "scontrol": "JobId=80925 JobName=tde-x20-capped UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:02:30 TimeLimit=03:00:00 TimeMin=N/A SubmitTime=2026-09-29T16:41:23 EligibleTime=2026-09-29T16:41:23 AccrueTime=2026-09-29T16:41:23 StartTime=2026-09-29T16:41:24 EndTime=2026-09-29T19:41:24 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-29T16:41:24 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:3734547 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode04 BatchHost=anode04 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_capped_subspace.sbatch SubmitLine=sbatch --parsable --export=ALL,TDE_RUN=outputs/hpc/x20-capped-subspace-20260929 operations/x20_capped_subspace.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-capped-80925.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-capped-80925.out TresPerTask=cpu=32\n",
+  "status": {
+    "status": "two_pass_capped_prediction",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790671429.4827888
+  },
+  "stderr": "",
+  "watch_latest": {
+    "job_id": 80925,
+    "scheduler_state": "RUNNING",
+    "scontrol": "JobId=80925 JobName=tde-x20-capped UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:02:26 TimeLimit=03:00:00 TimeMin=N/A SubmitTime=2026-09-29T16:41:23 EligibleTime=2026-09-29T16:41:23 AccrueTime=2026-09-29T16:41:23 StartTime=2026-09-29T16:41:24 EndTime=2026-09-29T19:41:24 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-29T16:41:24 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:3734547 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode04 BatchHost=anode04 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_capped_subspace.sbatch SubmitLine=sbatch --parsable --export=ALL,TDE_RUN=outputs/hpc/x20-capped-subspace-20260929 operations/x20_capped_subspace.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-capped-80925.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-capped-80925.out TresPerTask=cpu=32\n",
+    "scheduler_stderr": "",
+    "observed_unix": 1790671430.22085,
+    "status": {
+      "status": "two_pass_capped_prediction",
+      "accepted_outer_steps": 20,
+      "new_material_steps": 0,
+      "updated_unix": 1790671429.4827888
+    }
+  },
+  "reviews": [
+    {
+      "path": "claude-review-00.json",
+      "is_error": false,
+      "model_usage": {
+        "deepseek-v4-flash[1m]": {
+          "inputTokens": 2538,
+          "outputTokens": 549,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.026415,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 32000
+        }
+      },
+      "result": "只读监督：80925（tde-x20-capped）RUNNING，已19秒，anode04，32CPU/128GiB/16worker/3h。状态preparing，accepted=20、new=0、baseline_replaced=false，未产生新物质步，符合“0物质接受”。\n\n约束复核：固定x20三方向，联合求解L1权重上限17与边界等式；最多1候选、4遍场扫描、2张真实full/half map、0反馈。须先两遍扫描预测：全域正性、fullL2≤.8、full/half最大残差与边界相对原late非增，严格辐射/边界门全过；任一失败即prediction_rejected且0map，不得自动改系数或预算。过后方写原map，再核12门含half仿射L2/Linf≤1e-6。80862、80554、80826失败保留，80823仅验历史连线中点一致。\n\n全部大态留学校；成功仍须Codex独立复核，不得称耦合柱或整盘I_nu完成。"
+    }
+  ]
+}
