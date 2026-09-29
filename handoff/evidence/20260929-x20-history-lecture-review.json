@@ -1,0 +1,15 @@
+{
+  "draft_path": "outputs/review-20260925/x20-history-lecture-draft.json",
+  "draft_sha256": "ed8e682eaebd9eba2b1bed6ee220d48bdff00eace2f0e84a9a2171a70a829f00",
+  "models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "is_error": false,
+  "independently_revised": true,
+  "corrections": [
+    "Avoid exclusive causal attribution to radiation history",
+    "Distinguish certified error bound from choice of sup norm",
+    "Fix first denominator to norm of frozen r20",
+    "Clarify all 20 accepted updates occur in one physical time step"
+  ]
+}

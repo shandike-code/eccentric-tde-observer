@@ -1,0 +1,43 @@
+{
+  "job_id": 80554,
+  "observed_unix": 1790651331.38833,
+  "scontrol": "JobId=80554 JobName=tde-x20-histories UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:02:37 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-09-29T11:06:13 EligibleTime=2026-09-29T11:06:13 AccrueTime=2026-09-29T11:06:13 StartTime=2026-09-29T11:06:14 EndTime=2026-09-29T17:06:14 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-29T11:06:14 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:3501682 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode04 BatchHost=anode04 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/calibrate_x20_radiation_histories.sbatch SubmitLine=sbatch --parsable operations/calibrate_x20_radiation_histories.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-histories-80554.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-histories-80554.out TresPerTask=cpu=32\n",
+  "status.json": {
+    "status": "preparing",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790651207.9178329
+  },
+  "declaration.json": {
+    "seeds": {
+      "historical": {
+        "path": "outputs/hpc/common-confirmation20-20260924/confirm2/state_1.dat",
+        "sha256": "96322faea9c1a4d57b6ebde26db7e27160794c9cd412bb45ab62813d747aac07",
+        "size_bytes": 10099884032
+      },
+      "late": {
+        "path": "outputs/hpc/step21-boundary-seed-response-20260929/control/endpoints-map10/mapped_final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "48ab49de2b5b0dac5ec8db74457257b460b65eacfbbc29dd52202416a00882ec"
+      }
+    },
+    "frozen_signal_scale": {
+      "l2": 0.02929545590160747,
+      "mass_weighted": 0.0015563020846738518,
+      "maximum_cell": 0.015995237347141762
+    },
+    "maximum_maps": 48,
+    "maximum_feedback_pairs": 4,
+    "both_branches_identical_x20": true
+  },
+  "historical/state.json": {
+    "status": "initializing",
+    "history": [],
+    "active_map": null
+  },
+  "stderr": "Matplotlib is building the font cache; this may take a moment.\n",
+  "watch_files": [
+    "latest.json",
+    "claude-review-00.json"
+  ]
+}

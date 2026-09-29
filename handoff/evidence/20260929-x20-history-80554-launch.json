@@ -1,0 +1,30 @@
+{
+  "code_commit": "d1dfecaaefd1a9898d4dc636097a3c0ac6190edc",
+  "run": "outputs/hpc/x20-radiation-history-calibration-20260929",
+  "observed_unix": 1790651173.1204355,
+  "code": "PASS",
+  "logic": "PASS",
+  "physics": "WARNING",
+  "decision": "RUN",
+  "tests_mac": "61 passed",
+  "tests_school": "59 passed, 2 Mac-only skipped",
+  "source_jobs": [
+    76727,
+    80195,
+    80542
+  ],
+  "maximum_maps": 48,
+  "maximum_pairs": 4,
+  "cpus": 32,
+  "memory": "128G",
+  "workers": 16,
+  "time_limit": "06:00:00",
+  "baseline_replacement_authorized": false,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "notes": "All original zero gates plus full vector two-scale windows; no physical dt change or automatic promotion.",
+  "sbatch_returncode": 0,
+  "sbatch_stdout": "80554\n",
+  "sbatch_stderr": "",
+  "job_id": 80554
+}
