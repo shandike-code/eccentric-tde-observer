@@ -1,0 +1,12 @@
+{
+  "draft_path": "outputs/review-20260925/x20-spectral-result-lecture-cli.json",
+  "draft_sha256": "240c167bad055e173d593f9e3e4186875bf4f02f9750eb946c9dc8ef79ca3098",
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "cli_is_error": false,
+  "section": 85,
+  "source": "handoff/evidence/20260929-x20-spectral-review.json",
+  "independent_review": "Corrected incomplete assertion that containment alone makes a bound valid: also require convexity and verified numerical support lower bound. Kept scope limited to registered equality slice and next diagnostic unexecuted. Verified squared gate0.64 and L2 gate0.8, no new maps or material steps.",
+  "figure_visually_checked": true
+}
