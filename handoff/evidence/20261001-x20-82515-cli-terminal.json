@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 3948,
+  "duration_api_ms": 3253,
+  "ttft_ms": 3475,
+  "ttft_stream_ms": 885,
+  "time_to_request_ms": 690,
+  "num_turns": 1,
+  "result": "82515已完成，退出0，用时45分02秒（2689s），父进程RSS约1.0GB。终态true_maps_validated_requires_review：真实map新增2（达full/half各一），new_feedback_pairs=0、new_material_steps=0，accepted_outer_steps=20（r20不变）；validated=true，但baseline_replaced=false、strict_error_bound=false。原预测11门已过；JSON未给16门逐项对比，故不能宣称全过最优或自洽大气，也不可称缺检验。失败保留，不自动重交。",
+  "stop_reason": "end_turn",
+  "session_id": "e215e579-a956-4f98-b490-76e7f84e7d31",
+  "total_cost_usd": 0.028769999999999997,
+  "usage": {
+    "input_tokens": 2549,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 641,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 2549,
+      "outputTokens": 641,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.028769999999999997,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "28a3b67f-c706-4bb1-8ff1-73424e0ac22a"
+}

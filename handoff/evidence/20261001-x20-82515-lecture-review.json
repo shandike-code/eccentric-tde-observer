@@ -1,0 +1,17 @@
+{
+  "draft_sha256": "30f586095ffb355fc494870c89b1b1626b57be0efefb35d64eeabb3e26f214d1",
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "independently_reviewed": true,
+  "lecture_section": 113,
+  "corrections": [
+    "独立审计未改一次通过指审计程序未修改即完成真实工件E2E；原始工件也保持不变，两层含义应分开。",
+    "此次真实T(q)是冻结系数后的新求值验证，不是对新结果进行的一次拟合。",
+    "后续窗口测量反馈与物质响应的时间窗口和跨初值差，不是再次验证同一系数的预测公式是否适用于别的初值。"
+  ],
+  "source_review": "handoff/evidence/20261001-x20-global-boundary-validation-82515-review.json",
+  "figure_visually_inspected": true,
+  "material_steps": 0,
+  "strict_error_bound": false
+}

@@ -1,0 +1,25 @@
+{
+  "job_id": 82515,
+  "state": "COMPLETED",
+  "scontrol": "JobId=82515 JobName=tde-x20-gtrue UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:45:02 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-10-01T04:31:43 EligibleTime=2026-10-01T04:31:43 AccrueTime=2026-10-01T04:31:43 StartTime=2026-10-01T04:31:44 EndTime=2026-10-01T05:16:46 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-01T04:31:44 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:1641939 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_global_boundary_validation.sbatch SubmitLine=sbatch --parsable operations/x20_global_boundary_validation.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-gtrue-82515.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-gtrue-82515.out TresPerTask=cpu=32\n",
+  "scheduler_stderr": "",
+  "observed_unix": 1790803009.9166548,
+  "status": {
+    "status": "true_maps_validated_requires_review",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "unix": 1790803000.0264366
+  },
+  "summary": {
+    "status": "true_maps_validated_requires_review",
+    "new_maps": 2,
+    "new_feedback_pairs": 0,
+    "new_material_steps": 0,
+    "accepted_outer_steps": 20,
+    "validated": true,
+    "baseline_replaced": false,
+    "strict_error_bound": false,
+    "parent_peak_rss_bytes": 1006174208,
+    "wall_s": 2689.145506807603
+  }
+}
