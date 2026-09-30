@@ -1,0 +1,147 @@
+{
+  "job_id": 82083,
+  "receipt": {
+    "path": "outputs/review-20260925/82083-review-20260930.tar.gz",
+    "size_bytes": 498196,
+    "sha256": "2f1a6061b02e3c9a3367691c2500c6ec86f5ee8fec6a747c99d244aee7247131",
+    "files": [
+      {
+        "path": "declaration.json",
+        "source": "outputs/hpc/x20-matched-chord-proposal-20260930/declaration.json",
+        "size_bytes": 147315,
+        "sha256": "c0edf1ad07c0e2043dec6e21177672a8bc1c474befd13b57a525f901bc0ac0cc"
+      },
+      {
+        "path": "prediction.json",
+        "source": "outputs/hpc/x20-matched-chord-proposal-20260930/prediction.json",
+        "size_bytes": 1404772,
+        "sha256": "8a671061ca5338f448fc22849de477b9b05a16252102b31373146d17f6412452"
+      },
+      {
+        "path": "summary.json",
+        "source": "outputs/hpc/x20-matched-chord-proposal-20260930/summary.json",
+        "size_bytes": 531,
+        "sha256": "80348f63d9a963119c8cba08f04bcb707f3c96508649e2de4f84d9a63849fe5f"
+      },
+      {
+        "path": "status.json",
+        "source": "outputs/hpc/x20-matched-chord-proposal-20260930/status.json",
+        "size_bytes": 84,
+        "sha256": "e5347e426658ca2bd7aa670816f7e5318e94318b0137d842e2c4d76ff40c1231"
+      },
+      {
+        "path": "scheduler-terminal.json",
+        "source": "outputs/review-20260925/x20-matched-proposal-watch-82083/scheduler-terminal.json",
+        "size_bytes": 2292,
+        "sha256": "0610b4835bb189cf241052c03107b6e4a2e2d782913138b989cf8b9e1f1dcadc"
+      },
+      {
+        "path": "claude-review-01.json",
+        "source": "outputs/review-20260925/x20-matched-proposal-watch-82083/claude-review-01.json",
+        "size_bytes": 1735,
+        "sha256": "13260c05c128999159bb291fca99777f97fb1f988373d2723c5c1e37dc8e9f9b"
+      },
+      {
+        "path": "tde-x20-proposal-82083.err",
+        "source": "outputs/hpc/logs/tde-x20-proposal-82083.err",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "tde-x20-proposal-82083.out",
+        "source": "outputs/hpc/logs/tde-x20-proposal-82083.out",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "unix": 1790757973.3619874
+  },
+  "independent_reduction": true,
+  "large_fields_recomputed_on_mac": false,
+  "code_claims_verified": 762,
+  "source_claims_verified": 19,
+  "fields": [
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "c7f9fea723498d28a13e7976deefba442769ac352b7c394f616c4981eb3eac97"
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/endpoints-map16/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "6741389510a9d36d4b5587396a15e8feaf54e8d8eddd2886ccbb7186899b8249"
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/historical/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "1242b3a75f26e2b80dc018c42d2cac2e7ff00bd01275419490811c38ef824421"
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/historical/endpoints-map16/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "9b7dca308cc392df2dd2a50519528f780440c07fce7fd9feac7497a55445a0b7"
+    }
+  ],
+  "gram": [
+    [
+      5.261418969204925e-10,
+      1.0063290914856963e-08,
+      -2.10859245786138e-06,
+      -2.098529166946523e-06
+    ],
+    [
+      1.0063290914856963e-08,
+      9.94920997205547e-07,
+      -9.999770491830004e-05,
+      -9.90027839210945e-05
+    ],
+    [
+      -2.10859245786138e-06,
+      -9.999770491830004e-05,
+      0.014058820914487612,
+      0.013958823209569312
+    ],
+    [
+      -2.098529166946523e-06,
+      -9.90027839210945e-05,
+      0.013958823209569312,
+      0.013859820425648216
+    ]
+  ],
+  "alpha": -0.009103196986303158,
+  "interval": [
+    -8.0,
+    1.0
+  ],
+  "line_minimum": {
+    "unconstrained_alpha": -0.01011466331811462,
+    "unconstrained_minimum_l2_ratio": 0.8980763681327247,
+    "all_real_alpha_cannot_reach_0_8": true,
+    "scope": "affine prediction on this chord only"
+  },
+  "l2_ratio": 0.89915279645249,
+  "linf_ratio": 0.8920066528734137,
+  "original_boundary": {
+    "boundary_l1": 1.1499201407117647e-08,
+    "boundary_bolometric": 4.467983605502597e-09
+  },
+  "predicted_boundary": {
+    "boundary_l1": 1.1748227004866163e-07,
+    "boundary_bolometric": 1.1745068231979211e-07
+  },
+  "checks": {
+    "resolved_nonzero_direction": true,
+    "coefficient_l1_bounded": true,
+    "l2_benefit": false,
+    "linf_nonincrease": true,
+    "boundary_l1": false,
+    "boundary_bolometric": false
+  },
+  "feasible": false,
+  "peak_rss_bytes": 792432640,
+  "wall_s": 657.6070856712759,
+  "new_maps": 0,
+  "new_material_steps": 0,
+  "baseline_replaced": false,
+  "strict_error_bound": false
+}
