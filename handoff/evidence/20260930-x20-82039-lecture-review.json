@@ -1,0 +1,14 @@
+{
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "tools_disabled": true,
+  "independent_revision": true,
+  "draft": "handoff/evidence/20260930-x20-82039-lecture-draft.json",
+  "corrections": [
+    "The field difference d is not the original-operator defect r_A or r_H.",
+    "Cross-seed heating number is a normalized comparison, not a heat rate in physical units.",
+    "Window pass and same-seed or cross-seed comparisons retain distinct scope."
+  ],
+  "visual_reviewed": true
+}
