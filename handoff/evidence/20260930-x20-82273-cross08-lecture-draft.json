@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 12729,
+  "duration_api_ms": 12423,
+  "ttft_ms": 11064,
+  "ttft_stream_ms": 551,
+  "time_to_request_ms": 299,
+  "num_turns": 1,
+  "result": "# 82273 A8/H8 反馈窗口审计讲义草稿\n\n本讲义仅据 82273 数据；除气体能记以 erg/g 外，所列量均为无量纲诊断比值。\n\n**一、原七门结果。** A8 与 H8 的七项原始检查（末两次光电离、末两次总复合、末两次原子加热、末两次直接加热、末两次形式加热、对间就绪、物理响应）各自全部通过。A8 端点范数约为 l2 8.2618、质量加权 0.28283、最大格 2.70571，最低气体能约 7.02×10¹² erg/g；H8 约为 l2 8.2087、质量加权 0.26497、最大格 2.70568，最低气体能约 6.86×10¹² erg/g。\n\n**二、门通过不蕴含向量稳定。** 局部反馈率门全部通过，并不蕴含完整响应向量稳定。A8 自身相邻完整响应向量对 frozen-r20 参考尺度即失败，最大 0.0029922，门为 0.001；H8 同类自检亦失败，最大 0.0021092，门 0.001。可见逐点或局部率量达标，不能推出三分量响应向量整体一致。故不宜以 H 支残差范数更小为由挑选 H 为真解——向量差范数不等于范数之差。\n\n**三、跨初值比较更差。** cross 的 frozen-r20 最大 0.3072444（门 0.001），冻结信号最大 51.7062286（门 0.1），两者均不通过；cross 三种加热相对差 0.0209307（门 0.001）不通过，而 photo 与 recomb 通过。通过项与失败项并存，正是局部与整体判据分层的体现。\n\n**四、判读纪律。** 第 8 张为中途测量，应继续既有每分支 16 张的预算，门保持不变，最终资格为 null。在证据不足时，不断言错误根因，亦不断言多解或无解。",
+  "stop_reason": "end_turn",
+  "session_id": "be5d2a6a-cca7-489e-99c6-9a67173789d9",
+  "total_cost_usd": 0.10505,
+  "usage": {
+    "input_tokens": 5800,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 3042,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 5800,
+      "outputTokens": 3042,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.10505,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "e6b371c6-ba9e-4762-af0c-a9fcd3cbfe4b"
+}

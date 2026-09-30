@@ -1,0 +1,292 @@
+{
+  "job_id": 82273,
+  "scheduler_state": "RUNNING",
+  "scontrol": "JobId=82273 JobName=tde-x20-wfeed UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=02:02:00 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-09-30T20:10:03 EligibleTime=2026-09-30T20:10:03 AccrueTime=2026-09-30T20:10:03 StartTime=2026-09-30T20:10:04 EndTime=2026-10-01T02:10:04 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-30T20:10:04 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:3595420 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode03 BatchHost=anode03 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_window_feedback.sbatch SubmitLine=sbatch --parsable operations/x20_window_feedback.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-wfeed-82273.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-wfeed-82273.out TresPerTask=cpu=32\n",
+  "scheduler_stderr": "",
+  "observed_unix": 1790777524.7313619,
+  "status": {
+    "status": "mapping",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790777510.1463048,
+    "case": "accelerated",
+    "completed_maps": 13,
+    "target_maps": 16
+  },
+  "cases": {
+    "accelerated": {
+      "completed_maps": 13,
+      "active_map": true,
+      "last_map": {
+        "iteration": 13,
+        "input_path": "outputs/hpc/x20-window-feedback-20260930/accelerated/state_0.dat",
+        "input_sha256": "fb9419cfc3d15ef54fd9629eff3bc165fbb16e241d8c5f4376fa853a03237f56",
+        "output_path": "outputs/hpc/x20-window-feedback-20260930/accelerated/state_1.dat",
+        "output_sha256": "4186ad1a52e9cf0137d84c12f89b4f99ca14cf4d36a7936370e211d2c9c9f357",
+        "wall_s": 179.12583853304386,
+        "residual": 2.69642360690764e-07,
+        "boundary_l1": 7.387445019163831e-09,
+        "boundary_bolometric": 2.0751679648105176e-09,
+        "maximum_worker_rss_mib": 3502.734375
+      },
+      "pair08": {
+        "feedback_evaluated": true,
+        "original_zero_gates": {
+          "last_two_photoionization_pass": true,
+          "last_two_total_recombination_pass": true,
+          "last_two_atomic_heating_pass": true,
+          "last_two_direct_heating_pass": true,
+          "last_two_formal_heating_pass": true,
+          "inner_pair_ready": true,
+          "physical_response_pass": true
+        },
+        "physical_response_failures": {},
+        "zero_pair_stable": true,
+        "baseline_replaced": false,
+        "accepted_material_step": false,
+        "from_prior_feedback": {
+          "frozen_r20": {
+            "vector_difference_over_frozen_r20_norms": {
+              "previous_vs_previous": [
+                0.0007542752305439036,
+                0.0029865319793780706,
+                0.00046082058397720066
+              ],
+              "previous_vs_final": [
+                0.0007481512526939267,
+                0.002961882628646227,
+                0.00045683408363759456
+              ],
+              "final_vs_previous": [
+                0.0007555975394896823,
+                0.0029921923347965063,
+                0.00046182888335700577
+              ],
+              "final_vs_final": [
+                0.000749472691952029,
+                0.002967541113454166,
+                0.000457842383016796
+              ]
+            },
+            "passed": false,
+            "tolerance": 0.001,
+            "strict_error_bound": false,
+            "baseline_replaced": false
+          },
+          "vector_difference_over_frozen_80195_signal": {
+            "previous_vs_previous": [
+              0.21040608315366735,
+              0.5026041243486457,
+              0.077930709445758
+            ],
+            "previous_vs_final": [
+              0.20869779135174207,
+              0.4984558796869827,
+              0.0772565407769239
+            ],
+            "final_vs_previous": [
+              0.21077494300048974,
+              0.5035567068082439,
+              0.07810122588693724
+            ],
+            "final_vs_final": [
+              0.20906640859802536,
+              0.4994081473411286,
+              0.07742705721800106
+            ]
+          },
+          "signal_tolerance": 0.1,
+          "signal_pass": false,
+          "passed": false,
+          "strict_error_bound": false,
+          "baseline_replaced": false
+        },
+        "parent_peak_rss_bytes": 231108608,
+        "continuation_pass": true,
+        "reason": "pass"
+      }
+    },
+    "historical": {
+      "completed_maps": 8,
+      "active_map": false,
+      "last_map": {
+        "iteration": 8,
+        "input_path": "outputs/hpc/x20-window-feedback-20260930/historical/state_1.dat",
+        "input_sha256": "6a11b5c8ad63656dc798be1430fcda3560a47c02215bb00a0087ad5af1a8b9be",
+        "output_path": "outputs/hpc/x20-window-feedback-20260930/historical/state_2.dat",
+        "output_sha256": "83a46bbb394fc2537c77a539c54addbc3b73d8a785cd5d94010ce6dd5a10aa1a",
+        "wall_s": 172.8252939246595,
+        "residual": 5.15775389344528e-06,
+        "boundary_l1": 9.747290945678957e-06,
+        "boundary_bolometric": 9.747237119387639e-06,
+        "maximum_worker_rss_mib": 3498.55078125
+      },
+      "pair08": {
+        "feedback_evaluated": true,
+        "original_zero_gates": {
+          "last_two_photoionization_pass": true,
+          "last_two_total_recombination_pass": true,
+          "last_two_atomic_heating_pass": true,
+          "last_two_direct_heating_pass": true,
+          "last_two_formal_heating_pass": true,
+          "inner_pair_ready": true,
+          "physical_response_pass": true
+        },
+        "physical_response_failures": {},
+        "zero_pair_stable": true,
+        "baseline_replaced": false,
+        "accepted_material_step": false,
+        "from_prior_feedback": {
+          "frozen_r20": {
+            "vector_difference_over_frozen_r20_norms": {
+              "previous_vs_previous": [
+                0.005977795715460336,
+                0.01724204102603,
+                0.0028044940296544645
+              ],
+              "previous_vs_final": [
+                0.005192338275301912,
+                0.015051023354666071,
+                0.0024172457063005247
+              ],
+              "final_vs_previous": [
+                0.006678656830260636,
+                0.019348655213304547,
+                0.0031118093291207963
+              ],
+              "final_vs_final": [
+                0.005893520501420504,
+                0.01715825163691929,
+                0.002724561005845701
+              ]
+            },
+            "passed": false,
+            "tolerance": 0.001,
+            "strict_error_bound": false,
+            "baseline_replaced": false
+          },
+          "vector_difference_over_frozen_80195_signal": {
+            "previous_vs_previous": [
+              1.6675141002254799,
+              2.9016668804182246,
+              0.4742761433985298
+            ],
+            "previous_vs_final": [
+              1.448409698045299,
+              2.5329400341121633,
+              0.4087874529624578
+            ],
+            "final_vs_previous": [
+              1.8630202444395854,
+              3.256189445803929,
+              0.5262471276463423
+            ],
+            "final_vs_final": [
+              1.6440054166905962,
+              2.887565945677032,
+              0.4607584372236039
+            ]
+          },
+          "signal_tolerance": 0.1,
+          "signal_pass": false,
+          "passed": false,
+          "strict_error_bound": false,
+          "baseline_replaced": false
+        },
+        "cross_history": {
+          "residual_comparison": {
+            "frozen_r20": {
+              "vector_difference_over_frozen_r20_norms": {
+                "previous_vs_previous": [
+                  0.08251422664905035,
+                  0.3072391413041413,
+                  0.042475756311271214
+                ],
+                "previous_vs_final": [
+                  0.08251539974605865,
+                  0.3072444051291107,
+                  0.04247676460987577
+                ],
+                "final_vs_previous": [
+                  0.0818941424065267,
+                  0.30523796489027616,
+                  0.042246826675798946
+                ],
+                "final_vs_final": [
+                  0.08189531663495052,
+                  0.3052432318468111,
+                  0.04224783497441069
+                ]
+              },
+              "passed": false,
+              "tolerance": 0.001,
+              "strict_error_bound": false,
+              "baseline_replaced": false
+            },
+            "vector_difference_over_frozen_80195_signal": {
+              "previous_vs_previous": [
+                23.01745374982202,
+                51.70534273433591,
+                7.183198708298739
+              ],
+              "previous_vs_final": [
+                23.017780986799558,
+                51.70622858459893,
+                7.183369224608813
+              ],
+              "final_vs_previous": [
+                22.84448042203472,
+                51.36856431505131,
+                7.144483751706447
+              ],
+              "final_vs_final": [
+                22.84480797462213,
+                51.36945069232619,
+                7.144654268017735
+              ]
+            },
+            "signal_tolerance": 0.1,
+            "signal_pass": false,
+            "passed": false,
+            "strict_error_bound": false,
+            "baseline_replaced": false
+          },
+          "all_four_rate_gate_checks": {
+            "previous_vs_previous": {
+              "last_two_photoionization_pass": true,
+              "last_two_total_recombination_pass": true,
+              "last_two_atomic_heating_pass": false,
+              "last_two_direct_heating_pass": false,
+              "last_two_formal_heating_pass": false
+            },
+            "previous_vs_final": {
+              "last_two_photoionization_pass": true,
+              "last_two_total_recombination_pass": true,
+              "last_two_atomic_heating_pass": false,
+              "last_two_direct_heating_pass": false,
+              "last_two_formal_heating_pass": false
+            },
+            "final_vs_previous": {
+              "last_two_photoionization_pass": true,
+              "last_two_total_recombination_pass": true,
+              "last_two_atomic_heating_pass": false,
+              "last_two_direct_heating_pass": false,
+              "last_two_formal_heating_pass": false
+            },
+            "final_vs_final": {
+              "last_two_photoionization_pass": true,
+              "last_two_total_recombination_pass": true,
+              "last_two_atomic_heating_pass": false,
+              "last_two_direct_heating_pass": false,
+              "last_two_formal_heating_pass": false
+            }
+          },
+          "cross_rate_pass": false
+        },
+        "parent_peak_rss_bytes": 231108608,
+        "continuation_pass": true,
+        "reason": "pass"
+      }
+    }
+  }
+}

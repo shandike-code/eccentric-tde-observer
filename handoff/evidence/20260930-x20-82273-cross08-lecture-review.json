@@ -1,0 +1,12 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "independently_revised": true,
+  "corrections": [
+    "A自身相邻差mass/r20为6.14956e-6；0.002992是对旧A16的差",
+    "完整物质向量512维，不是3维；3是范数数量",
+    "率门是深度加权相对差，不是逐点门",
+    "物质Max-cell是每单元四分量欧氏范数的最大值，不是逐分量Linf；A08图/CSV勘误，数值与旧Git逐项相同"
+  ],
+  "plot_visually_checked": true,
+  "prior_a08_csv_numeric_values_unchanged": true
+}
