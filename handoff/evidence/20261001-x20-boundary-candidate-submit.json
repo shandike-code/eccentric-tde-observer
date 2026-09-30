@@ -1,0 +1,15 @@
+{
+  "job_id": 82486,
+  "git_commit": "db08fcdfc620a124a13d33573b453efde3b71f01",
+  "source_basis_job": 82441,
+  "candidate_source_job": 82472,
+  "run": "outputs/hpc/x20-boundary-candidate-prediction-20261001",
+  "watch_output": "outputs/review-20260925/x20-boundary-candidate-prediction-watch-82486",
+  "watch_pid": 3724843,
+  "submitted_unix": 1790790148.4326146,
+  "maximum_full_field_reads": 3,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "candidate_written": false
+}

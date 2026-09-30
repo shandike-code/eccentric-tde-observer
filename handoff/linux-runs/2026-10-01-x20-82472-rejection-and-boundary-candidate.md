@@ -33,3 +33,9 @@
 25项定向测试通过，含拒绝身份/SHA/系数/范围/预算/最优性声明篡改；bash语法与py_compile通过。所有小工件数值有限，量级与源矩阵/边界统计一致，负值判定保持，无任意修正。运行前具体PRE-RUN另见任务记录；学校复验和实际作业号另存提交回执。若预测通过且独立审计，再用32CPU真实full/half映射；失败则先诊断，不自动扩预算。
 
 Mac和学校均保留`pre-82472-review-20261001.bundle`。CLI监督原报告曾写“需独立复核，并另跑真实映射”，缺少“仅合格候选才可进入”的条件；本审查明确纠正。CLI实际模型为deepseek-v4-flash[1m]，其意见不是验收依据。额外讲义调用首次因非登录SSH的PATH没有claude失败，未改数值；确认已有`opt/node-v22.18.0-linux-x64/bin/claude`后仅对该进程补PATH重试。
+
+## 82486提交回执
+
+学校复验25项通过（15.69秒），Mac/GitHub/学校同步至数值版本`db08fcdfc620a124a13d33573b453efde3b71f01`。01:42:28 CST提交82486，4CPU16GiB1h；回执`20261001-x20-boundary-candidate-submit.json`。学校另存`pre-boundary-candidate-launch-20261001.bundle`。只读watch为`outputs/review-20260925/x20-boundary-candidate-prediction-watch-82486`，PID3724843仅为启动记录，最多4800秒；显式补已有Node目录PATH以便CLI可执行。运行中不修改声明的数值代码、测试或协议。
+
+独立审计入口`review_x20_boundary_candidate_prediction.py`已准备并通过语法检查，复用已测的独立归约/Decimal对照；新工件尚未E2E。终态包约定为`82486-boundary-prediction-review.tar.gz/.json`，8项：declaration、prediction、summary、status、scheduler-terminal、claude-review-01及tde-x20-cpred-82486的out/err；缺项或调度失败如实保全。命令`PYTHONPATH=.:src:scripts OPENBLAS_NUM_THREADS=1 .venv/bin/python handoff/audit_tools/review_x20_boundary_candidate_prediction.py --job 82486 --commit db08fcdfc620a124a13d33573b453efde3b71f01`。不得把语法检查或预先准备的审计入口写成真实结果已通过。
