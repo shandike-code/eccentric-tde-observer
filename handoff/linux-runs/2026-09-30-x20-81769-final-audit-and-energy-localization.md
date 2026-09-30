@@ -33,3 +33,5 @@ cross16 final/final的q0分量占完整编码差质量平方范数99.9856696%。
 PRE-RUN：Code PASS（分块内存/单位/索引/哈希、5项新测试）；Logic PASS（完整审计的映射输入输出对，固定物质，不复用错误物理时间）；Physics WARNING（差场只描述有限迭代方向，不证明谱或唯一性）。Decision RUN。待提交回执与后续实测后另记POST-RUN；此报告不预先声称扫描成功。
 
 Mac备份`pre-81769-final-review-20260930.bundle`、`automation-before-81769-final-review-20260930.toml`。数值场仅在学校读取，不传回Mac、不入Git。最终仍未得到耦合柱或可用于整盘积分的自洽I_nu。
+
+提交回执：代码`cb9b040e5494848ed4d693397dc6b0f8de35f425`已在Mac/GitHub/学校同步，学校17项测试通过。新作业82039于13:45:41在anode01开始，Students/qos_stu_default，4CPU/16GiB/1小时。13:46:31现场核查为RUNNING，map08差场已扫1536/9632组，stderr空。这是扫描进展，尚未完成SHA与全场归约验收。回执见`handoff/evidence/20260930-x20-cross-seed-chord-submit.json`。只读监督脚本`handoff/audit_tools/watch_x20_cross_seed_chord.py`每60秒记录小JSON与scontrol，初始/终态调用无工具CLI，80分钟硬预算，保存调度终态先于CLI调用，无提交/取消/修改权限。
