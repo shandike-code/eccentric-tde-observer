@@ -1,0 +1,47 @@
+{
+  "observed_unix": 1790767457.9649758,
+  "status": {
+    "status": "validating_true_maps",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "unix": 1790767198.9665744
+  },
+  "scheduler": "JobId=82214 JobName=tde-x20-wtrue UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:38:27 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-09-30T18:45:49 EligibleTime=2026-09-30T18:45:49 AccrueTime=2026-09-30T18:45:49 StartTime=2026-09-30T18:45:50 EndTime=2026-09-30T20:45:50 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-30T18:45:50 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2556110 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode03 BatchHost=anode03 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_window_validation.sbatch SubmitLine=sbatch --parsable operations/x20_window_validation.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-wtrue-82214.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-wtrue-82214.out TresPerTask=cpu=32\n",
+  "full": {
+    "completed_maps": 1,
+    "active_map": null,
+    "process_receipts": 76,
+    "row": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/x20-window-validation-20260930/full/state_0.dat",
+      "input_sha256": "02a6285d161bade4a8db428420b7edd33d02c9898a060a95a90d7e5399bf51cc",
+      "output_path": "outputs/hpc/x20-window-validation-20260930/full/state_1.dat",
+      "output_sha256": "66d55283ee2e6c6cd52b38559deeb9ad994c693d258294ffc896e252745e524a",
+      "wall_s": 160.32696986943483,
+      "residual": 2.8504314591203557e-07,
+      "boundary_l1": 1.1213033062468294e-08,
+      "boundary_bolometric": 2.369883680059975e-10,
+      "maximum_worker_rss_mib": 3503.1640625
+    }
+  },
+  "half": {
+    "completed_maps": 1,
+    "active_map": null,
+    "process_receipts": 76,
+    "row": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/x20-window-validation-20260930/half/state_0.dat",
+      "input_sha256": "bd61f3831b03797d89518b42ce3aa76bbad95982adafa1b0ce3adbdf1725b67a",
+      "output_path": "outputs/hpc/x20-window-validation-20260930/half/state_1.dat",
+      "output_sha256": "3a0981a83748a7affd193e508cceb3610b1783894e5ba36e75602b535d54d471",
+      "wall_s": 162.04867256432772,
+      "residual": 3.49203659390467e-07,
+      "boundary_l1": 8.533947309705588e-09,
+      "boundary_bolometric": 2.1154982153824072e-09,
+      "maximum_worker_rss_mib": 3501.375
+    }
+  },
+  "maximum_worker_kib": 3587240,
+  "bad_receipts": [],
+  "stderr": ""
+}
