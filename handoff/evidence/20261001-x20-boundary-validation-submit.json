@@ -1,0 +1,14 @@
+{
+  "job_id": 82503,
+  "git_commit": "84fd8b4c9607200b90c0342d91e7c8f83d256206",
+  "prediction_job": 82486,
+  "run": "outputs/hpc/x20-boundary-validation-20261001",
+  "watch_output": "outputs/review-20260925/x20-boundary-validation-watch-82503",
+  "watch_pid": 101338,
+  "submitted_unix": 1790792880.2056084,
+  "maximum_maps": 2,
+  "maximum_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false
+}

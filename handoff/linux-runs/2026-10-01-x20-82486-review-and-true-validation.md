@@ -23,3 +23,9 @@
 本地26项定向测试通过，覆盖跨128组系数切换/短尾/输出与可知仿射算子对照/故意预测偏差拒绝/负候选不提交/来源和预算篡改拒绝。shell和编译检查通过。学校复验、实际job另记。独立审计入口`review_x20_boundary_validation.py --job JOB --base ARCHIVE_BASENAME`已准备并过语法，复用已验证的独立统计归约；不能称未来结果已E2E通过。
 
 两端`pre-82486-review-20261001.bundle`已保存；运行前发出具体Code/Logic/Physics检查。旧核、旧数据、旧判定不动。真实map通过独立审计后才考虑有界反馈窗口，当前没有足以声称自洽大气、整盘I_nu、剩余物理误差界或模型无解的证据。
+
+## 82503起跑
+
+学校26项复验通过（20.43秒），代码三端同步`84fd8b4c9607200b90c0342d91e7c8f83d256206`。02:28:00 CST提交82503，qos_stu_cpu_long、32CPU128GiB、2小时。回执`20261001-x20-boundary-validation-submit.json`。学校另存`pre-boundary-validation-launch-20261001.bundle`。运行中数值代码与协议冻结；后续提交仅记审计和回执。
+
+只读watch `outputs/review-20260925/x20-boundary-validation-watch-82503`，PID101338仅启动记录，每60秒观察、最多8400秒。CLI显式采用既有Node PATH、无工具，终态先保存再请求意见，不提交/取消/改动。当前源码终态归档由原`reused.archive`写在run/archives，含全小工件及完整SHA清单，不含dat；取complete归档和终态/原日志独立审计。如为failed/interrupted，先审失败而不是运行假定成功的入口。
