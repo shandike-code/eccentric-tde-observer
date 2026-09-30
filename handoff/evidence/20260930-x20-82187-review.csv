@@ -1,0 +1,5 @@
+metric,fraction,ratio
+boundary_l1,full,0.9751140682427081
+boundary_l1,half,0.742133910025178
+boundary_bolometric,full,0.05304143959050983
+boundary_bolometric,half,0.4734794163678765

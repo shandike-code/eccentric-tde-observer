@@ -1,0 +1,184 @@
+{
+  "squared_l2": [
+    5.261418969204925e-10,
+    2.1114316498658292e-10,
+    3.4690211642349276e-10
+  ],
+  "linf": [
+    1.598260951363173e-08,
+    1.1021318524484514e-08,
+    1.3501964019058121e-08
+  ],
+  "scales": [
+    0.03866458656515743,
+    0.03866543873642975,
+    0.038665012650793584
+  ],
+  "boundary": [
+    {
+      "boundary_l1": 1.1499201407117647e-08,
+      "boundary_bolometric": 4.467983605502597e-09,
+      "residual": 4.133655867934315e-07
+    },
+    {
+      "boundary_l1": 1.1213033065636762e-08,
+      "boundary_bolometric": 2.369882825026543e-10,
+      "residual": 2.8504315183421063e-07
+    },
+    {
+      "boundary_l1": 8.533947302431248e-09,
+      "boundary_bolometric": 2.11549826987461e-09,
+      "residual": 3.4920366226185624e-07
+    }
+  ],
+  "l2_ratios": [
+    1.0,
+    0.6334860715519341,
+    0.8119925256529285
+  ],
+  "linf_ratios": [
+    1.0,
+    0.6895819180894284,
+    0.8447909590447141
+  ],
+  "minima": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "checks": {
+    "full_field_nonnegative": true,
+    "full_l2_benefit": true,
+    "full_linf_nonincrease": true,
+    "half_l2_nonincrease": true,
+    "half_linf_nonincrease": true,
+    "full_radiation": true,
+    "full_boundary_l1": true,
+    "full_boundary_bolometric": true,
+    "half_radiation": true,
+    "half_boundary_l1": true,
+    "half_boundary_bolometric": true
+  },
+  "passed": true,
+  "job_id": 82187,
+  "receipt": {
+    "path": "outputs/review-20260925/82187-review-20260930.tar.gz",
+    "size_bytes": 147141,
+    "sha256": "84017981ca0ceb1e0ac99c7fce9c9f3b0b605f6123dc50e36cf8c27cede24d6a",
+    "files": [
+      {
+        "path": "declaration.json",
+        "source": "outputs/hpc/x20-window-prediction-20260930/declaration.json",
+        "size_bytes": 290822,
+        "sha256": "32076f2bcf21ce0d2c6b039b1387e829ef0c27da1b1591fe56c33174cddb42be"
+      },
+      {
+        "path": "prediction.json",
+        "source": "outputs/hpc/x20-window-prediction-20260930/prediction.json",
+        "size_bytes": 297576,
+        "sha256": "f3ed4db1643463770f96af06d2664e23f02cb84e59204f1c6ae492db76a23ec7"
+      },
+      {
+        "path": "summary.json",
+        "source": "outputs/hpc/x20-window-prediction-20260930/summary.json",
+        "size_bytes": 672,
+        "sha256": "b12049d7963f3105879c64e9a8c0500d99116d899078fd07beba114e41c00620"
+      },
+      {
+        "path": "status.json",
+        "source": "outputs/hpc/x20-window-prediction-20260930/status.json",
+        "size_bytes": 82,
+        "sha256": "302f4811f0026ba7d183aaca7883a590490256fc2ca7eaa4a910f8408789abbb"
+      },
+      {
+        "path": "scheduler-terminal.json",
+        "source": "outputs/review-20260925/x20-window-prediction-watch-82187/scheduler-terminal.json",
+        "size_bytes": 2421,
+        "sha256": "84c17b1db6f913ce0d720f3e4786b6db57fe7b613c30b235912bf5d6f168bc54"
+      },
+      {
+        "path": "claude-review-01.json",
+        "source": "outputs/review-20260925/x20-window-prediction-watch-82187/claude-review-01.json",
+        "size_bytes": 1702,
+        "sha256": "5559d50be77f85cf8271e5df65031be942748ded59252d97a86f5efb6e424458"
+      },
+      {
+        "path": "tde-x20-wpred-82187.out",
+        "source": "outputs/hpc/logs/tde-x20-wpred-82187.out",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "tde-x20-wpred-82187.err",
+        "source": "outputs/hpc/logs/tde-x20-wpred-82187.err",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "unix": 1790764444.0130184
+  },
+  "independent_complete_field_reduction": true,
+  "fields": [
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "c7f9fea723498d28a13e7976deefba442769ac352b7c394f616c4981eb3eac97"
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/endpoints-map16/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "6741389510a9d36d4b5587396a15e8feaf54e8d8eddd2886ccbb7186899b8249"
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/historical/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "1242b3a75f26e2b80dc018c42d2cac2e7ff00bd01275419490811c38ef824421"
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/historical/endpoints-map16/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "9b7dca308cc392df2dd2a50519528f780440c07fce7fd9feac7497a55445a0b7"
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/endpoints-map08/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "0becaf404548b853492917e3e1a475dd4ec5540c99e3fb79d9a2ab9bc72a8a2f"
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/endpoints-map08/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "8ccb8d3ae83d79f85c31a7cfe43f3dba744a0aa3047d7eeb2b1587f0d3cfb39f"
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/historical/endpoints-map08/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "06c6e89cc1aeb968df03a1ae27282ea8401fd0929679fff9a838458e2bf0e789"
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/historical/endpoints-map08/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "540e4336a783625aa6916f81674e7442e4d4ec7051b13cf52e97df40f8cccf71"
+    }
+  ],
+  "raw_coefficients": [
+    -0.04181700137312674,
+    -7.958182948626873,
+    0.034692992960461876
+  ],
+  "selected_coefficients": [
+    -0.037635301235814066,
+    -7.162364653764186,
+    0.03122369366441569
+  ],
+  "code_claims_verified": 1528,
+  "source_claims_verified": 20,
+  "peak_rss_bytes": 896405504,
+  "wall_s": 445.8672625385225,
+  "large_fields_recomputed_on_mac": false,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "baseline_replaced": false,
+  "strict_error_bound": false
+}
