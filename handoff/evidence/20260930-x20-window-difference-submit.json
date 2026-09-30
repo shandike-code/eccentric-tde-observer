@@ -1,0 +1,13 @@
+{
+  "job_id": 82396,
+  "git_commit": "001f176ff482f62bb8bf8a3357a037b7bf3ed88b",
+  "source_job": 82273,
+  "run": "outputs/hpc/x20-window-difference-20260930",
+  "submission": "82396",
+  "submitted_unix": 1790782086.1875975,
+  "watch_pid": 1981596,
+  "watch_output": "outputs/review-20260925/x20-window-difference-watch-82396",
+  "maximum_maps": 0,
+  "maximum_feedback_pairs": 0,
+  "new_material_steps": 0
+}

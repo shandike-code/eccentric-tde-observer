@@ -37,3 +37,5 @@ Mac定向35项测试通过（27项入口/扫描/窗口审计，8项独立归约/
 ## 检查与备份
 
 PRE-RUN已具体声明Code/Logic PASS、Physics WARNING；完整审计、能量分解、作图均成功，无数据修补。数值有限，热能正，原子/formal差与三种加热比较一致到展示精度；图CSV保留三范数和两套尺度，红线为门，已目视检查，非光谱。Mac与学校都已创建本轮前完整Git bundle，自动任务TOML也已备份。旧工件/旧判决保留，大辐射dat没有传回Mac或入Git。
+
+提交回执：审计及扫描代码`001f176ff482f62bb8bf8a3357a037b7bf3ed88b`已三端同步（GitHub首次push报ref锁冲突，API独立读取确认远端实际已是该SHA，未force）。学校34 passed、1 skipped（仅Mac归档项，Mac已过），14.55s。新作业82396于23:28:06 CST在anode01启动，Students/qos_stu_default，4CPU/16GiB/1h，硬限Oct1 00:28:06。23:28:29核RUNNING、预检完成进入checkpoint8扫描，stderr空。只读监督器已启动，记录PID1981596仅作启动证据；`watch_x20_window_difference.py`每60秒观察、80分钟预算，先记终态再调用无工具CLI。回执`20260930-x20-window-difference-submit.json`。本次不重复82273，不自动扩预算；扫描结果尚未独立审计。
