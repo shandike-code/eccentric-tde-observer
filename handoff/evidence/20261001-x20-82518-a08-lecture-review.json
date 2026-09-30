@@ -1,0 +1,18 @@
+{
+  "draft_sha256": "8a1e3ae8cd1adb148720039735c0ea805ff223a1ef7c5a4345bd5e70fa9f6230",
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "independently_reviewed": true,
+  "lecture_section": 114,
+  "corrections": [
+    "r20不是一个通用标量分母：L2/mass/Max-cell各除对应冻结范数[8.172006557889262,.2619104204778557,2.705001116611826]。",
+    "旧82273加速pair16只是来源对照，不能叫新seed的先验反馈或以其替代新seed反馈。",
+    "同一pair前后接近只表示这两个反馈的变化小，不单独证明迭代收敛。",
+    "监督CLI采样时刻historical=0已过时；其中3.56e-4/.0599来自from_prior_feedback，不是本轮cross_history。"
+  ],
+  "source_review": "handoff/evidence/20261001-x20-82518-a08-review.json",
+  "completed_experiment": false,
+  "reference_calibration_eligible": null,
+  "new_material_steps": 0
+}

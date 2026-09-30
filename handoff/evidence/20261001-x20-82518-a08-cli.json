@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 7762,
+  "duration_api_ms": 7071,
+  "ttft_ms": 7003,
+  "ttft_stream_ms": 950,
+  "time_to_request_ms": 696,
+  "num_turns": 1,
+  "result": "82518 仍在 RUNNING（32CPU/128GiB/6h，已运行约57分）。accelerated 支完成 8 张 map 并反馈（accepted_outer_steps=20）；historical 支 0 张、尚未开始，顺序未越前。第8张跨初值仅测量：七项原门全过、物理域无失败、zero_pair_stable 与 continuation_pass 为真；r20 三范数最大 3.56e-4<0.001，80195 信号最大 0.0599<0.1；baseline_replaced=false、new_material_steps=0、strict_error_bound=false。第16张各支八 map 漂移、双历史四端点 512 维向量差、跨初值四反馈组合五项率/加热门均未评估，不宣告通过。当前无窗口/跨初值漂移失败，亦无原门/物理域/资源失败，暂不停止。",
+  "stop_reason": "end_turn",
+  "session_id": "0ea51230-14e0-4cf8-8f98-20e42f57396d",
+  "total_cost_usd": 0.053845000000000004,
+  "usage": {
+    "input_tokens": 3474,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1459,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 3474,
+      "outputTokens": 1459,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.053845000000000004,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "9a6db576-2c58-4833-99d8-3e0c79bac340"
+}
