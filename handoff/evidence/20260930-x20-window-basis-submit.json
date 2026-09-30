@@ -1,0 +1,8 @@
+{
+  "job_id": 82166,
+  "git_commit": "6052db124ae271f44cec75fb2a7488f347344b14",
+  "run": "outputs/hpc/x20-window-basis-20260930",
+  "submitted_unix": 1790758990.4915788,
+  "stdout": "82166\n",
+  "stderr": ""
+}

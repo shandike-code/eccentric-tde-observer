@@ -33,3 +33,9 @@ Code：审核八场次序、形状、SHA流式校验、文件身份不变、正�
 本轮前Mac Git与automation分别备份到 `outputs/review-20260925/pre-82083-review-20260930.bundle`、`automation-before-82083-review-20260930.toml`。后续同步使用增量bundle及学校端完整Git备份。
 
 CLI草稿实际模型为deepseek-v4-flash[1m]，仅用于讲义草稿。独立纠正“父产物”为父进程峰值RSS，以及把[−8,1]误称纯正值区间：它是已声明系数界与全场非负约束的交集。讲义§98为复核版。
+
+## 已提交与监督
+
+代码提交6052db124ae271f44cec75fb2a7488f347344b14已推GitHub并通过增量bundle同步学校；学校先保存完整Git备份`pre-window-basis-code-20260930.bundle`，随后fast-forward，7项测试通过（20.10秒）。
+
+作业82166于2026-09-30 17:03:11 CST在anode01启动，4CPU/16GiB/1小时，硬限18:03:11。初查RUNNING/preflight、stderr空，不能把预检状态当作扫描完成。提交回执与watch启动回执已保存Git证据目录。平台只读监督器每60秒检查，80分钟上限，初始/终态调用无工具CLI，先保存调度终态再生成评论；PID1230810仅启动回执，不是持续存活证明。无自动续交。后续文档提交不修改运行中冻结代码。
