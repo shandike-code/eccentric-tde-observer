@@ -1,0 +1,10 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "independently_revised": true,
+  "corrections": [
+    "volume_l1是归一化相对差，量纲为1，不是体积积分量纲",
+    "明确第二分量指质量加权范数，而不是编码向量的第二物理分量",
+    "旧A16比较与当前16-8窗口分开，资格未评估保持null"
+  ],
+  "plot_visually_checked": true
+}

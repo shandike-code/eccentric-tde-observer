@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 15946,
+  "duration_api_ms": 14993,
+  "ttft_ms": 14433,
+  "ttft_stream_ms": 1165,
+  "time_to_request_ms": 932,
+  "num_turns": 1,
+  "result": "**讲义草稿：82273 加速8端点反馈审计（仅第一对）**\n\n来源：作业82273，accelerated=8。预算为两支16张/4对，其余仍在运行；本轮只审第一对，不外推全盘 I_nu 完成时间。\n\n① 原七门全通：末两次光致电离、总复合、原子加热、直接加热、形式加热均 true，inner_pair_ready 与 physical_response_pass 亦 true。volume_l1 量纲为体积积分（三通道）：光致电离 [1.68e-9, 9.84e-9, 4.22e-11]，总复合 [2.50e-11, 1.26e-11, 1.79e-16]，原子/直接/形式加热约 4.0769e-7。\n\n② 固定 x20 相邻辐射端点：完整512向量差小，within_pair_spread 两套核验均 passed=true。其归一差以冻结 r20 范数与冻结80195信号范数为分母，是向量差 ‖Δv‖/‖ref‖，不可当作两范数相减。\n\n③ 对旧81769 A16 明显变化：frozen_r20 与 80195_signal 比较均 passed=false（第二分量 2.99e-3、0.50 超容差），因跨了82214辐射加速，不属本轮16对8窗口；故 baseline_replaced=false，strict_error_bound=false。\n\n④ 残差：mass_weighted 0.28283265→0.28283311，非零；原 r20 mass=0.2619104204778557 不改。maximum_cell≈2.70571，minimum_gas_erg_g≈7.0227e12 erg/g 为正，说明响应落在物理域，不代表整个大气自洽。\n\n⑤ 资源：maximum_proc_kib=4040360 为单worker峰值 KiB；map/feedback receipts=608/152。reference_calibration_eligible=null，只能记 null，不得写 false/true。",
+  "stop_reason": "end_turn",
+  "session_id": "ad1bf0bc-70bd-4ad3-903e-a45955fe0722",
+  "total_cost_usd": 0.10667,
+  "usage": {
+    "input_tokens": 3219,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 3623,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 3219,
+      "outputTokens": 3623,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.10667,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "4a80ef5f-044d-4c6b-889c-51076a588b14"
+}
