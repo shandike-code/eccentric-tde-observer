@@ -32,3 +32,9 @@ def test_direct_prediction_failure_cannot_hide_behind_good_map_gain():
 def test_missing_slab_is_rejected():
     v,o=data();v['prediction_affinity']['slabs'].pop()
     with pytest.raises(AssertionError):actual_numbers(v,o)
+
+
+def test_json_read_accepts_path_and_cli_string(tmp_path):
+    from handoff.audit_tools.review_x20_window_validation import read
+    p=tmp_path/'terminal.json';p.write_text('{"state":"COMPLETED"}')
+    assert read(str(p))==read(p)==dict(state='COMPLETED')

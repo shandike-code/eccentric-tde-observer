@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 18771,
+  "duration_api_ms": 17891,
+  "ttft_ms": 17329,
+  "ttft_stream_ms": 1109,
+  "time_to_request_ms": 880,
+  "num_turns": 1,
+  "result": "《真实验证讲义（草稿）》\n\n一、先分清三种量。固定物质映射T是既定算子，不随迭代改变；缺陷T(q)−q衡量当前q在T下的不自洽；真解误差q−q_true衡量与真解的差距。三者定义、量纲与分母都不同，不可互相替代。\n\n二、16门真实验证全部通过（validated=true，325个文件、152条映射回执，峰值内存≈3.4 GiB）：full/half的L2、Linf均不增，辐射、边界L1与bolometric（0.975/0.742、0.053/0.473）、affinity各项均成立。通过后才设两种初值、各16张，并取8与16两种反馈窗口，以覆盖不同反馈尺度。\n\n三、两初值并非统计独立：82214是full真实输出，81769是H16映射输出，同源，只能作亲和性/一致性核对（checks中的affinity项），不能当作独立样本推断。\n\n四、冻结条件：原r20与dt不变，0物质更新。\n\n五、范围：不能许诺整盘I_nu。\n\n六、分母。L2比=squared_l2开方后除以第0项；Linf比=各自Linf除以第0项Linf，故首项都为1；基准L2≈2.3e-5、Linf≈1.6e-8。预测误差比以其自身基准预测误差为分母（首项1.0，其后≈2.5e-8、1.4e-8）。末列L2比3.0e-9、Linf比3.3e-9，此处只记录数值，不推断成因。\n\n七、耗时：Slurm实际43分36秒；记录wall_s≈2593.6 s（约43分14秒），两者略有出入。",
+  "stop_reason": "end_turn",
+  "session_id": "1fc2c6df-9810-44b0-9659-fbbbe379a9a0",
+  "total_cost_usd": 0.11610999999999999,
+  "usage": {
+    "input_tokens": 2317,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 4181,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 2317,
+      "outputTokens": 4181,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.11610999999999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "9b874766-3f60-44d4-9895-79640fe6c458"
+}

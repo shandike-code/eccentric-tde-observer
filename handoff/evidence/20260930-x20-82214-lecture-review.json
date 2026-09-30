@@ -1,0 +1,11 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "independently_revised": true,
+  "corrections": [
+    "T是算子；场、缺陷和真解误差同单位但含义不同",
+    "预测误差分母为原A16映射缺陷，不是基准预测误差",
+    "跨初值反馈窗口不是full/half仿射一致性检验",
+    "内存约3.4GiB仅单个最大worker，不是总作业内存"
+  ],
+  "plot_visually_checked": true
+}

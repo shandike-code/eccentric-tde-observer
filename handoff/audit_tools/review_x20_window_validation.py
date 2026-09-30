@@ -2,11 +2,15 @@
 import argparse,json,math
 from pathlib import Path
 import numpy as np
-from handoff.audit_tools.review_x20_operator import old,cw,read,arrays
+from handoff.audit_tools.review_x20_operator import old,cw,arrays
 from handoff.audit_tools.review_x20_expanded_validation import norms,gates
 from handoff.audit_tools.review_x20_window_prediction import local_path
 
 ROOT=Path('outputs/review-20260925')
+
+
+def read(path):
+    return json.loads(Path(path).read_text())
 
 
 def actual_numbers(v,original):
