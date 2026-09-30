@@ -1,0 +1,97 @@
+comparison,metric,scale,value
+Accelerated 16 minus 8,L2,reference,5.709038327913377e-05
+Historical 16 minus 8,L2,reference,0.007572902353237956
+Cross seeds map16,L2,reference,0.08697302847542938
+Accelerated 16 minus 8,Mass weighted,reference,0.00022780546607667558
+Historical 16 minus 8,Mass weighted,reference,0.020152315447859028
+Cross seeds map16,Mass weighted,reference,0.32048408934259326
+Accelerated 16 minus 8,Maximum cell,reference,3.6685721851652405e-05
+Historical 16 minus 8,Maximum cell,reference,0.003962677654562272
+Cross seeds map16,Maximum cell,reference,0.043796659510749
+Accelerated 16 minus 8,L2,signal,0.01592543867951524
+Historical 16 minus 8,L2,signal,2.1124712276459183
+Cross seeds map16,L2,signal,24.261242475550592
+Accelerated 16 minus 8,Mass weighted,signal,0.038337432041543336
+Historical 16 minus 8,Mass weighted,signal,3.3914376036174607
+Cross seeds map16,Mass weighted,signal,53.934337955842224
+Accelerated 16 minus 8,Maximum cell,signal,0.0062040291380961125
+Historical 16 minus 8,Maximum cell,signal,0.6701399452680894
+Cross seeds map16,Maximum cell,signal,7.406580490761757
+cross16 final/final,0,signed projection,0.0
+cross16 final/final,1,signed projection,0.0
+cross16 final/final,2,signed projection,0.0
+cross16 final/final,3,signed projection,2.285495983735401e-22
+cross16 final/final,4,signed projection,3.37810121710966e-19
+cross16 final/final,5,signed projection,4.432860259241856e-20
+cross16 final/final,6,signed projection,2.4672109710039055e-18
+cross16 final/final,7,signed projection,7.871293935669494e-16
+cross16 final/final,8,signed projection,1.244514893991143e-13
+cross16 final/final,9,signed projection,9.537746803829008e-12
+cross16 final/final,10,signed projection,3.777916829345952e-10
+cross16 final/final,11,signed projection,8.286416351664809e-09
+cross16 final/final,12,signed projection,1.096633686268164e-07
+cross16 final/final,13,signed projection,9.720170991002208e-07
+cross16 final/final,14,signed projection,6.457112775646429e-06
+cross16 final/final,15,signed projection,3.589083632201223e-05
+cross16 final/final,16,signed projection,0.00019101824006056091
+cross16 final/final,17,signed projection,0.0010194097452052879
+cross16 final/final,18,signed projection,0.004450269808069241
+cross16 final/final,19,signed projection,0.013755481744541533
+cross16 final/final,20,signed projection,0.03130345425974502
+cross16 final/final,21,signed projection,0.057653582383964515
+cross16 final/final,22,signed projection,0.09069002962591328
+cross16 final/final,23,signed projection,0.11935536712889196
+cross16 final/final,24,signed projection,0.12694108240391333
+cross16 final/final,25,signed projection,0.06973805880330744
+cross16 final/final,26,signed projection,-0.005653529660878357
+cross16 final/final,27,signed projection,-0.0061184101593208615
+cross16 final/final,28,signed projection,-0.006614966729862836
+cross16 final/final,29,signed projection,-0.007138720397397775
+cross16 final/final,30,signed projection,-0.007685735872629186
+cross16 final/final,31,signed projection,-0.008247703781953069
+cross16 final/final,32,signed projection,-0.00881114979297306
+cross16 final/final,33,signed projection,-0.00935508371639519
+cross16 final/final,34,signed projection,-0.009847440439694075
+cross16 final/final,35,signed projection,-0.010239850817569146
+cross16 final/final,36,signed projection,-0.010459680472849925
+cross16 final/final,37,signed projection,-0.01039786980684629
+cross16 final/final,38,signed projection,-0.009890061649627142
+cross16 final/final,39,signed projection,-0.008687118597578092
+cross16 final/final,40,signed projection,-0.0064092806192364874
+cross16 final/final,41,signed projection,-0.002476840822484393
+cross16 final/final,42,signed projection,0.003984602568337072
+cross16 final/final,43,signed projection,0.014236009407973722
+cross16 final/final,44,signed projection,0.029870901674972652
+cross16 final/final,45,signed projection,0.0526287994282768
+cross16 final/final,46,signed projection,0.0820445490868405
+cross16 final/final,47,signed projection,0.10932328577073637
+cross16 final/final,48,signed projection,0.12634811765177284
+cross16 final/final,49,signed projection,0.10883080960378473
+cross16 final/final,50,signed projection,0.06598999903423024
+cross16 final/final,51,signed projection,0.01963517676059466
+cross16 final/final,52,signed projection,0.0
+cross16 final/final,53,signed projection,3.2055854306099083e-15
+cross16 final/final,54,signed projection,1.048980898572214e-14
+cross16 final/final,55,signed projection,2.740879029062484e-12
+cross16 final/final,56,signed projection,2.5509427679092994e-11
+cross16 final/final,57,signed projection,1.7461980379336417e-11
+cross16 final/final,58,signed projection,1.2019989176956265e-12
+cross16 final/final,59,signed projection,8.000844515986776e-15
+cross16 final/final,60,signed projection,4.362515037757615e-18
+cross16 final/final,61,signed projection,1.915338864425096e-22
+cross16 final/final,62,signed projection,6.996598077637782e-28
+cross16 final/final,63,signed projection,1.9873399958413464e-34
+cross16 final/final,64,signed projection,2.4043357090418442e-42
+cross16 final/final,65,signed projection,4.824479657517658e-52
+cross16 final/final,66,signed projection,7.41060100021357e-64
+cross16 final/final,67,signed projection,4.0277126960381974e-78
+cross16 final/final,68,signed projection,3.1219032327334025e-95
+cross16 final/final,69,signed projection,1.1568545355104857e-115
+cross16 final/final,70,signed projection,5.608616979146676e-140
+cross16 final/final,71,signed projection,7.910971528625952e-169
+cross16 final/final,72,signed projection,5.863925671279544e-203
+cross16 final/final,73,signed projection,3.3403458629836685e-243
+cross16 final/final,74,signed projection,1.717052127787374e-290
+cross16 final/final,75,signed projection,0.0
+cross8,atomic heating,original,0.022998925018308206
+cross16,atomic heating,original,0.0218682899524592

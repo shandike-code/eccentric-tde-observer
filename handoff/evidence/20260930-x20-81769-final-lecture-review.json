@@ -1,0 +1,14 @@
+{
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "tools_disabled": true,
+  "independent_revision": true,
+  "draft": "handoff/evidence/20260930-x20-81769-final-lecture-draft.json",
+  "corrections": [
+    "Original seven gates include physical and feedback checks, not merely execution reproducibility.",
+    "Use maximum over four endpoint combinations for each independently normalized norm.",
+    "The ionization number is a dimensionless signed projection, not energy in erg/g.",
+    "The first component localization does not prove a causal failure in thermal physics."
+  ]
+}
