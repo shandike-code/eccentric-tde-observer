@@ -1,0 +1,17 @@
+{
+  "job_id": 82518,
+  "git_commit": "24d9828882a3b574e9a43b293c96c65867d53eb2",
+  "source_validation_job": 82515,
+  "source_history_job": 82273,
+  "run": "outputs/hpc/x20-global-window-feedback-20261001",
+  "watch_output": "outputs/review-20260925/x20-global-window-feedback-watch-82518",
+  "watch_pid": 2563660,
+  "submitted_unix": 1790804947.8002071,
+  "maximum_maps": 32,
+  "maximum_feedback_pairs": 4,
+  "maximum_material_steps": 0,
+  "cpus": 32,
+  "memory_gib": 128,
+  "workers": 16,
+  "time_limit_s": 21600
+}

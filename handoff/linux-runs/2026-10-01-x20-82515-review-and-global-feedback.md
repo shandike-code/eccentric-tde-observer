@@ -13,3 +13,11 @@
 理由：约20.46%的辐射数组L2收益不决定净加热和物质响应一致性；需要正式反馈测量。预算沿已验证的配对流程：加速8→历史8→加速16→历史16，最多32map4pair0物质、32CPU128G16worker6h。原七门/物理域/资源失败即停；仅漂移失败仍完成同龄对照。两16−8窗口与cross16所有完整512维差三范数/r20≤.001、/冻结80195signal≤.1，并保留全部原率/加热门。若不具资格先归因，不自动反复32map；通过也不接受21。
 
 新独立审计入口`review_x20_global_window_feedback.py --job JOB --base BASE --out OUT --target TARGET [--terminal TERMINAL]`，支持有序部分快照与终态；硬失败要求专用失败审查。新产物E2E尚未发生。新增源码与测试不改旧声明依赖；两端pre-82515-review-20261001.bundle保全。初始40项Mac测试通过，随后补上学校真实源文件路径而非跳过身份测试，最终复验和提交记录另附。
+
+## 82518启动与交接
+
+最终Mac40项测试通过（1.07秒），学校40项通过（20.40秒，无真实源检查跳过），shell/compile过。数值代码24d9828882a3b574e9a43b293c96c65867d53eb2已三端核实。GitHub推送返回lock错误时提示远端已是同一SHA；随后独立gh API确认同一SHA，没有force/reset或重写历史。
+
+学校另存pre-global-feedback-launch-20261001.bundle，05:49:07 CST提交82518，05:49:08在anode02开始，32CPU128GiB16worker、6h硬限11:49:08、USR1提前900秒。05:49:53 preparing/运行45秒、stderr0。回执20261001-x20-global-window-feedback-submit.json。watch目录outputs/review-20260925/x20-global-window-feedback-watch-82518，PID2563660仅启动记录，60秒观察/25200秒预算，无工具CLI；正式pair和终态触发只读监督。
+
+自动任务已备份原配置automation-before-82518-update-20261001.toml并切换交接到82518；无变化安静。仅部分完成时资格未评估，不自动重交或扩预算；所有32map4pair完整审计后再决定是否具有校准资格。新终态独立入口尚待新产物E2E。
