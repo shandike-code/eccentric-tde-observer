@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 5887,
+  "duration_api_ms": 5687,
+  "ttft_ms": 4762,
+  "ttft_stream_ms": 421,
+  "time_to_request_ms": 202,
+  "num_turns": 1,
+  "result": "# 讲义草稿：只读残差统计与有界可达性\n\n本讲只报告只读场的残差统计，不生成候选，不证明块混合预测是精确物理映射。\n\n**一、范围与代价。** 82396 只读八份已有场，0 map、0 反馈、0 物质，12 分钟完成，并以独立 Decimal 复核。此为观测口径，不含新演化，故不得由此外推整体耗时。\n\n**二、最新下降。** 新 map16 差场一步保留 .99345124，旧为 .99289735；单次下降约 0.655%，较旧 0.710% 慢。\n\n**三、边界。** 不可把射线作用看成谱半径；不可选 A 或 H 为真解；不可断言无解。二者均属未建立项（spectral_radius_established=false，strict_error_bound=false）。\n\n**四、频块份额。** 最新差场平方范数中，八频块 22–25 与 46–49 合计占 92.9755%。该数字是差场平方范数份额，不是能量份额，也不是光度份额，不可三者混用。\n\n**五、Gram 补全。** 现补 r_A 与三缺陷差的 4×4 Gram；已有 d/e 统计缺少 r_A·e，故不能据以选择系数。\n\n**六、待办。** 仅收集最新 82273 的 A16、H16、A8、H8 各输入输出的残差内积，后续比较全局与分块系数的有界可达性。\n\n（约 480 字）",
+  "stop_reason": "end_turn",
+  "session_id": "667f67ec-e222-47c2-8a0f-2bc4086b843a",
+  "total_cost_usd": 0.045605,
+  "usage": {
+    "input_tokens": 2466,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1331,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 2466,
+      "outputTokens": 1331,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.045605,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "7b20b61e-6445-4ac5-b62d-3505caa996ef"
+}
