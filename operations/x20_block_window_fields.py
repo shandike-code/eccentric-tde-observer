@@ -54,5 +54,3 @@ def measure_candidates(paths,shape,c,geometry,checkpoint=lambda:None):
         checks[name+'_radiation']=boundary[i]['residual']<1e-4
         for key in ('boundary_l1','boundary_bolometric'):checks[name+'_'+key]=boundary[i][key]<1e-3 and boundary[i][key]<=boundary[0][key]*1.0000000001
     return dict(slabs=rows,fixed_scale_l2_ratios=ratios,fixed_scale_linf_ratios=maxima,boundary=boundary,checks=checks,passed=all(checks.values()))
-
-
