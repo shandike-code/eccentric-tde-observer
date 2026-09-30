@@ -1,0 +1,11 @@
+{
+  "job_id": 82273,
+  "code": "02f222eaa8235876541e31b3429fdffdd728bf37",
+  "submitted_unix": 1790770203.0173573,
+  "stdout": "82273\n",
+  "stderr": "",
+  "run": "outputs/hpc/x20-window-feedback-20260930",
+  "maximum_maps": 32,
+  "maximum_feedback_pairs": 4,
+  "new_material_steps": 0
+}

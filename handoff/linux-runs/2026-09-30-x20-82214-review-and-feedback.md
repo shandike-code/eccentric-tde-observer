@@ -37,3 +37,13 @@ Key Issues:
 Decision: RUN（学校定向测试与干净checkout核对通过后提交）
 
 Mac备份pre-82214-final-review-20260930.bundle及automation-before-82214-final-review-20260930.toml已保存。新源代码和小工件将Git提交，并用增量bundle同步学校，学校先做完整备份再快进。大态不下载Mac、不入Git。
+
+## 实际提交与监督
+
+作业82273于2026-09-30 20:10:04 CST在anode03实际RUNNING，32CPU128GiB、Students/qos_stu_cpu_long；硬限2026-10-01 02:10:04。源码提交`02f222eaa8235876541e31b3429fdffdd728bf37`，Mac/GitHub/学校已同步。学校34passed3skipped（依Mac已审工件的3项在Mac通过），14.77秒；脚本语法通过。
+
+提交与监督启动回执已入handoff/evidence。只读watch输出目录`outputs/review-20260925/x20-window-feedback-watch-82273`，25200秒预算、60秒巡检；启动PID3627218，非持续存活保证。首份CLI回执已生成。初始preparing在校验冻结来源，不等于map已运行；初始stderr为空。所有真实预检在allocation内执行，任一来源不符会停止。
+
+定时跟进已更新为唯一当前82273，保留30分钟节奏、实质变化才通知，SSH断开时暂停并提醒重新连接。82214及更早结果不重复运行。终态先保存调度器回执，再取小归档独立复核，不能因为Slurm退出0就判科学通过。
+
+学校同步前完整备份`pre-window-feedback-code-20260930.bundle`；增量`window-feedback-code-20260930.bundle`经verify后快进。没有修改原物理核、已有protocol、dat或r20。

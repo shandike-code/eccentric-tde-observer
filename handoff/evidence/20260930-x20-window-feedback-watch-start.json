@@ -1,0 +1,9 @@
+{
+  "job_id": 82273,
+  "pid": 3627218,
+  "started_unix": 1790770227.4818401,
+  "budget_seconds": 25200,
+  "output": "/home/scc/pb24511938/eccentric-tde-observer/outputs/review-20260925/x20-window-feedback-watch-82273",
+  "log": "/home/scc/pb24511938/eccentric-tde-observer/outputs/review-20260925/x20-window-feedback-watch-82273.log",
+  "read_only": true
+}
