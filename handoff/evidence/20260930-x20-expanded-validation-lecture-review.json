@@ -1,0 +1,18 @@
+{
+  "draft": "handoff/evidence/20260930-x20-expanded-validation-lecture-draft.json",
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "draft_success": true,
+  "tools_disabled": true,
+  "independent_revision": true,
+  "corrections": [
+    "Unchanged original operator does not by itself imply affine input dependence.",
+    "Defect norms are not certified distances to the unknown fixed point.",
+    "Define L2, mass-weighted, and maximum-cell norms separately.",
+    "Boundary change ratios do not describe total luminosity reduction."
+  ],
+  "numerical_source": "handoff/evidence/20260930-x20-expanded-validation-review.json",
+  "visual_reviewed": true,
+  "physical_dt_or_gates_changed": false
+}

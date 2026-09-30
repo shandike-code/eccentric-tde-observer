@@ -1,0 +1,9 @@
+{
+  "pid": 461126,
+  "job_id": 81769,
+  "output": "outputs/review-20260925/x20-accelerated-feedback-watch-81769",
+  "started_unix": 1790735437.114599,
+  "read_only": true,
+  "cli_has_tools": false,
+  "watch_seconds": 25200
+}

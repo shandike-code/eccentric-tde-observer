@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 4293,
+  "duration_api_ms": 3629,
+  "ttft_ms": 3360,
+  "ttft_stream_ms": 928,
+  "time_to_request_ms": 666,
+  "num_turns": 1,
+  "result": "**监督报告（只读，无判定权）**\n\n作业81769在anode06运行：32CPU、128GiB、1节点1任务，上限6小时，结束16:30。调度态RUNNING，应用态preparing，已运行约26秒，无失败、超时或重启迹象。\n\ncases中accelerated与historical均为空，尚无任何反馈窗口产出，故七门、物理域、完整反馈、资源各门及第8/16张的跨初值测量与漂移检查一概不可评估，不作补造。\n\naccepted_outer_steps=20、new_material_steps=0，与既有口径一致，未见新物质步。无窗口或跨初值漂移失败信号，亦无预算或门限变动。续观至首批输出。",
+  "stop_reason": "end_turn",
+  "session_id": "06db840a-05b7-4cff-8568-76302d7b3dcf",
+  "total_cost_usd": 0.02769,
+  "usage": {
+    "input_tokens": 2628,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 582,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 2628,
+      "outputTokens": 582,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.02769,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "db0bc8b6-6dc3-4245-8c01-c44c8bb7483f"
+}
