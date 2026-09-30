@@ -1,0 +1,8 @@
+{
+  "job_id": 82187,
+  "pid": 1929776,
+  "path": "outputs/review-20260925/x20-window-prediction-watch-82187",
+  "started_unix": 1790762349.5312629,
+  "poll_seconds": 60,
+  "budget_seconds": 4800
+}

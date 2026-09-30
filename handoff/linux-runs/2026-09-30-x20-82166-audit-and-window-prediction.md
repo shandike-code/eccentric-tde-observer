@@ -42,3 +42,9 @@
 PRE：代码按八场顺序、固定算子和原物质逐项对照，完整正值/有限检查；数组Gram不是物理能量，内缩搜索门不改变原验收门。POST：82166所有来源与归约自洽，无stderr/非有限；三方向正交投影收益与超预算系数一起报告，不能择优陈述。图已目视。
 
 Mac Git备份`pre-82166-review-20260930.bundle`，automation备份`automation-before-82166-review-20260930.toml`。原物理内核、旧协议与检查点不改，新代码独立命名。CLI实际deepseek-v4-flash[1m]草稿留存；独立纠正其“0:0异常”“0.898>.8看似可用”“大系数几何不可信”及把条件数一概解释成共线的表述。拒绝无约束点的精确原因是已注册cap17，并非凭形容词判物理解。
+
+## 起跑记录
+
+代码提交6448c7fedb0e31a5c09fef78e148fc9ac7f4e686已推GitHub并同步学校，学校同步前完整Git备份为`pre-window-prediction-code-20260930.bundle`。Mac及学校均28项测试通过（学校20.80秒）。必要条件与候选原始声明/全部优化轨迹另打不可覆盖小包`82166-local-decisions-20260930.tar.gz`，23137字节，SHAb95c6d6ee4ec4b14d2bd63fca60abf9711e4d7ef698b57d7c05479e04f7d59a0，已复制学校验SHA；manifest入Git。
+
+新作业82187于2026-09-30 17:59:10 CST在anode01启动，Students/qos_stu_default，4CPU16GiB，18:59:10硬限。初次17:59:24查RUNNING/preflight、stderr空。只读watch输出`outputs/review-20260925/x20-window-prediction-watch-82187`，每60秒巡检、80分钟预算、先存终态再CLI。PID1929776仅启动回执。提交/watch回执在Git证据目录；本次后续仅文档提交，不修改冻结运行源码。

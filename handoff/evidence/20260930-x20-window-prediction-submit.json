@@ -1,0 +1,8 @@
+{
+  "job_id": 82187,
+  "git_commit": "6448c7fedb0e31a5c09fef78e148fc9ac7f4e686",
+  "run": "outputs/hpc/x20-window-prediction-20260930",
+  "submitted_unix": 1790762349.527793,
+  "stdout": "82187\n",
+  "stderr": ""
+}
