@@ -1,0 +1,17 @@
+{
+  "draft": "handoff/evidence/20260930-x20-81769-pair08-lecture-draft.json",
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "draft_success": true,
+  "tools_disabled": true,
+  "independent_revision": true,
+  "corrections": [
+    "Finite multi-map window agreement does not itself establish an error bound to the unknown solution.",
+    "The first pair compares adjacent radiation states within one branch, not different initial-seed branches.",
+    "Old late16 comparison includes a change of numerical seed and is not the new 16-minus-8 window.",
+    "Correct math delimiters and keep SHA/path identifiers out of mathematical expressions."
+  ],
+  "numerical_source": "handoff/evidence/20260930-x20-81769-accelerated08-review.json",
+  "physical_dt_or_gates_changed": false
+}

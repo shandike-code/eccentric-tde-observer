@@ -1,0 +1,13 @@
+comparison,norm,denominator,ratio,gate
+Adjacent endpoints,L2,Frozen r20 norm,6.4886129761143025e-06,0.001
+New pair vs old late16,L2,Frozen r20 norm,0.0007106511088487773,0.001
+Adjacent endpoints,Mass weighted,Frozen r20 norm,2.5848952534625958e-05,0.001
+New pair vs old late16,Mass weighted,Frozen r20 norm,0.0028152686340239966,0.001
+Adjacent endpoints,Maximum cell,Frozen r20 norm,4.168774692997068e-06,0.001
+New pair vs old late16,Maximum cell,Frozen r20 norm,0.0004360056837454722,0.001
+Adjacent endpoints,L2,Frozen 80195 signal norm,0.0018100072574566727,0.1
+New pair vs old late16,L2,Frozen 80195 signal norm,0.19823707613182504,0.1
+Adjacent endpoints,Mass weighted,Frozen 80195 signal norm,0.004350125913167305,0.1
+New pair vs old late16,Mass weighted,Frozen 80195 signal norm,0.47378217825228114,0.1
+Adjacent endpoints,Maximum cell,Frozen 80195 signal norm,0.0007049936149572194,0.1
+New pair vs old late16,Maximum cell,Frozen 80195 signal norm,0.07373418948305605,0.1

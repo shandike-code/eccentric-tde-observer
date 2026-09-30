@@ -1,0 +1,24 @@
+{
+  "observed_unix": 1790740540.0475328,
+  "status": {
+    "status": "mapping",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790740476.977129,
+    "case": "historical",
+    "completed_maps": 7,
+    "target_maps": 8
+  },
+  "queue": "     JOBID      STATE         TIME   CPUS     NODELIST\n     81769    RUNNING      1:25:29     32      anode06\n",
+  "stderr": "",
+  "cases": {
+    "accelerated": {
+      "maps": 8,
+      "active_blocks": 0
+    },
+    "historical": {
+      "maps": 7,
+      "active_blocks": 16
+    }
+  }
+}

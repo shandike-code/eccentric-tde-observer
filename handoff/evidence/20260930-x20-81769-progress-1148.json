@@ -1,0 +1,147 @@
+{
+  "job_id": 81769,
+  "observed_unix": 1790740088.2322357,
+  "scontrol": "JobId=81769 JobName=tde-x20-feedback UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=01:17:57 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-09-30T10:30:10 EligibleTime=2026-09-30T10:30:10 AccrueTime=2026-09-30T10:30:10 StartTime=2026-09-30T10:30:11 EndTime=2026-09-30T16:30:11 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-30T10:30:11 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:429026 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode06 BatchHost=anode06 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_accelerated_feedback_windows.sbatch SubmitLine=sbatch --parsable operations/x20_accelerated_feedback_windows.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-feedback-81769.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-feedback-81769.out TresPerTask=cpu=32\n",
+  "status": {
+    "status": "mapping",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790739950.1715124,
+    "case": "historical",
+    "completed_maps": 4,
+    "target_maps": 8
+  },
+  "stderr": "",
+  "cases": {
+    "accelerated": {
+      "status": "radiation",
+      "maps": 8,
+      "active_block_count": 0,
+      "last_map": {
+        "iteration": 8,
+        "input_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_1.dat",
+        "input_sha256": "0becaf404548b853492917e3e1a475dd4ec5540c99e3fb79d9a2ab9bc72a8a2f",
+        "output_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_2.dat",
+        "output_sha256": "8ccb8d3ae83d79f85c31a7cfe43f3dba744a0aa3047d7eeb2b1587f0d3cfb39f",
+        "wall_s": 153.30732982605696,
+        "residual": 4.2767842258375533e-07,
+        "boundary_l1": 1.332673086247808e-08,
+        "boundary_bolometric": 4.82968665779672e-11,
+        "maximum_worker_rss_mib": 3500.453125
+      },
+      "pair08": {
+        "feedback_evaluated": true,
+        "original_zero_gates": {
+          "last_two_photoionization_pass": true,
+          "last_two_total_recombination_pass": true,
+          "last_two_atomic_heating_pass": true,
+          "last_two_direct_heating_pass": true,
+          "last_two_formal_heating_pass": true,
+          "inner_pair_ready": true,
+          "physical_response_pass": true
+        },
+        "physical_response_failures": {},
+        "zero_pair_stable": true,
+        "baseline_replaced": false,
+        "accepted_material_step": false,
+        "from_prior_feedback": {
+          "frozen_r20": {
+            "vector_difference_over_frozen_r20_norms": {
+              "previous_vs_previous": [
+                0.000704285458306737,
+                0.0027896101813205914,
+                0.0004318381684809303
+              ],
+              "previous_vs_final": [
+                0.0006936218203257645,
+                0.0027469535322142205,
+                0.00042499204885612695
+              ],
+              "final_vs_previous": [
+                0.0007106511088487771,
+                0.0028152686340239966,
+                0.0004360056837454722
+              ],
+              "final_vs_final": [
+                0.0006999852938170819,
+                0.002772608178505849,
+                0.00042915956408048233
+              ]
+            },
+            "passed": false,
+            "tolerance": 0.001,
+            "strict_error_bound": false,
+            "baseline_replaced": false
+          },
+          "vector_difference_over_frozen_80195_signal": {
+            "previous_vs_previous": [
+              0.19646136940961187,
+              0.4694641115976518,
+              0.07302940885370844
+            ],
+            "previous_vs_final": [
+              0.19348673334987124,
+              0.4622854147279067,
+              0.0718716416491561
+            ],
+            "final_vs_previous": [
+              0.19823707613182504,
+              0.473782178252281,
+              0.07373418948305602
+            ],
+            "final_vs_final": [
+              0.19526183278087705,
+              0.46660284080066,
+              0.07257642227170764
+            ]
+          },
+          "signal_tolerance": 0.1,
+          "signal_pass": false,
+          "passed": false,
+          "strict_error_bound": false,
+          "baseline_replaced": false
+        },
+        "parent_peak_rss_bytes": 229068800,
+        "continuation_pass": true,
+        "reason": "pass"
+      }
+    },
+    "historical": {
+      "status": "radiation",
+      "maps": 4,
+      "active_block_count": 48,
+      "last_map": {
+        "iteration": 4,
+        "input_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/historical/state_0.dat",
+        "input_sha256": "a904dc9a08d7be1f5f149755a5ddd0fc11c0a64f791b22a0b23e2cc6072d58db",
+        "output_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/historical/state_1.dat",
+        "output_sha256": "7c4e1d1577663ebab6312abe61a784a03990955704a5c3a80179e7939deb8853",
+        "wall_s": 157.07822269387543,
+        "residual": 5.636333151043134e-06,
+        "boundary_l1": 1.85690258002312e-05,
+        "boundary_bolometric": 1.8568320830460285e-05,
+        "maximum_worker_rss_mib": 3498.6484375
+      }
+    }
+  },
+  "archives": [
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/archives/accelerated-map08-feedback-1790738511205873976.json",
+      "size": 408522
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/archives/accelerated-map08-feedback-1790738511205873976.tar.gz",
+      "size": 77256826
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/archives/accelerated-map08-feedback-1790738511205873976-receipt.json",
+      "size": 239
+    }
+  ],
+  "watch_latest_age_s": 10.246187686920166,
+  "watch_files": [
+    "claude-review-01.json",
+    "latest.json",
+    "claude-review-00.json"
+  ]
+}
