@@ -21,3 +21,11 @@ CLI终态原文误写“12项”和“热辐射”，分别纠正为11项及频�
 Mac30项定向测试通过（1.02秒）；新增来源/门缺失/逐块篡改拒绝，以及跨频组仿射算子测试，统一系数相容、逐块系数失配，涵盖块边界与短尾。shell/compile通过。新终态独立入口已经准备，复用旧已E2E的独立归约；新产物E2E尚待运行，不能预报通过。学校复验、提交回执及版本在启动后另记。
 
 本轮两端`pre-82512-review-20261001.bundle`已备份。旧代码和数值产物不改，新增实现、测试、协议、报告入Git。当前accepted20、原物理dt/old/r20不变，没有自洽大气、整盘I_nu、严格解误差界或物理无解结论。
+
+## 启动82515
+
+学校30项复验通过（20.56秒），提交前队列为空，工作树干净；数值代码5013c0caef0f41793a05e61e96ba793d70017c08同步三端。学校另存`pre-global-true-launch-20261001.bundle`后，04:31:43提交82515，04:31:44在anode02开始，32CPU128GiB、16worker、2h硬限06:31:44。04:32:18状态preparing，stderr0，源hash尚在进行；不是运行完成或map通过。
+
+回执`20261001-x20-global-boundary-validation-submit.json`；watch输出`outputs/review-20260925/x20-global-boundary-validation-watch-82515`，PID1642029仅启动记录，60秒观察、8400秒预算，无工具CLI只读监督。终态独立入口`review_x20_global_boundary_validation.py --job 82515 --base COMPLETE_BASENAME`；先保存终态、小归档清单和CLI原文，后审计。新工件E2E尚未发生。
+
+定时任务原配置备份`automation-before-82515-update-20261001.toml`，交接切换为82515；无变化安静。只有16真实门及独立审计全过，才另立有界双种子反馈窗口；不自动接受物质21。
