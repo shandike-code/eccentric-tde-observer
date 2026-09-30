@@ -1,0 +1,212 @@
+{
+  "gram": [
+    [
+      1.0510168377949701e-09,
+      5.30771587317158e-12,
+      1.614713627788399e-08,
+      1.6082781151295277e-08,
+      -2.0934157313170943e-11
+    ],
+    [
+      5.30771587317158e-12,
+      3.015624084747178e-14,
+      6.32119219805931e-11,
+      6.338154763104058e-11,
+      -1.1831337062124734e-13
+    ],
+    [
+      1.614713627788399e-08,
+      6.32119219805931e-11,
+      1.8657344445404223e-06,
+      1.825923542407891e-06,
+      -2.543147948204198e-10
+    ],
+    [
+      1.6082781151295277e-08,
+      6.338154763104058e-11,
+      1.825923542407891e-06,
+      1.7872868271585442e-06,
+      -2.548699302714813e-10
+    ],
+    [
+      -2.0934157313170943e-11,
+      -1.1831337062124734e-13,
+      -2.543147948204198e-10,
+      -2.548699302714813e-10,
+      4.643052001486437e-13
+    ]
+  ],
+  "positive_hessian_ldl_pivots": [
+    "0.00002869244313034934086863500369707589748804054639101818706629863953808584",
+    "1649.101027126265001996255102370852963882861177986799045006857642714271",
+    "0.230636699487417901382420673826293293423831302184811648531297008987",
+    "8.808758207302616271238654486729241812464746073086347217051511075811379E-8"
+  ],
+  "hessian_eigenvalues": [
+    5.412743090392155e-09,
+    0.0003236054682857028,
+    0.15790715709177805,
+    3475.544188828305
+  ],
+  "hessian_condition": 642104036860.2643,
+  "subnormal_slab_roundoff": [],
+  "all_groups": 9632,
+  "all_slabs": 301,
+  "job_id": 81647,
+  "archive": {
+    "path": "outputs/hpc/x20-long-chord-20260930/archives/complete-1790723120419269285.tar.gz",
+    "size_bytes": 2935212,
+    "sha256": "f1d8d8025c18571c08cacb872a883c5ebc2d3d7054a5fa3f73fdedaf816fa7e3"
+  },
+  "verified_files": 626,
+  "verified_code_claims": 754,
+  "verified_source_claims": 781,
+  "external_claims_bound_to_prior_audit": [
+    {
+      "path": "outputs/hpc/common-feedback-bridge-v2-20260923/inputs/physical_old_time_level.npz",
+      "size_bytes": 17159976,
+      "sha256": "33f248d5cf35ac07fffd139e1cd99d4edefa590debf7e109f67f2dbc57adf455"
+    },
+    {
+      "path": "outputs/hpc/common-step21-20260924/inputs/base_residual.npy",
+      "size_bytes": 4224,
+      "sha256": "b6f337ce30d323acada31ea9f3e1772ccb2be1075753f432ab13a8e299ee2a45"
+    },
+    {
+      "path": "outputs/hpc/common-step21-20260924/inputs/outer_base_material.npz",
+      "size_bytes": 27774,
+      "sha256": "36434a29123e2387195b77713baffaecd046f7d6c0297a5d0d95a74319e22eda"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/late/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "0d10808607e4f26b0dcabf5a58f22c1243b5778e45da5ac094e7f5339cdf1470"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/late/endpoints-map16/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "26226a1db10bbc90e4b24e5aaf64aa68f08f68956de4315b12261b0df4be17f6"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/historical/endpoints-map24/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "140da23ba51895945668c37a3c83aea95295a114b6e0594fba0aade37f1a7575"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/historical/endpoints-map24/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "c558b84cd3d00ca45855afed9d47303b6452723eebfce2623eb1eb555241266e"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/late/endpoints-map16/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "5c8b337e805c38c7ee5549aa9cff5382775d22f4dd226576777e8570d86b4c94"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/historical/endpoints-map24/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "a509cd48c6e0867b67ac6188a531eeeec2178417e63753211ae42649f4b79e76"
+    }
+  ],
+  "maps": [
+    {
+      "iteration": 1,
+      "residual": 5.452727357678818e-07,
+      "boundary_l1": 1.6676029787431374e-08,
+      "boundary_bolometric": 1.6402751323321712e-08,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.14395502684823847,
+      "wall_s": 163.12759549543262
+    },
+    {
+      "iteration": 2,
+      "residual": 5.429620570933514e-07,
+      "boundary_l1": 1.6302781272715403e-08,
+      "boundary_bolometric": 1.6031905413867558e-08,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.1438422258350157,
+      "wall_s": 155.8499445039779
+    },
+    {
+      "iteration": 3,
+      "residual": 5.406611233923649e-07,
+      "boundary_l1": 1.594032111782028e-08,
+      "boundary_bolometric": 1.5672187027853884e-08,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.1437295908126553,
+      "wall_s": 151.04731692746282
+    },
+    {
+      "iteration": 4,
+      "residual": 5.383698938986325e-07,
+      "boundary_l1": 1.558816765878767e-08,
+      "boundary_bolometric": 1.5323131942169057e-08,
+      "worst_self_scaled_block": 74,
+      "worst_self_scaled_change": 0.14361712133589055,
+      "wall_s": 153.53382502123713
+    }
+  ],
+  "map_process_receipts": 304,
+  "maximum_proc_kib": 3583836,
+  "parent_peak_rss_bytes": 1029259264,
+  "wall_s": 2227.0013441480696,
+  "new_maps": 4,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false,
+  "independent_small_statistic_reduction": true,
+  "large_fields_recomputed_on_mac": false,
+  "native_identity_independently_recomputed": false,
+  "native_identity_batch_receipt_verified": true,
+  "strict_physical_error_bound": false,
+  "original_basis": [
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/late/endpoints-map16/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "5c8b337e805c38c7ee5549aa9cff5382775d22f4dd226576777e8570d86b4c94"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/late/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "0d10808607e4f26b0dcabf5a58f22c1243b5778e45da5ac094e7f5339cdf1470"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/late/endpoints-map16/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "26226a1db10bbc90e4b24e5aaf64aa68f08f68956de4315b12261b0df4be17f6"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/historical/endpoints-map24/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "a509cd48c6e0867b67ac6188a531eeeec2178417e63753211ae42649f4b79e76"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/historical/endpoints-map24/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "140da23ba51895945668c37a3c83aea95295a114b6e0594fba0aade37f1a7575"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/historical/endpoints-map24/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "c558b84cd3d00ca45855afed9d47303b6452723eebfce2623eb1eb555241266e"
+    }
+  ],
+  "new_pair": [
+    {
+      "path": "outputs/hpc/x20-long-chord-20260930/chord/endpoints-map04/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "7d89ccb9e49b2b58bff9dc0cf6353771a2b07e5674ec48dbdf9ffce01e333ea6"
+    },
+    {
+      "path": "outputs/hpc/x20-long-chord-20260930/chord/endpoints-map04/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "746a5528c49bc7037270eb8f28cf3f0efa4960245f457d898e9567b3a838fecb"
+    }
+  ],
+  "new_pair_boundary": {
+    "boundary_l1": 1.5588167660405398e-08,
+    "boundary_bolometric": 1.5323131942169057e-08
+  },
+  "scientific_independent_audit_completed": true
+}
