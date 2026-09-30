@@ -1,0 +1,15 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "corrections": [
+    "Positive target gas energy does not establish correct update direction",
+    "A finite-window pass is real evidence, not proven to be an artefact",
+    "H has a smaller residual mass norm, but that does not rank radiation accuracy",
+    "32 maps and four feedback pairs are separate counts"
+  ],
+  "lecture_section": 105,
+  "independently_checked_against": [
+    "20260930-x20-82273-final-review.json",
+    "20260930-x20-82273-energy-decomposition.json"
+  ],
+  "figure_visually_checked": true
+}

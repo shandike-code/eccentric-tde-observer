@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 8888,
+  "duration_api_ms": 8741,
+  "ttft_ms": 7622,
+  "ttft_stream_ms": 688,
+  "time_to_request_ms": 149,
+  "num_turns": 1,
+  "result": "**中文学习讲义草稿（32map4 反馈对）**\n\n本轮完成 32map4 全部四对反馈计算。四对各自原七门全部通过，8 个气体响应均为正值，说明主链一致、响应方向正确。但配对一致性收紧后出现分化：A16−A8 窗口通过，H16−H8 窗口失败；cross16 质量差 /r20=0.2914283835（门限 .001）、/signal=49.04454682（门限 .1），三加热门同告失败。据此参考校准资格为 false，本轮结果不得作为校准基准。\n\n为什么不能选 A 的\"稳定\"真解？A 看似稳定，只因范数在小窗口内平缓；但 A16−A8 与 H16−H8 走向不一致，说明该稳定仅是局部度量假象，缺少反馈耦合验证。为什么不能选 H 中范数更小的真解？范数小不等于残差小：H 侧 cross 质量差与信号差超限数百倍，三加热门失败，选它等于用范数排序替代物理收敛判据。二者都只是单点或少点投影，不能替代多初值、多反馈的联合一致性。\n\n下一步：默认 4CPU、16GiB，只读当前两种初值 8/16 各输入输出共 8 大场，测 d=H−A 与 e=(T(H)−H)−(T(A)−A)。本阶段 0map、0 反馈、0 物质。注意：方向投影不是谱半径，不能由少量点推断完工或多解/无解；迭代编号不是物理步，仍在同一物理步的 20 次物质更新内。",
+  "stop_reason": "end_turn",
+  "session_id": "57757d75-a917-4679-9605-d6c7f28a37f1",
+  "total_cost_usd": 0.093155,
+  "usage": {
+    "input_tokens": 10611,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1604,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 10611,
+      "outputTokens": 1604,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.093155,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "85b155a1-37db-405a-a35b-8e45664ed5aa"
+}

@@ -1,0 +1,10 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "corrections": [
+    "r20 mass norm is the original reference, not the normalized A16 value",
+    "small finite-window difference does not establish proximity to the target",
+    "adjacent stability does not imply either endpoint is a coupled self-consistent solution"
+  ],
+  "lecture_section": 104,
+  "independently_checked_against": "20260930-x20-82273-accelerated16-review.json"
+}

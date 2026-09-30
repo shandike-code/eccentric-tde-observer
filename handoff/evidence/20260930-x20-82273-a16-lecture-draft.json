@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 10507,
+  "duration_api_ms": 10372,
+  "ttft_ms": 7815,
+  "ttft_stream_ms": 575,
+  "time_to_request_ms": 136,
+  "num_turns": 1,
+  "result": "# A16−A8 加速支审计要点（讲义草稿）\n\n**一、过门结论。** 加速支 A16 的八图有限窗口比较中，三范数在两把尺子上全部过门：质量加权残差相对冻结 r20 的比值为 5.76258e-5，门限 1e-3；相对 80195 信号的比值为 .00969786，门限 0.1。l2、质量加权、max-cell 三种度量在两个尺度上均通过。四种端点配对（prev–prev、prev–final、final–prev、final–final）一律先取完整 512 维向量的差，再作范数；顺序颠倒是错的。\n\n**二、过门不等于残差为零。** 门限约束的是端点之间的变化量，A16 自身的质量加权残差范数为 .282836994，归一后 r20 = .2619104205，明显非零。差值小说明\"这一步没走偏\"，残差非零说明\"还没到位\"。二者不可互相替代，更不能用过门反推残差收敛。\n\n**三、四个必须分开的问题。** ①相邻稳定：一对端点前后是否自洽；②有限窗口稳定：八图窗口内漂移是否受控；③非线性物质自洽：物质场是否收敛到自治解；④跨初值一致：不同初值是否给出一致结论。本次审计只对①②提供证据，③④均未由该证据覆盖。把②当作③或④是越界。\n\n**四、范数口径。** max-cell 定义为 128 个单元各自四分量欧氏范数的最大值，不是逐分量 Linf，也不是最大单分量。三个范数是同一向量的三种度量方式，不是 512 维向量的三个物理分量；混读会凭空造出\"分量\"语义。\n\n**五、边界与未决项。** 有限窗口内的变化不是严格误差界（strict_error_bound = false），只是观测漂移，不能外推为全局收敛速率。同样不能由此断言\"模型无解\"。基线未被替换，无新物质更新。跨初值的最终审计尚未进行，资格字段为 null，暂不可用于参考标定。\n\n**小结。** A16−A8 的加速支在有限窗口内三范数两尺度全部过门，这是一条真实的正面结论；但 A16 的质量残差仍非零，且它既不证明非线性物质自洽，也不证明跨初值一致。审计的正确姿态是：把过门结论限定在它真正覆盖的窗口与口径内，对其余问题保持未决。",
+  "stop_reason": "end_turn",
+  "session_id": "7ea1b3d5-5643-4add-989f-a68583fef4b8",
+  "total_cost_usd": 0.087365,
+  "usage": {
+    "input_tokens": 7588,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1977,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 7588,
+      "outputTokens": 1977,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.087365,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "899aa62d-6ed2-4920-99f7-9bc4d532a0e4"
+}
