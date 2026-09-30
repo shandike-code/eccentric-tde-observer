@@ -1,0 +1,26 @@
+{
+  "cli_result_path": "outputs/review-20260925/x20-expanded-lecture-retry-cli.json",
+  "cli_result_sha256": "e92c964f781a39e78c84ffeaf41c14ec18a827eb5aa3f990955645420fffa067",
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "is_error": false,
+  "draft_received": true,
+  "independent_review": true,
+  "corrections": [
+    "删去不存在的谱截断说法：保存全部9632频率组；小数据指压缩统计，不指删频率。",
+    "排除范围由方向/上限/门决定，不是方法本身创造了无解；未把证书当物理误差界。",
+    "删去长方向理论上更贴近物理的无证据结论，只说扩大同上限可达集合。",
+    "纠正完整场含义：这里是固定物质单柱9632x32x4096，不是整盘I_nu或耦合解。",
+    "边界.9737等为相对原变化的比，不是带单位谱或原始boundary_l1。",
+    "明确98%是内部搜索目标乘0.98，而非减少98%。",
+    "区分半步与两端缺陷插值的实测affinity、预测线性组合及全柱收敛。"
+  ],
+  "first_cli_attempt": {
+    "exit_code": 127,
+    "error": "noninteractive SSH PATH omitted installed node/claude; corrected only process PATH",
+    "stderr": "outputs/review-20260925/x20-expanded-lecture-cli.stderr"
+  },
+  "figure": "handoff/evidence/20260930-x20-expanded-review.png",
+  "figure_visually_checked": true
+}

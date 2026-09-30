@@ -1,0 +1,53 @@
+{
+  "observed_unix": 1790731108.4359186,
+  "job_id": 81679,
+  "prediction": {
+    "path": "outputs/hpc/x20-expanded-validation-20260930/prediction.json",
+    "size_bytes": 323500,
+    "sha256": "8b8e244df1d94637ea98839e9bb51c710fca01d947851e7a749b518262198d02"
+  },
+  "all_predicted_checks_passed": true,
+  "checks": {
+    "full_field_nonnegative": true,
+    "full_l2_benefit": true,
+    "full_linf_nonincrease": true,
+    "half_l2_nonincrease": true,
+    "half_linf_nonincrease": true,
+    "full_radiation": true,
+    "full_boundary_l1": true,
+    "full_boundary_bolometric": true,
+    "half_radiation": true,
+    "half_boundary_l1": true,
+    "half_boundary_bolometric": true
+  },
+  "fixed_scale_l2_ratios": [
+    1.0,
+    0.7646030651918567,
+    0.8809454916494023
+  ],
+  "fixed_scale_linf_ratios": [
+    1.0,
+    0.808067322339751,
+    0.9040336608421359
+  ],
+  "boundary": [
+    {
+      "boundary_l1": 1.7060450465557875e-08,
+      "boundary_bolometric": 1.6785216869121085e-08,
+      "residual": 5.475932014387697e-07
+    },
+    {
+      "boundary_l1": 1.661223888672724e-08,
+      "boundary_bolometric": 1.0615534389052726e-08,
+      "residual": 4.424841501128012e-07
+    },
+    {
+      "boundary_l1": 1.4261689443048278e-08,
+      "boundary_bolometric": 3.084843302031803e-09,
+      "residual": 4.950381992136e-07
+    }
+  ],
+  "slab_count": 301,
+  "minimum_intensity": 0.0,
+  "independent_mac_full_field_audit_completed": false
+}
