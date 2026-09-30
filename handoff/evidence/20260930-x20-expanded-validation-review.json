@@ -1,0 +1,247 @@
+{
+  "job_id": 81679,
+  "archive": {
+    "path": "outputs/hpc/x20-expanded-validation-20260930/archives/complete-1790732954355330907.tar.gz",
+    "size_bytes": 3372907,
+    "sha256": "5fbcaa1171ca1da38947fb933c6a88dd45e18fdfc47a142d2b02a4f41766662e"
+  },
+  "verified_files": 328,
+  "verified_code_claims": 758,
+  "verified_source_claims": 789,
+  "external_claims_bound_to_prior_audit": [
+    {
+      "path": "outputs/hpc/common-feedback-bridge-v2-20260923/inputs/physical_old_time_level.npz",
+      "size_bytes": 17159976,
+      "sha256": "33f248d5cf35ac07fffd139e1cd99d4edefa590debf7e109f67f2dbc57adf455"
+    },
+    {
+      "path": "outputs/hpc/common-step21-20260924/inputs/base_residual.npy",
+      "size_bytes": 4224,
+      "sha256": "b6f337ce30d323acada31ea9f3e1772ccb2be1075753f432ab13a8e299ee2a45"
+    },
+    {
+      "path": "outputs/hpc/common-step21-20260924/inputs/outer_base_material.npz",
+      "size_bytes": 27774,
+      "sha256": "36434a29123e2387195b77713baffaecd046f7d6c0297a5d0d95a74319e22eda"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/late/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "0d10808607e4f26b0dcabf5a58f22c1243b5778e45da5ac094e7f5339cdf1470"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/late/endpoints-map16/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "26226a1db10bbc90e4b24e5aaf64aa68f08f68956de4315b12261b0df4be17f6"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/historical/endpoints-map24/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "140da23ba51895945668c37a3c83aea95295a114b6e0594fba0aade37f1a7575"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/historical/endpoints-map24/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "c558b84cd3d00ca45855afed9d47303b6452723eebfce2623eb1eb555241266e"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/late/endpoints-map16/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "5c8b337e805c38c7ee5549aa9cff5382775d22f4dd226576777e8570d86b4c94"
+    },
+    {
+      "path": "outputs/hpc/x20-radiation-history-calibration-20260929/historical/endpoints-map24/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "a509cd48c6e0867b67ac6188a531eeeec2178417e63753211ae42649f4b79e76"
+    },
+    {
+      "path": "outputs/hpc/x20-long-chord-20260930/chord/endpoints-map04/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "7d89ccb9e49b2b58bff9dc0cf6353771a2b07e5674ec48dbdf9ffce01e333ea6"
+    },
+    {
+      "path": "outputs/hpc/x20-long-chord-20260930/chord/endpoints-map04/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "746a5528c49bc7037270eb8f28cf3f0efa4960245f457d898e9567b3a838fecb"
+    }
+  ],
+  "prediction": {
+    "l2_ratios": [
+      1.0,
+      0.7646030651918567,
+      0.8809454916494023
+    ],
+    "linf_ratios": [
+      1.0,
+      0.808067322339751,
+      0.9040336608421359
+    ],
+    "boundary": [
+      {
+        "boundary_l1": 1.7060450465557875e-08,
+        "boundary_bolometric": 1.6785216869121085e-08,
+        "residual": 5.475932014387697e-07
+      },
+      {
+        "boundary_l1": 1.661223888672724e-08,
+        "boundary_bolometric": 1.0615534389052726e-08,
+        "residual": 4.424841501128012e-07
+      },
+      {
+        "boundary_l1": 1.4261689443048278e-08,
+        "boundary_bolometric": 3.084843302031803e-09,
+        "residual": 4.950381992136e-07
+      }
+    ],
+    "checks": {
+      "full_field_nonnegative": true,
+      "full_l2_benefit": true,
+      "full_linf_nonincrease": true,
+      "half_l2_nonincrease": true,
+      "half_linf_nonincrease": true,
+      "full_radiation": true,
+      "full_boundary_l1": true,
+      "full_boundary_bolometric": true,
+      "half_radiation": true,
+      "half_boundary_l1": true,
+      "half_boundary_bolometric": true
+    },
+    "squared_l2": [
+      1.0510168377949701e-09,
+      6.144432011885714e-10,
+      8.156573394022023e-10
+    ],
+    "linf": [
+      2.1171975853051528e-08,
+      1.7108381836217212e-08,
+      1.9140178837695476e-08
+    ]
+  },
+  "actual": {
+    "l2_ratios": [
+      1.0,
+      0.7646030652102698,
+      0.8809454916579785,
+      2.1243019538891948e-09
+    ],
+    "linf_ratios": [
+      1.0,
+      0.8080673187346159,
+      0.9040336595311778,
+      2.2941768715625023e-09
+    ],
+    "checks": {
+      "full_l2_benefit": true,
+      "full_linf_nonincrease": true,
+      "half_l2_nonincrease": true,
+      "half_linf_nonincrease": true,
+      "full_radiation": true,
+      "full_boundary_l1": true,
+      "full_boundary_bolometric": true,
+      "half_radiation": true,
+      "half_boundary_l1": true,
+      "half_boundary_bolometric": true,
+      "independent_half_affinity": true,
+      "independent_half_linf_affinity": true
+    },
+    "squared_l2": [
+      1.0510168377949701e-09,
+      6.144432012181652e-10,
+      8.156573394180836e-10,
+      4.742880372877119e-27
+    ],
+    "linf": [
+      2.1171975853051528e-08,
+      1.710838175988938e-08,
+      1.91401788099399e-08,
+      4.85722573273506e-17
+    ],
+    "boundary_ratios": {
+      "boundary_l1": [
+        0.9737280336774233,
+        0.8359503447575778
+      ],
+      "boundary_bolometric": [
+        0.6324335521986655,
+        0.18378333966774588
+      ]
+    }
+  },
+  "actual_maps": {
+    "full": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/x20-expanded-validation-20260930/full/state_0.dat",
+      "input_sha256": "842d1d50dc3d47274abdabeb0e41250eef58bd0ffc3907482d0df5a754f6fc16",
+      "output_path": "outputs/hpc/x20-expanded-validation-20260930/full/state_1.dat",
+      "output_sha256": "a9aaf15de922d5f6e98588c26faab8e6ec95a0c4ef35813aaecdecd3225e332f",
+      "wall_s": 151.9555529570207,
+      "residual": 4.424841481386891e-07,
+      "boundary_l1": 1.6612238882672722e-08,
+      "boundary_bolometric": 1.0615534346674261e-08,
+      "maximum_worker_rss_mib": 3501.1953125
+    },
+    "half": {
+      "iteration": 1,
+      "input_path": "outputs/hpc/x20-expanded-validation-20260930/half/state_0.dat",
+      "input_sha256": "db3b469f101169a9281337bb676f6fea9af9fec072d293e1e3657e444eb75990",
+      "output_path": "outputs/hpc/x20-expanded-validation-20260930/half/state_1.dat",
+      "output_sha256": "2993981d5acbe8709aeb6d2bff94a45fbf351de11d05e2fcbb540a84f9988520",
+      "wall_s": 141.28292137105018,
+      "residual": 4.950381984957344e-07,
+      "boundary_l1": 1.4261689445993693e-08,
+      "boundary_bolometric": 3.084843218401238e-09,
+      "maximum_worker_rss_mib": 3499.12109375
+    }
+  },
+  "candidate_claims": {
+    "full": {
+      "path": "outputs/hpc/x20-expanded-validation-20260930/full.dat",
+      "size_bytes": 10099884032,
+      "sha256": "842d1d50dc3d47274abdabeb0e41250eef58bd0ffc3907482d0df5a754f6fc16"
+    },
+    "half": {
+      "path": "outputs/hpc/x20-expanded-validation-20260930/half.dat",
+      "size_bytes": 10099884032,
+      "sha256": "db3b469f101169a9281337bb676f6fea9af9fec072d293e1e3657e444eb75990"
+    }
+  },
+  "maps": {
+    "full": [
+      {
+        "iteration": 1,
+        "residual": 4.424841481386891e-07,
+        "boundary_l1": 1.6612238882672722e-08,
+        "boundary_bolometric": 1.0615534346674261e-08,
+        "worst_self_scaled_block": 74,
+        "worst_self_scaled_change": 0.1432377231424026,
+        "wall_s": 151.9555529570207
+      }
+    ],
+    "half": [
+      {
+        "iteration": 1,
+        "residual": 4.950381984957344e-07,
+        "boundary_l1": 1.4261689445993693e-08,
+        "boundary_bolometric": 3.084843218401238e-09,
+        "worst_self_scaled_block": 74,
+        "worst_self_scaled_change": 0.14332149178967857,
+        "wall_s": 141.28292137105018
+      }
+    ]
+  },
+  "map_process_receipts": 152,
+  "maximum_proc_kib": 3585224,
+  "parent_peak_rss_bytes": 932028416,
+  "wall_s": 2410.7616238608025,
+  "new_maps": 2,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false,
+  "independent_small_statistic_reduction": true,
+  "large_fields_recomputed_on_mac": false,
+  "native_identity_batch_receipt_verified": true,
+  "strict_physical_error_bound": false,
+  "true_maps_independently_validated": true,
+  "material_response_not_yet_evaluated": true
+}
