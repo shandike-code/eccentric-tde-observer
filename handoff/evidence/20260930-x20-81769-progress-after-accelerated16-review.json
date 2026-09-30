@@ -1,0 +1,44 @@
+{
+  "checked_unix": 1790744263.0337708,
+  "status": {
+    "status": "mapping",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790744236.09311,
+    "case": "historical",
+    "completed_maps": 11,
+    "target_maps": 16
+  },
+  "scontrol": "JobId=81769 JobName=tde-x20-feedback UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=02:27:32 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-09-30T10:30:10 EligibleTime=2026-09-30T10:30:10 AccrueTime=2026-09-30T10:30:10 StartTime=2026-09-30T10:30:11 EndTime=2026-09-30T16:30:11 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-30T10:30:11 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:429026 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode06 BatchHost=anode06 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_accelerated_feedback_windows.sbatch SubmitLine=sbatch --parsable operations/x20_accelerated_feedback_windows.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-feedback-81769.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-feedback-81769.out TresPerTask=cpu=32\n",
+  "stderr_bytes": 0,
+  "git_head": "993c290c1b58b08560b902342d62908e7e3ee44c",
+  "cases": {
+    "accelerated": {
+      "history": 16,
+      "active_map": null,
+      "feedback_decisions": [
+        "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/pair16/decision.json",
+        "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/pair08/decision.json"
+      ]
+    },
+    "historical": {
+      "history": 11,
+      "active_map": {
+        "iteration": 12,
+        "records": [],
+        "input_sha256": "dcf9507bc676023252f73ea3295ab8ec931f44984a1661a507a4926bcff3a37d",
+        "wall_s": 0.0
+      },
+      "feedback_decisions": [
+        "outputs/hpc/x20-accelerated-feedback-windows-20260930/historical/pair08/decision.json"
+      ]
+    }
+  },
+  "watch_files": {
+    "outputs/review-20260925/x20-accelerated-feedback-watch-81769/claude-review-01.json": 1790738517.0,
+    "outputs/review-20260925/x20-accelerated-feedback-watch-81769/claude-review-02.json": 1790741471.0,
+    "outputs/review-20260925/x20-accelerated-feedback-watch-81769/latest.json": 1790744257.0,
+    "outputs/review-20260925/x20-accelerated-feedback-watch-81769/claude-review-00.json": 1790735444.0,
+    "outputs/review-20260925/x20-accelerated-feedback-watch-81769/claude-review-03.json": 1790743657.0
+  }
+}

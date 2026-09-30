@@ -1,0 +1,16 @@
+{
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "draft": "handoff/evidence/20260930-x20-81769-cross08-lecture-draft.json",
+  "tools_disabled": true,
+  "independent_revision": true,
+  "corrections": [
+    "76 natural blocks partition all 9632 frequency groups; they are not multiplied.",
+    "An audit reproducing failed comparison values is not a science-gate pass.",
+    "Map08 checkpoint is not the map16-minus-map08 window.",
+    "Gas thermal-energy log coordinates are not log temperature or energy-budget fractions."
+  ],
+  "numerical_source": "handoff/evidence/20260930-x20-81769-cross08-review.json",
+  "visual_reviewed": true
+}

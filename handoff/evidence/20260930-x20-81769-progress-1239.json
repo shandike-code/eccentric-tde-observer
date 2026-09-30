@@ -1,0 +1,302 @@
+{
+  "job_id": 81769,
+  "observed_unix": 1790743164.138371,
+  "scontrol": "JobId=81769 JobName=tde-x20-feedback UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=02:09:13 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-09-30T10:30:10 EligibleTime=2026-09-30T10:30:10 AccrueTime=2026-09-30T10:30:10 StartTime=2026-09-30T10:30:11 EndTime=2026-09-30T16:30:11 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-30T10:30:11 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:429026 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode06 BatchHost=anode06 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_accelerated_feedback_windows.sbatch SubmitLine=sbatch --parsable operations/x20_accelerated_feedback_windows.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-feedback-81769.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-feedback-81769.out TresPerTask=cpu=32\n",
+  "scheduler_stderr": "",
+  "stderr": "",
+  "cases": {
+    "accelerated": {
+      "maps": 16,
+      "active_blocks": 0,
+      "last_map": {
+        "iteration": 16,
+        "input_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_0.dat",
+        "input_sha256": "c7f9fea723498d28a13e7976deefba442769ac352b7c394f616c4981eb3eac97",
+        "output_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_1.dat",
+        "output_sha256": "6741389510a9d36d4b5587396a15e8feaf54e8d8eddd2886ccbb7186899b8249",
+        "wall_s": 150.03730241954327,
+        "residual": 4.133655867934315e-07,
+        "boundary_l1": 1.1499201408239434e-08,
+        "boundary_bolometric": 4.467983581754107e-09,
+        "maximum_worker_rss_mib": 3506.640625
+      },
+      "pair08": {
+        "feedback_evaluated": true,
+        "original_zero_gates": {
+          "last_two_photoionization_pass": true,
+          "last_two_total_recombination_pass": true,
+          "last_two_atomic_heating_pass": true,
+          "last_two_direct_heating_pass": true,
+          "last_two_formal_heating_pass": true,
+          "inner_pair_ready": true,
+          "physical_response_pass": true
+        },
+        "physical_response_failures": {},
+        "zero_pair_stable": true,
+        "baseline_replaced": false,
+        "accepted_material_step": false,
+        "from_prior_feedback": {
+          "frozen_r20": {
+            "vector_difference_over_frozen_r20_norms": {
+              "previous_vs_previous": [
+                0.000704285458306737,
+                0.0027896101813205914,
+                0.0004318381684809303
+              ],
+              "previous_vs_final": [
+                0.0006936218203257645,
+                0.0027469535322142205,
+                0.00042499204885612695
+              ],
+              "final_vs_previous": [
+                0.0007106511088487771,
+                0.0028152686340239966,
+                0.0004360056837454722
+              ],
+              "final_vs_final": [
+                0.0006999852938170819,
+                0.002772608178505849,
+                0.00042915956408048233
+              ]
+            },
+            "passed": false,
+            "tolerance": 0.001,
+            "strict_error_bound": false,
+            "baseline_replaced": false
+          },
+          "vector_difference_over_frozen_80195_signal": {
+            "previous_vs_previous": [
+              0.19646136940961187,
+              0.4694641115976518,
+              0.07302940885370844
+            ],
+            "previous_vs_final": [
+              0.19348673334987124,
+              0.4622854147279067,
+              0.0718716416491561
+            ],
+            "final_vs_previous": [
+              0.19823707613182504,
+              0.473782178252281,
+              0.07373418948305602
+            ],
+            "final_vs_final": [
+              0.19526183278087705,
+              0.46660284080066,
+              0.07257642227170764
+            ]
+          },
+          "signal_tolerance": 0.1,
+          "signal_pass": false,
+          "passed": false,
+          "strict_error_bound": false,
+          "baseline_replaced": false
+        },
+        "parent_peak_rss_bytes": 229068800,
+        "continuation_pass": true,
+        "reason": "pass"
+      }
+    },
+    "historical": {
+      "maps": 8,
+      "active_blocks": 0,
+      "last_map": {
+        "iteration": 8,
+        "input_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/historical/state_1.dat",
+        "input_sha256": "06c6e89cc1aeb968df03a1ae27282ea8401fd0929679fff9a838458e2bf0e789",
+        "output_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/historical/state_2.dat",
+        "output_sha256": "540e4336a783625aa6916f81674e7442e4d4ec7051b13cf52e97df40f8cccf71",
+        "wall_s": 156.95839598216116,
+        "residual": 5.534692026899248e-06,
+        "boundary_l1": 1.613008946920005e-05,
+        "boundary_bolometric": 1.6129698974945948e-05,
+        "maximum_worker_rss_mib": 3501.6875
+      },
+      "pair08": {
+        "feedback_evaluated": true,
+        "original_zero_gates": {
+          "last_two_photoionization_pass": true,
+          "last_two_total_recombination_pass": true,
+          "last_two_atomic_heating_pass": true,
+          "last_two_direct_heating_pass": true,
+          "last_two_formal_heating_pass": true,
+          "inner_pair_ready": true,
+          "physical_response_pass": true
+        },
+        "physical_response_failures": {},
+        "zero_pair_stable": true,
+        "baseline_replaced": false,
+        "accepted_material_step": false,
+        "from_prior_feedback": {
+          "frozen_r20": {
+            "vector_difference_over_frozen_r20_norms": {
+              "previous_vs_previous": [
+                0.00794324090901063,
+                0.018921719294940385,
+                0.004623030272861146
+              ],
+              "previous_vs_final": [
+                0.006872574718662247,
+                0.016492778588958007,
+                0.0039729425736064125
+              ],
+              "final_vs_previous": [
+                0.008844011241923778,
+                0.02120606194431067,
+                0.005115685519840738
+              ],
+              "final_vs_final": [
+                0.007774057423470594,
+                0.018779040518853592,
+                0.004468290510929191
+              ]
+            },
+            "passed": false,
+            "tolerance": 0.001,
+            "strict_error_bound": false,
+            "baseline_replaced": false
+          },
+          "vector_difference_over_frozen_80195_signal": {
+            "previous_vs_previous": [
+              2.2157776624929513,
+              3.184340306104748,
+              0.7818140974603472
+            ],
+            "previous_vs_final": [
+              1.917113898453109,
+              2.775573339919682,
+              0.6718758755874534
+            ],
+            "final_vs_previous": [
+              2.4670487501470073,
+              3.568772833506684,
+              0.8651284593708696
+            ],
+            "final_vs_final": [
+              2.168583703198948,
+              3.160328863463785,
+              0.755645606194728
+            ]
+          },
+          "signal_tolerance": 0.1,
+          "signal_pass": false,
+          "passed": false,
+          "strict_error_bound": false,
+          "baseline_replaced": false
+        },
+        "cross_history": {
+          "residual_comparison": {
+            "frozen_r20": {
+              "vector_difference_over_frozen_r20_norms": {
+                "previous_vs_previous": [
+                  0.09247899926708626,
+                  0.33647003542787435,
+                  0.045395720935191224
+                ],
+                "previous_vs_final": [
+                  0.09248445650885853,
+                  0.33649423497226705,
+                  0.04539988969222687
+                ],
+                "final_vs_previous": [
+                  0.09175958166075752,
+                  0.3344496793893083,
+                  0.045201175610429536
+                ],
+                "final_vs_final": [
+                  0.09176505465024745,
+                  0.33447390193806414,
+                  0.04520534436773069
+                ]
+              },
+              "passed": false,
+              "tolerance": 0.001,
+              "strict_error_bound": false,
+              "baseline_replaced": false
+            },
+            "vector_difference_over_frozen_80195_signal": {
+              "previous_vs_previous": [
+                25.79714038299698,
+                56.624616342129734,
+                7.677002419788026
+              ],
+              "previous_vs_final": [
+                25.798662687879375,
+                56.62868888878355,
+                7.677707410416898
+              ],
+              "final_vs_previous": [
+                25.596457880682454,
+                56.284610179581485,
+                7.644102294001145
+              ],
+              "final_vs_final": [
+                25.59798457841173,
+                56.288686597644634,
+                7.6448072846749175
+              ]
+            },
+            "signal_tolerance": 0.1,
+            "signal_pass": false,
+            "passed": false,
+            "strict_error_bound": false,
+            "baseline_replaced": false
+          },
+          "all_four_rate_gate_checks": {
+            "previous_vs_previous": {
+              "last_two_photoionization_pass": true,
+              "last_two_total_recombination_pass": true,
+              "last_two_atomic_heating_pass": false,
+              "last_two_direct_heating_pass": false,
+              "last_two_formal_heating_pass": false
+            },
+            "previous_vs_final": {
+              "last_two_photoionization_pass": true,
+              "last_two_total_recombination_pass": true,
+              "last_two_atomic_heating_pass": false,
+              "last_two_direct_heating_pass": false,
+              "last_two_formal_heating_pass": false
+            },
+            "final_vs_previous": {
+              "last_two_photoionization_pass": true,
+              "last_two_total_recombination_pass": true,
+              "last_two_atomic_heating_pass": false,
+              "last_two_direct_heating_pass": false,
+              "last_two_formal_heating_pass": false
+            },
+            "final_vs_final": {
+              "last_two_photoionization_pass": true,
+              "last_two_total_recombination_pass": true,
+              "last_two_atomic_heating_pass": false,
+              "last_two_direct_heating_pass": false,
+              "last_two_formal_heating_pass": false
+            }
+          },
+          "cross_rate_pass": false
+        },
+        "parent_peak_rss_bytes": 229068800,
+        "continuation_pass": true,
+        "reason": "pass"
+      }
+    }
+  },
+  "status": {
+    "status": "feedback",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790743007.4915848,
+    "case": "accelerated",
+    "after_maps": 16
+  },
+  "archives": [
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/archives/historical-map08-feedback-1790741427604780101-receipt.json",
+      "size": 239
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/archives/accelerated-map08-feedback-1790738511205873976-receipt.json",
+      "size": 239
+    }
+  ],
+  "watch_latest_age_s": 11.14330768585205
+}

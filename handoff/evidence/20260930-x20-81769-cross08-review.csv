@@ -1,0 +1,19 @@
+comparison,norm,scale,ratio,threshold
+Accelerated adjacent,L2,reference,6.4886129761143025e-06,0.001
+Historical adjacent,L2,reference,0.0009038122886737112,0.001
+Cross seeds map08,L2,reference,0.09248445650885856,0.001
+Accelerated adjacent,Mass weighted,reference,2.5848952534625958e-05,0.001
+Historical adjacent,Mass weighted,reference,0.0022923492222507156,0.001
+Cross seeds map08,Mass weighted,reference,0.336494234972267,0.001
+Accelerated adjacent,Maximum cell,reference,4.168774692997068e-06,0.001
+Historical adjacent,Maximum cell,reference,0.0004964989651394901,0.001
+Cross seeds map08,Maximum cell,reference,0.04539988969222687,0.001
+Accelerated adjacent,L2,signal,0.0018100072574566727,0.1
+Historical adjacent,L2,signal,0.2521196452770409,0.1
+Cross seeds map08,L2,signal,25.798662687879375,0.1
+Accelerated adjacent,Mass weighted,signal,0.004350125913167305,0.1
+Historical adjacent,Mass weighted,signal,0.38577995531477555,0.1
+Cross seeds map08,Mass weighted,signal,56.62868888878357,0.1
+Accelerated adjacent,Maximum cell,signal,0.0007049936149572194,0.1
+Historical adjacent,Maximum cell,signal,0.0839643842696043,0.1
+Cross seeds map08,Maximum cell,signal,7.6777074104168985,0.1

@@ -1,0 +1,17 @@
+{
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "draft": "handoff/evidence/20260930-x20-81769-accelerated16-lecture-draft.json",
+  "tools_disabled": true,
+  "independent_revision": true,
+  "numerical_source": "handoff/evidence/20260930-x20-81769-accelerated16-review.json",
+  "corrections": [
+    "A8 and A16 are checkpoints on one accelerated branch, not distinct seeds.",
+    "Iteration endpoints are not new physical times.",
+    "Each norm has its own normalization; do not maximize across raw norms.",
+    "Cross08 is a between-seed comparison, not an adjacent rate gate.",
+    "This audit tests the within-branch 16-minus-8 window, not cross16.",
+    "Frozen r20 and current residual norm are references, not a demonstrated temporal trajectory."
+  ]
+}
