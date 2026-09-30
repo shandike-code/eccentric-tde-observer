@@ -1,0 +1,13 @@
+{
+  "draft": "20261001-x20-82486-lecture-draft.json",
+  "actual_model": "deepseek-v4-flash[1m]",
+  "independently_checked": true,
+  "corrections": [
+    "Replace ambiguous removal of original defect by division by its fixed norm.",
+    "True mapping applies the original operator to newly constructed q and half; it does not merely combine old outputs.",
+    "Prediction consistency is not physical model self-consistency or coupled convergence."
+  ],
+  "lecture_section": 109,
+  "new_maps_at_review": 0,
+  "new_material_steps": 0
+}
