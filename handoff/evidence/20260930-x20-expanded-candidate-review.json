@@ -1,0 +1,167 @@
+{
+  "endpoints": [
+    {
+      "l2_ratio": "0.7646030651917781320808202609527092280452368096872466004480368860826421",
+      "boundary_l1_ratio": "0.9737280304771423313908529802886420919390418195192606928882056322440874",
+      "boundary_bolometric_ratio": "0.6324335560870945227893815026782817780892229073807584997781497792266513",
+      "positive_spectra": true,
+      "reproduction_errors": {
+        "boundary_l1": {
+          "absolute_difference": "1.18959649085741909848760861438084128811404861627289188993310E-18",
+          "reproduction_allowance": "2.316369997673564181618012285749765704288870371432390620910819002126962E-13"
+        },
+        "boundary_bolometric": {
+          "absolute_difference": "1.7756351628258758121294394451516277104923356836815216258167175E-18",
+          "reproduction_allowance": "2.316369997673564181618012285749765704288870371432390620910819002126962E-13"
+        }
+      }
+    },
+    {
+      "l2_ratio": "0.8809454916495185076891975180948218885620745108399618846910859185809343",
+      "boundary_l1_ratio": "0.8359503433490352498191105911018593217396847374116832791401709151724133",
+      "boundary_bolometric_ratio": "0.1837833448314043627148291880024086835190640523256899879362773485537164",
+      "positive_spectra": true,
+      "reproduction_errors": {
+        "boundary_l1": {
+          "absolute_difference": "5.8169360734576003293933406364441383802308606693366352133256425E-18",
+          "reproduction_allowance": "1.229239116577666478702256084443447486825624548572081373370273377081556E-13"
+        },
+        "boundary_bolometric": {
+          "absolute_difference": "9.251362769588557843495541777511411918138120282911725761382000375E-18",
+          "reproduction_allowance": "1.229239116577666478702256084443447486825624548572081373370273377081556E-13"
+        }
+      }
+    }
+  ],
+  "raw_coefficients": [
+    -7.88554616081388,
+    0.11074399419389186,
+    -0.11445378918612024,
+    8.889255955806107
+  ],
+  "selected_coefficients": [
+    -7.096991544732492,
+    0.09966959477450267,
+    -0.10300841026750822,
+    8.000330360225496
+  ],
+  "raw_weight_l1": 16.999999900000002,
+  "independent_70digit_spectral_witness": true,
+  "full_field_gates_pending": true,
+  "true_maps_pending": true,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "physical_model_nonexistence": false,
+  "source_job": 81647,
+  "source_basis": {
+    "original_basis": [
+      {
+        "path": "outputs/hpc/x20-radiation-history-calibration-20260929/late/endpoints-map16/previous.dat",
+        "size_bytes": 10099884032,
+        "sha256": "5c8b337e805c38c7ee5549aa9cff5382775d22f4dd226576777e8570d86b4c94"
+      },
+      {
+        "path": "outputs/hpc/x20-radiation-history-calibration-20260929/late/endpoints-map16/final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "0d10808607e4f26b0dcabf5a58f22c1243b5778e45da5ac094e7f5339cdf1470"
+      },
+      {
+        "path": "outputs/hpc/x20-radiation-history-calibration-20260929/late/endpoints-map16/mapped_final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "26226a1db10bbc90e4b24e5aaf64aa68f08f68956de4315b12261b0df4be17f6"
+      },
+      {
+        "path": "outputs/hpc/x20-radiation-history-calibration-20260929/historical/endpoints-map24/previous.dat",
+        "size_bytes": 10099884032,
+        "sha256": "a509cd48c6e0867b67ac6188a531eeeec2178417e63753211ae42649f4b79e76"
+      },
+      {
+        "path": "outputs/hpc/x20-radiation-history-calibration-20260929/historical/endpoints-map24/final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "140da23ba51895945668c37a3c83aea95295a114b6e0594fba0aade37f1a7575"
+      },
+      {
+        "path": "outputs/hpc/x20-radiation-history-calibration-20260929/historical/endpoints-map24/mapped_final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "c558b84cd3d00ca45855afed9d47303b6452723eebfce2623eb1eb555241266e"
+      }
+    ],
+    "new_pair": [
+      {
+        "path": "outputs/hpc/x20-long-chord-20260930/chord/endpoints-map04/final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "7d89ccb9e49b2b58bff9dc0cf6353771a2b07e5674ec48dbdf9ffce01e333ea6"
+      },
+      {
+        "path": "outputs/hpc/x20-long-chord-20260930/chord/endpoints-map04/mapped_final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "746a5528c49bc7037270eb8f28cf3f0efa4960245f457d898e9567b3a838fecb"
+      }
+    ],
+    "source_map": {
+      "iteration": 4,
+      "input_path": "outputs/hpc/x20-long-chord-20260930/chord/state_0.dat",
+      "input_sha256": "7d89ccb9e49b2b58bff9dc0cf6353771a2b07e5674ec48dbdf9ffce01e333ea6",
+      "output_path": "outputs/hpc/x20-long-chord-20260930/chord/state_1.dat",
+      "output_sha256": "746a5528c49bc7037270eb8f28cf3f0efa4960245f457d898e9567b3a838fecb",
+      "wall_s": 153.53382502123713,
+      "residual": 5.383698938986325e-07,
+      "boundary_l1": 1.558816765878767e-08,
+      "boundary_bolometric": 1.5323131942169057e-08,
+      "maximum_worker_rss_mib": 3497.13671875
+    },
+    "new_history": [
+      {
+        "iteration": 1,
+        "input_path": "outputs/hpc/x20-long-chord-20260930/chord/state_0.dat",
+        "input_sha256": "26226a1db10bbc90e4b24e5aaf64aa68f08f68956de4315b12261b0df4be17f6",
+        "output_path": "outputs/hpc/x20-long-chord-20260930/chord/state_1.dat",
+        "output_sha256": "e55e74e4b92e94fb0e5fb886c13e710dc94588ae8f432c73457a3948fc5515be",
+        "wall_s": 163.12759549543262,
+        "residual": 5.452727357678818e-07,
+        "boundary_l1": 1.6676029787431374e-08,
+        "boundary_bolometric": 1.6402751323321712e-08,
+        "maximum_worker_rss_mib": 3494.68359375
+      },
+      {
+        "iteration": 2,
+        "input_path": "outputs/hpc/x20-long-chord-20260930/chord/state_1.dat",
+        "input_sha256": "e55e74e4b92e94fb0e5fb886c13e710dc94588ae8f432c73457a3948fc5515be",
+        "output_path": "outputs/hpc/x20-long-chord-20260930/chord/state_2.dat",
+        "output_sha256": "ba6d128d0629492e69dca6f6597e708dcb5468e7e1bd1f9e21dd9ca299f772a7",
+        "wall_s": 155.8499445039779,
+        "residual": 5.429620570933514e-07,
+        "boundary_l1": 1.6302781272715403e-08,
+        "boundary_bolometric": 1.6031905413867558e-08,
+        "maximum_worker_rss_mib": 3498.125
+      },
+      {
+        "iteration": 3,
+        "input_path": "outputs/hpc/x20-long-chord-20260930/chord/state_2.dat",
+        "input_sha256": "ba6d128d0629492e69dca6f6597e708dcb5468e7e1bd1f9e21dd9ca299f772a7",
+        "output_path": "outputs/hpc/x20-long-chord-20260930/chord/state_0.dat",
+        "output_sha256": "7d89ccb9e49b2b58bff9dc0cf6353771a2b07e5674ec48dbdf9ffce01e333ea6",
+        "wall_s": 151.04731692746282,
+        "residual": 5.406611233923649e-07,
+        "boundary_l1": 1.594032111782028e-08,
+        "boundary_bolometric": 1.5672187027853884e-08,
+        "maximum_worker_rss_mib": 3499.83984375
+      },
+      {
+        "iteration": 4,
+        "input_path": "outputs/hpc/x20-long-chord-20260930/chord/state_0.dat",
+        "input_sha256": "7d89ccb9e49b2b58bff9dc0cf6353771a2b07e5674ec48dbdf9ffce01e333ea6",
+        "output_path": "outputs/hpc/x20-long-chord-20260930/chord/state_1.dat",
+        "output_sha256": "746a5528c49bc7037270eb8f28cf3f0efa4960245f457d898e9567b3a838fecb",
+        "wall_s": 153.53382502123713,
+        "residual": 5.383698938986325e-07,
+        "boundary_l1": 1.558816765878767e-08,
+        "boundary_bolometric": 1.5323131942169057e-08,
+        "maximum_worker_rss_mib": 3497.13671875
+      }
+    ]
+  },
+  "result_sha256": "4a01ba97f8670b9ca86a2ef91ed00020cc4319b73d1a71724f5c3c23e46f826f",
+  "declaration_sha256": "0d980e5eb8c9d595efa9f0eb82685939e0010c8b5de0ec9da5a15c8eb6f430b0",
+  "wall_s": 0.387965084053576
+}
