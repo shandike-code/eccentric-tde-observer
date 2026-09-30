@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 3322,
+  "duration_api_ms": 2949,
+  "ttft_ms": 2755,
+  "ttft_stream_ms": 542,
+  "time_to_request_ms": 374,
+  "num_turns": 1,
+  "result": "82512完成，7分18秒，4CPU/16GiB，退出码0。全局系数全场预测：小矩阵full/half L2预测.795393/.895744，12项检查全过（非负、L2收益、Linf不增、辐射、边界L1/热辐射），状态“预测通过待审”。无全局最优证明，cap17、边界联合选点25迭代并独立复算；0新map/反馈/物质步，未写dat、未换基线。须独立审计并另跑真实full/half原映射；不换r20、不接受21、不宣称整盘I_nu完成。",
+  "stop_reason": "end_turn",
+  "session_id": "0226fd87-3987-4ac3-9810-c84bda32b06c",
+  "total_cost_usd": 0.02667,
+  "usage": {
+    "input_tokens": 2614,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 544,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 2614,
+      "outputTokens": 544,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.02667,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "24c10353-428a-4a20-b82e-af1b51a1fe7a"
+}

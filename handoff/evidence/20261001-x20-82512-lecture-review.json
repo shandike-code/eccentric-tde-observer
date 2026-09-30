@@ -1,0 +1,22 @@
+{
+  "draft_sha256": "af481a6c541a4176ba83c925bdeb75e3873149ffc20ab21ce452af82c2911cee",
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "independently_reviewed": true,
+  "corrections": [
+    "预测新增了全场非负/Linf的资格证据，不能笼统说不产生新信息；准确说没有新的T(q)求值。",
+    "11门通过不证明预测路径稳定或整个算子可自洽外推，只证明此候选符合声明的预测门。",
+    "只读CLI终态回答写12项应为11项，bolometric为频率积分总通量变化，并非单独热辐射过程。"
+  ],
+  "verified_values": {
+    "full_l2": 0.7953925559764894,
+    "half_l2": 0.8957443959338434,
+    "full_linf": 0.8150734868532127,
+    "half_linf": 0.9075367430895402
+  },
+  "actual_true_maps_not_yet_run": true,
+  "material_steps": 0,
+  "strict_error_bound": false,
+  "lecture_section": 112
+}
