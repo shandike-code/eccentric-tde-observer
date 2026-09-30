@@ -1,0 +1,11 @@
+{
+  "draft": "20261001-x20-82503-final-lecture-draft.json",
+  "actual_model": "deepseek-v4-flash[1m]",
+  "independently_checked": true,
+  "corrections": [
+    "Two complete full-frequency maps, not two frequency blocks.",
+    "Half residual equals the mean of anchor and full residual vectors to measured tolerance, not half the full residual norm.",
+    "Failed per-block prediction, finite-direction affinity, and physical existence remain separate claims."
+  ],
+  "lecture_section": 111
+}

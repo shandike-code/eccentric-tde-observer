@@ -1,0 +1,82 @@
+{
+  "source_job": 82441,
+  "basis_sha256": "83b26402f6d39011c69f96883c17ea1f784535a3d9ced8d135e734f3b8078118",
+  "raw_coefficients": [
+    -0.0017496496501797781,
+    -5.884444390342025,
+    0.0016422309537433416
+  ],
+  "selected_coefficients": [
+    -0.0015746846851618004,
+    -5.295999951307822,
+    0.0014780078583690075
+  ],
+  "method": "one SLSQP start at zero, 200 iterations, Cholesky variable scaling without truncation",
+  "solver_success": true,
+  "solver_message": "Optimization terminated successfully",
+  "iterations": 25,
+  "raw_constraint_slack": [
+    -1.5298873279334657e-13,
+    1.8141044222375058e-12,
+    1.9600000366006953,
+    18.0,
+    17.996715538092513,
+    29.76888878068405,
+    29.76560431877656,
+    18.00349929930036,
+    18.00021483739287,
+    29.77238807998441,
+    29.769103618076922,
+    4.230896381923078,
+    4.22761192001559,
+    15.999785162607127,
+    15.99650070069964,
+    4.234395681223438,
+    4.231111219315951,
+    16.003284461907487,
+    16.0
+  ],
+  "objective": 0.5987296799685726,
+  "step_safety": 0.9,
+  "internal_boundary_target": 0.98,
+  "l2_ratios": [
+    1.0,
+    0.7953925559766379,
+    0.8957443959339214
+  ],
+  "boundary": [
+    {
+      "boundary_l1": 6.864247013234265e-09,
+      "boundary_bolometric": 1.805044372011743e-09
+    },
+    {
+      "boundary_l1": 6.188309720815594e-09,
+      "boundary_bolometric": 1.7725535704299193e-09
+    },
+    {
+      "boundary_l1": 5.663480803417934e-09,
+      "boundary_bolometric": 1.788798971071379e-09
+    }
+  ],
+  "checks": {
+    "solver_success": true,
+    "cap17": true,
+    "full_l2": true,
+    "half_l2": true,
+    "full_boundary_l1": true,
+    "full_boundary_bolometric": true,
+    "half_boundary_l1": true,
+    "half_boundary_bolometric": true,
+    "boundary_spectra_nonnegative": true
+  },
+  "small_prediction_passed": true,
+  "full_field_positivity_checked": false,
+  "full_field_linf_checked": false,
+  "global_optimality_claimed": false,
+  "strict_error_bound": false,
+  "candidate_written": false,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "baseline_replaced": false
+}

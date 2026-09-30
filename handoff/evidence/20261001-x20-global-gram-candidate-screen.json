@@ -1,0 +1,46 @@
+{
+  "source_job": 82441,
+  "analysis_sha256": "76bddf1511274e6f0ef01851fba892e444df948c242091497d0b02f4e5602540",
+  "basis_sha256": "83b26402f6d39011c69f96883c17ea1f784535a3d9ced8d135e734f3b8078118",
+  "selected_coefficients": [
+    -0.06973206230347234,
+    -7.1302679376965274,
+    0.05910278115573641
+  ],
+  "l2_ratios": [
+    1.0,
+    0.5821688704963502,
+    0.768716882185121
+  ],
+  "boundary": [
+    {
+      "boundary_l1": 6.864247013234265e-09,
+      "boundary_bolometric": 1.805044372011743e-09
+    },
+    {
+      "boundary_l1": 3.29802442338605e-08,
+      "boundary_bolometric": 3.2949868672872437e-08
+    },
+    {
+      "boundary_l1": 1.7410072294933727e-08,
+      "boundary_bolometric": 1.7377453319533607e-08
+    }
+  ],
+  "checks": {
+    "full_l2": true,
+    "half_l2": true,
+    "full_boundary_l1": false,
+    "full_boundary_bolometric": false,
+    "half_boundary_l1": false,
+    "half_boundary_bolometric": false
+  },
+  "small_prediction_passed": false,
+  "full_field_positivity_checked": false,
+  "full_field_linf_checked": false,
+  "strict_error_bound": false,
+  "candidate_written": false,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "baseline_replaced": false
+}

@@ -1,0 +1,12 @@
+{
+  "draft": "20261001-x20-82503-interim-lecture-draft.json",
+  "actual_model": "deepseek-v4-flash[1m]",
+  "independently_checked": true,
+  "checks": [
+    "Reverse triangle lower bound uses the same candidate input and frozen anchor Linf denominator.",
+    "Commutator identity is conditional on an affine fixed-material operator; frequency coupling is not yet a uniquely established cause.",
+    "Interim evidence is not a terminal full-field audit or a proof of physical nonexistence."
+  ],
+  "lecture_section": 110,
+  "terminal_audit_complete": false
+}

@@ -1,0 +1,570 @@
+{
+  "job_id": 82503,
+  "interim": true,
+  "terminal_audit_complete": false,
+  "source_sha256": "33f96622562169e69cef53dc6093fc6bba05f5b8f7b8637a91e3b3d99bbe8917",
+  "formula": "||T(q)-p||_inf >= abs(||T(q)-q||_inf-||p-q||_inf) on each block",
+  "anchor_linf": 1.0293077973289044e-08,
+  "blocks": [
+    {
+      "block": 0,
+      "actual_defect_linf": 2.541098841762901e-21,
+      "predicted_defect_linf": 2.541098841762901e-21,
+      "prediction_mismatch_linf_lower_bound": 0.0,
+      "lower_bound_over_anchor_linf": 0.0
+    },
+    {
+      "block": 1,
+      "actual_defect_linf": 3.3881317890172014e-21,
+      "predicted_defect_linf": 3.3881317890172014e-21,
+      "prediction_mismatch_linf_lower_bound": 0.0,
+      "lower_bound_over_anchor_linf": 0.0
+    },
+    {
+      "block": 2,
+      "actual_defect_linf": 5.082197683525802e-21,
+      "predicted_defect_linf": 5.082197683525802e-21,
+      "prediction_mismatch_linf_lower_bound": 0.0,
+      "lower_bound_over_anchor_linf": 0.0
+    },
+    {
+      "block": 3,
+      "actual_defect_linf": 6.776263578034403e-21,
+      "predicted_defect_linf": 6.776263578034403e-21,
+      "prediction_mismatch_linf_lower_bound": 0.0,
+      "lower_bound_over_anchor_linf": 0.0
+    },
+    {
+      "block": 4,
+      "actual_defect_linf": 2.0328790734103208e-20,
+      "predicted_defect_linf": 2.0328790734103208e-20,
+      "prediction_mismatch_linf_lower_bound": 0.0,
+      "lower_bound_over_anchor_linf": 0.0
+    },
+    {
+      "block": 5,
+      "actual_defect_linf": 2.710505431213761e-20,
+      "predicted_defect_linf": 1.3552527156068805e-20,
+      "prediction_mismatch_linf_lower_bound": 1.3552527156068805e-20,
+      "lower_bound_over_anchor_linf": 1.3166641884223712e-12
+    },
+    {
+      "block": 6,
+      "actual_defect_linf": 3.3881317890172014e-20,
+      "predicted_defect_linf": 2.710505431213761e-20,
+      "prediction_mismatch_linf_lower_bound": 6.776263578034403e-21,
+      "lower_bound_over_anchor_linf": 6.583320942111856e-13
+    },
+    {
+      "block": 7,
+      "actual_defect_linf": 1.3552527156068805e-18,
+      "predicted_defect_linf": 1.260385025514399e-18,
+      "prediction_mismatch_linf_lower_bound": 9.486769009248164e-20,
+      "lower_bound_over_anchor_linf": 9.2166493189566e-12
+    },
+    {
+      "block": 8,
+      "actual_defect_linf": 8.698011928764959e-17,
+      "predicted_defect_linf": 8.589591711516409e-17,
+      "prediction_mismatch_linf_lower_bound": 1.0842021724855044e-18,
+      "lower_bound_over_anchor_linf": 1.053331350737897e-10
+    },
+    {
+      "block": 9,
+      "actual_defect_linf": 2.7549306152313546e-15,
+      "predicted_defect_linf": 2.7251421605423154e-15,
+      "prediction_mismatch_linf_lower_bound": 2.9788454689039234e-17,
+      "lower_bound_over_anchor_linf": 2.894027886152372e-09
+    },
+    {
+      "block": 10,
+      "actual_defect_linf": 4.4317143271105364e-14,
+      "predicted_defect_linf": 4.243523935021365e-14,
+      "prediction_mismatch_linf_lower_bound": 1.8819039208917143e-15,
+      "lower_bound_over_anchor_linf": 1.8283198920433046e-07
+    },
+    {
+      "block": 11,
+      "actual_defect_linf": 4.7943853748178e-13,
+      "predicted_defect_linf": 3.4630246803848963e-13,
+      "prediction_mismatch_linf_lower_bound": 1.3313606944329037e-13,
+      "lower_bound_over_anchor_linf": 1.2934524521118356e-05
+    },
+    {
+      "block": 12,
+      "actual_defect_linf": 4.195295261362475e-12,
+      "predicted_defect_linf": 1.4797872129046485e-12,
+      "prediction_mismatch_linf_lower_bound": 2.7155080484578265e-12,
+      "lower_bound_over_anchor_linf": 0.0002638188553030182
+    },
+    {
+      "block": 13,
+      "actual_defect_linf": 1.64364405332712e-11,
+      "predicted_defect_linf": 2.820996908292628e-12,
+      "prediction_mismatch_linf_lower_bound": 1.3615443624978574e-11,
+      "lower_bound_over_anchor_linf": 0.0013227766913173303
+    },
+    {
+      "block": 14,
+      "actual_defect_linf": 1.2313247752145096e-11,
+      "predicted_defect_linf": 1.6557942083411659e-12,
+      "prediction_mismatch_linf_lower_bound": 1.065745354380393e-11,
+      "lower_bound_over_anchor_linf": 0.001035400059288432
+    },
+    {
+      "block": 15,
+      "actual_defect_linf": 6.181122670992356e-12,
+      "predicted_defect_linf": 2.022250422673011e-12,
+      "prediction_mismatch_linf_lower_bound": 4.158872248319345e-12,
+      "lower_bound_over_anchor_linf": 0.0004040455400329996
+    },
+    {
+      "block": 16,
+      "actual_defect_linf": 3.8289062458812806e-11,
+      "predicted_defect_linf": 1.7984971151241425e-12,
+      "prediction_mismatch_linf_lower_bound": 3.6490565343688663e-11,
+      "lower_bound_over_anchor_linf": 0.003545155825923321
+    },
+    {
+      "block": 17,
+      "actual_defect_linf": 1.0968396156607607e-10,
+      "predicted_defect_linf": 8.713946664934413e-12,
+      "prediction_mismatch_linf_lower_bound": 1.0097001490114166e-10,
+      "lower_bound_over_anchor_linf": 0.009809506462805678
+    },
+    {
+      "block": 18,
+      "actual_defect_linf": 4.617314352042823e-10,
+      "predicted_defect_linf": 1.767553985121406e-11,
+      "prediction_mismatch_linf_lower_bound": 4.440558953530682e-10,
+      "lower_bound_over_anchor_linf": 0.04314121553391622
+    },
+    {
+      "block": 19,
+      "actual_defect_linf": 1.1151122230462773e-09,
+      "predicted_defect_linf": 2.4826494159080337e-11,
+      "prediction_mismatch_linf_lower_bound": 1.090285728887197e-09,
+      "lower_bound_over_anchor_linf": 0.10592416881680415
+    },
+    {
+      "block": 20,
+      "actual_defect_linf": 3.1538545360379477e-09,
+      "predicted_defect_linf": 7.07407517980263e-11,
+      "prediction_mismatch_linf_lower_bound": 3.0831137842399214e-09,
+      "lower_bound_over_anchor_linf": 0.29953273376930856
+    },
+    {
+      "block": 21,
+      "actual_defect_linf": 3.053403615019268e-09,
+      "predicted_defect_linf": 7.078782438690867e-11,
+      "prediction_mismatch_linf_lower_bound": 2.982615790632359e-09,
+      "lower_bound_over_anchor_linf": 0.28976908543512137
+    },
+    {
+      "block": 22,
+      "actual_defect_linf": 2.7348571126489807e-08,
+      "predicted_defect_linf": 7.023177178711038e-11,
+      "prediction_mismatch_linf_lower_bound": 2.7278339354702696e-08,
+      "lower_bound_over_anchor_linf": 2.6501634812726667
+    },
+    {
+      "block": 23,
+      "actual_defect_linf": 6.197604257227041e-08,
+      "predicted_defect_linf": 8.243125904083826e-10,
+      "prediction_mismatch_linf_lower_bound": 6.115172998186202e-08,
+      "lower_bound_over_anchor_linf": 5.941053797566991
+    },
+    {
+      "block": 24,
+      "actual_defect_linf": 5.985936660860003e-07,
+      "predicted_defect_linf": 5.13764815412987e-09,
+      "prediction_mismatch_linf_lower_bound": 5.934560179318704e-07,
+      "lower_bound_over_anchor_linf": 57.655836230126006
+    },
+    {
+      "block": 25,
+      "actual_defect_linf": 5.99276796853232e-07,
+      "predicted_defect_linf": 3.022687718179373e-09,
+      "prediction_mismatch_linf_lower_bound": 5.962541091350526e-07,
+      "lower_bound_over_anchor_linf": 57.92767825934636
+    },
+    {
+      "block": 26,
+      "actual_defect_linf": 1.748162048106905e-08,
+      "predicted_defect_linf": 3.99521288448057e-11,
+      "prediction_mismatch_linf_lower_bound": 1.7441668352224243e-08,
+      "lower_bound_over_anchor_linf": 1.6945046367555052
+    },
+    {
+      "block": 27,
+      "actual_defect_linf": 1.290058060376964e-10,
+      "predicted_defect_linf": 2.2601844007485994e-11,
+      "prediction_mismatch_linf_lower_bound": 1.0640396203021041e-10,
+      "lower_bound_over_anchor_linf": 0.010337428931009075
+    },
+    {
+      "block": 28,
+      "actual_defect_linf": 9.69138241879719e-11,
+      "predicted_defect_linf": 2.089450834574791e-11,
+      "prediction_mismatch_linf_lower_bound": 7.601931584222399e-11,
+      "lower_bound_over_anchor_linf": 0.00738547944934423
+    },
+    {
+      "block": 29,
+      "actual_defect_linf": 1.279731251524474e-10,
+      "predicted_defect_linf": 1.837511393043556e-11,
+      "prediction_mismatch_linf_lower_bound": 1.0959801122201185e-10,
+      "lower_bound_over_anchor_linf": 0.010647739335738362
+    },
+    {
+      "block": 30,
+      "actual_defect_linf": 1.326387680244956e-10,
+      "predicted_defect_linf": 1.7776752292419928e-11,
+      "prediction_mismatch_linf_lower_bound": 1.1486201573207566e-10,
+      "lower_bound_over_anchor_linf": 0.011159151424884496
+    },
+    {
+      "block": 31,
+      "actual_defect_linf": 1.32978343614365e-10,
+      "predicted_defect_linf": 1.6734252872296906e-11,
+      "prediction_mismatch_linf_lower_bound": 1.162440907420681e-10,
+      "lower_bound_over_anchor_linf": 0.01129342370122195
+    },
+    {
+      "block": 32,
+      "actual_defect_linf": 1.2886761102670619e-10,
+      "predicted_defect_linf": 1.5270881781326295e-11,
+      "prediction_mismatch_linf_lower_bound": 1.1359672924537989e-10,
+      "lower_bound_over_anchor_linf": 0.011036225465324173
+    },
+    {
+      "block": 33,
+      "actual_defect_linf": 1.2023929074622686e-10,
+      "predicted_defect_linf": 1.3457873704325607e-11,
+      "prediction_mismatch_linf_lower_bound": 1.0678141704190125e-10,
+      "lower_bound_over_anchor_linf": 0.01037409969292017
+    },
+    {
+      "block": 34,
+      "actual_defect_linf": 1.0457798516050332e-10,
+      "predicted_defect_linf": 1.1411434297503575e-11,
+      "prediction_mismatch_linf_lower_bound": 9.316655086299974e-11,
+      "lower_bound_over_anchor_linf": 0.00905137910203058
+    },
+    {
+      "block": 35,
+      "actual_defect_linf": 8.311296789687006e-11,
+      "predicted_defect_linf": 9.286432733901506e-12,
+      "prediction_mismatch_linf_lower_bound": 7.382653516296855e-11,
+      "lower_bound_over_anchor_linf": 0.007172444953254159
+    },
+    {
+      "block": 36,
+      "actual_defect_linf": 2.6645807782443853e-10,
+      "predicted_defect_linf": 7.256265033284137e-12,
+      "prediction_mismatch_linf_lower_bound": 2.592018127911544e-10,
+      "lower_bound_over_anchor_linf": 0.025182147989531764
+    },
+    {
+      "block": 37,
+      "actual_defect_linf": 2.867264967121308e-10,
+      "predicted_defect_linf": 1.3302491053135412e-11,
+      "prediction_mismatch_linf_lower_bound": 2.734240056589954e-10,
+      "lower_bound_over_anchor_linf": 0.026563871989364288
+    },
+    {
+      "block": 38,
+      "actual_defect_linf": 2.360228262832109e-10,
+      "predicted_defect_linf": 1.5503633099545056e-11,
+      "prediction_mismatch_linf_lower_bound": 2.2051919318366586e-10,
+      "lower_bound_over_anchor_linf": 0.021424028240718873
+    },
+    {
+      "block": 39,
+      "actual_defect_linf": 1.822023573683218e-10,
+      "predicted_defect_linf": 1.3611799187795981e-11,
+      "prediction_mismatch_linf_lower_bound": 1.6859055818052582e-10,
+      "lower_bound_over_anchor_linf": 0.016379022739167543
+    },
+    {
+      "block": 40,
+      "actual_defect_linf": 6.946931224716124e-11,
+      "predicted_defect_linf": 6.136507968435012e-12,
+      "prediction_mismatch_linf_lower_bound": 6.333280427872623e-11,
+      "lower_bound_over_anchor_linf": 0.006152950987360383
+    },
+    {
+      "block": 41,
+      "actual_defect_linf": 5.830228660963499e-11,
+      "predicted_defect_linf": 6.428988418016868e-12,
+      "prediction_mismatch_linf_lower_bound": 5.187329819161812e-11,
+      "lower_bound_over_anchor_linf": 0.005039629382603672
+    },
+    {
+      "block": 42,
+      "actual_defect_linf": 1.2466920898401845e-10,
+      "predicted_defect_linf": 1.934634397127155e-11,
+      "prediction_mismatch_linf_lower_bound": 1.053228650127469e-10,
+      "lower_bound_over_anchor_linf": 0.010232397470034136
+    },
+    {
+      "block": 43,
+      "actual_defect_linf": 4.071423094498261e-10,
+      "predicted_defect_linf": 5.838155306414627e-11,
+      "prediction_mismatch_linf_lower_bound": 3.4876075638567983e-10,
+      "lower_bound_over_anchor_linf": 0.03388303841579051
+    },
+    {
+      "block": 44,
+      "actual_defect_linf": 6.8435929007071294e-09,
+      "predicted_defect_linf": 7.876298224740452e-11,
+      "prediction_mismatch_linf_lower_bound": 6.764829918459725e-09,
+      "lower_bound_over_anchor_linf": 0.6572212836641026
+    },
+    {
+      "block": 45,
+      "actual_defect_linf": 6.755647929956865e-09,
+      "predicted_defect_linf": 4.6468842662683585e-11,
+      "prediction_mismatch_linf_lower_bound": 6.7091790872941814e-09,
+      "lower_bound_over_anchor_linf": 0.6518146568698667
+    },
+    {
+      "block": 46,
+      "actual_defect_linf": 1.5252803881038446e-09,
+      "predicted_defect_linf": 3.166372719576316e-11,
+      "prediction_mismatch_linf_lower_bound": 1.4936166609080814e-09,
+      "lower_bound_over_anchor_linf": 0.14510884545750818
+    },
+    {
+      "block": 47,
+      "actual_defect_linf": 8.563852297444052e-09,
+      "predicted_defect_linf": 4.310491893977364e-11,
+      "prediction_mismatch_linf_lower_bound": 8.520747378504279e-09,
+      "lower_bound_over_anchor_linf": 0.8278133519065886
+    },
+    {
+      "block": 48,
+      "actual_defect_linf": 3.326638561493289e-08,
+      "predicted_defect_linf": 2.2144488673325746e-10,
+      "prediction_mismatch_linf_lower_bound": 3.3044940728199634e-08,
+      "lower_bound_over_anchor_linf": 3.2104041972627235
+    },
+    {
+      "block": 49,
+      "actual_defect_linf": 5.957830873136796e-08,
+      "predicted_defect_linf": 4.774610776192567e-10,
+      "prediction_mismatch_linf_lower_bound": 5.9100847653748706e-08,
+      "lower_bound_over_anchor_linf": 5.741805105053882
+    },
+    {
+      "block": 50,
+      "actual_defect_linf": 5.971150268679892e-08,
+      "predicted_defect_linf": 4.796845642050795e-10,
+      "prediction_mismatch_linf_lower_bound": 5.9231818122593843e-08,
+      "lower_bound_over_anchor_linf": 5.7545292356963405
+    },
+    {
+      "block": 51,
+      "actual_defect_linf": 4.3495015116488955e-08,
+      "predicted_defect_linf": 3.2966998673045894e-10,
+      "prediction_mismatch_linf_lower_bound": 4.3165345129758496e-08,
+      "lower_bound_over_anchor_linf": 4.193628498858584
+    },
+    {
+      "block": 52,
+      "actual_defect_linf": 0.0,
+      "predicted_defect_linf": 0.0,
+      "prediction_mismatch_linf_lower_bound": 0.0,
+      "lower_bound_over_anchor_linf": 0.0
+    },
+    {
+      "block": 53,
+      "actual_defect_linf": 1.3552527156068805e-20,
+      "predicted_defect_linf": 1.3552527156068805e-20,
+      "prediction_mismatch_linf_lower_bound": 0.0,
+      "lower_bound_over_anchor_linf": 0.0
+    },
+    {
+      "block": 54,
+      "actual_defect_linf": 1.6940658945086007e-21,
+      "predicted_defect_linf": 8.470329472543003e-22,
+      "prediction_mismatch_linf_lower_bound": 8.470329472543003e-22,
+      "lower_bound_over_anchor_linf": 8.22915117763982e-14
+    },
+    {
+      "block": 55,
+      "actual_defect_linf": 1.8469288717084002e-20,
+      "predicted_defect_linf": 1.846597999463379e-20,
+      "prediction_mismatch_linf_lower_bound": 3.308722450212111e-24,
+      "lower_bound_over_anchor_linf": 3.2145121787655546e-16
+    },
+    {
+      "block": 56,
+      "actual_defect_linf": 5.15903759255315e-20,
+      "predicted_defect_linf": 5.1590427624319783e-20,
+      "prediction_mismatch_linf_lower_bound": 5.169878828456423e-26,
+      "lower_bound_over_anchor_linf": 5.022675279321179e-18
+    },
+    {
+      "block": 57,
+      "actual_defect_linf": 4.277632705907857e-20,
+      "predicted_defect_linf": 4.279493862286101e-20,
+      "prediction_mismatch_linf_lower_bound": 1.8611563782443123e-23,
+      "lower_bound_over_anchor_linf": 1.8081631005556247e-15
+    },
+    {
+      "block": 58,
+      "actual_defect_linf": 2.0401524264922663e-21,
+      "predicted_defect_linf": 2.0493235592932975e-21,
+      "prediction_mismatch_linf_lower_bound": 9.171132801031197e-24,
+      "lower_bound_over_anchor_linf": 8.91000031752471e-16
+    },
+    {
+      "block": 59,
+      "actual_defect_linf": 1.3633057186174594e-24,
+      "predicted_defect_linf": 1.3204076105029605e-24,
+      "prediction_mismatch_linf_lower_bound": 4.2898108114498893e-26,
+      "lower_bound_over_anchor_linf": 4.167665709501203e-18
+    },
+    {
+      "block": 60,
+      "actual_defect_linf": 2.0727853683017245e-26,
+      "predicted_defect_linf": 3.6134700075766385e-27,
+      "prediction_mismatch_linf_lower_bound": 1.7114383675440607e-26,
+      "lower_bound_over_anchor_linf": 1.6627080567982802e-18
+    },
+    {
+      "block": 61,
+      "actual_defect_linf": 9.763845901900479e-31,
+      "predicted_defect_linf": 1.8227699744257127e-32,
+      "prediction_mismatch_linf_lower_bound": 9.581568904457907e-31,
+      "lower_bound_over_anchor_linf": 9.308749947607963e-23
+    },
+    {
+      "block": 62,
+      "actual_defect_linf": 9.147205150668718e-36,
+      "predicted_defect_linf": 5.105834731590153e-37,
+      "prediction_mismatch_linf_lower_bound": 8.636621677509703e-36,
+      "lower_bound_over_anchor_linf": 8.390708493535254e-28
+    },
+    {
+      "block": 63,
+      "actual_defect_linf": 1.4520053802196153e-40,
+      "predicted_defect_linf": 4.210508138276323e-42,
+      "prediction_mismatch_linf_lower_bound": 1.4099002988368521e-40,
+      "lower_bound_over_anchor_linf": 1.3697557742160322e-32
+    },
+    {
+      "block": 64,
+      "actual_defect_linf": 5.673148016959489e-47,
+      "predicted_defect_linf": 4.214729264165972e-49,
+      "prediction_mismatch_linf_lower_bound": 5.631000724317829e-47,
+      "lower_bound_over_anchor_linf": 5.470667509690012e-39
+    },
+    {
+      "block": 65,
+      "actual_defect_linf": 9.527323881500153e-56,
+      "predicted_defect_linf": 5.703957717093803e-58,
+      "prediction_mismatch_linf_lower_bound": 9.470284304329215e-56,
+      "lower_bound_over_anchor_linf": 9.200633988108307e-48
+    },
+    {
+      "block": 66,
+      "actual_defect_linf": 4.826567073600564e-68,
+      "predicted_defect_linf": 2.525219039893232e-69,
+      "prediction_mismatch_linf_lower_bound": 4.574045169611241e-68,
+      "lower_bound_over_anchor_linf": 4.443806975407234e-60
+    },
+    {
+      "block": 67,
+      "actual_defect_linf": 4.2130273801089905e-82,
+      "predicted_defect_linf": 5.654982210523141e-83,
+      "prediction_mismatch_linf_lower_bound": 3.6475291590566764e-82,
+      "lower_bound_over_anchor_linf": 3.5436719400379194e-74
+    },
+    {
+      "block": 68,
+      "actual_defect_linf": 5.433934196408246e-99,
+      "predicted_defect_linf": 1.8265000852723487e-99,
+      "prediction_mismatch_linf_lower_bound": 3.6074341111358974e-99,
+      "lower_bound_over_anchor_linf": 3.5047185307420533e-91
+    },
+    {
+      "block": 69,
+      "actual_defect_linf": 3.2248896983155713e-119,
+      "predicted_defect_linf": 2.913350632187805e-119,
+      "prediction_mismatch_linf_lower_bound": 3.1153906612776634e-120,
+      "lower_bound_over_anchor_linf": 3.026685185288821e-112
+    },
+    {
+      "block": 70,
+      "actual_defect_linf": 6.237975653419894e-143,
+      "predicted_defect_linf": 6.311231240443188e-143,
+      "prediction_mismatch_linf_lower_bound": 7.325558702329358e-145,
+      "lower_bound_over_anchor_linf": 7.116975817476056e-137
+    },
+    {
+      "block": 71,
+      "actual_defect_linf": 4.142459103644408e-170,
+      "predicted_defect_linf": 7.680400969759771e-171,
+      "prediction_mismatch_linf_lower_bound": 3.374419006668431e-170,
+      "lower_bound_over_anchor_linf": 3.2783381369743683e-162
+    },
+    {
+      "block": 72,
+      "actual_defect_linf": 2.9277052003868672e-204,
+      "predicted_defect_linf": 2.9277052003868672e-204,
+      "prediction_mismatch_linf_lower_bound": 0.0,
+      "lower_bound_over_anchor_linf": 0.0
+    },
+    {
+      "block": 73,
+      "actual_defect_linf": 9.450347524235626e-244,
+      "predicted_defect_linf": 9.450347524235626e-244,
+      "prediction_mismatch_linf_lower_bound": 0.0,
+      "lower_bound_over_anchor_linf": 0.0
+    },
+    {
+      "block": 74,
+      "actual_defect_linf": 3.137558672127287e-290,
+      "predicted_defect_linf": 3.137558672127287e-290,
+      "prediction_mismatch_linf_lower_bound": 0.0,
+      "lower_bound_over_anchor_linf": 0.0
+    },
+    {
+      "block": 75,
+      "actual_defect_linf": 0.0,
+      "predicted_defect_linf": 0.0,
+      "prediction_mismatch_linf_lower_bound": 0.0,
+      "lower_bound_over_anchor_linf": 0.0
+    }
+  ],
+  "full_map": {
+    "iteration": 1,
+    "input_path": "outputs/hpc/x20-boundary-validation-20261001/full/state_0.dat",
+    "input_sha256": "f7f91e14679d28e7181c07624901b7e64e1d9fe9a486d4b8f292c96d225f1654",
+    "output_path": "outputs/hpc/x20-boundary-validation-20261001/full/state_1.dat",
+    "output_sha256": "6efa224669c6dfae01d7186b552367fcb727351510d102b357b305925507b25d",
+    "wall_s": 191.827132999897,
+    "residual": 1.5498473433826054e-05,
+    "boundary_l1": 1.3219344699468538e-08,
+    "boundary_bolometric": 3.331566979275737e-09,
+    "maximum_worker_rss_mib": 3503.0078125
+  },
+  "source_map": {
+    "iteration": 16,
+    "input_path": "outputs/hpc/x20-window-feedback-20260930/accelerated/state_0.dat",
+    "input_sha256": "440f6b2d52ea2952c1880e101b2b65e6f423a0aef7c05fd0d18b6a7a79d7d7fc",
+    "output_path": "outputs/hpc/x20-window-feedback-20260930/accelerated/state_1.dat",
+    "output_sha256": "69a6df97c97e3e9bdafaafa8ffab872078ff4970589e58453428f98abb075f78",
+    "wall_s": 164.6808333285153,
+    "residual": 2.662079000821375e-07,
+    "boundary_l1": 6.864247017473035e-09,
+    "boundary_bolometric": 1.8050443869701507e-09,
+    "maximum_worker_rss_mib": 3502.5390625
+  },
+  "strongest_lower_bound_over_anchor_linf": 57.92767825934636,
+  "physical_cause_established": false,
+  "new_maps": 0,
+  "new_material_steps": 0
+}

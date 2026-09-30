@@ -1,0 +1,69 @@
+{
+  "l2_ratios": [
+    1.0,
+    5.647006984149045,
+    2.893669036592516,
+    5.134216008238214e-09
+  ],
+  "linf_ratios": [
+    1.0,
+    58.221340439505035,
+    29.3319044666041,
+    4.718924451305779e-09
+  ],
+  "squared_l2": [
+    1.8008689024805197e-10,
+    5.742734634224918e-09,
+    1.5079252486948512e-09,
+    4.747121765524143e-27
+  ],
+  "linf": [
+    1.0293077973289044e-08,
+    5.99276796853232e-07,
+    3.019155797798212e-07,
+    4.85722573273506e-17
+  ],
+  "prediction_error_l2_ratios": [
+    1.0,
+    5.593703356224832,
+    2.796851678110983
+  ],
+  "prediction_error_linf_ratios": [
+    1.0,
+    58.208562505539845,
+    29.10428125310699
+  ],
+  "checks": {
+    "full_l2_benefit": false,
+    "full_linf_nonincrease": false,
+    "half_l2_nonincrease": false,
+    "half_linf_nonincrease": false,
+    "full_radiation": true,
+    "full_boundary_l1": false,
+    "full_boundary_bolometric": false,
+    "half_radiation": true,
+    "half_boundary_l1": false,
+    "half_boundary_bolometric": false,
+    "independent_half_affinity": true,
+    "independent_half_linf_affinity": true,
+    "full_l2_affinity": false,
+    "full_linf_affinity": false,
+    "half_l2_affinity": false,
+    "half_linf_affinity": false
+  },
+  "validated": false,
+  "boundary_ratios": {
+    "boundary_l1": [
+      1.9258259013433685,
+      1.3235072223512545
+    ],
+    "boundary_bolometric": [
+      1.8456980910413643,
+      1.4228490528123763
+    ]
+  },
+  "job_id": 82503,
+  "terminal_audit_complete": false,
+  "validation_sha256": "c42898e717ec86fb7e99d7dbc90a6e3eaac7183b9034a3b2ef880b2a140e87b8",
+  "scope": "independent statistics only; source archive and posthash pending"
+}

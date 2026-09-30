@@ -1,0 +1,48 @@
+{
+  "source_job": 82441,
+  "candidate_sha256": "a125070b618d41ca06413968867e5aea2be03f5858da34c9bd6bc050503e4dc4",
+  "basis_sha256": "83b26402f6d39011c69f96883c17ea1f784535a3d9ced8d135e734f3b8078118",
+  "selected_coefficients": [
+    -0.0015746846851618004,
+    -5.295999951307822,
+    0.0014780078583690075
+  ],
+  "exact_cap_and_safety_checked": true,
+  "raw_objective_independently_checked": true,
+  "checks": {
+    "full_l2": true,
+    "half_l2": true,
+    "full_boundary_l1": true,
+    "full_boundary_bolometric": true,
+    "half_boundary_l1": true,
+    "half_boundary_bolometric": true
+  },
+  "passed": true,
+  "global_optimality_claimed": false,
+  "full_field_positivity_checked": false,
+  "full_field_linf_checked": false,
+  "l2_ratios": [
+    1.0,
+    0.7953925559766379,
+    0.8957443959339214
+  ],
+  "boundary": [
+    {
+      "boundary_l1": 6.864247013234265e-09,
+      "boundary_bolometric": 1.805044372011743e-09
+    },
+    {
+      "boundary_l1": 6.188309720815594e-09,
+      "boundary_bolometric": 1.7725535704299193e-09
+    },
+    {
+      "boundary_l1": 5.663480803417934e-09,
+      "boundary_bolometric": 1.788798971071379e-09
+    }
+  ],
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "candidate_written": false,
+  "baseline_replaced": false
+}
