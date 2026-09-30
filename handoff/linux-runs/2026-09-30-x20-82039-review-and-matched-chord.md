@@ -26,3 +26,9 @@ PRE-RUN：Code PASS（来源SHA、schema、301片/76块、非有限和零分母�
 6项新增来源测试、12项原扫描/正值/假仿射/短尾等测试和4项独立审计测试，共22 passed，shell语法通过。原物理核不改，仅新增包装驱动和协议。科学门不放宽，物质基准r20不替换。扫描预测失败仅拒绝这一方向/候选，不证明模型无解。
 
 备份Mac `pre-82039-review-20260930.bundle`、`automation-before-82039-review-20260930.toml`。首次小归档审计输出及加强来源绑定前的JSON/解包目录均另存，未删除旧证据。讲义§97经CLI草稿（deepseek-v4-flash[1m]）后独立修订，纠正把两支场差d叫原算子残差、把归一化加热比较当物理热率的表述。
+
+## 提交回执（不预先声明预测通过）
+
+数值代码`86dddc09818af69d370cc6aa712586e6e70b054a`已同步Mac/GitHub/学校，学校22项测试通过。82083于14:39:37在anode01开始，Students/qos_stu_default，4CPU/16GiB/1小时，15:39:37硬限。14:40:13核查RUNNING，preflight阶段、stderr空。提交和监督启动回执为`handoff/evidence/20260930-x20-matched-chord-{submit,watch-start}.json`。新增的报告提交不改变冻结运行代码。
+
+只读监督`handoff/audit_tools/watch_x20_matched_proposal.py`已启动，输出`outputs/review-20260925/x20-matched-proposal-watch-82083`，每60秒快照、80分钟预算；保存调度终态先于无工具CLI，CLI没有改代码、提交、取消或科学接受权。下一步收取declaration/prediction/summary/终态小工件，独立复算Gram、系数、两遍slab、边界谱与门；预测通过才制定32核真实full/half验证，失败不自动改门、换系数或延长预算。
