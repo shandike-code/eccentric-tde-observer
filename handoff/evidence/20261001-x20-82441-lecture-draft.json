@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 8178,
+  "duration_api_ms": 7929,
+  "ttft_ms": 6193,
+  "ttft_stream_ms": 488,
+  "time_to_request_ms": 250,
+  "num_turns": 1,
+  "result": "# 82441 Gram 独立审计 · 学习讲义草稿\n\n## 一、这次审计在做什么\n对作业 82441 所存储的 binary64 slab Gram 矩阵条目，做一次**精确有理数**层面的独立审计。重点不是重跑浮点场，而是把每条条目当作精确有理数，重建二次型问题（QP），再用两套彼此独立的方法交叉验证：一套是精确有理数 QP；另一套是主子式判定加凸支撑面证书。两路结论一致，才称得上\"独立获证\"。\n\n## 二、核心结论\n- 局部仿射权重 **L1 上限取 17**；在统一系数下，最优辐射映射缺陷的 **L2 比为 0.5515885**。\n- **65 块**最优性获证。\n- **6 块** Gram 全零，属平凡最优。\n- **5 块**（0、1、2、3、53）Hessian 出现非正主元，**未解决**；这些块保留原锚点，且全部残差保留，其原平方份额合计仅 **3.688×10⁻²⁹**。\n- 因此**不得**宣称 76 块整体最优。\n\n## 三、可行预测\n分块可行的二次预测比为 **0.2585609**；系数再乘 0.9 留安全裕度后为 **0.2850841**。\n\n## 四、必须讲清的边界\n这是关于**存储 Gram** 的精确结论，**不是**原浮点场的精确结论，也不是物理模型的精确误差界；它**不是物质残差**。数理上严密，但适用范围严格限定在存储矩阵这一层，外推要谨慎。\n\n## 五、下一步（硬约束）\n只用 **4 核**，对这份候选做 full/half 全场的正值、Linf、边界预测；**0 个 map、0 对反馈、0 步物质**，**不写 dat**。只有全部通过，才允许上真实的 32 核原映射。**不预设分块仿射严格成立**，也不得宣称大气 I_ν 已完成。\n\n---\n\n（草稿约 500 字，已按\"无工具\"要求纯文字书写；审计指纹 5636510…、基矢指纹 83b2640…，候选未落盘、基线未替换。）",
+  "stop_reason": "end_turn",
+  "session_id": "428cd969-307f-4655-b254-1f5a27bf2551",
+  "total_cost_usd": 0.05692,
+  "usage": {
+    "input_tokens": 2189,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1839,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 2189,
+      "outputTokens": 1839,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.05692,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "be5457cd-e0e0-45c0-886c-f30f0672a584"
+}

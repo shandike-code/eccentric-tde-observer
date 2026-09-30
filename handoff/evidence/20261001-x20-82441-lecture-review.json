@@ -1,0 +1,12 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "lecture_section": 107,
+  "review": [
+    "Key counts and ratios match audited evidence",
+    "Added exact supporting-plane bound argument",
+    "Clarified coefficient feasibility does not establish field positivity",
+    "Distinguished exact selected rational coefficient prediction from later binary64 field evaluation",
+    "Retained five unresolved blocks and no global optimality claim"
+  ],
+  "figure_visually_checked": true
+}

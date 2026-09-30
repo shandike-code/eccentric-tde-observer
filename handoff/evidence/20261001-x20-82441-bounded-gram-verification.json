@@ -1,0 +1,20 @@
+{
+  "source_job": 82441,
+  "analysis_sha256": "76bddf1511274e6f0ef01851fba892e444df948c242091497d0b02f4e5602540",
+  "basis_sha256": "83b26402f6d39011c69f96883c17ea1f784535a3d9ced8d135e734f3b8078118",
+  "exact_principal_determinants_checked": true,
+  "exact_supporting_plane_certificates_checked": true,
+  "all_76_blocks_retained": true,
+  "unresolved_blocks": [
+    0,
+    1,
+    2,
+    3,
+    53
+  ],
+  "unresolved_coefficients_zero": true,
+  "selected_coefficients_exactly_nine_tenths": true,
+  "field_constraints_verified": false,
+  "true_map_verified": false,
+  "scope": "exact certificates for stored slab Gram rational sums"
+}
