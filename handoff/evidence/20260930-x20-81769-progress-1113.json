@@ -1,0 +1,126 @@
+{
+  "job_id": 81769,
+  "observed_unix": 1790737977.1048198,
+  "scontrol": "JobId=81769 JobName=tde-x20-feedback UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:42:46 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-09-30T10:30:10 EligibleTime=2026-09-30T10:30:10 AccrueTime=2026-09-30T10:30:10 StartTime=2026-09-30T10:30:11 EndTime=2026-09-30T16:30:11 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-30T10:30:11 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:429026 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode06 BatchHost=anode06 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_accelerated_feedback_windows.sbatch SubmitLine=sbatch --parsable operations/x20_accelerated_feedback_windows.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-feedback-81769.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-feedback-81769.out TresPerTask=cpu=32\n",
+  "status": {
+    "status": "feedback",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1790737872.3081295,
+    "case": "accelerated",
+    "after_maps": 8
+  },
+  "stderr": "",
+  "stdout_tail": "{\"operation\": \"map\", \"completed_blocks\": 16, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 32, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 48, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 64, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 76, \"total\": 76}\n{\"map\": 1, \"residual\": 4.4060591100972274e-07, \"boundary_l1\": 1.5947587483625292e-08, \"boundary_bolometric\": 8.713113036415447e-09, \"wall_s\": 164.25513387657702}\n{\"operation\": \"map\", \"completed_blocks\": 16, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 32, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 48, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 64, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 76, \"total\": 76}\n{\"map\": 2, \"residual\": 4.3873560209084376e-07, \"boundary_l1\": 1.541038898701372e-08, \"boundary_bolometric\": 7.0122684452744716e-09, \"wall_s\": 159.00444745458663}\n{\"operation\": \"map\", \"completed_blocks\": 16, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 32, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 48, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 64, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 76, \"total\": 76}\n{\"map\": 3, \"residual\": 4.3687318906096636e-07, \"boundary_l1\": 1.496881576140079e-08, \"boundary_bolometric\": 5.4903534279775595e-09, \"wall_s\": 155.85378595255315}\n{\"operation\": \"map\", \"completed_blocks\": 16, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 32, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 48, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 64, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 76, \"total\": 76}\n{\"map\": 4, \"residual\": 4.3501864049646997e-07, \"boundary_l1\": 1.4588029018922162e-08, \"boundary_bolometric\": 4.12758851054778e-09, \"wall_s\": 153.04456720873713}\n{\"operation\": \"map\", \"completed_blocks\": 16, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 32, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 48, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 64, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 76, \"total\": 76}\n{\"map\": 5, \"residual\": 4.331719212051229e-07, \"boundary_l1\": 1.423765474862917e-08, \"boundary_bolometric\": 2.906654694038468e-09, \"wall_s\": 155.11125290580094}\n{\"operation\": \"map\", \"completed_blocks\": 16, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 32, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 48, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 64, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 76, \"total\": 76}\n{\"map\": 6, \"residual\": 4.3133300048144745e-07, \"boundary_l1\": 1.3913011744394698e-08, \"boundary_bolometric\": 1.8123502071080663e-09, \"wall_s\": 157.6421371549368}\n{\"operation\": \"map\", \"completed_blocks\": 16, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 32, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 48, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 64, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 76, \"total\": 76}\n{\"map\": 7, \"residual\": 4.2950184438974775e-07, \"boundary_l1\": 1.3610405391762053e-08, \"boundary_bolometric\": 8.312984415231656e-10, \"wall_s\": 156.45331537909806}\n{\"operation\": \"map\", \"completed_blocks\": 16, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 32, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 48, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 64, \"total\": 76}\n{\"operation\": \"map\", \"completed_blocks\": 76, \"total\": 76}\n{\"map\": 8, \"residual\": 4.2767842258375533e-07, \"boundary_l1\": 1.332673086247808e-08, \"boundary_bolometric\": 4.82968665779672e-11, \"wall_s\": 153.30732982605696}\n",
+  "cases": {
+    "accelerated": {
+      "status": "radiation",
+      "maps": 8,
+      "active_map": null,
+      "history": [
+        {
+          "iteration": 1,
+          "input_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_0.dat",
+          "input_sha256": "a9aaf15de922d5f6e98588c26faab8e6ec95a0c4ef35813aaecdecd3225e332f",
+          "output_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_1.dat",
+          "output_sha256": "5678fb2bc4f78824af2134eb7b6346b4eb8225e95ea7702cb8674ee9341c4287",
+          "wall_s": 164.25513387657702,
+          "residual": 4.4060591100972274e-07,
+          "boundary_l1": 1.5947587483625292e-08,
+          "boundary_bolometric": 8.713113036415447e-09,
+          "maximum_worker_rss_mib": 3498.265625
+        },
+        {
+          "iteration": 2,
+          "input_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_1.dat",
+          "input_sha256": "5678fb2bc4f78824af2134eb7b6346b4eb8225e95ea7702cb8674ee9341c4287",
+          "output_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_2.dat",
+          "output_sha256": "2e63ddc110b63e30291fe22c07d399587b59992e779c7a34f0a4c1b6a4627fb9",
+          "wall_s": 159.00444745458663,
+          "residual": 4.3873560209084376e-07,
+          "boundary_l1": 1.541038898701372e-08,
+          "boundary_bolometric": 7.0122684452744716e-09,
+          "maximum_worker_rss_mib": 3502.38671875
+        },
+        {
+          "iteration": 3,
+          "input_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_2.dat",
+          "input_sha256": "2e63ddc110b63e30291fe22c07d399587b59992e779c7a34f0a4c1b6a4627fb9",
+          "output_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_0.dat",
+          "output_sha256": "fa644bee5b18ed3f9de2f7b1d086de6bfa71ba101f451418661a9fa159025aff",
+          "wall_s": 155.85378595255315,
+          "residual": 4.3687318906096636e-07,
+          "boundary_l1": 1.496881576140079e-08,
+          "boundary_bolometric": 5.4903534279775595e-09,
+          "maximum_worker_rss_mib": 3508.06640625
+        },
+        {
+          "iteration": 4,
+          "input_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_0.dat",
+          "input_sha256": "fa644bee5b18ed3f9de2f7b1d086de6bfa71ba101f451418661a9fa159025aff",
+          "output_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_1.dat",
+          "output_sha256": "b1569a1982d5c292b4df3d85284a46769d319a13f2a6e82d96cfd8868671b0c6",
+          "wall_s": 153.04456720873713,
+          "residual": 4.3501864049646997e-07,
+          "boundary_l1": 1.4588029018922162e-08,
+          "boundary_bolometric": 4.12758851054778e-09,
+          "maximum_worker_rss_mib": 3498.9453125
+        },
+        {
+          "iteration": 5,
+          "input_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_1.dat",
+          "input_sha256": "b1569a1982d5c292b4df3d85284a46769d319a13f2a6e82d96cfd8868671b0c6",
+          "output_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_2.dat",
+          "output_sha256": "fb29fee8886adaa4cdb4fa9590614a8a581ec325551814189e1c39f90f8f97bd",
+          "wall_s": 155.11125290580094,
+          "residual": 4.331719212051229e-07,
+          "boundary_l1": 1.423765474862917e-08,
+          "boundary_bolometric": 2.906654694038468e-09,
+          "maximum_worker_rss_mib": 3499.37890625
+        },
+        {
+          "iteration": 6,
+          "input_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_2.dat",
+          "input_sha256": "fb29fee8886adaa4cdb4fa9590614a8a581ec325551814189e1c39f90f8f97bd",
+          "output_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_0.dat",
+          "output_sha256": "07596d64156e2723b654a91f3060b930767318b948969949a0595e383ad2bdd1",
+          "wall_s": 157.6421371549368,
+          "residual": 4.3133300048144745e-07,
+          "boundary_l1": 1.3913011744394698e-08,
+          "boundary_bolometric": 1.8123502071080663e-09,
+          "maximum_worker_rss_mib": 3501.1796875
+        },
+        {
+          "iteration": 7,
+          "input_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_0.dat",
+          "input_sha256": "07596d64156e2723b654a91f3060b930767318b948969949a0595e383ad2bdd1",
+          "output_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_1.dat",
+          "output_sha256": "0becaf404548b853492917e3e1a475dd4ec5540c99e3fb79d9a2ab9bc72a8a2f",
+          "wall_s": 156.45331537909806,
+          "residual": 4.2950184438974775e-07,
+          "boundary_l1": 1.3610405391762053e-08,
+          "boundary_bolometric": 8.312984415231656e-10,
+          "maximum_worker_rss_mib": 3501.81640625
+        },
+        {
+          "iteration": 8,
+          "input_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_1.dat",
+          "input_sha256": "0becaf404548b853492917e3e1a475dd4ec5540c99e3fb79d9a2ab9bc72a8a2f",
+          "output_path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/state_2.dat",
+          "output_sha256": "8ccb8d3ae83d79f85c31a7cfe43f3dba744a0aa3047d7eeb2b1587f0d3cfb39f",
+          "wall_s": 153.30732982605696,
+          "residual": 4.2767842258375533e-07,
+          "boundary_l1": 1.332673086247808e-08,
+          "boundary_bolometric": 4.82968665779672e-11,
+          "maximum_worker_rss_mib": 3500.453125
+        }
+      ]
+    },
+    "historical": {}
+  },
+  "archives": [],
+  "watch_files": [
+    "latest.json",
+    "claude-review-00.json"
+  ]
+}
