@@ -1,0 +1,14 @@
+{
+  "draft": "20261001-x20-82472-lecture-draft.json",
+  "actual_model": "deepseek-v4-flash[1m]",
+  "independently_checked": true,
+  "corrections": [
+    "Removed unsupported claim that relaxing a gate must be accompanied by adding another gate; no science gate was relaxed.",
+    "Specified that the original negative-field result left other gates unevaluated; later mixed-field screening is a separate candidate.",
+    "Distinguished internal 5 percent search margin, original science thresholds, failed optimizer status, and independent finite-point feasibility.",
+    "Added exact boundary definitions and the absence of a true-map or material-convergence result."
+  ],
+  "lecture_section": 108,
+  "new_maps": 0,
+  "new_material_steps": 0
+}

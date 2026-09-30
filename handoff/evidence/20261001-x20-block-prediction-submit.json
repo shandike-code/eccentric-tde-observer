@@ -1,0 +1,14 @@
+{
+  "job_id": 82472,
+  "git_commit": "3fc05843f1aadf9bdf7d57906d2d40aaae81dc16",
+  "source_job": 82441,
+  "submitted_unix": 1790788771.1272552,
+  "watch_output": "outputs/review-20260925/x20-block-window-prediction-watch-82472",
+  "watch_pid": 3405838,
+  "run": "outputs/hpc/x20-block-window-prediction-20261001",
+  "maximum_full_field_reads": 3,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "candidate_written": false
+}
