@@ -1,0 +1,8 @@
+{
+  "job_id": 82214,
+  "pid": 2556154,
+  "path": "outputs/review-20260925/x20-window-validation-watch-82214",
+  "started_unix": 1790765149.571599,
+  "poll_seconds": 60,
+  "budget_seconds": 8400
+}

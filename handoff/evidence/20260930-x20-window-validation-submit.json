@@ -1,0 +1,8 @@
+{
+  "job_id": 82214,
+  "git_commit": "42550a067bd7dbe730ff915e86db708b82cf1843",
+  "run": "outputs/hpc/x20-window-validation-20260930",
+  "submitted_unix": 1790765149.569321,
+  "stdout": "82214\n",
+  "stderr": ""
+}

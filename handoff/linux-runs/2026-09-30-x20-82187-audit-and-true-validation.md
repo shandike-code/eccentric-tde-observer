@@ -31,3 +31,9 @@ PRE：读取旧流程并核对源、公式、所有频块、内存/停止/失败
 ## 保全
 
 Mac Git备份`pre-82187-review-20260930.bundle`，automation备份`automation-before-82187-review-20260930.toml`。新代码单独命名；旧src/scripts/hpc、数值态和历史判决均不改。独立审计JSON、图/CSV、讲义§100一并提交。
+
+## 正式提交与监督
+
+源码42550a067bd7dbe730ff915e86db708b82cf1843已同步Mac/GitHub/学校；学校先保存`pre-window-validation-code-20260930.bundle`，16项测试通过（16.01秒）。
+
+真实作业82214于2026-09-30 18:45:50 CST在anode03立即RUNNING，Students/qos_stu_cpu_long，实际32CPU128GiB，硬限20:45:50。先前test-only预测启动较晚，已被实际起跑事实取代，不能继续引用其排队估计。18:46:09首查preparing，stderr空。平台watch每60秒巡检、140分钟预算，先存终态再无工具CLI；路径`outputs/review-20260925/x20-window-validation-watch-82214`，PID2556154仅启动回执。提交/watch证据入Git；后续文档提交不改变冻结运行源码。
