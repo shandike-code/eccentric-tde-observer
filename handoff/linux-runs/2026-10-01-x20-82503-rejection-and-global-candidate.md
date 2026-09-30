@@ -32,3 +32,15 @@
 `operations/x20_global_boundary_prediction.py/.sbatch`，新目录`outputs/hpc/x20-global-boundary-prediction-20261001`。4CPU16GiB1h，最多三遍八场，父RSS<6GiB；0新map/反馈/物质，不写dat。76行系数逐位相同，只为复用已测读场接口。原非负/收益/Linf/radiation/边界全部门保持。预测全过且独立审计才另起32核两张真实map；任一失败先诊断，不自动扫描更多候选。
 
 本地20项定向测试通过，含全局重复系数、来源/系数/安全系数/预算/最优性声明篡改拒绝，及原全场核/独立归约回归。bash与编译通过；学校复验和job另记。`review_x20_global_boundary_prediction.py`已准备但尚无新工件E2E。两端旧数据不动，Mac中途前pre-82503-progress-20261001.bundle备份已存；运行时仅新增审计/报告，数值代码在82503终态后才新增。
+
+## 82512提交
+
+学校20项复验通过（20.20秒），代码88a00dc7fb8708ee04c7429d19a60eaaf606edb6已同步三端。03:45:05 CST提交82512，4CPU16GiB1h；回执20261001-x20-global-boundary-submit.json。学校备份pre-82503-review-20261001.bundle及pre-global-boundary-launch-20261001.bundle。watch目录outputs/review-20260925/x20-global-boundary-prediction-watch-82512，PID1045377仅启动记录，最多4800秒，无工具CLI只读监督。
+
+终态8文件包约定82512-global-prediction-review.tar.gz/.json（declaration/prediction/summary/status、scheduler-terminal、claude-review-01、tde-x20-gpred-82512.err/.out）。独立入口review_x20_global_boundary_prediction.py --job 82512 --commit 88a00dc7fb8708ee04c7429d19a60eaaf606edb6。当前只通过语法和依赖测试，不预报新工件E2E结果。
+
+## 监督原文的独立纠正与定时交接
+
+已保存原始CLI终态回答`20261001-x20-82503-cli-terminal.json`（实际deepseek-v4-flash[1m]）及空stderr。其“实际map仍缺检验、未直接对比真实输出与预测”表述错误：本报告及独立审计已经包含16个实际门和真实减预测统计；不得把CLI摘要作为缺失证据的判断依据。其1.02GB仅为父进程，不能冒称全作业聚合峰值。原回答保留，纠正在此追加。
+
+03:49:21 CST，82512运行4分14秒，状态prediction_scan。定时任务已备份原配置并更新：30分钟审阅；无变化安静；82503禁止进入反馈；82512预测和独立审计全过才允许另起最多2张32核真实map。没有扩大本作业0map/0反馈/0物质的预算。

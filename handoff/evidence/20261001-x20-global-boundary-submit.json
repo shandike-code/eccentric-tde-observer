@@ -1,0 +1,15 @@
+{
+  "job_id": 82512,
+  "git_commit": "88a00dc7fb8708ee04c7429d19a60eaaf606edb6",
+  "source_basis_job": 82441,
+  "rejected_source_job": 82503,
+  "run": "outputs/hpc/x20-global-boundary-prediction-20261001",
+  "watch_output": "outputs/review-20260925/x20-global-boundary-prediction-watch-82512",
+  "watch_pid": 1045377,
+  "submitted_unix": 1790797505.43337,
+  "maximum_full_field_reads": 3,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "candidate_written": false
+}
