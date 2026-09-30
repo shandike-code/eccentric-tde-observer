@@ -1,0 +1,16 @@
+{
+  "job_id": 82441,
+  "git_commit": "3807245190b2057e3b71ffe6a14865b735e4c875",
+  "source_jobs": [
+    82273,
+    82396
+  ],
+  "submitted_unix": 1790785016.1953685,
+  "watch_output": "outputs/review-20260925/x20-latest-window-basis-watch-82441",
+  "watch_pid": 2622499,
+  "run": "outputs/hpc/x20-latest-window-basis-20261001",
+  "maximum_field_scans": 1,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0
+}

@@ -30,3 +30,7 @@
 PRE-RUN：Code PASS（21项入口/流式/独立差场测试，另4项基矩阵审计测试通过；shell语法/新审计语法通过）；Logic PASS（缺少的交叉内积→同源新端点单遍补测）；Physics WARNING（小矩阵预测不是物理解）。Decision RUN，有界新任务学校复验后才提交，ID另记。旧82396的POST-RUN：完整小工件复算通过、非有限/覆盖/平方范数/Cauchy/资源检查通过，stderr空，图无异常，未产生任何新的物理接受判定。
 
 Mac先保存`pre-82396-review-20261001.bundle`和`automation-before-82396-review-20261001.toml`。CLI讲义草稿实际deepseek-v4-flash[1m]，独立讲义§106补足差场与残差区别、系数所需交叉内积及有界预测的后续验证条件。没有修改冻结原物理代码或删除旧数据。
+
+提交回执：代码`3807245190b2057e3b71ffe6a14865b735e4c875`已三端同步，学校25项测试全过（13.40s）。GitHub首次连接失败，重试成功。首次派发被“账号全队列必须空”的过宽保护拦截，未调用sbatch；核实是其他项目作业后，将一次性派发检查限定为本项目同名作业与目标目录，未改数值代码或干预其他作业。新作业82441于Oct1 00:16:57 CST在anode01 RUNNING，Students/qos_stu_default、4CPU/16GiB/1h，01:16:57硬限。00:17:13处于preflight且stderr空；不能据此称扫描已成功。回执`20261001-x20-latest-basis-submit.json`。
+
+只读监督`watch_x20_latest_window_basis.py`输出`outputs/review-20260925/x20-latest-window-basis-watch-82441`，PID2622499仅启动记录；60秒观察、80分钟上限、先写调度终态再无工具CLI。新独立审计入口`review_x20_latest_window_basis.py --job 82441 --commit 3807245190b2057e3b71ffe6a14865b735e4c875`已准备，需终态包`82441-latest-basis-review.tar.gz/.json`，尚未有真实新工件E2E结果。它复用已测80位Decimal基矩阵归约，并将新Gram的e16平方及e8组合平方与82396独立结果对照；不自动求退化矩阵的逆或宣布候选可行。
