@@ -1,0 +1,203 @@
+{
+  "job_id": 82166,
+  "receipt": {
+    "path": "outputs/review-20260925/82166-review-20260930.tar.gz",
+    "size_bytes": 575008,
+    "sha256": "cd45ae59847a4ca3026103d6d37f3525cbdbabe3f228a39c735e467a5b3527d9",
+    "files": [
+      {
+        "path": "declaration.json",
+        "source": "outputs/hpc/x20-window-basis-20260930/declaration.json",
+        "size_bytes": 147162,
+        "sha256": "19b928901ddd572e5b5d5c8635a3629178be195f20d636a928d7167a9bd1d305"
+      },
+      {
+        "path": "basis.json",
+        "source": "outputs/hpc/x20-window-basis-20260930/basis.json",
+        "size_bytes": 2747810,
+        "sha256": "db23097db9203c2e018a16c3cc7c7bf610eb3ab2f9498c7c73820ed23e1dad7f"
+      },
+      {
+        "path": "summary.json",
+        "source": "outputs/hpc/x20-window-basis-20260930/summary.json",
+        "size_bytes": 826,
+        "sha256": "6e039251d5eefeb01c84e26faa5a38381ddee8f0cf6c65a7d1b66a54894b5324"
+      },
+      {
+        "path": "status.json",
+        "source": "outputs/hpc/x20-window-basis-20260930/status.json",
+        "size_bytes": 78,
+        "sha256": "1be9c241a2113b9b98100020ac97733eed68ef3965a49f81865d351a56f1cb8f"
+      },
+      {
+        "path": "scheduler-terminal.json",
+        "source": "outputs/review-20260925/x20-window-basis-watch-82166/scheduler-terminal.json",
+        "size_bytes": 2587,
+        "sha256": "f14c407dd4949665786ec5dc56cce2fe92332da4ce043d9c6cf12a90e0b53be2"
+      },
+      {
+        "path": "claude-review-01.json",
+        "source": "outputs/review-20260925/x20-window-basis-watch-82166/claude-review-01.json",
+        "size_bytes": 1712,
+        "sha256": "601d2271aae2354204e547802ed4911b424a82fb4bddedf87fcecec8df5d0c00"
+      },
+      {
+        "path": "tde-x20-basis-82166.out",
+        "source": "outputs/hpc/logs/tde-x20-basis-82166.out",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "tde-x20-basis-82166.err",
+        "source": "outputs/hpc/logs/tde-x20-basis-82166.err",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "unix": 1790761287.1056333
+  },
+  "independent_audit": true,
+  "code_claims_verified": 762,
+  "source_claims_verified": 13,
+  "fields": [
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "c7f9fea723498d28a13e7976deefba442769ac352b7c394f616c4981eb3eac97"
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/endpoints-map16/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "6741389510a9d36d4b5587396a15e8feaf54e8d8eddd2886ccbb7186899b8249"
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/historical/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "1242b3a75f26e2b80dc018c42d2cac2e7ff00bd01275419490811c38ef824421"
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/historical/endpoints-map16/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "9b7dca308cc392df2dd2a50519528f780440c07fce7fd9feac7497a55445a0b7"
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/endpoints-map08/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "0becaf404548b853492917e3e1a475dd4ec5540c99e3fb79d9a2ab9bc72a8a2f"
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/accelerated/endpoints-map08/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "8ccb8d3ae83d79f85c31a7cfe43f3dba744a0aa3047d7eeb2b1587f0d3cfb39f"
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/historical/endpoints-map08/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "06c6e89cc1aeb968df03a1ae27282ea8401fd0929679fff9a838458e2bf0e789"
+    },
+    {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/historical/endpoints-map08/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "540e4336a783625aa6916f81674e7442e4d4ec7051b13cf52e97df40f8cccf71"
+    }
+  ],
+  "gram": [
+    [
+      5.261418969204925e-10,
+      1.0063290914856963e-08,
+      2.0711358443082853e-11,
+      1.0443898634360624e-08
+    ],
+    [
+      1.0063290914856963e-08,
+      9.94920997205547e-07,
+      3.7857774301817724e-10,
+      1.1369598005422198e-06
+    ],
+    [
+      2.0711358443082853e-11,
+      3.7857774301817724e-10,
+      8.706964527825705e-13,
+      3.95709187052997e-10
+    ],
+    [
+      1.0443898634360624e-08,
+      1.1369598005422198e-06,
+      3.95709187052997e-10,
+      1.3109584098451786e-06
+    ]
+  ],
+  "minimum": {
+    "alpha": [
+      -0.02478541348381129,
+      -22.20524605142058,
+      0.020231717345633882
+    ],
+    "alpha_80digit": [
+      "-0.024785413483811287572428739155853359603821934311687877664476861085168902218689874",
+      "-22.205246051420580893720088428564956006324316640678315179721220947380585899130664",
+      "0.020231717345633882706157401967420837339411492163817792551675733889634776242333331"
+    ],
+    "ldl_pivots_80digit": [
+      "9.94920997205546978718062288427059769446714199148118495941162109375E-7",
+      "7.2664370094470030437127922344091180600596951985612739540979911917003248380879594E-13",
+      "9.8063535896800799800361377740163148014414096786221110449243351524594799451207E-9"
+    ],
+    "normal_equation_residual_80digit": [
+      "0E-87",
+      "0E-90",
+      "-3E-87"
+    ],
+    "hessian_condition_inf_80digit": "4042429.8168506690954448903757097182250370027347792961725437556305206891022029918",
+    "minimum_squared_ratio_80digit": "0.053438560246693052239863709195977042300094891849292966032706598100798324097102528",
+    "minimum_l2_ratio": 0.2311678183629656,
+    "all_real_coefficients_excluded_at_0_8": false,
+    "weight_l1_at_unconstrained_minimum": 45.460062929808785,
+    "scope": "stored Gram affine prediction only; not a true-map or physical-error bound"
+  },
+  "basis_linf": [
+    1.598260951363173e-08,
+    1.947028549428853e-07,
+    5.533595595630381e-10,
+    2.0309007983665417e-07
+  ],
+  "field_minima": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "boundary_metrics": [
+    {
+      "boundary_l1": 1.1499201407117647e-08,
+      "boundary_bolometric": 4.467983605502597e-09
+    },
+    {
+      "boundary_l1": 1.2413106165683364e-05,
+      "boundary_bolometric": 1.241296971105914e-05
+    },
+    {
+      "boundary_l1": 1.3326730864850197e-08,
+      "boundary_bolometric": 4.82968164046771e-11
+    },
+    {
+      "boundary_l1": 1.61300894691972e-05,
+      "boundary_bolometric": 1.61296989748489e-05
+    }
+  ],
+  "slabs": 301,
+  "blocks": 76,
+  "groups": 9632,
+  "peak_rss_bytes": 999952384,
+  "wall_s": 464.58666951954365,
+  "large_fields_recomputed_on_mac": false,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "baseline_replaced": false,
+  "strict_error_bound": false
+}

@@ -1,0 +1,264 @@
+{
+  "raw_coefficients": [
+    -0.04181700137312674,
+    -7.958182948626873,
+    0.034692992960461876
+  ],
+  "raw_weights": [
+    -0.04181700137312674,
+    8.965306957039537,
+    -7.958182948626873,
+    0.034692992960461876
+  ],
+  "raw_weight_l1": 16.9999999,
+  "selected_coefficients": [
+    -0.037635301235814066,
+    -7.162364653764186,
+    0.03122369366441569
+  ],
+  "full_fraction": 0.9,
+  "half_fraction": 0.45,
+  "endpoints": [
+    {
+      "fraction": 0.9,
+      "l2_ratio": 0.6334860715520115,
+      "squared_l2_70digit": "0.401304602850400265389481406766409397152546571351310313829949027585785",
+      "boundary_l1": 1.1213033048341561e-08,
+      "boundary_bolometric": 2.3698829312128354e-10,
+      "boundary_l1_ratio": 0.9751140667386731,
+      "boundary_bolometric_ratio": 0.05304144196711416,
+      "minimum_input": 0.0,
+      "minimum_output": 0.0,
+      "positive_spectra": true
+    },
+    {
+      "fraction": 0.45,
+      "l2_ratio": 0.8119925256529906,
+      "squared_l2_70digit": "0.6593318617163226378424450014454933902564069298359782533556469468455179",
+      "boundary_l1": 8.533947304638584e-09,
+      "boundary_bolometric": 2.115498260646577e-09,
+      "boundary_l1_ratio": 0.7421339102171335,
+      "boundary_bolometric_ratio": 0.4734794143025078,
+      "minimum_input": 0.0,
+      "minimum_output": 0.0,
+      "positive_spectra": true
+    }
+  ],
+  "checks": {
+    "raw_weight_cap": true,
+    "full_l2_benefit": true,
+    "half_l2_nonincrease": true,
+    "full_positive_spectra": true,
+    "full_boundary_l1": true,
+    "full_boundary_bolometric": true,
+    "half_positive_spectra": true,
+    "half_boundary_l1": true,
+    "half_boundary_bolometric": true
+  },
+  "available_gates_passed": true,
+  "full_field_positivity_and_linf_evaluated": false,
+  "true_maps_evaluated": false,
+  "candidate_written": false,
+  "optimizer": {
+    "success": true,
+    "message": "Optimization terminated successfully",
+    "iterations": 20
+  },
+  "conservative_flux_lower_bounds": [
+    0.9950138393505588,
+    0.9975069196752793
+  ],
+  "search_margin": 0.98,
+  "internal_cap_margin": 1e-07,
+  "trace": [
+    {
+      "point": [
+        -0.04356568622085369,
+        -7.956434263778879,
+        0.036322403174771915
+      ],
+      "quadratic": 0.40116437894932055,
+      "minimum_search_constraint": -0.03928698174606926
+    },
+    {
+      "point": [
+        -0.0409775623435249,
+        -7.959022387656475,
+        0.03389827662205418
+      ],
+      "quadratic": 0.4011761452703463,
+      "minimum_search_constraint": -0.009156675287858906
+    },
+    {
+      "point": [
+        -0.04323418947536454,
+        -7.956765760524635,
+        0.03601191182967385
+      ],
+      "quadratic": 0.40114842979944415,
+      "minimum_search_constraint": -0.0242380074059656
+    },
+    {
+      "point": [
+        -0.04175922221554505,
+        -7.958240727784455,
+        0.034630314926308525
+      ],
+      "quadratic": 0.40113784656619705,
+      "minimum_search_constraint": -0.0010620964272565203
+    },
+    {
+      "point": [
+        -0.04182726864759381,
+        -7.958172681352407,
+        0.03469682491369861
+      ],
+      "quadratic": 0.4011905658259027,
+      "minimum_search_constraint": -0.0006413925522377184
+    },
+    {
+      "point": [
+        -0.041817255944215564,
+        -7.958182694055785,
+        0.03469313031425986
+      ],
+      "quadratic": 0.401302607416801,
+      "minimum_search_constraint": -1.1154827680215362e-05
+    },
+    {
+      "point": [
+        -0.041819026754199934,
+        -7.958180923245801,
+        0.03469489163779475
+      ],
+      "quadratic": 0.4013045877714868,
+      "minimum_search_constraint": -9.70694816970763e-07
+    },
+    {
+      "point": [
+        -0.04182898013492153,
+        -7.958170969865079,
+        0.03470422235516528
+      ],
+      "quadratic": 0.4013045164782639,
+      "minimum_search_constraint": -5.7413055887245434e-06
+    },
+    {
+      "point": [
+        -0.04187742826248556,
+        -7.958122521737514,
+        0.034749639665933925
+      ],
+      "quadratic": 0.4013042361297931,
+      "minimum_search_constraint": -5.297774158985469e-05
+    },
+    {
+      "point": [
+        -0.041975967416296646,
+        -7.958023982583703,
+        0.03484201440973804
+      ],
+      "quadratic": 0.401304007220051,
+      "minimum_search_constraint": -0.00031360508326638836
+    },
+    {
+      "point": [
+        -0.041975990864778344,
+        -7.958023959135222,
+        0.03484203639133019
+      ],
+      "quadratic": 0.40130400722003845,
+      "minimum_search_constraint": -0.0003136916190855654
+    },
+    {
+      "point": [
+        -0.04197599086412675,
+        -7.958023959135873,
+        0.03484203639071935
+      ],
+      "quadratic": 0.40130400722003845,
+      "minimum_search_constraint": -0.00031369161668126644
+    },
+    {
+      "point": [
+        -0.041975990895767507,
+        -7.958023959104233,
+        0.03484203642038073
+      ],
+      "quadratic": 0.4013040072200386,
+      "minimum_search_constraint": -0.00031369173345052737
+    },
+    {
+      "point": [
+        -0.04197599033975051,
+        -7.95802395966025,
+        0.034842035899147035
+      ],
+      "quadratic": 0.40130400722003845,
+      "minimum_search_constraint": -0.0003136896814883716
+    },
+    {
+      "point": [
+        -0.04197599090136452,
+        -7.958023959098636,
+        0.03484203642562761
+      ],
+      "quadratic": 0.40130400722003845,
+      "minimum_search_constraint": -0.00031369175410578265
+    },
+    {
+      "point": [
+        -0.04197599136576282,
+        -7.958023958634238,
+        0.03484203686097409
+      ],
+      "quadratic": 0.4013040072200384,
+      "minimum_search_constraint": -0.0003136934679517367
+    },
+    {
+      "point": [
+        -0.04197599033293757,
+        -7.958023959667063,
+        0.0348420358927603
+      ],
+      "quadratic": 0.4013040072200381,
+      "minimum_search_constraint": -0.0003136896563458169
+    },
+    {
+      "point": [
+        -0.04181700136649589,
+        -7.958182948633504,
+        0.03469299295364207
+      ],
+      "quadratic": 0.4013046028385679,
+      "minimum_search_constraint": -6.649081285559078e-11
+    },
+    {
+      "point": [
+        -0.04181700137312674,
+        -7.958182948626873,
+        0.034692992960461876
+      ],
+      "quadratic": 0.4013046028504006,
+      "minimum_search_constraint": -2.220446049250313e-16
+    },
+    {
+      "point": [
+        -0.04181700137312674,
+        -7.958182948626873,
+        0.034692992960461876
+      ],
+      "quadratic": 0.4013046028504006,
+      "minimum_search_constraint": -2.220446049250313e-16
+    }
+  ],
+  "minimum_search_constraint": -2.220446049250313e-16,
+  "search_limits_pass": true,
+  "original_science_gates_changed": false,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "accepted_outer_steps": 20,
+  "status": "small_candidate_requires_full_field_scan",
+  "wall_s": 0.3369407921563834
+}

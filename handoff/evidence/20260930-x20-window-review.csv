@@ -1,0 +1,5 @@
+quantity,ratio
+One direction: global minimum,0.8980763681327247
+Three directions: unrestricted minimum,0.2311678183629656
+Cap + relaxed boundary: lower bound,0.6294149412670073
+Interior full witness (prediction),0.6334860715520115

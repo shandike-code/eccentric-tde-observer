@@ -1,0 +1,27 @@
+{
+  "path": "outputs/review-20260925/82166-local-decisions-20260930.tar.gz",
+  "size_bytes": 23137,
+  "sha256": "b95c6d6ee4ec4b14d2bd63fca60abf9711e4d7ef698b57d7c05479e04f7d59a0",
+  "files": [
+    {
+      "path": "x20-window-feasibility-20260930/declaration.json",
+      "size_bytes": 3222,
+      "sha256": "96bcd43a20cbc7eacb6b136127ab6670220c9aaa6060c5ec536871a9fa0d30da"
+    },
+    {
+      "path": "x20-window-feasibility-20260930/result.json",
+      "size_bytes": 484782,
+      "sha256": "a1fe153fb19ba612845e0f45fe40b4ea0aa25cc769c21141adcb27fa8017392e"
+    },
+    {
+      "path": "x20-window-candidate-20260930/declaration.json",
+      "size_bytes": 3950,
+      "sha256": "ebee2c4a2012be8b23a892aa63217fc6f90cb3b5ffb9347515881663aac62fd4"
+    },
+    {
+      "path": "x20-window-candidate-20260930/result.json",
+      "size_bytes": 6885,
+      "sha256": "d558eb31cf2edade48edb8967e037656ac714ec22831cb51d01575ad8c8e2cdd"
+    }
+  ]
+}
