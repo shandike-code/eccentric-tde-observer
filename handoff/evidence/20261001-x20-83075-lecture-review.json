@@ -1,0 +1,10 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "raw_draft_accepted": false,
+  "independently_reviewed": true,
+  "corrections": [
+    "删除t切片：检查域是两个频组分片中的存储负点，不是时间或步长切片。",
+    "固定方向时只有d非零且t跨过根才越零；d=0保持不变，不能笼统称随t单调越零。",
+    "局部最紧上界只限已审元组，保留全域扫描与旧拒绝边界。"
+  ]
+}

@@ -18,3 +18,7 @@ full两场共378346个存储负点，精确full全部负；half两场162224个�
 因此在完成审计后重新声明单个候选：统一沿原方向1/4步，c=[0,-1.8,0.9485574831263044]。它低于已审局部上界，但尚不保证完整场。默认4CPU16GiB/1h只读八个已有场，重新全部301片和原11门，不写候选、0map/feedback/material。通过后还须独立审计和32核真实full/half映射。原83063full/half拒绝保留，不clip、不改变物理dt/能量/r20。
 
 新驱动operations/x20_83063_quarter_prediction.py，协议handoff/protocols/x20-83063-quarter-prediction-v1.md；Mac17测试通过0.96s，包括独立整数上界、覆盖/错误门拒绝、原全场候选核。完整新E2E待batch，不能提前说1/4安全。备份pre-83075-review-20261001.bundle。
+
+## 83080启动
+
+学校17项同组测试通过15.30s，无skip；数值提交4bfd4004e27c55bee43d702acbfd144a6096b8f7。23:08:17提交83080，23:08:18开始，anode02/default，4CPU16GiB，硬限次日00:08:18。watch PID3336143且latest已取回确认RUNNING；终态与原11门仍待新结果。讲义125及CLI原文/纠错保存，定时任务切换83080；没有把局部上界当作全场许可或提交真实map。
