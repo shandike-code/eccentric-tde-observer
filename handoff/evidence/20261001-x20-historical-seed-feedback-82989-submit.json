@@ -1,0 +1,45 @@
+{
+  "job_id": 82989,
+  "source_commit": "e72054a72d53855874024b387c8cf5d582d97ffd",
+  "snapshot": {
+    "job_id": 82989,
+    "scheduler_state": "RUNNING",
+    "scontrol": "JobId=82989 JobName=tde-x20-hseed UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:02:36 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-10-01T18:50:58 EligibleTime=2026-10-01T18:50:58 AccrueTime=2026-10-01T18:50:58 StartTime=2026-10-01T18:50:59 EndTime=2026-10-01T22:50:59 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-01T18:50:59 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:4137181 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_historical_seed_feedback.sbatch SubmitLine=sbatch --parsable operations/x20_historical_seed_feedback.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-hseed-82989.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-hseed-82989.out TresPerTask=cpu=32\n",
+    "scheduler_stderr": "",
+    "observed_unix": 1790852015.1697216,
+    "status": {
+      "status": "preparing",
+      "accepted_outer_steps": 20,
+      "new_material_steps": 0,
+      "updated_unix": 1790851881.4307435
+    },
+    "cases": {
+      "historical": {}
+    }
+  },
+  "mac_tests": {
+    "passed": 34,
+    "wall_s": 1.32
+  },
+  "school_tests": {
+    "passed": 34,
+    "wall_s": 21.17
+  },
+  "watch_launch": {
+    "first_launch_failed": "ModuleNotFoundError: No module named handoff; missing PYTHONPATH",
+    "first_shell_pid_not_live_monitor": 4138477,
+    "corrected_pid": 4143853,
+    "fix": "Set PYTHONPATH=.:src:scripts; start_new_session subprocess; latest receipt verified",
+    "read_only": true
+  },
+  "budget": {
+    "maps": 16,
+    "feedback_pairs": 2,
+    "material_steps": 0,
+    "walltime_hours": 4,
+    "workers": 16,
+    "cpus": 32,
+    "memory_gib": 128
+  },
+  "saved_reference_recomputed": false
+}

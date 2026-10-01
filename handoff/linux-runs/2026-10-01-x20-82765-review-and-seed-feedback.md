@@ -20,3 +20,13 @@
 Code/Logic/Physics预检查已逐项在会话记录。Mac定向测试34passed（1.32s），包括真实来源身份、错种子/缺门/改作业拒绝、保存参考窗口拒绝、四端点完整差、原资源与map停止控制及严格统计审计。新Slurm完整E2E尚未执行；不得把单测通过写成物理通过。学校相同测试与提交证据后续追加。
 
 备份：Mac `outputs/review-20260925/pre-82765-final-review-20261001.bundle`；学校 `outputs/review-20260925/pre-historical-seed-feedback-20261001.bundle`，均为本轮修改前完整Git历史。旧数值工件未覆盖或删除。
+
+## 82989已启动与监督收据
+
+学校同组34项测试通过（21.17s，无skip），干净提交`e72054a72d53855874024b387c8cf5d582d97ffd`快进同步后，于18:50:58提交82989，18:50:59开始，anode02/Students/qos_stu_cpu_long，32CPU128GiB，4h上限22:50:59。首次快照preparing，stderr零字节；这只证明运行和输入核验进行中，未提前宣布反馈成功。
+
+监督器首次启动缺少PYTHONPATH，报`ModuleNotFoundError: No module named handoff`。原错误日志保留；补`PYTHONPATH=.:src:scripts`后以独立会话启动PID4143853，并已取回latest.json确认RUNNING。最初返回的shell PID4138477不是活监督证据，提交收据明确记录这一点。数值作业没有因此停止或重交。学校CLI为无工具只读摘要员，不能改代码或调度。
+
+30分钟heartbeat已从PAUSED恢复ACTIVE，任务内容切换为82989及其单支/保存参考审计要求；SSH断线则保留作业、暂停轮询并提醒用户重连。自动任务原TOML已备份`automation-before-82989-20261001.toml`。新终态审计器须针对新来源和单支含义建立，不能未经改造直接用硬编码旧两支资格的reviewer。
+
+讲义新增122节。CLI实际deepseek-v4-flash[1m]草稿存在实质误读：把数组最后的half一致性误差当成新缺陷降幅、把固定点缺陷叫作到解的距离、把L2叫物理能量平均、断言再推进A无信息。四项均独立纠正，原文与纠正JSON入库。科学结论仍为固定物质的真实传输候选通过，正式物质反馈待82989。
