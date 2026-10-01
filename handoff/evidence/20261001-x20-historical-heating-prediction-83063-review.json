@@ -1,0 +1,103 @@
+{
+  "job_id": 83063,
+  "receipt": {
+    "path": "outputs/review-20260925/83063-historical-heating-prediction-review.tar.gz",
+    "size_bytes": 105938,
+    "sha256": "e9557ec42b72b42a64ec557c5f1b9e1428e3f595aac9b36ce53e695288d4c3a1",
+    "files": [
+      {
+        "path": "declaration.json",
+        "size_bytes": 157673,
+        "sha256": "0a7397252e440874cbfe86f75f08751145b411a46733bd722e68229d9e0f6e9f"
+      },
+      {
+        "path": "prediction.json",
+        "size_bytes": 295123,
+        "sha256": "826fb3d3ed2e26305f7639628e99b641c40a946f1371148275b2ab970fe33627"
+      },
+      {
+        "path": "summary.json",
+        "size_bytes": 353,
+        "sha256": "de13c6894674d2e12f87b564302cb253ae0699bb506bce450a8c2c35e72be1fe"
+      },
+      {
+        "path": "status.json",
+        "size_bytes": 84,
+        "sha256": "dbee8802f9f67c6ef92aa52384b0fd7c7e81683e6462ca256d52c2515a6fe261"
+      },
+      {
+        "path": "scheduler-terminal.json",
+        "size_bytes": 2095,
+        "sha256": "20208d9a5f787053d2a4f1b67c717b0186877dac746e4f5e474f6a22a86e6f16"
+      },
+      {
+        "path": "stderr.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "stdout.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "independent_slab_reduction": true,
+  "source_and_code_verified": true,
+  "full_field_recomputed_on_mac": false,
+  "source_jobs": [
+    82273,
+    82518,
+    82989
+  ],
+  "coefficients": [
+    0.0,
+    -7.2,
+    3.7942299325052176
+  ],
+  "result": {
+    "passed": false,
+    "checks": {
+      "full_field_nonnegative": false
+    },
+    "negative_slabs": [
+      {
+        "first_group": 9440,
+        "minima": [
+          -1.5e-323,
+          -1.5e-323,
+          -1e-323,
+          -1e-323
+        ]
+      },
+      {
+        "first_group": 9472,
+        "minima": [
+          -4e-323,
+          -4e-323,
+          -1e-323,
+          -1e-323
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "status": "prediction_rejected_requires_review",
+    "passed": false,
+    "checks": {
+      "full_field_nonnegative": false
+    },
+    "candidate_written": false,
+    "new_maps": 0,
+    "new_feedback_pairs": 0,
+    "new_material_steps": 0,
+    "baseline_replaced": false,
+    "strict_error_bound": false,
+    "peak_rss_bytes": 933507072,
+    "wall_s": 448.35576156526804
+  },
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "baseline_replaced": false
+}
