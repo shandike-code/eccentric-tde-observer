@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 19276,
+  "duration_api_ms": 18657,
+  "ttft_ms": 18779,
+  "ttft_stream_ms": 823,
+  "time_to_request_ms": 618,
+  "num_turns": 1,
+  "result": "82518运行中，两初值各8map，七门/物理域/资源全过，续行。historical支内r20三范数与80195信号超阈，跨初值向量差及原子/直接/形式加热率门失败；记录失败但不截断accelerated同龄检查点，续第16张。eligible仅为需独立审核的有限窗口校准；baseline_replaced=false、accepted20、new_material_steps0、strict_error_bound=false。80542不证辐射收敛。不放宽门/预算，不宣告耦合柱或整盘I_nu完成。",
+  "stop_reason": "end_turn",
+  "session_id": "02cf7b8f-ab83-4391-af19-d3b3addc4964",
+  "total_cost_usd": 0.13407,
+  "usage": {
+    "input_tokens": 4929,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 4377,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 4929,
+      "outputTokens": 4377,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.13407,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "8ee223f3-726a-4edd-81b5-c5eee99d4aab"
+}

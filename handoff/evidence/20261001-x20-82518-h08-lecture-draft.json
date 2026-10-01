@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 9065,
+  "duration_api_ms": 8962,
+  "ttft_ms": 6925,
+  "ttft_stream_ms": 346,
+  "time_to_request_ms": 102,
+  "num_turns": 1,
+  "result": "# TDE 审计讲义草稿：七门、两类差值、cross8 的边界\n\n## 一、原七门通过\n每个 pair 的 `gate_checks` 含七项：末两次光电离、总复合、原子加热、直接加热、形式加热各 pass，加上 `inner_pair_ready` 与 `physical_response_pass`。accelerated8 与 historical8 这七项均 true。**七门通过仅说明末两次迭代的两两一致性成立，不构成任何跨 seed 或跨初值的结论。**\n\n## 二、三个命题必须分开\n- **相邻完整 512 维向量差**：同一支内相邻迭代的全程向量之差，除以冻结范数。\n- **跨初值差**：不同初值两支之间的向量差。\n- **七门通过**：末两次速率比较。\n\n三者是彼此独立的命题；一个通过，不推出另一个通过。\n\n## 三、量纲与门限\n向量差按固定顺序读作 `[L2, 质量加权, Max-cell]`，每个分量各自以其对应冻结量归一：r20 范数（门 `.001`）或 80195 信号（门 `.1`）。passed/failed 是可复算的比值判定，不是主观评价。\n\n## 四、本批读数\n- accelerated8：r20 最大 ≈ 3.56e-4 < .001；80195 最大 ≈ 5.99e-2 < .1，全过。\n- **新 H8（historical8）相邻质量/r20 = .00193968，已超 .001 门**；其 `from_prior_feedback` 与 `within_pair_spread` 均 passed=false。\n- cross8 残差：质量/r20 = .27631430，远未校准；四项速率门中原子/直接/形式加热为 false，`cross_rate_pass=false`。\n- `completed_experiment=false`、`reference_calibration_eligible=null`：**校准尚未判定**。\n\n## 五、纪律\ncross8 只作测量，须等两支 16 及 16–8 窗口才判校准。不得因此改预算，**不接受「物质21」**。两种种子共享数值历史，比较时须显式声明。\n\n## 六、不得外推\n旧 82273 cross16 质量/r20 = .29142838，此次 cross8 = .27631430；两者**年龄与 Aseed 不同**，不能读成单因素加速收益，也不能外推。同样，现有数据不足以宣称物理无解，也不支持对整盘 I_nu 下判断。\n\n（全文约 680 字；数据均逐字取自本次审计 JSON，未作任何推算或补全。）",
+  "stop_reason": "end_turn",
+  "session_id": "9ad7d6ef-c537-4c57-b48b-085f65bcf7b6",
+  "total_cost_usd": 0.074455,
+  "usage": {
+    "input_tokens": 5841,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1810,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 5841,
+      "outputTokens": 1810,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.074455,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "6ae09125-6c7c-4ba3-8412-9a8a06cf1986"
+}

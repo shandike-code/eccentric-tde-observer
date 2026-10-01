@@ -1,0 +1,14 @@
+{
+  "source": "20261001-x20-82518-h08-lecture-draft.json",
+  "actual_model": "deepseek-v4-flash[1m]",
+  "independently_reviewed": true,
+  "corrections": [
+    "七门同时含 inner_pair_ready 和 physical_response_pass，不能归结为末两次速率比较，也不能说512维物质两两一致性已经成立。",
+    "相邻向量是同一物质基态下两个辐射端点各自生成的512维残差，不是沿时间全程的向量。",
+    "3.56e-4/.0599是新A8对旧82273 A16的四组合最大值；新A8自身相邻质量差为8.719520187572026e-6/.0014674099721268023。",
+    "cross8有四个端点组合，每组合五项率/加热门，不是四项速率门。",
+    "监督CLI称historical支三范数超阈过宽：/r20仅mass超门，/signal是L2和mass超门，Max-cell均通过。",
+    "不同门不可互相替代，但不主张它们在数学或统计上彼此独立。"
+  ],
+  "scientific_decision": "Continue original matched16 experiment, no new allocation, no material update."
+}

@@ -1,0 +1,6 @@
+{
+  "job_id": 82518,
+  "read_only_snapshot": "2026-10-01T08:04:12+08:00\n{\n  \"status\": \"mapping\",\n  \"accepted_outer_steps\": 20,\n  \"new_material_steps\": 0,\n  \"updated_unix\": 1790813048.659535,\n  \"case\": \"accelerated\",\n  \"completed_maps\": 15,\n  \"target_maps\": 16\n}\n0 outputs/hpc/logs/tde-x20-gfeed-82518.err\na611ac84a4ed5b37bf45847c36c7209b8186396c\n",
+  "stderr": "",
+  "scientific_terminal": false
+}
