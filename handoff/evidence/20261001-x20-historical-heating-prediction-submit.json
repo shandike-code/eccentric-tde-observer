@@ -1,0 +1,17 @@
+{
+  "job_id": 82686,
+  "submitted_local_time": "2026-10-01T10:19:34.925148+08:00",
+  "code_commit": "d3f63e0091bd05810cec0c1791a8bf925e467378",
+  "run": "outputs/hpc/x20-historical-heating-prediction-20261001",
+  "cpus": 4,
+  "memory_gib": 16,
+  "wall_limit": "01:00:00",
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "baseline_replaced": false,
+  "mac_tests": "29 passed",
+  "school_tests": "29 passed,20.40s,no skips",
+  "stdout": "82686\n",
+  "stderr": ""
+}
