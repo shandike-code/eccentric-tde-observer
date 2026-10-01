@@ -1,0 +1,23 @@
+{
+  "job_id": 82518,
+  "observed_remote_time": "2026-10-01T09:12:04+08:00",
+  "scheduler_state_observed": "COMPLETED",
+  "scheduler_exit_code_observed": "0:0",
+  "start_time": "2026-10-01T05:49:08+08:00",
+  "end_time": "2026-10-01T09:03:45+08:00",
+  "wall_time": "03:14:37",
+  "run_status": "paired_seed_windows_complete_requires_review",
+  "stderr_bytes_observed": 0,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "archive_name_observed": "complete-1790816565448193947.tar.gz",
+  "archive_size_bytes_observed": 302814534,
+  "archive_sha256": null,
+  "terminal_audit_complete": false,
+  "archive_download_complete": false,
+  "ssh_failure": "mux_client_request_session: read from master failed: Broken pipe; Control socket absent; BatchMode Permission denied (publickey)",
+  "local_backup": "outputs/review-20260925/pre-82518-final-review-20261001.bundle",
+  "school_backup_confirmation": null,
+  "previous_verified_git_head": "86873835038e12449a226b9f33da29651370ce71",
+  "recorded_local_time": "2026-10-01T09:30:57.089288+08:00"
+}
