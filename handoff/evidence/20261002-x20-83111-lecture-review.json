@@ -1,0 +1,13 @@
+{
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "independent_review": true,
+  "corrections": [
+    "原稿列出新系数c后又写新full=anchor+sum(c/2)*differences，有二次减半歧义；提示本身也未区分旧新c。修订显式定义c_new=c_old/2，新full只用c_new一次。",
+    "全局带符号积分越零不推出逐频或物质状态普遍过冲；保留该边界。"
+  ],
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0
+}

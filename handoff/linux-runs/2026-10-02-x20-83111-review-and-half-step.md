@@ -28,3 +28,9 @@
 Code PASS：审计源码/来源/小问题KKT和统计齐备，入口绑定精确失败机制、半步收益和原方向；27 tests passed / 0.72秒，shell语法通过。Logic PASS：全域统一缩放系数、不复用旧half通过标签、原11门不改。Physics WARNING：边界变化是筛查量，未闭合物质和整体能量；预测p不是T(q)。Key Issues：新表达式非负仍须检；新half未测；不可接受物质步。Decision RUN一次有限筛查。
 
 POST-RUN：83111无NaN/Inf、无stderr，量级和符号变化已定位，数值改善与边界失败同时保留；没有自洽大气或整盘I_nu结论。学校验证/启动记录后补。
+
+## 启动回执
+
+数值提交23d8d8e953a7b03e066eb5a9216a1b171cfdcf8a；学校27 tests passed / 14.95秒，shell语法通过。Mac pre-83111-review-20261002.bundle、学校pre-83111-half-code-20261002.bundle备份，增量83111-half-code-20261002.bundle核验后fetch/ff-only；clean/exactHEAD后提交。
+
+83131于Oct2 00:39:09开始，anode02/Students/qos_stu_default、4CPU16GiB，硬限01:39:09。20261002-x20-83131-submit.json为RUNNING/preflight。watch PID381238只作启动凭据，latest已落盘；目录outputs/review-20260925/x20-83111-half-watch-83131；PYTHONPATH、Node PATH、start_new_session齐备。CLI无工具只读、先保存scheduler-terminal。讲义128、CLI原稿/独立纠正入库，实际deepseek-v4-flash[1m]；已消除提示及原稿中新旧c混淆造成的二次减半歧义，代码实际只除2一次。
