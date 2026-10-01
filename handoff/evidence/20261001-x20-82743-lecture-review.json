@@ -1,0 +1,17 @@
+{
+  "actual_cli_model": "deepseek-v4-flash[1m]",
+  "independent_review": true,
+  "corrections": [
+    "预测族自洽容易误读为物理自洽：改为存储预测场满足原11项资格门。",
+    "任何后续判据不能建立在预测上过强：预测可用于候选筛选和真实输出误差比较，但不能代替真实T(q)或正式反馈。",
+    "80位只是对已存分片统计做独立归并，不表示Mac以80位重算全部强度场。"
+  ],
+  "verified": [
+    "all 301 slabs",
+    "L2 and Linf ratios",
+    "three boundary L1 values",
+    "historical previous-final map15 lineage",
+    "fixed trial old r20 dt",
+    "two maps zero feedback and material steps"
+  ]
+}

@@ -17,3 +17,9 @@
 Mac28项定向测试通过：新候选审计拒绝路径、缺门/改系数/换来源、错误相邻端点、跨频块候选写出逐位一致、原跨频率仿射控制和独立统计归并。真实新运行E2E仍待Slurm结果，不提前宣称通过。估计45分钟仅依据类似两map历史耗时，不是最终科学任务ETA。
 
 备份Mac `pre-82743-review-20261001.bundle`。学校在快进前保存当前完整bundle，后续小工件审计与终态单独记录。源dat不下载或删除，冻结r20与accepted20不变。
+
+## 82765启动
+
+学校28项同组测试通过（20.08秒，无skip）。作业82765于12:04:19提交、12:04:20开始，anode02，qos_stu_cpu_long，32CPU128GiB/16worker，硬限14:04:20。数值提交 `ff588b12456c81034daf3118a8bd8ce5e3f2d6d9`；watch目录 `outputs/review-20260925/x20-historical-half-true-watch-82765`，PID3041212仅启动证据。原代码与所有源保持不变。
+
+终态审计入口已准备 `handoff/audit_tools/review_x20_historical_half_validation.py`，固定本数值提交和正确历史锚点；复用独立统计、worker/trial/频率覆盖/边界舍入审计。编译与接口已检查，本批真实E2E尚待归档。报告、CLI原文及纠正记录和讲义121节一并保存。
