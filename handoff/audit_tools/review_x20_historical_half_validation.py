@@ -17,15 +17,15 @@ def actual_numbers(v,original):
     r=v['field_comparison'];ss,peaks,l2,linf=norms(r['slabs'],4)
     assert r['all_groups_evaluated']==9632 and r['selected_blocks']==list(range(76))
     assert all(z['selected_input'] and z['block']==z['first_group']//128 and math.isfinite(z['output_change_linf']) and z['output_change_linf']>=0 for z in r['slabs'])
-    np.testing.assert_allclose([math.sqrt(ss[0]),peaks[0]],[r['original_defect_l2'],r['original_defect_linf']],rtol=1e-12)
-    np.testing.assert_allclose(l2,r['fixed_scale_l2_ratios'],rtol=1e-12)
-    np.testing.assert_allclose(linf,r['fixed_scale_linf_ratios'],rtol=1e-12)
+    np.testing.assert_allclose([math.sqrt(ss[0]),peaks[0]],[r['original_defect_l2'],r['original_defect_linf']],rtol=1e-12,atol=0)
+    np.testing.assert_allclose(l2,r['fixed_scale_l2_ratios'],rtol=1e-12,atol=0)
+    np.testing.assert_allclose(linf,r['fixed_scale_linf_ratios'],rtol=1e-12,atol=0)
     boundary=[original,v['actual_maps']['full'],v['actual_maps']['half']]
     checks=gates(l2,linf,boundary)
     checks.update(independent_half_affinity=bool(l2[3]<=1e-6),independent_half_linf_affinity=bool(linf[3]<=1e-6))
     p=v['prediction_affinity'];ps,pp,pl2,pli=norms(p['slabs'],3)
-    np.testing.assert_allclose(ps[0],ss[0],rtol=1e-12);np.testing.assert_array_equal(pp[0],peaks[0])
-    np.testing.assert_allclose(pl2,p['l2_ratios'],rtol=1e-12);np.testing.assert_allclose(pli,p['linf_ratios'],rtol=1e-12)
+    np.testing.assert_allclose(ps[0],ss[0],rtol=1e-12,atol=0);np.testing.assert_array_equal(pp[0],peaks[0])
+    np.testing.assert_allclose(pl2,p['l2_ratios'],rtol=1e-12,atol=0);np.testing.assert_allclose(pli,p['linf_ratios'],rtol=1e-12,atol=0)
     pc={name+'_'+norm:bool(value<=1e-6) for name,i in [('full',1),('half',2)] for norm,value in [('l2_affinity',pl2[i]),('linf_affinity',pli[i])]}
     assert pc==p['checks'] and all(pc.values())==p['passed'];checks.update(pc)
     assert checks==v['checks'] and all(checks.values())==v['validated']
@@ -98,7 +98,7 @@ def main(base,job):
         np.testing.assert_allclose(l1,row['boundary_l1'],rtol=4*gamma,atol=0)
         roundoff[name]=dict(fsum_bolometric=bol,reported=row['boundary_bolometric'],roundoff_bound=bound)
     actual=actual_numbers(v,d['source_row']);assert actual['validated']==s['validated']
-    np.testing.assert_allclose(actual['squared_l2'][0],prev['result']['squared_l2'][0],rtol=1e-12)
+    np.testing.assert_allclose(actual['squared_l2'][0],prev['result']['squared_l2'][0],rtol=1e-12,atol=0)
     np.testing.assert_array_equal(actual['linf'][0],prev['result']['linf'][0])
     result=dict(job_id=job,archive=read(ROOT/(base+'-receipt.json')),verified_files=len(inventory['files']),verified_code_claims=len(d['code']),
         verified_source_claims=checked,external_claims_bound_to_prior_audit=external,actual=actual,actual_maps=v['actual_maps'],candidate_claims=seeds,
