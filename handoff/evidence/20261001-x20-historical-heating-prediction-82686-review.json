@@ -1,0 +1,102 @@
+{
+  "job_id": 82686,
+  "receipt": {
+    "size_bytes": 105683,
+    "sha256": "c3400f900e427de3f7d9c742f0de5bb81caad0621705425341add7d7dc10612c",
+    "files": [
+      {
+        "path": "declaration.json",
+        "size_bytes": 157452,
+        "sha256": "de10913de5aea1d5014a51b88015967fb836a5840eef4d627322cc7d2b381956"
+      },
+      {
+        "path": "prediction.json",
+        "size_bytes": 294916,
+        "sha256": "9e48e4692abd70569a0dfefd5b80bd3719337709490276fbe0a43dd090f08392"
+      },
+      {
+        "path": "summary.json",
+        "size_bytes": 352,
+        "sha256": "a7592e917915086f671411d9de4488848f5bef4f8e7385226e0be6fda7794fb3"
+      },
+      {
+        "path": "status.json",
+        "size_bytes": 84,
+        "sha256": "d7351c11c3cfe1f185b01bef1db5204c0d7cf84190c864c7799a8e81ea08bf33"
+      },
+      {
+        "path": "scheduler-terminal.json",
+        "size_bytes": 2105,
+        "sha256": "78303ba0eb38a5a80cb2035d856cfd5273797989b168f01125ef1f35f662ef11"
+      },
+      {
+        "path": "stdout.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "stderr.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "independent_slab_reduction": true,
+  "source_and_code_verified": true,
+  "full_field_recomputed_on_mac": false,
+  "source_jobs": [
+    81769,
+    82273,
+    82518
+  ],
+  "coefficients": [
+    -7.2,
+    1.7918845939882053,
+    0.0
+  ],
+  "result": {
+    "passed": false,
+    "checks": {
+      "full_field_nonnegative": false
+    },
+    "negative_slabs": [
+      {
+        "first_group": 9440,
+        "minima": [
+          -5e-324,
+          -5e-324,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "first_group": 9472,
+        "minima": [
+          -1e-323,
+          -1e-323,
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "status": "prediction_rejected_requires_review",
+    "passed": false,
+    "checks": {
+      "full_field_nonnegative": false
+    },
+    "candidate_written": false,
+    "new_maps": 0,
+    "new_feedback_pairs": 0,
+    "new_material_steps": 0,
+    "baseline_replaced": false,
+    "strict_error_bound": false,
+    "peak_rss_bytes": 934211584,
+    "wall_s": 456.3777098385617
+  },
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "baseline_replaced": false
+}
