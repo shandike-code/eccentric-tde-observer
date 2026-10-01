@@ -1,0 +1,148 @@
+{
+  "job_id": 83080,
+  "receipt": {
+    "path": "outputs/review-20260925/83080-quarter-prediction-review.tar.gz",
+    "size_bytes": 104236,
+    "sha256": "6a9848dbd97a8f18c07b92912e9024a08a1f1ab5431dcf6107d339dd9fdb6262",
+    "files": [
+      {
+        "path": "declaration.json",
+        "size_bytes": 150196,
+        "sha256": "9aac8ebc9e2f50911b155a04bb8ca7514b81ca68d18df9eebf327978e20578d3"
+      },
+      {
+        "path": "prediction.json",
+        "size_bytes": 295697,
+        "sha256": "665423f1d4308aa22787416be4d89c76eee14247dc679ccd6e47a2768e4ead80"
+      },
+      {
+        "path": "summary.json",
+        "size_bytes": 692,
+        "sha256": "c341e0d895a8de5c351cd2235a59e474da1c4d48d9449f5c9106b39bfb18e22f"
+      },
+      {
+        "path": "status.json",
+        "size_bytes": 84,
+        "sha256": "3f5eb7356da3284fb7de2eb5562fdc475a45cef962d61a810e74a47c8de8e67e"
+      },
+      {
+        "path": "scheduler-terminal.json",
+        "size_bytes": 2466,
+        "sha256": "560a4ade9399bc91afe7d9881c5265767ea794b4f0e618d0561ed393c2970ef0"
+      },
+      {
+        "path": "stderr.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "stdout.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "independent_slab_reduction": true,
+  "source_and_code_verified": true,
+  "full_field_recomputed_on_mac": false,
+  "source_job": 83063,
+  "sign_audit_job": 83075,
+  "coefficients": [
+    0.0,
+    -1.8,
+    0.9485574831263044
+  ],
+  "result": {
+    "squared_l2": [
+      1.9970192693143729e-07,
+      1.3436747560135417e-07,
+      1.6462293397287645e-07
+    ],
+    "linf": [
+      1.4927922233065605e-07,
+      1.3434523150196442e-07,
+      1.4181222691977968e-07
+    ],
+    "scales": [
+      0.03864098961965717,
+      0.0386437118895687,
+      0.038642350754612934
+    ],
+    "boundary": [
+      {
+        "boundary_l1": 1.4944742777112987e-06,
+        "boundary_bolometric": 1.4944649597861369e-06,
+        "residual": 3.863234968876568e-06
+      },
+      {
+        "boundary_l1": 9.102529443873369e-07,
+        "boundary_bolometric": 9.102213193086777e-07,
+        "residual": 3.4765095000676926e-06
+      },
+      {
+        "boundary_l1": 1.2023578731491692e-06,
+        "boundary_bolometric": 1.2023374043238741e-06,
+        "residual": 3.6698654235690057e-06
+      }
+    ],
+    "l2_ratios": [
+      1.0,
+      0.8202683436876093,
+      0.9079335011241365
+    ],
+    "linf_ratios": [
+      1.0,
+      0.8999593473523557,
+      0.9499796736994192
+    ],
+    "minima": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "checks": {
+      "full_field_nonnegative": true,
+      "full_l2_benefit": false,
+      "full_linf_nonincrease": true,
+      "half_l2_nonincrease": true,
+      "half_linf_nonincrease": true,
+      "full_radiation": true,
+      "full_boundary_l1": true,
+      "full_boundary_bolometric": true,
+      "half_radiation": true,
+      "half_boundary_l1": true,
+      "half_boundary_bolometric": true
+    },
+    "passed": false
+  },
+  "summary": {
+    "status": "prediction_rejected_requires_review",
+    "passed": false,
+    "checks": {
+      "full_field_nonnegative": true,
+      "full_l2_benefit": false,
+      "full_linf_nonincrease": true,
+      "half_l2_nonincrease": true,
+      "half_linf_nonincrease": true,
+      "full_radiation": true,
+      "full_boundary_l1": true,
+      "full_boundary_bolometric": true,
+      "half_radiation": true,
+      "half_boundary_l1": true,
+      "half_boundary_bolometric": true
+    },
+    "wall_s": 424.7763772988692,
+    "peak_rss_bytes": 901341184,
+    "new_maps": 0,
+    "new_feedback_pairs": 0,
+    "new_material_steps": 0,
+    "candidate_written": false,
+    "baseline_replaced": false,
+    "exact_full_domain_sign_certificate": false
+  },
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "baseline_replaced": false
+}
