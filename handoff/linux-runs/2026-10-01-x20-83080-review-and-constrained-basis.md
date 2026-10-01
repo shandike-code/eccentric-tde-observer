@@ -32,3 +32,9 @@
 Code：七文件、固定提交/来源、覆盖与独立归并通过；新驱动复用collect的SHA/文件身份校验与停止信号。Logic：完整4x4内积对应四残差基向量，不混用加热Gram；只收集，不自动接受。Physics：固定物质背景，数组缺陷不等于未知真解误差；存储非负不等于物理收敛。Decision RUN有限诊断。
 
 Mac测试14 passed / 0.98秒（来源防错、解析二次函数、缺场/非有限拒绝、真实小文件分片/哈希、独立符号）；sbatch语法通过。83080后验无NaN/Inf/警告，非负和边界改善可解释，L2收益不足如实保留。学校测试与新作业ID在后续启动记录中补充。
+
+## 启动回执
+
+学校14 tests passed / 14.12秒，shell语法通过。代码数值提交79b2118c6501708d0d6efcfbef7e7b8cfcaec4e0；先Mac完整bundle、学校完整bundle备份，再增量verify/fetch/ff-only同步。学校clean/exactHEAD确认后提交83104，23:43:40开始，anode02、Students/qos_stu_default、4CPU16GiB、1h硬限至Oct2 00:43:40。启动快照20261001-x20-83104-submit.json为RUNNING/preflight，不代表数值完成。
+
+只读watch PID3824861仅是启动凭据；目录outputs/review-20260925/x20-83080-basis-watch-83104，latest实际落盘。PYTHONPATH与Node PATH已配，start_new_session；终态先保存scheduler-terminal再调用无工具CLI。讲义126已补，CLI实际deepseek-v4-flash[1m]，独立纠正Linf/边界门混淆及half阈值歧义。

@@ -1,0 +1,12 @@
+{
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "independent_review": true,
+  "corrections": [
+    "CLI将Linf比称作在边界门内，已纠正：Linf非增门和边界L1/总通量门是独立项。",
+    "明确完整步L2门<=0.8，而half为非增门<=1+1e-10；不让并列句误导成half也需<=0.8。",
+    "二次插值诊断未包含实际表达式严格舍入误差界；只用于决定停止盲试同方向缩步。"
+  ],
+  "science_state": "0 new maps/feedback/material; accepted20; no full atmosphere or observer intensity"
+}
