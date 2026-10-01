@@ -1,0 +1,9 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "raw_draft_accepted": false,
+  "independently_reviewed": true,
+  "corrections": [
+    "草稿把本次full最小值错归上次；本次83063 full为-1.5e-323/-4e-323，旧82686为-5e-324/-1e-323。",
+    "证据区别不只负号随步长缩放，还须区分已存源值的精确组合、浮点表达式结果和物理连续模型。"
+  ]
+}
