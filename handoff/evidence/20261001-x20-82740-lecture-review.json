@@ -1,0 +1,18 @@
+{
+  "actual_cli_model": "deepseek-v4-flash[1m]",
+  "independent_review": true,
+  "corrections": [
+    "回溯只换坐标错误：沿同一全局方向减小步长，改变候选场值，频率/角度/深度坐标不变。",
+    "精确负值是给定存储源与系数的代数性质，不证明原连续物理解为负，也不排除源场既有离散与舍入误差。",
+    "82686是原外推筛查；减半回溯是它失败之后的新任务，不能混淆时序。",
+    "只能说其余正式门未求值；原slab统计已保存，不能说所有其余量从未计算。"
+  ],
+  "facts_checked": [
+    "157782 point count",
+    "all exact full negative and half positive within audited scope",
+    "191.32292545214295 s",
+    "581074944 bytes",
+    "0 maps feedback material",
+    "new coefficients exactly half"
+  ]
+}

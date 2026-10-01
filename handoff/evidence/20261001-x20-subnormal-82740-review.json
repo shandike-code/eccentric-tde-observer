@@ -1,0 +1,126 @@
+{
+  "job_id": 82740,
+  "commit": "085f9c74cef984823fd2a2487bde9a3a836a0220",
+  "receipt": {
+    "size_bytes": 45791,
+    "sha256": "5026f0a0ddf4f8ee1d3a78bffa215bb364d5e95ab44780112cc1769bf40af5ee",
+    "files": [
+      {
+        "path": "declaration.json",
+        "size_bytes": 148235,
+        "sha256": "1327b0bf2419ec0e4b78f74851d4e6fb21137d2cf38876fb7596ac566737a845"
+      },
+      {
+        "path": "exact-signs.json",
+        "size_bytes": 9459,
+        "sha256": "e607d1bb8a87a7cf536a2a94ebbbebe5d8f37fb7f66ad767c389d65020c286c3"
+      },
+      {
+        "path": "summary.json",
+        "size_bytes": 250,
+        "sha256": "103bacd4f92fce128f3ceea6d49265bd690b8a074af1c6300cc7659b1908b43c"
+      },
+      {
+        "path": "status.json",
+        "size_bytes": 90,
+        "sha256": "508f15f502216ace144f3c72a0751674287640258fe96255812ce0f784205bdb"
+      },
+      {
+        "path": "scheduler-terminal.json",
+        "size_bytes": 1974,
+        "sha256": "1acaf45746dd2a44bf0ac770ac51c620140e1b0202859134cf370d73c1d8610d"
+      },
+      {
+        "path": "stdout.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "stderr.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "integer_certificates_verified": true,
+  "code_and_source_claims_verified": true,
+  "full_fields_recomputed_on_mac": false,
+  "scope": "all stored-negative points in two original rejected slabs; not a full-domain sign certificate",
+  "counts": [
+    {
+      "first_group": 9440,
+      "kind": "input",
+      "negative_count": 3926,
+      "unique_count": 1,
+      "full": {
+        "-1": 3926,
+        "0": 0,
+        "1": 0
+      },
+      "half": {
+        "-1": 0,
+        "0": 0,
+        "1": 3926
+      }
+    },
+    {
+      "first_group": 9440,
+      "kind": "predicted_output",
+      "negative_count": 3826,
+      "unique_count": 1,
+      "full": {
+        "-1": 3826,
+        "0": 0,
+        "1": 0
+      },
+      "half": {
+        "-1": 0,
+        "0": 0,
+        "1": 3826
+      }
+    },
+    {
+      "first_group": 9472,
+      "kind": "input",
+      "negative_count": 67150,
+      "unique_count": 3,
+      "full": {
+        "-1": 67150,
+        "0": 0,
+        "1": 0
+      },
+      "half": {
+        "-1": 0,
+        "0": 0,
+        "1": 67150
+      }
+    },
+    {
+      "first_group": 9472,
+      "kind": "predicted_output",
+      "negative_count": 82880,
+      "unique_count": 3,
+      "full": {
+        "-1": 82880,
+        "0": 0,
+        "1": 0
+      },
+      "half": {
+        "-1": 0,
+        "0": 0,
+        "1": 82880
+      }
+    }
+  ],
+  "summary": {
+    "status": "exact_sign_audit_complete_requires_review",
+    "wall_s": 191.32292545214295,
+    "peak_rss_bytes": 581074944,
+    "new_maps": 0,
+    "new_feedback_pairs": 0,
+    "new_material_steps": 0,
+    "field_written": false,
+    "baseline_replaced": false
+  },
+  "original_82686_rejection_preserved": true
+}
