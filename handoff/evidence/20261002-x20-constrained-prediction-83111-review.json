@@ -1,0 +1,150 @@
+{
+  "job_id": 83111,
+  "receipt": {
+    "path": "outputs/review-20260925/83111-constrained-prediction-review.tar.gz",
+    "size_bytes": 105971,
+    "sha256": "2a4624d0588d51fc74b27b4af8a479c42419dc262dd841425e2a07be6593f2ba",
+    "files": [
+      {
+        "path": "declaration.json",
+        "size_bytes": 151597,
+        "sha256": "ae13fab81c4d51a0cb807130b6eb0a66e207e1d0a68351748a7d59407557815a"
+      },
+      {
+        "path": "prediction.json",
+        "size_bytes": 296331,
+        "sha256": "e06475dd2a26026c599ad927779ad9a3e0d4fcd1c47d792dfea8e237d73c3321"
+      },
+      {
+        "path": "summary.json",
+        "size_bytes": 724,
+        "sha256": "c413912a31978ee3dfde2a6b807bd7e57a3a69dd0723110c0dd69362065b8e8f"
+      },
+      {
+        "path": "status.json",
+        "size_bytes": 84,
+        "sha256": "4b782a811a60bf028fbebbf6a308e21384fe4337222cbf19948218258d85cee4"
+      },
+      {
+        "path": "scheduler-terminal.json",
+        "size_bytes": 2497,
+        "sha256": "fbb6cb60157f23704f377b2132e7b40784655df7bf360154614acf80667aaaf8"
+      },
+      {
+        "path": "stdout.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "stderr.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "independent_slab_reduction": true,
+  "source_and_code_verified": true,
+  "small_problem_kkt_reverified": true,
+  "full_field_recomputed_on_mac": false,
+  "source_job": 83104,
+  "sign_audit_job": 83075,
+  "coefficients": [
+    -5.171447326928601,
+    -2.028552673071399,
+    0.9
+  ],
+  "result": {
+    "squared_l2": [
+      1.9970192693143729e-07,
+      5.825731624395129e-08,
+      1.0130777713924115e-07
+    ],
+    "linf": [
+      1.4927922233065605e-07,
+      9.882488934132017e-08,
+      1.24041272038522e-07
+    ],
+    "scales": [
+      0.03864098961965717,
+      0.03865019222067693,
+      0.03864559092016705
+    ],
+    "boundary": [
+      {
+        "boundary_l1": 1.4944742777112987e-06,
+        "boundary_bolometric": 1.4944649597861369e-06,
+        "residual": 3.863234968876568e-06
+      },
+      {
+        "boundary_l1": 1.7939381225369699e-06,
+        "boundary_bolometric": 1.793635388459437e-06,
+        "residual": 2.556905507146513e-06
+      },
+      {
+        "boundary_l1": 2.184015347699317e-07,
+        "boundary_bolometric": 1.4971471756218476e-07,
+        "residual": 3.209713426164524e-06
+      }
+    ],
+    "l2_ratios": [
+      1.0,
+      0.5401123518430682,
+      0.7122464043391885
+    ],
+    "linf_ratios": [
+      1.0,
+      0.6620136935227418,
+      0.830934607656037
+    ],
+    "minima": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "checks": {
+      "full_field_nonnegative": true,
+      "full_l2_benefit": true,
+      "full_linf_nonincrease": true,
+      "half_l2_nonincrease": true,
+      "half_linf_nonincrease": true,
+      "full_radiation": true,
+      "full_boundary_l1": false,
+      "full_boundary_bolometric": false,
+      "half_radiation": true,
+      "half_boundary_l1": true,
+      "half_boundary_bolometric": true
+    },
+    "passed": false
+  },
+  "summary": {
+    "status": "prediction_rejected_requires_review",
+    "passed": false,
+    "checks": {
+      "full_field_nonnegative": true,
+      "full_l2_benefit": true,
+      "full_linf_nonincrease": true,
+      "half_l2_nonincrease": true,
+      "half_linf_nonincrease": true,
+      "full_radiation": true,
+      "full_boundary_l1": false,
+      "full_boundary_bolometric": false,
+      "half_radiation": true,
+      "half_boundary_l1": true,
+      "half_boundary_bolometric": true
+    },
+    "wall_s": 437.6188267050311,
+    "peak_rss_bytes": 895143936,
+    "new_maps": 0,
+    "new_feedback_pairs": 0,
+    "new_material_steps": 0,
+    "candidate_written": false,
+    "baseline_replaced": false,
+    "strict_error_bound": false,
+    "exact_full_domain_sign_certificate": false
+  },
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "baseline_replaced": false
+}
