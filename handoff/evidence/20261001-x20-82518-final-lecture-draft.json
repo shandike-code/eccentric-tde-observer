@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 11027,
+  "duration_api_ms": 10915,
+  "ttft_ms": 8547,
+  "ttft_stream_ms": 306,
+  "time_to_request_ms": 111,
+  "num_turns": 1,
+  "result": "# TDE 校准诊断学习讲义（82518 run·草稿）\n\n## 一、运行概况\n82518 耗时 3h14m37 跑完 32map4pair。原七门正能量**全部通过**，但最终校准判 **false**。要点：正能量通过 ≠ 校准通过，二者是不同量级的判据，不能互相替代。\n\n## 二、窗口与加热\nA 窗口通过。H 窗口 mass/r20 = **.0170530834**；cross16 mass/r20 = **.2615050677**，/signal = **44.00874542**。跨支加热 **.01776417 > .001**，超阈，是本次的主要疑点。\n\n## 三、能量分解的口径\nq0「质量平方份额」=.9998661，它是**质量平方**的份额，不是能量份额，两者不可混用。发射项不变，电离能投影约 **−9.8e-11**（近零）。\n\n加热定义为 g = dtQ/rho，取\n- d = g(Hprev) − g(Aprev)\n- e = (g(Hfinal) − g(Hprev)) − (g(Afinal) − g(Aprev))\n\n质量范数 ‖d+e‖/‖d‖ = **.99348717**。须知这是**质量范数之比**，不是谱半径，也不是误差界，不能当收敛判据用。\n\n## 四、为什么选「历史支自身方向」\n单弦拟合给出 alpha = **−.00462135**，能把观察到的加热缺陷预测比压到 .405625。但该拟合既无正性保证，也无真实验证。因此**不启动该候选**，改为筛各历史支的自身方向：anchor 用 82518H16 的 previous→final，另加 82273H16、81769H16、82518H8 的 previous→final。\n\n理由：单弦拟合是外推；结果「接近 A」只说明像，不等于真解。沿每支自身方向做筛，是让该支自己检验 previous→final 的变化，而不用一个未验证的全局插值把结论拉向 A 一侧。这样得到的证据来自支内一致性，而非与 A 的距离。\n\n## 五、存储与证书\n物质、算子、old 均不变；用 binary64 **精确存储**诊断 Gram。cap17 原 raw 系数 [−8, 1.9909828822091171, 0]，9/10 后为 [−7.2, 1.7918845939882053, 0]。\n\n该小加热目标有独立**精确支撑平面证书**：raw 比 .681566506、selected .708954074。注意这是支撑平面上的量，**不是全场 L2**，不可混算。\n\n## 六、下一步（只读）\n新作业 4核16G **1h**：只读扫描 8 个既有场，检查核正性、原 L2 收益 ≤ .8、Linf、边界原门；0 map、0 反馈、0 物质变更，不写 dat。\n\n## 七、纪律提醒\n- 未通过不改门，不自动真实映射；\n- 不把向 A 靠近当真解；\n- 不夸大「全局最优」，也不声称物理无解；\n- 本稿**不给最终 ETA**。",
+  "stop_reason": "end_turn",
+  "session_id": "3c26854b-0674-4fed-90f1-f1df4bcb27c9",
+  "total_cost_usd": 0.07654000000000001,
+  "usage": {
+    "input_tokens": 2068,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 2648,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 2068,
+      "outputTokens": 2648,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.07654000000000001,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "b57c6685-de77-46d2-bec0-453ea990b49e"
+}

@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 4826,
+  "duration_api_ms": 4335,
+  "ttft_ms": 3989,
+  "ttft_stream_ms": 745,
+  "time_to_request_ms": 474,
+  "num_turns": 1,
+  "result": "82518已完成，用时3:14:37，32map、4反馈对，原七门/物理域/资源均过，未触发立即停止。accelerated第8、16张全过（含十六张八map漂移）。historical第8、16张失败：/r20三范数最大约0.031>0.001，/80195信号>0.1，跨初值四反馈组合中原子/直接/形式加热三门不过，cross_rate_pass=false；跨初值8、16亦全败。失败已记录，两分支同龄检查点均跑完未截断。accepted20、new_material_steps0、baseline_replaced与strict_error_bound=false、eligible=false、需独立审核，向量差未以标量相减替代。80542重放不证明辐射收敛；79151/80052/80195失败保留；未放宽门、未宣告耦合柱或整盘I_nu完成。",
+  "stop_reason": "end_turn",
+  "session_id": "031cb619-c49b-44d9-a792-5f9d18a9257c",
+  "total_cost_usd": 0.08505,
+  "usage": {
+    "input_tokens": 13405,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 721,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 13405,
+      "outputTokens": 721,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.08505,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "8bee8cb4-a25b-4d8c-b404-275ce9ab146f"
+}

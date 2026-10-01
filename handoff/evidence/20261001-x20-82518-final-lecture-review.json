@@ -1,0 +1,13 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "independently_reviewed": true,
+  "corrections": [
+    "q0占比是完整残差差向量的质量加权平方范数中q0部分所占比例，不是质量平方或能量份额。",
+    "七门含物理域和配对等条件，不同检验对象不能简化为不同量级。",
+    "历史方案同样含负权重外推，不比跨支方案天然更安全；选择它是为了探索不同方向来源，不是已证更独立或更正确。",
+    "精确证书针对由已存binary64诊断能量向量精确求内积所得的小Gram，不是binary64精确表示真实物理。",
+    "raw/selected比是小加热缺陷目标的范数比，支撑平面证明其受限极小值，不是支撑平面上的物理量。",
+    "监督CLI把约.031的旧来源对照数当历史窗口，已更正；本轮H窗口mass/r20=.01705308，cross16=.26150507。"
+  ],
+  "decision": "No repeated32-map run. One fixed historical-only full-field prediction scan at4CPU16GiB1h; true-map launch requires fresh independent review."
+}
