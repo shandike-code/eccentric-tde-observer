@@ -23,3 +23,9 @@ Code PASS：源码与来源、4x4形状、非有限拒绝、精确KKT、已舍�
 
 [POST-RUN CHECK]
 83104无stderr/NaN/Inf，矩阵未修补，和原实测量级一致；新小问题精确证书通过，20 tests passed / 1.02秒，shell语法通过。不是自洽大气或整盘I_nu。学校测试和作业号由后续启动回执补充。
+
+## 启动记录
+
+数值提交a51dce6c3ab3c7cc508d7b2846a099f3b95d9ed2。学校20 tests passed / 14.57秒，另实际读取学校小产物重建Gram/约束、核验系数通过；shell语法通过。备份Mac pre-83104-review-20261002.bundle、学校pre-83104-constrained-code-20261002.bundle，增量83104-constrained-code-20261002.bundle，verify+fetch+ff-only，clean/exactHEAD后提交。
+
+83111于Oct2 00:11:57开始，anode02、Students/qos_stu_default、4CPU16GiB，硬限01:11:57。启动快照20261002-x20-83111-submit.json为RUNNING/preflight。watch PID33414仅启动凭据，目录outputs/review-20260925/x20-83104-prediction-watch-83111，latest已落盘；PYTHONPATH、Node PATH及start_new_session配齐。终态先存scheduler-terminal，再无工具CLI监督。讲义127与CLI原稿、独立审阅保留；实际模型deepseek-v4-flash[1m]。本记录不修改数值依赖。

@@ -1,0 +1,14 @@
+{
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "independent_review": true,
+  "numerical_claims_checked": true,
+  "corrections": [
+    "将原稿的约束术语展开为锚点和方向的线性组合，解释目标无量纲与KKT的证书范围。",
+    "保留数据一致性不等于严格误差界、小目标预测不等于正式反馈、必要约束不等于全场正性的限制。"
+  ],
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0
+}
