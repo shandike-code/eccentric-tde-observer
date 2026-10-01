@@ -1,0 +1,187 @@
+{
+  "job_id": 83075,
+  "commit": "d2582719dbf222f3de5a6916d779e2b953791741",
+  "receipt": {
+    "path": "outputs/review-20260925/83075-subnormal-review.tar.gz",
+    "size_bytes": 47218,
+    "sha256": "833b67902a2b6b3f06f1dd5bcb3877c5e45b472609cad18be07df9b1bf799bd6",
+    "files": [
+      {
+        "path": "declaration.json",
+        "size_bytes": 149158,
+        "sha256": "956ec35c9450d057b4f35ff8b28588bb78d4aa66a4e9b6ff5f6b80dc5d81cc2f"
+      },
+      {
+        "path": "exact-signs.json",
+        "size_bytes": 38820,
+        "sha256": "1f576f34e004bbd5c31c83c2456f7c3bf157f51d1c5ace4bf12f5113a641eb63"
+      },
+      {
+        "path": "summary.json",
+        "size_bytes": 250,
+        "sha256": "a926068dab3427a4adfeee324ae333627bc9030c1066ea8460f0a50edd6f2705"
+      },
+      {
+        "path": "status.json",
+        "size_bytes": 89,
+        "sha256": "ec00706252cfeb7b6bfdd8f3656a534eadb9fa8a7da454991b141becaa969568"
+      },
+      {
+        "path": "scheduler-terminal.json",
+        "size_bytes": 1984,
+        "sha256": "064916bc57c0c0c43fddb4e977f7cf36b38cc85a50cac8bed21d0e4ae1461086"
+      },
+      {
+        "path": "stderr.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "integer_certificates_verified": true,
+  "code_and_source_claims_verified": true,
+  "full_fields_recomputed_on_mac": false,
+  "scope": "all stored-negative points separately for full and half, input and predicted output; overlapping kind counts are not unique point counts; no zero-point or full-domain exact sign certificate",
+  "counts": [
+    {
+      "first_group": 9440,
+      "kind": "input",
+      "negative_count": 8234,
+      "unique_count": 3,
+      "full": {
+        "-1": 8234,
+        "0": 0,
+        "1": 0
+      },
+      "half": {
+        "-1": 2520,
+        "0": 0,
+        "1": 5714
+      }
+    },
+    {
+      "first_group": 9440,
+      "kind": "predicted_output",
+      "negative_count": 8378,
+      "unique_count": 3,
+      "full": {
+        "-1": 8378,
+        "0": 0,
+        "1": 0
+      },
+      "half": {
+        "-1": 3482,
+        "0": 0,
+        "1": 4896
+      }
+    },
+    {
+      "first_group": 9440,
+      "kind": "half_input",
+      "negative_count": 2520,
+      "unique_count": 1,
+      "full": {
+        "-1": 2520,
+        "0": 0,
+        "1": 0
+      },
+      "half": {
+        "-1": 2520,
+        "0": 0,
+        "1": 0
+      }
+    },
+    {
+      "first_group": 9440,
+      "kind": "half_predicted_output",
+      "negative_count": 3482,
+      "unique_count": 1,
+      "full": {
+        "-1": 3482,
+        "0": 0,
+        "1": 0
+      },
+      "half": {
+        "-1": 3482,
+        "0": 0,
+        "1": 0
+      }
+    },
+    {
+      "first_group": 9472,
+      "kind": "input",
+      "negative_count": 177186,
+      "unique_count": 8,
+      "full": {
+        "-1": 177186,
+        "0": 0,
+        "1": 0
+      },
+      "half": {
+        "-1": 80830,
+        "0": 0,
+        "1": 96356
+      }
+    },
+    {
+      "first_group": 9472,
+      "kind": "predicted_output",
+      "negative_count": 184548,
+      "unique_count": 9,
+      "full": {
+        "-1": 184548,
+        "0": 0,
+        "1": 0
+      },
+      "half": {
+        "-1": 75392,
+        "0": 0,
+        "1": 109156
+      }
+    },
+    {
+      "first_group": 9472,
+      "kind": "half_input",
+      "negative_count": 80830,
+      "unique_count": 3,
+      "full": {
+        "-1": 80830,
+        "0": 0,
+        "1": 0
+      },
+      "half": {
+        "-1": 80830,
+        "0": 0,
+        "1": 0
+      }
+    },
+    {
+      "first_group": 9472,
+      "kind": "half_predicted_output",
+      "negative_count": 75392,
+      "unique_count": 3,
+      "full": {
+        "-1": 75392,
+        "0": 0,
+        "1": 0
+      },
+      "half": {
+        "-1": 75392,
+        "0": 0,
+        "1": 0
+      }
+    }
+  ],
+  "summary": {
+    "status": "exact_sign_audit_complete_requires_review",
+    "wall_s": 177.59888545889407,
+    "peak_rss_bytes": 604639232,
+    "new_maps": 0,
+    "new_feedback_pairs": 0,
+    "new_material_steps": 0,
+    "field_written": false,
+    "baseline_replaced": false
+  },
+  "local_upper_fraction": 0.26355809157293997,
+  "original_83063_rejection_preserved": true
+}
