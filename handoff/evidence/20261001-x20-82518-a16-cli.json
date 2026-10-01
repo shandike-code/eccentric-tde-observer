@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 32833,
+  "duration_api_ms": 32425,
+  "ttft_ms": 32274,
+  "ttft_stream_ms": 860,
+  "time_to_request_ms": 405,
+  "num_turns": 1,
+  "result": "82518运行中(32CPU/128GiB,限6h)。accelerated满16图,pair08/16全过:七门/物理域、r20与80195信号均过,baseline_replaced=false。historical仅8图:pair08 r20=4.9e-3、信号1.37超限;跨初值r20≈0.07、信号≈20,加热三率未过,漂移失败不截另支;历史16图、512维差未出。eligible指有限窗口校准资格,strict_error_bound=false,未放宽门或预算,未宣告整盘I_nu完成。",
+  "stop_reason": "end_turn",
+  "session_id": "b2b3eaa4-2515-400f-91b4-3fa5a5ee8987",
+  "total_cost_usd": 0.256965,
+  "usage": {
+    "input_tokens": 5938,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 9091,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 5938,
+      "outputTokens": 9091,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.256965,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "149444c9-9b41-499b-a4f1-ffec53299e02"
+}

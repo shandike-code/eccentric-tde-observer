@@ -1,0 +1,13 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "independently_reviewed": true,
+  "source": "20261001-x20-82518-a16-lecture-draft.json",
+  "corrections": [
+    "相邻反馈比较是迭代漂移测量，不是重复同一计算的可重复性实验，也不单独区分舍入噪声与未收敛误差。",
+    "16-8窗口比较两个端点反馈对的四组合，不是逐一检查整个8至16区间，未检验比整体更不稳。",
+    "这些向量比较共享相同r20和80195分母，区别主要在端点集合，不是分母各自改变。",
+    "from_prior是与旧运行同支pair16的来源对照，不是替换基态或本轮cross16。",
+    "监督CLI的H8/r20=.0049和signal=1.37是旧H16来源对照某一L2组合，不代表相邻差、三范数最大或本轮cross8；历史8也是其早先快照。"
+  ],
+  "decision": "Keep original budget and await matched historical16; no material update."
+}

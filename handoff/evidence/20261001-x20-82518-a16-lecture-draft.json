@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 7054,
+  "duration_api_ms": 6963,
+  "ttft_ms": 5453,
+  "ttft_stream_ms": 342,
+  "time_to_request_ms": 89,
+  "num_turns": 1,
+  "result": "# A16审计学习讲义草稿\n\n**一、三个检验各查什么**\n\n1. **相邻变化（within_pair_spread）**：同一初值内部，相邻两版解的差分，查重复性与数值噪声；`previous_vs_previous`、`final_vs_final` 本应为 0。本次 r20 分母下为 2.04e-6/8.19e-6/1.37e-6，80195 分母下 5.7e-4/1.4e-3/2.3e-4，均过。\n2. **8-16 窗口（eight_map_window）**：只在 8–16 号区间上做同类差分，查这段是否比整体更不稳。新 `final_vs_previous` 的 mass/r20 = 7.599453867e-5，过门。\n3. **跨初值（from_prior_feedback）**：新 A16 与旧 82273 A16 互比，查换初值后结论是否还站得住。注意它的对照是旧 82273 A16，**不是新 cross16**。\n\n三者尺度、分母、被反对的对象都不同，不能互相替代。\n\n**二、本次结果**\n\n三范数 L2/mass/Max-cell，分母分别取原 r20 或冻结 80195 信号，门为 .001 与 .1。A16 三类比较全部通过，`gate_checks` 全 true，`inner_pair_ready`、`physical_response_pass` 为 true。\n\n**三、必须守住的边界**\n\n- from_prior 通过只说明跨基线仍过门，**不等于新 cross16 已做**。\n- **H16 尚未落地，最终资格为 null**。\n- 原 r20 mass=.2619104204778557 **不替换**；新 A16 mass=.282869034443 **不是物质收敛的证据**。\n- 旧 82273A 窗口 mass/r20=5.762581398e-5，新为 7.599453867e-5，两者都过门，**但不能说新窗口更优**；也不能把辐射侧 20.46% 的收益迁移到物质。\n- 结论：原预算继续押 H16，0 物质更新，既无完成 ETA，也不作无解结论。",
+  "stop_reason": "end_turn",
+  "session_id": "6c724858-48eb-4b62-aa51-5507f0bf0fa8",
+  "total_cost_usd": 0.058985,
+  "usage": {
+    "input_tokens": 3637,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1632,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 3637,
+      "outputTokens": 1632,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.058985,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "f2032f46-0432-42fe-b7ea-c4d036e74ff5"
+}
