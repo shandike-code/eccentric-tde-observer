@@ -1,0 +1,13 @@
+{
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "independent_review": true,
+  "corrections": [
+    "删除旧系数在旧物质上闭合出的数这一不准确表述：p是已存映射输出的仿射组合，q是相同权重的输入组合；算子和物质背景没有更换。",
+    "将新物质被真实映射过改为新辐射输入被原算子实际求值，保持x20物质不变。",
+    "预测误差/仿射一致性不是笼统拟合余项；分别按T(q)-p与full/half组合定义，均不代替真实缺陷T(q)-q。"
+  ],
+  "new_maps_in_prediction": 0,
+  "new_material_steps": 0
+}

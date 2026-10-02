@@ -1,0 +1,13 @@
+{
+  "job_id": 83514,
+  "state": "RUNNING",
+  "scontrol": "JobId=83514 JobName=tde-x20-ctrue UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:13 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-10-02T09:09:56 EligibleTime=2026-10-02T09:09:56 AccrueTime=2026-10-02T09:09:56 StartTime=2026-10-02T09:09:57 EndTime=2026-10-02T11:09:57 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-02T09:09:57 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2740253 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_83131_true_validation.sbatch SubmitLine=sbatch --parsable operations/x20_83131_true_validation.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-ctrue-83514.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-ctrue-83514.out TresPerTask=cpu=32\n",
+  "scheduler_stderr": "",
+  "observed_unix": 1790903410.875372,
+  "status": {
+    "status": "preparing",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "unix": 1790903402.0025616
+  }
+}

@@ -26,3 +26,9 @@ Code PASS：来源/源码/形状/系数/原11门独立核，驱动复用原16真
 
 [POST-RUN CHECK]
 83131统计无NaN/Inf，stderr0，非负/缺陷/边界门全过且量级一致。物理判定限于本候选筛查；不声称整盘I_nu或给最终收敛ETA。学校测试/启动回执另补。
+
+## 启动记录
+
+数值提交88873934c4e35ae3fc699f3a3b247bdbb146b959。学校17 tests passed / 20.43秒，shell语法通过。两端完整bundle备份pre-83131-review-20261002.bundle、pre-83131-true-code-20261002.bundle；增量83131-true-code-20261002.bundle verify/fetch/ff-only同步，clean/exactHEAD确认后提交。
+
+83514于Oct2 09:09:57开始，anode02/Students/qos_stu_cpu_long，32CPU128GiB、16workers，硬限11:09:57，USR1提前300s。20261002-x20-83514-submit.json为RUNNING/preparing，不代表map已经完成。watch PID2756663仅启动凭据，目录outputs/review-20260925/x20-83131-true-watch-83514；latest已落盘，PYTHONPATH/Node PATH/start_new_session配齐，先终态快照后无工具CLI。讲义129及CLI原文/纠正记录已保存，实际模型deepseek-v4-flash[1m]。恢复后的heartbeat保持ACTIVE，按新作业更新审阅条件。
