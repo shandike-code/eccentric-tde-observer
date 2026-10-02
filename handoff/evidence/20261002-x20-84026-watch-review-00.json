@@ -1,0 +1,7 @@
+{
+  "source": "20261002-x20-84026-watch-draft-00.json",
+  "actual_model": "deepseek-v4-flash[1m]",
+  "accepted_verbatim": false,
+  "correction": "草稿称83514 full真实输出未出，错误。83514已完成且独立审计通过，其输出d8780e6634849e2224fb3682591914291ac5b054d3f4aa6a9d7ca59e9312248d是84026源；尚未有新map产出的是84026。",
+  "basis": "20261002-x20-83131-true-83514-review.json"
+}

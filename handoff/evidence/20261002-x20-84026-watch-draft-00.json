@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 4951,
+  "duration_api_ms": 4247,
+  "ttft_ms": 4244,
+  "ttft_stream_ms": 887,
+  "time_to_request_ms": 704,
+  "num_turns": 1,
+  "result": "84026 RUNNING约23秒，32CPU/128GiB/4h，仍preparing，无新产物。accepted_outer_steps=20、new_material_steps=0，cases.historical空，83514 full真实输出未出。参照为保存的82518 accelerated16，两端点反馈不重算；82989 pair16另计。最多16map，第8/16各一对反馈。七门、物理域、内层门、资源或完整性失败即停；仅新窗口或跨保存参考差异失败只记录、不扩预算。512维向量先相减再取L2、质量、Max-cell范数，沿用冻结r20与80195信号。reference_calibration_eligible=false、baseline_replaced=false。暂无单窗口结果，不得称反馈收敛，不宣告整盘I_nu完成。",
+  "stop_reason": "end_turn",
+  "session_id": "33b1f61d-ace1-4f7a-9be4-008aa02bd70c",
+  "total_cost_usd": 0.035205,
+  "usage": {
+    "input_tokens": 2516,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 905,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 2516,
+      "outputTokens": 905,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.035205,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "4375b6a4-6ae0-44f4-9e27-fd4a19a1e031"
+}
