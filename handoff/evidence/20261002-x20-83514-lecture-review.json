@@ -1,0 +1,16 @@
+{
+  "source": "20261002-x20-83514-lecture-draft.json",
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "accepted_verbatim": false,
+  "corrections": [
+    "草稿称中微子输运，属错误。项目计算H/He光子辐射转移，讲义改正。",
+    "草稿将q等同锚点，属错误。锚点为82989第15张映射输入u0，q为全局组合后的新候选；T(q)-q是离散算子的固定点缺陷，不是严格物理误差界。",
+    "预测误差是数值预测一致性，不能泛称不衡量物理；它只不直接约束未知自洽解距离。",
+    "草稿最后未单独明确16-8自身窗口；讲义明确列出三组比较与各自意义。"
+  ],
+  "evidence": "20261002-x20-83131-true-83514-review.json",
+  "new_material_steps": 0,
+  "accepted_outer_steps": 20
+}

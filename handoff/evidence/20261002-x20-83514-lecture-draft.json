@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 10072,
+  "duration_api_ms": 9459,
+  "ttft_ms": 7557,
+  "ttft_stream_ms": 865,
+  "time_to_request_ms": 608,
+  "num_turns": 1,
+  "result": "# 学习讲义草稿：83514 真实映射复核与有限反馈窗口\n\n## 一、先讲物理问题\n\n我们要逼近的是一个自洽状态：物质场与中微子输运互为输入、输出，直到彼此不再变化。本轮的起算点是锚点，即 82989 H16 清单里的 previous→final，也就是第 15 张映射。把锚点记作 q，真实算子作用一次得到 T(q)。围绕它必须严格分开三类量：\n\n- **真实缺陷 T(q)-q**：真实输出相对锚点自身的偏差，是物理量；\n- **预测误差 T(q)-p**：真实输出与我们事前预测 p 之差，衡量预测能力，不衡量物理；\n- **half 仿射一致性**：实际 half 输出与仿射（缩放）关系之间的差，纯粹是数值一致性检验，绝不是 half 的真实缺陷。\n\n把这三者混在一起，就会把\"预测得准\"误读成\"物理已经收敛\"。\n\n## 二、再讲数值与门\n\n83514（提交 8887393…）用 32 CPU/128 GiB、16 worker，程序时间 2564.458 s，两张 map 各 156.36/152.25 s；整作业 42m54s 还含源核验、候选构造与全场比较，不能当作单张 map 的成本。真实缺陷 L2 比 full 0.712246、half 0.847942，Linf 比 0.830935/0.915453；预测误差比约 6.03e-10 与 3.69e-10；half 仿射一致性 L2 比为 1.54078e-10。16 个真实门全过，归档 SHA256 为 65e7ae9c…，Mac 独立复核 325 件工件、301 片以 80 位十进制重新归并，5 项审计器测试通过。\n\n## 三、为什么过完 16 门还要做正式反馈\n\n门是对\"固定物质加速\"这一次的验收，不是剩余误差界，也不等于自洽解。所以还要从 83514 full 真实输出 d8780e66… 起新名 x20-83514-seed-feedback-20261002，32CPU/128GiB/16worker，最多 16 map、在 8/16 各一对反馈、4h 硬限、USR1 提前 900 s、不自动续交。窗口未过，则只完成已经声明的第二窗口。原核、门槛、dt、能量、r20 一律不变；原七门、物理域、资源、完整性一旦失败即停。82989 约 96 分钟只作预算参考，不是完成承诺。\n\n## 四、三个比较口径\n\n与新窗口（16map/2pair）对照的是加速前状态：与加速前的变化改用 82989 historical pair16；与保存参考仍用 82518 A16。保存的 A 未重算，reference_calibration_eligible=false，accepted20，0 次物质更新——保存参考不是真解，不能当成收敛证据。\n\n最后，本次不给出最终 I_nu 的 ETA。",
+  "stop_reason": "end_turn",
+  "session_id": "5d548808-395e-4c57-bef5-de1565158519",
+  "total_cost_usd": 0.065695,
+  "usage": {
+    "input_tokens": 2649,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 2098,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 2649,
+      "outputTokens": 2098,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.065695,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "aaec995b-0cef-460d-a634-01633849d8e3"
+}

@@ -25,3 +25,9 @@ Code PASS：新驱动逐段对照已验82989入口，仅更新来源和origin核
 
 [POST-RUN CHECK]
 83514真实map通过原门，归并无NaN/Inf，量级吻合预测；此次仅验证固定物质加速。新反馈实验尚待执行。两端完整bundle备份后增量同步，学校测试及提交回执另追加。
+
+## 新作业启动
+
+数值提交9646be226a99c5c255ca2950a3f112157080622a，学校21 tests passed/19.63s，shell检查通过。Mac与学校完整bundle备份后，以83514-review-feedback-code-20261002.bundle verify/fetch/ff-only同步，GitHub推送成功。84026于2026-10-02 23:27:36启动，anode03/Students/qos_stu_cpu_long，32CPU128GiB，4h硬限2026-10-03 03:27:36，USR1提前900秒。首次观察RUNNING/preparing。
+
+watch PID2224395仅启动凭据，outputs/review-20260925/x20-83514-feedback-watch-84026；配置PYTHONPATH、Node PATH和独立会话，先保存终态再调用无工具CLI。讲义130附CLI草稿及独立纠正，实际deepseek-v4-flash[1m]，删除错误中微子表述并分清锚点与候选。
