@@ -1,0 +1,269 @@
+{
+  "job_id": 85856,
+  "commit": "37cdd3d236ed0fe1baeeda39d59d6f049e243f19",
+  "receipt": {
+    "path": "outputs/review-20260925/85856-current-basis-review.tar.gz",
+    "size_bytes": 594487,
+    "sha256": "d568b9e0b404498b483bdcc593ff3c84727c0a033e623f9b258bef80bc719d6a",
+    "files": [
+      {
+        "path": "declaration.json",
+        "size_bytes": 308593,
+        "sha256": "385ecc684a1aa04b129a607f38bd67f68e8049c5e23a0c69eed00d6f513f13da"
+      },
+      {
+        "path": "basis.json",
+        "size_bytes": 2744479,
+        "sha256": "9e3b7dc7db62ba037df53a04a66a6d11084957d6463d053f7afd9da2fc2e8c23"
+      },
+      {
+        "path": "summary.json",
+        "size_bytes": 2598,
+        "sha256": "a01b1215059b059edbc88afbf64fe87c50530964ba9c7af64bd83e0ef89be4fa"
+      },
+      {
+        "path": "status.json",
+        "size_bytes": 79,
+        "sha256": "1bbd5ddf7b70c0fdf485a293205eb6c3ebc34a196c1ab573c65ea06b10f8193e"
+      },
+      {
+        "path": "batch-exit.json",
+        "size_bytes": 205,
+        "sha256": "462a89785a73498920cc027e5b904942d6700e2b13ef5ebacde057cd11696c7d"
+      },
+      {
+        "path": "scheduler-terminal.json",
+        "size_bytes": 4696,
+        "sha256": "3d47aba5362d8255bcb18989f0eff84ce01df0978d1b114fe77f0570071b8d0c"
+      },
+      {
+        "path": "execution-terminal.json",
+        "size_bytes": 4696,
+        "sha256": "3d47aba5362d8255bcb18989f0eff84ce01df0978d1b114fe77f0570071b8d0c"
+      },
+      {
+        "path": "stdout.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "stderr.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "dat_files": 0
+  },
+  "independent_audit": true,
+  "scheduler_terminal_verified": true,
+  "source_85821_scheduler_terminal_verified": true,
+  "source_84026_scheduler_terminal_verified": false,
+  "source_archive_bindings": {
+    "85821": {
+      "archive": {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/archives/complete-1791227145692126461.tar.gz",
+        "size_bytes": 152662895,
+        "sha256": "7b6e590e0b70b2cb1c0d60c1e11a4468a4d2d67655d1f71044bb0d3fefa4b1e5"
+      },
+      "selected_files": 10,
+      "scheduler_terminal_verified": true
+    },
+    "84026": {
+      "archive": {
+        "path": "outputs/hpc/x20-83514-seed-feedback-20261002/archives/complete-1790960272454395309.tar.gz",
+        "size_bytes": 152145149,
+        "sha256": "171226a7c07cdf48b3bb820e2443438cf78d8adbe2204856327406abbef95cbc"
+      },
+      "selected_files": 7,
+      "scheduler_terminal_verified": false
+    },
+    "82989": {
+      "archive": {
+        "path": "outputs/hpc/x20-historical-seed-feedback-20261001/archives/complete-1790857589782695001.tar.gz",
+        "size_bytes": 151785077,
+        "sha256": "7ba7c6df54ee0d7eec0a6786ac738cb171ce6b11300c78b534e7961fb1e3d140"
+      },
+      "selected_files": 7,
+      "scheduler_terminal_verified": true
+    }
+  },
+  "field_stats_verified": true,
+  "git_clean_verified": true,
+  "code_claims_verified": 798,
+  "source_claims_verified": 835,
+  "gram": [
+    [
+      2.4648471827987515e-08,
+      1.0932499457588588e-09,
+      1.893635992997893e-08,
+      3.6102976330624595e-08
+    ],
+    [
+      1.0932499457588588e-09,
+      5.761918457645059e-11,
+      8.157718136670891e-10,
+      1.5989786118805296e-09
+    ],
+    [
+      1.893635992997893e-08,
+      8.157718136670891e-10,
+      2.194874263776241e-08,
+      4.49185497716464e-08
+    ],
+    [
+      3.6102976330624595e-08,
+      1.5989786118805296e-09,
+      4.49185497716464e-08,
+      1.0284750244220058e-07
+    ]
+  ],
+  "gram_80digit": [
+    [
+      "2.4648471827987514977209103347469962369286328987978741015530690765456888471084410E-8",
+      "1.0932499457588587877286323256045967410423567454926442654797269366724443938480012E-9",
+      "1.8936359929978928753698330709499286292220268057045275575649342646484839501287815E-8",
+      "3.6102976330624597659640031611357096509776354212089886014961300751470659504754894E-8"
+    ],
+    [
+      "1.0932499457588587877286323256045967410423567454926442654797269366724443938480012E-9",
+      "5.7619184576450591870247077544419873926533958159003584348395088899343353528941423E-11",
+      "8.1577181366708914981585791472391929245128776389659143357845312359440109853705475E-10",
+      "1.5989786118805296039745910777390626907383498790863288978589491425444643637491363E-9"
+    ],
+    [
+      "1.8936359929978928753698330709499286292220268057045275575649342646484839501287815E-8",
+      "8.1577181366708914981585791472391929245128776389659143357845312359440109853705475E-10",
+      "2.1948742637762410198009788626595212438108897294465983463301370319003220634654704E-8",
+      "4.4918549771646399234275201275945627347549448997980819586362571386285691394786744E-8"
+    ],
+    [
+      "3.6102976330624597659640031611357096509776354212089886014961300751470659504754894E-8",
+      "1.5989786118805296039745910777390626907383498790863288978589491425444643637491363E-9",
+      "4.4918549771646399234275201275945627347549448997980819586362571386285691394786744E-8",
+      "1.0284750244220058229673041528000373584439344971666715866069552963795655849624826E-7"
+    ]
+  ],
+  "unconstrained_diagnostic": {
+    "alpha": [
+      -13.86994664679278,
+      -0.6606936169245173,
+      0.15316046036224096
+    ],
+    "alpha_80digit": [
+      "-13.869946646792780440556108914074224247455101942829216266446246320964740860447441",
+      "-0.66069361692451737167876488882403076113894425198333557784282472104982522891169052",
+      "0.15316046036224097065572447740555408320075649493572636307676628722594953711904215"
+    ],
+    "ldl_pivots_80digit": [
+      "5.7619184576450592746446543583152305641192914009707237710244953632354736328125E-11",
+      "1.0399053816833134832927215614208947957302528767812902299773282593272630454772596E-8",
+      "1.0738630603138876401867469796618580884079018132699211798009267596750713299405626E-8"
+    ],
+    "normal_equation_residual_80digit": [
+      "-1E-88",
+      "-1E-87",
+      "-2E-87"
+    ],
+    "hessian_condition_inf_80digit": "5880.4523163176431103440896428057497715504951035786979232973367767468787053931976",
+    "minimum_squared_ratio_80digit": "0.10157099263182699580443046642655263625443745138705832569077170755118452966185992",
+    "minimum_l2_ratio": 0.3187020436580647,
+    "all_real_coefficients_excluded_at_0_8": false,
+    "weight_l1_at_unconstrained_minimum": 30.061280527434597,
+    "scope": "stored Gram affine prediction only; not a true-map or physical-error bound"
+  },
+  "boundary_flux_totals_80digit": [
+    "16370644833508.755786049499544511563992445942415675360403282762300430996124023468",
+    "16370644197269.898521478607687364347195570942415675360403282762300430996124023468",
+    "16370649157616.163865094858589778669094985004915675360403282762300430996124023468",
+    "16370648712163.303948325424823175199246352192415675360403282762300430996124023468",
+    "16370536638764.435767118673208366162991469379915675360403282762300430996124023468",
+    "16370535592229.580937592632505307920193617817415675360403282762300430996124023468",
+    "16369261639319.697940343379354268181752731677545985418997032762300430996124023468",
+    "16369286102644.195056267402446061242055466052545985418997032762300430996124023468"
+  ],
+  "boundary_metrics": [
+    {
+      "boundary_l1": 1.0049998574582324e-07,
+      "boundary_bolometric": 3.886461796314009e-08
+    },
+    {
+      "boundary_l1": 1.1420238446537828e-07,
+      "boundary_bolometric": 2.7210457913303343e-08
+    },
+    {
+      "boundary_l1": 1.5491131640589463e-07,
+      "boundary_bolometric": 6.392795043452608e-08
+    },
+    {
+      "boundary_l1": 1.4944742777112987e-06,
+      "boundary_bolometric": 1.4944649597861369e-06
+    }
+  ],
+  "fields": [
+    {
+      "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map16/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "ae749b8887c335f07e1d75ee65df3adcd627c3195d09c1ce5f50f4af9582886b"
+    },
+    {
+      "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "2cc86c871fbbd6dfbfa7dd5747159a56af8a8915a55e5ad7689524d32e278e1a"
+    },
+    {
+      "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map08/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "ee83152c5e83e089a59f670177041ce2914649d47d14a2b8208e20a27e7c3bb6"
+    },
+    {
+      "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map08/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "116677ee961ac547340bca46e9b20142aa15e9e102db71fc4745fac2afd3bc98"
+    },
+    {
+      "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "fb3a78180b1e57e4130c5dc395c34a52b4395864b2d5e450ac75e108542f6bb6"
+    },
+    {
+      "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "80f83b87df981c9649616339d3dcd701e7ec271fb7db13c6fbb54855087967ba"
+    },
+    {
+      "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "1b5cd4b473f70a22c81d0d030909a74eee9ccc36f212091b094daf740ffa5d05"
+    },
+    {
+      "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "ad1b7fb69dc45ec829f41531967bc0d30c423b9d0f4524298a5e24da7f71a7ba"
+    }
+  ],
+  "basis_linf": [
+    7.699133321853457e-08,
+    2.6357350330075136e-09,
+    4.1516836267463386e-08,
+    7.909409882600471e-08
+  ],
+  "field_minima": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "slabs": 301,
+  "peak_rss_bytes": 989372416,
+  "wall_s": 811.2561051966622,
+  "large_fields_recomputed_on_mac": false,
+  "strict_rounding_error_bound": false,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "baseline_replaced": false
+}

@@ -1,0 +1,107 @@
+{
+  "job_id": 85856,
+  "state": "COMPLETED",
+  "scontrol": "JobId=85856 JobName=tde-x20-cbasis UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:13:43 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-10-06T03:20:17 EligibleTime=2026-10-06T03:20:17 AccrueTime=2026-10-06T03:20:17 StartTime=2026-10-06T03:20:18 EndTime=2026-10-06T03:34:01 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-06T03:20:18 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:1833476 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85821_basis.sbatch SubmitLine=sbatch --parsable operations/x20_85821_basis.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-cbasis-85856.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-cbasis-85856.out TresPerTask=cpu=4\n",
+  "scheduler_stderr": "",
+  "observed_unix": 1791228864.280007,
+  "status": {
+    "status": "basis_complete_requires_review",
+    "unix": 1791228839.7059913
+  },
+  "summary": {
+    "status": "basis_complete_requires_review",
+    "gram": [
+      [
+        2.4648471827987515e-08,
+        1.0932499457588588e-09,
+        1.893635992997893e-08,
+        3.6102976330624595e-08
+      ],
+      [
+        1.0932499457588588e-09,
+        5.761918457645059e-11,
+        8.157718136670891e-10,
+        1.5989786118805296e-09
+      ],
+      [
+        1.893635992997893e-08,
+        8.157718136670891e-10,
+        2.194874263776241e-08,
+        4.49185497716464e-08
+      ],
+      [
+        3.6102976330624595e-08,
+        1.5989786118805296e-09,
+        4.49185497716464e-08,
+        1.0284750244220058e-07
+      ]
+    ],
+    "slabs": 301,
+    "all_hashes_verified_before_after": true,
+    "field_stats_after": [
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map16/previous.dat",
+        "inode": 4977861131,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791226081000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map16/final.dat",
+        "inode": 4977874699,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791226117000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map08/previous.dat",
+        "inode": 5098096391,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791223592000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map08/final.dat",
+        "inode": 5098131463,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791223628000000000
+      },
+      {
+        "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/previous.dat",
+        "inode": 3913909506,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790959367000000000
+      },
+      {
+        "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/final.dat",
+        "inode": 3913921026,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790959398000000000
+      },
+      {
+        "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/previous.dat",
+        "inode": 4687111438,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790856673000000000
+      },
+      {
+        "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/final.dat",
+        "inode": 4775433735,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790856704000000000
+      }
+    ],
+    "peak_rss_bytes": 989372416,
+    "wall_s": 811.2561051966622,
+    "new_maps": 0,
+    "new_feedback_pairs": 0,
+    "new_material_steps": 0,
+    "candidate_written": false,
+    "baseline_replaced": false,
+    "strict_error_bound": false
+  },
+  "batch_exit": {
+    "job_id": "85856",
+    "child_exit_status": 0,
+    "recorded_unix": 1791228841.8073704,
+    "scheduler_terminal_verified": false,
+    "meaning": "shell wait status of Python child; not Slurm terminal state"
+  }
+}

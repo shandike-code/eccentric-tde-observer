@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 8736,
+  "duration_api_ms": 8589,
+  "ttft_ms": 7758,
+  "ttft_stream_ms": 353,
+  "time_to_request_ms": 138,
+  "num_turns": 1,
+  "result": "85856：scontrol 证实 Slurm COMPLETED，ExitCode 0:0，4CPU/16G/1h 内用 13:43，故终态有证据；但 batch_exit 块仍标 scheduler_terminal_verified=false，两者矛盾时以 scontrol 为准。\n\n该作业是 x20-cbasis 基组诊断，不属当前四目标（85821 H16/H8、84026 H16、82989 H16）的 4x4 辐射 Gram 与边界谱，故未推进所列采集。\n\n约束均遵守：new_maps=0、new_feedback_pairs=0、new_material_steps=0，未写候选、未换 baseline、未写 dat、未换 r20。301 slabs，前后哈希已验证。Gram 为 4x4 数值矩阵，仅数据。\n\n门禁：strict_error_bound=false，严格误差门仍未过；状态 basis_complete_requires_review。84026 无 Slurm 终态证据，仅 batch_exit 不能称 Slurm COMPLETED。完成仍须 Mac 独立归并后再评估新方向。不称自洽大气或整盘 I_nu；未知项不猜。",
+  "stop_reason": "end_turn",
+  "session_id": "62d4d610-1c71-4b60-a3b6-2e6bb195cef9",
+  "total_cost_usd": 0.065955,
+  "usage": {
+    "input_tokens": 3351,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1968,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 3351,
+      "outputTokens": 1968,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.065955,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "63c231c8-fa29-4837-b350-af9479fea3f8"
+}

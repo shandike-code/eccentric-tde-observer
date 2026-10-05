@@ -1,0 +1,65 @@
+{
+  "job_id": 85856,
+  "base_head": "afe24c76d7701c8fb5c656445e8aa6b2a8fe7239",
+  "school_numerical_head": "37cdd3d236ed0fe1baeeda39d59d6f049e243f19",
+  "claims": [
+    {
+      "path": "handoff/audit_tools/review_x20_85856_basis.py",
+      "size_bytes": 11851,
+      "sha256": "d5c323039121a59dba84fea384f32d11af57d62c2fd9ed4124ce5b94c107d1de"
+    },
+    {
+      "path": "handoff/audit_tools/solve_x20_85856_joint.py",
+      "size_bytes": 8131,
+      "sha256": "469dc5ed5f179dcaa0e63e87cddf2eb8e1b4e08a083b1e66a551cc0fe214e40f"
+    },
+    {
+      "path": "handoff/audit_tools/solve_x20_85856_boundary.py",
+      "size_bytes": 7418,
+      "sha256": "f28b458fa267fea517ff70751efb7a5d16c3a40e169ae9e9acd0cb330f474b8a"
+    },
+    {
+      "path": "handoff/evidence/20261006-x20-current-basis-85856-review.json",
+      "size_bytes": 10206,
+      "sha256": "972272eaa7e5e9b503c4303a56f80b263c9279d85327c192a9867d8e05a0a3b2"
+    },
+    {
+      "path": "handoff/evidence/20261006-x20-85856-boundary-candidate.json",
+      "size_bytes": 361619,
+      "sha256": "5f3a3ed251ed91e988fe02696bb9324edb74a2b1597d13d413c8c666783fb14d"
+    },
+    {
+      "path": "handoff/evidence/20261006-x20-85856-joint-candidate.json",
+      "size_bytes": 364113,
+      "sha256": "f47b4400b2a155c448627e46b17727100e7b1ce31a0a4421e55fda4cea4d9e55"
+    }
+  ],
+  "tests": [
+    {
+      "count": 47,
+      "seconds": 0.91,
+      "scope": "new auditor and source/basis tests"
+    },
+    {
+      "count": 27,
+      "seconds": 0.82,
+      "scope": "new boundary and source with old exact QP tests"
+    },
+    {
+      "count": 26,
+      "seconds": 67.28,
+      "scope": "new source Gram reconstruction, exact boundary certificate and negative paths"
+    }
+  ],
+  "source_reconstructed_certificate_verified": true,
+  "full_field_nonnegative_verified": false,
+  "true_map_verified": false,
+  "new_slurm_jobs": 0,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false,
+  "dat_downloaded": false,
+  "git_backup": "outputs/review-20260925/pre-85856-review-20261006.bundle"
+}

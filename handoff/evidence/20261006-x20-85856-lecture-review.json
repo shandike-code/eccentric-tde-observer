@@ -1,0 +1,19 @@
+{
+  "job_id": 85856,
+  "draft": "handoff/evidence/20261006-x20-85856-lecture-draft.json",
+  "draft_sha256": "3796ded60151cb66287a60f315f01f1dd9d98fd5a3b3ac9af4ecfd8cda36a339",
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "independently_reviewed": true,
+  "lecture_section": 137,
+  "lecture_path": "lecture/项目讲义/2026-09-25_辐射慢模外推与真实映射检验.md",
+  "corrections": [
+    "q为候选辐射输入场，p为仿射预测输出场，T(q)为真实算子输出；c才是系数。草稿把q当系数、p当可行域参数完全错误。",
+    "频谱L1支持平面精确，由全部9632项构成；本次无新增切面且完整L1直接通过，不能称近似或未穷举暗频组。",
+    "纯cap的KKT仅针对cap可行域；边界约束QP原解在所选分支内全局最优。统一0.9后的存储方向仅重新验证可行性，不声称仍最优。",
+    "Gram记录原始数组幅度与方向内积，不只表示形近；加热dt*Q/rho是比能量量级，不是质量差。",
+    "等权是诊断设计选择，不是唯一物理推论；精确代数证书不覆盖输入统计或大场浮点表达式误差。"
+  ],
+  "scientific_action_from_cli": false
+}

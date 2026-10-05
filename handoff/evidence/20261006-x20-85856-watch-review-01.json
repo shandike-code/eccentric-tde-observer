@@ -1,0 +1,16 @@
+{
+  "job_id": 85856,
+  "draft": "handoff/evidence/20261006-x20-85856-watch-draft-01.json",
+  "draft_sha256": "7026ce85467c67423a06992c7e55a97cb14e0830e72d32a8635cbbb5695dffa1",
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "independently_reviewed": true,
+  "corrections": [
+    "85856恰是85821H16/H8、84026H16、82989H16的新八场Gram与边界谱采集；CLI说不属于当前目标是错误。",
+    "batch-exit的scheduler_terminal_verified=false限定该子进程回执本身的证据范围，与真实scontrol COMPLETED0:0并不矛盾。",
+    "strict_error_bound=false表示本统计未建立严格误差界，不是某个数值门已测试并失败。",
+    "84026调度未知保持；不能暗示其拥有本次85856的batch-exit。"
+  ],
+  "scientific_action_from_cli": false
+}

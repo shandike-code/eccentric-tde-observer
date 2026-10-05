@@ -1,0 +1,20 @@
+{
+  "source_terminals": [
+    {
+      "job": 85821,
+      "path": "handoff/evidence/20261006-x20-85821-terminal.json",
+      "sha256": "e98ff829a5ec05888c3e7d17a01e76848bec978e2b1f79a59a6a018b4d0415f6",
+      "size_bytes": 23937,
+      "state": "COMPLETED"
+    },
+    {
+      "job": 82989,
+      "path": "handoff/evidence/20261001-x20-82989-terminal.json",
+      "sha256": "3e818590fb8075c7adac2ef12f5b0339959389375a4003968f60552e2b5814b5",
+      "size_bytes": 1602,
+      "state": "COMPLETED"
+    }
+  ],
+  "source_84026_scheduler_terminal_verified": false,
+  "first_audit_preserved": true
+}
