@@ -45,3 +45,6 @@ watch PID1190228仅启动凭据，start_new_session、PYTHONPATH及Node PATH已�
 另查初始化I/O：配置有30878条来源声明，其中68个不同dat共686792114176字节（约639.6GiB）需在原入口核验。sstat读取计数在01:31:07为396302992506，01:38:12为783754460577；这是调度统计，不等同物理磁盘流量测量。后一次environment-85821.json已经存在、state仍initializing，结合pipeline.run_pipeline的执行顺序，可判断入口source核验已经结束，尚在warm seed初始化流程；不是已派发map。未取消作业、未跳过哈希或修改运行依赖。原始新快照20261006-x20-85821-initialization-io.json。
 
 POST-RUN（审阅器组件预检）：测试通过、来源SHA相符；没有计算新的响应、加热或大场范数，故不作收敛/物理解/最终I_nu结论。后续必须对真实pair08/pair16及终态归档做完整独立审计。
+
+
+01:39:33再次刷新：85821 RUNNING累计23m12s，status=mapping/historical，active_map.iteration=1，首批16个块及16份process回执落盘，history仍0；stderr空。初始化已结束并开始实际映射，尚没有完整map或反馈。原始快照20261006-x20-85821-progress-0139.json。heartbeat已更新到该状态和新审阅器命令，仍每30分钟、只在实质变化时通知；学校数值HEAD保持16ad4d6。来源哈希量可以解释初始化有较大I/O工作，但本轮未分段计时，不能把全部初始化耗时严格归给哈希。
