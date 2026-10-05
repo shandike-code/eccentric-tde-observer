@@ -1,0 +1,27 @@
+{
+  "job_id": 85875,
+  "numerical_commit": "4bace16902cbc2ef6f9f584f26f07a2928eecb93",
+  "protocol": "handoff/protocols/x20-85861-seed-feedback-v1.md",
+  "maximum_maps": 16,
+  "maximum_feedback_pairs": 2,
+  "new_material_steps": 0,
+  "accepted_outer_steps": 20,
+  "pre_run": {
+    "Code": "PASS",
+    "Logic": "PASS",
+    "Physics": "WARNING",
+    "Decision": "RUN",
+    "physics_boundary": "fixed x20 within one physical time step; no material acceptance or calibration"
+  },
+  "source_seed_job": 85861,
+  "prior_feedback_job": 85821,
+  "saved_reference_job": 82518,
+  "reference_recomputed": false,
+  "source_84026_scheduler_terminal_verified": false,
+  "source_preflight": "20261006-x20-85861-feedback-preflight.json",
+  "submitted_state": "PENDING",
+  "observed_state": "RUNNING",
+  "observation": "20261006-x20-85875-observation-01.json",
+  "watch_pid_is_only_launch_receipt": true,
+  "school_tree_to_remain_frozen": true
+}

@@ -25,3 +25,21 @@ POST-RUN：stderr无警告，分片统计有限、平方非负，152worker成功
 
 
 学校CLI实际deepseek-v4-flash[1m]。终态草稿把已完成的学校实测写为“待独立实测”，已改为待Mac独立审阅。讲义草稿将原锚点认成新full输入/输出、把三系数当作half标量、说真实缺陷数值未给，并误把Decimal80位称为extended精度，均独立纠正，原稿与review保留。讲义139已据实际代码重写。
+
+
+## 85875启动与下一轮审阅
+
+新数值提交4bace16902cbc2ef6f9f584f26f07a2928eecb93，Mac80项相关测试0.91秒；学校新/旧反馈入口同组先44pass/6fail（19.97秒），原因是旧84026测试收件目录已有部分文件却缺summary.json。按已审原归档SHA和清单补齐20652B小文件后，同组50项12.72秒全部通过，未改断言或数值。shell/diff检查通过。学校实际prepare小来源预检902项、29.99352598秒，trial逐位/native/相位/原能量和算子链通过；九个dat只查存在和大小，完整SHA仍由正式Slurm执行。
+
+两端完整pre-85861-feedback-code-20261006.bundle已verify。增量85861-review-feedback-code-20261006.bundle=51665B，SHA 28dcf38685cc45efabb5aea374011e572cc9f6d951f38081a0e3aeddb2eb1e51，verify/fetch新ref/ff-only从学校6845289更新到4bace16，未reset或force。数值提交已push，学校运行中不再同步后续Mac文档。
+
+2026-10-06 06:14:08提交85875，随即实际RUNNING于anode02/Students/qos_stu_cpu_long，32CPU128GiB16worker，4h硬限10:14:08、USR1提前900秒。06:15:23快照preparing、stderr0、4bace16/clean，尚无declaration、完整map或反馈。计划16map/2pair不是已完成数量。
+
+watch PID2694432只是启动凭据，start_new_session/PYTHONPATH/Node PATH已记录，输出x20-85861-feedback-watch-85875；先保存真实scheduler-terminal再无工具CLI，预算18000秒/60秒间隔。首稿实际deepseek-v4-flash[1m]将85821两次误写82521，已独立改正并保留原文。
+
+Mac已准备review_x20_85875_feedback.py，明确绑定85875/4bace16、85861真实种子、85821前态和保存82518参考，并分别保留source85821true/84026false。终态及部分pair须新收件目录独立审阅，不能以组件预检替代完整E2E；硬失败走独立失败审阅。ROOT=outputs/review-20260925，需archive-stem.tar.gz、同stem-receipt.json/同stem.json、85875-stderr.log、85875-batch-exit.json，终态另保存完整scheduler/execution快照。
+
+正式命令：PYTHONPATH=.:src:scripts OPENBLAS_NUM_THREADS=1 .venv/bin/python handoff/audit_tools/review_x20_85875_feedback.py --job 85875 --base <archive-stem> --out outputs/review-20260925/x20-85861-feedback-85875-received --target handoff/evidence/20261006-x20-85875-final-review.json --terminal handoff/evidence/20261006-x20-85875-terminal.json。部分pair采用不同新目录/target且不传terminal。只有child退出时保留调度unknown，不伪造COMPLETED。
+
+
+06:18:18续查：85875实际RUNNING累计4分10秒，声明已生成，historical child=initializing、history0、active_map=null，environment尚无。学校4bace16/clean、stderr0；不能把声明或父preparing标签当成已派发map。新的Mac审阅器87相关tests0.91秒通过；800源码git show、893现有小来源、9dat既有清单绑定预检通过，当前run两项inputs留待冻结归档。这不是pair08/pair16完整E2E，证据20261006-x20-85875-reviewer-preflight.json。实际观察保存在observation-02.json。

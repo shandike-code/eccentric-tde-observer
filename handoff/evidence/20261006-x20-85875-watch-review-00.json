@@ -1,0 +1,13 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "20261006-x20-85875-watch-draft-00.json",
+  "independently_revised": true,
+  "corrections": [
+    "草稿把加速前比较来源85821两次写为82521；按新协议和入口修正为85821 historical pair16。",
+    "第8/16张后各一对正式反馈，不能称第8/16张反馈；当前均未产出。",
+    "preparing并不表示已完成map，16map/2pair只是预算。"
+  ],
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "source_84026_scheduler_terminal_verified": false
+}

@@ -1,0 +1,125 @@
+{
+  "numerical_commit": "4bace16902cbc2ef6f9f584f26f07a2928eecb93",
+  "mac_tests": {
+    "passed": 80,
+    "seconds": 0.91
+  },
+  "school_first_tests": {
+    "passed": 44,
+    "failed": 6,
+    "seconds": 19.97,
+    "cause": "FileNotFoundError for legacy 84026 received/summary.json test fixture; no numerical assertion failure",
+    "test_file": "tests/test_x20_85800_seed_feedback.py"
+  },
+  "fixture_repair": {
+    "source": "84026 audited archive",
+    "file": "summary.json",
+    "size_bytes": 20652,
+    "sha256": "05bdda53e55d32c24ef6eb6f7ea3038ec43adff2c72f3621d7c30ec24706e2fe",
+    "assertions_or_numerical_code_changed": false
+  },
+  "school_tests": {
+    "passed": 50,
+    "seconds": 12.72,
+    "scope": [
+      "tests/test_x20_85861_seed_feedback.py",
+      "tests/test_x20_85800_seed_feedback.py"
+    ]
+  },
+  "shell_check": true,
+  "diff_check": true,
+  "bundle": {
+    "name": "85861-review-feedback-code-20261006.bundle",
+    "bytes": 51665,
+    "sha256": "28dcf38685cc45efabb5aea374011e572cc9f6d951f38081a0e3aeddb2eb1e51",
+    "verified_both_hosts": true,
+    "school_full_backup": "pre-85861-feedback-code-20261006.bundle",
+    "school_fast_forward_from": "68452895c7953a4540d285a02e200b61f5b0cf3d"
+  },
+  "source_preflight_pending": false,
+  "school_source_preflight": {
+    "numerical_commit": "4bace16902cbc2ef6f9f584f26f07a2928eecb93",
+    "wall_s": 29.993525980000413,
+    "verified_small_claims": 902,
+    "deferred_large_fields": [
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map16/previous.dat",
+        "size_bytes": 10099884032,
+        "sha256": "ae749b8887c335f07e1d75ee65df3adcd627c3195d09c1ce5f50f4af9582886b"
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map16/final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "2cc86c871fbbd6dfbfa7dd5747159a56af8a8915a55e5ad7689524d32e278e1a"
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map08/previous.dat",
+        "size_bytes": 10099884032,
+        "sha256": "ee83152c5e83e089a59f670177041ce2914649d47d14a2b8208e20a27e7c3bb6"
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map08/final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "116677ee961ac547340bca46e9b20142aa15e9e102db71fc4745fac2afd3bc98"
+      },
+      {
+        "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/previous.dat",
+        "size_bytes": 10099884032,
+        "sha256": "fb3a78180b1e57e4130c5dc395c34a52b4395864b2d5e450ac75e108542f6bb6"
+      },
+      {
+        "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "80f83b87df981c9649616339d3dcd701e7ec271fb7db13c6fbb54855087967ba"
+      },
+      {
+        "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/previous.dat",
+        "size_bytes": 10099884032,
+        "sha256": "1b5cd4b473f70a22c81d0d030909a74eee9ccc36f212091b094daf740ffa5d05"
+      },
+      {
+        "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "ad1b7fb69dc45ec829f41531967bc0d30c423b9d0f4524298a5e24da7f71a7ba"
+      },
+      {
+        "path": "outputs/hpc/x20-85859-true-validation-20261006/full/state_1.dat",
+        "size_bytes": 10099884032,
+        "sha256": "64992a047808bc99eed6463d11fba4cff655970b426f1141ee2efbdf164135de"
+      }
+    ],
+    "large_fields_read": false,
+    "production_hash_checks_unchanged": true,
+    "actual_prepare_small_source_path_passed": true,
+    "trial_bitwise_and_native_passed": true,
+    "seed": {
+      "historical": {
+        "path": "outputs/hpc/x20-85859-true-validation-20261006/full/state_1.dat",
+        "size_bytes": 10099884032,
+        "sha256": "64992a047808bc99eed6463d11fba4cff655970b426f1141ee2efbdf164135de"
+      }
+    },
+    "seed_stats": [
+      {
+        "path": "outputs/hpc/x20-85859-true-validation-20261006/full/state_1.dat",
+        "inode": 4197708547,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791234767000000000
+      }
+    ],
+    "source_jobs": [
+      76727,
+      80195,
+      82518,
+      84026,
+      85821,
+      85856,
+      85859,
+      85861
+    ],
+    "source_85821_scheduler_terminal_verified": true,
+    "source_84026_scheduler_terminal_verified": false,
+    "maximum_maps": 16,
+    "maximum_feedback_pairs": 2
+  }
+}

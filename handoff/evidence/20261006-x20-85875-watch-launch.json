@@ -1,0 +1,19 @@
+{
+  "job_id": 85875,
+  "pid": 2694432,
+  "command": [
+    ".venv-hpc/bin/python",
+    "handoff/audit_tools/watch_x20_85861_seed_feedback.py",
+    "--job",
+    "85875",
+    "--run",
+    "outputs/hpc/x20-85861-seed-feedback-20261006",
+    "--output",
+    "outputs/review-20260925/x20-85861-feedback-watch-85875"
+  ],
+  "launched_unix": 1791238448.0772252,
+  "start_new_session": true,
+  "pid_is_only_launch_receipt": true,
+  "pythonpath": ".:src:scripts",
+  "node_path": "/home/scc/pb24511938/opt/node-v22.18.0-linux-x64/bin"
+}
