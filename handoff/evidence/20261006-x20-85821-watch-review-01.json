@@ -1,0 +1,13 @@
+{
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "draft": "20261006-x20-85821-watch-draft-01.json",
+  "independently_reviewed": true,
+  "corrections": [
+    "第8对反馈应为第8张map后首对反馈，本次只1pair。",
+    "当前没有16减8窗口；已见失败是对84026前态及保存82518A16的比较，不能混称新窗口失败。"
+  ],
+  "original_seven_gates_independently_passed": true,
+  "continue_declared_budget_only": true
+}

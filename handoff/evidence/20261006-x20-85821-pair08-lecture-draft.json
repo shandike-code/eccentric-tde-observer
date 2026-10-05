@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 12501,
+  "duration_api_ms": 12379,
+  "ttft_ms": 10622,
+  "ttft_stream_ms": 331,
+  "time_to_request_ms": 101,
+  "num_turns": 1,
+  "result": "**学习讲义草稿：job 85821 中四类比较的区分**\n\n**一、原七门（同对内门）**\n指五条速率门（光电离、总复合、原子加热、直接加热、形式加热），加 `inner_pair_ready` 与 `physical_response_pass`，共七项，在同一对的两端点间判定。本回合全部 true：如光电离 volume_l1≈2.617e-8，原子加热≈1.999e-5。\n\n**二、同对端点响应差**\n即 previous 与 final 两端点自身的差，用冻结基线度量。r20 三范数最大≈2.99e-4（<0.001），冻结 80195 信号最大≈0.0503（<0.1），`signal_pass` 均 true——同对差过门。\n\n**三、对 84026 加速前响应变化**\n跨反馈比较，取四组合（prev/prev、prev/final、final/prev、final/final）的最大值。原子加热最大 **0.0038112183895159584 > 0.001**，故三条加热门失败；光电离、总复合过门。\n\n**四、对保存 82518 加速态第 16 张 map 的差异**\n`saved_reference_job=82518, case=accelerated, map=16`。该保存解**未重算**（`reference_recomputed=false`），也不是真解。四组合的加热门全为 false，`cross_rate_pass=false`。\n\n**概念与边界**\n- 向量 512 = 128 cells × 4 编码；三范数为 L2、质量加权、最大单元范数，是同一向量的三种度量，**不是三条物理通道**。\n- 原 r20 与冻结 80195 信号未变。\n- 率 volume_l1：先逐点取 max 再积分；多分量各自比值后取最大。\n- 目前只有 8 张 map 后的一对反馈，**尚无 16−8 窗口**，不能称\"第 8 对反馈\"。\n- 保存 A 未重算且非真解；初值历史差异不是物理时间演化；不可把单端点 R 范数当窗口差或新 r20。\n- 预算维持 16 map、2 pair、0 material，不扩大、不接受 21；不提供固定点误差界，也不给最终 I_nu ETA。\n- 大场与物质 ODE 未重算；数值完整性与 scheduler 终态分开；84026 终态未验证，未知保留。\n\n（约 640 字）",
+  "stop_reason": "end_turn",
+  "session_id": "98cdb65e-f914-4d37-a39b-dfe402534d0f",
+  "total_cost_usd": 0.099715,
+  "usage": {
+    "input_tokens": 4718,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 3045,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 4718,
+      "outputTokens": 3045,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.099715,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "f9f8e6e2-5974-415a-9baa-dcac28bbe021"
+}
