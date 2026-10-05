@@ -1,0 +1,13 @@
+{
+  "job_id": 85859,
+  "numerical_commit": "ac39c8656b34baeba711beaedf992428e3a3d5f7",
+  "reviewer": "handoff/audit_tools/review_x20_85859_prediction.py",
+  "tests": {
+    "command": "PYTHONPATH=.:src:scripts OPENBLAS_NUM_THREADS=1 .venv/bin/python -m pytest -q tests/test_x20_85859_review.py tests/test_x20_85856_prediction.py tests/test_x20_window_fields.py",
+    "passed": 36,
+    "seconds": 0.9
+  },
+  "full_end_to_end_completed": false,
+  "pending": "Current job final nine-file package and actual scheduler terminal",
+  "source_84026_scheduler_terminal_verified": false
+}

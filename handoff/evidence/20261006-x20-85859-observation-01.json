@@ -1,0 +1,24 @@
+{
+  "job_id": 85859,
+  "observed_unix": 1791231263.8519814,
+  "scontrol": "JobId=85859 JobName=tde-x20-bpred UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:02:21 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-10-06T04:12:01 EligibleTime=2026-10-06T04:12:01 AccrueTime=2026-10-06T04:12:01 StartTime=2026-10-06T04:12:02 EndTime=2026-10-06T05:12:02 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-06T04:12:02 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2088426 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85856_boundary_prediction.sbatch SubmitLine=sbatch --parsable operations/x20_85856_boundary_prediction.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-bpred-85859.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-bpred-85859.out TresPerTask=cpu=4\n",
+  "scheduler_stderr": "",
+  "git_commit": "ac39c8656b34baeba711beaedf992428e3a3d5f7",
+  "git_status": "",
+  "status": {
+    "status": "preflight",
+    "unix": 1791231132.9761302
+  },
+  "stderr_bytes": 0,
+  "watch_latest": {
+    "job_id": 85859,
+    "state": "RUNNING",
+    "scontrol": "JobId=85859 JobName=tde-x20-bpred UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:02:16 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-10-06T04:12:01 EligibleTime=2026-10-06T04:12:01 AccrueTime=2026-10-06T04:12:01 StartTime=2026-10-06T04:12:02 EndTime=2026-10-06T05:12:02 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-06T04:12:02 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2088426 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85856_boundary_prediction.sbatch SubmitLine=sbatch --parsable operations/x20_85856_boundary_prediction.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-bpred-85859.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-bpred-85859.out TresPerTask=cpu=4\n",
+    "scheduler_stderr": "",
+    "observed_unix": 1791231258.987602,
+    "status": {
+      "status": "preflight",
+      "unix": 1791231132.9761302
+    }
+  }
+}

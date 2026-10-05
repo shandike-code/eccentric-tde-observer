@@ -38,3 +38,15 @@ Gram是未加权数组Euclidean内积，不是辐射能量。80位归并后，�
 讲义137已追加。学校CLI草稿误将q当系数、p当可行域参数、T(q)当仿射谱，并误称精确支持平面为近似，均已按实际定义与源码纠正。原精确解的最优性和乘0.9后存储方向的可行性已分开。draft/review证据保留，实际deepseek-v4-flash[1m]。
 
 最终从新来源重建Gram并独立验证边界证书，连同来源/系数/分支误用等负路径共26tests在67.28s通过。新讲义137数学格式单独检查通过，只修改新段下标括号，不触及七个历史告警文档。shell/diff检查通过。
+
+## 后续独立审阅后提交85859全场筛查
+
+前述“本轮没有新提交”属于85856统计审阅阶段。本阶段另行审阅新协议x20-85856-boundary-prediction-v1.md、固定同八场/同系数和原11门，决定只做一次301片全场预测筛查。4CPU16GiB/1h，0map/feedback/material，不写dat，失败不自动缩步或追加预算。Mac与学校先clean/exactHEAD，分别完整bundle备份verify，再verify/fetch新ref/ff-only把学校37cdd3d更新至ac39c8656b34baeba711beaedf992428e3a3d5f7。Mac32tests1.53s、学校32tests22.82s，学校从实时小来源重建Gram并验证同源精确证书74.2813s通过，未读大场。shell/diff通过。Mac的shasum因Perl locale报错，改用Python hashlib与学校同一bundle SHA核对通过，没有更改数值或断言。
+
+85859于2026-10-06 04:12:02开始，anode02/Students/qos_stu_default，实际NumCPUs4/MinMemoryNode16G，硬限05:12:02。04:12:28与04:14:23均真实RUNNING/preflight，stderr0，学校ac39c86且clean，尚无declaration或prediction结果。提交PENDING和后续RUNNING记录分别保存，不能把早期ExitCode0:0当终态。
+
+watch_x20_85856_prediction.py已用PYTHONPATH、Node PATH和start_new_session启动，PID2089175仅为启动凭据；预算4800s、每60s，先保存scheduler-terminal再无工具CLI。学校运行中冻结ac39c86，后续Mac文档/审阅器不向运行依赖同步。实际CLI为deepseek-v4-flash[1m]；草稿把已知的小QP通过及85821终态混写为未知，另存review纠正。84026调度未知不变。
+
+新review_x20_85859_prediction.py已绑定本次job/ac39、新八场和系数，核源/代码git show、前后字段inode/size/mtime、clean/HEAD、实际Slurm与childexit，并独立80位归并301片原11门。次正规负点和未求值门保留；36项相关测试0.90s通过。当前只完成审阅器测试，完整E2E要等终态九文件归档，不预写成功。若只得到child退出而调度未知，须单独保存execution observation，不伪造COMPLETED或强套成功审阅模板。
+
+证据20261006-x20-85859-{preflight,submit,watch-launch,observation-00,observation-01,reviewer-preflight}.json；原始CLI及纠正另存watch-{draft,review}-00.json。新增Mac完整备份pre-85859-launch-note-20261006.bundle已verify；同步前完整备份两端pre-85856-prediction-code-20261006.bundle，增量85856-review-prediction-code-20261006.bundle为223366B/SHA ff3209fae67fd09f06c139fa4de080da8aeb6f83176fc05ee82d7a4e1aeb9018。

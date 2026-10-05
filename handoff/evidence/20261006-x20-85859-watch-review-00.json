@@ -1,0 +1,29 @@
+{
+  "job_id": 85859,
+  "draft": "handoff/evidence/20261006-x20-85859-watch-draft-00.json",
+  "draft_sha256": "7bacefef79b1db6e0fa57ff1df4a291e38212686a5bf20b1a1c1c6db87ac4b5c",
+  "actual_model_usage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 2427,
+      "outputTokens": 704,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.029735,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "independently_reviewed": true,
+  "corrections": [
+    "小QP精确证书及缩放后可行性已经85856阶段独立核验，本轮学校又从同源小数据重建通过；未知的是新全场11门结果。",
+    "源85821实际COMPLETED0:0和完整16map/2pair已经独立审阅；84026缺Slurm终态仍保持未知，不能混写。",
+    "85859整个任务包含一次完整301片筛查，当前preflight只是其中尚未完成的阶段。"
+  ],
+  "retained_valid_claims": [
+    "RUNNING中的ExitCode=0:0不构成终态。",
+    "batch-exit仅证明子进程返回，与另存scontrol证据范围不同。",
+    "0map/feedback/material，不写dat、不换r20、失败不自动续交。"
+  ],
+  "new_scientific_decision": false
+}

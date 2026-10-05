@@ -1,0 +1,17 @@
+{
+  "job_id": 85859,
+  "pid": 2089175,
+  "command": [
+    ".venv-hpc/bin/python",
+    "handoff/audit_tools/watch_x20_85856_prediction.py",
+    "--job",
+    "85859",
+    "--output",
+    "outputs/review-20260925/x20-85856-prediction-watch-85859"
+  ],
+  "start_new_session": true,
+  "launched_unix": 1791231131.7459128,
+  "budget_s": 4800,
+  "poll_s": 60,
+  "meaning": "PID only launch receipt, not scheduler execution proof"
+}
