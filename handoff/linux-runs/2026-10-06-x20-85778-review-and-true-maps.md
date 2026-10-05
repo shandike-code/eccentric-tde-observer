@@ -17,3 +17,11 @@
 本次系数来自最新84026锚点和新方向；不将旧83131/83514系数或83075符号元组套用。小QP的加热缺陷比0.39179未由这次扫描重算为正式反馈，它不是加热稳定性门。此次0map/反馈/物质、无新dat、accepted20/r20不变。
 
 下一步明确采用新协议x20-85778-true-validation-v1.md：32CPU128GiB/16worker，full/half各一次原算子映射，最多2map，2h硬限。写入候选与筛查表达式逐位对照，源归档、trial/native、物理旧层/base/r20固定。输出须过原16真实门并独立复核，不能用预测p代替T(q)，也不能把half仿射一致性误差当成缺陷降幅。通过后才决定有界正式反馈窗口；现在没有新的物质接受或自洽大气结论。
+
+## 85800启动记录
+
+两端相关测试全部通过：Mac32passed1.04s，学校32passed15.13s，shell与diff检查通过。Mac与学校均先保存完整Git bundle；学校从741e7eb通过验证过的增量包快进到数值4d1a8314e272063bc79021d152dbc4c8fe6b08fb。
+
+作业85800于2026-10-06 00:14:13提交，00:14:14在anode02开始，Students/qos_stu_cpu_long，32CPU128GiB，2h硬限02:14:14。00:14:45实际scontrol为RUNNING，程序preparing，stderr空；此时declaration尚未生成。提交PENDING回执和随后RUNNING回执分别保存为20261006-x20-85800-submit.json及20261006-x20-85800-observation-00.json，不把提交时状态改写成运行态。
+
+只读watch已从学校独立会话启动，PID846684仅作为启动证据，实际进度以latest/终态回执为准；预算8400秒，先存真实scheduler-terminal再调用无工具CLI。batch-exit在自动归档之后写入，收尾时另取。学校保持数值提交，不同步此启动说明；本节不声称映射或原16门已经完成。
