@@ -1,0 +1,219 @@
+{
+  "job_id": 85778,
+  "commit": "741e7eb0634680b82d582d511da84bdb8c122e85",
+  "receipt": {
+    "path": "outputs/review-20260925/85778-boundary-prediction-review.tar.gz",
+    "size_bytes": 106602,
+    "sha256": "435be8565a2da00bc8529bf43afbc62762ac3b23a55270a14f33a407cf3c7e0f",
+    "files": [
+      {
+        "path": "declaration.json",
+        "size_bytes": 156326,
+        "sha256": "c182a4660b8ed1ba960a81f1ee703f09c9be193efa1d2db797da3097d7705b74",
+        "source_path": "outputs/hpc/x20-85744-boundary-prediction-20261005/declaration.json"
+      },
+      {
+        "path": "prediction.json",
+        "size_bytes": 295910,
+        "sha256": "bb5b6405967124bf8d5979c83485ab67e87edd24fc1ca3fcec393914f8b5ad77",
+        "source_path": "outputs/hpc/x20-85744-boundary-prediction-20261005/prediction.json"
+      },
+      {
+        "path": "summary.json",
+        "size_bytes": 719,
+        "sha256": "ed56e2ea8ce1d64ece5c9776661088b48e345f88d41fb5b97b2cf9f364c4a1dd",
+        "source_path": "outputs/hpc/x20-85744-boundary-prediction-20261005/summary.json"
+      },
+      {
+        "path": "status.json",
+        "size_bytes": 82,
+        "sha256": "9af8cebab367f27a657ccb653346659efa62c2fc7076814142bac76f4c2483c5",
+        "source_path": "outputs/hpc/x20-85744-boundary-prediction-20261005/status.json"
+      },
+      {
+        "path": "batch-exit.json",
+        "size_bytes": 205,
+        "sha256": "4fe06000df7bdb3b5a71559bd30acd624b7a86038a92aaa9ecf21f7ee724db9d",
+        "source_path": "outputs/hpc/x20-85744-boundary-prediction-20261005/batch-exit.json"
+      },
+      {
+        "path": "scheduler-terminal.json",
+        "size_bytes": 2718,
+        "sha256": "ee0426ff4af91c1d7a47c9f1dd0e64a2a64260736eaf3d19687301a7982e365b",
+        "source_path": "outputs/review-20260925/x20-85744-prediction-watch-85778/scheduler-terminal.json"
+      },
+      {
+        "path": "execution-terminal.json",
+        "size_bytes": 2718,
+        "sha256": "ee0426ff4af91c1d7a47c9f1dd0e64a2a64260736eaf3d19687301a7982e365b",
+        "source_path": "outputs/review-20260925/x20-85744-prediction-watch-85778/execution-terminal.json"
+      },
+      {
+        "path": "stdout.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "source_path": "outputs/hpc/logs/tde-x20-bpred-85778.out"
+      },
+      {
+        "path": "stderr.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "source_path": "outputs/hpc/logs/tde-x20-bpred-85778.err"
+      }
+    ]
+  },
+  "scheduler_terminal_verified": true,
+  "source_and_code_verified": true,
+  "code_claims_verified": 806,
+  "source_claims_verified": 18,
+  "independent_slab_reduction": true,
+  "small_qp_certificate_verified": true,
+  "result": {
+    "squared_l2": [
+      8.446993432570778e-08,
+      2.906207622412948e-08,
+      5.199746756768858e-08
+    ],
+    "linf": [
+      1.1649913004424528e-07,
+      8.200201449121147e-08,
+      9.925057226078948e-08
+    ],
+    "scales": [
+      0.03864693759727914,
+      0.03865311286157293,
+      0.03865002522942604
+    ],
+    "boundary": [
+      {
+        "boundary_l1": 1.5491131640589463e-07,
+        "boundary_bolometric": 6.392795043452608e-08,
+        "residual": 3.0144466104462354e-06
+      },
+      {
+        "boundary_l1": 1.2949622716880293e-07,
+        "boundary_bolometric": 6.392750345619161e-09,
+        "residual": 2.121485397175707e-06
+      },
+      {
+        "boundary_l1": 7.318171775342848e-08,
+        "boundary_bolometric": 3.516024986260494e-08,
+        "residual": 2.5679303356631565e-06
+      }
+    ],
+    "l2_ratios": [
+      1.0,
+      0.5865597261102753,
+      0.7845850311261916
+    ],
+    "linf_ratios": [
+      1.0,
+      0.7038852089287523,
+      0.8519426044048144
+    ],
+    "minima": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "checks": {
+      "full_field_nonnegative": true,
+      "full_l2_benefit": true,
+      "full_linf_nonincrease": true,
+      "half_l2_nonincrease": true,
+      "half_linf_nonincrease": true,
+      "full_radiation": true,
+      "full_boundary_l1": true,
+      "full_boundary_bolometric": true,
+      "half_radiation": true,
+      "half_boundary_l1": true,
+      "half_boundary_bolometric": true
+    },
+    "passed": true
+  },
+  "summary": {
+    "status": "prediction_passed_requires_review",
+    "passed": true,
+    "checks": {
+      "full_field_nonnegative": true,
+      "full_l2_benefit": true,
+      "full_linf_nonincrease": true,
+      "half_l2_nonincrease": true,
+      "half_linf_nonincrease": true,
+      "full_radiation": true,
+      "full_boundary_l1": true,
+      "full_boundary_bolometric": true,
+      "half_radiation": true,
+      "half_boundary_l1": true,
+      "half_boundary_bolometric": true
+    },
+    "wall_s": 527.7851199293509,
+    "peak_rss_bytes": 936206336,
+    "new_maps": 0,
+    "new_feedback_pairs": 0,
+    "new_material_steps": 0,
+    "candidate_written": false,
+    "baseline_replaced": false,
+    "strict_error_bound": false,
+    "exact_full_domain_sign_certificate": false
+  },
+  "coefficients": [
+    -6.846213173701946,
+    -0.3537868262980542,
+    0.0659556218584672
+  ],
+  "fields": [
+    {
+      "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "fb3a78180b1e57e4130c5dc395c34a52b4395864b2d5e450ac75e108542f6bb6"
+    },
+    {
+      "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "80f83b87df981c9649616339d3dcd701e7ec271fb7db13c6fbb54855087967ba"
+    },
+    {
+      "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map08/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "e48a890dc77ea2c64aa128af8492407607d3f49b41780cc9ffff41094a246f4c"
+    },
+    {
+      "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map08/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "c84b162a0151c15628d2ae2a19fa1dc7e5288f5a9a0a88b3a568c3f1cefe24b1"
+    },
+    {
+      "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "1b5cd4b473f70a22c81d0d030909a74eee9ccc36f212091b094daf740ffa5d05"
+    },
+    {
+      "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "ad1b7fb69dc45ec829f41531967bc0d30c423b9d0f4524298a5e24da7f71a7ba"
+    },
+    {
+      "path": "outputs/hpc/x20-global-window-feedback-20261001/historical/endpoints-map16/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "68d922e08fa17342dcd06c5738a3dca19d59a53132e09f59d45ec91de8d1c2fa"
+    },
+    {
+      "path": "outputs/hpc/x20-global-window-feedback-20261001/historical/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "1b92df718e981574c5e909e42bd15109bbe428d3209189200fd839625a603622"
+    }
+  ],
+  "squared_l2_80digit": [
+    "8.4469934325707782392120850870619291616744401140670327510142917246686207051662470E-8",
+    "2.9062076224129481357761405773584671684895657989116394757323227855043048833130063E-8",
+    "5.1997467567688581032833502929730554161006044426095210728158897527333165562464907E-8"
+  ],
+  "full_field_recomputed_on_mac": false,
+  "strict_error_bound": false,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "baseline_replaced": false
+}

@@ -1,0 +1,14 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "independent_review": true,
+  "draft": "handoff/evidence/20261006-x20-85778-lecture-draft.json",
+  "corrections": [
+    "完整301片八场扫描已在学校执行，不是仅小QP上的表达式检查。小QP选系数，扫描器用八源场逐点评价组合。",
+    "未重读大场和重算积分仅指Mac独立审阅，不适用于学校完整筛查。",
+    "full/half缺陷比来自完整浮点组合场的统计；它是预测缺陷p-q，不是已实测T(q)-q。",
+    "原11门给后续真实映射资格，不给物质反馈、校准或自洽解资格。"
+  ],
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0
+}

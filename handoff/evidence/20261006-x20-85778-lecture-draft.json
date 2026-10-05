@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 13688,
+  "duration_api_ms": 12502,
+  "ttft_ms": 12287,
+  "ttft_stream_ms": 1529,
+  "time_to_request_ms": 1188,
+  "num_turns": 1,
+  "result": "第133节 全场筛查通过与真实映射的区别\n\n先定义三个对象：q 为本轮同源小QP重建得到的候选场，是筛查与真实映射共同的输入；p 为预测管道的预测值，只是对映射结果的估计；T(q) 为真实算子作用在 q 上的映射结果，即真实map。三者不可互换：p 只是 T(q) 的近似，筛查通过的也只是小QP重建上的表达式检查。\n\n85778 在 anode02 真实完成（COMPLETED 0:0，子进程返回0，stderr空，程序527.79s，RSS936206336B）；新审阅脚本重建同源小QP及全部301片80位统计，原11门逐项一致。表中 full 缺陷L2比0.5866≤0.8，half 0.7846，Linf比0.7039/0.8519均非增；原辐射残差2.12e-6与2.57e-6、边界L1、边界总通量相对变化均过门，四组合场最小值0且计算元素非负。须强调：这是所执行浮点表达式的全场检查，不是所有点精确有理算术正性证书，也未读取大场重算积分。\n\n故本轮只是筛查通过，不等于真实map通过。缺陷比下降是小QP重建下的数值表现，不能当作误差界，更不能用预测 p 冒充 T(q)。下一步按 x20-85778-true-validation-v1.md：32CPU128GiB/16worker，full/half各一次原算子真实映射，最多2map、2h硬限，候选与筛查表达式逐位对照，输出须过原16真实门并独立复核；half仿射一致性误差不算缺陷降幅。通过后才定有界正式反馈窗口，现在没有新的物质接受或自洽大气结论。\n\n（约540字。本节以审计报告为唯一事实；未改数值代码、未读大场、未新增dat。）",
+  "stop_reason": "end_turn",
+  "session_id": "2d0ddc9e-3128-4fd3-be45-a96ef47aa2d8",
+  "total_cost_usd": 0.08375,
+  "usage": {
+    "input_tokens": 2420,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 2866,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 2420,
+      "outputTokens": 2866,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.08375,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "34f17753-e557-4799-ad9e-cf8d5f532147"
+}
