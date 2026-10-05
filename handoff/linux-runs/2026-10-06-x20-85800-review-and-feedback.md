@@ -21,3 +21,14 @@ POST-RUN：stderr无警告，完整片统计有限且无负平方，152worker退
 明确下一步：按x20-85800-seed-feedback-v1.md，在新目录以full真实输出启动historical最多16map，第8/16各一对正式反馈。分别比较新16−8、对84026加速前端点、对保存82518A16四组合。原七门/物理域/资源/来源失败停止；漂移失败只完成既定第二窗口，0物质更新，不自动扩预算。
 
 Mac新入口与审阅器相关测试39passed1.04s（含已审归档与实时来源字节篡改的正反例）；shell检查通过。学校CLI实际模型deepseek-v4-flash[1m]。终态草稿误把batch-exit不验证调度当成矛盾，讲义草稿误把half解释为分辨率、把残差直接联系未知解距离、把同物理步稳定性说成跨物理步，已逐项独立纠正并保留原文。讲义第134节按实际代码定义重写。
+
+
+## 85821实际启动与监督
+
+代码提交16ad4d6fabdec1e9e958d7168ead0828f25792c7；学校干净旧HEAD4d1a831，经完整bundle备份、增量verify/fetch新ref/ff-only同步。学校39tests21.16s，Mac39tests1.04s；shell/diff检查通过。Mac/GitHub已保存数值提交，学校运行中不再同步文档。
+
+2026-10-06 01:16:20提交85821，01:16:21开始RUNNING，anode02/Students/qos_stu_cpu_long、32CPU128GiB/16worker，硬限05:16:21、USR1提前900秒。01:17:00实际RUNNING/preparing/stderr0，尚无declaration、map或反馈结果，不能将计划16map写作已完成。提交和实际调度快照见20261006-x20-85821-submit.json、observation-00.json。
+
+watch PID1190228仅启动凭据，start_new_session、PYTHONPATH及Node PATH已配，输出x20-85800-feedback-watch-85821。首份CLI实际deepseek-v4-flash[1m]、无工具；独立复查确认科学边界正确，但16map字样只是计划。已保留原草稿及审阅。每30分钟heartbeat已切换到85821；失联先检查ControlMaster、暂停并提醒一次，不取消Slurm。
+
+备份Mac pre-85800-final-review-20261006.bundle、pre-85821-launch-note-20261006.bundle；学校pre-85800-feedback-code-20261006.bundle；增量85800-review-feedback-code-20261006.bundle；自动任务旧配置ustc-hhe-pre-85821-20261006.toml。下一轮必须刷新实际状态，终态取无dat归档和另存batch/scheduler回执，新审阅器须绑定85821、85800种子、84026前态、82518保存参照。

@@ -1,0 +1,9 @@
+{
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "read_only_cli": true,
+  "independent_review": "来源85800真实输出、84026与82518区分及科学边界正确。CLI短句16map/反馈8与16指声明上限和计划，不是已完成；实际仍preparing，尚无新map。",
+  "scientific_result_available": false,
+  "observed_unix": 1791220715.8999798
+}
