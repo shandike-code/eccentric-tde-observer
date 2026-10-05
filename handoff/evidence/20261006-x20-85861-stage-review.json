@@ -1,0 +1,24 @@
+{
+  "job_id": 85861,
+  "final_audit": "20261006-x20-85859-true-85861-review.json",
+  "first_end_to_end": true,
+  "verified_files": 325,
+  "verified_code": 799,
+  "verified_small_sources": 34,
+  "worker_receipts": 152,
+  "original_16_gates_passed": true,
+  "mac_tests": {
+    "passed": 80,
+    "seconds": 0.91
+  },
+  "shell_check": true,
+  "diff_check": true,
+  "new_math_check": true,
+  "lecture_section": 139,
+  "actual_cli_model": "deepseek-v4-flash[1m]",
+  "next_protocol": "x20-85861-seed-feedback-v1.md",
+  "next_stage_submitted": false,
+  "large_fields_read_on_mac": false,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0
+}

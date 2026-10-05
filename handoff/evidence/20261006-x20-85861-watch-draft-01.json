@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 5914,
+  "duration_api_ms": 5727,
+  "ttft_ms": 5154,
+  "ttft_stream_ms": 402,
+  "time_to_request_ms": 179,
+  "num_turns": 1,
+  "result": "85861 监督（只读，JSON 为准）：\n\nscontrol 明确 JobState=COMPLETED、ExitCode=0:0、RunTime 01:10:17、NodeList=anode02，故该作业真实终态已确证；batch_exit 中 scheduler_terminal_verified=false 只是未经 scontrol 核验的标记，现不与 COMPLETED 矛盾。\n\n结果 status=true_maps_validated_requires_review，validated=true；new_maps=2（full/half 各一），new_feedback_pairs=0、new_material_steps=0，accepted=20 未变。前后哈希一致，baseline_replaced=false、strict_error_bound=false：未替换基线、未给严格误差界。\n\n原 16 真实门及 T(q) 与预测 p 的一致性仍待独立实测；84026 终态未知保留。不宣称自洽大气或整盘 I_nu，不自动续交。",
+  "stop_reason": "end_turn",
+  "session_id": "d5d1afda-e430-42a7-9e2e-fd03b1aee2e2",
+  "total_cost_usd": 0.04845,
+  "usage": {
+    "input_tokens": 3265,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1285,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 3265,
+      "outputTokens": 1285,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.04845,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "eaa98fef-ecd3-4290-84b1-156b0e7033f0"
+}

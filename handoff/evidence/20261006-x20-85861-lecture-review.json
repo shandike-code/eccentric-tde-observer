@@ -1,0 +1,18 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "20261006-x20-85861-lecture-draft.json",
+  "independently_revised": true,
+  "evidence": "20261006-x20-85859-true-85861-review.json",
+  "lecture_section": 139,
+  "corrections": [
+    "x0/y0来自85821H16 iteration15原输入/输出，不是85861 full输入/输出。",
+    "c是三个带负项的全局仿射系数，不是凸组合标量或half分数；q直接由四对输入生成，p由四对输出生成。",
+    "真实缺陷L2 0.437993/0.689145与Linf 0.535618/0.767809已列出，不能说未给。",
+    "固定点残差不直接等于到未知固定点的距离；删去单次自洽与曲率定量推断。",
+    "boundary_ratios依次full、half，有明确标签，不应称无法指派。",
+    "Mac的80位是Decimal 80个十进制有效位归并，不是80-bit extended硬件精度。",
+    "map译为映射，不是图；本轮无作图。",
+    "新16-8、对85821、对保存A是三类比较，每类向量均包含previous/final四组合。",
+    "原16门中辐射/边界门不等同完整物理验证；84026缺的是调度终态，已有数值审计不应抹去。"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "20261006-x20-85861-watch-draft-01.json",
+  "independently_revised": true,
+  "corrections": [
+    "原16门和T(q)与p的比较已经在学校完成实测，watch当时待的是Mac独立归并与来源审阅，不是尚待实测。",
+    "batch-exit只记录Python返回，scheduler-terminal另有真实COMPLETED；两条证据不矛盾。"
+  ],
+  "final_status": "Mac首次完整审阅325工件、799源码、34小来源、152worker、301片及原16门通过；0反馈物质，84026调度未知保留。"
+}
