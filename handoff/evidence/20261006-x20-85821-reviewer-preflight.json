@@ -1,0 +1,72 @@
+{
+  "job_id": 85821,
+  "numerical_commit": "16ad4d6fabdec1e9e958d7168ead0828f25792c7",
+  "copied_declaration_sha256": "e371c1accf408775368c08caddf904e109fe15c7f7ad270600f5d499fd0ae578",
+  "verified_source_claims": 885,
+  "verified_code_claims": 796,
+  "external_dat_claims_bound_to_prior_audits": [
+    {
+      "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "fb3a78180b1e57e4130c5dc395c34a52b4395864b2d5e450ac75e108542f6bb6"
+    },
+    {
+      "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "80f83b87df981c9649616339d3dcd701e7ec271fb7db13c6fbb54855087967ba"
+    },
+    {
+      "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map08/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "e48a890dc77ea2c64aa128af8492407607d3f49b41780cc9ffff41094a246f4c"
+    },
+    {
+      "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map08/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "c84b162a0151c15628d2ae2a19fa1dc7e5288f5a9a0a88b3a568c3f1cefe24b1"
+    },
+    {
+      "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "1b5cd4b473f70a22c81d0d030909a74eee9ccc36f212091b094daf740ffa5d05"
+    },
+    {
+      "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "ad1b7fb69dc45ec829f41531967bc0d30c423b9d0f4524298a5e24da7f71a7ba"
+    },
+    {
+      "path": "outputs/hpc/x20-global-window-feedback-20261001/historical/endpoints-map16/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "68d922e08fa17342dcd06c5738a3dca19d59a53132e09f59d45ec91de8d1c2fa"
+    },
+    {
+      "path": "outputs/hpc/x20-global-window-feedback-20261001/historical/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "1b92df718e981574c5e909e42bd15109bbe428d3209189200fd839625a603622"
+    },
+    {
+      "path": "outputs/hpc/x20-85778-true-validation-20261006/full/state_1.dat",
+      "size_bytes": 10099884032,
+      "sha256": "d7ced0397fa1a446e9e1571c575ec1b06fef4867c6a19b49a72c788eef026d83"
+    }
+  ],
+  "pending_small_claims": [
+    {
+      "path": "outputs/hpc/x20-85800-seed-feedback-20261006/inputs/trial_material.npz",
+      "size_bytes": 27774,
+      "sha256": "36434a29123e2387195b77713baffaecd046f7d6c0297a5d0d95a74319e22eda"
+    },
+    {
+      "path": "outputs/hpc/x20-85800-seed-feedback-20261006/inputs/config.json",
+      "size_bytes": 5575014,
+      "sha256": "17dca1c71455ca9cdefcfe8942d6446a2ef99559a64a18cd671d98c5d3552ed1"
+    }
+  ],
+  "component_preflight_only": true,
+  "complete_experiment_review_performed": false,
+  "component_tests": "56 passed in 4.98s",
+  "reviewer": "handoff/audit_tools/review_x20_85821_feedback.py",
+  "source_small_claims_checked_by_sha": true,
+  "source_and_code_preflight_not_complete_experiment_audit": true
+}

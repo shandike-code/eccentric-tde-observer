@@ -1,0 +1,80 @@
+{
+  "job_id": 85821,
+  "observed_unix": 1791221805.555067,
+  "observed_local": "2026-10-06T01:36:45.555072",
+  "scontrol": "JobId=85821 JobName=tde-x20-bseed UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:20:24 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-10-06T01:16:20 EligibleTime=2026-10-06T01:16:20 AccrueTime=2026-10-06T01:16:20 StartTime=2026-10-06T01:16:21 EndTime=2026-10-06T05:16:21 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-06T01:16:21 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:1190145 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85800_seed_feedback.sbatch SubmitLine=sbatch --parsable operations/x20_85800_seed_feedback.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-bseed-85821.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-bseed-85821.out TresPerTask=cpu=32\n",
+  "scontrol_stderr": "",
+  "status.json": {
+    "status": "preparing",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1791220597.6739714
+  },
+  "declaration.json": {
+    "environment": {
+      "git_commit": "16ad4d6fabdec1e9e958d7168ead0828f25792c7",
+      "tracked_worktree_dirty": false,
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.8.0-53-generic-x86_64-with-glibc2.39",
+      "machine": "x86_64",
+      "logical_host_cpus": 128,
+      "cpu_affinity_count": 32,
+      "scheduler": {
+        "SLURM_JOB_ID": "85821",
+        "SLURM_JOB_PARTITION": "Students",
+        "SLURM_JOB_QOS": "qos_stu_cpu_long",
+        "SLURM_CPUS_PER_TASK": "32",
+        "SLURM_MEM_PER_NODE": "131072",
+        "SLURM_JOB_NODELIST": "anode02"
+      },
+      "cgroup_v2": {},
+      "packages": {
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "matplotlib": "3.11.1",
+        "pytest": "9.1.1"
+      },
+      "project_free_bytes": 962038798299136,
+      "warning": "Host resources are not necessarily this job's allocation."
+    },
+    "seeds": {
+      "historical": {
+        "path": "outputs/hpc/x20-85778-true-validation-20261006/full/state_1.dat",
+        "size_bytes": 10099884032,
+        "sha256": "d7ced0397fa1a446e9e1571c575ec1b06fef4867c6a19b49a72c788eef026d83"
+      }
+    },
+    "source_jobs": [
+      76727,
+      80195,
+      82518,
+      84026,
+      85744,
+      85778,
+      85800
+    ],
+    "maximum_maps": 16,
+    "maximum_feedback_pairs": 2,
+    "source_84026_scheduler_terminal_verified": false
+  },
+  "historical/state.json": {
+    "status": "initializing",
+    "history": [],
+    "active_map": null,
+    "current_path": null,
+    "current_sha256": null
+  },
+  "map_block_counts": {},
+  "feedback_decisions": [],
+  "stderr_bytes": 0,
+  "watch_latest.json": {
+    "observed_unix": 1791221754.98017,
+    "scheduler_state": "RUNNING",
+    "status": {
+      "status": "preparing",
+      "accepted_outer_steps": 20,
+      "new_material_steps": 0,
+      "updated_unix": 1791220597.6739714
+    }
+  }
+}

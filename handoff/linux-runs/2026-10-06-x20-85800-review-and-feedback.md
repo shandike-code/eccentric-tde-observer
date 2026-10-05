@@ -32,3 +32,16 @@ Mac新入口与审阅器相关测试39passed1.04s（含已审归档与实时来�
 watch PID1190228仅启动凭据，start_new_session、PYTHONPATH及Node PATH已配，输出x20-85800-feedback-watch-85821。首份CLI实际deepseek-v4-flash[1m]、无工具；独立复查确认科学边界正确，但16map字样只是计划。已保留原草稿及审阅。每30分钟heartbeat已切换到85821；失联先检查ControlMaster、暂停并提醒一次，不取消Slurm。
 
 备份Mac pre-85800-final-review-20261006.bundle、pre-85821-launch-note-20261006.bundle；学校pre-85800-feedback-code-20261006.bundle；增量85800-review-feedback-code-20261006.bundle；自动任务旧配置ustc-hhe-pre-85821-20261006.toml。下一轮必须刷新实际状态，终态取无dat归档和另存batch/scheduler回执，新审阅器须绑定85821、85800种子、84026前态、82518保存参照。
+
+
+## 01:36续查与独立审阅器准备
+
+01:36:45真实RUNNING累计20m24s，仍32CPU128GiB，stderr0；声明已生成，固定数值16ad4d6与真实种子d7ced039逐项核对，84026 scheduler_verified仍false。history为空、active_map=null、无map块或反馈判决，不把preparing或声明存在当成已完成一张map。快照20261006-x20-85821-progress-0136.json。
+
+新增Mac审阅器review_x20_85821_feedback.py，绑定当前数值提交、85800真实full种子、84026直接前态与82518保存参考；继续完整向量差和原80195信号归约。增加子进程成功与真实Slurm终态的独立判定：COMPLETED要求精确job/exit/resource回执；只有child退出时仍unknown。缺失小来源不可冒充外部大场，硬失败反馈拒绝进入成功审阅模板。终态需ROOT/85821-stderr.log、85821-batch-exit.json及--terminal证据；部分pair归档不传--terminal。
+
+56项相关测试4.98s通过；885项现有来源与796项源码声明独立SHA核对通过，9个dat只绑定已审来源清单，当前run两项inputs留待归档核验。这是组件/来源预检查，不是本轮完整E2E审计；本轮还没有正式反馈结果。证据20261006-x20-85821-reviewer-preflight.json。备份pre-85821-reviewer-20261006.bundle已保存；新审阅器仅留Mac，不同步到正在运行的学校工作树。
+
+另查初始化I/O：配置有30878条来源声明，其中68个不同dat共686792114176字节（约639.6GiB）需在原入口核验。sstat读取计数在01:31:07为396302992506，01:38:12为783754460577；这是调度统计，不等同物理磁盘流量测量。后一次environment-85821.json已经存在、state仍initializing，结合pipeline.run_pipeline的执行顺序，可判断入口source核验已经结束，尚在warm seed初始化流程；不是已派发map。未取消作业、未跳过哈希或修改运行依赖。原始新快照20261006-x20-85821-initialization-io.json。
+
+POST-RUN（审阅器组件预检）：测试通过、来源SHA相符；没有计算新的响应、加热或大场范数，故不作收敛/物理解/最终I_nu结论。后续必须对真实pair08/pair16及终态归档做完整独立审计。

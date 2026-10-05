@@ -1,0 +1,26 @@
+{
+  "job_id": 85821,
+  "observed_unix": 1791221892.052704,
+  "source_claim_count": 30878,
+  "dat_claim_occurrences": 68,
+  "unique_dat_claims": 68,
+  "declared_dat_hash_read_bytes": 686792114176,
+  "initialization_environment_exists": true,
+  "native_trial_audit_exists": true,
+  "initialized_identity_exists": false,
+  "state": {
+    "config_sha256": "5e123210e0f65ab897a6e0bed360613c381c52780556d4a462fcd1271330fdeb",
+    "status": "initializing",
+    "initialization_blocks": [],
+    "history": [],
+    "slots": [
+      "outputs/hpc/x20-85800-seed-feedback-20261006/historical/state_0.dat",
+      "outputs/hpc/x20-85800-seed-feedback-20261006/historical/state_1.dat",
+      "outputs/hpc/x20-85800-seed-feedback-20261006/historical/state_2.dat"
+    ],
+    "current_slot": 0,
+    "active_map": null
+  },
+  "sstat": "85821.batch    00:15:20    178548K 783754460577     11731710 \n",
+  "sstat_stderr": ""
+}
