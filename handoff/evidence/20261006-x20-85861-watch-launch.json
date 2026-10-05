@@ -1,0 +1,17 @@
+{
+  "job_id": 85861,
+  "pid": 2238743,
+  "command": [
+    ".venv-hpc/bin/python",
+    "handoff/audit_tools/watch_x20_85859_true.py",
+    "--job",
+    "85861",
+    "--output",
+    "outputs/review-20260925/x20-85859-true-watch-85861"
+  ],
+  "start_new_session": true,
+  "budget_s": 8400,
+  "poll_s": 60,
+  "launched_unix": 1791232874.1843243,
+  "meaning": "PID is launch receipt only; scheduler execution requires separate observation"
+}

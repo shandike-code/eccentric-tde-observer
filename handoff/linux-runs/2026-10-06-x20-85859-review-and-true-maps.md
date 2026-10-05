@@ -15,3 +15,17 @@
 Mac47相关tests0.89s、shell/diff通过，包含实际85859/85821审计身份负路径与跨块写场逐位检查。学校测试和实际source_plan预检须另存回执；本报告此处没有把待运行写为通过。Mac完整备份pre-85859-final-review-20261006.bundle、学校pre-85859-true-code-20261006.bundle均verify。
 
 讲义138及学校无工具CLI draft/review已保存，实际deepseek-v4-flash[1m]。草稿将q称参数向量、把p描述为直接由q经过廉价模型、把内部残差说成守恒、遗漏full≤0.8并把内存扫描称落盘样本，均按源码与完整审计纠正。watch终态草稿“非全场非负证明”已限定到尚无精确有理全域证书。原文保留。
+
+## 85861真实映射启动记录
+
+完整两端预检后于04:41:01提交85861，并实际开始RUNNING，anode02/Students/qos_stu_cpu_long、32CPU128GiB16worker，2h硬限06:41:01、USR1提前300s。学校数值68452895c7953a4540d285a02e200b61f5b0cf3d且clean。04:44:43实测writing_candidates、stderr0；这不是已完成映射或通过原16门。
+
+学校47tests10.80s、shell/diff通过；实际source_plan12.495882966s验证34项小来源与试态逐位/native身份，锚点iteration15，未读大场。free961869922476032B超过10完整场要求。增量85859-review-true-code-20261006.bundle=40160B、SHA fce1708a208f9b7ef9b2e2d5539282c103f3520d18c335b014288654a007fc07，经两端verify、fetch新ref、ff-only同步。提交、watch-launch、observation-00与学校preflight原始JSON已下载。
+
+watch PID2238743仅启动凭据；预算8400s/60s、PYTHONPATH/NodePATH/start_new_session齐全，先保存实际scheduler-terminal再调用无工具CLI。watch-00实际deepseek-v4-flash[1m]；已将草稿笼统“系数和锚点均待实测”纠正为两者已绑定，真实T(q)及原16门待实测。batch-exit仍只证明Python退出，不能替代Slurm终态。
+
+新review_x20_85861_true.py绑定85861/6845289、85859筛查、新八场与系数、85821真实终态及84026未知。72相关tests0.94s通过；预检查799源码/32直接小来源SHA及8外部dat原审计清单通过，当前run两项inputs等待归档。这不是完整E2E。正式审阅还须核152worker与76块所有权、trial/native、301片80位全部统计和原16门、源场前后身份、代码与资源。若失败保留失败工件，不强过成功模板。
+
+终态命令：`PYTHONPATH=.:src:scripts OPENBLAS_NUM_THREADS=1 .venv/bin/python handoff/audit_tools/review_x20_85861_true.py --job 85861 --base <archive-stem>`。ROOT为outputs/review-20260925，需同stem.tar.gz、stem-receipt.json、stem.json以及85861-stderr.log、85861-batch-exit.json；终态或执行快照为handoff/evidence/20261006-x20-85859-true-85861-terminal.json。只有child退出时允许用完整execution observation保留scheduler未知，禁止伪造COMPLETED。收件目录x20-85859-true-85861-received必须全新。自动归档排除dat，batch-exit晚于归档，须单独取回。
+
+Mac完整备份pre-85861-launch-note-20261006.bundle已verify。后续启动记录和审阅器只提交Mac/GitHub；学校运行中保持6845289。只新增启动审计，无新讲义或物理结果，讲义138仍属85859筛查审阅。

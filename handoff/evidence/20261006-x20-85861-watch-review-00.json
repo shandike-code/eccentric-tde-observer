@@ -1,0 +1,20 @@
+{
+  "job_id": 85861,
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "tools_disabled": true,
+  "independent_review": true,
+  "corrections": [
+    "系数c和85821H16 previous到final的iteration15锚点已由85859审计与本次声明确定；待实测的是两张T(q)及原16真实门，不能笼统称系数和锚点也未知。",
+    "04:44:43实际状态writing_candidates，没有已完成map或validation；RUNNING/ExitCode=0:0不是终态成功。"
+  ],
+  "retained_scope": {
+    "accepted_outer_steps": 20,
+    "maximum_maps": 2,
+    "new_feedback_pairs": 0,
+    "new_material_steps": 0,
+    "source_85821_scheduler_terminal_verified": true,
+    "source_84026_scheduler_terminal_verified": false
+  }
+}

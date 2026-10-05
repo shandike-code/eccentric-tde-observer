@@ -1,0 +1,33 @@
+{
+  "job_id": 85861,
+  "numerical_commit": "68452895c7953a4540d285a02e200b61f5b0cf3d",
+  "mac_tests": {
+    "passed": 47,
+    "seconds": 0.89
+  },
+  "school_tests": {
+    "passed": 47,
+    "seconds": 10.8
+  },
+  "school_source_preflight": "handoff/evidence/20261006-x20-85859-true-preflight.json",
+  "shell_diff_pass": true,
+  "complete_backups_verified": true,
+  "incremental_bundle": {
+    "path": "outputs/review-20260925/85859-review-true-code-20261006.bundle",
+    "size_bytes": 40160,
+    "sha256": "fce1708a208f9b7ef9b2e2d5539282c103f3520d18c335b014288654a007fc07"
+  },
+  "start": "2026-10-06T04:41:01+08:00",
+  "hard_limit_end": "2026-10-06T06:41:01+08:00",
+  "actual_scheduler_state": "RUNNING",
+  "actual_phase": "writing_candidates",
+  "cpus": 32,
+  "memory_gib": 128,
+  "workers": 16,
+  "maximum_maps": 2,
+  "maximum_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "accepted_outer_steps": 20,
+  "school_worktree_frozen_during_run": true,
+  "reviewer_preflight_only": true
+}

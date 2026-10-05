@@ -1,0 +1,172 @@
+{
+  "job_id": 85861,
+  "observed_unix": 1791233083.7092657,
+  "scontrol": "JobId=85861 JobName=tde-x20-btrue UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:03:42 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-10-06T04:41:01 EligibleTime=2026-10-06T04:41:01 AccrueTime=2026-10-06T04:41:01 StartTime=2026-10-06T04:41:01 EndTime=2026-10-06T06:41:01 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-06T04:41:01 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2238197 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85859_true_validation.sbatch SubmitLine=sbatch --parsable operations/x20_85859_true_validation.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-btrue-85861.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-btrue-85861.out TresPerTask=cpu=32\n",
+  "scheduler_stderr": "",
+  "returncode": 0,
+  "git_commit": "68452895c7953a4540d285a02e200b61f5b0cf3d",
+  "git_status": "",
+  "status": {
+    "status": "writing_candidates",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "unix": 1791233015.2739282
+  },
+  "declaration": {
+    "git_commit": "68452895c7953a4540d285a02e200b61f5b0cf3d",
+    "git_clean": true,
+    "field_stats_before": [
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map16/previous.dat",
+        "inode": 4977861131,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791226081000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map16/final.dat",
+        "inode": 4977874699,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791226117000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map08/previous.dat",
+        "inode": 5098096391,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791223592000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map08/final.dat",
+        "inode": 5098131463,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791223628000000000
+      },
+      {
+        "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/previous.dat",
+        "inode": 3913909506,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790959367000000000
+      },
+      {
+        "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/final.dat",
+        "inode": 3913921026,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790959398000000000
+      },
+      {
+        "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/previous.dat",
+        "inode": 4687111438,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790856673000000000
+      },
+      {
+        "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/final.dat",
+        "inode": 4775433735,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790856704000000000
+      }
+    ],
+    "source_85821_scheduler_terminal_verified": true,
+    "source_84026_scheduler_terminal_verified": false,
+    "environment": {
+      "git_commit": "68452895c7953a4540d285a02e200b61f5b0cf3d",
+      "tracked_worktree_dirty": false,
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.8.0-53-generic-x86_64-with-glibc2.39",
+      "machine": "x86_64",
+      "logical_host_cpus": 128,
+      "cpu_affinity_count": 32,
+      "scheduler": {
+        "SLURM_JOB_ID": "85861",
+        "SLURM_JOB_PARTITION": "Students",
+        "SLURM_JOB_QOS": "qos_stu_cpu_long",
+        "SLURM_CPUS_PER_TASK": "32",
+        "SLURM_MEM_PER_NODE": "131072",
+        "SLURM_JOB_NODELIST": "anode02"
+      },
+      "cgroup_v2": {},
+      "packages": {
+        "numpy": "2.5.2",
+        "scipy": "1.18.1",
+        "matplotlib": "3.11.1",
+        "pytest": "9.1.1"
+      },
+      "project_free_bytes": 961869768511488,
+      "warning": "Host resources are not necessarily this job's allocation."
+    }
+  },
+  "watch_latest": {
+    "job_id": 85861,
+    "state": "RUNNING",
+    "scontrol": "JobId=85861 JobName=tde-x20-btrue UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:03:19 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-10-06T04:41:01 EligibleTime=2026-10-06T04:41:01 AccrueTime=2026-10-06T04:41:01 StartTime=2026-10-06T04:41:01 EndTime=2026-10-06T06:41:01 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-06T04:41:01 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2238197 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85859_true_validation.sbatch SubmitLine=sbatch --parsable operations/x20_85859_true_validation.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-btrue-85861.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-btrue-85861.out TresPerTask=cpu=32\n",
+    "scheduler_stderr": "",
+    "observed_unix": 1791233060.662293,
+    "status": {
+      "status": "writing_candidates",
+      "accepted_outer_steps": 20,
+      "new_material_steps": 0,
+      "unix": 1791233015.2739282
+    }
+  },
+  "watch_claude-review-00": {
+    "type": "result",
+    "subtype": "success",
+    "is_error": false,
+    "api_error_status": null,
+    "duration_ms": 3443,
+    "duration_api_ms": 3266,
+    "ttft_ms": 2669,
+    "ttft_stream_ms": 389,
+    "time_to_request_ms": 173,
+    "num_turns": 1,
+    "result": "\u6536\u5230\uff0c\u53ea\u8bfb\u76d1\u7763\u3002\n\n\u5df2\u8bb0\u5f55\uff1a85861 RUNNING\uff08anode02\uff0c32CPU/128G\uff0c\u96502h\uff0c04:41 \u8d77\uff0cx20_85859_true_validation.sbatch\uff09\uff0cfull/half \u5404\u4e00 map\u3001\u6700\u591a 2map\u30010 \u53cd\u9988/\u7269\u8d28\u6b65\uff1bc \u4e0e\u951a\u70b9 85821 H16\u2192final \u7b2c15\u5f20\u3001\u539f16 \u771f\u5b9e\u95e8\u53ca T(q) \u5bf9 p \u4e00\u81f4\u6027\u5747\u5f85\u5b9e\u6d4b\uff0c\u4ee5 summary/validation \u4e3a\u51c6\u3002\n\n\u4e0d\u5c06 half \u4eff\u5c04\u4e00\u81f4\u6027\u8bef\u5dee\u5f53\u964d\u5e45\uff1baccepted20/r20 \u4e0d\u53d8\uff1b84026 \u8c03\u5ea6\u7ec8\u6001\u672a\u77e5\u4fdd\u7559\u3001\u6e90 85821 \u771f\u5b9e COMPLETED \u5df2\u5ba1\uff1bbatch_exit \u4ec5\u8bc1 Python \u8fd4\u56de\uff0cfalse \u4e0d\u4e0e\u771f\u5b9e scontrol \u7ec8\u6001\u77db\u76fe\u3002\u4e0d\u5ba3\u79f0\u81ea\u6d3d\u5927\u6c14\u6216\u6574\u76d8 I_nu\uff0c\u4e0d\u81ea\u52a8\u7eed\u4ea4\u3002",
+    "stop_reason": "end_turn",
+    "session_id": "bbc191ce-454c-45a0-a941-72ab153d244f",
+    "total_cost_usd": 0.028950000000000004,
+    "usage": {
+      "input_tokens": 2435,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 671,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "modelUsage": {
+      "deepseek-v4-flash[1m]": {
+        "inputTokens": 2435,
+        "outputTokens": 671,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 0.028950000000000004,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 32000
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "uuid": "b234dc9a-f609-4a5d-b494-cfce45dc6ce7"
+  },
+  "err": {
+    "path": "outputs/hpc/logs/tde-x20-btrue-85861.err",
+    "size_bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "text": ""
+  },
+  "out": {
+    "path": "outputs/hpc/logs/tde-x20-btrue-85861.out",
+    "size_bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "text": ""
+  }
+}

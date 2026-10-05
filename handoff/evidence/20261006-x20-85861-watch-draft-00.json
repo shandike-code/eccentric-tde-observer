@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 3443,
+  "duration_api_ms": 3266,
+  "ttft_ms": 2669,
+  "ttft_stream_ms": 389,
+  "time_to_request_ms": 173,
+  "num_turns": 1,
+  "result": "收到，只读监督。\n\n已记录：85861 RUNNING（anode02，32CPU/128G，限2h，04:41 起，x20_85859_true_validation.sbatch），full/half 各一 map、最多 2map、0 反馈/物质步；c 与锚点 85821 H16→final 第15张、原16 真实门及 T(q) 对 p 一致性均待实测，以 summary/validation 为准。\n\n不将 half 仿射一致性误差当降幅；accepted20/r20 不变；84026 调度终态未知保留、源 85821 真实 COMPLETED 已审；batch_exit 仅证 Python 返回，false 不与真实 scontrol 终态矛盾。不宣称自洽大气或整盘 I_nu，不自动续交。",
+  "stop_reason": "end_turn",
+  "session_id": "bbc191ce-454c-45a0-a941-72ab153d244f",
+  "total_cost_usd": 0.028950000000000004,
+  "usage": {
+    "input_tokens": 2435,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 671,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 2435,
+      "outputTokens": 671,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.028950000000000004,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "b234dc9a-f609-4a5d-b494-cfce45dc6ce7"
+}
