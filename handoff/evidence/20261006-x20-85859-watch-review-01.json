@@ -1,0 +1,26 @@
+{
+  "job_id": 85859,
+  "draft": "handoff/evidence/20261006-x20-85859-watch-draft-01.json",
+  "draft_sha256": "979016b6a5d390fb1d408bb986328dbe25ecbd4b2686bbdbd01be986659d838d",
+  "actual_model_usage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 3342,
+      "outputTokens": 1006,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.041859999999999994,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "independently_reviewed": true,
+  "corrections": [
+    "完整301片已检查全部存储binary64表达式所生成的四场非负；“非全场非负证明”需限定为尚无精确有理全域非负证书或舍入界，不能把完整扫描误成抽样。",
+    "0map/feedback/material及无新dat不等于没有小JSON等诊断产物；避免笼统“无副作用”。"
+  ],
+  "retained_valid_claims": [
+    "真实Slurm COMPLETED0:0/12m39s与childexit0证据范围不同且一致。",
+    "本次原11门数值通过仍须独立审阅；不授予真实映射、物质接受或校准资格。"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "job_id": 85859,
+  "first_end_to_end_audit_passed": true,
+  "code_claims_verified": 810,
+  "source_claims_verified": 18,
+  "slabs_verified": 301,
+  "original_gates_passed": 11,
+  "source_84026_scheduler_terminal_verified": false,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "next_phase": {
+    "protocol": "handoff/protocols/x20-85859-true-validation-v1.md",
+    "maximum_maps": 2,
+    "maximum_feedback_pairs": 0,
+    "new_material_steps": 0,
+    "cpus": 32,
+    "memory_gib": 128,
+    "workers": 16,
+    "hard_limit_s": 7200,
+    "signal_before_s": 300,
+    "school_source_preflight_pending": true
+  },
+  "mac_tests": {
+    "passed": 47,
+    "seconds": 0.89
+  },
+  "new_math_sections_pass": true,
+  "shell_diff_pass": true
+}

@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 5214,
+  "duration_api_ms": 5053,
+  "ttft_ms": 4490,
+  "ttft_stream_ms": 401,
+  "time_to_request_ms": 146,
+  "num_turns": 1,
+  "result": "85859 Slurm真实终态COMPLETED(ExitCode 0:0，12:39)，哈希前后一致，0 map/反馈/物质，候选与基线均未写，无副作用。原11门全场筛查全部true(status=prediction_passed_requires_review)，但strict_error_bound=false、exact_full_domain_sign_certificate=false——仅经验筛查通过，非全场非负证明，与\"小QP通过不证明全场非负\"一致。batch_exit.scheduler_terminal_verified=false与scontrol成功不矛盾。待Mac独立归并原11门后再定真实映射。",
+  "stop_reason": "end_turn",
+  "session_id": "cb69c2de-abbb-4dec-8843-1dea76890524",
+  "total_cost_usd": 0.041859999999999994,
+  "usage": {
+    "input_tokens": 3342,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1006,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 3342,
+      "outputTokens": 1006,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.041859999999999994,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "386f29f2-297f-4785-9ec3-c30f5fd82b59"
+}

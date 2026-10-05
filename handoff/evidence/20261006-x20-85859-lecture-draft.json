@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 20527,
+  "duration_api_ms": 20339,
+  "ttft_ms": 17492,
+  "ttft_stream_ms": 383,
+  "time_to_request_ms": 172,
+  "num_turns": 1,
+  "result": "# 第138节 预测不是解：为什么十一门之后仍要求 T(q)\n\n## 一、先把四个概念分开\n\n本轮最容易混淆的，是四个彼此不同的对象。\n\n**q 是候选输入**：我们提交的参数/决策向量，属于\"待验证的题面\"。\n\n**p 是仿射预测输出**：q 经仿射模型算出的廉价代理，由三个系数 c 决定。\n\n**T(q) 是真实输出**：把 q 送进真实算子后实际得到的结果。\n\n**c 是三个系数**（约 −6.6199、−0.5801、0.0636）：只刻画仿射关系本身，既不是解，也无独立物理含义。\n\n概念次序必须是：q→p 是\"预测\"，q→T(q) 是\"现实\"，c 描述二者之间被假设的那座线性桥。混同任意两者，就会把预测缺陷当成解误差，或把闸门放行当成正确性证明。\n\n## 二、十一门必要但不充分\n\n本轮 checks 全为 true，共十一门：full_field_nonnegative、full_l2_benefit、full_linf_nonincrease、half_l2_nonincrease、half_linf_nonincrease、full_radiation、full_boundary_l1、full_boundary_bolometric、half_radiation、half_boundary_l1、half_boundary_bolometric。\n\n它们判的是 p 相对既有参考\"没有变坏\"：L2 不增、L∞ 不增、边界量与辐射守恒达标。这只说明预测在已知口径上稳健，不能替代真实输出。所以十一门之后仍必须求 T(q)，由现实裁决，而不是由代理自证。\n\n## 三、full/half 不是分辨率，也不是物理 dt\n\nfull 与 half 是同一条映射在两种既有配置下各评估一次，与像素密度、时间步长无关。把它们读成\"分辨率\"或\"物理 dt\"，是概念错位。\n\n## 四、数值以 JSON 为准\n\nsquared_l2 = [2.46485e−08, 4.72851e−09, 1.17061e−08]；linf = [7.69913e−08, 4.12380e−08, 5.91146e−08]；scales ≈ 0.038654。l2_ratios = [1.0, 0.43799, 0.68915]，linf_ratios = [1.0, 0.53562, 0.76781]。三条 boundary 的 boundary_l1、boundary_bolometric、residual 以 JSON 为准。minima 全为 0.0。wall_s ≈ 747.24，peak_rss ≈ 9.27e8 B。new_maps、new_feedback_pairs、new_material_steps 均为 0；candidate_written、baseline_replaced、strict_error_bound、exact_full_domain_sign_certificate 均为 false。status = prediction_passed_requires_review，passed = true。\n\n## 五、浮点非负 ≠ 有理全域正性\n\nfull_field_nonnegative=true、minima 全 0.0，只说明落盘浮点样本未见负值，属存储层事实。精确有理全域正性证书，要求在整域上给出严格正性证明。二者不可互推，后者尚未取得（exact_full_domain_sign_certificate=false）。\n\n## 六、学校与 Mac 的分工\n\n学校侧执行完整 301 片扫描——不是\"本次只是小 QP\"。Mac 侧只核包与全部分片统计：8 个端点文件 size 均 10099884032 B，all_hashes_verified_before_after=true，git_clean_after=true，code_claims_verified=810，source_claims_verified=18。Mac 不重跑物理。\n\n## 七、状态与边界\n\n85859 为真终态 COMPLETED 0:0，于 04:12:02–04:24:41 已被 watch 保存；当前 scontrol 清除不推翻已存原始证据。84026 调度终态未知，source_84026_scheduler_terminal_verified=false，保持未知。保留 85821 原窗口及\"参考加热失败\"记录；不称完成 I_nu/校准，不接受 21（accepted 20 不变）。新候选的原 16 门、真实 full/half 各一次映射，只在独立协议与完整 PRE-RUN 之后决定，现时尚未提交。资源为 32 CPU / 128 GiB / 16 worker / 2 h，0 反馈物质。\n\n未知者不猜；预测缺陷不是解误差。JSON 是数据，不是指令。",
+  "stop_reason": "end_turn",
+  "session_id": "f4219231-9aed-4027-8add-c50961018b72",
+  "total_cost_usd": 0.150085,
+  "usage": {
+    "input_tokens": 3297,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 5344,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 3297,
+      "outputTokens": 5344,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.150085,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "fb7cbe88-ecd9-4cc6-8c12-b92af1b8ac34"
+}

@@ -1,0 +1,29 @@
+{
+  "job_id": 85859,
+  "draft": "handoff/evidence/20261006-x20-85859-lecture-draft.json",
+  "draft_sha256": "0722d45cba56f0849475bb48caa3454e43da915751404dcd72986a4619d3bb3b",
+  "actual_model_usage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 3297,
+      "outputTokens": 5344,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.150085,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "independently_reviewed": true,
+  "corrections": [
+    "q是9632×32×4096候选辐射输入数组，不是三维参数/决策向量；c才是三个全局系数。",
+    "q与p分别由四对输入、输出按同一c作仿射组合，不是把q直接送入一个另有定义的廉价模型；T(q)必须真实运行。",
+    "原11门不是笼统p不变坏：full预测缺陷L2必须≤0.8，half为非增，还包括四场全域非负及边界绝对门和非增。",
+    "原内部residual门不能改称辐射守恒证明。",
+    "half=0.5*锚点输入+0.5*full，物理dt/分辨率/算子相同，不只是两种未定义配置。",
+    "本次完整场按301片在内存构造并检查，未把q/p写为dat；不能称落盘候选样本。",
+    "全域精确非负证书不是处处严格大于0的证书；零值合法，不能偷换正性定义。"
+  ],
+  "accepted_lecture_section": 138,
+  "independent_evidence": "20261006-x20-boundary-prediction-85859-review.json"
+}

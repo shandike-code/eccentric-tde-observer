@@ -1,0 +1,97 @@
+{
+  "job_id": 85859,
+  "state": "COMPLETED",
+  "scontrol": "JobId=85859 JobName=tde-x20-bpred UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:12:39 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-10-06T04:12:01 EligibleTime=2026-10-06T04:12:01 AccrueTime=2026-10-06T04:12:01 StartTime=2026-10-06T04:12:02 EndTime=2026-10-06T04:24:41 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-06T04:12:02 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2088426 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85856_boundary_prediction.sbatch SubmitLine=sbatch --parsable operations/x20_85856_boundary_prediction.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-bpred-85859.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-bpred-85859.out TresPerTask=cpu=4\n",
+  "scheduler_stderr": "",
+  "observed_unix": 1791231919.2349372,
+  "status": {
+    "status": "prediction_passed_requires_review",
+    "unix": 1791231879.9026427
+  },
+  "summary": {
+    "git_commit_after": "ac39c8656b34baeba711beaedf992428e3a3d5f7",
+    "git_clean_after": true,
+    "field_stats_after": [
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map16/previous.dat",
+        "inode": 4977861131,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791226081000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map16/final.dat",
+        "inode": 4977874699,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791226117000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map08/previous.dat",
+        "inode": 5098096391,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791223592000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map08/final.dat",
+        "inode": 5098131463,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791223628000000000
+      },
+      {
+        "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/previous.dat",
+        "inode": 3913909506,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790959367000000000
+      },
+      {
+        "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/final.dat",
+        "inode": 3913921026,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790959398000000000
+      },
+      {
+        "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/previous.dat",
+        "inode": 4687111438,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790856673000000000
+      },
+      {
+        "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/final.dat",
+        "inode": 4775433735,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790856704000000000
+      }
+    ],
+    "all_hashes_verified_before_after": true,
+    "status": "prediction_passed_requires_review",
+    "passed": true,
+    "checks": {
+      "full_field_nonnegative": true,
+      "full_l2_benefit": true,
+      "full_linf_nonincrease": true,
+      "half_l2_nonincrease": true,
+      "half_linf_nonincrease": true,
+      "full_radiation": true,
+      "full_boundary_l1": true,
+      "full_boundary_bolometric": true,
+      "half_radiation": true,
+      "half_boundary_l1": true,
+      "half_boundary_bolometric": true
+    },
+    "wall_s": 747.2394336173311,
+    "peak_rss_bytes": 927064064,
+    "new_maps": 0,
+    "new_feedback_pairs": 0,
+    "new_material_steps": 0,
+    "candidate_written": false,
+    "baseline_replaced": false,
+    "strict_error_bound": false,
+    "exact_full_domain_sign_certificate": false
+  },
+  "batch_exit": {
+    "job_id": "85859",
+    "child_exit_status": 0,
+    "recorded_unix": 1791231881.6905754,
+    "scheduler_terminal_verified": false,
+    "meaning": "shell wait status of Python child; not Slurm terminal state"
+  }
+}
