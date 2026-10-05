@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 9913,
+  "duration_api_ms": 9851,
+  "ttft_ms": 7446,
+  "ttft_stream_ms": 275,
+  "time_to_request_ms": 61,
+  "num_turns": 1,
+  "result": "# 讲义草稿：84026 复核后的诊断边界\n\n**一、同源七门为何全过，长窗口与跨历史为何未过**\n\n84026 在固定 x20、零物质更新下完成 16map/2pair。它自身的原七门之所以全过，是因为来源 trial/native、块归属、边界与完整 512 维残差都由**同一条运行基线**生成：核验的是\"这一次运行内部自洽\"，而非跨历史的正确性。16−8 窗口则跨了更长迭代跨度（H8 对应 iteration7，H16 锚点 iteration15），L2/r20=0.001907、质量/r20=0.007404、Max-cell/r20=0.001088 均超 0.001 门；对冻结信号更达 0.532/1.246/0.184，远超 0.1 门。长窗口把单步内自洽放大为累积偏差；map8/map16 跨保存 A 的原子加热 0.0084/0.0080 同样失败，而光电离/复合门通过。可见\"同源七门\"与\"长窗口/跨历史门\"是两类不同检验，前者通过不蕴含后者。\n\n**二、三范数不是三个物理通道**\n\nL2、质量、Max-cell 是同一残差向量的三个数学范数/矩，不是三条独立物理通道。不能用\"局部小量\"顶替最差值，也不能因某一范数通过就宣布物理过关；凡一门超限即为未过。\n\n**三、完整向量先相减，再取范数**\n\nmap16final 物质残差 [8.241、0.2739、2.7057] 是**整条向量逐分量相减后再取范数**的结果，并非新的 r20，不得与 r20 混用，更不能当作新的物理误差。\n\n**四、数据完整 ≠ 调度证据完整**\n\n独立审计给出 numerical_artifacts_complete=true（4297 工件、792 源条目、1216map、304 反馈回执、SHA256 校验通过），但 scheduler_terminal_verified=false：Slurm 队列已无该 job、sacct 为空、scontrol 超时，仅余 RUNNING/01:30:43 快照。故不得写成\"Slurm COMPLETED\"，不得给最终退出码。两类证据必须分开陈述。\n\n**五、纪律与下一步**\n\n保存 A（82518A16）不是已知真解，不设剩余误差界。H/He 光子辐射不是中微子，数组 Euclidean Gram 不是能量，不构成物理解误差界或存在性证明。不从两点拟合最终 I_nu 时间，不宣称稳态模型无解。下一步只在 84026H16/H8、82989H16、82518H16 四组上收集完整 4×4 辐射 Gram、八场边界谱与极值：**不选系数、不写 dat、不推动物质**。",
+  "stop_reason": "end_turn",
+  "session_id": "4080ab09-164a-4c7e-bff9-672d3ab98c0a",
+  "total_cost_usd": 0.06579,
+  "usage": {
+    "input_tokens": 2793,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 2073,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 2793,
+      "outputTokens": 2073,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.06579,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "e65fffbc-5b6d-41f9-8a60-85578f10e247"
+}

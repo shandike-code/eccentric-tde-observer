@@ -1,0 +1,12 @@
+{
+  "source": "20261005-x20-84026-lecture-draft.json",
+  "actual_model": "deepseek-v4-flash[1m]",
+  "accepted_verbatim": false,
+  "corrections": [
+    "七门通过不是因为同一条运行基线。它们具体检查相邻光电离/复合/三种加热变化、内层pair-ready和物质物理域；来源身份另审。不能称本次运行内部物理自洽。",
+    "三个范数均非矩。map16final三个数是单端点完整物质响应残差R的范数，不是R16-R8窗口差的范数。两者均保留四编码分量，但比较对象不同。",
+    "792是源码条目，不是来源条目；直接来源875。",
+    "当前scontrol返回Invalid job id；超时是过去watch记录。无证据确定调度最终状态或退出码。"
+  ],
+  "evidence": "20261005-x20-84026-final-review.json"
+}
