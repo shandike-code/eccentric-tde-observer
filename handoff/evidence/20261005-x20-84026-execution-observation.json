@@ -1,0 +1,55 @@
+{
+  "job_id": 84026,
+  "observed_unix": 1791212241.0112581,
+  "state": "UNKNOWN",
+  "scheduler_terminal_verified": false,
+  "observations": [
+    {
+      "command": [
+        "scontrol",
+        "show",
+        "job",
+        "-o",
+        "84026"
+      ],
+      "stdout": "",
+      "stderr": "slurm_load_jobs error: Invalid job id specified\n",
+      "returncode": 1
+    },
+    {
+      "command": [
+        "sacct",
+        "-j",
+        "84026",
+        "--starttime",
+        "2026-10-02",
+        "--endtime",
+        "2026-10-06",
+        "--parsable2",
+        "--noheader",
+        "--format=JobID,State,ExitCode,Start,End,Elapsed,AllocCPUS,ReqMem,MaxRSS"
+      ],
+      "stdout": "",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "squeue",
+        "-u",
+        "pb24511938"
+      ],
+      "stdout": "             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)\n",
+      "stderr": "",
+      "returncode": 0
+    }
+  ],
+  "pre_exit_scontrol": "JobId=84026 JobName=tde-x20-cseed UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=01:30:43 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-10-02T23:27:35 EligibleTime=2026-10-02T23:27:35 AccrueTime=2026-10-02T23:27:35 StartTime=2026-10-02T23:27:36 EndTime=2026-10-03T03:27:36 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-02T23:27:36 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2223722 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode03 BatchHost=anode03 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_83514_seed_feedback.sbatch SubmitLine=sbatch --parsable operations/x20_83514_seed_feedback.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-cseed-84026.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-cseed-84026.out TresPerTask=cpu=32\n",
+  "watch": {
+    "status": "watch_budget_exhausted",
+    "reviews": 2,
+    "scientific_action_taken": false
+  },
+  "stderr_bytes": 0,
+  "stderr_bytes_provenance": "SSH read on 2026-10-05; remote tde-x20-cseed-84026.err empty"
+}
