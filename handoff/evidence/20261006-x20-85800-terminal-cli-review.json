@@ -1,0 +1,9 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "20261006-x20-85800-terminal-cli-draft.json",
+  "corrections": [
+    "batch-exit的scheduler_terminal_verified=false是该文件不验证Slurm的固定语义，与随后真实COMPLETED证据不矛盾。",
+    "CLI载荷未包含validation不等于T(q)与p未实测；validation已经落地，Mac完整归并16门通过。"
+  ],
+  "independent_audit": "20261006-x20-85778-true-85800-review.json"
+}

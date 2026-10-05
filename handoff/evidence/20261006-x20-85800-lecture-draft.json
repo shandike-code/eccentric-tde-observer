@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 9348,
+  "duration_api_ms": 9252,
+  "ttft_ms": 7077,
+  "ttft_stream_ms": 288,
+  "time_to_request_ms": 92,
+  "num_turns": 1,
+  "result": "**133之后：真实映射通过，为什么仍需正式反馈窗口**\n\n先分清三样东西。候选辐射场 q 是我们要检验的猜测态；仿射预测 p 是用代理关系从 q 推出来的捷径估计；真实输出 T(q) 是把 q 真正送进原转移算子后拿到的结果。三者不能混为一谈，由此有三种差：真实缺陷 T(q)−q，衡量算子把输入推离原地多远，与固定点距离直接相关；预测误差 T(q)−p，衡量这次的仿射代理猜得准不准；half 仿射一致性，则在 half 分辨率上检查预测与真实输出是否符合同一仿射关系。三种指标互不可换：预测误差小只说明代理这一次好，绝不等价于真实缺陷小。\n\n本次 full/half 真实映射通过。证据里 full 的 L2 比率序列为 [1.0, 0.5866, 0.7846, 2.37e-10]，L∞ 比率 [1.0, 0.7039, 0.8519, 4.17e-10]，half 同量级；而预测误差的 L2 比率低到 [1.0, 1.92e-9, 1.05e-9]，L∞ [1.0, 3.51e-9, 2.08e-9]，说明这一次仿射预测确实可靠。要强调：这里的 L2 是数组欧氏范数，不是气体能量，也不是物质残差。16 项检查全为 true，独立 half 仿射一致性成立，边界 L1 与辐射计边界也都通过。但预测误差极小，只证明“这次代理准”，并不能证明未知固定点已经很近，也不能证明加热已经稳定。真正接近固定点要靠真实缺陷本身小，而加热稳定还取决于跨物理步的演化，不是单步仿射一致性可以替代的。\n\n八源是 84026H16/H8、82989H16、82518H16 的 previous→final；锚点取 84026H16 第 15 张，不是下一张。当前用 H/He 连续过程模型，不引入中微子或谱线。当前 2map0、反馈 0、物质 0，accepted20 是同一物理步内的非线性更新计数。school 真实终态为 COMPLETED0，84026 源缺调度终态，仍属未知，不能当作通过。\n\n新明确决定：以本次 full 真实输出为 seed，只跑一条 historical16map，8/16 各一对反馈，分别比较自身窗口、对 84026 加速前端点、对已保存的 82518A16；后者没有重算。原 r20/80195 信号分母与原门不改；失败时不 clip、不缩 dt，也不自动物质接受或扩预算。Mac 审阅为 325 工件／795 代码／33 直接小来源／8 外部大场清单／152 worker 与 301 片 80 位归并，没有重读大场。我们不对最终 ETA 外推，也不宣称模型无解。",
+  "stop_reason": "end_turn",
+  "session_id": "5cec88ea-c63d-488e-874c-bb7b82af72aa",
+  "total_cost_usd": 0.069325,
+  "usage": {
+    "input_tokens": 3050,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 2163,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 3050,
+      "outputTokens": 2163,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.069325,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "594c2ab3-67c4-4659-87c4-c902efda47f3"
+}

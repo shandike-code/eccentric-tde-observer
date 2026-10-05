@@ -1,0 +1,14 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "20261006-x20-85800-lecture-draft.json",
+  "independently_revised": true,
+  "corrections": [
+    "half是同网格的半方向步，不是half分辨率。",
+    "l2_ratios同一数组依次为锚点/full/half/仿射一致性，不是full序列再另有half同量级。",
+    "真实缺陷变小没有可用收缩界时不能直接解释为未知固定点距离。",
+    "下一阶段检验同一固定x20同一物理时间步的内层反馈稳定性，不是跨物理时间步。",
+    "删除无定义的辐射计边界，准确区分边界谱L1与总通量。"
+  ],
+  "evidence": "20261006-x20-85778-true-85800-review.json",
+  "lecture_section": 134
+}

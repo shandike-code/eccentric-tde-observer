@@ -1,0 +1,32 @@
+{
+  "job_id": 85800,
+  "state": "COMPLETED",
+  "scontrol": "JobId=85800 JobName=tde-x20-btrue UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:48:33 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-10-06T00:14:13 EligibleTime=2026-10-06T00:14:13 AccrueTime=2026-10-06T00:14:13 StartTime=2026-10-06T00:14:14 EndTime=2026-10-06T01:02:47 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-06T00:14:14 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:846671 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85778_true_validation.sbatch SubmitLine=sbatch --parsable operations/x20_85778_true_validation.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-btrue-85800.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-btrue-85800.out TresPerTask=cpu=32\n",
+  "scheduler_stderr": "",
+  "observed_unix": 1791219799.7332897,
+  "status": {
+    "status": "true_maps_validated_requires_review",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "unix": 1791219763.01065
+  },
+  "summary": {
+    "status": "true_maps_validated_requires_review",
+    "new_maps": 2,
+    "new_feedback_pairs": 0,
+    "new_material_steps": 0,
+    "accepted_outer_steps": 20,
+    "validated": true,
+    "baseline_replaced": false,
+    "strict_error_bound": false,
+    "parent_peak_rss_bytes": 1018535936,
+    "wall_s": 2902.78070209641
+  },
+  "batch_exit": {
+    "job_id": "85800",
+    "child_exit_status": 0,
+    "recorded_unix": 1791219767.183915,
+    "scheduler_terminal_verified": false,
+    "meaning": "shell wait status of Python child; not Slurm terminal state"
+  }
+}

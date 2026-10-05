@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 6215,
+  "duration_api_ms": 6015,
+  "ttft_ms": 5002,
+  "ttft_stream_ms": 400,
+  "time_to_request_ms": 160,
+  "num_turns": 1,
+  "result": "85800 仅作只读核对，未编辑/提交/取消。\n\n事实：ExitCode 0:0，RunTime 48:33 < 2h 限制；scontrol JobState=COMPLETED、EndTime 有值、Scheduler=Main，即调度器终态已见。而 batch_exit.scheduler_terminal_verified=false 与此不一致——该字段属保守标记，不等于未终结，但按既定口径 batch_exit 本身非 Slurm 终态。\n\n预算符合：new_maps=2，恰达上限；new_feedback_pairs=0、new_material_steps=0，符合“0反馈/物质步”；accepted_outer_steps=20 不变。\n\n注意：validated=true 只是内部判定，status 仍为 requires_review；strict_error_bound=false、baseline_replaced=false，故未宣称严格误差界、未替换基线。\n\n未知项不猜：载荷未给出原16真实门数值，也未给出 T(q) 与预测 p 的对照，故一致性无法核对，仍待实测。half 仿射一致性误差无数值，且按定义不构成缺陷降幅。\n\n84026 调度终态未知，保留。不宣称自洽大气或整盘 I_nu，不自动续交。",
+  "stop_reason": "end_turn",
+  "session_id": "794651d5-a50f-4e06-ad4a-41ae1e0ed50f",
+  "total_cost_usd": 0.044705,
+  "usage": {
+    "input_tokens": 2641,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1260,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 2641,
+      "outputTokens": 1260,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.044705,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "1cacc04b-1210-4cf5-b26b-6ed63f3f4262"
+}
