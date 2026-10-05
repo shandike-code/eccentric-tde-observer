@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 10637,
+  "duration_api_ms": 9645,
+  "ttft_ms": 8225,
+  "ttft_stream_ms": 1270,
+  "time_to_request_ms": 994,
+  "num_turns": 1,
+  "result": "# 第132节 小目标下降为何仍可能边界变差：85744的边界约束QP\n\n**一、现象。** 仅用原权重L1 cap约束试解，得到安全方向[-5.5547,-1.6453,0.4256]：辐射预测比0.4718、加热0.0842，两项小目标都下降，但小边界full L1=4.0118e-7已大于锚点1.5491e-7，half亦然，故未提交全场。原因：目标只约束被加权的那两个缺陷量，边界L1是另一组线性泛函；权重L1 cap不等价于边界非增。一个方向可在目标上更优而在边界上更差，只报\"目标下降\"会漏掉这一失败。\n\n**二、定义。** 锚点：固定归一化分支下的参考点，缺陷比与边界L1均以其为单位（表中锚点记为1或1.5491e-7）。四对：84026H16/H8、82989H16、82518H16。用dt*净原子加热/rho构建新质量Gram，与辐射Gram各除锚点平方后等权联合。原权重L1 cap：将仿射权重L1限制在17内；纯辐射无约束最优比0.2913但L1=63.07，超限不可采用，故只取cap分支。不修补矩阵、不删方向。\n\n**三、边界约束QP证明什么。** 把原边界非增条件加入同一小QP，固定锚点归一化，精确核验总通量绝对差与全部频组L1；三次支持平面后枚举完成，活跃面[8,14,19]，精确KKT通过。它证明：在该仿射小模型内存在同时满足cap与边界非增的可行解，且原解统一0.9存储后边界L1（full 1.295e-7、half 7.32e-8）不高于锚点、总通量相对变化极小。这只是局部可行性与KKT最优性证据，**不是全域非负证书**。\n\n**四、全场验证证明什么。** 全11门筛查逐元素检查full/half大场是否仍满足全部约束；通过才说明小模型结论在真实大场未被逐点违反。分工是：QP给候选方向与局部保证，全场筛查给逐点合法性，二者不可互相替代。\n\n**五、边界。** 加热小目标0.0842不作正式门。以上仅仿射小模型证据，新源无可借用的旧83075负点约束，full/half每个大场元素仍需筛查。本轮0map/反馈/物质，accepted20保持；无校准资格、自洽大气或整盘强度交付。下一步只执行x20-85744-boundary-prediction-v1.md一次全11门筛查（4CPU16GiB/1h，不生成dat、不自动扩预算），通过并独立审阅后方可设计真实full/half映射。仍不能据有限窗口给出I_nu完成日期，也不能推断模型无解。",
+  "stop_reason": "end_turn",
+  "session_id": "2da1cd88-cbed-42e9-869d-65ab8012ee1b",
+  "total_cost_usd": 0.06716,
+  "usage": {
+    "input_tokens": 2782,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 2130,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 2782,
+      "outputTokens": 2130,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.06716,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "73faad2d-5e87-4c01-baf0-ddb664612ae6"
+}

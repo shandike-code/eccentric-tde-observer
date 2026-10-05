@@ -1,0 +1,15 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "handoff/evidence/20261005-x20-85744-lecture-draft.json",
+  "independent_review": true,
+  "corrections": [
+    "边界谱是线性积分；边界L1含绝对值及通量归一化，并非线性泛函。",
+    "锚点明确是84026 H16的previous→final；只固定最大总通量所在分支，不把分母数值冻结。",
+    "精确正定QP及KKT加完整L1可行性证明选定分支内全局最优，不是仅局部最优；不覆盖另一分支。",
+    "11门包含逐点非负与整体范数/边界条件，不能称所有门都逐元素；筛查对象是组合输入q及预测p，还不是实际T(q)。",
+    "0.0842是未进入全场的cap-only方向小加热比；最终候选是0.39179348，二者不能混用。"
+  ],
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0
+}
