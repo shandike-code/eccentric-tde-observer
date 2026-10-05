@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 19610,
+  "duration_api_ms": 19467,
+  "ttft_ms": 16095,
+  "ttft_stream_ms": 620,
+  "time_to_request_ms": 131,
+  "num_turns": 1,
+  "result": "# 第140节 率与加热门通过、物质响应向量差未过：两种诊断的分离\n\n## 一、设置\n\n同一物理步固定 $x_{20}$，阶段 phase1367，步长 $dt = 889.419892762322$ s。本轮唯一初值种子是 85861 的 **full 真实 $T(q)$ 输出**（不是 $q/p$）。反馈实验上限为 16 map，第 8 与第 16 张后各接一对正式反馈；当前只审阅 8map 的第 1 对。\n\n物质状态为 512 维：128 cells × 4 编码分量。报告三种**范数**（l2、mass-weighted、maximum-cell），它们不是三个通道：\n\n$$\\mathrm{MaxCell}(v) = \\max_i \\sqrt{\\sum_a v_{ia}^2}$$\n\n每次比较**先做向量差** $\\Delta = B - A$ **再取范数**；跨两对（previous/final）取四种组合各自范数的最大。\n\n## 二、率与加热门是体积归一标量\n\n率门与加热门用 volume_l1：\n\n$$\\mathrm{volL1}(B,A) = \\frac{\\sum_i w_i\\,|B_i - A_i|}{\\sum_i w_i \\max(|A_i|,|B_i|)}$$\n\n逐点取 max 后积分，无 floor；多分量分别计算取最大。它先在**整个体积上加权求和**，是一个“预算级”的相对标量。\n\n## 三、冻结参考\n\n冻结 $r_{20} = [8.172006557889262,\\ 0.2619104204778557,\\ 2.705001116611826]$。80195 信号由原四组 P-C 全向量差**按各范数最小**重建，分母不可更换。\n\n## 四、观察到的分离\n\n本轮 7 门与正气体能通过。对照保存 A（82518 accelerated，map16）四种组合的五类率/加热门全过：光致电离 volume_l1 约 $8.5\\times10^{-7}$（最大分量 $3.25\\times10^{-5}$），总复合约 $9.2\\times10^{-10}$ 量级，加热类约 $7.15\\times10^{-4}$。\n\n但物质响应向量差三范数**全不过**：对冻结 $r_{20}$ 四组合约 0.0113 / 0.0439 / 0.0064，容差 0.001；对 80195 信号约 3.14 / 7.38 / 1.08，容差 0.1。对保存 A 同样不过（$r_{20}$：约 0.0028 / 0.0111 / 0.0018；信号：约 0.77 / 1.86 / 0.30）。\n\n与此同时，**对内散布全过**：同对 previous/final 对 $r_{20}$ 仅 $10^{-6}$ 量级，对信号约 $2.3\\times10^{-3}$ / $4.6\\times10^{-3}$ / $7.2\\times10^{-4}$。即本对两图彼此几乎一致，偏离是相对冻结基准的**系统性偏移**，而非对间噪声。\n\n## 五、为何两者可以分离\n\n这是两种诊断，回答两个不同的问题：\n\n- volL1 问“积分后的率/加热预算是否一致”——它在体积上求和，局部正负误差可相互抵消，少数高权重区主导；\n- 向量差问“物质响应的逐 cell、逐分量空间结构是否一致”——先逐点向量差再取范数，不经过积分抵消。\n\n因此率与加热门通过**不蕴含**物质响应向量差通过，反之亦然。积分把空间结构差异折叠成一个标量，小标量可与大逐点差并存。本轮数据只显示这种分离存在，不能据此断定因果，也不能指出具体慢模。\n\n## 六、边界与状态\n\n- 保存 A 未重算，也未证明为真解或非真解；其四组合率门全过只说明该诊断在该基准下达标。\n- 净加热上次 85821pair16 对保存 A 最大约 $3.654\\times10^{-3}$，本次 pair08 约 $7.170\\times10^{-4}$，可作**诊断变化**比较，但不是等长新双支实验，也不是收敛界。\n- 小 QP 加热比 0.08338 不是本正式加热 volume_l1。\n- 分类未完：仅有同对、相对 85821H16、相对保存 82518A16；新 16-8 尚无四类。\n- `completed_experiment=false` / `numerical_artifacts_complete=false` 表示整个实验未结束，不是首轮审阅失败；Slurm 仍 RUNNING。\n- accepted20 不变，0 物质，无校准、无耦合柱、$I_\\nu$ 未完成；不外推 ETA。84026 调度未知保留。无新图。",
+  "stop_reason": "end_turn",
+  "session_id": "3eab1eb7-efee-4037-9faf-ee2e939ff519",
+  "total_cost_usd": 0.135535,
+  "usage": {
+    "input_tokens": 5027,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 4416,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 5027,
+      "outputTokens": 4416,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.135535,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "b98d807f-82fe-4e18-ae12-4af576a7fe4f"
+}

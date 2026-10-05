@@ -1,0 +1,48 @@
+{
+  "job_id": 85875,
+  "stage": "partial_pair08_review",
+  "numerical_commit": "4bace16902cbc2ef6f9f584f26f07a2928eecb93",
+  "archive": {
+    "path": "outputs/hpc/x20-85861-seed-feedback-20261006/archives/historical-map08-feedback-1791242628429442636.tar.gz",
+    "size_bytes": 78123279,
+    "sha256": "055dd2d7d52b5fb76781053a4fcbd0e1f3ba61156b2de6705102dc016d4f93d2"
+  },
+  "pre_run": {
+    "Code": "PASS",
+    "Logic": "PASS",
+    "Physics": "WARNING",
+    "Decision": "RUN",
+    "scope": "small archived bytes and independent full-vector reductions; no Slurm submission, large-field read or material ODE on Mac"
+  },
+  "post_run": {
+    "real_artifact_first_end_to_end_pass": true,
+    "verified_files": 2154,
+    "verified_source_claims": 895,
+    "verified_code_claims": 800,
+    "map_process_receipts": 608,
+    "feedback_process_receipts": 152,
+    "maximum_proc_kib": 4044144,
+    "same_pair_original_seven_gates_passed": true,
+    "saved_reference_all_four_rate_gate_checks_passed": true,
+    "saved_reference_response_comparison_passed": false,
+    "new_16_minus_8_window_available": false
+  },
+  "source_85821_scheduler_terminal_verified": true,
+  "source_84026_scheduler_terminal_verified": false,
+  "current_scheduler_terminal_verified": false,
+  "completed_experiment": false,
+  "reference_calibration_eligible": false,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "new_slurm_submissions": 0,
+  "lecture_section": 140,
+  "actual_cli_model": "deepseek-v4-flash[1m]",
+  "format_checks": {
+    "new_report": true,
+    "new_lecture_section": true,
+    "old_lecture_prefix_sha256": "ae3292df1b320904c26e1d62c9a7f14872da24a33e2c0a55f7dd8abfc4a8b6f5",
+    "old_lecture_prefix_unchanged": true
+  },
+  "backup": "outputs/review-20260925/pre-85875-pair08-review-20261006.bundle",
+  "decision": "Continue only the existing declared second window. Preserve all failed comparisons; no automatic extension, recovery, calibration or acceptance."
+}

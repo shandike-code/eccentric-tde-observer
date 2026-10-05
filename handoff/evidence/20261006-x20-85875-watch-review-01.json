@@ -1,0 +1,12 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "20261006-x20-85875-watch-draft-01.json",
+  "evidence": "20261006-x20-85875-pair08-review.json",
+  "independently_revised": true,
+  "corrections": [
+    "原稿约0.011/3.14和0.0027/0.77只展示L2附近值，不能替代四组合逐范数最大；报告保留L2、质量、Max-cell及两个冻结分母。",
+    "当前相对85821H16为加速前后响应差，相对82518A16为保存参考差；第8张后的首对反馈尚无新16−8窗口，删除原稿笼统的“新窗口差异”。",
+    "cross_rate_pass=true已由独立全四组合复算确认，仍不能由此宣称响应向量通过或反馈收敛。"
+  ],
+  "scheduler_terminal_verified": false
+}
