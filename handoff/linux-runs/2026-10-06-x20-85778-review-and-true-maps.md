@@ -25,3 +25,11 @@
 作业85800于2026-10-06 00:14:13提交，00:14:14在anode02开始，Students/qos_stu_cpu_long，32CPU128GiB，2h硬限02:14:14。00:14:45实际scontrol为RUNNING，程序preparing，stderr空；此时declaration尚未生成。提交PENDING回执和随后RUNNING回执分别保存为20261006-x20-85800-submit.json及20261006-x20-85800-observation-00.json，不把提交时状态改写成运行态。
 
 只读watch已从学校独立会话启动，PID846684仅作为启动证据，实际进度以latest/终态回执为准；预算8400秒，先存真实scheduler-terminal再调用无工具CLI。batch-exit在自动归档之后写入，收尾时另取。学校保持数值提交，不同步此启动说明；本节不声称映射或原16门已经完成。
+
+## 00:45运行中审阅
+
+00:45:03真实调度仍RUNNING，累计30分49秒，stderr空。full已有一张完整map、76块和76份worker回执、无active_map；该map墙钟152.46606149431318秒，原residual=2.1214853941239185e-6，边界L1=1.2949622721235266e-7、bol=6.3927504183510536e-9。这里仅抄录运行工件并核进度，完整数值归并尚未执行，不能据此宣布原16门通过。half状态为mapping/half，但history空、active_map空、块和worker回执均0，尚在child初始化；不能把status标签当成已派发worker。
+
+已另建review_x20_85800_true.py，绑定85800/4d1a831、84026H16锚点及85778最新系数。审阅器保留完整301片80位归并与152回执检查，并明确分开child返回和scheduler终态；旧84026调度未知不可补写成功。新执行证据/来源损坏测试加原统计归并测试共17passed0.94s；现有31项小型来源SHA实核通过，八个dat仅核已审清单身份，当前run两项输入留到正式归档再核。尚未执行85800完整工件E2E，预检查不能代替终态科学审阅。
+
+进度回执20261006-x20-85800-progress-0045.json和审阅预检查20261006-x20-85800-reviewer-preflight.json已保存。本轮不新增Slurm、不改学校运行代码、不扩预算。新增审阅器只在Mac/GitHub保存，待归档后才使用。

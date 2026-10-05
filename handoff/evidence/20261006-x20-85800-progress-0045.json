@@ -1,0 +1,56 @@
+{
+  "job_id": 85800,
+  "observed_unix": 1791218703.9109235,
+  "status": {
+    "status": "mapping",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "unix": 1791218185.0490773,
+    "case": "half"
+  },
+  "watch_latest": {
+    "job_id": 85800,
+    "state": "RUNNING",
+    "scontrol": "JobId=85800 JobName=tde-x20-btrue UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:30:05 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-10-06T00:14:13 EligibleTime=2026-10-06T00:14:13 AccrueTime=2026-10-06T00:14:13 StartTime=2026-10-06T00:14:14 EndTime=2026-10-06T02:14:14 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-06T00:14:14 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:846671 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85778_true_validation.sbatch SubmitLine=sbatch --parsable operations/x20_85778_true_validation.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-btrue-85800.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-btrue-85800.out TresPerTask=cpu=32\n",
+    "scheduler_stderr": "",
+    "observed_unix": 1791218659.3382576,
+    "status": {
+      "status": "mapping",
+      "accepted_outer_steps": 20,
+      "new_material_steps": 0,
+      "unix": 1791218185.0490773,
+      "case": "half"
+    }
+  },
+  "cases": {
+    "full": {
+      "history": [
+        {
+          "iteration": 1,
+          "input_path": "outputs/hpc/x20-85778-true-validation-20261006/full/state_0.dat",
+          "input_sha256": "10fab9c83dd4b879d4863e59bdc7d9e9ff2bc13c1068485a9ca76b2d6305873f",
+          "output_path": "outputs/hpc/x20-85778-true-validation-20261006/full/state_1.dat",
+          "output_sha256": "d7ced0397fa1a446e9e1571c575ec1b06fef4867c6a19b49a72c788eef026d83",
+          "wall_s": 152.46606149431318,
+          "residual": 2.1214853941239185e-06,
+          "boundary_l1": 1.2949622721235266e-07,
+          "boundary_bolometric": 6.3927504183510536e-09,
+          "maximum_worker_rss_mib": 3503.49609375
+        }
+      ],
+      "active_map": null,
+      "block_reports": 76,
+      "process_receipts": 76
+    },
+    "half": {
+      "history": [],
+      "active_map": null,
+      "block_reports": 0,
+      "process_receipts": 0
+    }
+  },
+  "scontrol": "JobId=85800 JobName=tde-x20-btrue UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:30:49 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-10-06T00:14:13 EligibleTime=2026-10-06T00:14:13 AccrueTime=2026-10-06T00:14:13 StartTime=2026-10-06T00:14:14 EndTime=2026-10-06T02:14:14 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-06T00:14:14 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:846671 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85778_true_validation.sbatch SubmitLine=sbatch --parsable operations/x20_85778_true_validation.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-btrue-85800.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-btrue-85800.out TresPerTask=cpu=32\n",
+  "scheduler_stderr": "",
+  "stderr": "",
+  "archive_files": []
+}

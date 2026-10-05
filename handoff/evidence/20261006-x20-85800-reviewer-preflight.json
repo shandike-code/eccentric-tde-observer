@@ -1,0 +1,23 @@
+{
+  "job_id": 85800,
+  "numerical_commit": "4d1a8314e272063bc79021d152dbc4c8fe6b08fb",
+  "reviewer": "handoff/audit_tools/review_x20_85800_true.py",
+  "test_result": "17 passed in 0.94s",
+  "existing_source_claims_verified": 31,
+  "external_field_claims_bound": 8,
+  "new_run_input_claims_deferred": 2,
+  "source_binding_verified": true,
+  "complete_artifact_audit": false,
+  "new_scientific_gate_decision": false,
+  "tests_only_not_an_experiment_verdict": true,
+  "x20-85800-declaration-live.json": {
+    "path": "outputs/review-20260925/x20-85800-declaration-live.json",
+    "size_bytes": 167807,
+    "sha256": "785ec098b34ed491e603df13eae185eb9ec45dd150ac7a4a7b763b9e9f58064a"
+  },
+  "x20-85800-progress-0030.json": {
+    "path": "outputs/review-20260925/x20-85800-progress-0030.json",
+    "size_bytes": 5861,
+    "sha256": "b7a43abf546294c5fed1085147fdc4745401bb8a53b3be2e76da428747fedbc6"
+  }
+}
