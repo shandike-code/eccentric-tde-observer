@@ -1,0 +1,634 @@
+{
+  "job_id": 85821,
+  "state": "COMPLETED",
+  "scontrol": "JobId=85821 JobName=tde-x20-bseed UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=01:50:08 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-10-06T01:16:20 EligibleTime=2026-10-06T01:16:20 AccrueTime=2026-10-06T01:16:20 StartTime=2026-10-06T01:16:21 EndTime=2026-10-06T03:06:29 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-06T01:16:21 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:1190145 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85800_seed_feedback.sbatch SubmitLine=sbatch --parsable operations/x20_85800_seed_feedback.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-bseed-85821.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-bseed-85821.out TresPerTask=cpu=32\n",
+  "scheduler_stderr": "",
+  "observed_unix": 1791227221.3429,
+  "summary": {
+    "status": "historical_seed_windows_complete_requires_review",
+    "cases": {
+      "historical": {
+        "8": {
+          "feedback_evaluated": true,
+          "original_zero_gates": {
+            "last_two_photoionization_pass": true,
+            "last_two_total_recombination_pass": true,
+            "last_two_atomic_heating_pass": true,
+            "last_two_direct_heating_pass": true,
+            "last_two_formal_heating_pass": true,
+            "inner_pair_ready": true,
+            "physical_response_pass": true
+          },
+          "physical_response_failures": {},
+          "zero_pair_stable": true,
+          "baseline_replaced": false,
+          "accepted_material_step": false,
+          "from_prior_feedback": {
+            "frozen_r20": {
+              "vector_difference_over_frozen_r20_norms": {
+                "previous_vs_previous": [
+                  0.015931213941748117,
+                  0.061585192787741085,
+                  0.00895644411562024
+                ],
+                "previous_vs_final": [
+                  0.015726469162432127,
+                  0.06079004586674602,
+                  0.008839680228512625
+                ],
+                "final_vs_previous": [
+                  0.016007102465563534,
+                  0.06188310904760337,
+                  0.009000076317112082
+                ],
+                "final_vs_final": [
+                  0.015802354193621984,
+                  0.061087957244402226,
+                  0.008883312430179403
+                ]
+              },
+              "passed": false,
+              "tolerance": 0.001,
+              "strict_error_bound": false,
+              "baseline_replaced": false
+            },
+            "vector_difference_over_frozen_80195_signal": {
+              "previous_vs_previous": [
+                4.4440334106546135,
+                10.364185653344629,
+                1.514650317955638
+              ],
+              "previous_vs_final": [
+                4.386919580957494,
+                10.230370202944373,
+                1.4949040373502755
+              ],
+              "final_vs_previous": [
+                4.465202615748093,
+                10.414322046308515,
+                1.5220290864724277
+              ],
+              "final_vs_final": [
+                4.408087811778409,
+                10.280505774280721,
+                1.502282805896649
+              ]
+            },
+            "signal_tolerance": 0.1,
+            "signal_pass": false,
+            "passed": false,
+            "strict_error_bound": false,
+            "baseline_replaced": false
+          },
+          "vs_saved_reference": {
+            "residual_comparison": {
+              "frozen_r20": {
+                "vector_difference_over_frozen_r20_norms": {
+                  "previous_vs_previous": [
+                    0.01452726639529826,
+                    0.057056188704948316,
+                    0.008539958360960375
+                  ],
+                  "previous_vs_final": [
+                    0.014529224501481364,
+                    0.057064211803431075,
+                    0.00854132695476187
+                  ],
+                  "final_vs_previous": [
+                    0.014450846635017441,
+                    0.0567575572340154,
+                    0.008496320607025211
+                  ],
+                  "final_vs_final": [
+                    0.014452804787796349,
+                    0.05676558049164804,
+                    0.00849768920085287
+                  ]
+                },
+                "passed": false,
+                "tolerance": 0.001,
+                "strict_error_bound": false,
+                "baseline_replaced": false
+              },
+              "vector_difference_over_frozen_80195_signal": {
+                "previous_vs_previous": [
+                  4.052400367118628,
+                  9.601998559109152,
+                  1.4442172004621256
+                ],
+                "previous_vs_final": [
+                  4.052946583454128,
+                  9.603348768119245,
+                  1.4444486473410239
+                ],
+                "final_vs_previous": [
+                  4.031082972903476,
+                  9.551741803116723,
+                  1.4368374929554946
+                ],
+                "final_vs_final": [
+                  4.031629202236937,
+                  9.553092038910185,
+                  1.4370689398388172
+                ]
+              },
+              "signal_tolerance": 0.1,
+              "signal_pass": false,
+              "passed": false,
+              "strict_error_bound": false,
+              "baseline_replaced": false
+            },
+            "all_four_rate_gate_checks": {
+              "previous_vs_previous": {
+                "last_two_photoionization_pass": true,
+                "last_two_total_recombination_pass": true,
+                "last_two_atomic_heating_pass": false,
+                "last_two_direct_heating_pass": false,
+                "last_two_formal_heating_pass": false
+              },
+              "previous_vs_final": {
+                "last_two_photoionization_pass": true,
+                "last_two_total_recombination_pass": true,
+                "last_two_atomic_heating_pass": false,
+                "last_two_direct_heating_pass": false,
+                "last_two_formal_heating_pass": false
+              },
+              "final_vs_previous": {
+                "last_two_photoionization_pass": true,
+                "last_two_total_recombination_pass": true,
+                "last_two_atomic_heating_pass": false,
+                "last_two_direct_heating_pass": false,
+                "last_two_formal_heating_pass": false
+              },
+              "final_vs_final": {
+                "last_two_photoionization_pass": true,
+                "last_two_total_recombination_pass": true,
+                "last_two_atomic_heating_pass": false,
+                "last_two_direct_heating_pass": false,
+                "last_two_formal_heating_pass": false
+              }
+            },
+            "cross_rate_pass": false,
+            "saved_reference_job": 82518,
+            "saved_reference_case": "accelerated",
+            "saved_reference_map": 16,
+            "reference_recomputed": false,
+            "strict_error_bound": false
+          },
+          "parent_peak_rss_bytes": 249921536,
+          "continuation_pass": true,
+          "reason": "pass"
+        },
+        "16": {
+          "feedback_evaluated": true,
+          "original_zero_gates": {
+            "last_two_photoionization_pass": true,
+            "last_two_total_recombination_pass": true,
+            "last_two_atomic_heating_pass": true,
+            "last_two_direct_heating_pass": true,
+            "last_two_formal_heating_pass": true,
+            "inner_pair_ready": true,
+            "physical_response_pass": true
+          },
+          "physical_response_failures": {},
+          "zero_pair_stable": true,
+          "baseline_replaced": false,
+          "accepted_material_step": false,
+          "from_prior_feedback": {
+            "frozen_r20": {
+              "vector_difference_over_frozen_r20_norms": {
+                "previous_vs_previous": [
+                  0.016531230291418487,
+                  0.06394112490128319,
+                  0.00930208872825613
+                ],
+                "previous_vs_final": [
+                  0.01632646033478066,
+                  0.06314594279134887,
+                  0.00918532484295697
+                ],
+                "final_vs_previous": [
+                  0.016605041195638805,
+                  0.06423100333704883,
+                  0.009344706515147882
+                ],
+                "final_vs_final": [
+                  0.016400268499784848,
+                  0.06343581740690571,
+                  0.009227942630126317
+                ]
+              },
+              "passed": false,
+              "tolerance": 0.001,
+              "strict_error_bound": false,
+              "baseline_replaced": false
+            },
+            "vector_difference_over_frozen_80195_signal": {
+              "previous_vs_previous": [
+                4.61140877292293,
+                10.76066598743376,
+                1.5731032838503904
+              ],
+              "previous_vs_final": [
+                4.554287919978251,
+                10.626844615079166,
+                1.5533570035508608
+              ],
+              "final_vs_previous": [
+                4.6319984232549825,
+                10.809449693210745,
+                1.5803105017633097
+              ],
+              "final_vs_final": [
+                4.574876806202306,
+                10.675627677952374,
+                1.5605642215107252
+              ]
+            },
+            "signal_tolerance": 0.1,
+            "signal_pass": false,
+            "passed": false,
+            "strict_error_bound": false,
+            "baseline_replaced": false
+          },
+          "eight_map_window": {
+            "frozen_r20": {
+              "vector_difference_over_frozen_r20_norms": {
+                "previous_vs_previous": [
+                  0.0006044760568107671,
+                  0.0023622826963425117,
+                  0.0003456791612748545
+                ],
+                "previous_vs_final": [
+                  0.0005280060465939372,
+                  0.0020635441732085556,
+                  0.0003020413969751328
+                ],
+                "final_vs_previous": [
+                  0.0006788142642770891,
+                  0.0026529181154684215,
+                  0.0003882997845925644
+                ],
+                "final_vs_final": [
+                  0.0006023443552175558,
+                  0.0023541797405844146,
+                  0.00034466202038343206
+                ]
+              },
+              "passed": false,
+              "tolerance": 0.001,
+              "strict_error_bound": false,
+              "baseline_replaced": false
+            },
+            "vector_difference_over_frozen_80195_signal": {
+              "previous_vs_previous": [
+                0.16861940353259977,
+                0.3975490750668048,
+                0.058458808515586685
+              ],
+              "previous_vs_final": [
+                0.14728799203067114,
+                0.3472743032358945,
+                0.05107909925617492
+              ],
+              "final_vs_previous": [
+                0.18935614580951998,
+                0.4464601737401559,
+                0.06566650610475054
+              ],
+              "final_vs_final": [
+                0.16802476252555437,
+                0.3961854268582622,
+                0.0582867968606586
+              ]
+            },
+            "signal_tolerance": 0.1,
+            "signal_pass": false,
+            "passed": false,
+            "strict_error_bound": false,
+            "baseline_replaced": false
+          },
+          "vs_saved_reference": {
+            "residual_comparison": {
+              "frozen_r20": {
+                "vector_difference_over_frozen_r20_norms": {
+                  "previous_vs_previous": [
+                    0.013923153458973919,
+                    0.05469468637253387,
+                    0.008194279260362201
+                  ],
+                  "previous_vs_final": [
+                    0.013925111911817365,
+                    0.05470271068170212,
+                    0.008195647854341374
+                  ],
+                  "final_vs_previous": [
+                    0.013848854705176406,
+                    0.054404136839754355,
+                    0.008151658641291198
+                  ],
+                  "final_vs_final": [
+                    0.01385081319705367,
+                    0.054412161290683464,
+                    0.008153027235287878
+                  ]
+                },
+                "passed": false,
+                "tolerance": 0.001,
+                "strict_error_bound": false,
+                "baseline_replaced": false
+              },
+              "vector_difference_over_frozen_80195_signal": {
+                "previous_vs_previous": [
+                  3.883882256530789,
+                  9.204580811659612,
+                  1.3857584022077492
+                ],
+                "previous_vs_final": [
+                  3.8844285695676546,
+                  9.205931224416235,
+                  1.3859898491166949
+                ],
+                "final_vs_previous": [
+                  3.8631565199074873,
+                  9.155684166818405,
+                  1.3785507053367583
+                ],
+                "final_vs_final": [
+                  3.863702843832888,
+                  9.157034603431994,
+                  1.3787821522486647
+                ]
+              },
+              "signal_tolerance": 0.1,
+              "signal_pass": false,
+              "passed": false,
+              "strict_error_bound": false,
+              "baseline_replaced": false
+            },
+            "all_four_rate_gate_checks": {
+              "previous_vs_previous": {
+                "last_two_photoionization_pass": true,
+                "last_two_total_recombination_pass": true,
+                "last_two_atomic_heating_pass": false,
+                "last_two_direct_heating_pass": false,
+                "last_two_formal_heating_pass": false
+              },
+              "previous_vs_final": {
+                "last_two_photoionization_pass": true,
+                "last_two_total_recombination_pass": true,
+                "last_two_atomic_heating_pass": false,
+                "last_two_direct_heating_pass": false,
+                "last_two_formal_heating_pass": false
+              },
+              "final_vs_previous": {
+                "last_two_photoionization_pass": true,
+                "last_two_total_recombination_pass": true,
+                "last_two_atomic_heating_pass": false,
+                "last_two_direct_heating_pass": false,
+                "last_two_formal_heating_pass": false
+              },
+              "final_vs_final": {
+                "last_two_photoionization_pass": true,
+                "last_two_total_recombination_pass": true,
+                "last_two_atomic_heating_pass": false,
+                "last_two_direct_heating_pass": false,
+                "last_two_formal_heating_pass": false
+              }
+            },
+            "cross_rate_pass": false,
+            "saved_reference_job": 82518,
+            "saved_reference_case": "accelerated",
+            "saved_reference_map": 16,
+            "reference_recomputed": false,
+            "strict_error_bound": false
+          },
+          "parent_peak_rss_bytes": 249921536,
+          "continuation_pass": true,
+          "reason": "pass"
+        }
+      }
+    },
+    "vs_saved_reference": {
+      "8": {
+        "residual_comparison": {
+          "frozen_r20": {
+            "vector_difference_over_frozen_r20_norms": {
+              "previous_vs_previous": [
+                0.01452726639529826,
+                0.057056188704948316,
+                0.008539958360960375
+              ],
+              "previous_vs_final": [
+                0.014529224501481364,
+                0.057064211803431075,
+                0.00854132695476187
+              ],
+              "final_vs_previous": [
+                0.014450846635017441,
+                0.0567575572340154,
+                0.008496320607025211
+              ],
+              "final_vs_final": [
+                0.014452804787796349,
+                0.05676558049164804,
+                0.00849768920085287
+              ]
+            },
+            "passed": false,
+            "tolerance": 0.001,
+            "strict_error_bound": false,
+            "baseline_replaced": false
+          },
+          "vector_difference_over_frozen_80195_signal": {
+            "previous_vs_previous": [
+              4.052400367118628,
+              9.601998559109152,
+              1.4442172004621256
+            ],
+            "previous_vs_final": [
+              4.052946583454128,
+              9.603348768119245,
+              1.4444486473410239
+            ],
+            "final_vs_previous": [
+              4.031082972903476,
+              9.551741803116723,
+              1.4368374929554946
+            ],
+            "final_vs_final": [
+              4.031629202236937,
+              9.553092038910185,
+              1.4370689398388172
+            ]
+          },
+          "signal_tolerance": 0.1,
+          "signal_pass": false,
+          "passed": false,
+          "strict_error_bound": false,
+          "baseline_replaced": false
+        },
+        "all_four_rate_gate_checks": {
+          "previous_vs_previous": {
+            "last_two_photoionization_pass": true,
+            "last_two_total_recombination_pass": true,
+            "last_two_atomic_heating_pass": false,
+            "last_two_direct_heating_pass": false,
+            "last_two_formal_heating_pass": false
+          },
+          "previous_vs_final": {
+            "last_two_photoionization_pass": true,
+            "last_two_total_recombination_pass": true,
+            "last_two_atomic_heating_pass": false,
+            "last_two_direct_heating_pass": false,
+            "last_two_formal_heating_pass": false
+          },
+          "final_vs_previous": {
+            "last_two_photoionization_pass": true,
+            "last_two_total_recombination_pass": true,
+            "last_two_atomic_heating_pass": false,
+            "last_two_direct_heating_pass": false,
+            "last_two_formal_heating_pass": false
+          },
+          "final_vs_final": {
+            "last_two_photoionization_pass": true,
+            "last_two_total_recombination_pass": true,
+            "last_two_atomic_heating_pass": false,
+            "last_two_direct_heating_pass": false,
+            "last_two_formal_heating_pass": false
+          }
+        },
+        "cross_rate_pass": false,
+        "saved_reference_job": 82518,
+        "saved_reference_case": "accelerated",
+        "saved_reference_map": 16,
+        "reference_recomputed": false,
+        "strict_error_bound": false
+      },
+      "16": {
+        "residual_comparison": {
+          "frozen_r20": {
+            "vector_difference_over_frozen_r20_norms": {
+              "previous_vs_previous": [
+                0.013923153458973919,
+                0.05469468637253387,
+                0.008194279260362201
+              ],
+              "previous_vs_final": [
+                0.013925111911817365,
+                0.05470271068170212,
+                0.008195647854341374
+              ],
+              "final_vs_previous": [
+                0.013848854705176406,
+                0.054404136839754355,
+                0.008151658641291198
+              ],
+              "final_vs_final": [
+                0.01385081319705367,
+                0.054412161290683464,
+                0.008153027235287878
+              ]
+            },
+            "passed": false,
+            "tolerance": 0.001,
+            "strict_error_bound": false,
+            "baseline_replaced": false
+          },
+          "vector_difference_over_frozen_80195_signal": {
+            "previous_vs_previous": [
+              3.883882256530789,
+              9.204580811659612,
+              1.3857584022077492
+            ],
+            "previous_vs_final": [
+              3.8844285695676546,
+              9.205931224416235,
+              1.3859898491166949
+            ],
+            "final_vs_previous": [
+              3.8631565199074873,
+              9.155684166818405,
+              1.3785507053367583
+            ],
+            "final_vs_final": [
+              3.863702843832888,
+              9.157034603431994,
+              1.3787821522486647
+            ]
+          },
+          "signal_tolerance": 0.1,
+          "signal_pass": false,
+          "passed": false,
+          "strict_error_bound": false,
+          "baseline_replaced": false
+        },
+        "all_four_rate_gate_checks": {
+          "previous_vs_previous": {
+            "last_two_photoionization_pass": true,
+            "last_two_total_recombination_pass": true,
+            "last_two_atomic_heating_pass": false,
+            "last_two_direct_heating_pass": false,
+            "last_two_formal_heating_pass": false
+          },
+          "previous_vs_final": {
+            "last_two_photoionization_pass": true,
+            "last_two_total_recombination_pass": true,
+            "last_two_atomic_heating_pass": false,
+            "last_two_direct_heating_pass": false,
+            "last_two_formal_heating_pass": false
+          },
+          "final_vs_previous": {
+            "last_two_photoionization_pass": true,
+            "last_two_total_recombination_pass": true,
+            "last_two_atomic_heating_pass": false,
+            "last_two_direct_heating_pass": false,
+            "last_two_formal_heating_pass": false
+          },
+          "final_vs_final": {
+            "last_two_photoionization_pass": true,
+            "last_two_total_recombination_pass": true,
+            "last_two_atomic_heating_pass": false,
+            "last_two_direct_heating_pass": false,
+            "last_two_formal_heating_pass": false
+          }
+        },
+        "cross_rate_pass": false,
+        "saved_reference_job": 82518,
+        "saved_reference_case": "accelerated",
+        "saved_reference_map": 16,
+        "reference_recomputed": false,
+        "strict_error_bound": false
+      }
+    },
+    "maps": 16,
+    "map_counts": {
+      "historical": 16
+    },
+    "reference_calibration_eligible": false,
+    "matched_new_two_branch_experiment": false,
+    "reference_recomputed": false,
+    "independent_review_required": true,
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "baseline_replaced": false,
+    "strict_error_bound": false,
+    "historical_failures_retained": true,
+    "feedback_pair_count": 2,
+    "wall_s": 6548.005595368333,
+    "parent_peak_rss_bytes": 249921536
+  },
+  "status": {
+    "status": "historical_seed_windows_complete_requires_review",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1791227145.6884995
+  },
+  "batch_exit": {
+    "job_id": "85821",
+    "child_exit_status": 0,
+    "recorded_unix": 1791227189.3496714,
+    "scheduler_terminal_verified": false,
+    "meaning": "shell wait status of Python child; not Slurm terminal state"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 4699,
+  "duration_api_ms": 4590,
+  "ttft_ms": 4067,
+  "ttft_stream_ms": 350,
+  "time_to_request_ms": 105,
+  "num_turns": 1,
+  "result": "85821仍RUNNING（32CPU/128GiB，1h46m/4h）。新种子仅85800 full真实输出。historical 16图完成，第8/16对反馈已评：原七门、物理域、内层门全过，zero_pair稳定，continuation_pass。frozen_r20(0.001)、80195信号(0.1)窗口差异及对82518 accelerated16保存参照(未重算)的跨参考差异均未通过，仅记录不扩预算，未触发立即停止。reference_calibration_eligible=false，baseline_replaced=false，accepted20，new_material_steps=0。新窗口或41.344%降幅非反馈收敛，不宣告整盘I_nu完成。84026调度终态未知保留，batch_exit非Slurm终态。",
+  "stop_reason": "end_turn",
+  "session_id": "149f0b34-2d76-4593-84af-48d26e21d0ee",
+  "total_cost_usd": 0.053175,
+  "usage": {
+    "input_tokens": 5755,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 976,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 5755,
+      "outputTokens": 976,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.053175,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "8282d11f-bb2c-4679-8663-d00cd09a843c"
+}

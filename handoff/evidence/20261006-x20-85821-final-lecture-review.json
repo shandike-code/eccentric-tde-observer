@@ -1,0 +1,18 @@
+{
+  "job_id": 85821,
+  "draft_path": "handoff/evidence/20261006-x20-85821-final-lecture-draft.json",
+  "draft_sha256": "2fd0ab6574fa3c650d3237d6660d4402d5ed1c391f1dc84a3f50e0c86a2d8d05",
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "draft_scientific_verdict_accepted": false,
+  "independently_reviewed": true,
+  "corrections": [
+    "严重错误：草稿将.00265>.001写为门通过；新16-8窗口质量范数/r20失败。",
+    "严重错误：草稿将.189和.446>.1写为门通过；新16-8窗口L2和质量范数/冻结信号失败。",
+    "同对稳定定义错误：是map8或map16内部的previous与final正式反馈比较；不是map8与map16之间的比较。",
+    "16-8是同一物理时间步内的迭代窗口，不是新物理时间窗。",
+    "修订讲义136全部以独立审计数据为准，原草稿保留，不据CLI执行科学动作。"
+  ],
+  "authoritative_evidence": "handoff/evidence/20261006-x20-85821-final-review.json"
+}

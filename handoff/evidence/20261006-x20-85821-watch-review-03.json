@@ -1,0 +1,17 @@
+{
+  "job_id": 85821,
+  "draft_path": "handoff/evidence/20261006-x20-85821-watch-draft-03.json",
+  "draft_sha256": "a69b210f594c067da9bb0c8b58ef47391193086d27fdff0b22569c55c65f9a18",
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "independently_reviewed": true,
+  "corrections": [
+    "batch_exit中的scheduler_terminal_verified=false明确限定为子进程回执本身，独立scontrol已证明本次COMPLETED0:0，二者不矛盾。",
+    "跨保存参考率比较中，光电离及总复合通过，原子/直接/形式加热失败；笼统的辐射率门未通过不能替代逐门判决。",
+    "两对反馈位于第8及第16张map后。",
+    "85800 full是85821唯一初始种子；85821自身另有16张真实映射输出。"
+  ],
+  "authoritative_evidence": "handoff/evidence/20261006-x20-85821-final-review.json",
+  "scientific_action_from_cli": false
+}

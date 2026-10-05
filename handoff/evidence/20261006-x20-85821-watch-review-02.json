@@ -1,0 +1,17 @@
+{
+  "job_id": 85821,
+  "draft_path": "handoff/evidence/20261006-x20-85821-watch-draft-02.json",
+  "draft_sha256": "1717eb69c076bdf5acef1e53cfcb3bb80072cc02c226bd328dc8a4572e5d8ca4",
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "independently_reviewed": true,
+  "corrections": [
+    "RUNNING为该草稿时刻状态，后续真实终态为COMPLETED0:0。",
+    "第8/16对反馈应为第8/16张映射后各一对，共2pair。",
+    "窗口整体未过；/r20只有质量范数失败，/signal只有L2及质量范数失败，不是三种范数各自全失败。",
+    "41.344%是前序85800相对锚点真实辐射缺陷降幅，不是85821正式反馈降幅。"
+  ],
+  "authoritative_evidence": "handoff/evidence/20261006-x20-85821-final-review.json",
+  "scientific_action_from_cli": false
+}
