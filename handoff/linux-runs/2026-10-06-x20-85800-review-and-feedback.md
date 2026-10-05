@@ -48,3 +48,6 @@ POST-RUN（审阅器组件预检）：测试通过、来源SHA相符；没有计
 
 
 01:39:33再次刷新：85821 RUNNING累计23m12s，status=mapping/historical，active_map.iteration=1，首批16个块及16份process回执落盘，history仍0；stderr空。初始化已结束并开始实际映射，尚没有完整map或反馈。原始快照20261006-x20-85821-progress-0139.json。heartbeat已更新到该状态和新审阅器命令，仍每30分钟、只在实质变化时通知；学校数值HEAD保持16ad4d6。来源哈希量可以解释初始化有较大I/O工作，但本轮未分段计时，不能把全部初始化耗时严格归给哈希。
+
+
+02:04:38只读续查：85821真实RUNNING累计48m17s，history已有7张完整map，第8张active_map已32/76块；stderr0、学校HEAD16ad4d6且工作树干净。第7张原回执wall182.01597191672772秒、residual2.059962648160337e-6、最大worker3512.34765625MiB。尚无pair08判决或归档；不能将内层辐射残差或第8张标签当作正式反馈已通过。watch仍实时更新，有限16map/两对反馈/0物质预算保持，未提交新作业或改动运行依赖。快照20261006-x20-85821-progress-0204.json；本轮只保存原运行记录，没有新数值后处理或完整E2E。Mac备份pre-85821-progress-0204-20261006.bundle。
