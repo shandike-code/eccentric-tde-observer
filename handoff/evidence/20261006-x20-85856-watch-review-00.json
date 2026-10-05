@@ -1,0 +1,36 @@
+{
+  "job_id": 85856,
+  "observation": "handoff/evidence/20261006-x20-85856-watch-observation-01.json",
+  "observation_sha256": "1b9db27fcb78f121986db200d8163d8a4c52258dfb451548c958001b5b5d9b96",
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "independently_reviewed": true,
+  "corrections": [
+    "未见batch_exit只支持尚未观察到子进程返回，不能单凭缺文件断定未返回。",
+    "84026缺终态仍保留；batch_exit为一般证据语义，不表示84026另有已核子进程退出回执。"
+  ],
+  "declaration_identity_verified": {
+    "job_id": "85856",
+    "git_commit": "37cdd3d236ed0fe1baeeda39d59d6f049e243f19",
+    "git_clean": true,
+    "field_order": [
+      "85821H16_previous",
+      "85821H16_final",
+      "85821H8_previous",
+      "85821H8_final",
+      "84026H16_previous",
+      "84026H16_final",
+      "82989H16_previous",
+      "82989H16_final"
+    ],
+    "source_jobs": [
+      85821,
+      84026,
+      82989
+    ],
+    "source_scheduler_terminal_verified": true,
+    "source_84026_scheduler_terminal_verified": false
+  },
+  "scientific_action_from_cli": false
+}

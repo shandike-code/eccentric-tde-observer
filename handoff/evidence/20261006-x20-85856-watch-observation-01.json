@@ -1,0 +1,85 @@
+{
+  "latest.json": {
+    "job_id": 85856,
+    "state": "RUNNING",
+    "scontrol": "JobId=85856 JobName=tde-x20-cbasis UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:02:05 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-10-06T03:20:17 EligibleTime=2026-10-06T03:20:17 AccrueTime=2026-10-06T03:20:17 StartTime=2026-10-06T03:20:18 EndTime=2026-10-06T04:20:18 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-06T03:20:18 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:1833476 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode02 BatchHost=anode02 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85821_basis.sbatch SubmitLine=sbatch --parsable operations/x20_85821_basis.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-cbasis-85856.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-cbasis-85856.out TresPerTask=cpu=4\n",
+    "scheduler_stderr": "",
+    "observed_unix": 1791228143.9950607,
+    "status": {
+      "status": "preflight",
+      "unix": 1791228028.4472387
+    }
+  },
+  "claude-review-00.json": {
+    "type": "result",
+    "subtype": "success",
+    "is_error": false,
+    "api_error_status": null,
+    "duration_ms": 3707,
+    "duration_api_ms": 3578,
+    "ttft_ms": 2635,
+    "ttft_stream_ms": 342,
+    "time_to_request_ms": 126,
+    "num_turns": 1,
+    "result": "监督记录（只读）：\n\n- **85856**：JobState=RUNNING，已运行约59s/1h，anode02，4CPU/16G。状态文件仍为 `preflight`，尚无 batch_exit 或 Slurm 终态。子进程未返回，不能推断任何结果。\n- **85821**：真实 COMPLETED 且数值工件已独立审计（既有结论，非本次新证）。16-8窗口与保存参考加热门**仍失败**。\n- **84026**：缺 Slurm 终态证据；`batch_exit` 仅证明子进程返回码，不得标为 Slurm COMPLETED。\n- 本批仅采集 85821 H16/H8、84026 H16、82989 H16 的完整 4x4 辐射 Gram 与边界谱。0 map/反馈/物质，不写 dat，不选候选，不换 r20。不称自洽大气或整盘 I_nu。\n\n未知项（不猜）：85856 的完成时间与产物、84026/82989 遥测、门是否可解。待 Mac 独立归并后再评估新方向。",
+    "stop_reason": "end_turn",
+    "session_id": "821aae29-86fc-44fc-9dbf-41384e146431",
+    "total_cost_usd": 0.028519999999999997,
+    "usage": {
+      "input_tokens": 2414,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 658,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "modelUsage": {
+      "deepseek-v4-flash[1m]": {
+        "inputTokens": 2414,
+        "outputTokens": 658,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 0.028519999999999997,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 32000
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "uuid": "6148af14-896e-4ce8-9294-7a1ea7defb5b"
+  },
+  "declaration_identity": {
+    "job_id": "85856",
+    "git_commit": "37cdd3d236ed0fe1baeeda39d59d6f049e243f19",
+    "git_clean": true,
+    "field_order": [
+      "85821H16_previous",
+      "85821H16_final",
+      "85821H8_previous",
+      "85821H8_final",
+      "84026H16_previous",
+      "84026H16_final",
+      "82989H16_previous",
+      "82989H16_final"
+    ],
+    "source_jobs": [
+      85821,
+      84026,
+      82989
+    ],
+    "source_scheduler_terminal_verified": true,
+    "source_84026_scheduler_terminal_verified": false
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "source_plan": {
+    "numerical_commit": "37cdd3d236ed0fe1baeeda39d59d6f049e243f19",
+    "git_clean": true,
+    "field_order": [
+      "85821H16_previous",
+      "85821H16_final",
+      "85821H8_previous",
+      "85821H8_final",
+      "84026H16_previous",
+      "84026H16_final",
+      "82989H16_previous",
+      "82989H16_final"
+    ],
+    "fields": [
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map16/previous.dat",
+        "size_bytes": 10099884032,
+        "sha256": "ae749b8887c335f07e1d75ee65df3adcd627c3195d09c1ce5f50f4af9582886b"
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map16/final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "2cc86c871fbbd6dfbfa7dd5747159a56af8a8915a55e5ad7689524d32e278e1a"
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map08/previous.dat",
+        "size_bytes": 10099884032,
+        "sha256": "ee83152c5e83e089a59f670177041ce2914649d47d14a2b8208e20a27e7c3bb6"
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map08/final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "116677ee961ac547340bca46e9b20142aa15e9e102db71fc4745fac2afd3bc98"
+      },
+      {
+        "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/previous.dat",
+        "size_bytes": 10099884032,
+        "sha256": "fb3a78180b1e57e4130c5dc395c34a52b4395864b2d5e450ac75e108542f6bb6"
+      },
+      {
+        "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "80f83b87df981c9649616339d3dcd701e7ec271fb7db13c6fbb54855087967ba"
+      },
+      {
+        "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/previous.dat",
+        "size_bytes": 10099884032,
+        "sha256": "1b5cd4b473f70a22c81d0d030909a74eee9ccc36f212091b094daf740ffa5d05"
+      },
+      {
+        "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/final.dat",
+        "size_bytes": 10099884032,
+        "sha256": "ad1b7fb69dc45ec829f41531967bc0d30c423b9d0f4524298a5e24da7f71a7ba"
+      }
+    ],
+    "geometry": {
+      "path": "outputs/hpc/x20-accelerated-feedback-windows-20260930/source-preflight/boundary_geometry.npz",
+      "size_bytes": 78312,
+      "sha256": "aeff8f1753e461572354d5e4b4d035b8465c731dee23d97ff2094076e83133cc"
+    },
+    "verified_small_source_claims": 835,
+    "wall_s": 18.71817080099936,
+    "large_fields_read": false,
+    "source_plan_only": true
+  },
+  "school_fixture_provenance": {
+    "initial_tests": {
+      "passed": 63,
+      "failed": 2,
+      "wall_s": 15.51,
+      "reason": "Mac received directory absent for pair08/pair16 test fixtures; FileNotFoundError before assertion"
+    },
+    "archive": {
+      "path": "outputs/hpc/x20-83514-seed-feedback-20261002/archives/complete-1790960272454395309.tar.gz",
+      "size_bytes": 152145149,
+      "sha256": "171226a7c07cdf48b3bb820e2443438cf78d8adbe2204856327406abbef95cbc"
+    },
+    "fixtures": [
+      {
+        "path": "outputs/review-20260925/x20-83514-feedback-84026-received/historical/pair08/decision.json",
+        "size_bytes": 4959,
+        "sha256": "abb56b5869f7e4634ef0dbe1e91784569e8af11eebafc150aa7273f19a81e799",
+        "scope": "test fixture only; not a complete received archive"
+      },
+      {
+        "path": "outputs/review-20260925/x20-83514-feedback-84026-received/historical/pair16/decision.json",
+        "size_bytes": 6438,
+        "sha256": "2c1939632f5343627887946648eb0433e48ad1418e7deb85e75e719cb2bb4f38",
+        "scope": "test fixture only; not a complete received archive"
+      }
+    ]
+  },
+  "school_tests": ".................................................................        [100%]\n65 passed in 2.14s\n",
+  "mac_tests": "65 passed in 0.94s",
+  "shell_and_diff_passed": true,
+  "job_id": 85856
+}
