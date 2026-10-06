@@ -1,0 +1,88 @@
+{
+  "counts": {
+    "ordered_matrix_products": 57,
+    "matrix_diagonal": 15,
+    "matrix_off_diagonal": 42,
+    "reconstruction_squares": 15,
+    "total_dot_calls": 72,
+    "sum_reductions": 144,
+    "product_arrays": 72,
+    "absolute_product_arrays": 72,
+    "underflow_boolean_expression_results": 360,
+    "discarded_reconstruction_absolute_sums": 15
+  },
+  "school_slab": {
+    "elements": 4194304,
+    "longdouble_itemsize_assumed": 16,
+    "one_longdouble_array_bytes": 67108864,
+    "one_boolean_array_bytes": 4194304,
+    "cumulative_product_and_absolute_array_payload_bytes": 9663676416,
+    "cumulative_underflow_boolean_result_payload_bytes": 1509949440
+  },
+  "candidate_counts": {
+    "square_calls": 30,
+    "first_stage_unused_absolute_reductions": 15,
+    "further_diagonal_absolute_reductions": 15,
+    "sum_reductions_if_both_square_changes_validated": 114
+  },
+  "source_pins": {
+    "operations/x20_85889_chord_scan.py": "9349c255b35c515fd37e7903a120ebed753e9c517c9381b402d4184d450a1643",
+    "operations/x20_85889_chord_scan_reuse.py": "a4b6b5b07eaaa457b5b5aa2cd726597f2476c78c7d2b3937810b6551fe0594a6",
+    "handoff/audit_tools/audit_x20_86061_reuse.py": "e78b7c8e56b7a429aca84e2b26ce717618f9c3bf451e7cef2cfe1ad3a625d0d7"
+  },
+  "evidence": [
+    {
+      "path": "outputs/review-20260925/20261006-86191-cost-inventory.json",
+      "size_bytes": 45773,
+      "sha256": "ceef7b11bd830562c5504ba1715687887493d2926ff3041a4c9af0afda59fdab"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-86191-cost-school-inventory.json",
+      "size_bytes": 45773,
+      "sha256": "ceef7b11bd830562c5504ba1715687887493d2926ff3041a4c9af0afda59fdab"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-86191-cost-code.json",
+      "size_bytes": 940,
+      "sha256": "1947a9dfd4c6c3d875809220df3da539b248c317fe6d781ae7cf0edf5a51da4f"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-86191-cost-tests.log",
+      "size_bytes": 98,
+      "sha256": "808216c1e906665a6311eea3399af7e63a60328f6537b9bcf2f6f7027e943f4a"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-86191-cost-school-tests.log",
+      "size_bytes": 481,
+      "sha256": "14baf116ef6bf3c6331fe60176401a208f1b217159ea90ad24ef58046248477d"
+    }
+  ],
+  "mac_tests": 9,
+  "school_tests": 9,
+  "mac_seconds": 0.15,
+  "school_seconds": 2.32,
+  "lecture_prefix": {
+    "size_bytes": 467922,
+    "sha256": "7877561b2e2030fc58af9e795b2c81d39dcf1efa35114131d3ac8e344bd5e65b"
+  },
+  "cli_actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "cli_seconds": 34.868917000014335,
+  "new_numerical_implementation": false,
+  "numeric_equivalence_tested": false,
+  "component_profile_measured": false,
+  "speedup_measured": false,
+  "new_slurm_jobs": 0,
+  "real_field_bytes_read": 0,
+  "dat_downloads": 0,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_material": 0,
+  "full_scan_authorized": false,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "next": "separately named reconstruction-square-only candidate; synthetic validation first, no production entry point or budget"
+}

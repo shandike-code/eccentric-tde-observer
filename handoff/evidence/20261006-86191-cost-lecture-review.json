@@ -1,0 +1,17 @@
+{
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "wall_s": 34.868917000014335,
+  "scope": "static source review reuse+dot and factual counts; no profile or new numerical validation",
+  "corrections": [
+    "Mac0.15秒被草稿误写15秒；以实际tests.log为准。",
+    "72 product/abs arrays表述含糊，实际72个product加72个abs(product)，共144个LD数组表达式结果。",
+    "scratch若将来实施可复用存储，但当前未实现未实测，不把候选效果写成确定生产收益。"
+  ],
+  "accepted": [
+    "分阶段仅移除未消费abs归约，然后才单独考虑矩阵对角共享结果。",
+    "累计表达式payload不等于RSS/分配次数/内存流量/耗时；本轮无组件profile。",
+    "保持下溢拒绝、原归约顺序、两端独立数值审阅及完整扫描未授权。"
+  ]
+}
