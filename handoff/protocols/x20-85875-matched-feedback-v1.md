@@ -1,6 +1,6 @@
 # 85875窗口通过后的双历史新反馈验证
 
-状态：设计已记录，尚无实现、测试或提交；必须通过本协议全部前置检查后才能运行。不是85875的恢复或预算扩展。
+状态：独立入口、批处理、审阅器和测试已实现，尚未完成两端预检或提交；必须通过本协议全部前置检查后才能运行。不是85875的恢复或预算扩展。
 
 ## 科学问题与固定条件
 
@@ -32,3 +32,7 @@ x20、原物理旧时间层、base/r20、phase1367、dt889.419892762322秒、963
 提交之前核两端clean/exactHEAD、完整Git bundle verify；新增独立入口、sbatch、来源/负路径/预算/门判据测试和审阅器。学校真实小来源预检必须核两种种子、完整来源归档、逐位trial/native和算子同一性；预检不冒充生产大场前后SHA。Mac/学校测试通过后再次给出具体Code/Logic/Physics PRE-RUN，使用verify+fetch新ref+ff-only同步，禁止reset/force。
 
 每对及complete/failed/interrupted自动排除dat归档。batch-exit另外保存；watch先真实scheduler-terminal落盘再调用无工具CLI。终态独立核32map/4pair最多2432map及608feedback回执、全部四组合512向量和冻结信号、源/代码/资源/正物理域、所有门与新旧参考解释。Slurm未知时如实保留，不能借Python退出或下游成功造COMPLETED。然后完成POST-RUN、报告及学校CLI中文讲义的独立纠错，才决定下一项行动。
+
+## 实现与边界细节
+
+入口 operations/x20_85875_matched_feedback.py 和同名 sbatch；审阅器 handoff/audit_tools/review_x20_85875_matched_feedback.py、watch_x20_85875_matched_feedback.py。沿用原比较核的严格小于判据，恰好等于0.001或0.1不因本协议的上限记法而放行；没有放宽旧门。所有新旧比较均完整保留。生产准备和终态均检查全部声明来源SHA；登录节点轻量预检只对dat核存在与大小，不能冒充完整SHA核验。
