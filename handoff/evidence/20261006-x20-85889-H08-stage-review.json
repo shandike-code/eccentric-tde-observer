@@ -1,0 +1,67 @@
+{
+  "job_id": 85889,
+  "stage": "partial_both_branches_map08_review",
+  "numerical_commit": "9555a78a77b9025e30405684dee2669d9e43baee",
+  "archive": {
+    "path": "outputs/hpc/x20-85875-matched-feedback-20261006/archives/historical-map08-feedback-1791257372636250399.tar.gz",
+    "size_bytes": 153825563,
+    "sha256": "40e32c0230481bb8bd4cfc381172a0423a31047bae636eb3b5f9cacb35bcf22c"
+  },
+  "pre_run": {
+    "Code": "PASS",
+    "Logic": "PASS",
+    "Physics": "WARNING",
+    "Decision": "RUN",
+    "scope": "Frozen A8 and H8 small artifacts, original gates and independent vector reductions; no new Slurm or large-field or material ODE computation"
+  },
+  "post_run": {
+    "verified_files": 4303,
+    "verified_source_claims": 979,
+    "verified_code_claims": 801,
+    "map_process_receipts": 1216,
+    "feedback_process_receipts": 304,
+    "maximum_proc_kib": 4045164,
+    "all_original_zero_gates_passed": true,
+    "independent_vector_reduction": true
+  },
+  "reviewed_feedback_pairs": [
+    "accelerated8",
+    "historical8"
+  ],
+  "both_branches_feedback_recomputed": true,
+  "new_16_minus_8_window_available": false,
+  "new_cross_history_available": true,
+  "new_cross_history_maps": 8,
+  "new_cross_response_passed": false,
+  "new_cross_rate_passed": true,
+  "own_prior_response_comparisons_passed": true,
+  "saved_reference_comparison_reference_recomputed": false,
+  "completed_experiment": false,
+  "current_scheduler_terminal_verified": false,
+  "reference_calibration_eligible": null,
+  "source_84026_scheduler_terminal_verified": false,
+  "source_85821_scheduler_terminal_verified": true,
+  "source_85875_scheduler_terminal_verified": true,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "baseline_replaced": false,
+  "new_slurm_submissions": 0,
+  "real_artifact_first_end_to_end_pass": true,
+  "source_dat_claims_bound_to_prior_audits": 20,
+  "backup_both_verified": "outputs/review-20260925/pre-85889-H08-review-20261006.bundle",
+  "backup_bytes": {
+    "mac": 25610748,
+    "school": 25602989
+  },
+  "decision": "Continue only the already declared A16 and H16 endpoints; no extra budget, recovery, resubmission, calibration or acceptance.",
+  "lecture_section": 143,
+  "actual_cli_model": "deepseek-v4-flash[1m]",
+  "format_checks": {
+    "new_report": true,
+    "new_lecture_section": true,
+    "old_lecture_prefix_bytes": 409907,
+    "old_lecture_prefix_sha256": "b8b172a7ef91f7b37dc428f854db9caf9572128e4270d8bca11ab1f6419b24a8",
+    "old_lecture_prefix_unchanged": true
+  },
+  "tests": "No source changes; prior tested reviewer reused. This new real-artifact E2E passed on first execution."
+}

@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 6658,
+  "duration_api_ms": 6483,
+  "ttft_ms": 5935,
+  "ttft_stream_ms": 1104,
+  "time_to_request_ms": 164,
+  "num_turns": 1,
+  "result": "85889 RUNNING（32CPU/128G，限6h，已2h14m）；accepted20、new_material0、baseline_replaced=false。仅完成A8/H8，A16/H16未出。pair08两门零对稳定，旧pair漂移过，五率热门全过。唯新跨支响应r20≈2.67e-3>1e-3、80195信号0.75>0.1全失；H对保存旧A诊断r20≈2.66e-3、信号0.74亦全失。故跨支与对旧参考仅漂移失败，七门/物理域/内层/资源/完整性未败，可完成已声明同龄端点、不扩预算、不给候选资格；不称反馈收敛或整盘完成。84026终态未知，batch_exit非Slurm终态。",
+  "stop_reason": "end_turn",
+  "session_id": "b47e0f05-2819-491f-8259-77bb0f7042d2",
+  "total_cost_usd": 0.05525,
+  "usage": {
+    "input_tokens": 5690,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1072,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 5690,
+      "outputTokens": 1072,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.05525,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "97967290-8ca1-4c7e-89d9-6f1c2b84636c"
+}

@@ -1,0 +1,21 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "20261006-x20-85889-H08-lecture-draft.json",
+  "evidence": "20261006-x20-85889-H08-review.json",
+  "lecture_section": 143,
+  "independently_revised": true,
+  "corrections": [
+    "草稿由同对和对旧端点小差称“两新支内部稳定”，改为已审有限比较通过；新16−8尚未出现，不能宣称窗口稳定或固定点收敛。",
+    "“同对r20三范数”改为差向量三范数除原r20对应范数；原r20本身未改变。",
+    "新跨支A8/H8与H8对旧保存82518A16作为两类明确比较，保存参考未在该诊断中重算。",
+    "补充实际跨支五类率/加热门全部通过及三加热四组合最大，避免把仅提到判据当作已报告实测结果。",
+    "补充4303工件/1216map304feedback回执、源绑定与正物理域、资源，有限定位不推断成因或光度份额。"
+  ],
+  "format_checks": {
+    "new_report": true,
+    "new_lecture_section": true,
+    "old_lecture_prefix_bytes": 409907,
+    "old_lecture_prefix_sha256": "b8b172a7ef91f7b37dc428f854db9caf9572128e4270d8bca11ab1f6419b24a8",
+    "old_lecture_prefix_unchanged": true
+  }
+}
