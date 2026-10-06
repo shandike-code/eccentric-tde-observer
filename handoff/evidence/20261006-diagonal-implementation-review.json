@@ -1,0 +1,342 @@
+{
+  "stage": "matrix diagonal sharing finite synthetic acceptance",
+  "starting_mac_commit": "ff4acfd231e5bf1111cf42039a93744c649c9ecd",
+  "school_commit": "4b02b0865ed45103770a6ecf63638c9696bd0a62",
+  "tests": {
+    "mac": 245,
+    "mac_seconds": 0.76,
+    "school": 245,
+    "school_seconds": 5.03,
+    "new": 96,
+    "square": 70,
+    "reuse": 43,
+    "original": 36,
+    "first_mac_tests": 239,
+    "first_mac_seconds": 0.78,
+    "frozen_mac_tests": 239,
+    "frozen_mac_seconds": 0.74,
+    "first_school_tests": 239,
+    "first_school_seconds": 5.3,
+    "numeric_test_failures": 0
+  },
+  "implementation": {
+    "new_diagonal_implemented": true,
+    "only_gram_numeric_branch_change": true,
+    "original_square_helper_imported": true,
+    "ordered_vector_calls": 2,
+    "decimal_text_calls": 2,
+    "expression_key_equality_only": true,
+    "old_pins_unchanged": true
+  },
+  "actual_counts": {
+    "dot": 42,
+    "matrix_square": 15,
+    "reconstruction_square": 15,
+    "products": 72,
+    "sums": 114,
+    "square_reference_sums": 129
+  },
+  "validation": {
+    "numeric_equivalence_tested": true,
+    "scope": "finite synthetic cases only",
+    "full_summary_strings_and_zero_signs": true,
+    "independent_decimal80_all_matrices": true,
+    "actual_sum_input_layouts_tested": true,
+    "layout_json_scope": "reconstructed intermediate arrays plus observed original/shared outcomes; actual sum inputs captured separately in tests",
+    "call_log_callbacks_certified": false,
+    "mac_initial_named_pre_execution_manifest": false,
+    "subsequent_mac_and_both_school_pre_post_sha": true
+  },
+  "metadata": {
+    "mac": {
+      "shape": [
+        129,
+        2,
+        3
+      ],
+      "slabs": 5,
+      "blocks": 2,
+      "independent_reviews_identical": true,
+      "complete_slabs_equal": true,
+      "input_arrays_readonly": true,
+      "synthetic_original_scan_bytes_read": 111456,
+      "synthetic_shared_buffer_bytes_read": 37152,
+      "total_fixture_bytes_read": 148608,
+      "arithmetic": {
+        "rounding_mode_code": 0,
+        "rounding_mode": "FE_TONEAREST",
+        "subtractions": "binary64 fixed expression order",
+        "accumulation": "numpy longdouble",
+        "nmant": 52,
+        "eps": "2.220446049250313080847263336181640625e-16",
+        "maxexp": 1024,
+        "serialization_significant_digits": 37,
+        "numpy": "2.5.2"
+      },
+      "peak_rss_bytes": 33423360,
+      "production_io_driver": false,
+      "production_resource_verified": false,
+      "controlled_speedup_measured": false,
+      "full_scan_authorized": false
+    },
+    "school": {
+      "shape": [
+        129,
+        2,
+        3
+      ],
+      "slabs": 5,
+      "blocks": 2,
+      "independent_reviews_identical": true,
+      "complete_slabs_equal": true,
+      "input_arrays_readonly": true,
+      "synthetic_original_scan_bytes_read": 111456,
+      "synthetic_shared_buffer_bytes_read": 37152,
+      "total_fixture_bytes_read": 148608,
+      "arithmetic": {
+        "rounding_mode_code": 0,
+        "rounding_mode": "FE_TONEAREST",
+        "subtractions": "binary64 fixed expression order",
+        "accumulation": "numpy longdouble",
+        "nmant": 63,
+        "eps": "1.084202172485504434007452800869941711e-19",
+        "maxexp": 16384,
+        "serialization_significant_digits": 37,
+        "numpy": "2.5.2"
+      },
+      "peak_rss_bytes": 32636928,
+      "production_io_driver": false,
+      "production_resource_verified": false,
+      "controlled_speedup_measured": false,
+      "full_scan_authorized": false
+    }
+  },
+  "exception_behavior": {
+    "mac": {
+      "cases": 135,
+      "minimum": {
+        "outcome": {
+          "error": "ArithmeticError",
+          "message": "nonzero product underflow; platform range insufficient"
+        },
+        "warnings": []
+      },
+      "sum_overflow_warn": {
+        "outcome": {
+          "error": "ValueError",
+          "message": "nonfinite statistic"
+        },
+        "warnings": [
+          "RuntimeWarning"
+        ]
+      },
+      "original_sum_overflow_warn": {
+        "outcome": {
+          "error": "ValueError",
+          "message": "nonfinite statistic"
+        },
+        "warnings": [
+          "RuntimeWarning",
+          "RuntimeWarning"
+        ]
+      }
+    },
+    "school": {
+      "cases": 135,
+      "minimum": {
+        "outcome": {
+          "values": [
+            "5.858420697612673406710335771831314262e-646",
+            "5.858420697612673406710335771831314262e-646"
+          ]
+        },
+        "warnings": []
+      },
+      "sum_overflow_warn": {
+        "outcome": {
+          "error": "ValueError",
+          "message": "nonfinite statistic"
+        },
+        "warnings": [
+          "RuntimeWarning"
+        ]
+      },
+      "original_sum_overflow_warn": {
+        "outcome": {
+          "error": "ValueError",
+          "message": "nonfinite statistic"
+        },
+        "warnings": [
+          "RuntimeWarning",
+          "RuntimeWarning"
+        ]
+      }
+    }
+  },
+  "parity": {
+    "code_files": 11,
+    "school_pre_post_sha_equal": true,
+    "mac_frozen_execution_pre_post_sha_equal": true,
+    "initial_mac_tests_before_named_manifest": true,
+    "school_json_verified": 10,
+    "independent_school_reviews_on_mac": {
+      "square": {
+        "reproduced": true,
+        "all_other_review_fields_equal": true,
+        "school_tolerance": "1.3322676295501878485083580017089843744768E-15",
+        "mac_tolerance": "2.7284841053187847137451171875000000000000E-12"
+      },
+      "diagonal": {
+        "reproduced": true,
+        "all_other_review_fields_equal": true,
+        "school_tolerance": "1.3322676295501878485083580017089843744768E-15",
+        "mac_tolerance": "2.7284841053187847137451171875000000000000E-12"
+      }
+    },
+    "sample_all_slabs_cross_platform_equal": true,
+    "production_resource_verified": false,
+    "controlled_speedup_measured": false,
+    "full_scan_authorized": false
+  },
+  "receipt_failure": {
+    "stage": "first Mac school receive review",
+    "failed_assertion": "r == review(local)",
+    "all_slab_strings_equal_before_failure": true,
+    "school_review_reproduced_before_failure": true,
+    "only_difference": "maximum_reduction_tolerance",
+    "mac": "2.7284841053187847137451171875000000000000E-12",
+    "school": "1.3322676295501878485083580017089843744768E-15",
+    "cause": "Review tolerance is derived from each declared longdouble epsilon; whole cross-platform review objects are not expected equal.",
+    "resolution": "Require exact full slab equality for this sample, reproduce each school review unchanged on Mac, compare every other review field exactly, and verify each tolerance with original reviewer. No source numerical tolerance or assertion changed."
+  },
+  "backups": {
+    "mac": {
+      "size_bytes": 26105662,
+      "sha256": "abf4a87c7d1cfca60339a8d6fa10a84665e19d4ee608541f9a2d43b0735b926f"
+    },
+    "school_size_bytes": 25957894,
+    "both_complete_verified": true
+  },
+  "artifacts": {
+    "outputs/review-20260925/20261006-diagonal-tests-01.log": {
+      "size_bytes": 340,
+      "sha256": "8e6c18e202a25bb18f1fea18ad458ae511b07c0958ba6ed1b7201f2ceb3c009e"
+    },
+    "outputs/review-20260925/20261006-diagonal-tests-02.log": {
+      "size_bytes": 340,
+      "sha256": "4e77fa503f60cb456c6388d0e60a0bd56157a5fb7ecf913e931f63d67a3c1ecf"
+    },
+    "outputs/review-20260925/20261006-diagonal-tests-03.log": {
+      "size_bytes": 340,
+      "sha256": "612cb0cc1327d78a6d570a0553c6125b9ba6c14ab6dafe70a79bfb9a4509811e"
+    },
+    "outputs/review-20260925/20261006-diagonal-code-before.json": {
+      "size_bytes": 1700,
+      "sha256": "064f2c6f798619c2cb4cedcbc30785d83b1de3145bf5d1e9a71e0d910fd14ff8"
+    },
+    "outputs/review-20260925/20261006-diagonal-code-after.json": {
+      "size_bytes": 1700,
+      "sha256": "064f2c6f798619c2cb4cedcbc30785d83b1de3145bf5d1e9a71e0d910fd14ff8"
+    },
+    "outputs/review-20260925/20261006-diagonal-code-before-02.json": {
+      "size_bytes": 1700,
+      "sha256": "668727de27164c97bf8ee5eb942d425f7f04ef7fe71f9996588e1fd995d6fb6b"
+    },
+    "outputs/review-20260925/20261006-diagonal-code-after-02.json": {
+      "size_bytes": 1700,
+      "sha256": "668727de27164c97bf8ee5eb942d425f7f04ef7fe71f9996588e1fd995d6fb6b"
+    },
+    "outputs/review-20260925/20261006-diagonal-school-receipt.json": {
+      "size_bytes": 1191,
+      "sha256": "c893bd65250e6b580073d0c118039a5e939d7af38fef4d0f706cdab0f6ff8253"
+    },
+    "outputs/review-20260925/20261006-diagonal-school-receipt-02.json": {
+      "size_bytes": 1191,
+      "sha256": "be807ab724c271f8143218a60498368384eaae70e96257a026cb530b53a85206"
+    },
+    "outputs/review-20260925/20261006-diagonal-parity-first-failure.json": {
+      "size_bytes": 730,
+      "sha256": "4dc95e0f09b6472925f5aa53b086777e1e087a9765b906a019831411e02000ac"
+    },
+    "outputs/review-20260925/20261006-diagonal-parity.json": {
+      "size_bytes": 885,
+      "sha256": "709c93df96655fca988f6d9ba208e993b4b207d3fd054e820acac73367f4e970"
+    },
+    "outputs/review-20260925/20261006-diagonal-school-final-state.log": {
+      "size_bytes": 1295,
+      "sha256": "de1e9b345c52a6254e370d98e76093ef72ef6dcc75dfac780d60a8c32f4b4fd1"
+    },
+    "outputs/review-20260925/20261006-diagonal-implementation-backup.log": {
+      "size_bytes": 877,
+      "sha256": "6a1f95ca2e6d193a2fe2dea846b25a98c2d09df4ffc4da999690fdb4ccca8039"
+    },
+    "outputs/review-20260925/20261006-diagonal-implementation-school-backup.log": {
+      "size_bytes": 11862,
+      "sha256": "fa7cf23cceff4d5f25021e7c15c8a630583787b65a3c42ab01c2899cc7d9d004"
+    },
+    "outputs/review-20260925/diagonal-e2e-20261006/layout-warning.json": {
+      "size_bytes": 178651,
+      "sha256": "b2562c837f8969b1f6aaad40da99b14d6979c945b65ee508ae7ad5f2886b3635"
+    },
+    "outputs/review-20260925/diagonal-e2e-20261006/metadata.json": {
+      "size_bytes": 830,
+      "sha256": "26647f2457a926dd187511aa036e2842152f28728c47a53527a36e3a819fdf5c"
+    },
+    "outputs/review-20260925/diagonal-e2e-20261006/diagonal-review.json": {
+      "size_bytes": 29245,
+      "sha256": "a6fa521b28c59e7e59923f0c0cc069305b5b16c678c452a042115522e74e3d88"
+    },
+    "outputs/review-20260925/diagonal-e2e-20261006/square-review.json": {
+      "size_bytes": 29245,
+      "sha256": "a6fa521b28c59e7e59923f0c0cc069305b5b16c678c452a042115522e74e3d88"
+    },
+    "outputs/review-20260925/diagonal-e2e-20261006/square-scan.json": {
+      "size_bytes": 120126,
+      "sha256": "c9046afd2ba6e80320b3d77ad22fb03d5ecd4de69d5b3c5d64cd0bb4dc4c5209"
+    },
+    "outputs/review-20260925/diagonal-e2e-20261006/diagonal-scan.json": {
+      "size_bytes": 120126,
+      "sha256": "c9046afd2ba6e80320b3d77ad22fb03d5ecd4de69d5b3c5d64cd0bb4dc4c5209"
+    },
+    "outputs/review-20260925/diagonal-school-e2e-20261006-02/tiny/layout-warning.json": {
+      "size_bytes": 180619,
+      "sha256": "24b006b11e639744fa9658a168ab708ea6c0dc0bbfc42a30a263cd2b4dc0a3dc"
+    },
+    "outputs/review-20260925/diagonal-school-e2e-20261006-02/tiny/metadata.json": {
+      "size_bytes": 831,
+      "sha256": "938a4acd6e0ad25d7de506f1ce6fcaf19358a31a62aa8a158da319c49e48c5b8"
+    },
+    "outputs/review-20260925/diagonal-school-e2e-20261006-02/tiny/diagonal-review.json": {
+      "size_bytes": 29245,
+      "sha256": "4e9c011166952f0deed5595ef47e93a0518635f73c7bd2c0b08e36a71e3e037c"
+    },
+    "outputs/review-20260925/diagonal-school-e2e-20261006-02/tiny/square-review.json": {
+      "size_bytes": 29245,
+      "sha256": "4e9c011166952f0deed5595ef47e93a0518635f73c7bd2c0b08e36a71e3e037c"
+    },
+    "outputs/review-20260925/diagonal-school-e2e-20261006-02/tiny/square-scan.json": {
+      "size_bytes": 119833,
+      "sha256": "1403807ad3c3c9e59c593dd9d5f2e972e4d09c833430eb8b493fd205a3bea4a9"
+    },
+    "outputs/review-20260925/diagonal-school-e2e-20261006-02/tiny/diagonal-scan.json": {
+      "size_bytes": 119833,
+      "sha256": "1403807ad3c3c9e59c593dd9d5f2e972e4d09c833430eb8b493fd205a3bea4a9"
+    }
+  },
+  "real_dat_reads": 0,
+  "dat_downloads": 0,
+  "new_slurm_jobs": 0,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_ode": 0,
+  "new_material": 0,
+  "accepted_material_updates": 20,
+  "school_production_synchronized": false,
+  "production_resource_verified": false,
+  "controlled_speedup_measured": false,
+  "full_scan_authorized": false,
+  "baseline_replaced": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "next_action": "Design and independently review a separately bounded production resource protocol for explicitly wired diagonal kernel; no job budget or launch authorized by this synthetic stage."
+}

@@ -1,0 +1,29 @@
+{
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "wall_s": 17.846442124806345,
+  "scope": "gram branch source and supplied validation facts; not full source or production performance audit",
+  "independent_review_complete": true,
+  "corrections": [
+    {
+      "draft": "性能结论缺浮点实测",
+      "correction": "已有两端浮点合成实测，缺的是受控生产性能实测；小E2E RSS不能外推生产。"
+    },
+    {
+      "draft": "旧301片已关闭",
+      "correction": "85889/86061/86191原Job预算关闭；完整301片仍未授权，不能说已跑完或关闭一个本不存在的新预算。"
+    },
+    {
+      "draft": "极小差异等均属未验证面",
+      "correction": "极小量平台差异已测且保留；未验证的是生产资源/性能、call/log副作用与有限样例外的泛化。"
+    }
+  ],
+  "lecture_prefix": {
+    "size_bytes": 477368,
+    "sha256": "bf06d0dcfb30900335e05b86b25382ad8d517e5cab0e964b88a5f6313e9a7258"
+  },
+  "lecture_prefix_unchanged": true,
+  "new_markdown_format_verified": true,
+  "no_new_figure": true
+}
