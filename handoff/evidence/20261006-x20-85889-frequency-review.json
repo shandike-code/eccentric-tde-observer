@@ -1,0 +1,639 @@
+{
+  "job_id": 85889,
+  "stage": "all_frequency_blocks_of_new_cross16",
+  "review_parent_commit": "e11dbbed03d59f01d12557c58198b1286869b725",
+  "numerical_commit": "9555a78a77b9025e30405684dee2669d9e43baee",
+  "scope": "304 stored frequency partials of four map16 endpoints; 4 cross-history combinations; no solver or new map",
+  "source_verification_records": 1229,
+  "unique_archived_source_paths": 1227,
+  "external_frequency_sources": {
+    "template": "outputs/mac-interval-wiring-review-20260915/feedback-round2/inputs/feedback_template.json",
+    "master": "outputs/phase7b5p_master_worker_input.npz",
+    "template_claim": {
+      "path": "outputs/hpc/step16-backtrack-20260923/full/feedback-round1/inputs/feedback_template.json",
+      "size_bytes": 5789,
+      "sha256": "de81d16022f61e607ad3821f5e13e45a4b53b942e232087aedd36d88d8ca4ac7"
+    },
+    "master_claim": {
+      "path": "outputs/phase7b5p_master_worker_input.npz",
+      "size_bytes": 635100,
+      "sha256": "c55d52b15fb01387c7c349262f06da58f1051d38b8a3c7edf284ae2bc3fcec70"
+    }
+  },
+  "code": [
+    {
+      "path": "scripts/phase7b5x_full_depth_block_probe.py",
+      "sha256": "68783421b8cc57ec5c7fa5e6f209183a5230dce507b3d74c057c4fa50dfa21bc"
+    },
+    {
+      "path": "scripts/phase7b7j_second_assembled_feedback.py",
+      "sha256": "f03b39cfcf0586848c3fb8bc744c2db4111c4acb0cb1422fde6b36b155b80a92"
+    },
+    {
+      "path": "scripts/phase7b9_formal_feedback_pair_adapter.py",
+      "sha256": "6445ca4499ec8f3f2be2095a97859badd263e98e8b57056625b56e02f82912c6"
+    },
+    {
+      "path": "operations/common_native_feedback.py",
+      "sha256": "cd8c3b7de359f296eb1365538e680d80ee413e19a93841f2a066390fc96bece5"
+    },
+    {
+      "path": "src/eccentric_tde_observer/multigroup_continuum.py",
+      "sha256": "aab92a7395f9d5b39565b280e279374813d0296128820f9cac4aa9e01195fc2c"
+    },
+    {
+      "path": "src/eccentric_tde_observer/non_gray.py",
+      "sha256": "861a430474e70c6647be4dac3248a7f191511ee61d8e776b4a32125ccc4beab9"
+    },
+    {
+      "path": "src/eccentric_tde_observer/radiation.py",
+      "sha256": "21bdc27b48364e15bfe71fdbc4ddae2f72e221141fdc91a7d53a46bb49a9c25f"
+    }
+  ],
+  "endpoint_checks": {
+    "accelerated_previous": {
+      "blocks": 76,
+      "groups": 9632,
+      "fields": 10,
+      "all_fields_sum_bitwise": true,
+      "nonformal_legacy_bitwise": true,
+      "atomic_equals_absorbed_minus_emitted_bitwise": true
+    },
+    "accelerated_final": {
+      "blocks": 76,
+      "groups": 9632,
+      "fields": 10,
+      "all_fields_sum_bitwise": true,
+      "nonformal_legacy_bitwise": true,
+      "atomic_equals_absorbed_minus_emitted_bitwise": true
+    },
+    "historical_previous": {
+      "blocks": 76,
+      "groups": 9632,
+      "fields": 10,
+      "all_fields_sum_bitwise": true,
+      "nonformal_legacy_bitwise": true,
+      "atomic_equals_absorbed_minus_emitted_bitwise": true
+    },
+    "historical_final": {
+      "blocks": 76,
+      "groups": 9632,
+      "fields": 10,
+      "all_fields_sum_bitwise": true,
+      "nonformal_legacy_bitwise": true,
+      "atomic_equals_absorbed_minus_emitted_bitwise": true
+    }
+  },
+  "quadrature_weight_relative_error": 2.220446049250313e-16,
+  "energy_diagnostic_sha256": "c277eff13154ef54b5f210bc829f040d168dcafd4686e75aa1a763911f5b562b",
+  "energy_review_sha256": "bec2d896642faa0da2ba684f3dfaea5280eb7f53be71535f4260af6f1983a4e1",
+  "summary": {
+    "previous_vs_previous": {
+      "heating_log_sum_max_abs_error": 2.1671439599454945e-15,
+      "emitted_all_blocks_half_bitwise_equal": true,
+      "net_vs_absorbed_minus_emitted_max_abs_error_erg_s_cm3": 8.881784197001252e-14,
+      "signed_projection_sum": 1.0,
+      "sum_block_norm_over_total_norm": 1.893172676771285,
+      "top10_by_absolute_projection": [
+        49,
+        50,
+        25,
+        24,
+        48,
+        51,
+        22,
+        46,
+        45,
+        47
+      ],
+      "total_heating_log_mass_norm": 0.0027615662275821424,
+      "cell126_total_delta_q_erg_s_cm3": -0.0035337055127870973,
+      "cell126_sum_absolute_over_absolute_sum": 1.7511868932703991,
+      "top_blocks": [
+        {
+          "block": 49,
+          "start": 6272,
+          "stop": 6400,
+          "energy_left_ev": 35.600315924571554,
+          "energy_right_ev": 41.42389898769477,
+          "signed_projection": 0.3164466099202878,
+          "log_contribution_mass_norm": 0.0008763994577793483
+        },
+        {
+          "block": 50,
+          "start": 6400,
+          "stop": 6528,
+          "energy_left_ev": 41.42389898769477,
+          "energy_right_ev": 48.98990780193044,
+          "signed_projection": 0.3144516321360041,
+          "log_contribution_mass_norm": 0.0008932079998442758
+        },
+        {
+          "block": 25,
+          "start": 3200,
+          "stop": 3328,
+          "energy_left_ev": 12.064279050843595,
+          "energy_right_ev": 13.668079907150819,
+          "signed_projection": 0.28245578151865675,
+          "log_contribution_mass_norm": 0.0007816357859087522
+        },
+        {
+          "block": 24,
+          "start": 3072,
+          "stop": 3200,
+          "energy_left_ev": 9.959586757011056,
+          "energy_right_ev": 12.064279050843595,
+          "signed_projection": 0.24089525861434966,
+          "log_contribution_mass_norm": 0.0006678344402679799
+        },
+        {
+          "block": 48,
+          "start": 6144,
+          "stop": 6272,
+          "energy_left_ev": 31.214871186216694,
+          "energy_right_ev": 35.600315924571554,
+          "signed_projection": 0.13077512389419593,
+          "log_contribution_mass_norm": 0.00037408237552088216
+        },
+        {
+          "block": 51,
+          "start": 6528,
+          "stop": 6656,
+          "energy_left_ev": 48.98990780193044,
+          "energy_right_ev": 58.583656357260345,
+          "signed_projection": 0.1161050675446464,
+          "log_contribution_mass_norm": 0.00033860926224122556
+        },
+        {
+          "block": 22,
+          "start": 2816,
+          "stop": 2944,
+          "energy_left_ev": 6.787677647670483,
+          "energy_right_ev": 8.222071783352346,
+          "signed_projection": -0.10001516047009072,
+          "log_contribution_mass_norm": 0.0002944645316565696
+        },
+        {
+          "block": 46,
+          "start": 5888,
+          "stop": 6016,
+          "energy_left_ev": 25.47624583959035,
+          "energy_right_ev": 27.940392682190918,
+          "signed_projection": -0.08877115822541588,
+          "log_contribution_mass_norm": 0.00025321714978771936
+        },
+        {
+          "block": 45,
+          "start": 5760,
+          "stop": 5888,
+          "energy_left_ev": 23.58455950695806,
+          "energy_right_ev": 25.47624583959035,
+          "signed_projection": -0.06202768139035518,
+          "log_contribution_mass_norm": 0.0001724787767773948
+        },
+        {
+          "block": 47,
+          "start": 6016,
+          "stop": 6144,
+          "energy_left_ev": 27.940392682190918,
+          "energy_right_ev": 31.214871186216694,
+          "signed_projection": -0.041191330819793516,
+          "log_contribution_mass_norm": 0.00015882238650911291
+        }
+      ],
+      "positive_projection_sum": 1.4116545160778657,
+      "negative_projection_sum": -0.4116545160778658,
+      "band49_50_projection": 0.6308982420562919,
+      "band24_25_projection": 0.5233510401330064
+    },
+    "final_vs_previous": {
+      "heating_log_sum_max_abs_error": 1.4470710870892467e-15,
+      "emitted_all_blocks_half_bitwise_equal": true,
+      "net_vs_absorbed_minus_emitted_max_abs_error_erg_s_cm3": 8.526512829121202e-14,
+      "signed_projection_sum": 1.0000000000000002,
+      "sum_block_norm_over_total_norm": 1.885068057743814,
+      "top10_by_absolute_projection": [
+        49,
+        50,
+        25,
+        24,
+        48,
+        51,
+        22,
+        46,
+        45,
+        47
+      ],
+      "total_heating_log_mass_norm": 0.0027538186707932594,
+      "cell126_total_delta_q_erg_s_cm3": -0.0035235236042119714,
+      "cell126_sum_absolute_over_absolute_sum": 1.7442820952507176,
+      "top_blocks": [
+        {
+          "block": 49,
+          "start": 6272,
+          "stop": 6400,
+          "energy_left_ev": 35.600315924571554,
+          "energy_right_ev": 41.42389898769477,
+          "signed_projection": 0.31572296447546266,
+          "log_contribution_mass_norm": 0.000871890008481035
+        },
+        {
+          "block": 50,
+          "start": 6400,
+          "stop": 6528,
+          "energy_left_ev": 41.42389898769477,
+          "energy_right_ev": 48.98990780193044,
+          "signed_projection": 0.31399508303209056,
+          "log_contribution_mass_norm": 0.0008892042343243704
+        },
+        {
+          "block": 25,
+          "start": 3200,
+          "stop": 3328,
+          "energy_left_ev": 12.064279050843595,
+          "energy_right_ev": 13.668079907150819,
+          "signed_projection": 0.28168222989082564,
+          "log_contribution_mass_norm": 0.0007772964704330525
+        },
+        {
+          "block": 24,
+          "start": 3072,
+          "stop": 3200,
+          "energy_left_ev": 9.959586757011056,
+          "energy_right_ev": 12.064279050843595,
+          "signed_projection": 0.24006563266131953,
+          "log_contribution_mass_norm": 0.0006636192903360193
+        },
+        {
+          "block": 48,
+          "start": 6144,
+          "stop": 6272,
+          "energy_left_ev": 31.214871186216694,
+          "energy_right_ev": 35.600315924571554,
+          "signed_projection": 0.13034439654150967,
+          "log_contribution_mass_norm": 0.0003718102786148845
+        },
+        {
+          "block": 51,
+          "start": 6528,
+          "stop": 6656,
+          "energy_left_ev": 48.98990780193044,
+          "energy_right_ev": 58.583656357260345,
+          "signed_projection": 0.11598860814515416,
+          "log_contribution_mass_norm": 0.0003372062547840688
+        },
+        {
+          "block": 22,
+          "start": 2816,
+          "stop": 2944,
+          "energy_left_ev": 6.787677647670483,
+          "energy_right_ev": 8.222071783352346,
+          "signed_projection": -0.09920592315755498,
+          "log_contribution_mass_norm": 0.0002911685258640842
+        },
+        {
+          "block": 46,
+          "start": 5888,
+          "stop": 6016,
+          "energy_left_ev": 25.47624583959035,
+          "energy_right_ev": 27.940392682190918,
+          "signed_projection": -0.08815369364467902,
+          "log_contribution_mass_norm": 0.0002506623317044791
+        },
+        {
+          "block": 45,
+          "start": 5760,
+          "stop": 5888,
+          "energy_left_ev": 23.58455950695806,
+          "energy_right_ev": 25.47624583959035,
+          "signed_projection": -0.06148455609605761,
+          "log_contribution_mass_norm": 0.00017046490490344252
+        },
+        {
+          "block": 47,
+          "start": 6016,
+          "stop": 6144,
+          "energy_left_ev": 27.940392682190918,
+          "energy_right_ev": 31.214871186216694,
+          "signed_projection": -0.040955442898981446,
+          "log_contribution_mass_norm": 0.00015729475200115169
+        }
+      ],
+      "positive_projection_sum": 1.4080457480697182,
+      "negative_projection_sum": -0.40804574806971794,
+      "band49_50_projection": 0.6297180475075532,
+      "band24_25_projection": 0.5217478625521452
+    },
+    "previous_vs_final": {
+      "heating_log_sum_max_abs_error": 2.442836243617824e-15,
+      "emitted_all_blocks_half_bitwise_equal": true,
+      "net_vs_absorbed_minus_emitted_max_abs_error_erg_s_cm3": 6.039613253960852e-14,
+      "signed_projection_sum": 1.0,
+      "sum_block_norm_over_total_norm": 1.892812689074855,
+      "top10_by_absolute_projection": [
+        49,
+        50,
+        25,
+        24,
+        48,
+        51,
+        22,
+        46,
+        45,
+        47
+      ],
+      "total_heating_log_mass_norm": 0.0027635148963155386,
+      "cell126_total_delta_q_erg_s_cm3": -0.003536300418402973,
+      "cell126_sum_absolute_over_absolute_sum": 1.7508669729039854,
+      "top_blocks": [
+        {
+          "block": 49,
+          "start": 6272,
+          "stop": 6400,
+          "energy_left_ev": 35.600315924571554,
+          "energy_right_ev": 41.42389898769477,
+          "signed_projection": 0.31631020536886423,
+          "log_contribution_mass_norm": 0.0008766377805347544
+        },
+        {
+          "block": 50,
+          "start": 6400,
+          "stop": 6528,
+          "energy_left_ev": 41.42389898769477,
+          "energy_right_ev": 48.98990780193044,
+          "signed_projection": 0.3143751295044428,
+          "log_contribution_mass_norm": 0.0008936125669217234
+        },
+        {
+          "block": 25,
+          "start": 3200,
+          "stop": 3328,
+          "energy_left_ev": 12.064279050843595,
+          "energy_right_ev": 13.668079907150819,
+          "signed_projection": 0.28255443363343197,
+          "log_contribution_mass_norm": 0.0007824592344098159
+        },
+        {
+          "block": 24,
+          "start": 3072,
+          "stop": 3200,
+          "energy_left_ev": 9.959586757011056,
+          "energy_right_ev": 12.064279050843595,
+          "signed_projection": 0.24094866156977887,
+          "log_contribution_mass_norm": 0.0006684536344872196
+        },
+        {
+          "block": 48,
+          "start": 6144,
+          "stop": 6272,
+          "energy_left_ev": 31.214871186216694,
+          "energy_right_ev": 35.600315924571554,
+          "signed_projection": 0.13067505462534051,
+          "log_contribution_mass_norm": 0.0003740735445252816
+        },
+        {
+          "block": 51,
+          "start": 6528,
+          "stop": 6656,
+          "energy_left_ev": 48.98990780193044,
+          "energy_right_ev": 58.583656357260345,
+          "signed_projection": 0.1160897369186736,
+          "log_contribution_mass_norm": 0.00033879763399955224
+        },
+        {
+          "block": 22,
+          "start": 2816,
+          "stop": 2944,
+          "energy_left_ev": 6.787677647670483,
+          "energy_right_ev": 8.222071783352346,
+          "signed_projection": -0.09997448555555312,
+          "log_contribution_mass_norm": 0.00029455390987030445
+        },
+        {
+          "block": 46,
+          "start": 5888,
+          "stop": 6016,
+          "energy_left_ev": 25.47624583959035,
+          "energy_right_ev": 27.940392682190918,
+          "signed_projection": -0.08874310031154736,
+          "log_contribution_mass_norm": 0.00025331533113524265
+        },
+        {
+          "block": 45,
+          "start": 5760,
+          "stop": 5888,
+          "energy_left_ev": 23.58455950695806,
+          "energy_right_ev": 25.47624583959035,
+          "signed_projection": -0.06200167881247695,
+          "log_contribution_mass_norm": 0.00017252860494536634
+        },
+        {
+          "block": 47,
+          "start": 6016,
+          "stop": 6144,
+          "energy_left_ev": 27.940392682190918,
+          "energy_right_ev": 31.214871186216694,
+          "signed_projection": -0.04120468662680775,
+          "log_contribution_mass_norm": 0.0001589334720269396
+        }
+      ],
+      "positive_projection_sum": 1.4114889542105487,
+      "negative_projection_sum": -0.41148895421054876,
+      "band49_50_projection": 0.630685334873307,
+      "band24_25_projection": 0.5235030952032108
+    },
+    "final_vs_final": {
+      "heating_log_sum_max_abs_error": 1.371365823362499e-15,
+      "emitted_all_blocks_half_bitwise_equal": true,
+      "net_vs_absorbed_minus_emitted_max_abs_error_erg_s_cm3": 8.171241461241152e-14,
+      "signed_projection_sum": 0.9999999999999999,
+      "sum_block_norm_over_total_norm": 1.884712634138532,
+      "top10_by_absolute_projection": [
+        49,
+        50,
+        25,
+        24,
+        48,
+        51,
+        22,
+        46,
+        45,
+        47
+      ],
+      "total_heating_log_mass_norm": 0.0027557673122032525,
+      "cell126_total_delta_q_erg_s_cm3": -0.003526118509827848,
+      "cell126_sum_absolute_over_absolute_sum": 1.7439663324017538,
+      "top_blocks": [
+        {
+          "block": 49,
+          "start": 6272,
+          "stop": 6400,
+          "energy_left_ev": 35.600315924571554,
+          "energy_right_ev": 41.42389898769477,
+          "signed_projection": 0.31558667894159714,
+          "log_contribution_mass_norm": 0.0008721283400856761
+        },
+        {
+          "block": 50,
+          "start": 6400,
+          "stop": 6528,
+          "energy_left_ev": 41.42389898769477,
+          "energy_right_ev": 48.98990780193044,
+          "signed_projection": 0.31391867310817406,
+          "log_contribution_mass_norm": 0.0008896088177466384
+        },
+        {
+          "block": 25,
+          "start": 3200,
+          "stop": 3328,
+          "energy_left_ev": 12.064279050843595,
+          "energy_right_ev": 13.668079907150819,
+          "signed_projection": 0.28178171365248234,
+          "log_contribution_mass_norm": 0.0007781199216104518
+        },
+        {
+          "block": 24,
+          "start": 3072,
+          "stop": 3200,
+          "energy_left_ev": 9.959586757011056,
+          "energy_right_ev": 12.064279050843595,
+          "signed_projection": 0.24011978135089146,
+          "log_contribution_mass_norm": 0.0006642384886974268
+        },
+        {
+          "block": 48,
+          "start": 6144,
+          "stop": 6272,
+          "energy_left_ev": 31.214871186216694,
+          "energy_right_ev": 35.600315924571554,
+          "signed_projection": 0.13024435100803045,
+          "log_contribution_mass_norm": 0.0003718014117958323
+        },
+        {
+          "block": 51,
+          "start": 6528,
+          "stop": 6656,
+          "energy_left_ev": 48.98990780193044,
+          "energy_right_ev": 58.583656357260345,
+          "signed_projection": 0.11597331103698921,
+          "log_contribution_mass_norm": 0.0003373946343598229
+        },
+        {
+          "block": 22,
+          "start": 2816,
+          "stop": 2944,
+          "energy_left_ev": 6.787677647670483,
+          "energy_right_ev": 8.222071783352346,
+          "signed_projection": -0.09916570015773472,
+          "log_contribution_mass_norm": 0.00029125790899896617
+        },
+        {
+          "block": 46,
+          "start": 5888,
+          "stop": 6016,
+          "energy_left_ev": 25.47624583959035,
+          "energy_right_ev": 27.940392682190918,
+          "signed_projection": -0.08812599602324045,
+          "log_contribution_mass_norm": 0.00025076052232322476
+        },
+        {
+          "block": 45,
+          "start": 5760,
+          "stop": 5888,
+          "energy_left_ev": 23.58455950695806,
+          "energy_right_ev": 25.47624583959035,
+          "signed_projection": -0.061458867290616934,
+          "log_contribution_mass_norm": 0.00017051473695986968
+        },
+        {
+          "block": 47,
+          "start": 6016,
+          "stop": 6144,
+          "energy_left_ev": 27.940392682190918,
+          "energy_right_ev": 31.214871186216694,
+          "signed_projection": -0.0409690027644014,
+          "log_contribution_mass_norm": 0.00015740586205360255
+        }
+      ],
+      "positive_projection_sum": 1.4078822598848226,
+      "negative_projection_sum": -0.4078822598848228,
+      "band49_50_projection": 0.6295053520497712,
+      "band24_25_projection": 0.5219014950033738
+    }
+  },
+  "artifacts": [
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-frequency-diagnostic.json",
+      "size_bytes": 2894513,
+      "sha256": "caf066ff778f3f6592417507ef750c3c8b9a1326a07d28d7282d0101e1143e91"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-frequency-diagnostic.csv",
+      "size_bytes": 6200404,
+      "sha256": "0a08aed586893a73fc567b897533fbd49411d06e3bdaca78ff3c7334a970d08b"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-frequency.png",
+      "size_bytes": 120144,
+      "sha256": "5dfe9d99292ddfd1a92cacdb8c76b5b851d631e1dd830f66814e553d62d27575"
+    }
+  ],
+  "new_code": [
+    {
+      "path": "handoff/audit_tools/diagnose_x20_85889_frequency.py",
+      "sha256": "13a436719ec721e4f029c41a3428c9ef488cd9b311188bda7ad8f7cca551ee91"
+    },
+    {
+      "path": "handoff/audit_tools/plot_x20_85889_frequency.py",
+      "sha256": "068a424d0c1ed420e060986c9f34323d283b4a44b1b8177dab67b50094c2cabd"
+    },
+    {
+      "path": "tests/test_x20_85889_frequency_diagnostic.py",
+      "sha256": "4a7211b5eb4aab009a4c34b89ab00fbe33f8c65cba031444271a114ec360d71a"
+    }
+  ],
+  "tests": {
+    "passed": 16,
+    "new_tests": 8,
+    "energy_tests": 8,
+    "wall_s": 0.6
+  },
+  "real_artifact_first_execution_passed": true,
+  "figure_visually_reviewed": true,
+  "csv_lf": true,
+  "csv_rows": 38912,
+  "pre_run": {
+    "Code": "PASS",
+    "Logic": "PASS",
+    "Physics": "WARNING",
+    "Decision": "RUN"
+  },
+  "post_run": {
+    "finite": true,
+    "all_fields_bitwise_reproduced": true,
+    "all_frequency_ownership_once": true,
+    "original_decisions_unchanged": true
+  },
+  "backup_both_verified": "outputs/review-20260925/pre-85889-frequency-diagnostic-20261006.bundle",
+  "backup_bytes": {
+    "mac": 25698236,
+    "school": 25602989
+  },
+  "lecture_section": 147,
+  "old_lecture_prefix_bytes": 430855,
+  "old_lecture_prefix_sha256": "aea811997c6ee0ffa0b12f8a6ce2d824bdf9827de00e3d825ab8ee6259941ad5",
+  "old_lecture_prefix_unchanged": true,
+  "actual_cli_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "new_slurm_submissions": 0,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "causal_attribution": false,
+  "decision": "Next inspect existing map8 blocks and finite map8-to16 signed frequency changes, with all blocks. No new field experiment, restoration, extension, calibration or acceptance21."
+}

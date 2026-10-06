@@ -1,0 +1,14 @@
+{
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "raw_preserved": true,
+  "section": 147,
+  "corrections": [
+    "Single-combination rounded projection values replaced by ranges over all four combinations.",
+    "Sum of signed projections equals one by its definition; no post-hoc physical renormalization.",
+    "Five-rate pass explicitly belongs to cross16, not an extra claim about within-history windows.",
+    "1229 verification records include 2 repeated protocol paths; 1227 unique archived paths.",
+    "Plot heatmap values are already integrated block contributions, not per-eV spectral density."
+  ]
+}
