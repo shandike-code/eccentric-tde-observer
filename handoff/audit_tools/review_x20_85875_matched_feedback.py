@@ -96,6 +96,15 @@ def execution_evidence(term,batch,summary,job):
 def claim_path(path,out):
     prefix='outputs/hpc/x20-85875-matched-feedback-20261006/'
     if path.startswith(prefix):return out/path[len(prefix):]
+    for source,received in (
+        ('x20-global-boundary-validation-20261001','x20-global-boundary-validation-82515-received'),
+        ('x20-global-boundary-prediction-20261001','x20-global-prediction-82512-received'),
+        ('x20-window-difference-20260930','x20-window-difference-82396-received'),
+        ('x20-latest-window-basis-20261001','x20-latest-basis-82441-received')):
+        prefix='outputs/hpc/'+source+'/'
+        if path.startswith(prefix):
+            rel=path[len(prefix):]
+            return ROOT/Path(rel).name if rel.startswith('archives/') else ROOT/received/rel
     return previous.claim_path(path,ROOT/'x20-85861-feedback-85875-received')
 
 

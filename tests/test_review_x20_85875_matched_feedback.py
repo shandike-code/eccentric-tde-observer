@@ -79,3 +79,14 @@ def test_declared_budget_seeds_and_history_flags_cannot_be_substituted():
         bad=deepcopy(d);bad[key]=value
         with pytest.raises(AssertionError):a.verify_plan(bad,seeds,99999)
     with pytest.raises(AssertionError):a.verify_plan(d,seeds,85875)
+
+
+def test_saved_a_source_paths_are_not_resolved_as_current_h():
+    from pathlib import Path
+    expected={'x20-global-boundary-validation-20261001':'x20-global-boundary-validation-82515-received',
+        'x20-global-boundary-prediction-20261001':'x20-global-prediction-82512-received',
+        'x20-window-difference-20260930':'x20-window-difference-82396-received',
+        'x20-latest-window-basis-20261001':'x20-latest-basis-82441-received'}
+    for src,folder in expected.items():
+        assert a.claim_path('outputs/hpc/'+src+'/declaration.json',Path('new'))==a.ROOT/folder/'declaration.json'
+        assert a.claim_path('outputs/hpc/'+src+'/archives/snapshot.tar.gz',Path('new'))==a.ROOT/'snapshot.tar.gz'
