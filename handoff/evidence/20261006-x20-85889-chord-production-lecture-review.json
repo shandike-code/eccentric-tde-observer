@@ -1,0 +1,21 @@
+{
+  "model": "deepseek-v4-flash[1m]",
+  "independent_review": true,
+  "accepted": [
+    "片级资源测量不自动满足原全场来源要求",
+    "单片不能保证301片内存与墙钟",
+    "协作停止与Slurm硬限区分",
+    "真实终态与batch-exit分开"
+  ],
+  "corrections": [
+    "实际重读326小来源字节和801源码git对象，不只是声明登记自洽；只有全场payload与当前native层未重核",
+    "首32组是一片，不是32片",
+    "真实生产预检未运行，不能称已证明600秒和6GiB门通过",
+    "RUNNING分配快照不是终态；终态必须另存真实JobState和ExitCode",
+    "完整全场统计仍仅是已存离散场的诊断证据，不是物理模型验证或耦合解完成",
+    "统计/归档/信号合成测试不保证任何真实SIGKILL情况下能落盘；硬杀可能仅有started或日志"
+  ],
+  "submission_decision": "DO NOT RUN until independent source/metadata and resource-budget preflight closure",
+  "new_slurm": 0,
+  "new_dat_reads": 0
+}

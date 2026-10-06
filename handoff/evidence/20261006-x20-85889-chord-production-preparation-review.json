@@ -1,0 +1,180 @@
+{
+  "stage": "six-field production binding and resource-wrapper preparation",
+  "pre_stage_mac_commit": "1055b1d807354e7fc5ad27158d43b50fc720418f",
+  "school_commit": "9555a78a77b9025e30405684dee2669d9e43baee",
+  "artifacts": [
+    {
+      "path": "operations/x20_85889_chord_binding.py",
+      "size_bytes": 10065,
+      "sha256": "e00173b3a18f9face952b5c8474dc63369c13d1dfff165bf266fc3d4be9b0454"
+    },
+    {
+      "path": "operations/x20_85889_chord_resource.py",
+      "size_bytes": 7805,
+      "sha256": "893a19268fa711f6e76793a593463dae8f972d21fe7ea504905b0debbe835ea2"
+    },
+    {
+      "path": "operations/x20_85889_chord_resource.sbatch",
+      "size_bytes": 1627,
+      "sha256": "973b09fcda1854047913ca6cd2ec742d010e00d3ce90e9ecc4fa96e17358b29b"
+    },
+    {
+      "path": "operations/x20_85889_chord_receipt.py",
+      "size_bytes": 4321,
+      "sha256": "49cf550c8bd0255779fe600a879906e936e1be57f8b8ce5d2c447f4fe2290187"
+    },
+    {
+      "path": "handoff/audit_tools/review_x20_85889_chord_resource.py",
+      "size_bytes": 3866,
+      "sha256": "c6b59e8ddab82c3fceec7836c9afb94dfa6ac1d36af279b5b9659e9416b78952"
+    },
+    {
+      "path": "tests/test_x20_85889_chord_binding.py",
+      "size_bytes": 2426,
+      "sha256": "32a01ad551a61370ec97be13224f7514471ebc2c065a15260ce74755ce30ff65"
+    },
+    {
+      "path": "tests/test_x20_85889_chord_resource.py",
+      "size_bytes": 4239,
+      "sha256": "65e3a5c58a2f1046fee55a36da93d7001b37dd00136c09979e726cae4b5eb7e0"
+    },
+    {
+      "path": "tests/test_x20_85889_chord_receipt.py",
+      "size_bytes": 2018,
+      "sha256": "883bae0d2d2caf4c6cd08a1516967b344e6ba525030fe9beb4f89a28b48bfa48"
+    },
+    {
+      "path": "handoff/protocols/x20-85889-chord-resource-preflight-v1.md",
+      "size_bytes": 4136,
+      "sha256": "e84c8b1800d8f24f4084ef23cf33f4a576ede4e4b65d0022976da2ebc8ee0b29"
+    },
+    {
+      "path": "handoff/linux-runs/2026-10-06-x20-85889-chord-production-preparation.md",
+      "size_bytes": 4596,
+      "sha256": "d33a532a6fbb680b02df31e19cc9af542e4bd4c42da80fe5d9c328ac215812d3"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-binding.json",
+      "size_bytes": 208078,
+      "sha256": "a75f539c32bea0eb4d2f89cd587f23e0e2e440a8a0ef2573a162933e145bf187"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-production-school-binding.json",
+      "size_bytes": 208159,
+      "sha256": "a141474d055172b9d0fafae89e5c0071a2d4b228a11fa6f12536d632a55c28db"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-production-parity.json",
+      "size_bytes": 348,
+      "sha256": "55aff0a73f940feeb2804badd13c579b71de5fc9e88b2ed98281da97649ac8c0"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-production-tests-02.log",
+      "size_bytes": 180,
+      "sha256": "ad4e6b5cb33fffd1cea90d5b1093b2b4c9560f657803df97b2717c3fcc0436bb"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-production-school-tests-02.log",
+      "size_bytes": 179,
+      "sha256": "c33fb7fa20fae0189862a39d56f87d299654329da098648090fec22ef7643717"
+    },
+    {
+      "path": "outputs/review-20260925/chord-resource-e2e-20261006/run/result.json",
+      "size_bytes": 26239,
+      "sha256": "be1bd54361f0890aa8a3d14c0a95d6e81d13e0a2dddd53101451d6e96bb3e110"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-resource-school-result.json",
+      "size_bytes": 26182,
+      "sha256": "d40b01e06abecccdd72534cc0a118c55b18fc9dc57306c4c55c565ccfd6aa4d8"
+    },
+    {
+      "path": "handoff/evidence/20261006-x20-85889-chord-production-lecture-draft.json",
+      "size_bytes": 5505,
+      "sha256": "62ce64104fa23d4849473cd9bbed64203d42b5a63f99d529f77061e5cf5a3002"
+    },
+    {
+      "path": "handoff/evidence/20261006-x20-85889-chord-production-lecture-review.json",
+      "size_bytes": 1024,
+      "sha256": "9395ac90702171773353b2808a41b3b5128f71e0963285164c30874527af2c70"
+    }
+  ],
+  "source_binding": {
+    "small_sources": 326,
+    "frozen_code_files": 801,
+    "map_block_receipts": 304,
+    "field_claims": 6,
+    "mac_school_actual_small_e2e_passed": true,
+    "archived_native_identity_verified": true,
+    "live_native_recomputed": false,
+    "archive_payload_rehashed": false,
+    "large_field_sha_refreshed": false
+  },
+  "tests": {
+    "mac_passed": 102,
+    "mac_seconds": 0.83,
+    "school_passed": 91,
+    "school_seconds": 1.56,
+    "shell_syntax_passed": true
+  },
+  "parity": {
+    "code_files": 11,
+    "all_code_sha_equal": true,
+    "binding_equal_except_local_paths": true,
+    "all_slab_statistics_equal": true,
+    "slice_sha_equal": true,
+    "school_head": "9555a78a77b9025e30405684dee2669d9e43baee",
+    "school_clean": true,
+    "mac_synthetic_rss": 33308672,
+    "school_synthetic_rss": 29491200,
+    "synthetic_bytes_each": 18432
+  },
+  "resource_protocol": {
+    "planned_shape": [
+      9632,
+      32,
+      4096
+    ],
+    "groups": [
+      0,
+      32
+    ],
+    "planned_dat_read_bytes": 402653184,
+    "cpus": 4,
+    "memory_gib": 16,
+    "slurm_seconds": 900,
+    "program_seconds": 600,
+    "rss_limit_bytes": 6442450944,
+    "actually_submitted": false,
+    "source_SHA_prerequisite_unresolved": true
+  },
+  "synthetic_read_bytes_each": 18432,
+  "lecture_prefix": {
+    "path": "lecture/项目讲义/2026-09-25_辐射慢模外推与真实映射检验.md",
+    "bytes": 440299,
+    "sha256": "74a4c955913664909b338f02caeec3707ae54aa1910bf7a83050c9ae2a6e22c5"
+  },
+  "cli": {
+    "model": "deepseek-v4-flash[1m]",
+    "wall_seconds": 19.239020874723792,
+    "independently_corrected": true
+  },
+  "backup": {
+    "name": "pre-85889-chord-production-20261006.bundle",
+    "mac_bytes": 25782099,
+    "school_bytes": 25602989,
+    "both_verified": true
+  },
+  "decision": "DO NOT RUN: close original six-field SHA prerequisite with a separately frozen bounded read/time budget before resource submission",
+  "production_preflight_complete": false,
+  "new_slurm": 0,
+  "true_dat_bytes_read": 0,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_material": 0,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "final_whitespace_only_cleanup": "removed one trailing space from binding module after successful tests; same final file copied to school ignored x20_85889_chord_binding-final.py; semantic code unchanged"
+}
