@@ -1,0 +1,15 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "20261006-x20-85889-watch-draft-03.json",
+  "independently_reviewed": true,
+  "corrections": [
+    "“各支16减8过”错误：此归档只有A16−A8窗口；H16反馈尚无。",
+    "“新跨支16残差与信号均失败”错误：现存失败为新H8对新A8；跨16尚未计算，0.74也只是接近L2的近似值，不是三范数最大。",
+    "H对保存旧A16仍是H8诊断，reference_recomputed=false；不得当H16结果。",
+    "“五项率与加热门各比全过”过宽：三对同对及已审跨8/保存A诊断五类门过；窗口及各自旧端点比较仅审响应。",
+    "最终资格null未评估；程序RUNNING且无batch-exit，不能把一般batch/scheduler说明当实际退出证据。"
+  ],
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "baseline_replaced": false
+}

@@ -1,0 +1,73 @@
+{
+  "job_id": 85889,
+  "stage": "partial_accelerated16_window_review",
+  "numerical_commit": "9555a78a77b9025e30405684dee2669d9e43baee",
+  "archive": {
+    "path": "outputs/hpc/x20-85875-matched-feedback-20261006/archives/accelerated-map16-feedback-1791259876567715186.tar.gz",
+    "size_bytes": 228902610,
+    "sha256": "965450fbf0706b8e11196615a447b6a9a4f3a324ed94fa12bb1ce550f78f4fb8"
+  },
+  "pre_run": {
+    "Code": "PASS",
+    "Logic": "PASS",
+    "Physics": "WARNING",
+    "Decision": "RUN",
+    "scope": "Frozen A8 H8 A16 small artifacts; original gates and independent vector reductions; no new Slurm or large-field or material ODE calculation"
+  },
+  "post_run": {
+    "verified_files": 6445,
+    "verified_source_claims": 979,
+    "verified_code_claims": 801,
+    "map_process_receipts": 1824,
+    "feedback_process_receipts": 456,
+    "maximum_proc_kib": 4045164,
+    "all_original_zero_gates_passed": true,
+    "independent_vector_reduction": true
+  },
+  "reviewed_feedback_pairs": [
+    "accelerated8",
+    "historical8",
+    "accelerated16"
+  ],
+  "both_branches_feedback_recomputed": true,
+  "new_16_minus_8_windows_available": [
+    "accelerated"
+  ],
+  "accelerated_window_passed": true,
+  "historical_window_available": false,
+  "new_cross_history_available": [
+    8
+  ],
+  "new_cross16_available": false,
+  "new_cross8_response_passed": false,
+  "new_cross8_rate_passed": true,
+  "completed_experiment": false,
+  "current_scheduler_terminal_verified": false,
+  "reference_calibration_eligible": null,
+  "source_84026_scheduler_terminal_verified": false,
+  "source_85821_scheduler_terminal_verified": true,
+  "source_85875_scheduler_terminal_verified": true,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "baseline_replaced": false,
+  "new_slurm_submissions": 0,
+  "real_artifact_first_end_to_end_pass": true,
+  "source_dat_claims_bound_to_prior_audits": 20,
+  "backup_both_verified": "outputs/review-20260925/pre-85889-A16-review-20261006.bundle",
+  "backup_bytes": {
+    "mac": 25622297,
+    "school": 25602989
+  },
+  "decision": "Complete only the already declared H16 endpoint and terminal checks; no extra budget, recovery, resubmission, calibration or acceptance.",
+  "lecture_section": 144,
+  "actual_cli_model": "deepseek-v4-flash[1m]",
+  "format_checks": {
+    "new_report": true,
+    "new_lecture_section": true,
+    "old_lecture_prefix_bytes": 415548,
+    "old_lecture_prefix_sha256": "17a5be02b5f3e0f76dc2e9e896da1dbb452f35cfa0cd436cf10e0eda86e58400",
+    "old_lecture_prefix_unchanged": true
+  },
+  "tests": "No source changes; tested reviewer reused. New real-artifact E2E passed on first execution.",
+  "post_review_execution_snapshot": "outputs/review-20260925/20261006-x20-85889-A16-review-progress.json"
+}

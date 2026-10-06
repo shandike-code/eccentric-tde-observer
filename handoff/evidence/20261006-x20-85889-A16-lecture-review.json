@@ -1,0 +1,21 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "20261006-x20-85889-A16-lecture-draft.json",
+  "evidence": "20261006-x20-85889-A16-review.json",
+  "lecture_section": 144,
+  "independently_revised": true,
+  "corrections": [
+    "三项是不同端点之间的响应比较，不是统计独立的三个响应实验；文中r20近似值为差范数比，不是原r20。",
+    "volume_l1是无量纲归一化加热差，不是有能量单位的体积L1加热量。",
+    "cross8定位属于H8final−A8final；A窗口定位属于A16final−A8final，不能都叫窗口。",
+    "生产准备全部来源SHA和metadata已完成；尚待的是运行后完整性核验。",
+    "补充新窗口与对旧A的完整三范数/冻结信号、气体正能量、范围和严禁扩大解释。"
+  ],
+  "format_checks": {
+    "new_report": true,
+    "new_lecture_section": true,
+    "old_lecture_prefix_bytes": 415548,
+    "old_lecture_prefix_sha256": "17a5be02b5f3e0f76dc2e9e896da1dbb452f35cfa0cd436cf10e0eda86e58400",
+    "old_lecture_prefix_unchanged": true
+  }
+}
