@@ -1,0 +1,124 @@
+{
+  "mac_start": "552b47e7abf9b9531065a064c08640354f00ecc0",
+  "school_head": "4b02b0865ed45103770a6ecf63638c9696bd0a62",
+  "school_clean": true,
+  "school_production_synchronized": false,
+  "protocol": "handoff/protocols/x20-86191-diagonal-resource-v1.md",
+  "source_pins": {
+    "operations/x20_85889_chord_scan.py": {
+      "size_bytes": 9605,
+      "sha256": "9349c255b35c515fd37e7903a120ebed753e9c517c9381b402d4184d450a1643"
+    },
+    "operations/x20_85889_chord_scan_reuse.py": {
+      "size_bytes": 5516,
+      "sha256": "a4b6b5b07eaaa457b5b5aa2cd726597f2476c78c7d2b3937810b6551fe0594a6"
+    },
+    "operations/x20_85889_chord_scan_square.py": {
+      "size_bytes": 6042,
+      "sha256": "61e6c6d559975f7f863282209eb1ad016c4594f7f898f0c7e0a5d515878c862b"
+    },
+    "operations/x20_85889_chord_scan_diagonal.py": {
+      "size_bytes": 5897,
+      "sha256": "a3737320592fac5511d5f8c979524919b5fd9229e36634b64b7e8437cc0b0896"
+    },
+    "operations/x20_85889_chord_reuse_resource.py": {
+      "size_bytes": 11576,
+      "sha256": "acaf1cf27aa211a708bbc4cb96b76a23e5478a70ba0cf11bfc8a79da37c32ca1"
+    },
+    "operations/x20_85889_chord_reuse_contract.py": {
+      "size_bytes": 6453,
+      "sha256": "cf23792de7d6b371f987729bdfb63279762614659b5a58c3240eb645e5cbfb94"
+    },
+    "operations/x20_85889_chord_reuse_receipt.py": {
+      "size_bytes": 7080,
+      "sha256": "a0c9c81e0a237a4a8980560901a2ddbfde64682c7201f484beac01c0cacd6416"
+    },
+    "handoff/audit_tools/review_x20_85889_chord_reuse_resource.py": {
+      "size_bytes": 12860,
+      "sha256": "7ef5280a26af62273bdc0b99809901cd7e2016c4064c47dfd4545c411c9f0626"
+    },
+    "handoff/audit_tools/review_x20_85889_chord_scan.py": {
+      "size_bytes": 7646,
+      "sha256": "806e67f2eeed99cc20fd54e2a8aab432fa765e8ebc789024218be0bd47d7b474"
+    },
+    "handoff/protocols/x20-86191-diagonal-validation-v1.md": {
+      "size_bytes": 6158,
+      "sha256": "a9baef2096ed47ddfb4dc0687af139a5bfd4cf41e67a278306318f2b728d376a"
+    },
+    "outputs/review-20260925/chord-reuse-resource-history-20261006/history-probe.json": {
+      "size_bytes": 26348,
+      "sha256": "7ef2572f2b4008f2af9900fd21f6e3f288dd1aa1d9fd7292e4716ffdd4290324"
+    },
+    "outputs/review-20260925/chord-reuse-resource-history-20261006/history-result.json": {
+      "size_bytes": 37696,
+      "sha256": "e56b0b4ec22826e15350dc8be9f464dd166a937bc7b7d62d8eef889b7180c6c2"
+    },
+    "outputs/review-20260925/chord-reuse-resource-history-20261006/history-terminal.json": {
+      "size_bytes": 1652,
+      "sha256": "b2f1c80da309801f8c7359b0f3e1292118de74b9b5b67cf39ca691b6dea2b655"
+    },
+    "outputs/review-20260925/chord-reuse-resource-history-20261006/history-review.json": {
+      "size_bytes": 520,
+      "sha256": "506afc8e4d7584c29babe554c2a5681e06d60a2effac81f2b57165339d51863c"
+    }
+  },
+  "mac_backup": {
+    "size_bytes": 26121641,
+    "sha256": "4c096fd41cd0c233c914e6492bbb8557824af4304c52a329477008aec9a34827"
+  },
+  "school_backup_bytes": 25971847,
+  "both_bundles_verified": true,
+  "history_bytes_checked": 66216,
+  "environment_query_only": true,
+  "geterr": {
+    "divide": "warn",
+    "over": "warn",
+    "under": "ignore",
+    "invalid": "warn"
+  },
+  "new_numeric_tests": 0,
+  "new_implementation": false,
+  "real_dat_reads": 0,
+  "dat_downloads": 0,
+  "new_slurm_jobs": 0,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_ode": 0,
+  "new_material": 0,
+  "proposed": {
+    "cpus": 4,
+    "nodes": 1,
+    "memory_gib": 16,
+    "threads": 1,
+    "slurm_seconds": 1800,
+    "program_seconds_strictly_less_than": 1500,
+    "rss_bytes_strictly_less_than": 6442450944,
+    "field_payload": 121601261568,
+    "archive_payload": 607755804
+  },
+  "submission_ready": false,
+  "production_resource_verified": false,
+  "controlled_speedup_measured": false,
+  "full_scan_authorized": false,
+  "accepted20": true,
+  "baseline_replaced": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "cli_review": {
+    "actual_model": "deepseek-v4-flash[1m]",
+    "wall_s": 53.87456616573036,
+    "scope": "full protocol only, not source/performance audit",
+    "corrections": [
+      "历史固定工件共四个，含review，不是三个。",
+      "协议已要求所有传递依赖/外部清单，不能说闭包仅到diagonal+square；采纳实际模块origin与SHA补强。",
+      "小合成已有精确slab串比较，新封装也要求精确分支测试；所谓仅epsilon路径未覆盖是误读。",
+      "scontrol单项不证明执行身份；采纳外部提交记录与Command/WorkDir、commit/run/代码绑定共同审阅，不宣称密码学运行证明。"
+    ],
+    "lecture_prefix": {
+      "size_bytes": 481065,
+      "sha256": "0547e21de5d1f86e458e1915eb9c6f9951b0dff0048508a38d363612f37d744b"
+    },
+    "lecture_prefix_unchanged": true,
+    "markdown_verified": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "wall_s": 53.87456616573036,
+  "scope": "full protocol only, not source/performance audit",
+  "corrections": [
+    "历史固定工件共四个，含review，不是三个。",
+    "协议已要求所有传递依赖/外部清单，不能说闭包仅到diagonal+square；采纳实际模块origin与SHA补强。",
+    "小合成已有精确slab串比较，新封装也要求精确分支测试；所谓仅epsilon路径未覆盖是误读。",
+    "scontrol单项不证明执行身份；采纳外部提交记录与Command/WorkDir、commit/run/代码绑定共同审阅，不宣称密码学运行证明。"
+  ],
+  "lecture_prefix": {
+    "size_bytes": 481065,
+    "sha256": "0547e21de5d1f86e458e1915eb9c6f9951b0dff0048508a38d363612f37d744b"
+  },
+  "lecture_prefix_unchanged": true,
+  "markdown_verified": true
+}

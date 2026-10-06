@@ -1,0 +1,78 @@
+# 86191后对角共享核：独立单片资源预检协议v1
+
+状态：设计与实施验收约定；不是提交回执或已授予的新Job预算。旧85889、86061与86191预算关闭。本协议完成审阅后，仍须实现新驱动/审阅器、两端验证、代码冻结和具体PRE-RUN，才决定是否准许一次新作业。当前`submission_ready=false`、`full_scan_authorized=false`。
+
+## 目的和固定对象
+
+只测已完成两端合成验证的对角共享核在真实首32组上的工作集、墙钟和数值等价。新核为`operations/x20_85889_chord_scan_diagonal.py`，候选SHA为a3737320592fac5511d5f8c979524919b5fd9229e36634b64b7e8437cc0b0896；若改变该文件，必须重新解释改变并验证，不能仅更新SHA放行。原scanner SHA9349c255b35c515fd37e7903a120ebed753e9c517c9381b402d4184d450a1643及数值容差保持不变。
+
+固定85889的AP/AF/AM/HP/HF/HM六场、顺序、声明SHA及P/F/M映射链。shape为9632×32×4096，单场10099884032B；只统计频组[0,32)，即301片中的第一片。每场片33554432B，六场片合计201326592B。不改变片位置/大小，不追加极小值频段片或重复计时。其余9600组只参与前后完整SHA，不产生本次Gram。无新map、反馈、ODE、物质更新或候选场写入。
+
+## 不可跳过的来源链
+
+运行前后分别核326归档小来源、801原源码、原85889实际终态、完整trial数组dtype/shape/bytes、old/base/r20及两条映射链。当前native/六项runtime输入和模板来源按既有live_check重核，核phase1367、dt889.419892762322及9632组/32方向/4096层/76块核心所有权。配置hook拒绝dat打开；配置不能触发映射、反馈或ODE。环境首次import元数据观察与科学来源字段分别记录，不能借差异忽略规则丢掉科学字段。
+
+原85889压缩归档303877902B、SHA f20c313bc92af5730a16d7a9c604793873719bd710b53d0fc763813349cd120c前后各核一次；这里只绑定已审归档payload，不重新执行旧8588工件全审计。学校当前HEAD/clean、冻结驱动及全部可执行依赖SHA在前后都核，新增模块须纳入本次代码清单，不能仅依赖801份历史源码清单。
+
+六个实际全场SHA必须在新Slurm内全部通过后才允许统计。每遍记录dev/inode/size/mtime_ns/ctime_ns，核路径和打开句柄；只读声明长度，短读/尾字节/源替换/SHA变化拒绝。完成统计及同片重读后再核六场完整SHA和全部来源。86061旧SHA不能代替新作业前核。
+
+## 历史小摘要的独立等价门
+
+以86061已审小工件作数值比较基准，不重跑旧核计时。固定旧probe.json为26348B、SHA7ef2572f2b4008f2af9900fd21f6e3f288dd1aa1d9fd7292e4716ffdd4290324；旧result.json为37696B、SHAe56b0b4ec22826e15350dc8be9f464dd166a937bc7b7d62d8eef889b7180c6c2；旧scheduler-terminal.json为1652B、SHAb2f1c80da309801f8c7359b0f3e1292118de74b9b5b67cf39ca691b6dea2b655。来源是已收86061包，126643B、SHA077e156eec787d6d871689d34a895c0b5e2013f3444e76ed0be99da6f0aa3e38。大小/SHA清单另存本阶段pins证据，包含原独立审阅结论。
+
+新运行不接受任意用户指定的未绑定比较结果。加载上述小文件前核固定大小SHA，核旧job86061/数值提交82aea66及真实COMPLETED0:0、原审阅通过、旧result.probe与probe相同。新旧六场声明大小SHA、shape、[0,32)和六片SHA必须相同；历史inode等仅记录比较，不能因文件被等字节迁移就伪称同inode，新作业内前后完整stat必须一致。
+
+数值门比较完整slab对象的键集合、数组长度/顺序及所有原序列化值，包括五基底5×5矩、四组合各5×5直接矩及绝对项、全部Linf/误差/极值/形成边界。不只比近似范数、挑字段或加新容差。字典键序列也须严格相同，不能仅依赖dict.keys的集合相等；列表顺序、类型均逐项核。要求原记录的NumPy2.5.2、longdouble nmant63/maxexp16384、FE_TONEAREST代码0相同；额外记录平台、Python和依赖。若环境或任一摘要不匹配，保存失败并独立诊断，不自动放宽逐字段门或换片。长浮点padding不参与比较。JSON解析须拒绝重复键及NaN/Infinity常量；数值矩摘要保留原十进制字符串并逐字符串相等，零的符号也不合并。计数/索引须为真实整数（bool不冒充整数），时间/RSS不参与新旧数值相等门。键集合多项或少项均拒绝，不用子集比较。小文件完整性、旧结果一致和新旧摘要等价均不替代独立Decimal80矩审阅；新审阅器不导入扫描器。
+
+## 执行顺序与预算
+
+建议新命名`operations/x20_85889_chord_diagonal_resource.py/.sbatch`及独立`handoff/audit_tools/review_x20_85889_chord_diagonal_resource.py`，实施时再次查重。禁止FunctionType/monkeypatch拼接生产入口；显式调用已冻结diagonal.slab_statistics，旧v1/v2/reuse驱动、核、contract、receipt及审阅器字节保持原样。只允许一个进程、一个节点、4CPU、16GiB、Students/qos_stu_default，BLAS/OMP/MKL/NumExpr线程均为1，实际环境及scontrol分配都核。
+
+计划Slurm1800秒，USR1提前300秒；程序从生命周期开始累计严格小于1500秒，进程峰值RSS严格小于6442450944B。与旧86061数值相同的上限是本次新协议拟定预算，不复用旧Job额度、不扩大原完整扫描3300秒/Slurm1小时预算。没有额外的“加速必须达到多少倍”成功门。
+
+顺序固定：独占新目录与started → 实际分配/代码/历史比较源核 → binding/live/archive前核 → 六全场前SHA → 六首片读取及片SHA → 新核一次完整统计 → 同片重读SHA → 六全场后SHA → binding/live/archive/代码后核 → 历史完整摘要比较及独立审阅准备 → result/finished。每阶段前后guard检查；新核缓存命中也检查。历史源在前后核相同，或首次读入经哈希的不可变小字节并随输出存入本次白名单小包，独立审阅器再次验证固定SHA。
+
+首片六源各只打开一个句柄；从该句柄读取的不可变bytes做SHA，再通过frombuffer形成只读binary64数组交给对角共享核，同一bytes在调用期间保活，不重开路径另取数值。每句柄前后fstat及实时路径stat与本作业初值一致；同片重读使用原句柄seek(0)，新读bytes只用于后核，不替换参与统计的缓存。
+
+分别保存每阶段monotonic开始/结束偏移与耗时，分清首片文件读取、片hash、单次slab调用、片重读、全SHA、绑定/native/归档和比较。核所有时间有限且非负、顺序不重叠、总生命周期覆盖各阶段，另存进程累计peak RSS。RSS由getrusage记录进程生命周期峰值，不声称独立阶段峰值或设备内存；Slurm MaxRSS若可得另列，缺失不伪造。
+
+正常逻辑field payload固定121601261568B：两遍六完整场121198608384B，加六首片两遍402653184B。归档前后共607755804B，小来源/源码/历史小摘要读取另列。hash正常EOF探测返回零字节；异常每场每遍至多多读1B后拒绝。所有这些是应用层payload，不是设备磁盘I/O。不得下载dat或把dat放进归档/Git。对完整SHA和片读取分别记录实际完成payload/耗时的应用层平均速率；预留总上限不保证达到某个最低读速，各阶段共享剩余1500秒、不额外续时。以121601261568/1500得到的约81.1MB/s仅是忽略其他工作时的必要平均payload速率，不能当设备吞吐假设或已达成的门。旧86061前后全SHA合计约173.05秒是既有参考，不能保证本次速度；慢读按原总上限失败保留。缓存已知payload1440MiB加六源192MiB及临时量不能冒充严格RSS上界；本探针实际测RSS，超过6GiB拒绝。
+
+## 停止、收件和成功定义
+
+新目录独占，失败/信号/时间/RSS留下已完成阶段和failure，不继续统计后续步骤，不从失败目录恢复、不重交或改片。USR1/TERM/INT传给子进程并记入证据，shell wait需处理信号打断；batch-exit仅记录子进程退出，不当调度终态。单个阻塞底层调用不能由协作检查即时打断，Slurm硬限兜底；300秒为设计余量，不能承诺必能完成清理。
+
+新观察目录最多2400秒，每10秒只读scontrol，终态立即落盘退出；无sbatch/scancel。排队可能消耗观察预算，若用尽则记未知并独立评估只读接续观察，不能据此重新提交计算或自动重启观察器。事先安排终态收据及时保存，防止调度清除。完整成功必须由新job真实COMPLETED0:0、childexit0、完整阶段/result/finished及无failure共同支持；旧85889/86061/86191终态都不能认证新job；旧86061终态只认证历史基准，不能认证新job。观察器运行在新计算目录外，保存原始scontrol文本、请求job ID和观测时间。Mac独立审阅另传该观察器回执与提交回执的expected_job_id，对照包内副本、allocation/result/childexit；不能由result里自报job或成功标志派生“外部终态”。回执原始来源是学校调度查询，不冒称SHA本身认证调度状态。
+
+小归档显式白名单普通JSON/日志，包含本次代码清单、历史比较源、前后binding/live、阶段计时/资源、场hash、probe、比较及终态/childexit；拒绝dat/链接/目录/重名，单文件32MiB、总64MiB，逐成员与整包大小SHA核。包回执只证完整性。独立审阅必须同时读取外部冻结代码/源/历史pins，重核字段长度/顺序、阶段一致、所有六前后SHA/stat、完整摘要精确比较、Decimal80全部矩、墙钟/RSS/实际分配/真实终态；不得只读result中的自报true。
+
+## 实施验收与当前决定
+
+在任一生产提交前，两端小合成E2E必须实际走新的显式driver，证明调用新核而非旧核，且只调用一次。继承v2的首片外损坏、源变化、错误SHA/读量/shape/范围、信号/墙钟/RSS和失败目录拒绝测试；新增历史pin篡改/旧job冒新job/缺项或任一数值摘要差异/错误精度环境/漏新核代码清单/伪阶段时间/假成功标志等拒绝。用小合成历史基准测试逻辑，生产固定pins入口须拒绝测试基准，不提供绕过参数。新测试不放宽原断言；两端源码SHA及新旧小结果均核。
+
+当前缺少新driver、独立审阅器、上述两端生产封装测试、提交commit和当次前置核，因此Decision: DO NOT RUN。协议审阅通过只允许进入实施准备；准许一次资源Job必须另有具体PRE-RUN和提交记录，不能由定时器自动授予预算。
+
+将来即使成功，只能确认首32组同源数值摘要和本次资源测量。与旧26.20669498667121秒若比较，标为不同job/节点环境下的历史时间比，不是受控基准加速比。不得把单片乘301写成全扫描实测、收敛ETA或必然不能完成的证明。是否完整扫描继续独立审阅，full_scan_authorized=false。accepted20、baseline_replaced=false、reference_calibration_eligible=false、strict_error_bound=false及既有跨16响应失败/五率通过结论保持。
+
+
+## 对角共享版本的额外身份与实施门
+
+当前552b47e的245项两端小合成只认证有限案例；该slab没有生产I/O入口。旧reuse driver显式调用reuse.slab_statistics，旧contract固定KERNEL及SHA、status/version=3，旧review只认对应身份。因此不能在旧文件里改import、只修改自报kernel_calls或套旧review通过新核。
+
+另建operations/x20_85889_chord_diagonal_contract.py和x20_85889_chord_diagonal_receipt.py，与上面的新driver/sbatch/reviewer配套。新contract固定version=4及独立diagonal状态，显式导入调用diagonal.slab_statistics一次；生产入口没有可替换kernel/reference/精度或跳过来源门的参数。旧历史四文件pins继续原值，不用86191自报摘要替代86061固定基准，不重跑旧真实核。完整历史小文件实际大小SHA在本协议设计阶段已核；真实场/native/大归档本阶段没有重读。
+
+必须冻结diagonal（SHA a3737320592fac5511d5f8c979524919b5fd9229e36634b64b7e8437cc0b0896）及其直接导入的square辅助（SHA 61e6c6d559975f7f863282209eb1ad016c4594f7f898f0c7e0a5d515878c862b），另含原scanner、binding/live、所有传递执行依赖、新contract/receipt/reviewer/sbatch和NumPy环境。check_code必须显式要求diagonal和square均存在且匹配各自固定SHA；只核diagonal文件不够。生产前全部tracked py/sbatch前后清单与外部独立冻结清单严格相同，未提交的新模块不允许运行。来源身份不能仅用前后彼此相等证明，runtime清单/native打开路径、几何真整数、phase/dt均另对历史固定源及外部binding核。
+
+两端测试需要实际走新authenticated_probe/execute、归档收件与review_evidence，验证只一次diagonal调用且同一已hash的只读buffer。完整review_run还需28阶段合成生命周期正负例：删square依赖、换错diagonal/helperSHA、以reuse/version3身份冒充、旧85889/86061/86191冒新job、任一完整slab键序/字符串零号差异、bool整数、缺阶段/时间重叠/峰值超限、失败或部分目录、两端同时改错runtime/native路径均拒绝。测试可故障注入，但不能在生产使用FunctionType或monkeypatch；合成job/调度回执标明虚构，不说Slurm实测。生产main完整来源验收另记，合成阶段不代替真实来源前置核。
+
+本候选允许的警告次数变化已在合成中记录：平方sum溢出原可能两警告、共享一次，类别与非有限拒绝保持；call/log回调未认证。生产须记录并核所用np.geterr策略，禁止call/log及未审的错误处理模式进入运行；不能通过改策略压掉失败。本轮两端新进程实查默认策略均为divide=warn、over=warn、under=ignore、invalid=warn；新协议冻结该入口策略并要求运行前后记录核验，不调用seterr静默修正环境。乘积辅助内部原errstate保持；生产main导入全部依赖后还须重新核入口策略。Mac LD52/1024与学校63/16384的极小差异保留；跨平台审阅容差由各自epsilon生成，生产历史比较仍要求学校相同算术环境和完整slab逐字符串相等，不借平台差异放宽。
+
+拟定资源仍为单节点4CPU16GiB、线程1、Slurm1800秒/程序严格小于1500秒/RSS严格小于6GiB。新独立预算尚未授予。将来的单次测量只给新核资源与同源摘要资格；与86191的19.577683秒或86061的26.206695秒都只是异时历史比较，controlled_speedup_measured仍false，不为获得受控比值在此额外运行旧核或重复新核。若需要受控性能实验，应另立协议。
+
+本阶段Decision: DO NOT RUN生产。下一项可以按协议另命名实现和小合成验收，随后才能核真实来源、完整PRE-RUN并独立决定一次新资源Job；不得自动扩原3300秒/Slurm1小时或启动全301片。无新map/反馈/ODE/物质，accepted20、原r20/80195与物理dt/能量不变，HHe未完成。
+
+## 独立审阅补强：实际导入来源与提交绑定
+
+实施时在大场读取前核实际加载的项目模块来源：新driver/contract/reviewer与diagonal、square、scanner、binding/live及其项目依赖的__file__/spec origin须解析到冻结checkout内普通文件，并匹配外部清单SHA；拒绝同名模块从另一目录或未冻结路径加载。运行后重核；代码manifest不应只证明未被执行的文件存在。环境包另记录解释器、NumPy实际模块路径/版本和已固定runtime依赖，环境元数据与科学源分列；不能宣称已认证任意恶意进程或全部系统库。合成补错误import origin/清单缺项拒绝，不改冻结数值核。
+
+外部提交记录需保存独立的sbatch文件大小SHA、完整提交命令/参数、预期commit、运行目录、代码/binding清单SHA及sbatch返回的新JobId。观察器原始scontrol的Command、WorkDir、JobId和可用提交时间须与该记录核对；包内started/allocation/result/childexit再与其对应。这些记录与执行前后源码/来源核共同建立可审阅运行链，scontrol的COMPLETED0:0或SHA单项都不能证明实际数值执行正确，也不声称密码学运行证明。不能用旧job回执或后来构造的自洽包替代当次外部证据。
