@@ -1,0 +1,830 @@
+{
+  "job_id": 86304,
+  "state": "COMPLETED",
+  "observed_unix": 1791312019.4154058,
+  "returncode": 0,
+  "scontrol": "JobId=86304 JobName=tde-x20-relaxed10 UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=02:14:05 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-10-07T00:26:04 EligibleTime=2026-10-07T00:26:04 AccrueTime=2026-10-07T00:26:04 StartTime=2026-10-07T00:26:05 EndTime=2026-10-07T02:40:10 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-07T00:26:05 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:437885 ReqNodeList=(null) ExcNodeList=anode01 NodeList=anode03 BatchHost=anode03 NumNodes=1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=cpu=32,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85889_relaxed_feedback.sbatch SubmitLine=sbatch --parsable /home/scc/pb24511938/eccentric-tde-observer/operations/x20_85889_relaxed_feedback.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-relaxed10-86304.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-relaxed10-86304.out TresPerTask=cpu=32\n",
+  "stderr": "",
+  "status": {
+    "status": "paired_seed_windows_complete_requires_review",
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "updated_unix": 1791311963.182695
+  },
+  "summary": {
+    "status": "paired_seed_windows_complete_requires_review",
+    "cases": {
+      "accelerated": {
+        "8": {
+          "feedback_evaluated": true,
+          "original_zero_gates": {
+            "last_two_photoionization_pass": true,
+            "last_two_total_recombination_pass": true,
+            "last_two_atomic_heating_pass": true,
+            "last_two_direct_heating_pass": true,
+            "last_two_formal_heating_pass": true,
+            "inner_pair_ready": true,
+            "physical_response_pass": true
+          },
+          "physical_response_failures": {},
+          "zero_pair_stable": true,
+          "baseline_replaced": false,
+          "accepted_material_step": false,
+          "from_prior_feedback": {
+            "frozen_r20": {
+              "vector_difference_over_frozen_r20_norms": {
+                "previous_vs_previous": [
+                  1.4503344545230625e-05,
+                  5.8574961015431206e-05,
+                  9.783240089289252e-06
+                ],
+                "previous_vs_final": [
+                  1.2657334435599044e-05,
+                  5.112281035665098e-05,
+                  8.538442927893802e-06
+                ],
+                "final_vs_previous": [
+                  1.627551738550124e-05,
+                  6.573605785293889e-05,
+                  1.0979118772571572e-05
+                ],
+                "final_vs_final": [
+                  1.4429520127462358e-05,
+                  5.828391913139499e-05,
+                  9.73432161175072e-06
+                ]
+              },
+              "passed": true,
+              "tolerance": 0.001,
+              "strict_error_bound": false,
+              "baseline_replaced": false
+            },
+            "vector_difference_over_frozen_80195_signal": {
+              "previous_vs_previous": [
+                0.00404572733508642,
+                0.009857593085625551,
+                0.0016544721901446424
+              ],
+              "previous_vs_final": [
+                0.00353078034902462,
+                0.00860346901053348,
+                0.001443960921167967
+              ],
+              "final_vs_previous": [
+                0.004540077316224964,
+                0.011062735649054896,
+                0.001856710712987756
+              ],
+              "final_vs_final": [
+                0.004025133915132115,
+                0.009808613582882953,
+                0.0016461994441082527
+              ]
+            },
+            "signal_tolerance": 0.1,
+            "signal_pass": true,
+            "passed": true,
+            "strict_error_bound": false,
+            "baseline_replaced": false,
+            "relaxed_response_consistency": {
+              "policy": "user_20261007_tenfold_exploratory_v1",
+              "r20_tolerance": 0.01,
+              "signal_tolerance": 1.0,
+              "r20_pass": true,
+              "signal_pass": true,
+              "passed": true,
+              "exploratory_only": true,
+              "reference_calibration_eligible": false,
+              "strict_error_bound": false
+            }
+          },
+          "eight_map_window": {
+            "frozen_r20": {
+              "vector_difference_over_frozen_r20_norms": {
+                "previous_vs_previous": [
+                  1.4503344545230625e-05,
+                  5.8574961015431206e-05,
+                  9.783240089289252e-06
+                ],
+                "previous_vs_final": [
+                  1.2657334435599044e-05,
+                  5.112281035665098e-05,
+                  8.538442927893802e-06
+                ],
+                "final_vs_previous": [
+                  1.627551738550124e-05,
+                  6.573605785293889e-05,
+                  1.0979118772571572e-05
+                ],
+                "final_vs_final": [
+                  1.4429520127462358e-05,
+                  5.828391913139499e-05,
+                  9.73432161175072e-06
+                ]
+              },
+              "passed": true,
+              "tolerance": 0.001,
+              "strict_error_bound": false,
+              "baseline_replaced": false
+            },
+            "vector_difference_over_frozen_80195_signal": {
+              "previous_vs_previous": [
+                0.00404572733508642,
+                0.009857593085625551,
+                0.0016544721901446424
+              ],
+              "previous_vs_final": [
+                0.00353078034902462,
+                0.00860346901053348,
+                0.001443960921167967
+              ],
+              "final_vs_previous": [
+                0.004540077316224964,
+                0.011062735649054896,
+                0.001856710712987756
+              ],
+              "final_vs_final": [
+                0.004025133915132115,
+                0.009808613582882953,
+                0.0016461994441082527
+              ]
+            },
+            "signal_tolerance": 0.1,
+            "signal_pass": true,
+            "passed": true,
+            "strict_error_bound": false,
+            "baseline_replaced": false,
+            "relaxed_response_consistency": {
+              "policy": "user_20261007_tenfold_exploratory_v1",
+              "r20_tolerance": 0.01,
+              "signal_tolerance": 1.0,
+              "r20_pass": true,
+              "signal_pass": true,
+              "passed": true,
+              "exploratory_only": true,
+              "reference_calibration_eligible": false,
+              "strict_error_bound": false
+            }
+          },
+          "parent_peak_rss_bytes": 257642496,
+          "continuation_pass": true,
+          "reason": "pass"
+        }
+      },
+      "historical": {
+        "8": {
+          "feedback_evaluated": true,
+          "original_zero_gates": {
+            "last_two_photoionization_pass": true,
+            "last_two_total_recombination_pass": true,
+            "last_two_atomic_heating_pass": true,
+            "last_two_direct_heating_pass": true,
+            "last_two_formal_heating_pass": true,
+            "inner_pair_ready": true,
+            "physical_response_pass": true
+          },
+          "physical_response_failures": {},
+          "zero_pair_stable": true,
+          "baseline_replaced": false,
+          "accepted_material_step": false,
+          "from_prior_feedback": {
+            "frozen_r20": {
+              "vector_difference_over_frozen_r20_norms": {
+                "previous_vs_previous": [
+                  6.715736072999558e-05,
+                  0.0002521219001940087,
+                  4.004967853668846e-05
+                ],
+                "previous_vs_final": [
+                  5.881655092648016e-05,
+                  0.0002210680879619822,
+                  3.514214384771987e-05
+                ],
+                "final_vs_previous": [
+                  7.561158914703616e-05,
+                  0.0002841796592814691,
+                  4.5172711825130585e-05
+                ],
+                "final_vs_final": [
+                  6.727203438282161e-05,
+                  0.00025312810494200374,
+                  4.02651773261255e-05
+                ]
+              },
+              "passed": true,
+              "tolerance": 0.001,
+              "strict_error_bound": false,
+              "baseline_replaced": false
+            },
+            "vector_difference_over_frozen_80195_signal": {
+              "previous_vs_previous": [
+                0.01873363548733662,
+                0.042429650092852725,
+                0.00677291763857731
+              ],
+              "previous_vs_final": [
+                0.01640695545063185,
+                0.037203597195265746,
+                0.005942990171708965
+              ],
+              "final_vs_previous": [
+                0.02109195379779372,
+                0.04782465742777776,
+                0.007639288700470417
+              ],
+              "final_vs_final": [
+                0.018765623855978464,
+                0.042598984511427004,
+                0.006809361265727352
+              ]
+            },
+            "signal_tolerance": 0.1,
+            "signal_pass": true,
+            "passed": true,
+            "strict_error_bound": false,
+            "baseline_replaced": false,
+            "relaxed_response_consistency": {
+              "policy": "user_20261007_tenfold_exploratory_v1",
+              "r20_tolerance": 0.01,
+              "signal_tolerance": 1.0,
+              "r20_pass": true,
+              "signal_pass": true,
+              "passed": true,
+              "exploratory_only": true,
+              "reference_calibration_eligible": false,
+              "strict_error_bound": false
+            }
+          },
+          "eight_map_window": {
+            "frozen_r20": {
+              "vector_difference_over_frozen_r20_norms": {
+                "previous_vs_previous": [
+                  6.715736072999558e-05,
+                  0.0002521219001940087,
+                  4.004967853668846e-05
+                ],
+                "previous_vs_final": [
+                  5.881655092648016e-05,
+                  0.0002210680879619822,
+                  3.514214384771987e-05
+                ],
+                "final_vs_previous": [
+                  7.561158914703616e-05,
+                  0.0002841796592814691,
+                  4.5172711825130585e-05
+                ],
+                "final_vs_final": [
+                  6.727203438282161e-05,
+                  0.00025312810494200374,
+                  4.02651773261255e-05
+                ]
+              },
+              "passed": true,
+              "tolerance": 0.001,
+              "strict_error_bound": false,
+              "baseline_replaced": false
+            },
+            "vector_difference_over_frozen_80195_signal": {
+              "previous_vs_previous": [
+                0.01873363548733662,
+                0.042429650092852725,
+                0.00677291763857731
+              ],
+              "previous_vs_final": [
+                0.01640695545063185,
+                0.037203597195265746,
+                0.005942990171708965
+              ],
+              "final_vs_previous": [
+                0.02109195379779372,
+                0.04782465742777776,
+                0.007639288700470417
+              ],
+              "final_vs_final": [
+                0.018765623855978464,
+                0.042598984511427004,
+                0.006809361265727352
+              ]
+            },
+            "signal_tolerance": 0.1,
+            "signal_pass": true,
+            "passed": true,
+            "strict_error_bound": false,
+            "baseline_replaced": false,
+            "relaxed_response_consistency": {
+              "policy": "user_20261007_tenfold_exploratory_v1",
+              "r20_tolerance": 0.01,
+              "signal_tolerance": 1.0,
+              "r20_pass": true,
+              "signal_pass": true,
+              "passed": true,
+              "exploratory_only": true,
+              "reference_calibration_eligible": false,
+              "strict_error_bound": false
+            }
+          },
+          "cross_history": {
+            "residual_comparison": {
+              "frozen_r20": {
+                "vector_difference_over_frozen_r20_norms": {
+                  "previous_vs_previous": [
+                    0.0025852789243498045,
+                    0.010362000815351111,
+                    0.0016689059330036334
+                  ],
+                  "previous_vs_final": [
+                    0.002587045714724535,
+                    0.01036914991713872,
+                    0.0016701017790539585
+                  ],
+                  "final_vs_previous": [
+                    0.0025775277995435716,
+                    0.01033109112767411,
+                    0.001663782934557827
+                  ],
+                  "final_vs_final": [
+                    0.002579294561012217,
+                    0.010338240111763252,
+                    0.0016649787807086298
+                  ]
+                },
+                "passed": false,
+                "tolerance": 0.001,
+                "strict_error_bound": false,
+                "baseline_replaced": false
+              },
+              "vector_difference_over_frozen_80195_signal": {
+                "previous_vs_previous": [
+                  0.7211670094746759,
+                  1.7438233985976044,
+                  0.2822335370410506
+                ],
+                "previous_vs_final": [
+                  0.7216598580098618,
+                  1.7450265225114454,
+                  0.2824357700452394
+                ],
+                "final_vs_previous": [
+                  0.7190048228556897,
+                  1.7386216004531143,
+                  0.2813671718714969
+                ],
+                "final_vs_final": [
+                  0.7194976633274847,
+                  1.7398247045594544,
+                  0.2815694048926778
+                ]
+              },
+              "signal_tolerance": 0.1,
+              "signal_pass": false,
+              "passed": false,
+              "strict_error_bound": false,
+              "baseline_replaced": false,
+              "relaxed_response_consistency": {
+                "policy": "user_20261007_tenfold_exploratory_v1",
+                "r20_tolerance": 0.01,
+                "signal_tolerance": 1.0,
+                "r20_pass": false,
+                "signal_pass": false,
+                "passed": false,
+                "exploratory_only": true,
+                "reference_calibration_eligible": false,
+                "strict_error_bound": false
+              }
+            },
+            "all_four_rate_gate_checks": {
+              "previous_vs_previous": {
+                "last_two_photoionization_pass": true,
+                "last_two_total_recombination_pass": true,
+                "last_two_atomic_heating_pass": true,
+                "last_two_direct_heating_pass": true,
+                "last_two_formal_heating_pass": true
+              },
+              "previous_vs_final": {
+                "last_two_photoionization_pass": true,
+                "last_two_total_recombination_pass": true,
+                "last_two_atomic_heating_pass": true,
+                "last_two_direct_heating_pass": true,
+                "last_two_formal_heating_pass": true
+              },
+              "final_vs_previous": {
+                "last_two_photoionization_pass": true,
+                "last_two_total_recombination_pass": true,
+                "last_two_atomic_heating_pass": true,
+                "last_two_direct_heating_pass": true,
+                "last_two_formal_heating_pass": true
+              },
+              "final_vs_final": {
+                "last_two_photoionization_pass": true,
+                "last_two_total_recombination_pass": true,
+                "last_two_atomic_heating_pass": true,
+                "last_two_direct_heating_pass": true,
+                "last_two_formal_heating_pass": true
+              }
+            },
+            "cross_rate_pass": true
+          },
+          "vs_saved_reference": {
+            "residual_comparison": {
+              "frozen_r20": {
+                "vector_difference_over_frozen_r20_norms": {
+                  "previous_vs_previous": [
+                    0.002570822360477784,
+                    0.010303526774609396,
+                    0.001659122966576709
+                  ],
+                  "previous_vs_final": [
+                    0.0025726621466670156,
+                    0.01031096583286818,
+                    0.001660367728236379
+                  ],
+                  "final_vs_previous": [
+                    0.0025630715466311298,
+                    0.010272618149701939,
+                    0.0016539999673013386
+                  ],
+                  "final_vs_final": [
+                    0.0025649112856254404,
+                    0.010280057062818667,
+                    0.0016552447290673262
+                  ]
+                },
+                "passed": false,
+                "tolerance": 0.001,
+                "strict_error_bound": false,
+                "baseline_replaced": false
+              },
+              "vector_difference_over_frozen_80195_signal": {
+                "previous_vs_previous": [
+                  0.717134331670873,
+                  1.7339827894070619,
+                  0.2805791111307445
+                ],
+                "previous_vs_final": [
+                  0.717647542486025,
+                  1.7352347101592764,
+                  0.2807896163959211
+                ],
+                "final_vs_previous": [
+                  0.7149722317944768,
+                  1.7287811701162925,
+                  0.2797127458209009
+                ],
+                "final_vs_final": [
+                  0.7154854294445426,
+                  1.7300330664425183,
+                  0.2799232511040572
+                ]
+              },
+              "signal_tolerance": 0.1,
+              "signal_pass": false,
+              "passed": false,
+              "strict_error_bound": false,
+              "baseline_replaced": false,
+              "relaxed_response_consistency": {
+                "policy": "user_20261007_tenfold_exploratory_v1",
+                "r20_tolerance": 0.01,
+                "signal_tolerance": 1.0,
+                "r20_pass": false,
+                "signal_pass": false,
+                "passed": false,
+                "exploratory_only": true,
+                "reference_calibration_eligible": false,
+                "strict_error_bound": false
+              }
+            },
+            "all_four_rate_gate_checks": {
+              "previous_vs_previous": {
+                "last_two_photoionization_pass": true,
+                "last_two_total_recombination_pass": true,
+                "last_two_atomic_heating_pass": true,
+                "last_two_direct_heating_pass": true,
+                "last_two_formal_heating_pass": true
+              },
+              "previous_vs_final": {
+                "last_two_photoionization_pass": true,
+                "last_two_total_recombination_pass": true,
+                "last_two_atomic_heating_pass": true,
+                "last_two_direct_heating_pass": true,
+                "last_two_formal_heating_pass": true
+              },
+              "final_vs_previous": {
+                "last_two_photoionization_pass": true,
+                "last_two_total_recombination_pass": true,
+                "last_two_atomic_heating_pass": true,
+                "last_two_direct_heating_pass": true,
+                "last_two_formal_heating_pass": true
+              },
+              "final_vs_final": {
+                "last_two_photoionization_pass": true,
+                "last_two_total_recombination_pass": true,
+                "last_two_atomic_heating_pass": true,
+                "last_two_direct_heating_pass": true,
+                "last_two_formal_heating_pass": true
+              }
+            },
+            "cross_rate_pass": true,
+            "saved_reference_job": 85889,
+            "saved_reference_case": "accelerated",
+            "saved_reference_map": 16,
+            "reference_recomputed": false,
+            "strict_error_bound": false
+          },
+          "parent_peak_rss_bytes": 257642496,
+          "continuation_pass": true,
+          "reason": "pass"
+        }
+      }
+    },
+    "cross_history": {
+      "8": {
+        "residual_comparison": {
+          "frozen_r20": {
+            "vector_difference_over_frozen_r20_norms": {
+              "previous_vs_previous": [
+                0.0025852789243498045,
+                0.010362000815351111,
+                0.0016689059330036334
+              ],
+              "previous_vs_final": [
+                0.002587045714724535,
+                0.01036914991713872,
+                0.0016701017790539585
+              ],
+              "final_vs_previous": [
+                0.0025775277995435716,
+                0.01033109112767411,
+                0.001663782934557827
+              ],
+              "final_vs_final": [
+                0.002579294561012217,
+                0.010338240111763252,
+                0.0016649787807086298
+              ]
+            },
+            "passed": false,
+            "tolerance": 0.001,
+            "strict_error_bound": false,
+            "baseline_replaced": false
+          },
+          "vector_difference_over_frozen_80195_signal": {
+            "previous_vs_previous": [
+              0.7211670094746759,
+              1.7438233985976044,
+              0.2822335370410506
+            ],
+            "previous_vs_final": [
+              0.7216598580098618,
+              1.7450265225114454,
+              0.2824357700452394
+            ],
+            "final_vs_previous": [
+              0.7190048228556897,
+              1.7386216004531143,
+              0.2813671718714969
+            ],
+            "final_vs_final": [
+              0.7194976633274847,
+              1.7398247045594544,
+              0.2815694048926778
+            ]
+          },
+          "signal_tolerance": 0.1,
+          "signal_pass": false,
+          "passed": false,
+          "strict_error_bound": false,
+          "baseline_replaced": false,
+          "relaxed_response_consistency": {
+            "policy": "user_20261007_tenfold_exploratory_v1",
+            "r20_tolerance": 0.01,
+            "signal_tolerance": 1.0,
+            "r20_pass": false,
+            "signal_pass": false,
+            "passed": false,
+            "exploratory_only": true,
+            "reference_calibration_eligible": false,
+            "strict_error_bound": false
+          }
+        },
+        "all_four_rate_gate_checks": {
+          "previous_vs_previous": {
+            "last_two_photoionization_pass": true,
+            "last_two_total_recombination_pass": true,
+            "last_two_atomic_heating_pass": true,
+            "last_two_direct_heating_pass": true,
+            "last_two_formal_heating_pass": true
+          },
+          "previous_vs_final": {
+            "last_two_photoionization_pass": true,
+            "last_two_total_recombination_pass": true,
+            "last_two_atomic_heating_pass": true,
+            "last_two_direct_heating_pass": true,
+            "last_two_formal_heating_pass": true
+          },
+          "final_vs_previous": {
+            "last_two_photoionization_pass": true,
+            "last_two_total_recombination_pass": true,
+            "last_two_atomic_heating_pass": true,
+            "last_two_direct_heating_pass": true,
+            "last_two_formal_heating_pass": true
+          },
+          "final_vs_final": {
+            "last_two_photoionization_pass": true,
+            "last_two_total_recombination_pass": true,
+            "last_two_atomic_heating_pass": true,
+            "last_two_direct_heating_pass": true,
+            "last_two_formal_heating_pass": true
+          }
+        },
+        "cross_rate_pass": true
+      }
+    },
+    "maps": 16,
+    "map_counts": {
+      "accelerated": 8,
+      "historical": 8
+    },
+    "seed_stats_after": [
+      {
+        "path": "outputs/hpc/x20-85875-matched-feedback-20261006/accelerated/endpoints-map16/mapped_final.dat",
+        "inode": 4243119617,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791259135000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85875-matched-feedback-20261006/historical/endpoints-map16/mapped_final.dat",
+        "inode": 5603002125,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791261588000000000
+      }
+    ],
+    "source_field_stats_after": [
+      {
+        "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/final.dat",
+        "inode": 3913921026,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790959398000000000
+      },
+      {
+        "path": "outputs/hpc/x20-83514-seed-feedback-20261002/historical/endpoints-map16/previous.dat",
+        "inode": 3913909506,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790959367000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map08/final.dat",
+        "inode": 5098131463,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791223628000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map08/previous.dat",
+        "inode": 5098096391,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791223592000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map16/final.dat",
+        "inode": 4977874699,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791226117000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85800-seed-feedback-20261006/historical/endpoints-map16/previous.dat",
+        "inode": 4977861131,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791226081000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85859-true-validation-20261006/full/state_1.dat",
+        "inode": 4197708547,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791234767000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85861-seed-feedback-20261006/historical/endpoints-map16/mapped_final.dat",
+        "inode": 4233195777,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791244474000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85875-matched-feedback-20261006/accelerated/endpoints-map16/mapped_final.dat",
+        "inode": 4243119617,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791259135000000000
+      },
+      {
+        "path": "outputs/hpc/x20-85875-matched-feedback-20261006/historical/endpoints-map16/mapped_final.dat",
+        "inode": 5603002125,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1791261588000000000
+      },
+      {
+        "path": "outputs/hpc/x20-global-boundary-validation-20261001/full/state_1.dat",
+        "inode": 4632783120,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790801496000000000
+      },
+      {
+        "path": "outputs/hpc/x20-global-window-feedback-20261001/accelerated/endpoints-map16/mapped_final.dat",
+        "inode": 5251406605,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790813307000000000
+      },
+      {
+        "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/final.dat",
+        "inode": 4775433735,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790856704000000000
+      },
+      {
+        "path": "outputs/hpc/x20-historical-seed-feedback-20261001/historical/endpoints-map16/previous.dat",
+        "inode": 4687111438,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790856673000000000
+      },
+      {
+        "path": "outputs/hpc/x20-window-feedback-20260930/accelerated/endpoints-map08/final.dat",
+        "inode": 4607701003,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790772627000000000
+      },
+      {
+        "path": "outputs/hpc/x20-window-feedback-20260930/accelerated/endpoints-map08/mapped_final.dat",
+        "inode": 4607715595,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790772660000000000
+      },
+      {
+        "path": "outputs/hpc/x20-window-feedback-20260930/accelerated/endpoints-map16/final.dat",
+        "inode": 4836364812,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790778133000000000
+      },
+      {
+        "path": "outputs/hpc/x20-window-feedback-20260930/accelerated/endpoints-map16/mapped_final.dat",
+        "inode": 4836405772,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790778167000000000
+      },
+      {
+        "path": "outputs/hpc/x20-window-feedback-20260930/historical/endpoints-map08/final.dat",
+        "inode": 3782137350,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790775718000000000
+      },
+      {
+        "path": "outputs/hpc/x20-window-feedback-20260930/historical/endpoints-map08/mapped_final.dat",
+        "inode": 3782146566,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790775753000000000
+      },
+      {
+        "path": "outputs/hpc/x20-window-feedback-20260930/historical/endpoints-map16/final.dat",
+        "inode": 4734944263,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790780602000000000
+      },
+      {
+        "path": "outputs/hpc/x20-window-feedback-20260930/historical/endpoints-map16/mapped_final.dat",
+        "inode": 3849712389,
+        "size_bytes": 10099884032,
+        "mtime_ns": 1790780633000000000
+      }
+    ],
+    "git_commit_after": "fbfe81fb7ec4e9714e256ec460b483130db5c254",
+    "git_clean_after": true,
+    "all_hashes_verified_before_after": true,
+    "matched_new_two_branch_experiment": true,
+    "reference_recomputed": true,
+    "reference_calibration_eligible": false,
+    "relaxed_consistency_pass": false,
+    "exploratory_only": true,
+    "independent_review_required": true,
+    "accepted_outer_steps": 20,
+    "new_material_steps": 0,
+    "baseline_replaced": false,
+    "strict_error_bound": false,
+    "historical_failures_retained": true,
+    "feedback_pair_count": 2,
+    "wall_s": 7984.898389171809,
+    "parent_peak_rss_bytes": 257642496
+  },
+  "batch_exit": {
+    "job_id": "86304",
+    "child_exit_status": 0,
+    "recorded_unix": 1791312010.6261334,
+    "scheduler_terminal_verified": false,
+    "meaning": "shell wait status of Python child; not Slurm terminal state"
+  },
+  "cases": {
+    "accelerated": {
+      "completed_maps": 8,
+      "active_map": false
+    },
+    "historical": {
+      "completed_maps": 8,
+      "active_map": false
+    }
+  }
+}

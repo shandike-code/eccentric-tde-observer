@@ -1,0 +1,16 @@
+{
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "scope": "supplied independently audited facts, not full source audit",
+  "corrections": [
+    "CLI worker peak 4041600 is a transcription error; audited maximum is 4045600 KiB.",
+    "1008 counts small source claims, not source-code files; 818 explicit code claims and 1696 tracked code files are separate.",
+    "257642496 bytes is measured parent peak RSS, not constant resident memory.",
+    "7984.898389171809 seconds is program wall time; Slurm runtime is 8045 seconds.",
+    "Preserve signed endpoint subtraction before the prescribed norms. A blanket ban on absolute values of an already formed difference is mathematically unwarranted for these Euclidean norms; taking absolute endpoint values before subtraction is a different operation.",
+    "accepted20 denotes a count of accepted nonlinear updates within one physical step, not a boolean or twenty phases.",
+    "Both cross comparisons fail the new exploratory gate; avoid wording that suggests this experiment passed it."
+  ],
+  "independent_review_complete": true
+}

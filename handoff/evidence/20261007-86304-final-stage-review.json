@@ -1,0 +1,147 @@
+{
+  "review_passed": true,
+  "actual_terminal_verified": true,
+  "tracked_code_count": 1696,
+  "explicit_code_count": 818,
+  "all_current_code_sha_verified": true,
+  "archive": {
+    "path": "outputs/hpc/x20-85889-relaxed-feedback-20261007/archives/complete-1791311963190402946.tar.gz",
+    "size_bytes": 154064839,
+    "sha256": "595a01a5373980afd28acdb7224cd74321561da005892297e0995f5c9207a0b8"
+  },
+  "transfer": {
+    "receipt": {
+      "path": "outputs/hpc/x20-85889-relaxed-feedback-20261007/archives/complete-1791311963190402946.tar.gz",
+      "size_bytes": 154064839,
+      "sha256": "595a01a5373980afd28acdb7224cd74321561da005892297e0995f5c9207a0b8"
+    },
+    "members": 4305,
+    "member_bytes": 423848018,
+    "all_members_verified": true,
+    "no_dat": true
+  },
+  "windows": {
+    "accelerated8": {
+      "r20_max": [
+        1.6275517385501242e-05,
+        6.573605785293889e-05,
+        1.0979118772571572e-05
+      ],
+      "signal_max": [
+        0.004540077316224964,
+        0.011062735649054899,
+        0.0018567107129877564
+      ],
+      "strict_pass": true,
+      "relaxed": {
+        "policy": "user_20261007_tenfold_exploratory_v1",
+        "r20_tolerance": 0.01,
+        "signal_tolerance": 1.0,
+        "r20_pass": true,
+        "signal_pass": true,
+        "passed": true,
+        "exploratory_only": true,
+        "reference_calibration_eligible": false,
+        "strict_error_bound": false
+      }
+    },
+    "historical8": {
+      "r20_max": [
+        7.561158914703617e-05,
+        0.0002841796592814691,
+        4.5172711825130585e-05
+      ],
+      "signal_max": [
+        0.02109195379779372,
+        0.04782465742777777,
+        0.007639288700470419
+      ],
+      "strict_pass": true,
+      "relaxed": {
+        "policy": "user_20261007_tenfold_exploratory_v1",
+        "r20_tolerance": 0.01,
+        "signal_tolerance": 1.0,
+        "r20_pass": true,
+        "signal_pass": true,
+        "passed": true,
+        "exploratory_only": true,
+        "reference_calibration_eligible": false,
+        "strict_error_bound": false
+      }
+    }
+  },
+  "matched_cross": {
+    "r20_max": [
+      0.0025870457147245353,
+      0.010369149917138719,
+      0.0016701017790539583
+    ],
+    "signal_max": [
+      0.7216598580098618,
+      1.7450265225114456,
+      0.2824357700452394
+    ],
+    "strict_pass": false,
+    "relaxed": {
+      "policy": "user_20261007_tenfold_exploratory_v1",
+      "r20_tolerance": 0.01,
+      "signal_tolerance": 1.0,
+      "r20_pass": false,
+      "signal_pass": false,
+      "passed": false,
+      "exploratory_only": true,
+      "reference_calibration_eligible": false,
+      "strict_error_bound": false
+    }
+  },
+  "saved_reference": {
+    "r20_max": [
+      0.0025726621466670156,
+      0.01031096583286818,
+      0.001660367728236379
+    ],
+    "signal_max": [
+      0.7176475424860249,
+      1.7352347101592769,
+      0.28078961639592115
+    ],
+    "strict_pass": false,
+    "relaxed": {
+      "policy": "user_20261007_tenfold_exploratory_v1",
+      "r20_tolerance": 0.01,
+      "signal_tolerance": 1.0,
+      "r20_pass": false,
+      "signal_pass": false,
+      "passed": false,
+      "exploratory_only": true,
+      "reference_calibration_eligible": false,
+      "strict_error_bound": false
+    }
+  },
+  "cross_rate_max": {
+    "photoionization_volume_l1": 2.9140884314671588e-05,
+    "total_recombination_volume_l1": 6.413073185388761e-09,
+    "atomic_heating_volume_l1": 0.0006723049763725918,
+    "direct_heating_volume_l1": 0.000672304976371069,
+    "formal_heating_volume_l1": 0.0006723049763715239
+  },
+  "saved_rate_max": {
+    "photoionization_volume_l1": 2.907792960371982e-05,
+    "total_recombination_volume_l1": 6.379277199734315e-09,
+    "atomic_heating_volume_l1": 0.0006686070053635564,
+    "direct_heating_volume_l1": 0.0006686070053633251,
+    "formal_heating_volume_l1": 0.0006686070053637348
+  },
+  "lecture_prefix_bytes": 496044,
+  "lecture_prefix_sha256": "39ccdb26de27e6999ff3377d2379a5542cf620491bb11a7460da3981bb840430",
+  "lecture_prefix_unchanged": true,
+  "new_markdown_format_pass": true,
+  "numerical_code_changed": false,
+  "existing_65_tests_not_repeated": true,
+  "first_full_real_review_pass": true,
+  "relaxed_consistency_pass": false,
+  "budget_closed": true,
+  "new_job_submitted": false,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0
+}
