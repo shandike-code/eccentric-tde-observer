@@ -1,0 +1,62 @@
+{
+  "job_id": "86191",
+  "git_commit": "4b02b0865ed45103770a6ecf63638c9696bd0a62",
+  "run": "outputs/hpc/x20-85889-chord-reuse-resource-20261006",
+  "watch": "outputs/review-20260925/chord-reuse-resource-watch-86191",
+  "watch_pid": 2940615,
+  "sbatch_stdout": "86191\n",
+  "sbatch_stderr": "",
+  "submitted_unix": 1791287281.032955,
+  "budget": {
+    "max_jobs": 1,
+    "nodes": 1,
+    "cpus": 4,
+    "memory_gib": 16,
+    "slurm_seconds": 1800,
+    "program_seconds": 1500,
+    "rss_lt_bytes": 6442450944,
+    "field_payload_bytes": 121601261568,
+    "archive_payload_bytes": 607755804,
+    "group_range": [
+      0,
+      32
+    ],
+    "kernel_calls": 1,
+    "full_scan_authorized": false
+  },
+  "actual_first_observation": "JobId=86191 JobName=tde-x20-chord-reuse-resource UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:14 TimeLimit=00:30:00 TimeMin=N/A SubmitTime=2026-10-06T19:48:01 EligibleTime=2026-10-06T19:48:01 AccrueTime=2026-10-06T19:48:01 StartTime=2026-10-06T19:48:02 EndTime=2026-10-06T20:18:02 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-06T19:48:02 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2940536 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode03 BatchHost=anode03 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85889_chord_reuse_resource.sbatch SubmitLine=sbatch --parsable operations/x20_85889_chord_reuse_resource.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-chord-reuse-resource-86191.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-chord-reuse-resource-86191.out TresPerTask=cpu=4\n2940615 Ss   .venv-hpc/bin/python operations/x20_85889_chord_reuse_receipt.py observe 86191 outputs/review-20260925/chord-reuse-resource-watch-86191\nallocation.json\nstarted.json\n",
+  "production_resource_verified": false,
+  "scheduler_terminal_verified": false,
+  "preparation_evidence": "handoff/evidence/20261006-chord-reuse-production-acceptance-review.json",
+  "external_code_manifest": "outputs/review-20260925/20261006-chord-reuse-production-code-freeze-final.json",
+  "external_binding": "outputs/review-20260925/20261006-chord-reuse-production-binding.json",
+  "pre_run": {
+    "status": "single_bounded_submission_intent_no_retry",
+    "unix": 1791287280.9936004,
+    "expected_commit": "4b02b0865ed45103770a6ecf63638c9696bd0a62",
+    "run": "outputs/hpc/x20-85889-chord-reuse-resource-20261006",
+    "code": "PASS: 1676 frozen files; clean ff-only; 150 production-checkout tests; immutable kernels",
+    "logic": "PASS: fresh 326 sources, 801 originals, 6 runtime/native and archive before/after; pinned historical reference; first32 only; independent terminal/code/binding/Decimal review",
+    "physics": "PASS for read-only resource experiment only; no map/feedback/ODE/material or physical parameter changes",
+    "rationale": "Measure still-unknown production working set and complete first-slab equivalence of the tested reuse implementation; not inferred speedup or full-scan feasibility",
+    "decision": "RUN",
+    "budget": {
+      "max_jobs": 1,
+      "nodes": 1,
+      "cpus": 4,
+      "memory_gib": 16,
+      "slurm_seconds": 1800,
+      "program_seconds": 1500,
+      "rss_lt_bytes": 6442450944,
+      "field_payload_bytes": 121601261568,
+      "archive_payload_bytes": 607755804,
+      "group_range": [
+        0,
+        32
+      ],
+      "kernel_calls": 1,
+      "full_scan_authorized": false
+    },
+    "source_preparation": "outputs/review-20260925/chord-reuse-production-sources-20261006/summary.json"
+  }
+}
