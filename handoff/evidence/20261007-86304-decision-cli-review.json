@@ -1,0 +1,14 @@
+{
+  "first_full_protocol_cli_returncode": 124,
+  "first_wall_s": 55.10706475004554,
+  "first_draft_unavailable": true,
+  "retry_actual_model": "deepseek-v4-flash[1m]",
+  "retry_wall_s": 5.423136500176042,
+  "retry_scope": "short given facts only, not full protocol or source audit",
+  "corrections": [
+    "1.7373% is the decrease of the maximum over four combinations, not the maximum of four separate decreases; the latter is about 1.75476%.",
+    "Both response gates remain mandatory; the signal gate supplies the smaller effective absolute threshold, which does not authorize removing the r20 check."
+  ],
+  "codex_protocol_review_complete": true,
+  "new_vector_diagnostic_implemented": false
+}

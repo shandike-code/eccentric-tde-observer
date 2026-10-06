@@ -1,0 +1,209 @@
+{
+  "scope": "scalar audit summary comparison and proposed small-vector validation contract",
+  "comparison": {
+    "scope": "read-only comparison of previously independently audited JSON; no new vector reduction or ODE",
+    "pins": [
+      {
+        "path": "handoff/evidence/20261006-x20-85889-final-review.json",
+        "size_bytes": 87194,
+        "sha256": "61eaea4db3ba0fb87adce29c13ab42bc1f158068e634e9798b67ddc3d16c2729"
+      },
+      {
+        "path": "handoff/evidence/20261007-x20-86304-final-review.json",
+        "size_bytes": 57263,
+        "sha256": "7e680adf4f4f0908f51f8a88b690731955a6493319f795b0e653e5902dadf840"
+      },
+      {
+        "path": "outputs/review-20260925/20261007-relaxed-response-reassessment.json",
+        "size_bytes": 11494,
+        "sha256": "e7bc923cedba6fecb9fa3e4ad2113c953875d21a32336674985e0c81a7f18071"
+      }
+    ],
+    "labels": [
+      "l2",
+      "mass",
+      "maximum_cell"
+    ],
+    "all_four_combinations": {
+      "previous_vs_previous": {
+        "old_r20": [
+          0.002631522772730673,
+          0.010545037715184039,
+          0.0016991722878802417
+        ],
+        "new_r20": [
+          0.0025852789243498053,
+          0.01036200081535111,
+          0.0016689059330036334
+        ],
+        "new_over_old": [
+          0.9824269624948442,
+          0.9826423665067247,
+          0.9821875891617993
+        ],
+        "fractional_decrease": [
+          0.01757303750515582,
+          0.01735763349327535,
+          0.017812410838200732
+        ]
+      },
+      "previous_vs_final": {
+        "old_r20": [
+          0.0026333628000546577,
+          0.010552477755830923,
+          0.0017004170485930704
+        ],
+        "new_r20": [
+          0.0025870457147245353,
+          0.010369149917138719,
+          0.0016701017790539583
+        ],
+        "new_over_old": [
+          0.9824114302331752,
+          0.9826270338650177,
+          0.9821718621533494
+        ],
+        "fractional_decrease": [
+          0.01758856976682477,
+          0.017372966134982293,
+          0.017828137846650605
+        ]
+      },
+      "final_vs_previous": {
+        "old_r20": [
+          0.002624071784689007,
+          0.010515451674354442,
+          0.0016942648064307614
+        ],
+        "new_r20": [
+          0.002577527799543572,
+          0.010331091127674108,
+          0.001663782934557827
+        ],
+        "new_over_old": [
+          0.9822626860221543,
+          0.9824676530890288,
+          0.9820087912130162
+        ],
+        "fractional_decrease": [
+          0.017737313977845726,
+          0.017532346910971164,
+          0.017991208786983792
+        ]
+      },
+      "final_vs_final": {
+        "old_r20": [
+          0.0026259117964251466,
+          0.010522891611340528,
+          0.0016955095672718324
+        ],
+        "new_r20": [
+          0.002579294561012218,
+          0.01033824011176325,
+          0.0016649787807086298
+        ],
+        "new_over_old": [
+          0.9822472196223831,
+          0.9824523993596704,
+          0.9819931499340766
+        ],
+        "fractional_decrease": [
+          0.01775278037761685,
+          0.017547600640329564,
+          0.018006850065923397
+        ]
+      }
+    },
+    "old_max_r20": [
+      0.0026333628000546577,
+      0.010552477755830923,
+      0.0017004170485930704
+    ],
+    "new_max_r20": [
+      0.0025870457147245353,
+      0.010369149917138719,
+      0.0016701017790539583
+    ],
+    "maxima_fractional_decrease": [
+      0.01758856976682477,
+      0.017372966134982293,
+      0.017828137846650605
+    ],
+    "r20_norms": [
+      8.172006557889262,
+      0.2619104204778557,
+      2.705001116611826
+    ],
+    "frozen_signal_scale": [
+      0.02929545590160747,
+      0.0015563020846738516,
+      0.01599523734714176
+    ],
+    "r20_absolute_limits": [
+      0.08172006557889262,
+      0.0026191042047785567,
+      0.027050011166118264
+    ],
+    "signal_absolute_limits": [
+      0.02929545590160747,
+      0.0015563020846738516,
+      0.01599523734714176
+    ],
+    "effective_absolute_limits": [
+      0.02929545590160747,
+      0.0015563020846738516,
+      0.01599523734714176
+    ],
+    "current_maximum_norms": [
+      0.021141354546288214,
+      0.002715788414795724,
+      0.0045176271771963546
+    ],
+    "strictly_needed_fractional_reduction_from_current": [
+      0.0,
+      0.4269428074016902,
+      0.0
+    ],
+    "strict_inequality_required": true,
+    "not_a_difference_vector_norm": true,
+    "not_an_error_bound": true,
+    "no_eta_or_map_count_inference": true,
+    "new_production_authorized": false,
+    "new_maps": 0,
+    "new_feedback": 0,
+    "new_material": 0,
+    "source_dat_read": false
+  },
+  "decimal60_scalar_crosscheck_pass": true,
+  "old_audit_bytes_equal_git_0032544": true,
+  "lecture_prefix": {
+    "bytes": 498402,
+    "sha256": "23976e644aa5f5265ee1599e8451449e7d4400ceeeb9c29b2ef8481866dfef5f",
+    "unchanged": true
+  },
+  "school_checkout_unchanged": true,
+  "new_source_code": false,
+  "new_vector_diagnostic_implemented": false,
+  "new_production_authorized": false,
+  "submission_ready": false,
+  "new_slurm": 0,
+  "new_dat_reads": 0,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_material": 0,
+  "accepted_outer_steps": 20,
+  "cli_review": {
+    "first_full_protocol_cli_returncode": 124,
+    "first_wall_s": 55.10706475004554,
+    "first_draft_unavailable": true,
+    "retry_actual_model": "deepseek-v4-flash[1m]",
+    "retry_wall_s": 5.423136500176042,
+    "retry_scope": "short given facts only, not full protocol or source audit",
+    "corrections": [
+      "1.7373% is the decrease of the maximum over four combinations, not the maximum of four separate decreases; the latter is about 1.75476%.",
+      "Both response gates remain mandatory; the signal gate supplies the smaller effective absolute threshold, which does not authorize removing the r20 check."
+    ],
+    "codex_protocol_review_complete": true,
+    "new_vector_diagnostic_implemented": false
+  }
+}
