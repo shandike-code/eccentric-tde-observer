@@ -1,0 +1,16 @@
+{
+  "status": "authenticated_resource_small_statistics_consistent",
+  "slabs": 1,
+  "combinations": 4,
+  "field_bytes_read": 121601261568,
+  "full_field_sha_refreshed": true,
+  "full_field_statistics_complete": false,
+  "full_scan_authorized": false,
+  "physical_validation": false,
+  "strict_error_bound": false,
+  "scheduler_terminal_verified": true,
+  "production_resource_preflight_complete": true,
+  "archive_bytes_read": 607755804,
+  "job_id": "86061",
+  "git_commit": "82aea66f68dd9f1abc27a8268ffd5e1bfa34f418"
+}

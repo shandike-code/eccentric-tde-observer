@@ -1,0 +1,159 @@
+{
+  "job_id": 86061,
+  "numerical_commit": "82aea66f68dd9f1abc27a8268ffd5e1bfa34f418",
+  "source_job": 85889,
+  "scheduler_terminal_verified": true,
+  "numerical_artifacts_complete": true,
+  "completed_resource_experiment": true,
+  "production_resource_preflight_complete": true,
+  "full_field_statistics_complete": false,
+  "full_scan_authorized": false,
+  "archive": {
+    "path": "outputs/review-20260925/86061-chord-resource-v2-review.tar.gz",
+    "size_bytes": 126643,
+    "sha256": "077e156eec787d6d871689d34a895c0b5e2013f3444e76ed0be99da6f0aa3e38",
+    "files": [
+      {
+        "path": "allocation.json",
+        "size_bytes": 1583,
+        "sha256": "b9297648cbf7110da317a0c26406f159849cbe574dab55a60c6e0befbb1af171"
+      },
+      {
+        "path": "binding-after.json",
+        "size_bytes": 208159,
+        "sha256": "a141474d055172b9d0fafae89e5c0071a2d4b228a11fa6f12536d632a55c28db"
+      },
+      {
+        "path": "binding-before.json",
+        "size_bytes": 208159,
+        "sha256": "a141474d055172b9d0fafae89e5c0071a2d4b228a11fa6f12536d632a55c28db"
+      },
+      {
+        "path": "field-hash-after.json",
+        "size_bytes": 1187,
+        "sha256": "b1c993aaf584793baae1a592f87263126c2190d481ec7f7e2d225ac06e2225f1"
+      },
+      {
+        "path": "field-hash-before.json",
+        "size_bytes": 1187,
+        "sha256": "818560bc9de01ef0a95064d7a053df19ac75d9d8423503796b8ead9537f0108c"
+      },
+      {
+        "path": "finished.json",
+        "size_bytes": 209,
+        "sha256": "fdcf5ec4e64538566190e0e311c2999478ca7b7d02145b751c6bc241bca8d94a"
+      },
+      {
+        "path": "live-after.json",
+        "size_bytes": 2426,
+        "sha256": "51aa4a1f345f2aa9c969f91648e2dbb132f298375510d9a63557782e5841772c"
+      },
+      {
+        "path": "live-before.json",
+        "size_bytes": 2601,
+        "sha256": "746b47a288a52dc8eca8120875723041c0a634ea8ddf9565bb77e081958677b4"
+      },
+      {
+        "path": "probe.json",
+        "size_bytes": 26348,
+        "sha256": "7ef2572f2b4008f2af9900fd21f6e3f288dd1aa1d9fd7292e4716ffdd4290324"
+      },
+      {
+        "path": "result.json",
+        "size_bytes": 37696,
+        "sha256": "e56b0b4ec22826e15350dc8be9f464dd166a937bc7b7d62d8eef889b7180c6c2"
+      },
+      {
+        "path": "started.json",
+        "size_bytes": 161,
+        "sha256": "22863b6238889178b283177e5d14367a1896bb66f5926351c9134b2f7b21bfd3"
+      },
+      {
+        "path": "scheduler-terminal.json",
+        "size_bytes": 1652,
+        "sha256": "b2f1c80da309801f8c7359b0f3e1292118de74b9b5b67cf39ca691b6dea2b655"
+      },
+      {
+        "path": "chord-resource-v2-86061-batch-exit.json",
+        "size_bytes": 196,
+        "sha256": "28c003927f44d20cce92dc6ad727d3460000682a8b609957c1a83d5f37fd29f7"
+      },
+      {
+        "path": "tde-x20-chord-resource-v2-86061.out",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "tde-x20-chord-resource-v2-86061.err",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "dat_files": 0,
+    "scheduler_terminal_verified": false,
+    "meaning": "archive integrity only; independently inspect included scheduler receipt"
+  },
+  "program_wall_s": 235.57587905600667,
+  "slurm_wall_s": 240,
+  "peak_rss_bytes": 1893228544,
+  "probe_calculation_s": 26.20669498667121,
+  "full_hash_before_s": 95.98435494676232,
+  "full_hash_after_s": 77.06932860612869,
+  "field_payload_bytes": 121601261568,
+  "archive_payload_bytes": 607755804,
+  "logical_payload_not_device_io": true,
+  "real_dat_downloaded": 0,
+  "retained_shape": [
+    9632,
+    32,
+    4096
+  ],
+  "statistical_groups": 32,
+  "total_groups": 9632,
+  "old_six_inode_size_mtime_equal": true,
+  "current_field_stat_before_after_equal": true,
+  "current_six_sha_before_after_equal": true,
+  "archived_small_sources": 326,
+  "original_code_sources": 801,
+  "live_runtime_inputs": 6,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_material": 0,
+  "new_ode": 0,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "source_84026_scheduler_terminal_verified": false,
+  "independent_review": "handoff/evidence/20261006-x20-86061-resource-review.json",
+  "independent_review_first_attempt_pass": true,
+  "source_and_numerical_scope": "source authentication and one fixed slab resource/statistical consistency only",
+  "next_decision": "DO NOT RUN full scan: first inspect faithful reuse of repeated vector products, preserving binary64 expressions, longdouble reduction, all errors/extrema and subnormal rejection; no budget change or automatic job",
+  "backups": {
+    "mac_bytes": 25897959,
+    "school_bytes": 25851202,
+    "both_verified": true
+  },
+  "artifacts": [
+    {
+      "path": "outputs/review-20260925/x20-chord-resource-86061-received/result.json",
+      "size_bytes": 37696,
+      "sha256": "e56b0b4ec22826e15350dc8be9f464dd166a937bc7b7d62d8eef889b7180c6c2"
+    },
+    {
+      "path": "outputs/review-20260925/x20-chord-resource-86061-received/finished.json",
+      "size_bytes": 209,
+      "sha256": "fdcf5ec4e64538566190e0e311c2999478ca7b7d02145b751c6bc241bca8d94a"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-86061-archive-receipt.json",
+      "size_bytes": 2307,
+      "sha256": "c4f95f027831915b58d38b25dc81d53e87411aed8c6ca7de52e2544b240b4948"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-86061-partial-metadata.json",
+      "size_bytes": 937,
+      "sha256": "6761b9eed55a3769455184cb115a40b83d4ad7beadff42ff657a8a4986995633"
+    }
+  ]
+}

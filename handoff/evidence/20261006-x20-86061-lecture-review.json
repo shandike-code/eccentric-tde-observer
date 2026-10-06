@@ -1,0 +1,12 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "wall_s": 14.753178542014211,
+  "independently_reviewed": true,
+  "corrections": [
+    "将草稿preflight_complete明确限定为production_resource_preflight_complete，不是全场统计或物理任务完成。",
+    "场读取为逻辑payload，不是设备盘I/O计量；其余频片经过完整SHA读取，但没有计算其统计。",
+    "所有0map/反馈/ODE/物质计数只指本新资源job，原历史结果不撤销。",
+    "235.575879秒为程序整体，26.206695秒为一片统计；Slurm240秒不是故障。"
+  ],
+  "full_scan_authorized": false
+}
