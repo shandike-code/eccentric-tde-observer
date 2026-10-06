@@ -1,0 +1,6 @@
+{
+  "returncode": 124,
+  "wall_s": 110.89837379194796,
+  "stdout": "{\"type\":\"result\",\"subtype\":\"error_during_execution\",\"duration_ms\":107208,\"duration_api_ms\":0,\"is_error\":true,\"num_turns\":2,\"stop_reason\":null,\"session_id\":\"25e31d55-e968-43ee-9ac4-dc554e52e137\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{},\"permission_denials\":[],\"terminal_reason\":\"aborted_streaming\",\"fast_mode_state\":\"off\",\"uuid\":\"8f9d1020-e0f5-457f-a080-7b595a9d64d3\",\"errors\":[\"[ede_diagnostic] result_type=user last_content_type=n/a stop_reason=null\"]}\n",
+  "stderr": ""
+}

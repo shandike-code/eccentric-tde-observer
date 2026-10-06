@@ -1,0 +1,16 @@
+{
+  "first_attempt_timeout_s": 110.89837379194796,
+  "first_full_source_cli_review_completed": false,
+  "successful_retry_wall_s": 14.803359540645033,
+  "actual_model": "deepseek-v4-flash[1m]",
+  "retry_scope": "fact-grounded lecture draft only",
+  "independently_reviewed": true,
+  "source_interface_review_by_codex": true,
+  "corrections": [
+    "草稿480+960MiB称为按存储推算的shape；改为给定生产shape下两类缓存数组的总payload，非RSS或新增内存。",
+    "第二次仅事实讲义草稿，不冒充带完整源码的CLI审计通过。",
+    "全部极小行为以各平台旧核为比较，不能把有限合成样例跨平台同值泛化。"
+  ],
+  "production_resource_verified": false,
+  "full_scan_authorized": false
+}
