@@ -1,0 +1,61 @@
+{
+  "job_id": 85889,
+  "stage": "partial_accelerated_pair08_review",
+  "numerical_commit": "9555a78a77b9025e30405684dee2669d9e43baee",
+  "archive": {
+    "path": "outputs/hpc/x20-85875-matched-feedback-20261006/archives/accelerated-map08-feedback-1791253450991559246.tar.gz",
+    "size_bytes": 77631915,
+    "sha256": "a5b0e80e4f41886971c50395534c35a7522f1d5e492ee4939d866199c0ca0c6f"
+  },
+  "pre_run": {
+    "Code": "PASS",
+    "Logic": "PASS",
+    "Physics": "WARNING",
+    "Decision": "RUN",
+    "scope": "frozen A8 small archive and independent full-vector reductions; no new Slurm, large-field read or material ODE"
+  },
+  "post_run": {
+    "verified_files": 2154,
+    "verified_source_claims": 979,
+    "verified_code_claims": 801,
+    "map_process_receipts": 608,
+    "feedback_process_receipts": 152,
+    "maximum_proc_kib": 4045164,
+    "all_original_zero_gates_passed": true,
+    "independent_vector_reduction": true
+  },
+  "reviewed_feedback_pairs": [
+    "accelerated8"
+  ],
+  "reviewed_feedback_branches": [
+    "accelerated"
+  ],
+  "both_branches_feedback_recomputed": false,
+  "new_16_minus_8_window_available": false,
+  "new_cross_history_available": false,
+  "own_prior_response_comparison_passed": true,
+  "completed_experiment": false,
+  "current_scheduler_terminal_verified": false,
+  "reference_calibration_eligible": null,
+  "scope_note": "Raw review matched_new_two_branch_experiment/reference_recomputed describe the declared two-branch experiment and recomputed A reference; the frozen archive contains only A8. Null eligibility is unassessed.",
+  "source_84026_scheduler_terminal_verified": false,
+  "source_85821_scheduler_terminal_verified": true,
+  "source_85875_scheduler_terminal_verified": true,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "baseline_replaced": false,
+  "new_slurm_submissions": 0,
+  "real_artifact_first_end_to_end_pass": true,
+  "source_dat_claims_bound_to_prior_audits": 20,
+  "backup_both_verified": "outputs/review-20260925/pre-85889-A08-review-20261006.bundle",
+  "decision": "Continue the existing declared paired windows only; no automatic extension, recovery, calibration or material acceptance.",
+  "lecture_section": 142,
+  "actual_cli_model": "deepseek-v4-flash[1m]",
+  "format_checks": {
+    "new_report": true,
+    "new_lecture_section": true,
+    "old_lecture_prefix_bytes": 405139,
+    "old_lecture_prefix_sha256": "d05e29f2f635e097659acab641848e8ae9e72a04247b65a163f168810ee2a2e1",
+    "old_lecture_prefix_unchanged": true
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 12771,
+  "duration_api_ms": 12614,
+  "ttft_ms": 9984,
+  "ttft_stream_ms": 413,
+  "time_to_request_ms": 144,
+  "num_turns": 1,
+  "result": "# 讲义142：85889 双历史实验的 A 支首对反馈\n\n## 一、概念\n\n本轮为“新双历史”实验。A、H 两支各留 16 张新增 map 预算，合计 **32 map、4 pair、0 物质**，且累计年龄不匹配。A 支种子取 82518A16 的真实 mapped_final，H 支种子取 85875H16 的真实 mapped_final。须强调：**mapped_final 是原 iteration16 的输出，不是原反馈 final 输入**。本归档仅有 A 支 8 张 map 之后生成的 1 对反馈；H 支正在初始化，新 16−8 与跨支反馈尚未出现。\n\n固定条件：x20／物理旧层／base／r20／phase1367，dt=889.419892762322 秒。\n\n三类比较必须区分：①同一对内部；②本次 A8 对其旧 82518A16 的四组合；③尚无的新 16−8 与跨支反馈。\n\n## 二、公式\n\n完整 512 维 = 128 cell × 4 编码分量。先取向量差 d，再求范数：\n\n- L2 = sqrt(Σ d²)；\n- 质量加权 = sqrt(Σᵢ mᵢ Σₐ dᵢₐ² / Σᵢ mᵢ)；\n- Max-cell = maxᵢ sqrt(Σₐ dᵢₐ²)，**不是分量 Linf**。\n\n每一范数除以“原 r20”或“冻结 80195 原四 P−C 完整向量”的同一范数作分母，**不得更换分母**。\n\n原率 volume_l1 = Σᵢ widthᵢ |Bᵢ−Aᵢ| / Σᵢ widthᵢ max(|Aᵢ|,|Bᵢ|)，**不能抵消或改分母顺序**。\n\n## 三、数值\n\n端点范数：previous 为 l2=8.26189509、mass=0.28287354、Max-cell=2.70570925；final 为 l2=8.26189632、mass=0.28287416、Max-cell=2.70570925。\n\n同对三类加热 volume_l1：atomic=4.977552868×10⁻⁷，direct=4.977552850710×10⁻⁷，formal=4.977552850147×10⁻⁷；光致电离与总复合的 volume_l1 亦在对比较中列出。\n\nfrom_prior_feedback：除以冻结 r20，四组合最大约 1.79×10⁻⁵，门限 .001，通过；除以冻结 80195 信号，四组合最大约 0.0121，门限 0.1，通过。within_pair_spread 两类亦均在门限内通过。\n\n七门全部为真，能量为正，无 NaN/Inf，无资源故障；maximum_proc_kib=4045164。\n\n## 四、结果与未证明\n\n本对**仅在 from_prior_feedback 上显示了响应差**，尚未计算 A 新旧四组合的率。同对三种加热是同对内部比较，**不等于跨历史加热比较**。\n\n审阅结果 matched_new_two_branch_experiment／reference_recomputed 是实验设计与新 A 反馈标志，**不能写成两支反馈已完成**；completed_experiment=false 表示整批未完成，首对已审过。reference_calibration_eligible=null 表示未评估。\n\n即使数值门最终全过，也仅具有限候选资格：accepted20、0 material、baseline false、无严格误差界。不得宣称固定点、校准成功、物质 21、耦合柱或 I_nu 完成，不外推 ETA，不画图。",
+  "stop_reason": "end_turn",
+  "session_id": "da14d922-f1ab-455c-aa0e-37f19f50d26b",
+  "total_cost_usd": 0.09449,
+  "usage": {
+    "input_tokens": 3638,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 3052,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 3638,
+      "outputTokens": 3052,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.09449,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "954caa45-ad25-4b1f-8d2f-a8fdf6d76ff7"
+}

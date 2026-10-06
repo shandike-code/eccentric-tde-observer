@@ -1,0 +1,13 @@
+{
+  "job_id": 85889,
+  "raw": "handoff/evidence/20261006-x20-85889-watch-draft-01.json",
+  "actual_model": "deepseek-v4-flash[1m]",
+  "independently_reviewed": true,
+  "corrections": [
+    "草稿“各自对旧pair16未评估”不适用于A支：当前from_prior_feedback已经比较新A8与82518A16，四组合三范数两套尺度均过。H支尚无新反馈，其旧pair比较确实未评估。",
+    "快照未提供workers字段不等于没有16worker证据；已核冻结归档config workers16及608map/152feedback回执。",
+    "同对散布、A对旧A16、新16−8和新跨支必须分开；末两项当前尚无。",
+    "reference_calibration_eligible为null表示未评估；不能把运行设计中的双支标志说成双支反馈完成。"
+  ],
+  "corrected_text": "85889仍RUNNING。冻结归档仅A支8map1pair，独立审阅原七门/正物理域/回执与来源通过。A8对旧82518A16响应四组合逐范数最大/r20=[1.7856656626580874e-5,7.185437075289699e-5,1.2004053221802254e-5]，/80195=[.0049811382196782465,.012092387874046255,.002030040359147608]全部通过。它不是新16−8或新跨支结果。H正在初始化；校准资格未评估，accepted20/0material不变。只继续已定32map/4pair预算，不追加。"
+}

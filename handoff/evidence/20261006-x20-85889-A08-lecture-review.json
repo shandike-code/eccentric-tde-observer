@@ -1,0 +1,21 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "20261006-x20-85889-A08-lecture-draft.json",
+  "evidence": "20261006-x20-85889-A08-review.json",
+  "lecture_section": 142,
+  "independently_revised": true,
+  "corrections": [
+    "冻结80195分母由原四P-C完整向量差的各范数取最小，不是任意一个向量的范数。",
+    "from_prior_feedback四组合最大/r20三范数分别1.7856656626580874e-5、7.185437075289699e-5、1.2004053221802254e-5；草稿1.79e-5只是L2最大，不是三范数总体最大。",
+    "within_pair_spread也独立给出完整响应差，不能说本对仅在from_prior_feedback上显示响应差。",
+    "同对三加热不等于对旧A四组合加热；该四组合率未在本阶段计算。",
+    "双支标志是设计与新A参考已算的描述，只有A8已审，H、新窗口和新跨支均待。"
+  ],
+  "format_checks": {
+    "new_report": true,
+    "new_lecture_section": true,
+    "old_lecture_prefix_bytes": 405139,
+    "old_lecture_prefix_sha256": "d05e29f2f635e097659acab641848e8ae9e72a04247b65a163f168810ee2a2e1",
+    "old_lecture_prefix_unchanged": true
+  }
+}
