@@ -1,0 +1,104 @@
+{
+  "status": "explicit_reuse_resource_implementation_synthetic_review_complete",
+  "starting_mac_commit": "794ecc47e218a2b9d3e17438e0e4e8137739396a",
+  "school_commit": "82aea66f68dd9f1abc27a8268ffd5e1bfa34f418",
+  "school_production_clean": true,
+  "production_synced": false,
+  "files": [
+    {
+      "path": "operations/x20_85889_chord_reuse_resource.py",
+      "size_bytes": 11576,
+      "sha256": "acaf1cf27aa211a708bbc4cb96b76a23e5478a70ba0cf11bfc8a79da37c32ca1"
+    },
+    {
+      "path": "operations/x20_85889_chord_reuse_resource.sbatch",
+      "size_bytes": 1693,
+      "sha256": "aa56fbc4dfd7fb4d9fde32fb654730cae5e913b37987eb13aa9067402af77743"
+    },
+    {
+      "path": "operations/x20_85889_chord_reuse_contract.py",
+      "size_bytes": 6453,
+      "sha256": "cf23792de7d6b371f987729bdfb63279762614659b5a58c3240eb645e5cbfb94"
+    },
+    {
+      "path": "operations/x20_85889_chord_reuse_receipt.py",
+      "size_bytes": 7080,
+      "sha256": "a0c9c81e0a237a4a8980560901a2ddbfde64682c7201f484beac01c0cacd6416"
+    },
+    {
+      "path": "handoff/audit_tools/review_x20_85889_chord_reuse_resource.py",
+      "size_bytes": 12183,
+      "sha256": "c462d61d969fdd24a82c2ce9d874acd00cf975343ceb7d7f6e3aebcff4fa1a19"
+    },
+    {
+      "path": "handoff/audit_tools/exercise_x20_86061_reuse_resource.py",
+      "size_bytes": 4312,
+      "sha256": "60e4cd5d9349256ee7cf22b070f65021bbd5893ff3d29f558aa17b750b448e71"
+    },
+    {
+      "path": "tests/test_x20_85889_chord_reuse_resource.py",
+      "size_bytes": 11657,
+      "sha256": "fdc80b1c48fc87314bd4b86925a836326e3de038f28c652e059062018b75a867"
+    }
+  ],
+  "tests": {
+    "mac": {
+      "passed": 132,
+      "seconds": 0.55,
+      "log": "outputs/review-20260925/20261006-chord-reuse-resource-tests-05.log"
+    },
+    "school": {
+      "passed": 132,
+      "seconds": 5.46,
+      "log": "outputs/review-20260925/20261006-chord-reuse-resource-school-03.log"
+    },
+    "new": 58,
+    "reuse": 43,
+    "resource_v2": 31,
+    "retained_test_failure": "tests-02 expected ValueError but actual correct exclusive FileExistsError"
+  },
+  "synthetic": {
+    "shape": [
+      33,
+      2,
+      3
+    ],
+    "old_probe_payload_bytes": 18432,
+    "new_driver_payload_bytes": 37440,
+    "standalone_e2e_total_payload_bytes_per_platform": 55872,
+    "mac_peak_rss_bytes": 35438592,
+    "school_peak_rss_bytes": 32243712,
+    "production_terminal": false,
+    "common_review_evidence_e2e": true,
+    "production_review_run_real_e2e": false,
+    "scope": "21 field phases; production 28-stage source/native path not executed",
+    "fixture_manifest": "outputs/review-20260925/20261006-chord-reuse-resource-fixture-03.json",
+    "parity": "outputs/review-20260925/20261006-chord-reuse-resource-parity-final-03.json"
+  },
+  "cli_review": "handoff/evidence/20261006-chord-reuse-resource-implementation-cli-review.json",
+  "lecture_prefix": {
+    "size_bytes": 458461,
+    "sha256": "1a87300e600f6d46baac6e38a32525ecfce64e8420698081c94da6c734d5856e"
+  },
+  "backups": {
+    "mac_size_bytes": 25971713,
+    "school_size_bytes": 25850357,
+    "verified": true
+  },
+  "real_dat_bytes_read": 0,
+  "real_dat_bytes_downloaded": 0,
+  "new_jobs": 0,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_ode": 0,
+  "new_material": 0,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "production_resource_verified": false,
+  "speedup_measured": false,
+  "submission_ready": false,
+  "full_scan_authorized": false,
+  "next": "Freeze implementation and verify full production source/native/dependency path and reviewer acceptance gates; then complete PRE-RUN and separately decide a single bounded job. No budget has been issued."
+}

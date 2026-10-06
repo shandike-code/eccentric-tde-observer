@@ -1,0 +1,24 @@
+{
+  "status": "critical_excerpt_and_lecture_draft_independently_reviewed",
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "wall_s": 55.3840575828217,
+  "complete_cli_source_audit": false,
+  "corrections": [
+    "采纳小JSON先stat再read的竞态问题，新增O_NOFOLLOW、限定初始长度+1、同句柄及路径前后stat；历史pin和收件压缩包同样使用。",
+    "采纳scontrol重复键问题，新增严格token解析；两端回归通过。",
+    "草稿称integer需确认拒bool：实际定义type(value) is int，已有计数/child bool拒绝测试；不是未检查。",
+    "草稿称单次调用意味着没有独立性交叉验证不成立：旧固定完整摘要与独立Decimal80门均另核。",
+    "外部提交job ID和运行目录外调度回执是来源要求；SHA和字段自洽不提供调度签名。合成回执明确synthetic，不当真实终态。",
+    "历史生产ARITHMETIC固定学校63/16384属预期；Mac只用显式合成reference测试共同函数，不允许生产入口替换pins。",
+    "草稿将Mac .51秒误写51秒；最终加固后Mac132tests .55秒、学校132tests5.46秒，更新而非回写旧日志。",
+    "首片首次打开句柄偏移0符合rb语义；原句柄指首片两遍读取，不是声称复用全场SHA句柄。",
+    "异常类型测试确实曾写错，精确改为FileExistsError保留失败；execute捕获BaseException留failure，独立CLI未捕获畸形输入异常会非零失败，不会当成功。",
+    "finished.scheduler_terminal_verified=false表示程序本身没有调度终态；未来外部真实成功可以补全验收，不能泛称它意味着本轮一定不是生产。",
+    "代码外部manifest与expected_binding为独立冻结来源；不把摘录中没有显示全部定义解释为完整源码缺少校验。"
+  ],
+  "code_read_review": "Codex read all seven new files and dependencies; finite synthetic validation only",
+  "production_resource_verified": false,
+  "submission_ready": false
+}
