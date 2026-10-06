@@ -1,0 +1,11 @@
+{
+  "job_id": 85889,
+  "raw": "handoff/evidence/20261006-x20-85889-watch-draft-00.json",
+  "actual_model": "deepseek-v4-flash[1m]",
+  "independently_reviewed": true,
+  "corrections": [
+    "batch_exit只是概念限定；快照当时没有batch-exit工件，不能暗示已退出。",
+    "eligible=true为未来条件句；当前preparing尚无数值资格判决。"
+  ],
+  "corrected_text": "85889在09:16:17实际RUNNING，32CPU128GiB，16worker配置，6h独立硬限至15:15:59。父preparing，两支尚无state或反馈，batch-exit不存在；没有资格判决。两支新增map预算匹配，不匹配累计历史年龄。原84026调度未知保持。完成后的全部新窗口与新跨支门通过才可能产生有限校准候选，仍需独立审阅；accepted20、0新物质步不变。"
+}

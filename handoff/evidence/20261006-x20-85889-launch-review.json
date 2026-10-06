@@ -1,0 +1,22 @@
+{
+  "job_id": 85889,
+  "numerical_commit": "9555a78a77b9025e30405684dee2669d9e43baee",
+  "pre_run_decision": "RUN",
+  "post_run_scope": "launch and running observation only; scientific outputs pending",
+  "observed_state": "RUNNING",
+  "observed_status": "preparing",
+  "new_maps_observed": 0,
+  "new_feedback_pairs_observed": 0,
+  "new_material_steps": 0,
+  "accepted_outer_steps": 20,
+  "stderr_bytes": 0,
+  "school_clean": true,
+  "read_only_watch_started": true,
+  "actual_cli_model": "deepseek-v4-flash[1m]",
+  "raw_cli_independently_reviewed": true,
+  "new_report_and_protocol_format_passed": true,
+  "new_figures": false,
+  "old_lecture_unchanged": true,
+  "old_physical_kernels_unchanged": true,
+  "full_new_experiment_E2E_pending": true
+}

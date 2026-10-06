@@ -1,0 +1,12 @@
+{
+  "source_preflight_commit": "5b48d5a4d1b46de8d83f7792b5459bdb2564da42",
+  "small_source_claims_verified": 979,
+  "code_claims_verified": 801,
+  "dat_bound_to_prior_audits": 20,
+  "large_fields_read": false,
+  "actual_new_run_E2E_pending": true,
+  "first_path_check_missing_small_paths": 16,
+  "path_mapping_fixed": true,
+  "release_commit": "9555a78a77b9025e30405684dee2669d9e43baee",
+  "job_id": 85889
+}

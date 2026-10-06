@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 6402,
+  "duration_api_ms": 6211,
+  "ttft_ms": 5981,
+  "ttft_stream_ms": 376,
+  "time_to_request_ms": 180,
+  "num_turns": 1,
+  "result": "85889 RUNNING，batch_exit 非 Slurm 终态，84026 终态仍保留未知。32CPU/128GiB/单任务32/6h 独立硬限，x20 固定。status=preparing，accepted_outer_steps=20，new_material_steps=0；accelerated、historical 两 case 均空，无 map 产物，尚无反馈数据。不得将单窗口或辐射缺陷改善称反馈收敛，不宣告整盘 I_nu 完成。新增预算匹配非累计年龄匹配；eligible=true 仍须独立审阅。",
+  "stop_reason": "end_turn",
+  "session_id": "3457d3fb-faa3-46a8-8c11-9acd488e73d0",
+  "total_cost_usd": 0.053094999999999996,
+  "usage": {
+    "input_tokens": 2584,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1607,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 2584,
+      "outputTokens": 1607,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.053094999999999996,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "ae9f9ba8-47ac-41a4-a996-0fc7af33acc9"
+}

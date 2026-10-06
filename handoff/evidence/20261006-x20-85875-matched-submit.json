@@ -1,0 +1,20 @@
+{
+  "job_id": 85889,
+  "numerical_commit": "9555a78a77b9025e30405684dee2669d9e43baee",
+  "run": "outputs/hpc/x20-85875-matched-feedback-20261006",
+  "submitted_unix": 1791249359.1087153,
+  "sbatch_stdout": "85889\n",
+  "sbatch_stderr": "",
+  "scontrol": "JobId=85889 JobName=tde-x20-matched UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_cpu_long JobState=PENDING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-10-06T09:15:59 EligibleTime=2026-10-06T09:15:59 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-06T09:15:59 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:3626769 ReqNodeList=(null) ExcNodeList=anode01 NodeList= NumNodes=1-1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=32,mem=128G,node=1,billing=32 AllocTRES=(null) Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85875_matched_feedback.sbatch SubmitLine=sbatch --parsable operations/x20_85875_matched_feedback.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-matched-85889.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-matched-85889.out TresPerTask=cpu=32\n",
+  "scontrol_stderr": "",
+  "maximum_maps": 32,
+  "maximum_feedback_pairs": 4,
+  "new_material_steps": 0,
+  "accepted_outer_steps": 20,
+  "wall_limit_s": 21600,
+  "requested_cpus": 32,
+  "requested_memory_gib": 128,
+  "workers": 16,
+  "preflight": "outputs/review-20260925/x20-85875-matched-preflight-02/preflight.json",
+  "automatic_extension_authorized": false
+}
