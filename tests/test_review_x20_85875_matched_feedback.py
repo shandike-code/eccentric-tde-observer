@@ -60,3 +60,22 @@ def test_python_exit_does_not_invent_slurm_success():
         with pytest.raises(AssertionError):a.execution_evidence(bad,batch,summary,job)
     batch['child_exit_status']=False
     with pytest.raises(AssertionError):a.execution_evidence(term,batch,summary,job)
+
+
+def test_declared_budget_seeds_and_history_flags_cannot_be_substituted():
+    seeds={name:dict(path=a.run.SOURCES[name][0]+f'/{name}/endpoints-map16/mapped_final.dat',size_bytes=10099884032,sha256=a.run.SEED_SHA[name]) for name in ('accelerated','historical')}
+    stats=[dict(path=q['path'],size_bytes=q['size_bytes'],inode=i+1,mtime_ns=i+1) for i,q in enumerate(seeds.values())]
+    d=dict(maximum_maps=32,maximum_feedback_pairs=4,cadence=[8,16],child_limits=dict(accelerated=16,historical=16),case_order=['accelerated','historical'],seeds=seeds,
+        accepted_outer_steps=20,new_material_steps=0,source_jobs=a.run.SOURCE_JOBS,
+        source_85821_scheduler_terminal_verified=True,source_85875_scheduler_terminal_verified=True,source_84026_scheduler_terminal_verified=False,
+        git_commit='test-commit',git_clean=True,matched_new_two_branch_experiment=True,reference_recomputed=True,reference_calibration_eligible=False,
+        wall_limit_s=21600,minimum_free_fields=24,parent_worker_rss_limit_bytes=6*1024**3,seed_stats_before=stats,source_field_stats_before=stats,claims=list(seeds.values()),
+        prior_feedback_origins=dict(accelerated='82518 accelerated pair16',historical='85875 historical pair16'),
+        window_r20_tolerance=.001,window_signal_tolerance=.1,first_window_cross_history_is_measurement_only=True,drift_failure_does_not_skip_other_matched_case=True,
+        both_branches_identical_x20=True,historical_failures_retained=True,automatic_promotion=False,baseline_replacement_authorized=False,physical_dt_changed=False,
+        environment=dict(git_commit='test-commit',tracked_worktree_dirty=False,scheduler=dict(SLURM_JOB_ID='99999',SLURM_CPUS_PER_TASK='32',SLURM_MEM_PER_NODE='131072')))
+    a.verify_plan(d,seeds,99999)
+    for key,value in [('maximum_maps',64),('reference_recomputed',False),('minimum_free_fields',14),('source_84026_scheduler_terminal_verified',True),('source_jobs',[82518,85821]),('window_signal_tolerance',.2),('prior_feedback_origins',{'historical':'84026 historical pair16'}),('source_field_stats_before',[]),('baseline_replacement_authorized',True)]:
+        bad=deepcopy(d);bad[key]=value
+        with pytest.raises(AssertionError):a.verify_plan(bad,seeds,99999)
+    with pytest.raises(AssertionError):a.verify_plan(d,seeds,85875)
