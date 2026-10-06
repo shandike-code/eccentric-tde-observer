@@ -1,0 +1,17 @@
+{
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "wall_s": 42.282270499970764,
+  "scope": "new contract and driver full text plus supplied test facts; not complete dependency/test/reviewer source or performance audit",
+  "independent_corrections": [
+    "check_submission independently recomputes document_sha(expected_code) and document_sha(expected_binding) supplied outside the run; it does not derive these objects from the ticket. Trust in contemporaneously saved external records remains operational, not cryptographic execution attestation.",
+    "stat signatures and O_NOFOLLOW are source-change checks, not a proof against hostile filesystems. Fixed history SHA and external code SHA additionally check content; no reason to weaken stat rejection or claim filesystem-specific behavior without measurement.",
+    "School production checkout remains 4b02b086; the isolated fixture is not that checkout. Later verified bundle fast-forward, full tracked-code freeze and actual source PRE-RUN are required before any new budget.",
+    "1686 code files plus 9 historical JSON refer to the isolated fixture manifest, not all tracked code: six diagnostics files were outside the fixture. The proposed full code inventory after adding eight new files has 1692 py/sbatch files.",
+    "384 tests include a standalone CLI review of actual reviewer module origins; the 28-stage fixture uses fictional job/paths/times, not a production execution."
+  ],
+  "no_new_numerical_changes_from_cli": true,
+  "production_resource_verified": false,
+  "full_scan_authorized": false
+}

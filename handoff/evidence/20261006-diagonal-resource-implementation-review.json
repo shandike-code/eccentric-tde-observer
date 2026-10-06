@@ -1,0 +1,61 @@
+{
+  "stage": "diagonal_resource_implementation_synthetic_acceptance",
+  "start_commit": "7a294a4759baded5037bc114899addc5a45d4d0d",
+  "school_commit": "4b02b0865ed45103770a6ecf63638c9696bd0a62",
+  "school_production_synced": false,
+  "tests": {
+    "mac_count": 384,
+    "mac_seconds": 2.28,
+    "school_count": 384,
+    "school_seconds": 7.24,
+    "new_tests": 108,
+    "existing_kernel_tests": 245,
+    "v2_tests": 31,
+    "first_mac": "377 passed, 1 fixture failed; tests-01 retained"
+  },
+  "fixture_code_files": 1686,
+  "fixture_history_json_files": 9,
+  "proposed_full_code_files": 1692,
+  "report": "handoff/linux-runs/2026-10-06-x20-86191-diagonal-resource-implementation.md",
+  "lecture_section": 164,
+  "lecture_prefix": {
+    "path": "lecture/项目讲义/2026-09-25_辐射慢模外推与真实映射检验.md",
+    "size_bytes": 483996,
+    "sha256": "03c17242b84ea916d6f33ac96f9cc0a35959edb33cfe4ba1fdc5b0480eb942a3"
+  },
+  "parity": "outputs/review-20260925/20261006-diagonal-resource-parity-02.json",
+  "code_manifest": "outputs/review-20260925/20261006-diagonal-resource-code-final.json",
+  "full_proposed_code_manifest": "outputs/review-20260925/20261006-diagonal-resource-proposed-full-code.json",
+  "synthetic_full_review_run": true,
+  "synthetic_scheduler_records": true,
+  "actual_production_main_executed": false,
+  "production_resource_verified": false,
+  "submission_ready": false,
+  "controlled_speedup_measured": false,
+  "full_scan_authorized": false,
+  "real_dat_bytes_read": 0,
+  "new_jobs": 0,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_material": 0,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "actual_cli_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "cli_wall_s": 42.282270499970764,
+  "cli_scope": "new contract and driver full text plus supplied test facts; not complete dependency/test/reviewer source or performance audit",
+  "backups": [
+    "outputs/review-20260925/pre-diagonal-resource-implementation-20261006.bundle"
+  ],
+  "backup_logs": [
+    "outputs/review-20260925/20261006-diagonal-resource-implementation-backup.log",
+    "outputs/review-20260925/20261006-diagonal-resource-implementation-school-backup.log"
+  ],
+  "backup_sizes_bytes": {
+    "mac": 26112748,
+    "school": 25957894
+  }
+}
