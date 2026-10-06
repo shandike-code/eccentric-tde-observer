@@ -1,0 +1,22 @@
+{
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "wall_s": 84.18446950009093,
+  "scope": "candidate source and synthetic facts only; no production performance audit",
+  "corrections": [
+    "R1核心风险误用一般dot到自乘：delta是实longdouble，有限delta*delta每项非负，不存在signed sum抵消而abs sum单独溢出；不为不存在的该情形放宽或修改核。乘法或首次sum溢出仍按原路径拒绝。",
+    "警告次数确有变化；warn/raise/ignore与非有限/极小值测试仅报告已测类别和拒绝相同，不泛化任意NumPy版本、环境或非实数输入。",
+    "学校五JSON大小SHA核是传输完整性证据，不由十进制缓存造成；不同平台完整JSON含路径环境等不逐字节相同，只有该样例slab摘要同。",
+    "AST相同是结构相同，非源码逐字相同；新docstring/helper和一处调用确实不同。",
+    "R6不需宣称decimal_text无损才能成立：原同表达式也调用同一格式化，缓存后的字符串只输出不反馈数值计算；本轮完整摘要对照，37位不是37位可靠精度。",
+    "R4缓存每调用有界，固定15raw+15LD，不跨片累积；任意增大输入shape会增内存但不是当前实现无界增长。默认check空不能替代未来生产守卫，输入调用期间不变是原契约。",
+    "作业859/861/86191笔误改85889/86061/86191；三个预算都已关闭。",
+    "跨16响应失败、五率通过需完整写出，不能模糊成响应失败五率。"
+  ],
+  "accepted": [
+    "新核无生产入口，合成验证与生产资源/物理结论分开。",
+    "保留3比较2and、原dtype布局归约与binary64树，原输入不变前提。",
+    "没有受控提速测量，后续独立协议和完整PRE-RUN，不自动开Job。"
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "mac_start_head": "3503168aa8479c30f94abf303d0ad36ac79dea27",
+  "school_head": "4b02b0865ed45103770a6ecf63638c9696bd0a62",
+  "school_production_clean": true,
+  "school_production_synchronized": false,
+  "code": {
+    "operations/x20_85889_chord_scan.py": {
+      "size": 9605,
+      "sha256": "9349c255b35c515fd37e7903a120ebed753e9c517c9381b402d4184d450a1643"
+    },
+    "operations/x20_85889_chord_scan_reuse.py": {
+      "size": 5516,
+      "sha256": "a4b6b5b07eaaa457b5b5aa2cd726597f2476c78c7d2b3937810b6551fe0594a6"
+    },
+    "operations/x20_85889_chord_scan_square.py": {
+      "size": 6042,
+      "sha256": "61e6c6d559975f7f863282209eb1ad016c4594f7f898f0c7e0a5d515878c862b"
+    },
+    "handoff/audit_tools/review_x20_85889_chord_scan.py": {
+      "size": 7646,
+      "sha256": "806e67f2eeed99cc20fd54e2a8aab432fa765e8ebc789024218be0bd47d7b474"
+    },
+    "handoff/audit_tools/exercise_x20_86191_square.py": {
+      "size": 3951,
+      "sha256": "5f0dd964ba75189fba81ca11b9d1cf87196f866067fdb63345e498b500fbc815"
+    },
+    "tests/test_x20_85889_chord_scan.py": {
+      "size": 7129,
+      "sha256": "6b0d66be51698a65b1b77c5a43ca1b71fe738fee201be5cbfb23f2667b9ad892"
+    },
+    "tests/test_x20_85889_chord_scan_reuse.py": {
+      "size": 8697,
+      "sha256": "db2e84681eb65f1383fbce400a31c88ece2a1dd1116437bc44e35464f2d83e6a"
+    },
+    "tests/test_x20_85889_chord_scan_square.py": {
+      "size": 11941,
+      "sha256": "d7ee194a569524bc6f8b10ab39d8f86b79e5f8917debf9bb1955e141660174b8"
+    }
+  },
+  "evidence": [
+    {
+      "path": "outputs/review-20260925/20261006-square-tests-01.log",
+      "size_bytes": 180,
+      "sha256": "35065d22ae7fa4af903dde052a2402e295050e5930009dad580a9e976a76cfd7"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-square-tests-02.log",
+      "size_bytes": 260,
+      "sha256": "13d0e01cd0ffa9a191da2a6c491ec4d042da7dc1019b2de32d350fbb96c5a6e6"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-square-school-tests.log",
+      "size_bytes": 1004,
+      "sha256": "5ed570022e4e067c61d33d7126eb763cca685d4dc4a78bba4ec278c1fd9589cb"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-square-school-receipt.json",
+      "size_bytes": 1809,
+      "sha256": "5d9b19c127ca4e05af950e8c8b57c23c917c741a7fe1f578ced7c9b6b387d194"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-square-parity.json",
+      "size_bytes": 2014,
+      "sha256": "464e0326c42782fa87814aa75265dfd9a91f7504e7374b760051fc6857a2ffbe"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-square-e2e.log",
+      "size_bytes": 743,
+      "sha256": "24e88b4a85cb789d90101929d1fa3290933b47a5df511be1e454e17c73c96c95"
+    }
+  ],
+  "tests": {
+    "mac_first": 144,
+    "mac_first_seconds": 0.68,
+    "mac_final": 149,
+    "mac_final_seconds": 0.64,
+    "school_final": 149,
+    "school_final_seconds": 4.93,
+    "new": 70,
+    "existing_reuse": 43,
+    "existing_core": 36,
+    "failures": 0
+  },
+  "calls": {
+    "matrix_dot": 57,
+    "reconstruction_square": 15,
+    "sum_before": 144,
+    "sum_after": 129
+  },
+  "warning_semantics": "same tested categories and rejection; unused second sum warning duplication removed",
+  "old_sources_unchanged": true,
+  "numeric_equivalence_tested": true,
+  "scope": "finite small synthetic fixtures per platform; explicit slab wiring only",
+  "production_io_driver": false,
+  "production_resource_verified": false,
+  "controlled_speedup_measured": false,
+  "full_scan_authorized": false,
+  "new_slurm_jobs": 0,
+  "real_dat_bytes_read": 0,
+  "dat_downloads": 0,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_ode": 0,
+  "new_material": 0,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "backups": {
+    "mac_bytes": 26054443,
+    "school_bytes": 25971302,
+    "both_complete_bundle_verified": true
+  },
+  "next": "independent matrix-diagonal result-sharing validation protocol; no implementation or production budget yet",
+  "lecture_prefix": {
+    "size_bytes": 470644,
+    "sha256": "82d071d1b1064a530cf17613e6e52cd9ee507c1ded963e56675aa880e5245054"
+  },
+  "cli_actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "cli_wall_s": 84.18446950009093,
+  "cli_independently_corrected": true
+}
