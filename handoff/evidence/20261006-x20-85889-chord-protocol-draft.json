@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 20834,
+  "duration_api_ms": 20655,
+  "ttft_ms": 18914,
+  "ttft_stream_ms": 343,
+  "time_to_request_ms": 133,
+  "num_turns": 1,
+  "result": "1. 恒等非检验：d′=d+e 与五基底5×5 Gram均由同一组内积线性导出，实数域必然成立；通过只反映浮点顺序/可复现，须先冻结容差与否证判据。\n\n2. T可求值域未闭合：T仅在AP/AF/AM（H同理）三点经审，而 rA=T(A)−A、rH=T(H)−H 需 T 对任意差场 d=H−A 可求值，否则定义不闭合；且\"正式反馈只在P/F\"与使用全场 rA 的关系未冻结，二者混用是逻辑缺口。\n\n3. 推导校验循环：5×5 Gram若无六场6×6 Gram或等价全场交叉内积作对照，则与\"推导\"同源，只是自洽而非独立检验。\n\n4. 抵消误差未量化：binary64 近简并做差（Sterbenz 边界）后 longdouble 累积，须在 Linf 归一前给出抵消量并连同 nmant 一并报告；x86 80位与 Mac Decimal80 的舍入模式与归并顺序须统一冻结。\n\n5. 资源未闭合：181.8GB 单进程、RSS6GiB、3300s 必须流式，实施前先估 IO 带宽与峰值驻留。\n\n6. 负本征值不截断时须给出非PSD判据而非静默保留；零范数比 null 可。频段先定 lab/common 系；无权网格内积非能量/光度已声明，仍须写死。\n\n7. 结论仅限本次冻结样本方向，禁称谱半径/误差界/ETA/真解，不得外推。",
+  "stop_reason": "end_turn",
+  "session_id": "14293241-8a7c-41d7-8a33-34d081f93a66",
+  "total_cost_usd": 0.10589,
+  "usage": {
+    "input_tokens": 1978,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 3840,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 1978,
+      "outputTokens": 3840,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.10589,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "614d7996-9042-4e40-8f18-79f882bde225"
+}

@@ -1,0 +1,47 @@
+{
+  "scope": "independent review of no-tools school CLI design critique",
+  "actual_model": "deepseek-v4-flash[1m]",
+  "raw": "handoff/evidence/20261006-x20-85889-chord-protocol-draft.json",
+  "first_attempt": "outputs/review-20260925/20261006-x20-85889-chord-cli-attempt1.json",
+  "second_prompt": "outputs/review-20260925/20261006-x20-85889-chord-cli-prompt-02.txt",
+  "corrections": [
+    {
+      "item": 1,
+      "decision": "qualify",
+      "reason": "dprime=d+e is a real-arithmetic identity. Direct field construction versus Gram-derived statistics audits numerical consistency, not physical correctness or a new independent transfer solve. Frozen tolerances remain required."
+    },
+    {
+      "item": 2,
+      "decision": "reject factual and logical error",
+      "reason": "Only T(AP)=AF and T(AF)=AM, and H analogues, were evaluated. T(AM) is not supplied or needed. Defects at P/F need T(P),T(F), not T(H-A). Radiation defects are defined independently of whether material feedback was evaluated on M."
+    },
+    {
+      "item": 3,
+      "decision": "reject necessity",
+      "reason": "A six-original-field Gram is neither necessary nor an independent physical sample. Direct d/e/dprime reductions use separate arithmetic paths from five-basis Gram-derived values. Both consume the same audited six fields; their limited independence is explicit."
+    },
+    {
+      "item": 4,
+      "decision": "partly accept",
+      "reason": "Record difference/cancellation scales, arithmetic order and actual longdouble nmant. Decimal80 decimal digits is independent aggregation of exported small statistics, not equal precision or identical rounding to longdouble and not a reconstruction of original fields."
+    },
+    {
+      "item": 5,
+      "decision": "accept as implementation prerequisite",
+      "reason": "Streaming memory accounting, measured bounded I/O check and hard stop behavior must be tested before a run. No runtime success/throughput is promised from metadata."
+    },
+    {
+      "item": 6,
+      "decision": "accept as implementation prerequisite",
+      "reason": "Freeze PSD/Cauchy rejection tolerances, never silently repair eigenvalues; null for undefined ratios. Coordinate/measure limitations retained."
+    },
+    {
+      "item": 7,
+      "decision": "accept",
+      "reason": "Finite sampled direction statistics cannot establish spectrum, strict error bound, ETA, unique/true solution."
+    }
+  ],
+  "decision": "design scope coherent after independent correction; implementation/tolerances/tests/preflight incomplete; no submission",
+  "new_slurm": 0,
+  "new_field_reads": 0
+}

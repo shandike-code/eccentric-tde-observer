@@ -1,0 +1,109 @@
+{
+  "stage": "85889 six-field source requirements and bounded diagnostic protocol",
+  "source_numerical_commit": "9555a78a77b9025e30405684dee2669d9e43baee",
+  "pre_stage_mac_commit": "c2b8528ae1b3ccfdb264de764f9f2b30fda76ed5",
+  "artifacts": [
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-source-review.json",
+      "size_bytes": 65951,
+      "sha256": "3e793eaa6a41bf6846a0dd3f1581bf5e1688cce455d6034d3adf0669cd6bfe95"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-source-review-02.json",
+      "size_bytes": 65951,
+      "sha256": "3e793eaa6a41bf6846a0dd3f1581bf5e1688cce455d6034d3adf0669cd6bfe95"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-requirements-observation.json",
+      "size_bytes": 3220,
+      "sha256": "4d512f6446f8d82efb04f8d6408b0a83b73a04a852847c68b242d58016b08d41"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-cli-attempt1.json",
+      "size_bytes": 232,
+      "sha256": "168bd3b3aa3933cb5a2010fad14ed34a74339b6913e66283b4d19b4077700554"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-cli-prompt-02.txt",
+      "size_bytes": 1165,
+      "sha256": "925f23362eec9ab55b92baf499f2b927374f7ce7468b9bbb985fb8746bf331d0"
+    },
+    {
+      "path": "handoff/audit_tools/review_x20_85889_chord_sources.py",
+      "size_bytes": 7423,
+      "sha256": "9102a551d714e29aadbff138f3125b0d8c52712dcfa49009be68190ba5ce21ce"
+    },
+    {
+      "path": "tests/test_x20_85889_chord_sources.py",
+      "size_bytes": 1716,
+      "sha256": "b54336db1a8bee1146f91ae2c1aeb6352587fcf35c2854a8ae9231f90376e9aa"
+    },
+    {
+      "path": "handoff/protocols/x20-85889-six-field-chord-v1.md",
+      "size_bytes": 9470,
+      "sha256": "03b439d74a9a9d06c6b725f2c14688c3c96dc9fcb836a5182a518697615610bf"
+    },
+    {
+      "path": "handoff/linux-runs/2026-10-06-x20-85889-chord-requirements.md",
+      "size_bytes": 5012,
+      "sha256": "3b31f2d0d391aab9ab320fec69420147e7d10d8cf8a0d2f672ee5c326065e932"
+    },
+    {
+      "path": "handoff/evidence/20261006-x20-85889-chord-protocol-draft.json",
+      "size_bytes": 2520,
+      "sha256": "030bab2322fad5d745a806dfedc6a31205eafb32a4d2ff1e1e3c05b2c5cc807c"
+    },
+    {
+      "path": "handoff/evidence/20261006-x20-85889-chord-protocol-review.json",
+      "size_bytes": 2613,
+      "sha256": "1322b010a7a5203eab5f7cd18d59f8b7a51c4c61256573264375e297f2d012b9"
+    }
+  ],
+  "source_records": 321,
+  "unique_small_sources": 321,
+  "map_block_receipts": 304,
+  "source_code_files": 6,
+  "field_claims": 6,
+  "field_stat_verified": true,
+  "large_field_sha_refreshed": false,
+  "large_field_bytes_read": 0,
+  "full_original_e2e_rerun": false,
+  "latest_metadata_e2e": "20261006-x20-85889-chord-source-review-02.json",
+  "tests": {
+    "passed": 11,
+    "seconds": 0.48,
+    "scope": "lineage and stat negative paths"
+  },
+  "review_passes": [
+    "interface/source definitions",
+    "negative-path tests",
+    "actual small-artifact E2E"
+  ],
+  "cli": {
+    "first_timeout_seconds": 150,
+    "ssh_recheck_ok": true,
+    "second_success": true,
+    "model": "deepseek-v4-flash[1m]",
+    "independently_corrected": true
+  },
+  "backup": {
+    "name": "pre-85889-chord-requirements-20261006.bundle",
+    "mac_bytes": 25797308,
+    "school_bytes": 25602989,
+    "both_verified": true
+  },
+  "design_complete": true,
+  "implementation_ready": false,
+  "production_preflight_complete": false,
+  "submission_performed": false,
+  "field_gram_computed": false,
+  "new_slurm": 0,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_material": 0,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "next_step": "implement bounded read-only scanner and independent reviewer; freeze numerical tolerances and test before any production decision"
+}
