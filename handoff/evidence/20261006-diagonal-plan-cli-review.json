@@ -1,0 +1,21 @@
+{
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "wall_s": 12.39402420911938,
+  "first_attempt_returncode": 124,
+  "first_attempt_seconds": 100.82834491692483,
+  "scope": "successful review of concise revised protocol facts; full source attempt timed out",
+  "corrections": [
+    "有限实数平方非负不是会被layout/对齐/-0破坏的性质；需要核实际归约布局、零号与溢出，不能混淆。",
+    "其余42原dot不改；129到114不证明提速，也不能写成已证明无提速。",
+    "小JSON计划由原独立Decimal80审阅器可复现检查，不是仅人工review；当前尚未执行该新变体审阅。",
+    "候选完整拟定名operations/x20_85889_chord_scan_diagonal.py，实施前再次查重。"
+  ],
+  "codex_independent_addition": "preserve both vector calls and check order, including stop before second lookup",
+  "accepted": [
+    "数学依据与浮点验收分开",
+    "相同表达式键而非数值/地址合并",
+    "无新生产预算或数值通过声明"
+  ]
+}
