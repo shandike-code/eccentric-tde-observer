@@ -1,0 +1,21 @@
+{
+  "scope": "new protocol and driver; helper claims independently checked",
+  "actual_model": "deepseek-v4-flash[1m]",
+  "wall_s": 61.29381133336574,
+  "corrections": [
+    {
+      "claim": "git_clean has no actual porcelain check",
+      "finding": "False: imported operations/x20_85859_true_validation.py checkout_identity lines45-47 runs git status --porcelain and rejects any changes before returning HEAD; called before/after."
+    },
+    {
+      "claim": "accepted_outer_steps must become zero",
+      "finding": "False: accepted20 is inherited nonlinear state identity; new_material_steps=0 explicitly counts this experiment. Changing accepted20 to0 would corrupt provenance."
+    },
+    {
+      "claim": "within-pair five rate gates absent",
+      "finding": "False: original seven gate_checks contain five last_two photoionization/recombination/atomic/direct/formal heating gates plus inner_pair_ready/physical_response_pass; original zero_feedback and independent audit_pair enforce them."
+    }
+  ],
+  "accepted": "Keep original gates; explicit exploratory flags and fresh tracked-code freeze; do not modify physics to satisfy draft.",
+  "no_production_submission_yet": true
+}

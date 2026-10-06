@@ -1,0 +1,275 @@
+"""Audit immutable multi-pair snapshots of the global-candidate feedback run, with explicit partial/terminal scope."""
+import argparse,json,subprocess,hashlib
+from pathlib import Path
+import numpy as np
+from handoff.audit_tools import review_x20_accelerated_pair08 as first
+history,prior,cw,arrays=first.history,first.prior,first.cw,first.arrays
+from handoff.audit_tools import review_x20_85875_feedback as previous
+from operations import x20_85889_relaxed_feedback as run
+
+def read(path):return json.loads(Path(path).read_text())
+ROOT=first.ROOT
+ORDER=[('accelerated',8),('historical',8)]
+
+
+def comparison(current,previous,r20,mass,scale):
+    """先用独立范数重建旧门，再独立应用新固定门；不调用生产annotate。"""
+    result=history.comparison(current,previous,r20,mass,scale)
+    rp=all(x<.01 for row in result['frozen_r20']['vector_difference_over_frozen_r20_norms'].values() for x in row)
+    sp=all(x<1. for row in result['vector_difference_over_frozen_80195_signal'].values() for x in row)
+    result['relaxed_response_consistency']=dict(policy='user_20261007_tenfold_exploratory_v1',r20_tolerance=.01,
+        signal_tolerance=1.,r20_pass=rp,signal_pass=sp,passed=rp and sp,exploratory_only=True,
+        reference_calibration_eligible=False,strict_error_bound=False)
+    return result
+
+
+def verify_pair(dec,name,n):
+    assert dec['feedback_evaluated'] and dec['zero_pair_stable'] and not dec['physical_response_failures']
+    assert len(dec['original_zero_gates'])==7 and all(dec['original_zero_gates'].values())
+    assert not dec['baseline_replaced'] and not dec['accepted_material_step']
+    assert dec['continuation_pass'] and dec['reason']=='pass'
+    assert ('eight_map_window' in dec)==(n==8)
+    assert ('cross_history' in dec)==(name=='historical')
+    assert ('vs_saved_reference' in dec)==(name=='historical')
+
+
+def qualification(pairs,cross,terminal):
+    # 部分归档不能冒充终态；未评估使用None，不能用false/true代替。
+    if not terminal:return None
+    assert set(pairs)=={name+str(n) for name,n in ORDER} and set(cross)=={'8'}
+    return all(pairs[name+'8']['eight_map_window']['relaxed_response_consistency']['passed'] for name in ('accelerated','historical')) and cross['8']['residual_comparison']['relaxed_response_consistency']['passed'] and cross['8']['cross_rate_pass']
+
+
+def localization(delta,mass):
+    # 完全相同的向量没有可定义的贡献份额，保留零范数和null，不能加floor。
+    delta=np.asarray(delta);mass=np.asarray(mass)
+    if delta.shape!=(512,) or mass.shape!=(128,) or not np.isfinite(delta).all() or not np.isfinite(mass).all() or np.any(mass<=0):
+        raise ValueError('invalid vector or mass')
+    if np.array_equal(delta,np.zeros_like(delta)):
+        return dict(mass_norm_squared=0.,component_fractions=None,cell_fractions=None,largest_cells=[],cell_index_is_not_geometrical_depth=True)
+    return history.localization(delta,mass)
+
+
+def verify_plan(d,seeds,job):
+    assert d['maximum_maps']==16 and d['maximum_feedback_pairs']==2
+    assert d['cadence']==[8] and d['child_limits']==dict(accelerated=8,historical=8)
+    assert d['case_order']==['accelerated','historical'] and d['seeds']==seeds
+    assert d['accepted_outer_steps']==20 and d['new_material_steps']==0
+    assert d['source_jobs']==run.SOURCE_JOBS
+    assert d['source_85821_scheduler_terminal_verified'] is True and d['source_85875_scheduler_terminal_verified'] is True
+    assert d['source_84026_scheduler_terminal_verified'] is False
+    assert d['git_commit']==d['environment']['git_commit'] and d['git_clean'] is True
+    assert not d['environment']['tracked_worktree_dirty']
+    assert d['matched_new_two_branch_experiment'] is True and d['reference_recomputed'] is True
+    assert d['reference_calibration_eligible'] is False
+    assert d['wall_limit_s']==14400 and d['minimum_free_fields']==18 and d['parent_worker_rss_limit_bytes']==6*1024**3
+    assert len(d['seed_stats_before'])==2
+    assert {q['path'] for q in d['source_field_stats_before']}=={c['path'] for c in d['claims'] if c['path'].endswith('.dat')}
+    assert all(q['size_bytes']==10099884032 and type(q['inode']) is int and q['inode']>0 and type(q['mtime_ns']) is int and q['mtime_ns']>0 for q in d['source_field_stats_before'])
+    for q,name in zip(d['seed_stats_before'],('accelerated','historical')):
+        assert q['path']==seeds[name]['path'] and q['size_bytes']==10099884032
+        assert type(q['inode']) is int and q['inode']>0 and type(q['mtime_ns']) is int and q['mtime_ns']>0
+    assert d['prior_feedback_origins']==dict(accelerated='85889 accelerated pair16',historical='85889 historical pair16')
+    assert d['window_r20_tolerance']==.001 and d['window_signal_tolerance']==.1
+    assert not d['first_window_cross_history_is_measurement_only'] and d['drift_failure_does_not_skip_other_matched_case']
+    assert d['relaxed_r20_tolerance']==.01 and d['relaxed_signal_tolerance']==1. and d['policy']=='user_20261007_tenfold_exploratory_v1'
+    assert d['source_85889_scheduler_terminal_verified'] is True
+    assert d['both_branches_identical_x20'] and d['historical_failures_retained']
+    assert not any(d[k] for k in ('automatic_promotion','baseline_replacement_authorized','physical_dt_changed'))
+    e=d['environment']['scheduler']
+    assert e['SLURM_JOB_ID']==str(job) and e['SLURM_CPUS_PER_TASK']=='32' and e['SLURM_MEM_PER_NODE']=='131072'
+
+
+def settled_entries(out):
+    entries=[(name,n) for name,n in ORDER if (out/name/f'pair{n:02d}/decision.json').exists()]
+    assert entries and entries==ORDER[:len(entries)], 'non-prefix or empty feedback archive'
+    for name,n in entries:
+        dec=read(out/name/f'pair{n:02d}/decision.json')
+        if dec.get('physical_response_failures') or not dec.get('zero_pair_stable') or not dec.get('continuation_pass'):
+            raise ValueError('hard-failed pair requires dedicated failure audit; no success verdict: '+name+str(n))
+    return entries
+
+
+def execution_evidence(term,batch,summary,job):
+    assert job==term['job_id']
+    assert batch['job_id']==str(job) and type(batch['child_exit_status']) is int and batch['child_exit_status']==0
+    assert batch['scheduler_terminal_verified'] is False and term['summary']==summary and term['batch_exit']==batch
+    tokens=dict(t.split('=',1) for t in term['scontrol'].split() if '=' in t)
+    if term['state']=='COMPLETED':
+        assert all(tokens.get(k)==v for k,v in dict(JobId=str(job),JobState='COMPLETED',ExitCode='0:0',NumCPUs='32',QOS='qos_stu_cpu_long',TimeLimit='04:00:00').items())
+        verified=True
+    else:
+        assert term['state'] in ('RUNNING','COMPLETING','UNKNOWN')
+        if tokens:assert tokens.get('JobId')==str(job) and tokens.get('JobState')==term['state']
+        verified=False
+    return dict(numerical_artifacts_complete=True,child_exit_status=0,
+        scheduler_terminal_verified=verified,scheduler_terminal_state='COMPLETED' if verified else None)
+
+
+def claim_path(path,out):
+    prefix='outputs/hpc/x20-85889-relaxed-feedback-20261007/'
+    if path.startswith(prefix):return out/path[len(prefix):]
+    for source,received in (
+        ('x20-global-boundary-validation-20261001','x20-global-boundary-validation-82515-received'),
+        ('x20-global-boundary-prediction-20261001','x20-global-prediction-82512-received'),
+        ('x20-window-difference-20260930','x20-window-difference-82396-received'),
+        ('x20-latest-window-basis-20261001','x20-latest-basis-82441-received')):
+        prefix='outputs/hpc/'+source+'/'
+        if path.startswith(prefix):
+            rel=path[len(prefix):]
+            return ROOT/Path(rel).name if rel.startswith('archives/') else ROOT/received/rel
+    source='outputs/hpc/x20-85875-matched-feedback-20261006/'
+    if path.startswith(source):
+        rel=path[len(source):]
+        return ROOT/Path(rel).name if rel.startswith('archives/') else ROOT/'x20-85875-matched-85889-received'/rel
+    return previous.claim_path(path,ROOT/'x20-85861-feedback-85875-received')
+
+
+def review(base,out,target,job,terminal_path=None):
+    inventory=cw.receive(ROOT/(base+'.tar.gz'),ROOT/(base+'-receipt.json'),out)
+    assert inventory==read(ROOT/(base+'.json'))
+    entries=settled_entries(out)
+    d=read(out/'declaration.json');seeds=read(out/'seed-claims.json');verify_plan(d,seeds,job)
+    launch=read('handoff/evidence/20261007-x20-relaxed-feedback-submit.json')
+    assert launch['job_id']==job and launch['numerical_commit']==d['git_commit']
+    assert launch['run']=='outputs/hpc/x20-85889-relaxed-feedback-20261007'
+    origin_roots={name:ROOT/'x20-85875-matched-85889-received' for name in ('accelerated','historical')}
+    current=ROOT/'boundary-response-80195-received';accepted=Path('outputs/review-20260924/common-confirmation20-76727-received')
+    for name,folder in origin_roots.items():
+        _,source_job,ap,tp=run.SOURCES[name]
+        history.source_archive(folder,ap,ROOT)
+        audit=read(Path('handoff/evidence')/ap);summary=read(folder/'summary.json')
+        run.require_source(audit,summary,name)
+        term=read(Path('handoff/evidence')/tp)
+        tokens=dict(t.split('=',1) for t in term['scontrol'].split() if '=' in t)
+        assert term['job_id']==source_job and term['state']=='COMPLETED'
+        assert all(tokens.get(k)==v for k,v in dict(JobId=str(source_job),JobState='COMPLETED',ExitCode='0:0').items())
+        assert seeds[name]==run.seed_claim(name,read(folder/name/'state.json'),read(folder/name/'endpoints-map16/manifest.json'))
+    for folder,evidence,arcroot in [(current,'20260929-boundary-response-review.json',ROOT),
+        (accepted,'20260924-common-confirmation20-review.json',accepted.parent)]:history.source_archive(folder,evidence,arcroot)
+    def verify_code(c):
+        data=subprocess.check_output(['git','show',d['git_commit']+':'+c['path']])
+        assert len(data)==c['size_bytes'] and hashlib.sha256(data).hexdigest()==c['sha256']
+    for c in d['code']:verify_code(c)
+    names=subprocess.check_output(['git','ls-tree','-r','--name-only',d['git_commit']],text=True).splitlines()
+    assert {x['path'] for x in d['tracked_code']}=={x for x in names if x.endswith(('.py','.sbatch'))}
+    for c in d['tracked_code']:verify_code(c)
+    reference=ROOT/'common-step21-76808-received/inputs';physical_old=Path('outputs/review-20260921/common-feedback-bridge-75943-received/inputs/physical_old_time_level.npz')
+    old=arrays(physical_old);mass=old['cell_mass_g_cm2'];r20=np.load(reference/'base_residual.npy',allow_pickle=False)
+    assert np.array_equal(r20,arrays(accepted/'confirm2/common-feedback/final_response.npz')['residual'])
+    trial=out/'inputs/trial_material.npz';t=arrays(trial);b=arrays(reference/'outer_base_material.npz')
+    assert set(t)==set(b) and all(np.array_equal(t[k],b[k]) for k in t)
+    assert int(t['phase_index'])==1367 and float(t['step_duration_s'])==889.419892762322
+    assert prior.digest(trial)==prior.digest(origin_roots['accelerated']/'accelerated/trial_material.npz')==prior.digest(origin_roots['historical']/'historical/trial_material.npz')
+    for c in d['cases']['control'].values():prior.verify_claim(c,out/'inputs'/Path(c['path']).name)
+    assert read(out/'inputs/config.json')==read(origin_roots['accelerated']/'accelerated/config.json')
+    run.core.same_operator_config(read(origin_roots['accelerated']/'accelerated/config.json'),read(origin_roots['historical']/'historical/config.json'))
+    currentp=read(current/'control/pair10/feedback_protocol.json')
+    exact={currentp['sources']['physical_old_time_level']['path']:physical_old,
+        currentp['sources']['outer_base_material']['path']:reference/'outer_base_material.npz',
+        currentp['sources']['base_residual']['path']:reference/'base_residual.npy'}
+    known=list(seeds.values())
+    for folder in origin_roots.values():
+        source_decl=read(folder/'declaration.json');known+=source_decl['claims']+source_decl['code']
+    verified=0;external=[]
+    for c in d['claims']:
+        f=exact.get(c['path'],claim_path(c['path'],out))
+        if f.is_file():prior.verify_claim(c,f);verified+=1
+        else:
+            assert c['path'].endswith('.dat') and c in known,c['path']
+            external.append(c)
+    control={e:arrays(current/f'control/pair10/{e}_response.npz')['residual'] for e in ('previous','final')}
+    pop={e:arrays(current/f'population/pair10/{e}_response.npz')['residual'] for e in ('previous','final')}
+    scale=np.min([cw.independent_norms(p-c,mass) for p in pop.values() for c in control.values()],axis=0)
+    np.testing.assert_allclose(scale,[d['frozen_signal_scale'][k] for k in cw.NAMES],rtol=1e-12,atol=0)
+    maps={};mappeaks=[];counts={};roundoff={};states={};configs={}
+    for name in dict.fromkeys(name for name,n in entries):
+        folder=out/name;state=read(folder/'state.json');cfg=read(folder/'config.json');native=read(folder/'native_trial_audit.json')
+        counts[name]=len(state['history']);states[name]=state;configs[name]=cfg
+        assert counts[name]==8 and state['active_map'] is None
+        assert cfg['warm_seed']==seeds[name] and cfg['workers']==16 and cfg['maximum_maps']==8 and cfg['radiation_threshold']==1e-4
+        assert state['history'][0]['input_sha256']==seeds[name]['sha256'] and state['current_sha256']==state['history'][-1]['output_sha256']
+        assert prior.digest(folder/'trial_material.npz')==prior.digest(trial)==state['trial_sha256']
+        prior.verify_claim(native['trial_source'],folder/'trial_material.npz')
+        assert native['native_mirrored_material_exact'] and native['physical_phase_and_dt_exact'] and read(folder/'initialized_identity.json')['native']==native
+        maps[name],peaks=prior.audit_maps(out,name,max_maps=8);mappeaks+=peaks
+        roundoff[name]=first.boundary_check(out,name,state['history'])
+    ignore={'run','warm_seed','sources'}
+    if len(configs)==2:
+        assert {k:v for k,v in configs['accelerated'].items() if k not in ignore}=={k:v for k,v in configs['historical'].items() if k not in ignore}
+    expected_counts={name:max(n for case,n in entries if case==name) for name in counts}
+    assert counts==expected_counts
+    assert all((out/name).exists()==(name in counts) for name in ('accelerated','historical'))
+    saved_vec={e:arrays(origin_roots['accelerated']/f'accelerated/pair16/{e}_response.npz')['residual'] for e in ('previous','final')}
+    saved_fb={e:arrays(origin_roots['accelerated']/f'accelerated/pair16/{e}_feedback.npz') for e in ('previous','final')}
+    saved={};saved_details={}
+    vectors={};feedbacks={};pairs={};decisions={name:{} for name in counts};cross={};cross_details={};fbpeaks=[];localizations={}
+    for name,n in entries:
+        folder=out/name/f'pair{n:02d}';p=read(folder/'feedback_protocol.json');dec=read(folder/'decision.json');verify_pair(dec,name,n)
+        assert p['diagnostic_scope']==dict(same_state_seed_response_windows=True,radiation_history=name,baseline_replacement_authorized=False)
+        for k in ('acceptance_gates','formal_state_gates'):assert p[k]==currentp[k]
+        for k,f in [('refreshed_direction_declaration',out/'declaration.json'),('retained_manifest',out/name/f'endpoints-map{n:02d}/manifest.json')]:prior.verify_claim(p['sources'][k],f)
+        for c in p['common_code_claims']:verify_code(c)
+        result,vec,peaks=prior.audit_pair(out,n,reference,physical_old,trial,name,material_kind='control',max_maps=8);fbpeaks+=peaks
+        assert dec['original_zero_gates']==result['gate_checks'] and dec['parent_peak_rss_bytes']<6*1024**3
+        for e in vec:prior.same_record(dict(zip(cw.NAMES,cw.independent_norms(vec[e],mass).tolist())),result['endpoints'][e]['norms'])
+        origin_name,origin_n=name,16
+        origin={e:arrays(origin_roots[name]/f'{origin_name}/pair{origin_n:02d}/{e}_response.npz')['residual'] for e in ('previous','final')}
+        result['from_prior_feedback']=comparison(vec,origin,r20,mass,scale);prior.same_record(result['from_prior_feedback'],dec['from_prior_feedback'])
+        result['within_pair_spread']=comparison(vec,vec,r20,mass,scale)
+        vectors[name,n]=vec;feedbacks[name,n]={e:arrays(folder/f'{e}_feedback.npz') for e in vec}
+        if n==8:
+            result['eight_map_window']=comparison(vec,origin,r20,mass,scale)
+            prior.same_record(result['eight_map_window'],dec['eight_map_window'])
+            localizations[name+'_window']=localization(vec['final']-origin['final'],mass)
+        if name=='historical':
+            # 两种初值的每个previous/final组合均保留，不能只挑差最小的一组。
+            residual=comparison(vec,vectors['accelerated',n],r20,mass,scale)
+            comps={a+'_vs_'+b:prior.pair._feedback_stability_comparison(x,y) for a,x in feedbacks[name,n].items() for b,y in feedbacks['accelerated',n].items()}
+            rates={k:prior.pair._feedback_stability_gate_checks(v,p['acceptance_gates']) for k,v in comps.items()}
+            cross[str(n)]=dict(residual_comparison=residual,all_four_rate_gate_checks=rates,cross_rate_pass=all(all(g.values()) for g in rates.values()))
+            prior.same_record(cross[str(n)],dec['cross_history'])
+            cross_details[str(n)]={k:{kk:vv.tolist() if isinstance(vv,np.ndarray) else vv for kk,vv in v.items()} for k,v in comps.items()}
+            localizations['cross'+str(n)]=localization(vec['final']-vectors['accelerated',n]['final'],mass)
+            saved_comps={a+'_vs_'+b:prior.pair._feedback_stability_comparison(x,y) for a,x in feedbacks[name,n].items() for b,y in saved_fb.items()}
+            saved_rates={k:prior.pair._feedback_stability_gate_checks(v,p['acceptance_gates']) for k,v in saved_comps.items()}
+            saved[str(n)]=dict(residual_comparison=comparison(vec,saved_vec,r20,mass,scale),
+                all_four_rate_gate_checks=saved_rates,cross_rate_pass=all(all(g.values()) for g in saved_rates.values()),
+                saved_reference_job=85889,saved_reference_case='accelerated',saved_reference_map=16,reference_recomputed=False,strict_error_bound=False)
+            prior.same_record(saved[str(n)],dec['vs_saved_reference'])
+            saved_details[str(n)]={k:{kk:vv.tolist() if isinstance(vv,np.ndarray) else vv for kk,vv in v.items()} for k,v in saved_comps.items()}
+
+        pairs[name+str(n)]=result;decisions[name][str(n)]=dec
+    terminal=terminal_path is not None;eligible=qualification(pairs,cross,terminal)
+    execution=dict(numerical_artifacts_complete=False,child_exit_status=None,scheduler_terminal_verified=False,scheduler_terminal_state=None)
+    if terminal:
+        term=read(terminal_path);s=read(out/'summary.json')
+        assert not (ROOT/f'{job}-stderr.log').read_bytes()
+        execution=execution_evidence(term,read(ROOT/f'{job}-batch-exit.json'),s,job)
+        assert 0<s['wall_s']<14400
+        assert s['source_field_stats_after']==d['source_field_stats_before']
+        assert s['seed_stats_after']==d['seed_stats_before'] and s['git_commit_after']==d['git_commit']
+        assert s['git_clean_after'] is True and s['all_hashes_verified_before_after'] is True
+        assert s['matched_new_two_branch_experiment'] is True and s['reference_recomputed'] is True
+        assert s['status']==read(out/'status.json')['status']=='paired_seed_windows_complete_requires_review'
+        assert s['maps']==16 and s['map_counts']==counts and s['feedback_pair_count']==2 and s['cases']==decisions
+        prior.same_record(cross,s['cross_history']);assert s['reference_calibration_eligible'] is False and s['relaxed_consistency_pass']==eligible and s['exploratory_only'] is True
+        assert s['accepted_outer_steps']==20 and s['new_material_steps']==0 and s['baseline_replaced'] is False and s['strict_error_bound'] is False
+        assert s['parent_peak_rss_bytes']<6*1024**3
+
+    else:
+        assert not (out/'summary.json').exists()
+        st=read(out/'status.json');assert st['status']=='feedback' and (st['case'],st['after_maps'])==entries[-1]
+    result=dict(job_id=job,archive=read(ROOT/(base+'-receipt.json')),verified_files=len(inventory['files']),verified_source_claims=verified,verified_code_claims=len(d['code']),external_claims_bound_to_prior_audits=external,source_jobs=d['source_jobs'],numerical_commit=d['git_commit'],source_85821_scheduler_terminal_verified=True,source_84026_scheduler_terminal_verified=False,source_85875_scheduler_terminal_verified=True,
+        completed_experiment=terminal,**execution,matched_new_two_branch_experiment=True,reference_recomputed=True,vs_saved_reference=saved,saved_feedback_comparisons=saved_details,map_counts=counts,maps=maps,pairs=pairs,cross_history=cross,cross_feedback_comparisons=cross_details,localization=localizations,
+        map_process_receipts=len(mappeaks),feedback_process_receipts=len(fbpeaks),maximum_proc_kib=max(mappeaks+fbpeaks),boundary_reduction_roundoff=roundoff,
+        all_original_zero_gates_passed=True,reference_calibration_eligible=False,relaxed_consistency_pass=eligible,exploratory_only=True,accepted_outer_steps=20,new_material_steps=0,baseline_replaced=False,
+        independent_vector_reduction=True,original_gate_kernels_reused=True,material_ode_recomputed_on_mac=False,large_fields_recomputed_on_mac=False,strict_error_bound=False)
+    with target.open('x') as f:f.write(json.dumps(result,indent=2,allow_nan=False)+'\n')
+    print(json.dumps({k:result[k] for k in ('job_id','verified_files','map_counts','map_process_receipts','feedback_process_receipts','maximum_proc_kib','reference_calibration_eligible','cross_history')},indent=2))
+    return result
+
+
+if __name__=='__main__':
+    p=argparse.ArgumentParser();p.add_argument('--job',required=True,type=int);p.add_argument('--base',required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--target',type=Path,required=True);p.add_argument('--terminal',type=Path);a=p.parse_args()
+    review(a.base,a.out,a.target,a.job,a.terminal)
