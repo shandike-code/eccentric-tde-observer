@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 7978,
+  "duration_api_ms": 7851,
+  "ttft_ms": 5629,
+  "ttft_stream_ms": 340,
+  "time_to_request_ms": 115,
+  "num_turns": 1,
+  "result": "# 学习讲义草稿（A/H16-8 与 cross8/16 四组合核对）\n\n**一、定义 [A]**\n\n- A 支与 H16-8 支各有两组端点，构成 **A/H16-8 四组合**比较；cross8、cross16 各含两个端点，构成 **cross8/16 四组合**；**16 端点四元组**是另一层比较。三者不是同一次比较，不可互相替代。\n- **有符号频块投影**按块求和，含交叉项，允许取负，故**不是光度份额**。\n- **物理加热比能** h ≡ dt·Q/ρ，单位 erg/g。\n- 每对对数贡献为 g·dt·ΔQ/ρ，其中 **g 随端点而变**。\n\n**二、本轮存储数据验证 [V]**\n\n全部 **76 块 / 128 单元保留**。2457 条校验记录对应 **2453 条独立路径**；**608 块与 8 端点 10 字段**全部按原序求和并 half 逐位重现；**7 处冻结源码**核对一致。\n\n四组合范围内：cross8 总质量归一 [0.00279838, 0.00280774]，加热比能 [3.6512×10¹⁰, 3.6634×10¹⁰] erg/g；cross16 相应为 [0.00275382, 0.00276351] 与 [3.5935×10¹⁰, 3.6061×10¹⁰] erg/g。cross16/cross8 加热比能 [0.98090, 0.98763]；变化量 [0.01329, 0.02011]，在 cross8 上投影 [−0.01912, −0.01238]，两向量余弦 [0.999980, 0.999988]。四元组恒等式最大绝对误差 [2.86×10⁻⁶, 5.60×10⁻⁶] erg/g。逐块和/总和比 [1.8847, 1.8932]（cross16），正投影和 [1.4079, 1.4117]、负投影和 [−0.4117, −0.4079]。加热对数与和最大绝对误差约 10⁻¹⁵，净吸收−发射误差约 10⁻¹³；all_emission_half_equal 为真。\n\n23 项测试通过。首次 E2E 因重结合乘除导致极小中间乘积舍入差而失败；恢复旧顺序并以更严格逐位复现后，第二次 E2E 成功。原失败日志保留，未放宽物理断言。\n\n**三、限制与不外推 [O]**\n\n因 g 随端点而变，四元组恒等式只在 **h 坐标**核对，不能对不同 g 的逐块对数项套用同一线性恒等式。两支**窗口响应过**、**跨 16 响应失败**、**跨 16 五类率过**均维持不变；本轮**不新增窗口五率门**。不外推 ETA、剩余误差、慢模成因或哪支为真解。总结数字一律使用四组合/16 四元组范围。",
+  "stop_reason": "end_turn",
+  "session_id": "c6d1de63-e7aa-47b9-b094-a4bf86f1fe52",
+  "total_cost_usd": 0.067895,
+  "usage": {
+    "input_tokens": 4074,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1901,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 4074,
+      "outputTokens": 1901,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.067895,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "fb68cc46-7e09-4b26-ab3c-a11d80b892c5"
+}

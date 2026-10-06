@@ -1,0 +1,14 @@
+{
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "section": 148,
+  "raw_preserved": true,
+  "corrections": [
+    "Each within-history window has four combinations; cross8 and cross16 each have four. Evolution has 16 quartets, not four.",
+    "total_mass_norm is a norm of log-heating contribution, not a mass normalization or complete material residual.",
+    "The sum of block norms is not a signed sum of blocks.",
+    "Finite direction similarity does not establish an eigenmode or convergence rate.",
+    "Prior cross16 maximum net/absorption discrepancy corrected from single final/final to maximum over all four. Original artifacts and lecture prefix preserved."
+  ]
+}
