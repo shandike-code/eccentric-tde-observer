@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 7512,
+  "duration_api_ms": 7332,
+  "ttft_ms": 6669,
+  "ttft_stream_ms": 414,
+  "time_to_request_ms": 162,
+  "num_turns": 1,
+  "result": "85889（tde-x20-matched）Slurm态RUNNING，anode02单节点32CPU/128G，已跑3:37:12/6h，非终态。两支各16map完成、无活动map，顺序A8/H8/A16/H16；accepted_outer_steps=20，new_material_steps=0；新增预算匹配非累计年龄匹配。\n\n三类比较分开：各支16减8、各支对旧pair诊断的r20、80195信号及五项率热内层门全过；但新16跨支cross_history两支均false（r20≈0.0026>0.001、信号≈0.73>0.1），各自对旧pair16的vs_saved_reference亦均false（reference_recomputed=false）。跨支与旧参考失败属漂移，未扩预算，故不予有限候选资格。不得称反馈收敛或整盘I_nu完成。84026终态未知保留，batch_exit非Slurm终态。reference_calibration_eligible即使true仍需独立审阅；baseline_replaced=false。",
+  "stop_reason": "end_turn",
+  "session_id": "a0dec166-42b5-43e3-a3a9-7cf2c99092b8",
+  "total_cost_usd": 0.085085,
+  "usage": {
+    "input_tokens": 9102,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 1583,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 9102,
+      "outputTokens": 1583,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.085085,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "fb279caf-75b8-424d-959e-2cae70d205ff"
+}

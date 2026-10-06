@@ -1,0 +1,81 @@
+{
+  "job_id": 85889,
+  "stage": "final_matched_two_history_review",
+  "numerical_commit": "9555a78a77b9025e30405684dee2669d9e43baee",
+  "archive": {
+    "path": "outputs/hpc/x20-85875-matched-feedback-20261006/archives/complete-1791262858167332668.tar.gz",
+    "size_bytes": 303877902,
+    "sha256": "f20c313bc92af5730a16d7a9c604793873719bd710b53d0fc763813349cd120c"
+  },
+  "pre_run": {
+    "Code": "PASS",
+    "Logic": "PASS",
+    "Physics": "WARNING",
+    "Decision": "RUN",
+    "scope": "Complete small-artifact audit; no new Slurm, no material ODE or large-field calculation on Mac"
+  },
+  "post_run": {
+    "verified_files": 8588,
+    "verified_source_claims": 979,
+    "verified_code_claims": 801,
+    "map_process_receipts": 2432,
+    "feedback_process_receipts": 608,
+    "maximum_proc_kib": 4045164,
+    "all_original_zero_gates_passed": true,
+    "independent_vector_reduction": true,
+    "numerical_artifacts_complete": true,
+    "scheduler_terminal_verified": true
+  },
+  "reviewed_feedback_pairs": [
+    "accelerated8",
+    "historical8",
+    "accelerated16",
+    "historical16"
+  ],
+  "both_branches_feedback_recomputed": true,
+  "new_16_minus_8_windows_available": [
+    "accelerated",
+    "historical"
+  ],
+  "accelerated_window_passed": true,
+  "historical_window_passed": true,
+  "new_cross16_response_passed": false,
+  "new_cross16_rate_passed": true,
+  "completed_experiment": true,
+  "reference_calibration_eligible": false,
+  "source_84026_scheduler_terminal_verified": false,
+  "source_85821_scheduler_terminal_verified": true,
+  "source_85875_scheduler_terminal_verified": true,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "baseline_replaced": false,
+  "new_slurm_submissions": 0,
+  "real_artifact_first_end_to_end_pass": true,
+  "source_dat_claims_bound_to_prior_audits": 20,
+  "all_source_hashes_before_after_verified": true,
+  "all_20_source_fields_metadata_before_after_verified": true,
+  "seed_stats_before_after_verified": true,
+  "git_head_clean_before_after_verified": true,
+  "backup_both_verified": "outputs/review-20260925/pre-85889-final-review-20261006.bundle",
+  "backup_bytes": {
+    "mac": 25635974,
+    "school": 25602989
+  },
+  "decision": "Close original 32map/4pair budget. No restoration, extra maps, resubmission, calibration or acceptance21. Next inspect stored cell energy and encoding relations before any new protocol.",
+  "lecture_section": 145,
+  "actual_cli_model": "deepseek-v4-flash[1m]",
+  "format_checks": {
+    "new_report": true,
+    "new_lecture_section": true,
+    "old_lecture_prefix_bytes": 420967,
+    "old_lecture_prefix_sha256": "bb9f48f145013be3292a917fc20b44106517ef2ffe17fcb2963ab65d82036398",
+    "old_lecture_prefix_unchanged": true
+  },
+  "tests": "No source changes; existing tests reused. Full real-artifact E2E passed on first execution.",
+  "current_scheduler_terminal": "COMPLETED 0:0",
+  "program_wall_s": 13485.810733708553,
+  "parent_peak_rss_bytes": 258977792,
+  "stderr_bytes": 0,
+  "watch_scheduler_terminal_observed_unix": 1791263003.5956883,
+  "verification_note": "First documentation-path check compared Git default quoted Unicode output with a literal path; rerun using --name-only -z passed. No numerical/source assertion or bytes changed."
+}

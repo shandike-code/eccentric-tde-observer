@@ -1,0 +1,24 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "20261006-x20-85889-final-lecture-draft.json",
+  "evidence": "20261006-x20-85889-final-review.json",
+  "lecture_section": 145,
+  "independently_revised": true,
+  "corrections": [
+    "质量范数含总质量分母，但不能说其量级必然远小于L2；实际取决于向量和权重。",
+    "原冻结信号来自四个P−C端点组合的完整向量差逐范数最小，不是四分量。",
+    "两支各三项同对/窗口/旧端点比较共六项，只有两项是新16−8窗口。",
+    "cross8/cross16是新跨支；savedA8/savedA16是新H对旧保存A，不能合称新跨支。",
+    "signal约0.73–1.80漏Max-cell约0.28–0.29；补完整三范数，仍全部失败。",
+    "cross定位不是第三个窗口，所有定位限单个final/final，不提供四组合上界或因果。",
+    "新窗口及各自旧端点只比较响应，率门通过限定原同对、新跨支和明确计算的保存A诊断。",
+    "保留原r20、80195完整分母、正气体热能、运行前后完整性及资格false/预算关闭。"
+  ],
+  "format_checks": {
+    "new_report": true,
+    "new_lecture_section": true,
+    "old_lecture_prefix_bytes": 420967,
+    "old_lecture_prefix_sha256": "bb9f48f145013be3292a917fc20b44106517ef2ffe17fcb2963ab65d82036398",
+    "old_lecture_prefix_unchanged": true
+  }
+}

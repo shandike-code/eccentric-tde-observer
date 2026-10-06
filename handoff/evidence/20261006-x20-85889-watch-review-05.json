@@ -1,0 +1,16 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "20261006-x20-85889-watch-draft-05.json",
+  "independently_reviewed": true,
+  "corrections": [
+    "20外层步明确为同一物理步内20次已接受非线性更新，不是20物理步。",
+    "两支新16−8窗口只计算响应；同对和新跨支五类率门通过，不能写窗口五率热门全过。",
+    "新八窗残差含义不清；明确区分同对、新16−8窗口、各自对自己旧反馈和新H对保存旧A。",
+    "batch仅证Python退出与本次实际Slurm COMPLETED并不矛盾；校准资格false不因正常退出改变。"
+  ],
+  "terminal_evidence": "20261006-x20-85889-terminal.json",
+  "final_evidence": "20261006-x20-85889-final-review.json",
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "baseline_replaced": false
+}

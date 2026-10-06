@@ -1,0 +1,16 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "20261006-x20-85889-watch-draft-04.json",
+  "independently_reviewed": true,
+  "corrections": [
+    "新16−8和各自对旧pair16只比较响应，不能称其五项率热门全过。",
+    "cross_history的8和16是两个新增预算端点的跨支比较，不是两支各一个false；约0.0026/0.73只近似L2，不代表三范数最大。",
+    "from_prior_feedback的A对旧A、H对旧H均通过；vs_saved_reference只指新H对保存旧A，不能称各自对旧pair均失败。",
+    "当时仍RUNNING，不能借H16反馈完成宣称真实Slurm终态；本次最终终态另有scontrol证据。"
+  ],
+  "terminal_evidence": "20261006-x20-85889-terminal.json",
+  "final_evidence": "20261006-x20-85889-final-review.json",
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "baseline_replaced": false
+}
