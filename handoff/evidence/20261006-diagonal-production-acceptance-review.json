@@ -1,0 +1,189 @@
+{
+  "git_commit_checked": "68a950fa3b5c6418e4d94f2ba4a1d36ec12c55b3",
+  "production_source_preparation_complete": true,
+  "submission_ready": false,
+  "production_resource_verified": false,
+  "controlled_speedup_measured": false,
+  "full_scan_authorized": false,
+  "real_dat_read_download_bytes": 0,
+  "new_slurm": 0,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_ode": 0,
+  "new_material": 0,
+  "school_tests": {
+    "passed": 384,
+    "seconds": 22.13
+  },
+  "source_parity": {
+    "mac_binding_wall_s": 10.011950625106692,
+    "small_sources": 326,
+    "original_code_files": 801,
+    "canonical_mac_school_binding_equal": true,
+    "current_live_matches_pinned_historical_runtime": true,
+    "school_before_after_equal": true,
+    "real_dat_bytes_read": 0,
+    "production_resource_verified": false,
+    "submission_ready": false,
+    "full_scan_authorized": false,
+    "school": {
+      "git_commit": "68a950fa3b5c6418e4d94f2ba4a1d36ec12c55b3",
+      "clean": true,
+      "code_files": 1692,
+      "project_modules": 113,
+      "history_bytes": 66216,
+      "identity_checked_after_native": true,
+      "wall_s": 43.78715581000142,
+      "peak_rss_bytes": 316153856,
+      "archive_payload_bytes": 607755804,
+      "small_sources": 326,
+      "original_code_files": 801,
+      "runtime_dependencies": 6,
+      "real_dat_bytes_read": 0,
+      "new_jobs": 0,
+      "new_maps": 0,
+      "new_feedback": 0,
+      "new_ode": 0,
+      "new_material": 0,
+      "production_resource_verified": false,
+      "submission_ready": false,
+      "full_scan_authorized": false
+    }
+  },
+  "artifacts": [
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-final-state-second.py",
+      "size_bytes": 2097,
+      "sha256": "750c3cf3e51d0201f698a08d84b76fedeecf5a08677ad7bb8bf4bdadb973da5c"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-prepare-sync.py",
+      "size_bytes": 4072,
+      "sha256": "e22a11c066ab3ecd8856ef6460596e3fcb140f2348459c02c1fdab8c9f4b4b62"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-source-local.log",
+      "size_bytes": 919,
+      "sha256": "b0f0859a41173cbf9c18b0202b20f25a9cbb35de330b2af196fcd0e46311c4a4"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-source-receipt.json",
+      "size_bytes": 1890,
+      "sha256": "c94d3332e3444df575d78127cccce7f6fce71f440f356b3ad729d32f9ed4b7c3"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-source-parity.json",
+      "size_bytes": 1030,
+      "sha256": "825212d2a9f3db0e9236789eca1d604e48c8aa819da741755ee5d83511084812"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-local-check.py",
+      "size_bytes": 3193,
+      "sha256": "a99ab38bb77b97bd796391f2ff02076114961ef47ebc33b6b7db36ab5049dc2d"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-code-freeze.json",
+      "size_bytes": 274862,
+      "sha256": "aa682395b6a76e47e986dd1b269fbe6bcc05bb02602c3306fef8fe7065903fac"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-school-tests.log",
+      "size_bytes": 501,
+      "sha256": "05bc6f2116e0a2ae51d4748f33c94ef1d8d1a0d10e4d79e4138cff4dda3754b6"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-cli.py",
+      "size_bytes": 3043,
+      "sha256": "0e8b27b92a17ee3e97eca942ce7f2ab854ad5419617e5e67e115293387a4d1f1"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-receive-sources.py",
+      "size_bytes": 2749,
+      "sha256": "00be2517cea248e5b0a703c2f239423e6187feb5d0af6a5e8078f1cf40f8cfe8"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-binding.json",
+      "size_bytes": 208077,
+      "sha256": "7fe42b91067900c7c4f98beb34ea56dbd13dc4917afb02219bc3bb7984f56ef6"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-school-sync.json",
+      "size_bytes": 145,
+      "sha256": "15c4fd6d88f8fd0664575f45285c1cea0877ff14197d06b68b854ada99200b9f"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-final-code-state.json",
+      "size_bytes": 446,
+      "sha256": "8526e648dcb210756bbaf374469e92b340956ac1b56f0556d2663959c221c3a1"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-source-check.py",
+      "size_bytes": 4269,
+      "sha256": "9441ac2a2c569413ad3a8697fc404c83b0d2a77a1fa0b6aece51b975acf21560"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-source-school.log",
+      "size_bytes": 602,
+      "sha256": "09a1fb70e73130973db2a314ff8531db2f850d53a8fdd533ee8660bf166d633c"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-school-backup.json",
+      "size_bytes": 12225,
+      "sha256": "f1077eafe92fbdbc5c03bbbf250bc544f4c79e97e913e800ed3733fefb525afd"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-final-state-first.py",
+      "size_bytes": 1965,
+      "sha256": "3e3d84c8a45339354dfbfa4a6cca8cee8cd2621ca2659db1321d8fe136d01a8b"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-local-backup.json",
+      "size_bytes": 1135,
+      "sha256": "d225833a66a867c715e4792f5c7d065a27d581d22368be56d3a926e9206a8be6"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-run-sourceprep.py",
+      "size_bytes": 1136,
+      "sha256": "971d1294bee66f5711a16d84195c1f57aeb72316775596ebbc06574ae1eb9f79"
+    }
+  ],
+  "source_orchestration": {
+    "path": "outputs/review-20260925/20261006-diagonal-production-source-check.py",
+    "size_bytes": 4269,
+    "sha256": "9441ac2a2c569413ad3a8697fc404c83b0d2a77a1fa0b6aece51b975acf21560"
+  },
+  "external_freeze": {
+    "path": "outputs/review-20260925/20261006-diagonal-production-code-freeze.json",
+    "size_bytes": 274862,
+    "sha256": "aa682395b6a76e47e986dd1b269fbe6bcc05bb02602c3306fef8fe7065903fac"
+  },
+  "external_binding": {
+    "path": "outputs/review-20260925/20261006-diagonal-production-binding.json",
+    "size_bytes": 208077,
+    "sha256": "7fe42b91067900c7c4f98beb34ea56dbd13dc4917afb02219bc3bb7984f56ef6"
+  },
+  "lecture_old_prefix": {
+    "size_bytes": 487088,
+    "sha256": "8b25548d119e4957eddb95db42c84f5354ea95ad4d5a25853cb98fa8fffab2d1"
+  },
+  "lecture_new_section": 165,
+  "report": "handoff/linux-runs/2026-10-06-x20-diagonal-production-acceptance.md",
+  "cli_review": {
+    "cli_actual_model": "deepseek-v4-flash[1m]",
+    "cli_wall_s": 29.851353832986206,
+    "accepted": [
+      "生产main完整28阶段与Slurm峰值尚未执行",
+      "真实外部当次提交和终态必须保留，不能用自洽假回执替代"
+    ],
+    "corrections": [
+      "片payload为32频组×32角度×4096层×8B=33554432B；草稿32×4096×8漏方向维度，slice-hash阶段payload为0，读取与重读才计payload。",
+      "逐字符串完全相同与Decimal80数值一致性审阅是两个门；后者有原冻结容差，不称Decimal80精确数学证明。",
+      "113是本次实际载入项目模块数，不是源码硬编码数量；1692是本次全tracked代码清单大小。",
+      "固定数据集/phase/dt/历史源是本资源实验的身份约束，不为换数据自动改代码或pins。",
+      "本次/tmp来源编排器不生成Slurm终态或COMPLETED回执；实际新job尚不存在，不能暗示本轮制造了调度回执。",
+      "environment_metadata_reads仅首次import环境元数据单列，runtime科学源和native打开路径仍逐项核历史固定值。"
+    ],
+    "scope": "仅给定reviewer全文、driver main与事实；不冒称完整依赖源码审计或生产性能审计"
+  },
+  "next": "contemporaneous submission ticket / observer handoff and independent full PRE-RUN decision; no job budget yet"
+}

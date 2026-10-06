@@ -1,0 +1,17 @@
+{
+  "cli_actual_model": "deepseek-v4-flash[1m]",
+  "cli_wall_s": 29.851353832986206,
+  "accepted": [
+    "生产main完整28阶段与Slurm峰值尚未执行",
+    "真实外部当次提交和终态必须保留，不能用自洽假回执替代"
+  ],
+  "corrections": [
+    "片payload为32频组×32角度×4096层×8B=33554432B；草稿32×4096×8漏方向维度，slice-hash阶段payload为0，读取与重读才计payload。",
+    "逐字符串完全相同与Decimal80数值一致性审阅是两个门；后者有原冻结容差，不称Decimal80精确数学证明。",
+    "113是本次实际载入项目模块数，不是源码硬编码数量；1692是本次全tracked代码清单大小。",
+    "固定数据集/phase/dt/历史源是本资源实验的身份约束，不为换数据自动改代码或pins。",
+    "本次/tmp来源编排器不生成Slurm终态或COMPLETED回执；实际新job尚不存在，不能暗示本轮制造了调度回执。",
+    "environment_metadata_reads仅首次import环境元数据单列，runtime科学源和native打开路径仍逐项核历史固定值。"
+  ],
+  "scope": "仅给定reviewer全文、driver main与事实；不冒称完整依赖源码审计或生产性能审计"
+}
