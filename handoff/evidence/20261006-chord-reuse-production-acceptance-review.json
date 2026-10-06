@@ -1,0 +1,111 @@
+{
+  "status": "source_and_reviewer_acceptance_preparation",
+  "starting_mac_commit": "3574dcbc4755a3243b8cd2648f9e338ab1464431",
+  "school_commit": "82aea66f68dd9f1abc27a8268ffd5e1bfa34f418",
+  "initial_reviewer_tests": {
+    "passed": 11,
+    "failed": 3
+  },
+  "final_tests": 150,
+  "code_changes": [
+    "independent review_run fixed runtime/geometry identity and closed-job rejection",
+    "18 production reviewer fixture tests"
+  ],
+  "kernel_and_driver_unchanged": true,
+  "source_parity": {
+    "mac_binding_wall_s": 10.131717832759023,
+    "small_sources": 326,
+    "original_code_files": 801,
+    "canonical_mac_school_binding_equal": true,
+    "current_live_matches_pinned_historical_runtime": true,
+    "school_before_after_equal": true,
+    "real_dat_bytes_read": 0,
+    "production_resource_verified": false,
+    "submission_ready": false,
+    "full_scan_authorized": false,
+    "school": {
+      "git_commit": "82aea66f68dd9f1abc27a8268ffd5e1bfa34f418",
+      "clean": true,
+      "wall_s": 30.259764028989593,
+      "peak_rss_bytes": 313552896,
+      "archive_payload_bytes": 607755804,
+      "small_sources": 326,
+      "original_code_files": 801,
+      "runtime_dependencies": 6,
+      "real_dat_bytes_read": 0,
+      "new_jobs": 0,
+      "new_maps": 0,
+      "new_feedback": 0,
+      "new_ode": 0,
+      "new_material": 0,
+      "production_resource_verified": false,
+      "submission_ready": false,
+      "full_scan_authorized": false
+    }
+  },
+  "files": [
+    {
+      "path": "outputs/review-20260925/20261006-chord-reuse-production-source-parity.json",
+      "size_bytes": 908,
+      "sha256": "a79e50f3ecf66cf40be2971a2217b57afbc518b75e3f9bd8ed78cd2761443224"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-chord-reuse-production-binding.json",
+      "size_bytes": 208077,
+      "sha256": "7fe42b91067900c7c4f98beb34ea56dbd13dc4917afb02219bc3bb7984f56ef6"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-chord-reuse-production-fixture-02.json",
+      "size_bytes": 8926,
+      "sha256": "3ee5fd33e92252003c848670f6a92623d6b7d9a66c69bff503b5c04f20dbc22e"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-chord-reuse-production-tests-01.log",
+      "size_bytes": 7693,
+      "sha256": "91bb70e7adedd3576f4d10c246e288f56fcf9817c0a47ca7a3c9c6ba53e5b5a7"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-chord-reuse-production-tests-04.log",
+      "size_bytes": 260,
+      "sha256": "9f14a8c08d7a583e93bc2670c3b6a763552f38eb4889c0a35cf3489d37c2f115"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-chord-reuse-production-school-tests-02.log",
+      "size_bytes": 286,
+      "sha256": "188573b3a3114b7d84877de9de698579e7fc4bae7279f7a1acf18a938e47bd01"
+    },
+    {
+      "path": "outputs/review-20260925/chord-reuse-production-sources-school-20261006/transfer.json",
+      "size_bytes": 1203,
+      "sha256": "c129041471fe312b6a51cb96318cd5d6cc54ee5d05e4e20eea2dec8532973d6a"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-chord-reuse-production-code-freeze-final.json",
+      "size_bytes": 272207,
+      "sha256": "d5d6b8606f51a7aeabc262a02f75602f8c65f2795b6be4655ee6c490e9c8c28d"
+    }
+  ],
+  "lecture_prefix": {
+    "size_bytes": 462094,
+    "sha256": "274ef4e9eef7df54a60fd9045bf07dfa9e8d9e2f0c4861d53b980c83d6a60c23"
+  },
+  "new_jobs": 0,
+  "real_dat_bytes_read": 0,
+  "production_resource_verified": false,
+  "speedup_measured": false,
+  "full_scan_authorized": false,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "final_test_seconds": {
+    "mac": 1.0,
+    "school_isolated": 5.41
+  },
+  "backups": {
+    "name": "pre-chord-reuse-production-acceptance-20261006.bundle",
+    "mac_bytes": 25942668,
+    "school_bytes": 25850845,
+    "both_verified": true
+  }
+}

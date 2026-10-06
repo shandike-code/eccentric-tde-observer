@@ -84,7 +84,7 @@ def review(data, reference, wall=None):
 
 def terminal_check(result, allocation, terminal, child, expected_job_id, started):
     job = str(expected_job_id)
-    if not job.isdigit() or job == '86061' or result['job_id'] != job: raise ValueError('external new job ID')
+    if not job.isdigit() or job in ('85889', '86061') or result['job_id'] != job: raise ValueError('external new job ID')
     tokens = c.scheduler_tokens
     final = tokens(terminal['scontrol']); alloc = tokens(allocation['scontrol'])
     expected = dict(JobId=job, JobState='COMPLETED', ExitCode='0:0')
@@ -160,6 +160,14 @@ def review_run(run, expected_commit, expected_code, expected_binding, terminal, 
         not c.exact(later, read('live-after.json'))): raise ValueError('live proof changed')
     for key in ('live_native_recomputed','trial_mirrored_arrays_bitwise','archive_payload_rehashed'):
         if live[key] is not True: raise ValueError('live prerequisite')
+    # 前后相等不认证来源；另与固定SHA的86061历史runtime清单逐项比较。
+    historical_live = c.loads(blobs['history-result.json'])['live_before']
+    for key, expected in (('groups',9632), ('directions',32), ('depths',4096), ('blocks',76)):
+        if integer(live[key]) != expected: raise ValueError('live geometry identity')
+    for key in ('live_dependencies', 'native_opened_data_paths'):
+        if not c.exact(live[key], historical_live[key]): raise ValueError('pinned live runtime identity')
+    for key in ('physical_validation', 'strict_error_bound'):
+        if live[key] is not False: raise ValueError('unsupported live promotion')
     if (integer(live['live_original_code_files']) != 801 or integer(live['phase']) != 1367 or
         live['dt'] != 889.419892762322 or integer(live['radiation_field_bytes_read']) != 0 or
         integer(live['archive_bytes_read']) != before['source_archive']['size_bytes'] or

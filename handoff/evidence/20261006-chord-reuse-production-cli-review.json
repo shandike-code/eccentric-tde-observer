@@ -1,0 +1,18 @@
+{
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "wall_s": 54.73373591620475,
+  "scope": "reviewer full text plus production main and factual preparation; not complete kernel/dependency source audit",
+  "corrections": [
+    "c.history确实核四个硬编码大小SHA；存储于run内不降低固定SHA约束，不要求拒绝该位置的原字节副本。CLI未见contract全文，其首要阻塞属条件担忧，实读后已排除。",
+    "采纳显式拒85889和86061两已关闭job，并新增全部回执与外部job一致改为85889的负路径。真实85889原32CPU/128GiB分配也不能通过本4CPU/16GiB门；此前不是已发生旧job获认证。",
+    "独立审阅器不在Mac重算native，而核冻结实现、当前学校配置回执、固定来源及runtime；这不冒称独立第二套native重算。实际调度信任根是外部查询与提交回执，不能用SHA证明查询发生。",
+    "first_group/group_count由原review_slab以及c.compare完整类型相等固定到历史0/32；CLI称未断言不正确。",
+    "environment_metadata_reads仅环境首次import观察，明确不属于科学源等价门。不能把它泛称未认证科学通道。duration为0时rate=None在phases已显式定义；时间相等本身不提供额外精度。",
+    "149是17新生产入口tests+132既有合成/负路径，不是149项全部使用虚构900002。最终加固后150；首3失败保存。",
+    "六dat仅stat、无真实生产main/资源实测、不可扩容的边界采纳；当前prepare.native读归档不读辐射场。"
+  ],
+  "production_resource_verified": false,
+  "full_scan_authorized": false
+}
