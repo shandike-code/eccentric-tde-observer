@@ -1,0 +1,171 @@
+{
+  "stage": "authenticated resource v2 preparation",
+  "mac_parent_commit": "14d74ad275680522e49508ffc09678d8a1e0c394",
+  "school_commit": "9555a78a77b9025e30405684dee2669d9e43baee",
+  "mac_tests": 133,
+  "school_tests": 122,
+  "new_jobs": 0,
+  "real_dat_bytes_read": 0,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_material": 0,
+  "accepted_outer_steps": 20,
+  "production_preflight_complete": false,
+  "full_scan_authorized": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "artifacts": [
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-resource-v2-tests-04.log",
+      "size_bytes": 180,
+      "sha256": "bdd66bd28220946115644b9615e18bdab0c794cf1c315deb0fc2b048e84a367b"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-resource-v2-school-tests-e2e-04.log",
+      "size_bytes": 497,
+      "sha256": "87da9cdb17e55616b804af24df8f4b6aea1b8055cc57ce2e40c71da669cd3446"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-resource-v2-parity.json",
+      "size_bytes": 348,
+      "sha256": "cc2c128c69c738307a5cc9e2ee5e6bf2e9c068597dd0320a75b6d1ab2eced29b"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-resource-v2-school-code-check.json",
+      "size_bytes": 38,
+      "sha256": "6dc19eafa079c23994f8252cb29d395df104bc56d465c2e77a519eb99ce2f221"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-live-before.json",
+      "size_bytes": 2601,
+      "sha256": "b8c088392c837e29d4f45ef891cae4790d5c4e54ccd30c5afe5b958a49a30dc3"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-live-after.json",
+      "size_bytes": 2426,
+      "sha256": "97c5a8123d606e6c8b932542fc561a3680db27349977bcf3c9bd06477c6641dd"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-live-metadata.json",
+      "size_bytes": 326,
+      "sha256": "63ca15faa7632f7cadd869b6a5fb68d206e66b874fa99ec988ba534a14b982a1"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-resource-v2-frozen-code.json",
+      "size_bytes": 3665,
+      "sha256": "58709a37cfa0fa3b892c86f2a7cc29994f7fdad4909c08229a710380811ea723"
+    }
+  ],
+  "protocol": "handoff/protocols/x20-85889-chord-resource-preflight-v2.md",
+  "code": [
+    {
+      "path": "operations/x20_85889_chord_binding.py",
+      "size_bytes": 10065,
+      "sha256": "e00173b3a18f9face952b5c8474dc63369c13d1dfff165bf266fc3d4be9b0454"
+    },
+    {
+      "path": "operations/x20_85889_chord_resource.py",
+      "size_bytes": 7805,
+      "sha256": "893a19268fa711f6e76793a593463dae8f972d21fe7ea504905b0debbe835ea2"
+    },
+    {
+      "path": "operations/x20_85889_chord_receipt.py",
+      "size_bytes": 4321,
+      "sha256": "49cf550c8bd0255779fe600a879906e936e1be57f8b8ce5d2c447f4fe2290187"
+    },
+    {
+      "path": "operations/x20_85889_chord_scan.py",
+      "size_bytes": 9605,
+      "sha256": "9349c255b35c515fd37e7903a120ebed753e9c517c9381b402d4184d450a1643"
+    },
+    {
+      "path": "operations/x20_85889_chord_resource.sbatch",
+      "size_bytes": 1627,
+      "sha256": "973b09fcda1854047913ca6cd2ec742d010e00d3ce90e9ecc4fa96e17358b29b"
+    },
+    {
+      "path": "handoff/audit_tools/review_x20_85889_chord_scan.py",
+      "size_bytes": 7646,
+      "sha256": "806e67f2eeed99cc20fd54e2a8aab432fa765e8ebc789024218be0bd47d7b474"
+    },
+    {
+      "path": "handoff/audit_tools/review_x20_85889_chord_resource.py",
+      "size_bytes": 3866,
+      "sha256": "c6b59e8ddab82c3fceec7836c9afb94dfa6ac1d36af279b5b9659e9416b78952"
+    },
+    {
+      "path": "tests/test_x20_85889_chord_binding.py",
+      "size_bytes": 2426,
+      "sha256": "32a01ad551a61370ec97be13224f7514471ebc2c065a15260ce74755ce30ff65"
+    },
+    {
+      "path": "tests/test_x20_85889_chord_resource.py",
+      "size_bytes": 4239,
+      "sha256": "65e3a5c58a2f1046fee55a36da93d7001b37dd00136c09979e726cae4b5eb7e0"
+    },
+    {
+      "path": "tests/test_x20_85889_chord_receipt.py",
+      "size_bytes": 2018,
+      "sha256": "883bae0d2d2caf4c6cd08a1516967b344e6ba525030fe9beb4f89a28b48bfa48"
+    },
+    {
+      "path": "tests/test_x20_85889_chord_scan.py",
+      "size_bytes": 7129,
+      "sha256": "6b0d66be51698a65b1b77c5a43ca1b71fe738fee201be5cbfb23f2667b9ad892"
+    },
+    {
+      "path": "handoff/evidence/20261006-x20-85889-final-review.json",
+      "size_bytes": 87194,
+      "sha256": "61eaea4db3ba0fb87adce29c13ab42bc1f158068e634e9798b67ddc3d16c2729"
+    },
+    {
+      "path": "handoff/evidence/20261006-x20-85889-terminal.json",
+      "size_bytes": 43026,
+      "sha256": "63b353d4b1ff2650ec8f349b7aea2f52ff529cea71df9c3178a61793065ba58a"
+    },
+    {
+      "path": "outputs/review-20260925/complete-1791262858167332668.json",
+      "size_bytes": 1623461,
+      "sha256": "ed219eef3121dea9cd23e3e328bdd2de72811e7a51ec4af897855046b82cf99f"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-source-review-02.json",
+      "size_bytes": 65951,
+      "sha256": "3e793eaa6a41bf6846a0dd3f1581bf5e1688cce455d6034d3adf0669cd6bfe95"
+    },
+    {
+      "path": "operations/x20_85889_chord_live.py",
+      "size_bytes": 7103,
+      "sha256": "c54edc7c06993ec5491d4e7a6faf3da1f51a9bc1c2cd8db5122d264d094cf8a0"
+    },
+    {
+      "path": "operations/x20_85889_chord_resource_v2.py",
+      "size_bytes": 6769,
+      "sha256": "5e9b37ea36c8891d6ddc6ea8d7baeac3bb7d20e0ac9fe31be0ac344784848a07"
+    },
+    {
+      "path": "operations/x20_85889_chord_resource_v2.sbatch",
+      "size_bytes": 1636,
+      "sha256": "3cdb8c35b80fde156df55c5e2ebb761488e88840b7556c09f67d9a9e2397c444"
+    },
+    {
+      "path": "operations/x20_85889_chord_receipt_v2.py",
+      "size_bytes": 4432,
+      "sha256": "141ab5f94136f3b2cf03fbcc911722e628b24417c97db28571b5b2ed1baac2d8"
+    },
+    {
+      "path": "handoff/audit_tools/review_x20_85889_chord_resource_v2.py",
+      "size_bytes": 6617,
+      "sha256": "3063f1b994c923e76ac8d80b75b57ced1dcd996fd1f5aa3ca954e8213da9c99a"
+    },
+    {
+      "path": "tests/test_x20_85889_chord_resource_v2.py",
+      "size_bytes": 6267,
+      "sha256": "318e1066f9c13cccd4d12cf0660a0a84d7fc6c1f6910d411a936cbfa9cc58acb"
+    }
+  ],
+  "backups": {
+    "mac_size_bytes": 25810111,
+    "both_verified": true
+  }
+}

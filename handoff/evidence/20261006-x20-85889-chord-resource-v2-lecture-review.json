@@ -1,0 +1,26 @@
+{
+  "model": "deepseek-v4-flash[1m]",
+  "draft": "handoff/evidence/20261006-x20-85889-chord-resource-v2-lecture-draft.json",
+  "independently_reviewed": true,
+  "corrections": [
+    "B1错误：core.hash_pass实际将每场实算SHA与c.sha256比较，独立review亦逐项与claims SHA比较；首片外损坏负路径已通过。",
+    "B2缺少helper上下文：live_check实际哈希303877902B归档，两次调用已实测607755804B，SHA与原已审归档相同。",
+    "B3错误：binding.bind按PINS核inventory/source-review/final-review/terminal，并按inventory核两个feedback_protocol；physical路径在核后仍比冻结SHA。",
+    "B4采纳消费方闭合要求：新增review_run要求无failure、有finished、result及全部阶段一致、外部绑定、当前live和真实COMPLETED0:0。阶段文件仍只是部分记录，不能单独验收。",
+    "B5忽略binder/native/读取器：shape固定9632x32x4096，phase/dt由binding和live核；raw <f8按C-order reshape，旧dat源链一致。新增生产review_run再次核shape。",
+    "B6错误：main已转全部claims为repo绝对路径，core.checked_stat拒链接/非文件并核dev,inode,size,mtime_ns,ctime_ns，前后及句柄均核。未要求nlink=1。",
+    "B7需区分：field_bytes_read是通过每个声明长度read及重读成功后按代码计数的逻辑payload字节，不是/proc的物理盘I/O或缓存流量；不能把它说独立设备测量。",
+    "B8错误：outputs/hpc已gitignored，仍强制clean，不能把建议容忍untracked作为放宽。",
+    "B9忽略sbatch与v1.allocation：四种线程变量1均设置并验证，实际资源scontrol再核。单节点检查已新增；共享节点不等于违反4CPU分配，不新增独占要求。",
+    "B10及normalized=false/sign=undefined建议不采纳：有符号Gram方向定义保留；零范数的比值/夹角null是定义，不是资源作业失败。单片没有计算范数比或夹角。",
+    "程序1500s与USR1提前300s在1800s硬限前留下约300s清理窗口，并非零余量；不能用该误读任意改变预算。底层阻塞仍可能超时，无保证终态落盘，外部观察器另核。",
+    "单片NumPy longdouble统计，Decimal80仅小矩审阅，未对4194304元素构建Decimal对象。",
+    "不把低阶频片当代表全部频段，不从片耗时推全场ETA，不把133/122测试等同生产RSS或全场物理验证。"
+  ],
+  "accepted_changes": [
+    "single-node allocation",
+    "full lifecycle production reviewer"
+  ],
+  "status": "bounded_resource_candidate_only_no_full_scan_authorization",
+  "full_scan_authorized": false
+}
