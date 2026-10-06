@@ -1,0 +1,19 @@
+{
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "wall_s": 49.26490454096347,
+  "scope": "given production resource facts and independent small review only; not full source audit",
+  "corrections": [
+    "单片乘301约5893秒仅恒定成本假设下的规划估计，不是完整扫描实测或严格超时反证。可据此不批准当前全扫，不能断言全场必然不能在预算内完成。30min单片预检与原1h全扫是不同独立范围，非口径矛盾。",
+    "607755804B已是两遍303877902B原85889小产物归档的合计，不应再乘2。它不是单片归档，不需与六辐射场121601261568B相等。字段payload和归档可作为不同逻辑读类别分别列明，但不冒充全部I/O或设备流量。",
+    "完整slab摘要是所有数值条目及结构/类型/十进制字符串含零号严格相等，不仅缓存键相等。此处实际数值摘要等价，不代表精确实数计算或物理验证。",
+    "NumPy nmant63指不计隐含位的尾数位，常见x87有效精度64bits；保留原nmant63/maxexp16384字段，不写63总有效位。Decimal80是80十进制位独立小矩一致性审阅，不是独立下界验证，不提升原统计精度或给严格舍入界。",
+    "前后哈希时间差不能直接归因为页缓存/热身，未做设备或缓存测量；只报告耗时与逻辑payload速率。",
+    "预检同时核资源、来源和本片数值一致性，不能说完全不回答结果对不对；其科学范围严格限本片统计，未证明HHe物理正确或完整301片资源可行。",
+    "采纳程序/外部scheduler字段分层与空stdoutstderr不等于无JSON，以及跨16响应失败和五率通过分开叙述。旧字段和产物不改名回写。"
+  ],
+  "production_resource_preflight_complete": true,
+  "full_scan_authorized": false,
+  "physical_validation": false
+}

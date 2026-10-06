@@ -1,0 +1,19 @@
+{
+  "status": "reuse_resource_small_evidence_consistent",
+  "decimal_precision": 80,
+  "comparison": {
+    "complete_slab_exact": true,
+    "decimal_strings_and_zero_sign_preserved": true,
+    "physical_validation": false,
+    "full_scan_authorized": false
+  },
+  "field_bytes_read": 121601261568,
+  "production_resource_preflight_complete": true,
+  "full_scan_authorized": false,
+  "physical_validation": false,
+  "strict_error_bound": false,
+  "scheduler_terminal_verified": true,
+  "job_id": "86191",
+  "git_commit": "4b02b0865ed45103770a6ecf63638c9696bd0a62",
+  "archive_bytes_read": 607755804
+}

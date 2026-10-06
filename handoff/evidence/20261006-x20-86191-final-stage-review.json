@@ -1,0 +1,395 @@
+{
+  "job_id": 86191,
+  "git_commit": "4b02b0865ed45103770a6ecf63638c9696bd0a62",
+  "run": "outputs/hpc/x20-85889-chord-reuse-resource-20261006",
+  "received": "outputs/review-20260925/x20-chord-reuse-resource-86191-received",
+  "terminal": {
+    "job_id": "86191",
+    "state": "COMPLETED",
+    "terminal": true,
+    "successful": true,
+    "scontrol": "JobId=86191 JobName=tde-x20-chord-reuse-resource UserId=pb24511938(68764) GroupId=pb24511938(68764) MCS_label=N/A Priority=1 Nice=0 Account=stu QOS=qos_stu_default JobState=COMPLETED Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:04:05 TimeLimit=00:30:00 TimeMin=N/A SubmitTime=2026-10-06T19:48:01 EligibleTime=2026-10-06T19:48:01 AccrueTime=2026-10-06T19:48:01 StartTime=2026-10-06T19:48:02 EndTime=2026-10-06T19:52:07 Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-06T19:48:02 Scheduler=Main Partition=Students AllocNode:Sid=tradmin-02:2940536 ReqNodeList=(null) ExcNodeList=(null) NodeList=anode03 BatchHost=anode03 NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=4,mem=16G,node=1,billing=4 AllocTRES=cpu=4,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85889_chord_reuse_resource.sbatch SubmitLine=sbatch --parsable operations/x20_85889_chord_reuse_resource.sbatch WorkDir=/home/scc/pb24511938/eccentric-tde-observer StdErr=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-chord-reuse-resource-86191.err StdIn=/dev/null StdOut=/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/tde-x20-chord-reuse-resource-86191.out TresPerTask=cpu=4\n",
+    "observed_unix": 1791287531.4390402
+  },
+  "summary": {
+    "finished": {
+      "status": "reuse_resource_complete_requires_review",
+      "wall_s": 242.35393422469497,
+      "peak_rss_bytes": 2356056064,
+      "scheduler_terminal_verified": false,
+      "full_scan_authorized": false
+    },
+    "child": {
+      "job_id": "86191",
+      "child_exit_status": 0,
+      "recorded_unix": 1791287527.908244,
+      "scheduler_terminal_verified": false,
+      "meaning": "Python child shell wait status, not Slurm terminal"
+    },
+    "phases": [
+      {
+        "name": "allocation-code-history",
+        "start_s": 0.007804710417985916,
+        "end_s": 14.58969483524561,
+        "seconds": 14.581890124827623,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 32505856
+      },
+      {
+        "name": "binding-before",
+        "start_s": 14.61143123358488,
+        "end_s": 20.36989075690508,
+        "seconds": 5.758459523320198,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 95698944
+      },
+      {
+        "name": "live-before",
+        "start_s": 20.371399480849504,
+        "end_s": 31.569240033626556,
+        "seconds": 11.197840552777052,
+        "payload_bytes": 303877902,
+        "payload_bytes_per_second": 27137187.796859514,
+        "cumulative_peak_rss_bytes": 321220608
+      },
+      {
+        "name": "field-hash-before",
+        "start_s": 31.573775462806225,
+        "end_s": 125.10200001299381,
+        "seconds": 93.52822455018759,
+        "payload_bytes": 60599304192,
+        "payload_bytes_per_second": 647925313.2778351,
+        "cumulative_peak_rss_bytes": 321220608
+      },
+      {
+        "name": "slice-read-0",
+        "start_s": 125.10556596145034,
+        "end_s": 125.13127516955137,
+        "seconds": 0.025709208101034164,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 1305152296.7232218,
+        "cumulative_peak_rss_bytes": 321220608
+      },
+      {
+        "name": "slice-hash-0",
+        "start_s": 125.13313703984022,
+        "end_s": 125.1661051698029,
+        "seconds": 0.032968129962682724,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 321220608
+      },
+      {
+        "name": "slice-read-1",
+        "start_s": 125.16750516369939,
+        "end_s": 125.19098887592554,
+        "seconds": 0.02348371222615242,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 1428838493.5424483,
+        "cumulative_peak_rss_bytes": 321220608
+      },
+      {
+        "name": "slice-hash-1",
+        "start_s": 125.1925909370184,
+        "end_s": 125.2254841402173,
+        "seconds": 0.03289320319890976,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 321220608
+      },
+      {
+        "name": "slice-read-2",
+        "start_s": 125.22710547596216,
+        "end_s": 125.25035393983126,
+        "seconds": 0.02324846386909485,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 1443296735.1707613,
+        "cumulative_peak_rss_bytes": 321220608
+      },
+      {
+        "name": "slice-hash-2",
+        "start_s": 125.25219140946865,
+        "end_s": 125.28509548306465,
+        "seconds": 0.03290407359600067,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 321220608
+      },
+      {
+        "name": "slice-read-3",
+        "start_s": 125.2868774458766,
+        "end_s": 125.30997751653194,
+        "seconds": 0.023100070655345917,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 1452568370.9211812,
+        "cumulative_peak_rss_bytes": 321220608
+      },
+      {
+        "name": "slice-hash-3",
+        "start_s": 125.31154549866915,
+        "end_s": 125.34443837031722,
+        "seconds": 0.032892871648073196,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 321220608
+      },
+      {
+        "name": "slice-read-4",
+        "start_s": 125.3462307266891,
+        "end_s": 125.37119150906801,
+        "seconds": 0.024960782378911972,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 1344286068.0660532,
+        "cumulative_peak_rss_bytes": 333938688
+      },
+      {
+        "name": "slice-hash-4",
+        "start_s": 125.3727988936007,
+        "end_s": 125.40570877864957,
+        "seconds": 0.03290988504886627,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 333938688
+      },
+      {
+        "name": "slice-read-5",
+        "start_s": 125.40725727006793,
+        "end_s": 125.43005799502134,
+        "seconds": 0.02280072495341301,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 1471638821.5093696,
+        "cumulative_peak_rss_bytes": 367493120
+      },
+      {
+        "name": "slice-hash-5",
+        "start_s": 125.4318304695189,
+        "end_s": 125.4647281691432,
+        "seconds": 0.0328976996243,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 367493120
+      },
+      {
+        "name": "slab",
+        "start_s": 125.46654953062534,
+        "end_s": 145.04423262551427,
+        "seconds": 19.577683094888926,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 2356056064
+      },
+      {
+        "name": "slice-reread-0",
+        "start_s": 145.04680886492133,
+        "end_s": 145.10418094322085,
+        "seconds": 0.0573720782995224,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 584856484.1040337,
+        "cumulative_peak_rss_bytes": 2356056064
+      },
+      {
+        "name": "slice-reread-1",
+        "start_s": 145.10592016205192,
+        "end_s": 145.16243510693312,
+        "seconds": 0.05651494488120079,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 593726704.8660184,
+        "cumulative_peak_rss_bytes": 2356056064
+      },
+      {
+        "name": "slice-reread-2",
+        "start_s": 145.16406924650073,
+        "end_s": 145.2204026505351,
+        "seconds": 0.056333404034376144,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 595640057.1768074,
+        "cumulative_peak_rss_bytes": 2356056064
+      },
+      {
+        "name": "slice-reread-3",
+        "start_s": 145.22184792160988,
+        "end_s": 145.2778710834682,
+        "seconds": 0.056023161858320236,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 598938561.9622376,
+        "cumulative_peak_rss_bytes": 2356056064
+      },
+      {
+        "name": "slice-reread-4",
+        "start_s": 145.27947142347693,
+        "end_s": 145.33705546334386,
+        "seconds": 0.057584039866924286,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 582703681.0467572,
+        "cumulative_peak_rss_bytes": 2356056064
+      },
+      {
+        "name": "slice-reread-5",
+        "start_s": 145.33870543166995,
+        "end_s": 145.3948088735342,
+        "seconds": 0.05610344186425209,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 598081523.789366,
+        "cumulative_peak_rss_bytes": 2356056064
+      },
+      {
+        "name": "field-hash-after",
+        "start_s": 145.3989756628871,
+        "end_s": 221.282831273973,
+        "seconds": 75.88385561108589,
+        "payload_bytes": 60599304192,
+        "payload_bytes_per_second": 798579667.6249412,
+        "cumulative_peak_rss_bytes": 2356056064
+      },
+      {
+        "name": "binding-after",
+        "start_s": 221.30268497392535,
+        "end_s": 226.52309624105692,
+        "seconds": 5.220411267131567,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 2356056064
+      },
+      {
+        "name": "live-after",
+        "start_s": 226.52463331446052,
+        "end_s": 234.58219008892775,
+        "seconds": 8.05755677446723,
+        "payload_bytes": 303877902,
+        "payload_bytes_per_second": 37713405.006704725,
+        "cumulative_peak_rss_bytes": 2356056064
+      },
+      {
+        "name": "code-after",
+        "start_s": 234.58344515413046,
+        "end_s": 242.34626189991832,
+        "seconds": 7.762816745787859,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 2356056064
+      },
+      {
+        "name": "comparison",
+        "start_s": 242.34773347899318,
+        "end_s": 242.34920886158943,
+        "seconds": 0.0014753825962543488,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 2356056064
+      }
+    ],
+    "comparison": {
+      "complete_slab_exact": true,
+      "decimal_strings_and_zero_sign_preserved": true,
+      "physical_validation": false,
+      "full_scan_authorized": false
+    },
+    "kernel_calls": 1,
+    "arithmetic": {
+      "rounding_mode_code": 0,
+      "nmant": 63,
+      "maxexp": 16384,
+      "numpy": "2.5.2"
+    },
+    "payload": {
+      "field_bytes_read": 121601261568,
+      "archive_bytes_read": 607755804,
+      "historical_bytes_read": 66216,
+      "code_bytes_read": 27810824
+    },
+    "external_raw_observation_verified": true,
+    "logs": {
+      "tde-x20-chord-reuse-resource-86191.out": 0,
+      "tde-x20-chord-reuse-resource-86191.err": 0
+    },
+    "20261006-x20-86191-external-terminal.json": {
+      "size_bytes": 1667,
+      "sha256": "b3f7462b9050fe2c52de17b4aa641a665075de9734868efd1b8e5a62fd8ecf28"
+    },
+    "20261006-x20-86191-external-observation.json": {
+      "size_bytes": 1613,
+      "sha256": "4f0a38bc46ba69915fffe5690285c2ee4dc4ccd6615012965b02165cf74c1981"
+    }
+  },
+  "review": {
+    "status": "reuse_resource_small_evidence_consistent",
+    "decimal_precision": 80,
+    "comparison": {
+      "complete_slab_exact": true,
+      "decimal_strings_and_zero_sign_preserved": true,
+      "physical_validation": false,
+      "full_scan_authorized": false
+    },
+    "field_bytes_read": 121601261568,
+    "production_resource_preflight_complete": true,
+    "full_scan_authorized": false,
+    "physical_validation": false,
+    "strict_error_bound": false,
+    "scheduler_terminal_verified": true,
+    "job_id": "86191",
+    "git_commit": "4b02b0865ed45103770a6ecf63638c9696bd0a62",
+    "archive_bytes_read": 607755804
+  },
+  "artifacts": [
+    {
+      "path": "outputs/review-20260925/86191-chord-reuse-resource-review.tar.gz",
+      "size_bytes": 310578,
+      "sha256": "21c0a65891a5cd1a9b4556398f1d718743b0736107f44d57959c296cf209a3dc"
+    },
+    {
+      "path": "outputs/review-20260925/86191-chord-reuse-resource-review.tar.receipt.json",
+      "size_bytes": 8095,
+      "sha256": "e89a07f0ad2e9c3939ee6641847320599a20228317caae9a0363ae13394b8044"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-86191-external-observation.json",
+      "size_bytes": 1613,
+      "sha256": "4f0a38bc46ba69915fffe5690285c2ee4dc4ccd6615012965b02165cf74c1981"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-chord-reuse-production-code-freeze-final.json",
+      "size_bytes": 272207,
+      "sha256": "d5d6b8606f51a7aeabc262a02f75602f8c65f2795b6be4655ee6c490e9c8c28d"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-chord-reuse-production-binding.json",
+      "size_bytes": 208077,
+      "sha256": "7fe42b91067900c7c4f98beb34ea56dbd13dc4917afb02219bc3bb7984f56ef6"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-chord-reuse-resource-launch-receipt.json",
+      "size_bytes": 697,
+      "sha256": "92f2c5be008416925a5e6d733e4ff8d242ca88acb14672fac96beb4d312a52ef"
+    }
+  ],
+  "source_stat_matches_fixed_86061": true,
+  "production_resource_verified": true,
+  "controlled_speedup_measured": false,
+  "full_field_statistics_complete": false,
+  "full_scan_authorized": false,
+  "resource_budget_closed": true,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_material": 0,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "mac_large_field_bytes_read": 0,
+  "dat_downloads": 0,
+  "backups": {
+    "mac": {
+      "path": "outputs/review-20260925/pre-x20-86191-review-20261006.bundle",
+      "size_bytes": 25998136,
+      "sha256": "c4da234390f049fe5ada677976cf0d2b40fb6273cc3783b1b0ea25ac64554b86"
+    },
+    "school": {
+      "path": "outputs/review-20260925/pre-x20-86191-review-20261006.bundle",
+      "size_bytes": 25971847,
+      "verify_log": "outputs/review-20260925/20261006-x20-86191-school-backup.log"
+    }
+  },
+  "next_decision": "Do not submit complete 301-slab scan. Audit remaining ordered product/reduction and scratch allocation costs read-only; any new implementation must preserve binary64/longdouble expression/reduction order and pass two-platform independent numerical checks before a separate bounded resource decision."
+}
