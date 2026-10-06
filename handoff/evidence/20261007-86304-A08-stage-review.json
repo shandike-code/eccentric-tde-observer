@@ -1,0 +1,23 @@
+{
+  "review_passed": true,
+  "tracked_code_count": 1696,
+  "explicit_code_count": 818,
+  "window_r20_max": [
+    1.6275517385501242e-05,
+    6.573605785293889e-05,
+    1.0979118772571572e-05
+  ],
+  "window_signal_max": [
+    0.004540077316224964,
+    0.011062735649054899,
+    0.0018567107129877564
+  ],
+  "lecture_prefix_bytes": 494395,
+  "lecture_prefix_sha256": "32fb2e7316e4075fa9885b74b9d0fa4c49e380c6cc04b33e56112806044cf22a",
+  "lecture_prefix_unchanged": true,
+  "numerical_code_changed": false,
+  "real_partial_e2e_passed": true,
+  "tests_not_repeated": true,
+  "relaxed_consistency_pass": null,
+  "school_checkout_unchanged": true
+}

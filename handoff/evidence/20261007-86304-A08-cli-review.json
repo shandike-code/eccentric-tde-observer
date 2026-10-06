@@ -1,0 +1,10 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "scope": "supplied partial audit facts, not complete source audit",
+  "corrections": [
+    "Max-cell is maximum cell Euclidean norm over four encoded components, not maximum element.",
+    "Four-combination maximum is only the maximum of these observed comparisons; it is not an upper bound on remaining error.",
+    "previous/final are endpoints in each feedback pair, not two separate branch histories."
+  ],
+  "independent_audit_pass": true
+}
