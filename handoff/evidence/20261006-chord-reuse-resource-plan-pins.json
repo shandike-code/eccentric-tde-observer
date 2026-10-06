@@ -1,0 +1,127 @@
+{
+  "status": "resource_protocol_historical_small_sources_rehashed",
+  "artifacts": [
+    {
+      "path": "outputs/review-20260925/x20-chord-resource-86061-received/probe.json",
+      "size_bytes": 26348,
+      "sha256": "7ef2572f2b4008f2af9900fd21f6e3f288dd1aa1d9fd7292e4716ffdd4290324"
+    },
+    {
+      "path": "outputs/review-20260925/x20-chord-resource-86061-received/result.json",
+      "size_bytes": 37696,
+      "sha256": "e56b0b4ec22826e15350dc8be9f464dd166a937bc7b7d62d8eef889b7180c6c2"
+    },
+    {
+      "path": "outputs/review-20260925/x20-chord-resource-86061-received/scheduler-terminal.json",
+      "size_bytes": 1652,
+      "sha256": "b2f1c80da309801f8c7359b0f3e1292118de74b9b5b67cf39ca691b6dea2b655"
+    },
+    {
+      "path": "handoff/evidence/20261006-x20-86061-resource-review.json",
+      "size_bytes": 520,
+      "sha256": "506afc8e4d7584c29babe554c2a5681e06d60a2effac81f2b57165339d51863c"
+    },
+    {
+      "path": "handoff/evidence/20261006-x20-86061-final-stage-review.json",
+      "size_bytes": 5686,
+      "sha256": "838e50a755fa783e03f5da79857d9b710dbdde587676c0c7f5bf1bb84130c210"
+    },
+    {
+      "path": "operations/x20_85889_chord_scan.py",
+      "size_bytes": 9605,
+      "sha256": "9349c255b35c515fd37e7903a120ebed753e9c517c9381b402d4184d450a1643"
+    },
+    {
+      "path": "operations/x20_85889_chord_scan_reuse.py",
+      "size_bytes": 5516,
+      "sha256": "a4b6b5b07eaaa457b5b5aa2cd726597f2476c78c7d2b3937810b6551fe0594a6"
+    },
+    {
+      "path": "operations/x20_85889_chord_resource_v2.py",
+      "size_bytes": 6769,
+      "sha256": "5e9b37ea36c8891d6ddc6ea8d7baeac3bb7d20e0ac9fe31be0ac344784848a07"
+    },
+    {
+      "path": "operations/x20_85889_chord_resource.py",
+      "size_bytes": 7805,
+      "sha256": "893a19268fa711f6e76793a593463dae8f972d21fe7ea504905b0debbe835ea2"
+    },
+    {
+      "path": "operations/x20_85889_chord_live.py",
+      "size_bytes": 7103,
+      "sha256": "c54edc7c06993ec5491d4e7a6faf3da1f51a9bc1c2cd8db5122d264d094cf8a0"
+    },
+    {
+      "path": "operations/x20_85889_chord_receipt_v2.py",
+      "size_bytes": 4432,
+      "sha256": "141ab5f94136f3b2cf03fbcc911722e628b24417c97db28571b5b2ed1baac2d8"
+    },
+    {
+      "path": "handoff/audit_tools/review_x20_85889_chord_resource_v2.py",
+      "size_bytes": 6617,
+      "sha256": "3063f1b994c923e76ac8d80b75b57ced1dcd996fd1f5aa3ca954e8213da9c99a"
+    },
+    {
+      "path": "handoff/audit_tools/review_x20_85889_chord_resource.py",
+      "size_bytes": 3866,
+      "sha256": "c6b59e8ddab82c3fceec7836c9afb94dfa6ac1d36af279b5b9659e9416b78952"
+    },
+    {
+      "path": "outputs/review-20260925/86061-chord-resource-v2-review.tar.gz",
+      "size_bytes": 126643,
+      "sha256": "077e156eec787d6d871689d34a895c0b5e2013f3444e76ed0be99da6f0aa3e38"
+    }
+  ],
+  "old_probe_arithmetic": {
+    "rounding_mode_code": 0,
+    "nmant": 63,
+    "maxexp": 16384,
+    "numpy": "2.5.2"
+  },
+  "old_probe_seconds": 26.20669498667121,
+  "source_claims": [
+    {
+      "path": "/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/x20-85875-matched-feedback-20261006/accelerated/endpoints-map16/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "fb37bbe0e023a07683a1ad873a00d84962bd2097a4604d61e85bcd0f0307220f"
+    },
+    {
+      "path": "/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/x20-85875-matched-feedback-20261006/accelerated/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "780b95182cf356d75f91c9e96773e1c5f45f30f9125d2a1978cf44c37aaa5a1d"
+    },
+    {
+      "path": "/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/x20-85875-matched-feedback-20261006/accelerated/endpoints-map16/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "3f6c898f765e9854e378579f0f2fdc65fabe4def2f09d2a9554a4334d1a827b7"
+    },
+    {
+      "path": "/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/x20-85875-matched-feedback-20261006/historical/endpoints-map16/previous.dat",
+      "size_bytes": 10099884032,
+      "sha256": "aff1f860167b48c691719274bf5e52b6b804b9e00b63b33d8f307dea75fa1685"
+    },
+    {
+      "path": "/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/x20-85875-matched-feedback-20261006/historical/endpoints-map16/final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "611b95010a339ab366c151220781412a31500dc62d4fdc26be5355d803bfe752"
+    },
+    {
+      "path": "/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/x20-85875-matched-feedback-20261006/historical/endpoints-map16/mapped_final.dat",
+      "size_bytes": 10099884032,
+      "sha256": "6e10ec8904295909314a8cfa9022f541d0875209d4a42397d28e47728eed59eb"
+    }
+  ],
+  "slice_sha256": [
+    "15af0002ac7e2558b0c6ea390d19c1b6d5fd7e213d1e23f3d8845689b930038d",
+    "ebe10ce7dea2853038b0b09bcf17e44a16950cfa55c0925c73f9f96e3d5045e4",
+    "15af0002ac7e2558b0c6ea390d19c1b6d5fd7e213d1e23f3d8845689b930038d",
+    "15af0002ac7e2558b0c6ea390d19c1b6d5fd7e213d1e23f3d8845689b930038d",
+    "ebe10ce7dea2853038b0b09bcf17e44a16950cfa55c0925c73f9f96e3d5045e4",
+    "15af0002ac7e2558b0c6ea390d19c1b6d5fd7e213d1e23f3d8845689b930038d"
+  ],
+  "old_result_probe_equal": true,
+  "real_field_bytes_read": 0,
+  "new_jobs": 0,
+  "numerical_review_rerun": false,
+  "submission_ready": false
+}

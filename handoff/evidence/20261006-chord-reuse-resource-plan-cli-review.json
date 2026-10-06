@@ -1,0 +1,22 @@
+{
+  "scope": "protocol design review and lecture draft, not executable driver or numerical audit",
+  "actual_models": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "wall_s": 30.509815874975175,
+  "accepted": [
+    "same hashed immutable buffer and same descriptor fed to statistics",
+    "explicit strict JSON key/type/nonfinite and zero-sign rules",
+    "external observer receipt and submission expected_job_id",
+    "record stage payload rates without assumed throughput"
+  ],
+  "corrected": [
+    "kernel implementation has changed; mismatches are not exclusively environment or serialization",
+    "stage byte-second quotas and guaranteed sustained device throughput are not prerequisites to a bounded failing probe",
+    "300 seconds does not guarantee cleanup of blocking I/O",
+    "all slab key sets were already required; final protocol clarifies strict parsing"
+  ],
+  "decision": "DO NOT RUN production; implement and validate separately",
+  "new_slurm": 0,
+  "real_dat_reads": 0
+}

@@ -1,0 +1,103 @@
+{
+  "stage": "reuse_resource_protocol_design_and_review_complete",
+  "source_commit": "94c0d58a90ce6037f667b8e7bc387572c9935f24",
+  "school_commit": "82aea66f68dd9f1abc27a8268ffd5e1bfa34f418",
+  "school_clean": true,
+  "school_production_synchronized": false,
+  "executable_code_changed": false,
+  "new_driver_implemented": false,
+  "new_driver_tested": false,
+  "new_tests_run": 0,
+  "historical_small_source_rehash_complete": true,
+  "old_result_probe_equal": true,
+  "old_numeric_review_rerun": false,
+  "live_native_recomputed": false,
+  "large_field_sha_refreshed": false,
+  "old_artifact_pins_rechecked": true,
+  "proposed_single_job_budget": {
+    "cpus": 4,
+    "memory_gib": 16,
+    "slurm_seconds": 1800,
+    "program_seconds": 1500,
+    "rss_bytes_strictly_less_than": 6442450944,
+    "field_payload_bytes": 121601261568,
+    "archive_payload_bytes": 607755804,
+    "first_group": 0,
+    "group_count": 32,
+    "slab_calls": 1
+  },
+  "budget_granted": false,
+  "submission_ready": false,
+  "decision": "DO NOT RUN production; implement explicit driver and independent reviewer, then two-platform validation and full PRE-RUN",
+  "new_slurm": 0,
+  "real_dat_reads": 0,
+  "real_dat_downloads": 0,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_ode": 0,
+  "new_material": 0,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "full_scan_authorized": false,
+  "physical_validation": false,
+  "lecture_prefix": {
+    "size_bytes": 456502,
+    "sha256": "95404483eecae5a3b30b174aec08bfed32b4614f68445b9de9bbbbf3f0f6875f"
+  },
+  "lecture_prefix_unchanged": true,
+  "format_check_pass": true,
+  "diff_check_pass": true,
+  "cli_actual_model": "deepseek-v4-flash[1m]",
+  "cli_seconds": 30.509815874975175,
+  "cli_scope": "full protocol prose, no tools, no source execution or new kernel source audit",
+  "backups": {
+    "name": "pre-chord-reuse-resource-plan-20261006.bundle",
+    "mac_bytes": 25953849,
+    "school_bytes": 25850357,
+    "both_verified": true
+  },
+  "artifacts": [
+    {
+      "path": "handoff/protocols/x20-86061-chord-reuse-resource-v1.md",
+      "size_bytes": 10887,
+      "sha256": "784e30cd6d8221403cf13a495587785dd0f5e9e7da3eefd2bd3526ca0285541d"
+    },
+    {
+      "path": "handoff/linux-runs/2026-10-06-x20-86061-reuse-resource-plan.md",
+      "size_bytes": 5447,
+      "sha256": "8332cbea137ddc9ba6cdd98ed90d17f419ec96392eb6450c87907811da7f7643"
+    },
+    {
+      "path": "handoff/evidence/20261006-chord-reuse-resource-plan-pins.json",
+      "size_bytes": 5248,
+      "sha256": "8d179c251d5a0105f89ff135be2f7a9d8810f2437481e0e5ad5a97250102be2c"
+    },
+    {
+      "path": "handoff/evidence/20261006-chord-reuse-resource-plan-cli-draft.json",
+      "size_bytes": 2892,
+      "sha256": "0c977f04b398847650eba575378202c8e29ff9d306412dcd18d0621a9d99cee2"
+    },
+    {
+      "path": "handoff/evidence/20261006-chord-reuse-resource-plan-cli-review.json",
+      "size_bytes": 984,
+      "sha256": "8e75a3de4b8ace56e71cf8e4a7ea32b42a852fb30b5ebedbb93e2b979792ac84"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-reuse-resource-plan-school-state.log",
+      "size_bytes": 41,
+      "sha256": "dd0db75dc60b6fd962eb0c220ad2611a4bd01278d7b1eb2feaa760ee51e72481"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-reuse-resource-plan-mac-backup.log",
+      "size_bytes": 873,
+      "sha256": "59864f2b04714d590feca0a6d582a67ab588f93467a9b8aee8a6cd9c96f2d7aa"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-reuse-resource-plan-school-backup.log",
+      "size_bytes": 11842,
+      "sha256": "e2e0051d0423d4f74b62b4eb0c65244c2bedd9f9b3ae8235a8517587fbc2b3d7"
+    }
+  ]
+}
