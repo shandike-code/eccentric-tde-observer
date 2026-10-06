@@ -1,0 +1,15 @@
+{
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "raw_preserved": true,
+  "lecture_section": 146,
+  "corrections": [
+    "Fixed dt and rho; Q varies between endpoints.",
+    "Ratios to r20 and signal fail, not raw r20 itself.",
+    "Cross16 five-rate pass is not the only prior five-rate pass; cross8 and within-pair results remain.",
+    "Mass coordinate is the abscissa; norm-squared cell share is a separate ordinate.",
+    "Volume-L1 pass alone does not imply material-response pass; do not assert no possible relationship at all.",
+    "Algebraic identity is a definition checked numerically; no causal experiment or rigorous rounding bound."
+  ]
+}

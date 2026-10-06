@@ -1,0 +1,708 @@
+{
+  "job_id": 85889,
+  "stage": "stored_array_energy_encoding_diagnostic",
+  "numerical_commit": "9555a78a77b9025e30405684dee2669d9e43baee",
+  "review_parent_commit": "6fc4aa20d7884a8aba5f69bed8f9b2c2b60ebfe0",
+  "scope": "stored-array algebra only; 8 endpoints, 16 comparisons; no ODE or large field recomputation",
+  "source_final_audit": {
+    "path": "handoff/evidence/20261006-x20-85889-final-review.json",
+    "sha256": "61eaea4db3ba0fb87adce29c13ab42bc1f158068e634e9798b67ddc3d16c2729"
+  },
+  "small_npz_claims": 17,
+  "code_files": 6,
+  "endpoint_checks": {
+    "accelerated8_previous": {
+      "target_energy_symmetric_relative_error": 1.6846735132978e-16,
+      "recovered_energy_symmetric_relative_error": 8.768066197231722e-17,
+      "codec_max_abs_error": 0.0,
+      "minimum_gas_erg_g": 7022808217897.866
+    },
+    "accelerated8_final": {
+      "target_energy_symmetric_relative_error": 1.4103375720812525e-16,
+      "recovered_energy_symmetric_relative_error": 9.177633766405577e-17,
+      "codec_max_abs_error": 3.552713678800501e-15,
+      "minimum_gas_erg_g": 7022807224687.311
+    },
+    "accelerated16_previous": {
+      "target_energy_symmetric_relative_error": 1.4100623555104102e-16,
+      "recovered_energy_symmetric_relative_error": 9.050046756619033e-17,
+      "codec_max_abs_error": 3.552713678800501e-15,
+      "minimum_gas_erg_g": 7022800011888.361
+    },
+    "accelerated16_final": {
+      "target_energy_symmetric_relative_error": 1.832614712495347e-16,
+      "recovered_energy_symmetric_relative_error": 1.4006504121462176e-16,
+      "codec_max_abs_error": 3.552713678800501e-15,
+      "minimum_gas_erg_g": 7022798985935.834
+    },
+    "historical8_previous": {
+      "target_energy_symmetric_relative_error": 1.591908817322566e-16,
+      "recovered_energy_symmetric_relative_error": 9.512001131661782e-17,
+      "codec_max_abs_error": 3.552713678800501e-15,
+      "minimum_gas_erg_g": 7023124687404.698
+    },
+    "historical8_final": {
+      "target_energy_symmetric_relative_error": 1.4134308577942653e-16,
+      "recovered_energy_symmetric_relative_error": 9.177633427960425e-17,
+      "codec_max_abs_error": 3.552713678800501e-15,
+      "minimum_gas_erg_g": 7023128853130.31
+    },
+    "historical16_previous": {
+      "target_energy_symmetric_relative_error": 9.162947078975835e-17,
+      "recovered_energy_symmetric_relative_error": 1.0347624637164776e-16,
+      "codec_max_abs_error": 0.0,
+      "minimum_gas_erg_g": 7023149045876.733
+    },
+    "historical16_final": {
+      "target_energy_symmetric_relative_error": 9.162946646847369e-17,
+      "recovered_energy_symmetric_relative_error": 9.050046284220119e-17,
+      "codec_max_abs_error": 3.552713678800501e-15,
+      "minimum_gas_erg_g": 7023150758957.287
+    }
+  },
+  "comparison_summaries": {
+    "cross8": {
+      "previous_vs_previous": {
+        "norms": [
+          0.021855419185769775,
+          0.0028060005000503205,
+          0.004671638233033591
+        ],
+        "over_r20": [
+          0.002674425066958682,
+          0.010713588619081177,
+          0.0017270374508699259
+        ],
+        "over_signal": [
+          0.7460344450406914,
+          1.8029921874957606,
+          0.29206432712724834
+        ],
+        "energy_identity_error": 4.018513864922427e-16,
+        "log_identity_max_abs_error": 4.238129107441413e-15,
+        "gas_component_fraction": 0.999785825402183,
+        "heating_log_mass_norm": 0.002805699997188439,
+        "ionization_log_mass_norm": 2.0608005364803066e-12,
+        "gas_log_mass_norm": 0.0028056999969451393,
+        "ionization_to_gas_log_mass_norm": 7.34504950181458e-10,
+        "heating_to_gas_log_mass_norm": 1.0000000000867162,
+        "cross_term_mass_mean": -1.3659581727600476e-15,
+        "atomic_heating_volume_l1": 0.000694310915841873,
+        "top5_cells": [
+          126,
+          125,
+          127,
+          124,
+          123
+        ],
+        "top5_mass_norm_squared_fraction": 0.2607278397379048
+      },
+      "final_vs_previous": {
+        "norms": [
+          0.021797543994352804,
+          0.0027986801776449075,
+          0.00465910315398637
+        ],
+        "over_r20": [
+          0.002667342939575769,
+          0.010685638901036139,
+          0.0017224034124696305
+        ],
+        "over_signal": [
+          0.744058876146616,
+          1.7982885232923247,
+          0.2912806514133358
+        ],
+        "energy_identity_error": 2.889092119270451e-16,
+        "log_identity_max_abs_error": 4.903326954397311e-15,
+        "gas_component_fraction": 0.9997862824424927,
+        "heating_log_mass_norm": 0.002798381098361681,
+        "ionization_log_mass_norm": 2.0557744120246074e-12,
+        "gas_log_mass_norm": 0.002798381098118512,
+        "ionization_to_gas_log_mass_norm": 7.346298949084543e-10,
+        "heating_to_gas_log_mass_norm": 1.0000000000868965,
+        "cross_term_mass_mean": -1.3601216789703521e-15,
+        "atomic_heating_volume_l1": 0.000692528202115796,
+        "top5_cells": [
+          126,
+          125,
+          127,
+          124,
+          123
+        ],
+        "top5_mass_norm_squared_fraction": 0.2606888937202521
+      },
+      "previous_vs_final": {
+        "norms": [
+          0.0218711500464035,
+          0.0028080368317641323,
+          0.004675157424053876
+        ],
+        "over_r20": [
+          0.0026763500361229,
+          0.010721363535825978,
+          0.0017283384451647797
+        ],
+        "over_signal": [
+          0.7465714177605071,
+          1.8043006299465323,
+          0.292284342056937
+        ],
+        "energy_identity_error": 2.7739710084745844e-16,
+        "log_identity_max_abs_error": 3.1510550723020528e-15,
+        "gas_component_fraction": 0.9997860191541098,
+        "heating_log_mass_norm": 0.0028077363828860947,
+        "ionization_log_mass_norm": 2.0608602142473604e-12,
+        "gas_log_mass_norm": 0.0028077363826424073,
+        "ionization_to_gas_log_mass_norm": 7.339934856376547e-10,
+        "heating_to_gas_log_mass_norm": 1.0000000000867915,
+        "cross_term_mass_mean": -1.367656372444579e-15,
+        "atomic_heating_volume_l1": 0.0006948074637450962,
+        "top5_cells": [
+          126,
+          125,
+          127,
+          124,
+          123
+        ],
+        "top5_mass_norm_squared_fraction": 0.26074168064902276
+      },
+      "final_vs_final": {
+        "norms": [
+          0.02181327493429521,
+          0.0028007164901964077,
+          0.004662622345452317
+        ],
+        "over_r20": [
+          0.0026692679184449086,
+          0.010693413744617334,
+          0.001723704406929239
+        ],
+        "over_signal": [
+          0.7445958515736325,
+          1.7995969534303766,
+          0.2915006663708867
+        ],
+        "energy_identity_error": 2.753769546300264e-16,
+        "log_identity_max_abs_error": 5.464141930027275e-15,
+        "gas_component_fraction": 0.999786476203838,
+        "heating_log_mass_norm": 0.002800417464668353,
+        "ionization_log_mass_norm": 2.0558339383224704e-12,
+        "gas_log_mass_norm": 0.002800417464424796,
+        "ionization_to_gas_log_mass_norm": 7.341169537895085e-10,
+        "heating_to_gas_log_mass_norm": 1.0000000000869718,
+        "cross_term_mass_mean": -1.361814763186332e-15,
+        "atomic_heating_volume_l1": 0.0006930247014725051,
+        "top5_cells": [
+          126,
+          125,
+          127,
+          124,
+          123
+        ],
+        "top5_mass_norm_squared_fraction": 0.26070280170644144
+      }
+    },
+    "cross16": {
+      "previous_vs_previous": {
+        "norms": [
+          0.02150482135598999,
+          0.0027618552619386983,
+          0.004596262936031925
+        ],
+        "over_r20": [
+          0.0026315227727306727,
+          0.010545037715184037,
+          0.0016991722878802417
+        ],
+        "over_signal": [
+          0.7340667927550498,
+          1.7746267187693767,
+          0.28735196835658366
+        ],
+        "energy_identity_error": 2.894891770955541e-16,
+        "log_identity_max_abs_error": 6.6909672488723135e-15,
+        "gas_component_fraction": 0.9997907062854682,
+        "heating_log_mass_norm": 0.0027615662275821593,
+        "ionization_log_mass_norm": 2.020644628585751e-12,
+        "gas_log_mass_norm": 0.002761566227341241,
+        "ionization_to_gas_log_mass_norm": 7.317023972049264e-10,
+        "heating_to_gas_log_mass_norm": 1.0000000000872398,
+        "cross_term_mass_mean": -1.3318943534326275e-15,
+        "atomic_heating_volume_l1": 0.0006835545442503069,
+        "top5_cells": [
+          126,
+          127,
+          125,
+          124,
+          123
+        ],
+        "top5_mass_norm_squared_fraction": 0.26051093799290015
+      },
+      "final_vs_previous": {
+        "norms": [
+          0.02144393183285074,
+          0.0027541063695447443,
+          0.004582988193231329
+        ],
+        "over_r20": [
+          0.0026240717846890064,
+          0.010515451674354442,
+          0.0016942648064307614
+        ],
+        "over_signal": [
+          0.7319883296874752,
+          1.7696476774442615,
+          0.28652204989320007
+        ],
+        "energy_identity_error": 3.033833388294263e-16,
+        "log_identity_max_abs_error": 3.985973620058163e-15,
+        "gas_component_fraction": 0.999791087251746,
+        "heating_log_mass_norm": 0.0027538186707932685,
+        "ionization_log_mass_norm": 2.015450509918172e-12,
+        "gas_log_mass_norm": 0.00275381867055264,
+        "ionization_to_gas_log_mass_norm": 7.318748076879399e-10,
+        "heating_to_gas_log_mass_norm": 1.0000000000873799,
+        "cross_term_mass_mean": -1.3257229939313783e-15,
+        "atomic_heating_volume_l1": 0.0006816660198819248,
+        "top5_cells": [
+          126,
+          127,
+          125,
+          124,
+          123
+        ],
+        "top5_mass_norm_squared_fraction": 0.26046795361716746
+      },
+      "previous_vs_final": {
+        "norms": [
+          0.02151985807134829,
+          0.0027638038861128966,
+          0.004599630015150042
+        ],
+        "over_r20": [
+          0.0026333628000546577,
+          0.010552477755830923,
+          0.0017004170485930706
+        ],
+        "over_signal": [
+          0.7345800708350634,
+          1.7758788048479008,
+          0.28756247346163727
+        ],
+        "energy_identity_error": 2.6734666452522037e-16,
+        "log_identity_max_abs_error": 5.986468009802838e-15,
+        "gas_component_fraction": 0.999790886081891,
+        "heating_log_mass_norm": 0.0027635148963155863,
+        "ionization_log_mass_norm": 2.020726084511269e-12,
+        "gas_log_mass_norm": 0.002763514896074392,
+        "ionization_to_gas_log_mass_norm": 7.312159190390961e-10,
+        "heating_to_gas_log_mass_norm": 1.000000000087278,
+        "cross_term_mass_mean": -1.33346934083507e-15,
+        "atomic_heating_volume_l1": 0.0006840281375705209,
+        "top5_cells": [
+          126,
+          127,
+          125,
+          124,
+          123
+        ],
+        "top5_mass_norm_squared_fraction": 0.26052453273330667
+      },
+      "final_vs_final": {
+        "norms": [
+          0.02145896842082507,
+          0.0027560549665690977,
+          0.004586355272696341
+        ],
+        "over_r20": [
+          0.0026259117964251466,
+          0.010522891611340525,
+          0.0016955095672718324
+        ],
+        "over_signal": [
+          0.7325016034192386,
+          1.770899746077686,
+          0.286732555019941
+        ],
+        "energy_identity_error": 2.420937754295422e-16,
+        "log_identity_max_abs_error": 3.4340896106806338e-15,
+        "gas_component_fraction": 0.9997912671563701,
+        "heating_log_mass_norm": 0.002755767312203291,
+        "ionization_log_mass_norm": 2.0155318346312345e-12,
+        "gas_log_mass_norm": 0.0027557673119623875,
+        "ionization_to_gas_log_mass_norm": 7.313867995610886e-10,
+        "heating_to_gas_log_mass_norm": 1.000000000087418,
+        "cross_term_mass_mean": -1.3272929692642537e-15,
+        "atomic_heating_volume_l1": 0.0006821395675453245,
+        "top5_cells": [
+          126,
+          127,
+          125,
+          124,
+          123
+        ],
+        "top5_mass_norm_squared_fraction": 0.26048162101900446
+      }
+    },
+    "accelerated_window": {
+      "previous_vs_previous": {
+        "norms": [
+          0.0001237799247465322,
+          1.6000618211522606e-05,
+          2.7606221252282913e-05
+        ],
+        "over_r20": [
+          1.5146821514360504e-05,
+          6.109194961517556e-05,
+          1.0205622867491212e-05
+        ],
+        "over_signal": [
+          0.004225226095209539,
+          0.010281177651237159,
+          0.0017259025704433172
+        ],
+        "energy_identity_error": 4.109998978798524e-16,
+        "log_identity_max_abs_error": 4.798963023473503e-15,
+        "gas_component_fraction": 0.9999659553049179,
+        "heating_log_mass_norm": 1.6000345842254753e-05,
+        "ionization_log_mass_norm": 1.993878432081269e-15,
+        "gas_log_mass_norm": 1.600034584112033e-05,
+        "ionization_to_gas_log_mass_norm": 1.246147084494306e-10,
+        "heating_to_gas_log_mass_norm": 1.0000000000709,
+        "cross_term_mass_mean": -3.8569360829743777e-20,
+        "atomic_heating_volume_l1": 3.899706056214915e-06,
+        "top5_cells": [
+          126,
+          127,
+          125,
+          124,
+          123
+        ],
+        "top5_mass_norm_squared_fraction": 0.2792663453610916
+      },
+      "final_vs_previous": {
+        "norms": [
+          0.00013886502968439728,
+          1.7952399483567876e-05,
+          3.097339895962876e-05
+        ],
+        "over_r20": [
+          1.699277022120557e-05,
+          6.854404437522459e-05,
+          1.1450420027339866e-05
+        ],
+        "over_signal": [
+          0.0047401559528820175,
+          0.011535292319119454,
+          0.0019364138391584098
+        ],
+        "energy_identity_error": 3.6708298759418876e-16,
+        "log_identity_max_abs_error": 4.094463790206636e-15,
+        "gas_component_fraction": 0.9999658722126602,
+        "heating_log_mass_norm": 1.7952093144557036e-05,
+        "ionization_log_mass_norm": 2.207065576741301e-15,
+        "gas_log_mass_norm": 1.7952093143118266e-05,
+        "ionization_to_gas_log_mass_norm": 1.229419633212718e-10,
+        "heating_to_gas_log_mass_norm": 1.000000000080145,
+        "cross_term_mass_mean": -4.818819059684626e-20,
+        "atomic_heating_volume_l1": 4.3747005837623685e-06,
+        "top5_cells": [
+          126,
+          127,
+          125,
+          124,
+          123
+        ],
+        "top5_mass_norm_squared_fraction": 0.2792657527667981
+      },
+      "previous_vs_final": {
+        "norms": [
+          0.00010798858751227379,
+          1.3960941227805194e-05,
+          2.408691866820526e-05
+        ],
+        "over_r20": [
+          1.3214451891013415e-05,
+          5.330426029759888e-05,
+          8.904587329108223e-06
+        ],
+        "over_signal": [
+          0.003686189007434028,
+          0.008970585701381319,
+          0.001505880665941442
+        ],
+        "energy_identity_error": 3.5228575160641143e-16,
+        "log_identity_max_abs_error": 5.359777999894466e-15,
+        "gas_component_fraction": 0.9999658625145577,
+        "heating_log_mass_norm": 1.3960702930787227e-05,
+        "ionization_log_mass_norm": 1.7579722611736178e-15,
+        "gas_log_mass_norm": 1.3960702930057491e-05,
+        "ionization_to_gas_log_mass_norm": 1.2592290445409386e-10,
+        "heating_to_gas_log_mass_norm": 1.0000000000522706,
+        "cross_term_mass_mean": -2.9406838953691355e-20,
+        "atomic_heating_volume_l1": 3.40196307267077e-06,
+        "top5_cells": [
+          126,
+          127,
+          125,
+          124,
+          123
+        ],
+        "top5_mass_norm_squared_fraction": 0.27926677096661673
+      },
+      "final_vs_final": {
+        "norms": [
+          0.00012307392556564262,
+          1.59127293380611e-05,
+          2.7454096377889622e-05
+        ],
+        "over_r20": [
+          1.5060429123961845e-05,
+          6.075638116661534e-05,
+          1.0149384489821394e-05
+        ],
+        "over_signal": [
+          0.004201126822501146,
+          0.010224704763147489,
+          0.0017163919348027355
+        ],
+        "energy_identity_error": 3.0988492847896097e-16,
+        "log_identity_max_abs_error": 4.655278766627599e-15,
+        "gas_component_fraction": 0.9999657797810058,
+        "heating_log_mass_norm": 1.5912457068224482e-05,
+        "ionization_log_mass_norm": 1.973559591812909e-15,
+        "gas_log_mass_norm": 1.5912457067190417e-05,
+        "ionization_to_gas_log_mass_norm": 1.2402607488457284e-10,
+        "heating_to_gas_log_mass_norm": 1.0000000000649847,
+        "cross_term_mass_mean": -3.787434653927007e-20,
+        "atomic_heating_volume_l1": 3.876961630906784e-06,
+        "top5_cells": [
+          126,
+          127,
+          125,
+          124,
+          123
+        ],
+        "top5_mass_norm_squared_fraction": 0.27926581030723613
+      }
+    },
+    "historical_window": {
+      "previous_vs_previous": {
+        "norms": [
+          0.0005411279132850415,
+          6.369519106228495e-05,
+          0.00010298215743548876
+        ],
+        "over_r20": [
+          6.621726371017608e-05,
+          0.0002431945660889438,
+          3.807102215339563e-05
+        ],
+        "over_signal": [
+          0.018471394167835747,
+          0.04092726707079706,
+          0.006438301301849138
+        ],
+        "energy_identity_error": 3.449315841716119e-16,
+        "log_identity_max_abs_error": 5.468134255069551e-15,
+        "gas_component_fraction": 0.9995928285963323,
+        "heating_log_mass_norm": 6.368222231177891e-05,
+        "ionization_log_mass_norm": 4.276368193505991e-14,
+        "gas_log_mass_norm": 6.368222231184861e-05,
+        "ionization_to_gas_log_mass_norm": 6.715167967230844e-10,
+        "heating_to_gas_log_mass_norm": 0.9999999999989055,
+        "cross_term_mass_mean": 9.108191334626948e-21,
+        "atomic_heating_volume_l1": 1.6259774857929876e-05,
+        "top5_cells": [
+          126,
+          125,
+          127,
+          124,
+          123
+        ],
+        "top5_mass_norm_squared_fraction": 0.24587509786237915
+      },
+      "final_vs_previous": {
+        "norms": [
+          0.0006092630242821587,
+          7.182695547339486e-05,
+          0.00011625704275278442
+        ],
+        "over_r20": [
+          7.45548868526024e-05,
+          0.000274242450309333,
+          4.297855628924961e-05
+        ],
+        "over_signal": [
+          0.020797185281172834,
+          0.04615232234200044,
+          0.007268228675178662
+        ],
+        "energy_identity_error": 2.801443997340402e-16,
+        "log_identity_max_abs_error": 3.885362567156772e-15,
+        "gas_component_fraction": 0.9995961062842387,
+        "heating_log_mass_norm": 7.181244878039992e-05,
+        "ionization_log_mass_norm": 4.816239664876189e-14,
+        "gas_log_mass_norm": 7.181244878048742e-05,
+        "ionization_to_gas_log_mass_norm": 6.706691871207764e-10,
+        "heating_to_gas_log_mass_norm": 0.9999999999987816,
+        "cross_term_mass_mean": -3.1631424992169765e-21,
+        "atomic_heating_volume_l1": 1.832861746663581e-05,
+        "top5_cells": [
+          126,
+          125,
+          127,
+          124,
+          123
+        ],
+        "top5_mass_norm_squared_fraction": 0.24641214165629152
+      },
+      "previous_vs_final": {
+        "norms": [
+          0.0004739298069867147,
+          5.587659906510773e-05,
+          9.044685897560875e-05
+        ],
+        "over_r20": [
+          5.7994300864722446e-05,
+          0.00021334240525123377,
+          3.343690263939661e-05
+        ],
+        "over_signal": [
+          0.01617758769750737,
+          0.035903440350924916,
+          0.005654611870562269
+        ],
+        "energy_identity_error": 3.797361672578693e-16,
+        "log_identity_max_abs_error": 6.795331164834185e-15,
+        "gas_component_fraction": 0.9995962699283947,
+        "heating_log_mass_norm": 5.586531839500949e-05,
+        "ionization_log_mass_norm": 3.747715080551721e-14,
+        "gas_log_mass_norm": 5.586531839473552e-05,
+        "ionization_to_gas_log_mass_norm": 6.708482450723645e-10,
+        "heating_to_gas_log_mass_norm": 1.000000000004904,
+        "cross_term_mass_mean": 4.254280471193924e-22,
+        "atomic_heating_volume_l1": 1.4258190464959142e-05,
+        "top5_cells": [
+          126,
+          125,
+          127,
+          124,
+          123
+        ],
+        "top5_mass_norm_squared_fraction": 0.2464476362487695
+      },
+      "final_vs_final": {
+        "norms": [
+          0.0005420801698943237,
+          6.400925873490925e-05,
+          0.00010372174511835663
+        ],
+        "over_r20": [
+          6.633379036767891e-05,
+          0.0002443937076582303,
+          3.83444370804084e-05
+        ],
+        "over_signal": [
+          0.018503899434607507,
+          0.04112907086950501,
+          0.006484539295497918
+        ],
+        "energy_identity_error": 2.539108545226657e-16,
+        "log_identity_max_abs_error": 3.3303784616798412e-15,
+        "gas_component_fraction": 0.9995995034850307,
+        "heating_log_mass_norm": 6.399643970901758e-05,
+        "ionization_log_mass_norm": 4.287625772047782e-14,
+        "gas_log_mass_norm": 6.399643970876234e-05,
+        "ionization_to_gas_log_mass_norm": 6.699787975018748e-10,
+        "heating_to_gas_log_mass_norm": 1.0000000000039886,
+        "cross_term_mass_mean": -1.1384836989637911e-20,
+        "atomic_heating_volume_l1": 1.6327206923518177e-05,
+        "top5_cells": [
+          126,
+          125,
+          127,
+          124,
+          123
+        ],
+        "top5_mass_norm_squared_fraction": 0.24697125362845768
+      }
+    }
+  },
+  "maximum_relative_width_spread_within_parent": 3.91911319142146e-13,
+  "artifacts": [
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-energy-diagnostic.json",
+      "size_bytes": 1472407,
+      "sha256": "c277eff13154ef54b5f210bc829f040d168dcafd4686e75aa1a763911f5b562b"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-energy-cells.csv",
+      "size_bytes": 553922,
+      "sha256": "b97c0728966bac934da11de62b19282265d7ceb50ed473e0cb9d372eae5ed170"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-energy.png",
+      "size_bytes": 166305,
+      "sha256": "f012c9960061dbe0afbfa6de565150d2f32420adcb1a5adce43d851c3198e5e4"
+    }
+  ],
+  "code": [
+    {
+      "path": "handoff/audit_tools/diagnose_x20_85889_energy.py",
+      "sha256": "f4d48f69265fad7195c97ddd4fc990d12f19b9469b8e38dc970c8d8628985703"
+    },
+    {
+      "path": "handoff/audit_tools/plot_x20_85889_energy.py",
+      "sha256": "e8a3a62a04864181bdaf13c9e2cf8ae3ca9a86cfdacf02543a3c68573b47523f"
+    },
+    {
+      "path": "tests/test_x20_85889_energy_diagnostic.py",
+      "sha256": "5381071727b35329b8e4eb489d36064b49dd302fa6ff54d4afba3c827221ef17"
+    }
+  ],
+  "tests": {
+    "passed": 8,
+    "wall_s": 0.64
+  },
+  "first_real_execution": "Text metadata caused numeric isfinite TypeError; log retained; fixed type handling, numeric NaN rejection retained.",
+  "second_real_execution": "passed",
+  "figure_visually_reviewed": true,
+  "csv_rows": 2048,
+  "csv_lf": true,
+  "pre_run": {
+    "Code": "PASS",
+    "Logic": "PASS",
+    "Physics": "WARNING",
+    "Decision": "RUN"
+  },
+  "post_run": {
+    "finite_positive_energy": true,
+    "original_norms_reproduced": true,
+    "energy_encoding_algebra_reproduced": true,
+    "strict_rounding_bound": false
+  },
+  "backup_both_verified": "outputs/review-20260925/pre-85889-energy-diagnostic-20261006.bundle",
+  "backup_bytes": {
+    "mac": 25677980,
+    "school": 25602989
+  },
+  "lecture_section": 146,
+  "old_lecture_prefix_bytes": 427390,
+  "old_lecture_prefix_sha256": "d120a308b8578184c6c8d535bcbb5a9234922bc5459e1f4093593a012fd6c231",
+  "old_lecture_prefix_unchanged": true,
+  "actual_cli_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "new_slurm_submissions": 0,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "not_a_causal_decomposition": true,
+  "decision": "Next inspect all 76 stored feedback blocks and original frequency accumulation. No additional maps, calibration, acceptance21 or resumed job."
+}
