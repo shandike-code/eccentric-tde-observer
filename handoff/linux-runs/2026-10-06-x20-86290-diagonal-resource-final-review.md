@@ -1,0 +1,37 @@
+# 86290：对角共享 version4 首片资源预检最终审阅
+
+Job86290于2026年10月6日23:49:16–23:52:19真实COMPLETED0:0，183秒；anode05/Students/qos_stu_default，单节点4CPU16GiB、线程1。学校冻结68a950fa3b5c6418e4d94f2ba4a1d36ec12c55b3，Mac阶段起点8d5899c8a8ff03b75179dbcffd57d0b08633d678；两端1692份tracked py/sbatch相同。本次独立一次预算已关闭，不恢复、重交、换片或全301片扫描。
+
+## 启动证据与具体决定
+
+先读冻结对角共享资源协议和真实来源前置报告；两端HEAD精确且clean，新完整pre-diagonal-resource-launch-20261006.bundle均verify，Mac26149868B、学校26068751B。1692代码逐大小SHA仍与外部20261006-diagonal-production-code-freeze.json一致；学校队列为空，六场只stat前置与上一阶段相同，四历史JSON固定66216B。沿用前阶段两端384合成及学校生产checkout384/22.13s，不因无源码变动重复测试或旧真实核。
+
+新外部编排器20261006-diagonal-resource-submit.py经只读检查后，实际在学校/tmp/ustc-diagonal-resource-submit-20261006.py执行。首次AST括号不配对在传输/提交前拒绝，首版保留，修复后语法及实际只读前置通过；未改任何tracked数值或封装源码。提交独占目录diagonal-resource-launch-20261006，先保存并fsync意图与请求，sbatch只调用一次，原始stdout/stderr直接落文件，未知结果只调查不重交。实际无SBATCH_*环境覆盖项。6个CHORD exports路径均绝对（expected_commit为固定提交字符串），argv固定为sbatch、--parsable、绝对sbatch路径。
+
+Mac独立binding原字节另送学校，ticket按json-ascii-compact-insertion-order-v1重算code/binding内容摘要，分别29953a424ee68b15ed2f414dcee1873600043d0ab90695d264dbedf75b1b0992和07ecb880b7d77952e15e971d906ef9565958d21c285ab303ab75e7177862ed97。不是随意格式原JSON文件SHA，也未用含不同local_path的学校binding替代。ticket记录脚本1921B/SHA4896f50f043e019802b789ebe80cc0c81f0a0ddb75c21c9631fdc9e37c34d821、commit/run、全部参数、请求/返回时间和新JobId；实际scontrol Command/WorkDir/SubmitTime与started/allocation/terminal对应。SHA或scontrol单项均非密码学执行证明。
+
+具体PRE-RUN Code PASS、Logic PASS、Physics WARNING，Decision RUN仅此一个首32组资源Job：Slurm1800秒，USR1提前300秒，程序严格小于1500秒/RSS严格小于6442450944B。真实来源前置只作为准备证据，Job内仍重新核全部来源和六全SHA。外部只读observer PID201906，目录diagonal-resource-watch-86290，最多2400秒/每10秒，终态即保存退出；没有自动续交或恢复。
+
+## 本次实测与首次完整审阅
+
+程序181.18492660298944秒，峰值RSS2276249600B，childexit0，stdout/stderr均0，无failure。六全场前SHA61.75694387964904秒全部通过后，六首片原句柄读不可变bytes，先hash再frombuffer只读数组，显式新核一次完整统计18.40569040738046秒；之后六原句柄seek重读，再六全场后SHA62.912629161030054秒全部通过。完整slab结构、类型、字典键序、列表和全部十进制字符串含零号与固定86061严格相同，并经过原独立Decimal80全部矩审阅；不是只比缓存键或几个范数。
+
+全部28阶段时间、payload、累计RSS及生命周期核过。前后binding/live分别重核326小源、801原源码、6runtime、两native/trial全数组、old/base/r20、P/F/M链；phase1367、dt889.419892762322、9632组/32方向/4096层/76块均保持。实际114个项目module的file/spec origin及普通文件SHA前后对1692清单核过；来源准备的113与生产的114是不同实际进程观察数，不是硬编码门。NumPy2.5.2、nmant63/maxexp16384、nearest0和warn/warn/ignore/warn策略保持。解释器/NumPy环境路径另列。
+
+field逻辑payload121601261568B，archive607755804B，历史66216B，code28097820B；其他小源/runtime读取另计，不是设备I/O。live前后13.116785915568471/1.3186693992465734秒含native与归档，不能把仅归档分子的速率称设备带宽。只首32/9632组即1/301片有本次统计，其余9600组仅全SHA读取。
+
+本Job内dev/inode/size/mtime_ns/ctime_ns五项前后完全相同。附加汇总首次错误地断言跨节点五项也必须相同而失败；实际本次anode05 dev46、固定86061历史dev47、登录节点dev48，其余四项相同。失败证据extra-stat-assertion-failure.json保留，如实报告跨上下文dev差异；没有改生产协议/审阅器，也不声称历史五项完全相同。
+
+外部observer在1791301945.804902保存实际终态。原始observation的rc0/stdout/时间与terminal一致，包内terminal和batch-exit是外部原件原字节副本；原件保留。finished及batch的scheduler_terminal_verified=false只表示程序不自证调度，与外部已证COMPLETED0:0不矛盾。52普通JSON/日志小包86290-chord-diagonal-resource-review.tar.gz压缩329899B，SHA d2763388cf85c881c0ce8f27d5238bffba277202c8eb9ea902df8b6c8d2cfd48，先核整包与每成员大小SHA再独占收于x20-chord-diagonal-resource-86290-received；无dat/链接/重名。
+
+Mac独立review_run首次实际E2E通过，使用外部code、Mac binding、当次ticket、实际terminal及expected_job_id86290/expected_commit68a950fa；CLI自身项目origin前后核过，未导入数值扫描器或读取大场/native/ODE。审计为handoff/evidence/20261006-x20-86290-resource-review.json；当次submission、terminal、raw-observation及final-stage-review均保留。此次没有更改任何数值门。
+
+## POST-RUN与下一项
+
+POST-RUN：无日志警告或NaN/Inf/发散证据，原有限量及完整矩数值门通过；资源低于本次上限，几何/物理尺度与来源不变。没有新图或新的物理趋势。production_resource_verified=true仅限本次首片预检，controlled_speedup_measured/full_scan_authorized/physical_validation/strict_error_bound仍false。旧86191的单片19.577683秒和整程序242.353934秒、旧86061的26.206695秒和235.575879秒，只是不同Job/节点/时刻的历史参照；不能把差值归因共享平方或宣称受控加速。单片乘301也只在恒定每片成本假设下供规划，不是全场实测、收敛ETA或严格超时证明。
+
+本次与旧三个Job预算均关闭，全301片DO NOT RUN，不能扩原3300秒/Slurm1小时或再跑新旧核计时。下一项只读审查独立分片并发是否能在保持原单片binary64表达式、完整longdouble归约和确定的全局归并顺序下成立，先形成单独验证约定，明确父子总RSS、失败全停、频组恰好一次和来源/同buffer生命周期；尚未实现、测试或授权该方案，不预设提速。任何新实现/资源实验均需另命名、两端测试、冻结和独立PRE-RUN。
+
+学校无工具CLI实际deepseek-v4-flash[1m]20.119271957781166秒，只看已审事实与小摘要，非完整源码/性能审计。原稿把finished的schedulerfalse误解为实际终态未核、压缩包大小说成员合计、资源验收缩成结构就位、文件stat放到全场统计标题、所有实测时间说成历史比较，均独立纠正，draft/review保留。讲义166追加且旧前缀489268B/SHA14421ab56e9025ea9344f8b3e699b931c53a3dc522838c0f832fb3c8dc6aa89c逐字节保持。
+
+本次0新map/反馈/ODE/物质步，0dat下载或写场。accepted20、baseline_replaced/reference_calibration_eligible/strict_error_bound=false，跨16响应失败/五率通过保持；HHe未完成。

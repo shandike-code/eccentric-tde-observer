@@ -1,0 +1,467 @@
+{
+  "job_id": "86290",
+  "expected_commit": "68a950fa3b5c6418e4d94f2ba4a1d36ec12c55b3",
+  "mac_start_commit": "8d5899c8a8ff03b75179dbcffd57d0b08633d678",
+  "pre_run": {
+    "code": "PASS",
+    "logic": "PASS",
+    "physics": "WARNING",
+    "decision": "RUN",
+    "scope": "one first32 resource Job only; no full scan",
+    "budget_closed": true
+  },
+  "post_run": {
+    "independent_review_run_passed": true,
+    "slurm_completed_zero": true,
+    "child_zero": true,
+    "phases": 28,
+    "failure": false,
+    "stderr_bytes": 0,
+    "finite_numeric_and_decimal_checks_passed": true,
+    "physical_trend_not_inferred": true
+  },
+  "summary": {
+    "job_id": "86290",
+    "finished": {
+      "status": "diagonal_resource_complete_requires_review",
+      "wall_s": 181.18492660298944,
+      "peak_rss_bytes": 2276249600,
+      "scheduler_terminal_verified": false,
+      "full_scan_authorized": false
+    },
+    "child": {
+      "job_id": "86290",
+      "child_exit_status": 0,
+      "recorded_unix": 1791301939.1793141,
+      "scheduler_terminal_verified": false,
+      "meaning": "Python child shell wait status, not Slurm terminal"
+    },
+    "field_payload_bytes": 121601261568,
+    "archive_payload_bytes": 607755804,
+    "code_payload_bytes": 28097820,
+    "history_payload_bytes": 66216,
+    "slab_seconds": 18.40569040738046,
+    "full_hash_seconds_before": 61.75694387964904,
+    "full_hash_seconds_after": 62.912629161030054,
+    "arithmetic": {
+      "rounding_mode_code": 0,
+      "nmant": 63,
+      "maxexp": 16384,
+      "numpy": "2.5.2"
+    },
+    "modules_before": 114,
+    "modules_after": 114,
+    "stat_check": {
+      "within_job_all_five_unchanged": true,
+      "historical_all_five_same": false,
+      "inode_size_mtime_ctime_same": true,
+      "current_dev": [
+        46,
+        46,
+        46,
+        46,
+        46,
+        46
+      ],
+      "history_dev": [
+        47,
+        47,
+        47,
+        47,
+        47,
+        47
+      ],
+      "login_dev": [
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ]
+    },
+    "comparison": {
+      "complete_slab_exact": true,
+      "decimal_strings_and_zero_sign_preserved": true,
+      "physical_validation": false,
+      "full_scan_authorized": false
+    },
+    "phases": [
+      {
+        "name": "allocation-code-history",
+        "start_s": 0.01312500424683094,
+        "end_s": 13.98560274578631,
+        "seconds": 13.972477741539478,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 31457280
+      },
+      {
+        "name": "binding-before",
+        "start_s": 14.003767056390643,
+        "end_s": 19.643581584095955,
+        "seconds": 5.639814527705312,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 89980928
+      },
+      {
+        "name": "live-before",
+        "start_s": 19.64478331618011,
+        "end_s": 32.76156923174858,
+        "seconds": 13.116785915568471,
+        "payload_bytes": 303877902,
+        "payload_bytes_per_second": 23167100.83979671,
+        "cumulative_peak_rss_bytes": 309006336
+      },
+      {
+        "name": "field-hash-before",
+        "start_s": 32.76764240860939,
+        "end_s": 94.52458628825843,
+        "seconds": 61.75694387964904,
+        "payload_bytes": 60599304192,
+        "payload_bytes_per_second": 981254906.4943202,
+        "cumulative_peak_rss_bytes": 309006336
+      },
+      {
+        "name": "slice-read-0",
+        "start_s": 94.53362329117954,
+        "end_s": 94.53680186904967,
+        "seconds": 0.003178577870130539,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 10556429123.63886,
+        "cumulative_peak_rss_bytes": 309006336
+      },
+      {
+        "name": "slice-hash-0",
+        "start_s": 94.53910524584353,
+        "end_s": 94.57217017002404,
+        "seconds": 0.03306492418050766,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 309006336
+      },
+      {
+        "name": "slice-read-1",
+        "start_s": 94.57385976426303,
+        "end_s": 94.57645954750478,
+        "seconds": 0.00259978324174881,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 12906626776.095673,
+        "cumulative_peak_rss_bytes": 309006336
+      },
+      {
+        "name": "slice-hash-1",
+        "start_s": 94.57797149382532,
+        "end_s": 94.61100530438125,
+        "seconds": 0.033033810555934906,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 309006336
+      },
+      {
+        "name": "slice-read-2",
+        "start_s": 94.61289604380727,
+        "end_s": 94.61562612466514,
+        "seconds": 0.002730080857872963,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 12290636705.22295,
+        "cumulative_peak_rss_bytes": 309006336
+      },
+      {
+        "name": "slice-hash-2",
+        "start_s": 94.6172946523875,
+        "end_s": 94.65033305808902,
+        "seconds": 0.03303840570151806,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 309006336
+      },
+      {
+        "name": "slice-read-3",
+        "start_s": 94.65210845135152,
+        "end_s": 94.6556049361825,
+        "seconds": 0.0034964848309755325,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 9596618782.023483,
+        "cumulative_peak_rss_bytes": 309006336
+      },
+      {
+        "name": "slice-hash-3",
+        "start_s": 94.65705526806414,
+        "end_s": 94.69005572609603,
+        "seconds": 0.033000458031892776,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 309006336
+      },
+      {
+        "name": "slice-read-4",
+        "start_s": 94.69181983545423,
+        "end_s": 94.69481373205781,
+        "seconds": 0.0029938966035842896,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 11207612166.642185,
+        "cumulative_peak_rss_bytes": 319991808
+      },
+      {
+        "name": "slice-hash-4",
+        "start_s": 94.69627551361918,
+        "end_s": 94.72928867861629,
+        "seconds": 0.03301316499710083,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 319991808
+      },
+      {
+        "name": "slice-read-5",
+        "start_s": 94.73073231242597,
+        "end_s": 94.73348048329353,
+        "seconds": 0.002748170867562294,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 12209732806.666327,
+        "cumulative_peak_rss_bytes": 353546240
+      },
+      {
+        "name": "slice-hash-5",
+        "start_s": 94.73487525247037,
+        "end_s": 94.76792952977121,
+        "seconds": 0.033054277300834656,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 353546240
+      },
+      {
+        "name": "slab",
+        "start_s": 94.76970268040895,
+        "end_s": 113.17539308778942,
+        "seconds": 18.40569040738046,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 2276249600
+      },
+      {
+        "name": "slice-reread-0",
+        "start_s": 113.17840812541544,
+        "end_s": 113.21463583409786,
+        "seconds": 0.03622770868241787,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 926209059.8703729,
+        "cumulative_peak_rss_bytes": 2276249600
+      },
+      {
+        "name": "slice-reread-1",
+        "start_s": 113.21677970327437,
+        "end_s": 113.25476996041834,
+        "seconds": 0.037990257143974304,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 883237822.6037389,
+        "cumulative_peak_rss_bytes": 2276249600
+      },
+      {
+        "name": "slice-reread-2",
+        "start_s": 113.2564896196127,
+        "end_s": 113.29460478387773,
+        "seconds": 0.03811516426503658,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 880343365.8760278,
+        "cumulative_peak_rss_bytes": 2276249600
+      },
+      {
+        "name": "slice-reread-3",
+        "start_s": 113.29645998775959,
+        "end_s": 113.33488467894495,
+        "seconds": 0.038424691185355186,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 873251832.7379196,
+        "cumulative_peak_rss_bytes": 2276249600
+      },
+      {
+        "name": "slice-reread-4",
+        "start_s": 113.33690533228219,
+        "end_s": 113.37498825788498,
+        "seconds": 0.038082925602793694,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 881088610.4175386,
+        "cumulative_peak_rss_bytes": 2276249600
+      },
+      {
+        "name": "slice-reread-5",
+        "start_s": 113.37686481513083,
+        "end_s": 113.41502956859767,
+        "seconds": 0.03816475346684456,
+        "payload_bytes": 33554432,
+        "payload_bytes_per_second": 879199495.659005,
+        "cumulative_peak_rss_bytes": 2276249600
+      },
+      {
+        "name": "field-hash-after",
+        "start_s": 113.41963301226497,
+        "end_s": 176.33226217329502,
+        "seconds": 62.912629161030054,
+        "payload_bytes": 60599304192,
+        "payload_bytes_per_second": 963229561.3793391,
+        "cumulative_peak_rss_bytes": 2276249600
+      },
+      {
+        "name": "binding-after",
+        "start_s": 176.3519868068397,
+        "end_s": 179.45447829179466,
+        "seconds": 3.102491484954953,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 2276249600
+      },
+      {
+        "name": "live-after",
+        "start_s": 179.45691925100982,
+        "end_s": 180.7755886502564,
+        "seconds": 1.3186693992465734,
+        "payload_bytes": 303877902,
+        "payload_bytes_per_second": 230442825.3007325,
+        "cumulative_peak_rss_bytes": 2276249600
+      },
+      {
+        "name": "code-after",
+        "start_s": 180.77730284817517,
+        "end_s": 181.17675487697124,
+        "seconds": 0.3994520287960768,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 2276249600
+      },
+      {
+        "name": "comparison",
+        "start_s": 181.17834064736962,
+        "end_s": 181.17982081137598,
+        "seconds": 0.0014801640063524246,
+        "payload_bytes": 0,
+        "payload_bytes_per_second": 0.0,
+        "cumulative_peak_rss_bytes": 2276249600
+      }
+    ],
+    "stdout_bytes": 0,
+    "stderr_bytes": 0,
+    "observer_raw_confirmed": true,
+    "full_scan_authorized": false,
+    "controlled_speedup_measured": false,
+    "physical_validation": false
+  },
+  "archive": {
+    "path": "/home/scc/pb24511938/eccentric-tde-observer/outputs/review-20260925/86290-chord-diagonal-resource-review.tar.gz",
+    "size_bytes": 329899,
+    "sha256": "d2763388cf85c881c0ce8f27d5238bffba277202c8eb9ea902df8b6c8d2cfd48",
+    "dat_files": 0,
+    "scheduler_terminal_verified": false,
+    "meaning": "archive integrity only; independently inspect included scheduler receipt"
+  },
+  "external_receipts": {
+    "terminal": {
+      "path": "/home/scc/pb24511938/eccentric-tde-observer/outputs/review-20260925/diagonal-resource-watch-86290/scheduler-terminal.json",
+      "size_bytes": 1724,
+      "sha256": "0a3316e06db7efe1251cf166477cd0c29cc7bca1803f5fb37b0d72743a14a86e"
+    },
+    "raw-observation": {
+      "path": "/home/scc/pb24511938/eccentric-tde-observer/outputs/review-20260925/diagonal-resource-watch-86290/observation-0019.json",
+      "size_bytes": 1670,
+      "sha256": "7e1f8cc0a263d75566a31298741a9222c2beba91cbfb3ad8bc565ec374b70895"
+    },
+    "batch-exit": {
+      "path": "/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/logs/chord-diagonal-resource-86290-batch-exit.json",
+      "size_bytes": 196,
+      "sha256": "b347cbb98bdc8cec552095ac1fc1d9d6c245e706977fe7b5b95a4cd76cc255f3"
+    },
+    "submission": {
+      "path": "/home/scc/pb24511938/eccentric-tde-observer/outputs/review-20260925/diagonal-resource-launch-20261006/submission.json",
+      "size_bytes": 1845,
+      "sha256": "92346c252df08eda03a06091f68f3136a787fe9e2faef4a91149e65759021663"
+    }
+  },
+  "artifacts": [
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-launch-local-backup.json",
+      "size_bytes": 1322,
+      "sha256": "e29f11303e53e27bb18244ee149fd60f567e48804a66a444e8e13340990155c7"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-launch-school-backup.json",
+      "size_bytes": 12476,
+      "sha256": "ddf0e23aaa2d1aa4de2a63021c70155d9ffa56ffd0f7280176e105756805a55c"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-launch-preflight.json",
+      "size_bytes": 2542,
+      "sha256": "6f878b049c42c26ec43560988ab4afdbc144c5a4fd2e14ebcdb2bb23cd73201f"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-launch-dispatch.json",
+      "size_bytes": 566,
+      "sha256": "e733501501d9bd2f73ed382c0697518bf13d27337dc9b17d1df0cc713bc1fb8b"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-86290-local-pre-review.json",
+      "size_bytes": 567,
+      "sha256": "2efbb7830cf0b54037e09a9f03fae3f3ae35195e3dd5041cd43182b757d1eaa7"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-86290-transfer.json",
+      "size_bytes": 10285,
+      "sha256": "99d16a78fa73c8182390f15c9d8d5374110e24be348b8fad31d8dc8867a426fc"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-86290-receive.json",
+      "size_bytes": 75,
+      "sha256": "ff12274cc4d48b63a87128d3229520a271632b6157cf1909c762d8b8fc8272e4"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-86290-summary.json",
+      "size_bytes": 9396,
+      "sha256": "89dfff033c005b86db5b193d621c1e4cfd637f6925f8e77d64529075c9a57edd"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-86290-extra-stat-assertion-failure.json",
+      "size_bytes": 628,
+      "sha256": "4b2040ad34748ab3e65e970805538dc697b5f585ce4595f7084dcb2d95707248"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-resource-submit.py",
+      "size_bytes": 7005,
+      "sha256": "2f6bf90a602539fdb5c2158b09a6ad63a59dfc001c0b077c63571831030116af"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-resource-submit-first-syntax-failure.py",
+      "size_bytes": 7005,
+      "sha256": "4f99e2f5cf8116981334373b319001f748b6945e27cbb79113c70ba7de84e05b"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-code-freeze.json",
+      "size_bytes": 274862,
+      "sha256": "aa682395b6a76e47e986dd1b269fbe6bcc05bb02602c3306fef8fe7065903fac"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-diagonal-production-binding.json",
+      "size_bytes": 208077,
+      "sha256": "7fe42b91067900c7c4f98beb34ea56dbd13dc4917afb02219bc3bb7984f56ef6"
+    }
+  ],
+  "source_preparation": "handoff/evidence/20261006-diagonal-production-acceptance-review.json",
+  "independent_review": {
+    "path": "handoff/evidence/20261006-x20-86290-resource-review.json",
+    "size_bytes": 2873,
+    "sha256": "ece33faefd10d8b4609b800048b4ac60d9f400c5f2a95cf17e83c7bc877374aa"
+  },
+  "production_resource_verified": true,
+  "controlled_speedup_measured": false,
+  "full_scan_authorized": false,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_ode": 0,
+  "new_material": 0,
+  "dat_downloaded": 0,
+  "accepted_material_update_index": 20,
+  "baseline_replaced": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "next_scope": "read-only audit and separate validation design for independent-slab concurrency; deterministic ordered merge, aggregate parent/worker RSS and stop-on-failure; no automatic implementation or job",
+  "hhe_complete": false
+}

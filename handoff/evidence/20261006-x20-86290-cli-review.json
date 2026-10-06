@@ -1,0 +1,16 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "wall_s": 20.119271957781166,
+  "scope": "given audited facts and small summary only; not full-source or controlled-performance audit",
+  "corrections": [
+    "finished/child scheduler_terminal_verified=false means the program does not self-authenticate the scheduler. External actual observer raw scontrol COMPLETED0:0 and independent review verified the terminal; draft conclusion terminal unverified is false.",
+    "329899B is the compressed archive size, not the sum of 52 uncompressed members.",
+    "This Job wall/RSS/slab and phase times are actual measurements. Only comparisons against older Jobs are uncontrolled historical comparisons; no causal speedup inference.",
+    "The resource acceptance includes exact complete-slab equality and independent Decimal80 checks, not only artifact structure/version placement.",
+    "Cross-node st_dev observation is file identity metadata, not full-field numerical statistics. Only first32 groups have this Job Gram; remaining9600 groups have full SHA reads only."
+  ],
+  "compressed_archive_bytes": 329899,
+  "uncompressed_members_bytes": 1237007,
+  "independent_terminal_verified": true,
+  "full_scan_authorized": false
+}

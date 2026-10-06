@@ -1,0 +1,57 @@
+{
+  "status": "diagonal_resource_small_evidence_consistent",
+  "decimal_precision": 80,
+  "comparison": {
+    "complete_slab_exact": true,
+    "decimal_strings_and_zero_sign_preserved": true,
+    "physical_validation": false,
+    "full_scan_authorized": false
+  },
+  "field_bytes_read": 121601261568,
+  "production_resource_preflight_complete": true,
+  "full_scan_authorized": false,
+  "physical_validation": false,
+  "strict_error_bound": false,
+  "scheduler_terminal_verified": true,
+  "job_id": "86290",
+  "git_commit": "68a950fa3b5c6418e4d94f2ba4a1d36ec12c55b3",
+  "archive_bytes_read": 607755804,
+  "reviewer_project_modules": {
+    "__main__": {
+      "relative_path": "handoff/audit_tools/review_x20_85889_chord_diagonal_resource.py",
+      "file": "/Users/shandike/Downloads/A_USTCer/8.3/ustc-hpc-diagnostics-review/handoff/audit_tools/review_x20_85889_chord_diagonal_resource.py",
+      "origin": "/Users/shandike/Downloads/A_USTCer/8.3/ustc-hpc-diagnostics-review/handoff/audit_tools/review_x20_85889_chord_diagonal_resource.py",
+      "fingerprint": {
+        "size_bytes": 13828,
+        "sha256": "9c31823411a66bad629a2503b49bc74b869a9ef059b4d50e7c395a5359b6dd92"
+      }
+    },
+    "handoff.audit_tools.review_x20_85889_chord_resource": {
+      "relative_path": "handoff/audit_tools/review_x20_85889_chord_resource.py",
+      "file": "/Users/shandike/Downloads/A_USTCer/8.3/ustc-hpc-diagnostics-review/handoff/audit_tools/review_x20_85889_chord_resource.py",
+      "origin": "/Users/shandike/Downloads/A_USTCer/8.3/ustc-hpc-diagnostics-review/handoff/audit_tools/review_x20_85889_chord_resource.py",
+      "fingerprint": {
+        "size_bytes": 3866,
+        "sha256": "c6b59e8ddab82c3fceec7836c9afb94dfa6ac1d36af279b5b9659e9416b78952"
+      }
+    },
+    "handoff.audit_tools.review_x20_85889_chord_scan": {
+      "relative_path": "handoff/audit_tools/review_x20_85889_chord_scan.py",
+      "file": "/Users/shandike/Downloads/A_USTCer/8.3/ustc-hpc-diagnostics-review/handoff/audit_tools/review_x20_85889_chord_scan.py",
+      "origin": "/Users/shandike/Downloads/A_USTCer/8.3/ustc-hpc-diagnostics-review/handoff/audit_tools/review_x20_85889_chord_scan.py",
+      "fingerprint": {
+        "size_bytes": 7646,
+        "sha256": "806e67f2eeed99cc20fd54e2a8aab432fa765e8ebc789024218be0bd47d7b474"
+      }
+    },
+    "operations.x20_85889_chord_diagonal_contract": {
+      "relative_path": "operations/x20_85889_chord_diagonal_contract.py",
+      "file": "/Users/shandike/Downloads/A_USTCer/8.3/ustc-hpc-diagnostics-review/operations/x20_85889_chord_diagonal_contract.py",
+      "origin": "/Users/shandike/Downloads/A_USTCer/8.3/ustc-hpc-diagnostics-review/operations/x20_85889_chord_diagonal_contract.py",
+      "fingerprint": {
+        "size_bytes": 14008,
+        "sha256": "6ea914f3fc709bb7e71d49967f08023cf6c1156a3d00fc4d20a0bb6382d6f84c"
+      }
+    }
+  }
+}

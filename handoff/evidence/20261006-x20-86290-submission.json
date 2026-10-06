@@ -1,0 +1,33 @@
+{
+  "job_id": "86290",
+  "expected_commit": "68a950fa3b5c6418e4d94f2ba4a1d36ec12c55b3",
+  "run": "/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/x20-85889-chord-diagonal-resource-20261006",
+  "workdir": "/home/scc/pb24511938/eccentric-tde-observer",
+  "sbatch_file": "/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85889_chord_diagonal_resource.sbatch",
+  "sbatch_fingerprint": {
+    "size_bytes": 1921,
+    "sha256": "4896f50f043e019802b789ebe80cc0c81f0a0ddb75c21c9631fdc9e37c34d821"
+  },
+  "code_content_sha256": "29953a424ee68b15ed2f414dcee1873600043d0ab90695d264dbedf75b1b0992",
+  "binding_content_sha256": "07ecb880b7d77952e15e971d906ef9565958d21c285ab303ab75e7177862ed97",
+  "digest_encoding": "json-ascii-compact-insertion-order-v1",
+  "argv": [
+    "sbatch",
+    "--parsable",
+    "/home/scc/pb24511938/eccentric-tde-observer/operations/x20_85889_chord_diagonal_resource.sbatch"
+  ],
+  "exports": {
+    "CHORD_EXPECTED_COMMIT": "68a950fa3b5c6418e4d94f2ba4a1d36ec12c55b3",
+    "CHORD_RUN": "/home/scc/pb24511938/eccentric-tde-observer/outputs/hpc/x20-85889-chord-diagonal-resource-20261006",
+    "CHORD_INVENTORY": "/home/scc/pb24511938/eccentric-tde-observer/outputs/review-20260925/complete-1791262858167332668.json",
+    "CHORD_SOURCE_REVIEW": "/home/scc/pb24511938/eccentric-tde-observer/outputs/review-20260925/20261006-x20-85889-chord-source-review-02.json",
+    "CHORD_HISTORY": "/home/scc/pb24511938/eccentric-tde-observer/outputs/review-20260925/chord-reuse-resource-history-20261006",
+    "CHORD_CODE_FREEZE": "/home/scc/pb24511938/eccentric-tde-observer/outputs/review-20260925/20261006-diagonal-production-code-freeze.json"
+  },
+  "request_unix": 1791301755.4148693,
+  "returned_unix": 1791301755.4829006,
+  "returncode": 0,
+  "stdout": "86290\n",
+  "stderr": "",
+  "submit_time": "2026-10-06T23:49:15"
+}
