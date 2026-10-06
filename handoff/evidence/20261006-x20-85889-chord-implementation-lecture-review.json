@@ -1,0 +1,24 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "raw": "handoff/evidence/20261006-x20-85889-chord-implementation-lecture-draft.json",
+  "corrections": [
+    {
+      "original": "组合守恒",
+      "corrected": "同源不同算术路径的代数/数值一致性，不是物理守恒"
+    },
+    {
+      "original": "下溢拒绝",
+      "corrected": "非零乘积变零才拒绝；Mac最小差平方拒绝、学校保存非零，非两端极小数均计算相同"
+    }
+  ],
+  "additional_limits": [
+    "synthetic affine map is not actual 85889 contraction",
+    "~40MB RSS only tiny fixture",
+    "generic claims not production source authentication; no scheduler or archive wrapper"
+  ],
+  "lecture_section": 149,
+  "old_prefix_bytes": 437548,
+  "old_prefix_sha256": "75196157cdc0a24f5bcf3c9250a663eb3d1666dc825024082c08c6fb1f394d08",
+  "old_prefix_unchanged": true,
+  "post_draft_code_review": "Added pointwise reconstruction error gate and wrong-coefficient rejection; final Mac47 and school36 tests replace draft-time45/34. Raw draft retained."
+}

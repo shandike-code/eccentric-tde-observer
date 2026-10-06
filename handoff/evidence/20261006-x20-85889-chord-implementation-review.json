@@ -1,0 +1,144 @@
+{
+  "stage": "six-field streaming core and independent small-statistics review implementation",
+  "pre_stage_commit": "bcb6636295a9d37de0228f1965aa88996cfe3b59",
+  "source_numerical_commit": "9555a78a77b9025e30405684dee2669d9e43baee",
+  "artifacts": [
+    {
+      "path": "operations/x20_85889_chord_scan.py",
+      "size_bytes": 9605,
+      "sha256": "9349c255b35c515fd37e7903a120ebed753e9c517c9381b402d4184d450a1643"
+    },
+    {
+      "path": "handoff/audit_tools/review_x20_85889_chord_scan.py",
+      "size_bytes": 7646,
+      "sha256": "806e67f2eeed99cc20fd54e2a8aab432fa765e8ebc789024218be0bd47d7b474"
+    },
+    {
+      "path": "tests/test_x20_85889_chord_scan.py",
+      "size_bytes": 7129,
+      "sha256": "6b0d66be51698a65b1b77c5a43ca1b71fe738fee201be5cbfb23f2667b9ad892"
+    },
+    {
+      "path": "handoff/protocols/x20-85889-six-field-chord-implementation-v1.md",
+      "size_bytes": 5680,
+      "sha256": "24ec4a1e1f225747ffcdecc9162de6098046b784aee0a2380721e717e51899e5"
+    },
+    {
+      "path": "handoff/linux-runs/2026-10-06-x20-85889-chord-implementation.md",
+      "size_bytes": 3747,
+      "sha256": "0a3863bb4787bbf94fc4e221a158bdccf819af8090d77dded7fe8998cfbd3992"
+    },
+    {
+      "path": "handoff/evidence/20261006-x20-85889-chord-implementation-lecture-draft.json",
+      "size_bytes": 2489,
+      "sha256": "987feb4e62d30ed9c37f20b34513a729bf919c19fb9cff54b45c557744e624f6"
+    },
+    {
+      "path": "handoff/evidence/20261006-x20-85889-chord-implementation-lecture-review.json",
+      "size_bytes": 1053,
+      "sha256": "d5d8cf206a0bb1cd7508ba7cae609a60be8c8f09b1f4e652f4e820cae2ec326f"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-tests-05.log",
+      "size_bytes": 99,
+      "sha256": "de8f7ebc9372fc676bdadf64f64f1e1ca68a91c6d6501ad916b4895922f9f37e"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-school-tests-04.log",
+      "size_bytes": 690,
+      "sha256": "f73117617f962bd81dda0b7d930c97f5f474a491150c3ea35112e59e144ed146"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-fixture-parity-02.json",
+      "size_bytes": 955,
+      "sha256": "f40c013c9e12b9e1b21ff7f04ac65039c6bc2c6b3862cc5c3a5b7fb659faea07"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-school-fixture-code-04.json",
+      "size_bytes": 446,
+      "sha256": "dde0b8b7ae0363f105a1abc6f1139ea05c0ffd6c38a4fdd3a121269815ea77eb"
+    },
+    {
+      "path": "outputs/review-20260925/chord-small-e2e-20261006-03/scan.json",
+      "size_bytes": 120077,
+      "sha256": "9586d441954b08d8378a79f25351ea11023b0cc33365b09dfeddf73b965b5217"
+    },
+    {
+      "path": "outputs/review-20260925/chord-small-e2e-20261006-03/review.json",
+      "size_bytes": 29246,
+      "sha256": "8bd1ecd1277f9c3af2a4eafc385ff432e076c1dd40318ba8a9cc7f7178664db2"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-school-04-scan.json",
+      "size_bytes": 119778,
+      "sha256": "bf2705b50028a17ffe77d382bd6f57ac394eaaeb37544ecfa3f54f47122dccde"
+    },
+    {
+      "path": "outputs/review-20260925/20261006-x20-85889-chord-school-04-review.json",
+      "size_bytes": 29246,
+      "sha256": "80eac1429a0f14ad4532393f3e1112c0509c74c7329f313cafaeccdfde6d6bca"
+    }
+  ],
+  "tests": {
+    "mac_passed": 47,
+    "mac_seconds": 0.68,
+    "school_passed": 36,
+    "school_seconds": 1.89
+  },
+  "synthetic_e2e": {
+    "shape": [
+      129,
+      2,
+      3
+    ],
+    "slabs": 5,
+    "blocks": 2,
+    "read_bytes_per_end": 111456,
+    "known_operator": "T(x)=0.5*x+4",
+    "all_four_norm_ratios_and_projections": "0.5",
+    "all_slab_moments_and_reconstruction_errors_cross_platform_equal": true,
+    "code_sha_verified": true,
+    "mac_peak_rss_bytes": 41959424,
+    "school_peak_rss_bytes": 40501248,
+    "production_resource_measurement": false
+  },
+  "arithmetic": {
+    "mac_nmant": 52,
+    "school_nmant": 63,
+    "mac_maxexp": 1024,
+    "school_maxexp": 16384,
+    "rounding_mode": "FE_TONEAREST",
+    "decimal_aggregation_digits": 80,
+    "subnormal_test": "Mac rejects nonzero product underflow; school retains positive square",
+    "reduction_tolerance": "64*N*eps_LD on absolute-term scale; not a rigorous bound",
+    "pointwise_reconstruction_guard": true
+  },
+  "source_wrapper_ready": false,
+  "slurm_entrypoint_ready": false,
+  "production_preflight_complete": false,
+  "production_scan_performed": false,
+  "source_field_bytes_read": 0,
+  "new_slurm": 0,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_material": 0,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "backup": {
+    "name": "pre-85889-chord-implementation-20261006.bundle",
+    "mac_bytes": 25750633,
+    "school_bytes": 25602989,
+    "both_verified": true
+  },
+  "lecture": {
+    "section": 149,
+    "old_prefix_bytes": 437548,
+    "old_prefix_sha256": "75196157cdc0a24f5bcf3c9250a663eb3d1666dc825024082c08c6fb1f394d08",
+    "old_prefix_unchanged": true,
+    "actual_cli_model": "deepseek-v4-flash[1m]",
+    "independently_corrected": true
+  },
+  "next_step": "bind production sources and frozen code, implement scheduler/status/archive wrapper and define bounded real-slab resource preflight; do not submit from unit tests alone"
+}

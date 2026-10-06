@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 18334,
+  "duration_api_ms": 18208,
+  "ttft_ms": 16953,
+  "ttft_stream_ms": 299,
+  "time_to_request_ms": 113,
+  "num_turns": 1,
+  "result": "# 六场只读统计核心与Decimal审阅器测试\n\n真实关系仅T(AP)=AF、T(AF)=AM,H同,只知P/F。五基底[HF-AF,AF-AP,AM-AF,HF-HP,HM-HF]四组合直接算d、e=rH-rA、dprime及rA/rH,各5x5矩。无权网格内积非能量光度。\n\n数值:先binary64做差,再longdouble乘积累积,非零乘积下溢到零显式拒绝。实测Mac nmant52/maxexp1024,学校63/16384,均FE_TONEAREST。Decimal80是80位十进制小统计归并,不等于longdouble位数,不重算大场。PSD查全部主子式,容差64*N*epsLD相对绝对项和,属经验一致性非严格舍入界;矩阵不修补。\n\n来源防护:hash前/中/后、stat、止损,短读/篡改/缺组拒绝。Mac45测试0.66s(34新+11来源),学校隔离目录34测试3.59s,代码SHA一致。\n\n合成T(x)=0.5x+4,129x2x3小场,5slab2block,每端读111456字节,JSON往返四组合全得norm比/投影0.5;两端Gram与直接矩相同,仅此合成样例。\n\n证明:读取、归并、组合守恒、下溢拒绝、审阅一致。不证明:物理收敛、本征慢模、真实数据正确。无真实dat读/新Slurm/map/反馈/物质。仅核心scan与review实现;生产封装、Slurm/终态/归档、真实32组分片资源测量未做,不具生产提交条件。",
+  "stop_reason": "end_turn",
+  "session_id": "b0ed28e0-0447-455d-949f-dc45f16e8a52",
+  "total_cost_usd": 0.12794,
+  "usage": {
+    "input_tokens": 2028,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 4712,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 2028,
+      "outputTokens": 4712,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.12794,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "a62be1f1-3fa8-45da-8f39-cc289f697806"
+}
