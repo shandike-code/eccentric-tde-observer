@@ -1,0 +1,13 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "20261006-x20-85875-watch-draft-02.json",
+  "evidence": "20261006-x20-85875-final-review.json",
+  "independently_revised": true,
+  "corrections": [
+    "新16−8窗口确实通过；原稿0.00022/0.037接近final/final值，不替代四组合最大质量/r20=0.000250012194405857和/信号=0.04207460724127475。",
+    "from_prior_feedback属于加速前85821比较；对保存82518属于旧参考，不能笼统称这两个为“新窗口”。",
+    "跨保存参考响应失败，但四组合五类率/加热门全过，必须区分。",
+    "当时RUNNING是原始实时状态，不用后续COMPLETED回写当时。"
+  ],
+  "scheduler_terminal_verified": false
+}

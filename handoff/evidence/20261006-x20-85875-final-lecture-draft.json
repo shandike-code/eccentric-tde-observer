@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 13929,
+  "duration_api_ms": 13804,
+  "ttft_ms": 9923,
+  "ttft_stream_ms": 335,
+  "time_to_request_ms": 109,
+  "num_turns": 1,
+  "result": "# 141 新窗口通过，保存参考响应仍未一致：85875 审阅讲义\n\n## 1. 完整向量差与三种范数\n\n比较两个物理响应，必须先做**完整向量差**：把两条 512 维响应向量逐分量相减得到差向量，再对差向量取范数。**不能先把两个向量各自取标量范数再相减**——那会丢掉方向与内部结构，是最常见的混淆。\n\n三条范数回答不同问题：\n\n$$\n\\|d\\|_2=\\Big(\\sum_i d_i^2\\Big)^{1/2},\\qquad\n\\|d\\|_{\\text{mass}}=\\Big(\\sum_i m_i\\,d_i^2\\Big)^{1/2},\\qquad\n\\|d\\|_{\\max}=\\max_i |d_i| .\n$$\n\nL2 对全部分量平方求和；质量加权按单元质量加权；Max-cell 只看最大单点偏差。三者分别对应“整体、按物质权重、最坏点”。\n\n## 2. 两套冻结分母与 volume_l1\n\n同一差向量要除以两套互不替换的冻结分母：原 **r20**（门 0.001）与**冻结 80195 信号**（由全部四组 P−C 的完整 512 维向量各范数取最小，门 0.1）。注意 r20 的三个范数是**分母的取值**，不是 512 维向量本身，它只是尺度基准。\n\n质量体积 $\\mathrm{volume\\_l1}$ 的定义也要留意：分子是绝对值差的积分 $\\int|a-b|$，**不允许正负相消**；分母是逐点 $\\max$ 后积分 $\\int\\max(|a|,|b|)$，不是先各自积分再取最大。\n\n## 3. 三个互不相同的比较\n\n85875 中同时出现三组比较，判决完全不同：\n\n**(a) 新的 16−8 窗口。** H16 与 H8 之差：\n/r20 $=[7.33\\times10^{-5},\\,2.50\\times10^{-4},\\,3.67\\times10^{-5}]$，全部 $<0.001$；\n/信号 $=[0.0205,\\,0.0421,\\,0.00621]$，全部 $<0.1$。**通过**——这是本历史支加速序列首次两套分母三范数全过。\n\n**(b) 对加速前 85821。** /r20 $=[0.0113,\\,0.0440,\\,0.00645]$，/信号 $=[3.16,\\,7.41,\\,1.09]$。**全部失败**。\n\n**(c) 对保存 82518A。** /r20 $=[0.00272,\\,0.0109,\\,0.00175]$，/信号 $=[0.757,\\,1.83,\\,0.297]$。**全部失败**。\n\n此外，第 16 张后的同对差 /r20 $=[8.15\\times10^{-6},\\dots]$、/信号 $=[0.00227,\\dots]$ 也通过，但它**不是** 16−8 窗口，不能混用；第 16 张原辐射 residual $9.96\\times10^{-7}$ 是不同量纲的内部指标，不能替代物质响应比较。\n\n## 4. 率/加热门并未失败\n\n对保存 82518A 的五类率/加热门**全部通过**：最大净原子加热差由 map8 的 $7.17\\times10^{-4}$ 降至 map16 的 $7.04\\times10^{-4}$，四组合三范数均 $<0.001$，光电离与总复合门亦过。**率/加热过门不免除响应门**，但也不得反过来说它们失败。\n\n同样要守住几条界线：窗口通过只是**有限数值证据**，既不是**严格误差上界**，也不判定哪一支是**真解**，更不构成**物质层接受**。`reference_calibration_eligible=false`、`accepted20`、原 r20 与冻结 80195 信号维持不变。\n\n## 5. 下一步：双历史新反馈\n\n保存 82518A 曾窗口通过，**不保证**其端点已是固定点。拟定协议 `x20-85875-matched-feedback-v1`：从 accelerated(82518) 与 historical(85875) 各自的 map16 `mapped_final` 出发，在同一 x20 下各跑 16 张新 map，第 8/16 张后反馈，共 32map、4pair、0 物质步；判据要求两支新 16−8 窗口与两支新 16 端点四组合响应均两套分母全过，跨支五类率/加热原门全过。\n\n关键一句：**新增预算匹配不等于累计历史年龄相同**，更不等于两个独立随机初值——两支共享来源历史，故只能检验“匹配新增预算后的有限一致性”，不能预设哪支为真解。\n\n本轮**只完成协议设计**，尚无实现、测试或提交；未通过两端 clean/exactHEAD、完整 bundle 备份、独立入口与审阅器、以及完整 PRE-RUN 之前 **DO NOT RUN**。Mac 只收排除 dat 的小归档，不下载或提交 dat。若失败，先审阅实际差异，不循环追加 32 张。祖先 84026 的 scheduler 状态未知，须如实保留 false/null，**不得补造**。",
+  "stop_reason": "end_turn",
+  "session_id": "e69511cf-cdc0-40ad-8438-f06deb700215",
+  "total_cost_usd": 0.10958999999999999,
+  "usage": {
+    "input_tokens": 4698,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 3444,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 4698,
+      "outputTokens": 3444,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.10958999999999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "94078d9f-e77d-4f52-bbd4-8d2e8a90bea1"
+}

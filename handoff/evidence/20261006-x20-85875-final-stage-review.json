@@ -1,0 +1,80 @@
+{
+  "job_id": 85875,
+  "stage": "final_16map_2pair_independent_review",
+  "numerical_commit": "4bace16902cbc2ef6f9f584f26f07a2928eecb93",
+  "archive": {
+    "path": "outputs/hpc/x20-85861-seed-feedback-20261006/archives/complete-1791245559910833974.tar.gz",
+    "size_bytes": 153090152,
+    "sha256": "64053e8e558ec41ec4c3c5bba5e311ae6ddc5dc9ea08c447db2f161af5602022"
+  },
+  "pre_run": {
+    "Code": "PASS",
+    "Logic": "PASS",
+    "Physics": "WARNING",
+    "Decision": "RUN",
+    "scope": "complete small archive independent review; no Mac large-field or material ODE rerun"
+  },
+  "post_run": {
+    "first_final_end_to_end_pass": true,
+    "verified_files": 4297,
+    "verified_source_claims": 895,
+    "verified_code_claims": 800,
+    "map_process_receipts": 1216,
+    "feedback_process_receipts": 304,
+    "maximum_proc_kib": 4045276,
+    "all_original_seven_gates_passed": true,
+    "new_16_minus_8_window_passed": true,
+    "saved_reference_response_passed": false,
+    "saved_reference_all_four_rate_gate_checks_passed": true,
+    "stderr_bytes": 0,
+    "nonfinite_or_domain_failure": false
+  },
+  "execution": {
+    "scheduler_terminal_verified": true,
+    "scheduler_state": "COMPLETED",
+    "slurm_start": "2026-10-06T06:14:08",
+    "slurm_end": "2026-10-06T08:13:24",
+    "slurm_wall_s": 7156,
+    "program_wall_s": 7098.858758173883,
+    "parent_peak_rss_bytes": 248303616,
+    "child_exit_status": 0
+  },
+  "source_85821_scheduler_terminal_verified": true,
+  "source_84026_scheduler_terminal_verified": false,
+  "reference_calibration_eligible": false,
+  "reference_recomputed": false,
+  "matched_new_two_branch_experiment": false,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "new_slurm_submissions": 0,
+  "lecture_section": 141,
+  "actual_cli_model": "deepseek-v4-flash[1m]",
+  "format_checks": {
+    "new_report": true,
+    "new_protocol": true,
+    "new_lecture_section": true,
+    "old_lecture_prefix_sha256": "01b4b1a68fb352018a18b6bc204e149869c43df93878d1e23128b4ba4f3dce2a",
+    "old_lecture_prefix_unchanged": true
+  },
+  "validation": {
+    "existing_related_tests": 87,
+    "existing_tests_wall_s": 0.91,
+    "new_tests_run": false,
+    "reason": "No numerical implementation changes; already-tested reviewer completed its first full terminal E2E.",
+    "git_diff_check": true
+  },
+  "backups": {
+    "mac": "outputs/review-20260925/pre-85875-final-review-20261006.bundle",
+    "school": {
+      "head": "4bace16902cbc2ef6f9f584f26f07a2928eecb93",
+      "clean": true,
+      "backup": "/home/scc/pb24511938/eccentric-tde-observer/outputs/review-20260925/pre-85875-final-review-20261006.bundle",
+      "size_bytes": 25529408,
+      "verify_returncode": 0,
+      "verify_stderr": "/home/scc/pb24511938/eccentric-tde-observer/outputs/review-20260925/pre-85875-final-review-20261006.bundle is okay\n"
+    }
+  },
+  "next_protocol": "handoff/protocols/x20-85875-matched-feedback-v1.md",
+  "next_stage_state": "design_only_requires_implementation_tests_source_preflight_and_explicit_pre_run",
+  "decision": "Close 85875 within its original budget. Prepare a separately named matched additional-budget two-history experiment from actual 82518 A16 and 85875 H16 mapped_final fields, max32map/4pair/0material; do not submit until the new implementation, audit, both-platform tests and actual sources preflight pass. No automatic calibration, reference replacement, recovery or acceptance."
+}

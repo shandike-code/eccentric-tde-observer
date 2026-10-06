@@ -1,0 +1,16 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "20261006-x20-85875-final-lecture-draft.json",
+  "evidence": "20261006-x20-85875-final-review.json",
+  "lecture_section": 141,
+  "independently_revised": true,
+  "corrections": [
+    "质量范数必须除以sum(m_i)，且每个单元含四个编码分量；原草稿公式漏分母。",
+    "Max-cell=max_i sqrt(sum_a Delta_i,a^2)，不是逐分量max(abs(d_i))。",
+    "volume_l1是原深度宽度加权的相对绝对差，不是“质量体积”；与质量范数的权重不同。",
+    "四组合三种加热通过，不能称“四组合三范数”通过；响应三范数对保存A仍全部失败。",
+    "原辐射residual与响应比的定义及归一化不同；二者均为各自归一化指标，不能说必定量纲不同。报告原句“不同量纲定义”已同步纠正。",
+    "全部表值为四组合逐范数最大；原draft未明确这一点，最终讲义与报告补全。",
+    "校准与物质接受分开；新协议只是设计，本轮无新提交，不预写下一批结果。"
+  ]
+}

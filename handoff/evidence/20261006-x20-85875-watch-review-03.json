@@ -1,0 +1,13 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "draft": "20261006-x20-85875-watch-draft-03.json",
+  "evidence": "20261006-x20-85875-final-review.json",
+  "independently_revised": true,
+  "corrections": [
+    "“第8/16对反馈”改为第8/16张映射后各一对，共2pair。",
+    "“对保存参照亦未过”限于响应向量比较，五类率/加热门全部通过。",
+    "新16−8窗口通过仍无校准资格；strict_error_bound=false不是该窗口失败。",
+    "真实scontrol COMPLETED0:0与batch_exit仅证明Python退出并不矛盾；84026未知仍保留。"
+  ],
+  "scheduler_terminal_verified": true
+}

@@ -1,0 +1,50 @@
+{
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "api_error_status": null,
+  "duration_ms": 4592,
+  "duration_api_ms": 4430,
+  "ttft_ms": 3969,
+  "ttft_stream_ms": 410,
+  "time_to_request_ms": 159,
+  "num_turns": 1,
+  "result": "85875经scontrol确认COMPLETED、ExitCode=0:0，运行1:59:16，16张map，前后哈希一致。原七门、物理域、内层门、资源与完整性均通过。第8/16对反馈已评：源自85821的反馈比较全部未过（tol 0.001），对82518 accelerated16保存参照亦未过，仅pair16八窗窗口通过。new_material_steps=0，未接受物质步，baseline_replaced=false，参照未重算，calibration_eligible=false，非新配对双分支。需独立复核，历史失败保留。不得称反馈收敛，勿宣告I_nu完成。84026调度终态仍未知，batch_exit非Slurm终态。",
+  "stop_reason": "end_turn",
+  "session_id": "eaa21d1d-397d-457e-8ea4-5c61a551e2b1",
+  "total_cost_usd": 0.07479,
+  "usage": {
+    "input_tokens": 10568,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 878,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "deepseek-v4-flash[1m]": {
+      "inputTokens": 10568,
+      "outputTokens": 878,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.07479,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 32000
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "uuid": "7567eb65-2fdb-4ca4-ac24-1a7dcfd9d0ea"
+}
