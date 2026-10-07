@@ -1,0 +1,74 @@
+"""Tiny explicit-driver lifecycle/receipt exercise. Scheduler records are synthetic.
+
+Never calls production main, native/archived-source work, Slurm, or real dat files.
+"""
+import argparse
+import hashlib
+from pathlib import Path
+import time
+import numpy as np
+from operations import x20_86304_radiation_resource as d
+from operations import x20_86304_radiation_contract as c
+from operations import x20_86304_radiation_receipt as receipt
+from handoff.audit_tools import review_x20_86304_radiation_resource as reviewer
+
+
+def exercise(target):
+    target = Path(target); target.mkdir(exist_ok=False)
+    inputs = target/'inputs'; inputs.mkdir()
+    a = np.arange(33*2*3, dtype=float).reshape(33,2,3)/8+1
+    claims = []
+    for i, v in enumerate([a,.5*a+4,.25*a+6,a+2,.5*(a+2)+4,.25*(a+2)+6]):
+        path = inputs/f'{i}.bin'; raw = v.tobytes(); path.write_bytes(raw)
+        claims.append(dict(path=str(path.resolve()), size_bytes=len(raw), sha256=hashlib.sha256(raw).hexdigest()))
+    repo = Path(__file__).resolve().parents[2]
+    names = sorted(str(p.relative_to(repo))
+        for directory in ('operations','handoff','scripts','src','hpc','tests')
+        for p in (repo/directory).rglob('*') if p.suffix in ('.py','.sbatch') and p.is_file())
+    code = {name:dict(size_bytes=(repo/name).stat().st_size,
+                     sha256=hashlib.sha256((repo/name).read_bytes()).hexdigest()) for name in names}
+    c.check_code(code, code); d.v1.write_new(target/'fixture-code.json', code)
+    job = '900001'; commit = 'synthetic-fixture-not-a-production-commit'
+    run = target/'run'
+    def work(guard, out, timeline):
+        d.v1.write_new(out/'allocation.json', dict(job_id=job, observed_unix=time.time(),
+            scontrol='JobId=900001 JobState=RUNNING NumCPUs=4 NumTasks=1 NumNodes=1 Partition=Students QOS=qos_stu_default TimeLimit=00:30:00 MinMemoryNode=16G', synthetic=True))
+        before = d.runtime_identity(repo, code)
+        d.v1.write_new(out/'identity-before.json', before)
+        result = d.authenticated_probe(claims, [33,2,3], guard, timeline,
+                                      lambda name, value:d.v1.write_new(out/(name+'.json'), value))
+        after_identity = d.runtime_identity(repo, code)
+        c.check_identity_pair(before, after_identity, code)
+        d.v1.write_new(out/'identity-after.json', after_identity)
+        for side in ('before','after'): d.v1.write_new(out/f'code-{side}.json', code)
+        result.update(git_commit=commit, git_clean_before_after=True, job_id=job,
+                      synthetic=True, peak_rss_bytes=d.core.peak_rss_bytes())
+        return result
+    if d.execute(run, work): raise ValueError('synthetic driver failed; preserve failure.json')
+    d.v1.write_new(run/'batch-exit.json', dict(job_id=job, child_exit_status=0, recorded_unix=time.time(), synthetic=True))
+    terminal = dict(job_id=job, observed_unix=time.time(), scontrol='JobId=900001 JobState=COMPLETED ExitCode=0:0', synthetic=True)
+    d.v1.write_new(target/'fixture-external-terminal.json', terminal)
+    d.v1.write_new(run/'scheduler-terminal.json', terminal)
+    answer = reviewer.review_evidence(run, commit, code, terminal, job)
+    d.v1.write_new(target/'review.json', answer)
+    pack = target/'small.tar.gz'; receipt.archive(run, pack, [])
+    receipt.receive(pack, pack.with_suffix('.receipt.json'), target/'received')
+    after = reviewer.review_evidence(target/'received', commit, code, terminal, job)
+    if not c.exact(answer, after): raise ValueError('receipt roundtrip')
+    data = c.read(run/'result.json')
+    from handoff.audit_tools.exercise_x20_86304_radiation import scalar_oracle
+    arrays=[np.frombuffer(Path(x['path']).read_bytes(),dtype='<f8').reshape(33,2,3)[:32] for x in claims]
+    oracle=scalar_oracle(arrays,data['probe']['slab'])
+    metadata = dict(synthetic=True, production_resource_verified=False, scheduler_terminal_verified=False,
+        new_field_payload_bytes=data['field_bytes_read'],
+        oracle_source_bytes=sum(x['size_bytes'] for x in claims),
+        total_synthetic_field_payload_bytes=data['field_bytes_read']+sum(x['size_bytes'] for x in claims),
+        arithmetic=data['probe']['arithmetic'], peak_rss_bytes=d.core.peak_rss_bytes(),
+        complete_slab_exact=False, scalar_matrix_checks=oracle, decimal_precision=80, archive_roundtrip=True, new_jobs=0, real_dat_bytes_read=0)
+    d.v1.write_new(target/'metadata.json', metadata)
+    return metadata
+
+
+if __name__ == '__main__':
+    p = argparse.ArgumentParser(); p.add_argument('output', type=Path); a = p.parse_args()
+    print(__import__('json').dumps(exercise(a.output)))

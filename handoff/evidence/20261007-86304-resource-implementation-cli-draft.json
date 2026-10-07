@@ -1,0 +1,7 @@
+{
+  "seconds": 55.140729875303805,
+  "returncode": 124,
+  "stdout": "{\"type\":\"result\",\"subtype\":\"error_during_execution\",\"duration_ms\":51833,\"duration_api_ms\":0,\"is_error\":true,\"num_turns\":2,\"stop_reason\":null,\"session_id\":\"92047a72-b887-4624-94e4-b7ba528b340a\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{},\"permission_denials\":[],\"terminal_reason\":\"aborted_streaming\",\"fast_mode_state\":\"off\",\"uuid\":\"46052d94-f6bd-4174-b233-4d54b2aef436\",\"errors\":[\"[ede_diagnostic] result_type=user last_content_type=n/a stop_reason=null\"]}\n",
+  "stderr": "",
+  "scope": "live and resource source only; no full dependencies/performance audit"
+}

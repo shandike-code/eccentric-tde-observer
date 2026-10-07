@@ -1,0 +1,15 @@
+{
+  "scope": "independent correction of short-facts lecture; not full source or performance audit",
+  "first_cli_timeout_seconds": 55.140729875303805,
+  "first_returncode": 124,
+  "second_seconds": 12.327298250049353,
+  "actual_model": "deepseek-v4-flash[1m]",
+  "corrections": [
+    "execution job separate from source job, not from kernel",
+    "interfaces include executed synthetic paths, not only named files",
+    "full SHA binds observed bytes, not all unobserved instants or science correctness",
+    "driver 37440B plus oracle9504B = dedicated E2E46944B",
+    "given test timings precede final accounting correction"
+  ],
+  "production_resource_verified": false
+}

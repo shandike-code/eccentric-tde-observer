@@ -1,0 +1,103 @@
+{
+  "stage": "86304 resource wrapper synthetic acceptance",
+  "starting_mac_commit": "5fda2b7b4139a240eff81d0795ab844045ef5e76",
+  "school_commit": "fbfe81fb7ec4e9714e256ec460b483130db5c254",
+  "school_production_synchronized": false,
+  "backup": "pre-86304-resource-implementation-20261007.bundle",
+  "both_complete_bundles_verified": true,
+  "source_job": 86304,
+  "production_driver_implemented": true,
+  "production_resource_verified": false,
+  "live_native_recomputed": false,
+  "actual_source_manifest_prepared": false,
+  "submission_ready": false,
+  "new_production_authorized": false,
+  "full_scan_authorized": false,
+  "full_field_statistics_complete": false,
+  "global_h1": null,
+  "real_dat_reads": 0,
+  "real_dat_stats": 0,
+  "real_dat_downloads": 0,
+  "new_slurm_jobs": 0,
+  "actual_submission_tickets": 0,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_ode": 0,
+  "new_material": 0,
+  "accepted_outer_steps": 20,
+  "baseline_replaced": false,
+  "reference_calibration_eligible": false,
+  "strict_error_bound": false,
+  "tests": {
+    "mac_count": 114,
+    "mac_seconds": 8.62,
+    "school_count": 114,
+    "school_seconds": 36.9,
+    "skips": 0,
+    "failures": 0,
+    "new_tests": 91,
+    "existing_adapter_tests": 23
+  },
+  "freeze": "outputs/review-20260925/20261007-86304-resource-code-freeze-03.json",
+  "frozen_code_files": 1713,
+  "school_fixture_files_including_binding": 1714,
+  "e2e": {
+    "shape": [
+      33,
+      2,
+      3
+    ],
+    "group_range": [
+      0,
+      32
+    ],
+    "driver_field_payload_bytes": 37440,
+    "oracle_source_payload_bytes": 9504,
+    "total_dedicated_field_payload_bytes": 46944,
+    "not_all_tests_payload": true,
+    "scalar_decimal80_checks": 250,
+    "kernel_calls": 1,
+    "production_main_called": false,
+    "mac_peak_rss_bytes": 39583744,
+    "school_peak_rss_bytes": 35389440
+  },
+  "full_review_fixture": {
+    "synthetic": true,
+    "job": "900002",
+    "real_native": false,
+    "real_fields": false,
+    "real_scheduler": false,
+    "phases": 25,
+    "production_resource_preflight_complete": false
+  },
+  "parity": {
+    "school_review_reproduced": true,
+    "complete_slab_cross_platform_exact": true,
+    "local_code_after_verified": 1713,
+    "school_code_after_verified": 1714,
+    "school_head": "fbfe81fb7ec4e9714e256ec460b483130db5c254",
+    "school_clean": true,
+    "production_resource_verified": false,
+    "real_dat_bytes_read": 0
+  },
+  "cli": {
+    "first_seconds": 55.140729875303805,
+    "first_rc": 124,
+    "success_seconds": 12.327298250049353,
+    "actual_model": "deepseek-v4-flash[1m]",
+    "scope": "short facts only, not full source/performance audit"
+  },
+  "lecture175_old_prefix": {
+    "size_bytes": 508686,
+    "sha256": "94cee42211287bda58919f4b8309e682266196c7de81c85ffe30ec6d29d84aa0"
+  },
+  "limitations": [
+    "actual native/live source execution remains unverified until separately bounded preparation",
+    "explicit source authentication payload excludes native internal rereads, open occurrences logged separately",
+    "process tree RSS sampled, not a guaranteed peak",
+    "first test runs precede named freezes; later frozen tests and E2E verified",
+    "E2E metadata01/02 omitted oracle9504B; originals preserved,03 corrected"
+  ],
+  "report": "handoff/linux-runs/2026-10-07-x20-86304-resource-implementation.md",
+  "no_new_figures": true
+}
