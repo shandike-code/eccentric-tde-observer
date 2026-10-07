@@ -1,0 +1,3727 @@
+{
+  "stage": "column-integrated-motion-synthetic",
+  "results": {
+    "mac": {
+      "synthetic_motion_configuration_verified": true,
+      "original_modules": 156,
+      "blocks": 1,
+      "source_bytes": 12682,
+      "meter": {
+        "explicit_payload_capacity_reserved_bytes": 429614,
+        "header_payload_copy_bytes": 0,
+        "header_ast_created": false,
+        "entries": [
+          [
+            "temperature_k:output-bytearray",
+            1152
+          ],
+          [
+            "temperature_k:input-slice",
+            86
+          ],
+          [
+            "temperature_k:returned-and-tail-capacity",
+            1325
+          ],
+          [
+            "temperature_k:immutable-output",
+            1152
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "hydrogen_fraction:output-bytearray",
+            2176
+          ],
+          [
+            "hydrogen_fraction:input-slice",
+            105
+          ],
+          [
+            "hydrogen_fraction:returned-and-tail-capacity",
+            2387
+          ],
+          [
+            "hydrogen_fraction:immutable-output",
+            2176
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "helium_fraction:output-bytearray",
+            3200
+          ],
+          [
+            "helium_fraction:input-slice",
+            122
+          ],
+          [
+            "helium_fraction:returned-and-tail-capacity",
+            3445
+          ],
+          [
+            "helium_fraction:immutable-output",
+            3200
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "specific_material_energy_erg_g:output-bytearray",
+            1152
+          ],
+          [
+            "specific_material_energy_erg_g:input-slice",
+            86
+          ],
+          [
+            "specific_material_energy_erg_g:returned-and-tail-capacity",
+            1325
+          ],
+          [
+            "specific_material_energy_erg_g:immutable-output",
+            1152
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "density_g_cm3:output-bytearray",
+            1152
+          ],
+          [
+            "density_g_cm3:input-slice",
+            87
+          ],
+          [
+            "density_g_cm3:returned-and-tail-capacity",
+            1327
+          ],
+          [
+            "density_g_cm3:immutable-output",
+            1152
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "phase_index:output-bytearray",
+            136
+          ],
+          [
+            "phase_index:input-slice",
+            69
+          ],
+          [
+            "phase_index:returned-and-tail-capacity",
+            275
+          ],
+          [
+            "phase_index:immutable-output",
+            136
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "step_duration_s:output-bytearray",
+            136
+          ],
+          [
+            "step_duration_s:input-slice",
+            71
+          ],
+          [
+            "step_duration_s:returned-and-tail-capacity",
+            279
+          ],
+          [
+            "step_duration_s:immutable-output",
+            136
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "relaxation:output-bytearray",
+            136
+          ],
+          [
+            "relaxation:input-slice",
+            69
+          ],
+          [
+            "relaxation:returned-and-tail-capacity",
+            275
+          ],
+          [
+            "relaxation:immutable-output",
+            136
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "encoded_state:output-bytearray",
+            4224
+          ],
+          [
+            "encoded_state:input-slice",
+            118
+          ],
+          [
+            "encoded_state:returned-and-tail-capacity",
+            4461
+          ],
+          [
+            "encoded_state:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "base_encoded_state:output-bytearray",
+            4224
+          ],
+          [
+            "base_encoded_state:input-slice",
+            118
+          ],
+          [
+            "base_encoded_state:returned-and-tail-capacity",
+            4461
+          ],
+          [
+            "base_encoded_state:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "base_residual:output-bytearray",
+            4224
+          ],
+          [
+            "base_residual:input-slice",
+            98
+          ],
+          [
+            "base_residual:returned-and-tail-capacity",
+            4421
+          ],
+          [
+            "base_residual:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "finite_direction:output-bytearray",
+            4224
+          ],
+          [
+            "finite_direction:input-slice",
+            98
+          ],
+          [
+            "finite_direction:returned-and-tail-capacity",
+            4421
+          ],
+          [
+            "finite_direction:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "array-finite-mask",
+            128
+          ],
+          [
+            "array-finite-mask",
+            256
+          ],
+          [
+            "array-finite-mask",
+            384
+          ],
+          [
+            "array-finite-mask",
+            128
+          ],
+          [
+            "array-finite-mask",
+            128
+          ],
+          [
+            "array-finite-mask",
+            1
+          ],
+          [
+            "array-finite-mask",
+            1
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "temperature_k:output-bytearray",
+            1152
+          ],
+          [
+            "temperature_k:input-slice",
+            86
+          ],
+          [
+            "temperature_k:returned-and-tail-capacity",
+            1325
+          ],
+          [
+            "temperature_k:immutable-output",
+            1152
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "hydrogen_fraction:output-bytearray",
+            2176
+          ],
+          [
+            "hydrogen_fraction:input-slice",
+            105
+          ],
+          [
+            "hydrogen_fraction:returned-and-tail-capacity",
+            2387
+          ],
+          [
+            "hydrogen_fraction:immutable-output",
+            2176
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "helium_fraction:output-bytearray",
+            3200
+          ],
+          [
+            "helium_fraction:input-slice",
+            122
+          ],
+          [
+            "helium_fraction:returned-and-tail-capacity",
+            3445
+          ],
+          [
+            "helium_fraction:immutable-output",
+            3200
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "specific_material_energy_erg_g:output-bytearray",
+            1152
+          ],
+          [
+            "specific_material_energy_erg_g:input-slice",
+            86
+          ],
+          [
+            "specific_material_energy_erg_g:returned-and-tail-capacity",
+            1325
+          ],
+          [
+            "specific_material_energy_erg_g:immutable-output",
+            1152
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "density_g_cm3:output-bytearray",
+            1152
+          ],
+          [
+            "density_g_cm3:input-slice",
+            87
+          ],
+          [
+            "density_g_cm3:returned-and-tail-capacity",
+            1327
+          ],
+          [
+            "density_g_cm3:immutable-output",
+            1152
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "phase_index:output-bytearray",
+            136
+          ],
+          [
+            "phase_index:input-slice",
+            69
+          ],
+          [
+            "phase_index:returned-and-tail-capacity",
+            275
+          ],
+          [
+            "phase_index:immutable-output",
+            136
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "step_duration_s:output-bytearray",
+            136
+          ],
+          [
+            "step_duration_s:input-slice",
+            71
+          ],
+          [
+            "step_duration_s:returned-and-tail-capacity",
+            279
+          ],
+          [
+            "step_duration_s:immutable-output",
+            136
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "relaxation:output-bytearray",
+            136
+          ],
+          [
+            "relaxation:input-slice",
+            69
+          ],
+          [
+            "relaxation:returned-and-tail-capacity",
+            275
+          ],
+          [
+            "relaxation:immutable-output",
+            136
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "encoded_state:output-bytearray",
+            4224
+          ],
+          [
+            "encoded_state:input-slice",
+            118
+          ],
+          [
+            "encoded_state:returned-and-tail-capacity",
+            4461
+          ],
+          [
+            "encoded_state:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "base_encoded_state:output-bytearray",
+            4224
+          ],
+          [
+            "base_encoded_state:input-slice",
+            118
+          ],
+          [
+            "base_encoded_state:returned-and-tail-capacity",
+            4461
+          ],
+          [
+            "base_encoded_state:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "base_residual:output-bytearray",
+            4224
+          ],
+          [
+            "base_residual:input-slice",
+            98
+          ],
+          [
+            "base_residual:returned-and-tail-capacity",
+            4421
+          ],
+          [
+            "base_residual:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "finite_direction:output-bytearray",
+            4224
+          ],
+          [
+            "finite_direction:input-slice",
+            98
+          ],
+          [
+            "finite_direction:returned-and-tail-capacity",
+            4421
+          ],
+          [
+            "finite_direction:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "array-finite-mask",
+            128
+          ],
+          [
+            "array-finite-mask",
+            256
+          ],
+          [
+            "array-finite-mask",
+            384
+          ],
+          [
+            "array-finite-mask",
+            128
+          ],
+          [
+            "array-finite-mask",
+            128
+          ],
+          [
+            "array-finite-mask",
+            1
+          ],
+          [
+            "array-finite-mask",
+            1
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "density_g_cm3:output-bytearray",
+            2176
+          ],
+          [
+            "density_g_cm3:input-slice",
+            96
+          ],
+          [
+            "density_g_cm3:returned-and-tail-capacity",
+            2369
+          ],
+          [
+            "density_g_cm3:immutable-output",
+            2176
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "temperature_k:output-bytearray",
+            2176
+          ],
+          [
+            "temperature_k:input-slice",
+            95
+          ],
+          [
+            "temperature_k:returned-and-tail-capacity",
+            2367
+          ],
+          [
+            "temperature_k:immutable-output",
+            2176
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "hydrogen_fraction:output-bytearray",
+            4224
+          ],
+          [
+            "hydrogen_fraction:input-slice",
+            123
+          ],
+          [
+            "hydrogen_fraction:returned-and-tail-capacity",
+            4471
+          ],
+          [
+            "hydrogen_fraction:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "helium_fraction:output-bytearray",
+            6272
+          ],
+          [
+            "helium_fraction:input-slice",
+            149
+          ],
+          [
+            "helium_fraction:returned-and-tail-capacity",
+            6571
+          ],
+          [
+            "helium_fraction:immutable-output",
+            6272
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "cell_mass_g_cm2:output-bytearray",
+            1152
+          ],
+          [
+            "cell_mass_g_cm2:input-slice",
+            87
+          ],
+          [
+            "cell_mass_g_cm2:returned-and-tail-capacity",
+            1327
+          ],
+          [
+            "cell_mass_g_cm2:immutable-output",
+            1152
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "step_duration_s:output-bytearray",
+            144
+          ],
+          [
+            "step_duration_s:input-slice",
+            74
+          ],
+          [
+            "step_duration_s:returned-and-tail-capacity",
+            293
+          ],
+          [
+            "step_duration_s:immutable-output",
+            144
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "array-finite-mask",
+            256
+          ],
+          [
+            "array-finite-mask",
+            256
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "array-finite-mask",
+            768
+          ],
+          [
+            "array-finite-mask",
+            128
+          ],
+          [
+            "array-finite-mask",
+            2
+          ],
+          [
+            "active_edge_hz:output-bytearray",
+            656
+          ],
+          [
+            "active_edge_hz:input-slice",
+            206
+          ],
+          [
+            "active_edge_hz:returned-and-tail-capacity",
+            1069
+          ],
+          [
+            "active_edge_hz:immutable-output",
+            656
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "maximum_beta:output-bytearray",
+            136
+          ],
+          [
+            "maximum_beta:input-slice",
+            69
+          ],
+          [
+            "maximum_beta:returned-and-tail-capacity",
+            275
+          ],
+          [
+            "maximum_beta:immutable-output",
+            136
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "array-finite-mask",
+            66
+          ],
+          [
+            "array-finite-mask",
+            1
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "motion:density_g_cm3:finite-mask",
+            256
+          ],
+          [
+            "motion:density_g_cm3:lower-mask",
+            256
+          ],
+          [
+            "motion:temperature_k:finite-mask",
+            256
+          ],
+          [
+            "motion:temperature_k:lower-mask",
+            256
+          ],
+          [
+            "motion:hydrogen_fraction:finite-mask",
+            512
+          ],
+          [
+            "motion:hydrogen_fraction:lower-mask",
+            512
+          ],
+          [
+            "motion:hydrogen_fraction:upper-mask",
+            512
+          ],
+          [
+            "motion:helium_fraction:finite-mask",
+            768
+          ],
+          [
+            "motion:helium_fraction:lower-mask",
+            768
+          ],
+          [
+            "motion:helium_fraction:upper-mask",
+            768
+          ],
+          [
+            "motion:cell_mass_g_cm2:finite-mask",
+            128
+          ],
+          [
+            "motion:cell_mass_g_cm2:lower-mask",
+            128
+          ],
+          [
+            "motion:step_duration_s:finite-mask",
+            2
+          ],
+          [
+            "motion:step_duration_s:lower-mask",
+            2
+          ],
+          [
+            "motion:edge-finite-mask",
+            66
+          ],
+          [
+            "motion:edge-positive-mask",
+            66
+          ],
+          [
+            "motion:edge-diff",
+            520
+          ],
+          [
+            "motion:edge-increasing-mask",
+            65
+          ],
+          [
+            "trial-base-comparison-bytes",
+            49200
+          ],
+          [
+            "array-copy",
+            1024
+          ],
+          [
+            "array-copy",
+            1024
+          ],
+          [
+            "array-copy",
+            2048
+          ],
+          [
+            "array-copy",
+            3072
+          ],
+          [
+            "array-mirror",
+            2048
+          ],
+          [
+            "array-mirror",
+            2048
+          ],
+          [
+            "array-mirror",
+            4096
+          ],
+          [
+            "array-mirror",
+            6144
+          ],
+          [
+            "motion:density_g_cm3:finite-mask",
+            256
+          ],
+          [
+            "motion:density_g_cm3:lower-mask",
+            256
+          ],
+          [
+            "motion:temperature_k:finite-mask",
+            256
+          ],
+          [
+            "motion:temperature_k:lower-mask",
+            256
+          ],
+          [
+            "motion:hydrogen_fraction:finite-mask",
+            512
+          ],
+          [
+            "motion:hydrogen_fraction:lower-mask",
+            512
+          ],
+          [
+            "motion:hydrogen_fraction:upper-mask",
+            512
+          ],
+          [
+            "motion:helium_fraction:finite-mask",
+            768
+          ],
+          [
+            "motion:helium_fraction:lower-mask",
+            768
+          ],
+          [
+            "motion:helium_fraction:upper-mask",
+            768
+          ],
+          [
+            "motion:cell_mass_g_cm2:finite-mask",
+            128
+          ],
+          [
+            "motion:cell_mass_g_cm2:lower-mask",
+            128
+          ],
+          [
+            "motion:step_duration_s:finite-mask",
+            2
+          ],
+          [
+            "motion:step_duration_s:lower-mask",
+            2
+          ],
+          [
+            "motion:edge-finite-mask",
+            66
+          ],
+          [
+            "motion:edge-positive-mask",
+            66
+          ],
+          [
+            "motion:edge-diff",
+            520
+          ],
+          [
+            "motion:edge-increasing-mask",
+            65
+          ],
+          [
+            "column:cell_mass_g_cm2:finite-mask",
+            128
+          ],
+          [
+            "column:cell_mass_g_cm2:lower-mask",
+            128
+          ],
+          [
+            "column:density_g_cm3:finite-mask",
+            256
+          ],
+          [
+            "column:density_g_cm3:lower-mask",
+            256
+          ],
+          [
+            "column:temperature_k:finite-mask",
+            256
+          ],
+          [
+            "column:temperature_k:lower-mask",
+            256
+          ],
+          [
+            "column:hydrogen_fraction:finite-mask",
+            512
+          ],
+          [
+            "column:hydrogen_fraction:lower-mask",
+            512
+          ],
+          [
+            "column:hydrogen_fraction:upper-mask",
+            512
+          ],
+          [
+            "column:helium_fraction:finite-mask",
+            768
+          ],
+          [
+            "column:helium_fraction:lower-mask",
+            768
+          ],
+          [
+            "column:helium_fraction:upper-mask",
+            768
+          ],
+          [
+            "column:half-width",
+            2048
+          ],
+          [
+            "column:full-width",
+            4096
+          ],
+          [
+            "column:half-thickness",
+            16
+          ],
+          [
+            "column:left-negative",
+            16
+          ],
+          [
+            "column:right-negative",
+            16
+          ],
+          [
+            "column:cumulative-width",
+            4096
+          ],
+          [
+            "column:shifted-edge",
+            4096
+          ],
+          [
+            "column:edge",
+            4112
+          ],
+          [
+            "column:midplane-absolute",
+            16
+          ],
+          [
+            "column:density_g_cm3:mirror",
+            4096
+          ],
+          [
+            "column:temperature_k:mirror",
+            4096
+          ],
+          [
+            "column:hydrogen_fraction:mirror",
+            8192
+          ],
+          [
+            "column:helium_fraction:mirror",
+            12288
+          ],
+          [
+            "column:edge_cm:output-finite-mask",
+            514
+          ],
+          [
+            "column:density_g_cm3:output-finite-mask",
+            512
+          ],
+          [
+            "column:temperature_k:output-finite-mask",
+            512
+          ],
+          [
+            "column:hydrogen_fraction:output-finite-mask",
+            1024
+          ],
+          [
+            "column:helium_fraction:output-finite-mask",
+            1536
+          ],
+          [
+            "motion:following-edge",
+            4112
+          ],
+          [
+            "motion:edge-displacement",
+            4112
+          ],
+          [
+            "motion:duration-light-distance",
+            16
+          ],
+          [
+            "motion:face-beta",
+            4112
+          ],
+          [
+            "motion:face-beta-absolute",
+            4112
+          ],
+          [
+            "motion:argmax-contiguous-capacity",
+            4112
+          ],
+          [
+            "motion:adjacent-face-sum",
+            2048
+          ],
+          [
+            "motion:parent-beta",
+            2048
+          ],
+          [
+            "motion:subcell-beta",
+            32768
+          ],
+          [
+            "motion:face-beta:finite-mask",
+            514
+          ],
+          [
+            "motion:parent-beta:finite-mask",
+            256
+          ],
+          [
+            "motion:beta:finite-mask",
+            4096
+          ],
+          [
+            "motion:quadrature-return-capacity",
+            512
+          ],
+          [
+            "motion:active-edge-copy",
+            528
+          ]
+        ],
+        "events": [
+          {
+            "label": "trial",
+            "member": "temperature_k",
+            "calls": 1,
+            "max_input_bytes": 86,
+            "max_output_bytes": 1152,
+            "compressed_payload_bytes": 86,
+            "decompressed_payload_bytes": 1152
+          },
+          {
+            "label": "trial",
+            "member": "hydrogen_fraction",
+            "calls": 1,
+            "max_input_bytes": 105,
+            "max_output_bytes": 2176,
+            "compressed_payload_bytes": 105,
+            "decompressed_payload_bytes": 2176
+          },
+          {
+            "label": "trial",
+            "member": "helium_fraction",
+            "calls": 1,
+            "max_input_bytes": 122,
+            "max_output_bytes": 3200,
+            "compressed_payload_bytes": 122,
+            "decompressed_payload_bytes": 3200
+          },
+          {
+            "label": "trial",
+            "member": "specific_material_energy_erg_g",
+            "calls": 1,
+            "max_input_bytes": 86,
+            "max_output_bytes": 1152,
+            "compressed_payload_bytes": 86,
+            "decompressed_payload_bytes": 1152
+          },
+          {
+            "label": "trial",
+            "member": "density_g_cm3",
+            "calls": 1,
+            "max_input_bytes": 87,
+            "max_output_bytes": 1152,
+            "compressed_payload_bytes": 87,
+            "decompressed_payload_bytes": 1152
+          },
+          {
+            "label": "trial",
+            "member": "phase_index",
+            "calls": 1,
+            "max_input_bytes": 69,
+            "max_output_bytes": 136,
+            "compressed_payload_bytes": 69,
+            "decompressed_payload_bytes": 136
+          },
+          {
+            "label": "trial",
+            "member": "step_duration_s",
+            "calls": 1,
+            "max_input_bytes": 71,
+            "max_output_bytes": 136,
+            "compressed_payload_bytes": 71,
+            "decompressed_payload_bytes": 136
+          },
+          {
+            "label": "trial",
+            "member": "relaxation",
+            "calls": 1,
+            "max_input_bytes": 69,
+            "max_output_bytes": 136,
+            "compressed_payload_bytes": 69,
+            "decompressed_payload_bytes": 136
+          },
+          {
+            "label": "trial",
+            "member": "encoded_state",
+            "calls": 1,
+            "max_input_bytes": 118,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 118,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "trial",
+            "member": "base_encoded_state",
+            "calls": 1,
+            "max_input_bytes": 118,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 118,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "trial",
+            "member": "base_residual",
+            "calls": 1,
+            "max_input_bytes": 98,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 98,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "trial",
+            "member": "finite_direction",
+            "calls": 1,
+            "max_input_bytes": 98,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 98,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "base",
+            "member": "temperature_k",
+            "calls": 1,
+            "max_input_bytes": 86,
+            "max_output_bytes": 1152,
+            "compressed_payload_bytes": 86,
+            "decompressed_payload_bytes": 1152
+          },
+          {
+            "label": "base",
+            "member": "hydrogen_fraction",
+            "calls": 1,
+            "max_input_bytes": 105,
+            "max_output_bytes": 2176,
+            "compressed_payload_bytes": 105,
+            "decompressed_payload_bytes": 2176
+          },
+          {
+            "label": "base",
+            "member": "helium_fraction",
+            "calls": 1,
+            "max_input_bytes": 122,
+            "max_output_bytes": 3200,
+            "compressed_payload_bytes": 122,
+            "decompressed_payload_bytes": 3200
+          },
+          {
+            "label": "base",
+            "member": "specific_material_energy_erg_g",
+            "calls": 1,
+            "max_input_bytes": 86,
+            "max_output_bytes": 1152,
+            "compressed_payload_bytes": 86,
+            "decompressed_payload_bytes": 1152
+          },
+          {
+            "label": "base",
+            "member": "density_g_cm3",
+            "calls": 1,
+            "max_input_bytes": 87,
+            "max_output_bytes": 1152,
+            "compressed_payload_bytes": 87,
+            "decompressed_payload_bytes": 1152
+          },
+          {
+            "label": "base",
+            "member": "phase_index",
+            "calls": 1,
+            "max_input_bytes": 69,
+            "max_output_bytes": 136,
+            "compressed_payload_bytes": 69,
+            "decompressed_payload_bytes": 136
+          },
+          {
+            "label": "base",
+            "member": "step_duration_s",
+            "calls": 1,
+            "max_input_bytes": 71,
+            "max_output_bytes": 136,
+            "compressed_payload_bytes": 71,
+            "decompressed_payload_bytes": 136
+          },
+          {
+            "label": "base",
+            "member": "relaxation",
+            "calls": 1,
+            "max_input_bytes": 69,
+            "max_output_bytes": 136,
+            "compressed_payload_bytes": 69,
+            "decompressed_payload_bytes": 136
+          },
+          {
+            "label": "base",
+            "member": "encoded_state",
+            "calls": 1,
+            "max_input_bytes": 118,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 118,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "base",
+            "member": "base_encoded_state",
+            "calls": 1,
+            "max_input_bytes": 118,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 118,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "base",
+            "member": "base_residual",
+            "calls": 1,
+            "max_input_bytes": 98,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 98,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "base",
+            "member": "finite_direction",
+            "calls": 1,
+            "max_input_bytes": 98,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 98,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "old",
+            "member": "density_g_cm3",
+            "calls": 1,
+            "max_input_bytes": 96,
+            "max_output_bytes": 2176,
+            "compressed_payload_bytes": 96,
+            "decompressed_payload_bytes": 2176
+          },
+          {
+            "label": "old",
+            "member": "temperature_k",
+            "calls": 1,
+            "max_input_bytes": 95,
+            "max_output_bytes": 2176,
+            "compressed_payload_bytes": 95,
+            "decompressed_payload_bytes": 2176
+          },
+          {
+            "label": "old",
+            "member": "hydrogen_fraction",
+            "calls": 1,
+            "max_input_bytes": 123,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 123,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "old",
+            "member": "helium_fraction",
+            "calls": 1,
+            "max_input_bytes": 149,
+            "max_output_bytes": 6272,
+            "compressed_payload_bytes": 149,
+            "decompressed_payload_bytes": 6272
+          },
+          {
+            "label": "old",
+            "member": "cell_mass_g_cm2",
+            "calls": 1,
+            "max_input_bytes": 87,
+            "max_output_bytes": 1152,
+            "compressed_payload_bytes": 87,
+            "decompressed_payload_bytes": 1152
+          },
+          {
+            "label": "old",
+            "member": "step_duration_s",
+            "calls": 1,
+            "max_input_bytes": 74,
+            "max_output_bytes": 144,
+            "compressed_payload_bytes": 74,
+            "decompressed_payload_bytes": 144
+          },
+          {
+            "label": "master",
+            "member": "active_edge_hz",
+            "calls": 1,
+            "max_input_bytes": 206,
+            "max_output_bytes": 656,
+            "compressed_payload_bytes": 206,
+            "decompressed_payload_bytes": 656
+          },
+          {
+            "label": "master",
+            "member": "maximum_beta",
+            "calls": 1,
+            "max_input_bytes": 69,
+            "max_output_bytes": 136,
+            "compressed_payload_bytes": 69,
+            "decompressed_payload_bytes": 136
+          }
+        ],
+        "python_object_overhead_metered": false,
+        "all_scientific_temporaries_metered": false,
+        "whole_lifecycle_guard_verified": false,
+        "production_authorized": false
+      },
+      "resources": {
+        "elapsed_s": 0.8932330422103405,
+        "peak_rss_bytes": 182812672
+      },
+      "outer_seconds": 0.9611257910728455,
+      "whole_lifecycle_guard_verified": false,
+      "complete_native_context_verified": false,
+      "production_authorized": false
+    },
+    "school": {
+      "synthetic_motion_configuration_verified": true,
+      "original_modules": 156,
+      "blocks": 1,
+      "source_bytes": 12682,
+      "meter": {
+        "explicit_payload_capacity_reserved_bytes": 429614,
+        "header_payload_copy_bytes": 0,
+        "header_ast_created": false,
+        "entries": [
+          [
+            "temperature_k:output-bytearray",
+            1152
+          ],
+          [
+            "temperature_k:input-slice",
+            86
+          ],
+          [
+            "temperature_k:returned-and-tail-capacity",
+            1325
+          ],
+          [
+            "temperature_k:immutable-output",
+            1152
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "hydrogen_fraction:output-bytearray",
+            2176
+          ],
+          [
+            "hydrogen_fraction:input-slice",
+            105
+          ],
+          [
+            "hydrogen_fraction:returned-and-tail-capacity",
+            2387
+          ],
+          [
+            "hydrogen_fraction:immutable-output",
+            2176
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "helium_fraction:output-bytearray",
+            3200
+          ],
+          [
+            "helium_fraction:input-slice",
+            122
+          ],
+          [
+            "helium_fraction:returned-and-tail-capacity",
+            3445
+          ],
+          [
+            "helium_fraction:immutable-output",
+            3200
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "specific_material_energy_erg_g:output-bytearray",
+            1152
+          ],
+          [
+            "specific_material_energy_erg_g:input-slice",
+            86
+          ],
+          [
+            "specific_material_energy_erg_g:returned-and-tail-capacity",
+            1325
+          ],
+          [
+            "specific_material_energy_erg_g:immutable-output",
+            1152
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "density_g_cm3:output-bytearray",
+            1152
+          ],
+          [
+            "density_g_cm3:input-slice",
+            87
+          ],
+          [
+            "density_g_cm3:returned-and-tail-capacity",
+            1327
+          ],
+          [
+            "density_g_cm3:immutable-output",
+            1152
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "phase_index:output-bytearray",
+            136
+          ],
+          [
+            "phase_index:input-slice",
+            69
+          ],
+          [
+            "phase_index:returned-and-tail-capacity",
+            275
+          ],
+          [
+            "phase_index:immutable-output",
+            136
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "step_duration_s:output-bytearray",
+            136
+          ],
+          [
+            "step_duration_s:input-slice",
+            71
+          ],
+          [
+            "step_duration_s:returned-and-tail-capacity",
+            279
+          ],
+          [
+            "step_duration_s:immutable-output",
+            136
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "relaxation:output-bytearray",
+            136
+          ],
+          [
+            "relaxation:input-slice",
+            69
+          ],
+          [
+            "relaxation:returned-and-tail-capacity",
+            275
+          ],
+          [
+            "relaxation:immutable-output",
+            136
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "encoded_state:output-bytearray",
+            4224
+          ],
+          [
+            "encoded_state:input-slice",
+            118
+          ],
+          [
+            "encoded_state:returned-and-tail-capacity",
+            4461
+          ],
+          [
+            "encoded_state:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "base_encoded_state:output-bytearray",
+            4224
+          ],
+          [
+            "base_encoded_state:input-slice",
+            118
+          ],
+          [
+            "base_encoded_state:returned-and-tail-capacity",
+            4461
+          ],
+          [
+            "base_encoded_state:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "base_residual:output-bytearray",
+            4224
+          ],
+          [
+            "base_residual:input-slice",
+            98
+          ],
+          [
+            "base_residual:returned-and-tail-capacity",
+            4421
+          ],
+          [
+            "base_residual:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "finite_direction:output-bytearray",
+            4224
+          ],
+          [
+            "finite_direction:input-slice",
+            98
+          ],
+          [
+            "finite_direction:returned-and-tail-capacity",
+            4421
+          ],
+          [
+            "finite_direction:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "array-finite-mask",
+            128
+          ],
+          [
+            "array-finite-mask",
+            256
+          ],
+          [
+            "array-finite-mask",
+            384
+          ],
+          [
+            "array-finite-mask",
+            128
+          ],
+          [
+            "array-finite-mask",
+            128
+          ],
+          [
+            "array-finite-mask",
+            1
+          ],
+          [
+            "array-finite-mask",
+            1
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "temperature_k:output-bytearray",
+            1152
+          ],
+          [
+            "temperature_k:input-slice",
+            86
+          ],
+          [
+            "temperature_k:returned-and-tail-capacity",
+            1325
+          ],
+          [
+            "temperature_k:immutable-output",
+            1152
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "hydrogen_fraction:output-bytearray",
+            2176
+          ],
+          [
+            "hydrogen_fraction:input-slice",
+            105
+          ],
+          [
+            "hydrogen_fraction:returned-and-tail-capacity",
+            2387
+          ],
+          [
+            "hydrogen_fraction:immutable-output",
+            2176
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "helium_fraction:output-bytearray",
+            3200
+          ],
+          [
+            "helium_fraction:input-slice",
+            122
+          ],
+          [
+            "helium_fraction:returned-and-tail-capacity",
+            3445
+          ],
+          [
+            "helium_fraction:immutable-output",
+            3200
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "specific_material_energy_erg_g:output-bytearray",
+            1152
+          ],
+          [
+            "specific_material_energy_erg_g:input-slice",
+            86
+          ],
+          [
+            "specific_material_energy_erg_g:returned-and-tail-capacity",
+            1325
+          ],
+          [
+            "specific_material_energy_erg_g:immutable-output",
+            1152
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "density_g_cm3:output-bytearray",
+            1152
+          ],
+          [
+            "density_g_cm3:input-slice",
+            87
+          ],
+          [
+            "density_g_cm3:returned-and-tail-capacity",
+            1327
+          ],
+          [
+            "density_g_cm3:immutable-output",
+            1152
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "phase_index:output-bytearray",
+            136
+          ],
+          [
+            "phase_index:input-slice",
+            69
+          ],
+          [
+            "phase_index:returned-and-tail-capacity",
+            275
+          ],
+          [
+            "phase_index:immutable-output",
+            136
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "step_duration_s:output-bytearray",
+            136
+          ],
+          [
+            "step_duration_s:input-slice",
+            71
+          ],
+          [
+            "step_duration_s:returned-and-tail-capacity",
+            279
+          ],
+          [
+            "step_duration_s:immutable-output",
+            136
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "relaxation:output-bytearray",
+            136
+          ],
+          [
+            "relaxation:input-slice",
+            69
+          ],
+          [
+            "relaxation:returned-and-tail-capacity",
+            275
+          ],
+          [
+            "relaxation:immutable-output",
+            136
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "encoded_state:output-bytearray",
+            4224
+          ],
+          [
+            "encoded_state:input-slice",
+            118
+          ],
+          [
+            "encoded_state:returned-and-tail-capacity",
+            4461
+          ],
+          [
+            "encoded_state:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "base_encoded_state:output-bytearray",
+            4224
+          ],
+          [
+            "base_encoded_state:input-slice",
+            118
+          ],
+          [
+            "base_encoded_state:returned-and-tail-capacity",
+            4461
+          ],
+          [
+            "base_encoded_state:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "base_residual:output-bytearray",
+            4224
+          ],
+          [
+            "base_residual:input-slice",
+            98
+          ],
+          [
+            "base_residual:returned-and-tail-capacity",
+            4421
+          ],
+          [
+            "base_residual:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "finite_direction:output-bytearray",
+            4224
+          ],
+          [
+            "finite_direction:input-slice",
+            98
+          ],
+          [
+            "finite_direction:returned-and-tail-capacity",
+            4421
+          ],
+          [
+            "finite_direction:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "array-finite-mask",
+            128
+          ],
+          [
+            "array-finite-mask",
+            256
+          ],
+          [
+            "array-finite-mask",
+            384
+          ],
+          [
+            "array-finite-mask",
+            128
+          ],
+          [
+            "array-finite-mask",
+            128
+          ],
+          [
+            "array-finite-mask",
+            1
+          ],
+          [
+            "array-finite-mask",
+            1
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "density_g_cm3:output-bytearray",
+            2176
+          ],
+          [
+            "density_g_cm3:input-slice",
+            96
+          ],
+          [
+            "density_g_cm3:returned-and-tail-capacity",
+            2369
+          ],
+          [
+            "density_g_cm3:immutable-output",
+            2176
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "temperature_k:output-bytearray",
+            2176
+          ],
+          [
+            "temperature_k:input-slice",
+            95
+          ],
+          [
+            "temperature_k:returned-and-tail-capacity",
+            2367
+          ],
+          [
+            "temperature_k:immutable-output",
+            2176
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "hydrogen_fraction:output-bytearray",
+            4224
+          ],
+          [
+            "hydrogen_fraction:input-slice",
+            123
+          ],
+          [
+            "hydrogen_fraction:returned-and-tail-capacity",
+            4471
+          ],
+          [
+            "hydrogen_fraction:immutable-output",
+            4224
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "helium_fraction:output-bytearray",
+            6272
+          ],
+          [
+            "helium_fraction:input-slice",
+            149
+          ],
+          [
+            "helium_fraction:returned-and-tail-capacity",
+            6571
+          ],
+          [
+            "helium_fraction:immutable-output",
+            6272
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "cell_mass_g_cm2:output-bytearray",
+            1152
+          ],
+          [
+            "cell_mass_g_cm2:input-slice",
+            87
+          ],
+          [
+            "cell_mass_g_cm2:returned-and-tail-capacity",
+            1327
+          ],
+          [
+            "cell_mass_g_cm2:immutable-output",
+            1152
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "step_duration_s:output-bytearray",
+            144
+          ],
+          [
+            "step_duration_s:input-slice",
+            74
+          ],
+          [
+            "step_duration_s:returned-and-tail-capacity",
+            293
+          ],
+          [
+            "step_duration_s:immutable-output",
+            144
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "array-finite-mask",
+            256
+          ],
+          [
+            "array-finite-mask",
+            256
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "array-finite-mask",
+            768
+          ],
+          [
+            "array-finite-mask",
+            128
+          ],
+          [
+            "array-finite-mask",
+            2
+          ],
+          [
+            "active_edge_hz:output-bytearray",
+            656
+          ],
+          [
+            "active_edge_hz:input-slice",
+            206
+          ],
+          [
+            "active_edge_hz:returned-and-tail-capacity",
+            1069
+          ],
+          [
+            "active_edge_hz:immutable-output",
+            656
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "maximum_beta:output-bytearray",
+            136
+          ],
+          [
+            "maximum_beta:input-slice",
+            69
+          ],
+          [
+            "maximum_beta:returned-and-tail-capacity",
+            275
+          ],
+          [
+            "maximum_beta:immutable-output",
+            136
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "array-finite-mask",
+            66
+          ],
+          [
+            "array-finite-mask",
+            1
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "header-token-bytes-and-characters",
+            6
+          ],
+          [
+            "header-token-bytes-and-characters",
+            26
+          ],
+          [
+            "header-token-bytes-and-characters",
+            10
+          ],
+          [
+            "array-finite-mask",
+            512
+          ],
+          [
+            "motion:density_g_cm3:finite-mask",
+            256
+          ],
+          [
+            "motion:density_g_cm3:lower-mask",
+            256
+          ],
+          [
+            "motion:temperature_k:finite-mask",
+            256
+          ],
+          [
+            "motion:temperature_k:lower-mask",
+            256
+          ],
+          [
+            "motion:hydrogen_fraction:finite-mask",
+            512
+          ],
+          [
+            "motion:hydrogen_fraction:lower-mask",
+            512
+          ],
+          [
+            "motion:hydrogen_fraction:upper-mask",
+            512
+          ],
+          [
+            "motion:helium_fraction:finite-mask",
+            768
+          ],
+          [
+            "motion:helium_fraction:lower-mask",
+            768
+          ],
+          [
+            "motion:helium_fraction:upper-mask",
+            768
+          ],
+          [
+            "motion:cell_mass_g_cm2:finite-mask",
+            128
+          ],
+          [
+            "motion:cell_mass_g_cm2:lower-mask",
+            128
+          ],
+          [
+            "motion:step_duration_s:finite-mask",
+            2
+          ],
+          [
+            "motion:step_duration_s:lower-mask",
+            2
+          ],
+          [
+            "motion:edge-finite-mask",
+            66
+          ],
+          [
+            "motion:edge-positive-mask",
+            66
+          ],
+          [
+            "motion:edge-diff",
+            520
+          ],
+          [
+            "motion:edge-increasing-mask",
+            65
+          ],
+          [
+            "trial-base-comparison-bytes",
+            49200
+          ],
+          [
+            "array-copy",
+            1024
+          ],
+          [
+            "array-copy",
+            1024
+          ],
+          [
+            "array-copy",
+            2048
+          ],
+          [
+            "array-copy",
+            3072
+          ],
+          [
+            "array-mirror",
+            2048
+          ],
+          [
+            "array-mirror",
+            2048
+          ],
+          [
+            "array-mirror",
+            4096
+          ],
+          [
+            "array-mirror",
+            6144
+          ],
+          [
+            "motion:density_g_cm3:finite-mask",
+            256
+          ],
+          [
+            "motion:density_g_cm3:lower-mask",
+            256
+          ],
+          [
+            "motion:temperature_k:finite-mask",
+            256
+          ],
+          [
+            "motion:temperature_k:lower-mask",
+            256
+          ],
+          [
+            "motion:hydrogen_fraction:finite-mask",
+            512
+          ],
+          [
+            "motion:hydrogen_fraction:lower-mask",
+            512
+          ],
+          [
+            "motion:hydrogen_fraction:upper-mask",
+            512
+          ],
+          [
+            "motion:helium_fraction:finite-mask",
+            768
+          ],
+          [
+            "motion:helium_fraction:lower-mask",
+            768
+          ],
+          [
+            "motion:helium_fraction:upper-mask",
+            768
+          ],
+          [
+            "motion:cell_mass_g_cm2:finite-mask",
+            128
+          ],
+          [
+            "motion:cell_mass_g_cm2:lower-mask",
+            128
+          ],
+          [
+            "motion:step_duration_s:finite-mask",
+            2
+          ],
+          [
+            "motion:step_duration_s:lower-mask",
+            2
+          ],
+          [
+            "motion:edge-finite-mask",
+            66
+          ],
+          [
+            "motion:edge-positive-mask",
+            66
+          ],
+          [
+            "motion:edge-diff",
+            520
+          ],
+          [
+            "motion:edge-increasing-mask",
+            65
+          ],
+          [
+            "column:cell_mass_g_cm2:finite-mask",
+            128
+          ],
+          [
+            "column:cell_mass_g_cm2:lower-mask",
+            128
+          ],
+          [
+            "column:density_g_cm3:finite-mask",
+            256
+          ],
+          [
+            "column:density_g_cm3:lower-mask",
+            256
+          ],
+          [
+            "column:temperature_k:finite-mask",
+            256
+          ],
+          [
+            "column:temperature_k:lower-mask",
+            256
+          ],
+          [
+            "column:hydrogen_fraction:finite-mask",
+            512
+          ],
+          [
+            "column:hydrogen_fraction:lower-mask",
+            512
+          ],
+          [
+            "column:hydrogen_fraction:upper-mask",
+            512
+          ],
+          [
+            "column:helium_fraction:finite-mask",
+            768
+          ],
+          [
+            "column:helium_fraction:lower-mask",
+            768
+          ],
+          [
+            "column:helium_fraction:upper-mask",
+            768
+          ],
+          [
+            "column:half-width",
+            2048
+          ],
+          [
+            "column:full-width",
+            4096
+          ],
+          [
+            "column:half-thickness",
+            16
+          ],
+          [
+            "column:left-negative",
+            16
+          ],
+          [
+            "column:right-negative",
+            16
+          ],
+          [
+            "column:cumulative-width",
+            4096
+          ],
+          [
+            "column:shifted-edge",
+            4096
+          ],
+          [
+            "column:edge",
+            4112
+          ],
+          [
+            "column:midplane-absolute",
+            16
+          ],
+          [
+            "column:density_g_cm3:mirror",
+            4096
+          ],
+          [
+            "column:temperature_k:mirror",
+            4096
+          ],
+          [
+            "column:hydrogen_fraction:mirror",
+            8192
+          ],
+          [
+            "column:helium_fraction:mirror",
+            12288
+          ],
+          [
+            "column:edge_cm:output-finite-mask",
+            514
+          ],
+          [
+            "column:density_g_cm3:output-finite-mask",
+            512
+          ],
+          [
+            "column:temperature_k:output-finite-mask",
+            512
+          ],
+          [
+            "column:hydrogen_fraction:output-finite-mask",
+            1024
+          ],
+          [
+            "column:helium_fraction:output-finite-mask",
+            1536
+          ],
+          [
+            "motion:following-edge",
+            4112
+          ],
+          [
+            "motion:edge-displacement",
+            4112
+          ],
+          [
+            "motion:duration-light-distance",
+            16
+          ],
+          [
+            "motion:face-beta",
+            4112
+          ],
+          [
+            "motion:face-beta-absolute",
+            4112
+          ],
+          [
+            "motion:argmax-contiguous-capacity",
+            4112
+          ],
+          [
+            "motion:adjacent-face-sum",
+            2048
+          ],
+          [
+            "motion:parent-beta",
+            2048
+          ],
+          [
+            "motion:subcell-beta",
+            32768
+          ],
+          [
+            "motion:face-beta:finite-mask",
+            514
+          ],
+          [
+            "motion:parent-beta:finite-mask",
+            256
+          ],
+          [
+            "motion:beta:finite-mask",
+            4096
+          ],
+          [
+            "motion:quadrature-return-capacity",
+            512
+          ],
+          [
+            "motion:active-edge-copy",
+            528
+          ]
+        ],
+        "events": [
+          {
+            "label": "trial",
+            "member": "temperature_k",
+            "calls": 1,
+            "max_input_bytes": 86,
+            "max_output_bytes": 1152,
+            "compressed_payload_bytes": 86,
+            "decompressed_payload_bytes": 1152
+          },
+          {
+            "label": "trial",
+            "member": "hydrogen_fraction",
+            "calls": 1,
+            "max_input_bytes": 105,
+            "max_output_bytes": 2176,
+            "compressed_payload_bytes": 105,
+            "decompressed_payload_bytes": 2176
+          },
+          {
+            "label": "trial",
+            "member": "helium_fraction",
+            "calls": 1,
+            "max_input_bytes": 122,
+            "max_output_bytes": 3200,
+            "compressed_payload_bytes": 122,
+            "decompressed_payload_bytes": 3200
+          },
+          {
+            "label": "trial",
+            "member": "specific_material_energy_erg_g",
+            "calls": 1,
+            "max_input_bytes": 86,
+            "max_output_bytes": 1152,
+            "compressed_payload_bytes": 86,
+            "decompressed_payload_bytes": 1152
+          },
+          {
+            "label": "trial",
+            "member": "density_g_cm3",
+            "calls": 1,
+            "max_input_bytes": 87,
+            "max_output_bytes": 1152,
+            "compressed_payload_bytes": 87,
+            "decompressed_payload_bytes": 1152
+          },
+          {
+            "label": "trial",
+            "member": "phase_index",
+            "calls": 1,
+            "max_input_bytes": 69,
+            "max_output_bytes": 136,
+            "compressed_payload_bytes": 69,
+            "decompressed_payload_bytes": 136
+          },
+          {
+            "label": "trial",
+            "member": "step_duration_s",
+            "calls": 1,
+            "max_input_bytes": 71,
+            "max_output_bytes": 136,
+            "compressed_payload_bytes": 71,
+            "decompressed_payload_bytes": 136
+          },
+          {
+            "label": "trial",
+            "member": "relaxation",
+            "calls": 1,
+            "max_input_bytes": 69,
+            "max_output_bytes": 136,
+            "compressed_payload_bytes": 69,
+            "decompressed_payload_bytes": 136
+          },
+          {
+            "label": "trial",
+            "member": "encoded_state",
+            "calls": 1,
+            "max_input_bytes": 118,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 118,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "trial",
+            "member": "base_encoded_state",
+            "calls": 1,
+            "max_input_bytes": 118,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 118,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "trial",
+            "member": "base_residual",
+            "calls": 1,
+            "max_input_bytes": 98,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 98,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "trial",
+            "member": "finite_direction",
+            "calls": 1,
+            "max_input_bytes": 98,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 98,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "base",
+            "member": "temperature_k",
+            "calls": 1,
+            "max_input_bytes": 86,
+            "max_output_bytes": 1152,
+            "compressed_payload_bytes": 86,
+            "decompressed_payload_bytes": 1152
+          },
+          {
+            "label": "base",
+            "member": "hydrogen_fraction",
+            "calls": 1,
+            "max_input_bytes": 105,
+            "max_output_bytes": 2176,
+            "compressed_payload_bytes": 105,
+            "decompressed_payload_bytes": 2176
+          },
+          {
+            "label": "base",
+            "member": "helium_fraction",
+            "calls": 1,
+            "max_input_bytes": 122,
+            "max_output_bytes": 3200,
+            "compressed_payload_bytes": 122,
+            "decompressed_payload_bytes": 3200
+          },
+          {
+            "label": "base",
+            "member": "specific_material_energy_erg_g",
+            "calls": 1,
+            "max_input_bytes": 86,
+            "max_output_bytes": 1152,
+            "compressed_payload_bytes": 86,
+            "decompressed_payload_bytes": 1152
+          },
+          {
+            "label": "base",
+            "member": "density_g_cm3",
+            "calls": 1,
+            "max_input_bytes": 87,
+            "max_output_bytes": 1152,
+            "compressed_payload_bytes": 87,
+            "decompressed_payload_bytes": 1152
+          },
+          {
+            "label": "base",
+            "member": "phase_index",
+            "calls": 1,
+            "max_input_bytes": 69,
+            "max_output_bytes": 136,
+            "compressed_payload_bytes": 69,
+            "decompressed_payload_bytes": 136
+          },
+          {
+            "label": "base",
+            "member": "step_duration_s",
+            "calls": 1,
+            "max_input_bytes": 71,
+            "max_output_bytes": 136,
+            "compressed_payload_bytes": 71,
+            "decompressed_payload_bytes": 136
+          },
+          {
+            "label": "base",
+            "member": "relaxation",
+            "calls": 1,
+            "max_input_bytes": 69,
+            "max_output_bytes": 136,
+            "compressed_payload_bytes": 69,
+            "decompressed_payload_bytes": 136
+          },
+          {
+            "label": "base",
+            "member": "encoded_state",
+            "calls": 1,
+            "max_input_bytes": 118,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 118,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "base",
+            "member": "base_encoded_state",
+            "calls": 1,
+            "max_input_bytes": 118,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 118,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "base",
+            "member": "base_residual",
+            "calls": 1,
+            "max_input_bytes": 98,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 98,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "base",
+            "member": "finite_direction",
+            "calls": 1,
+            "max_input_bytes": 98,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 98,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "old",
+            "member": "density_g_cm3",
+            "calls": 1,
+            "max_input_bytes": 96,
+            "max_output_bytes": 2176,
+            "compressed_payload_bytes": 96,
+            "decompressed_payload_bytes": 2176
+          },
+          {
+            "label": "old",
+            "member": "temperature_k",
+            "calls": 1,
+            "max_input_bytes": 95,
+            "max_output_bytes": 2176,
+            "compressed_payload_bytes": 95,
+            "decompressed_payload_bytes": 2176
+          },
+          {
+            "label": "old",
+            "member": "hydrogen_fraction",
+            "calls": 1,
+            "max_input_bytes": 123,
+            "max_output_bytes": 4224,
+            "compressed_payload_bytes": 123,
+            "decompressed_payload_bytes": 4224
+          },
+          {
+            "label": "old",
+            "member": "helium_fraction",
+            "calls": 1,
+            "max_input_bytes": 149,
+            "max_output_bytes": 6272,
+            "compressed_payload_bytes": 149,
+            "decompressed_payload_bytes": 6272
+          },
+          {
+            "label": "old",
+            "member": "cell_mass_g_cm2",
+            "calls": 1,
+            "max_input_bytes": 87,
+            "max_output_bytes": 1152,
+            "compressed_payload_bytes": 87,
+            "decompressed_payload_bytes": 1152
+          },
+          {
+            "label": "old",
+            "member": "step_duration_s",
+            "calls": 1,
+            "max_input_bytes": 74,
+            "max_output_bytes": 144,
+            "compressed_payload_bytes": 74,
+            "decompressed_payload_bytes": 144
+          },
+          {
+            "label": "master",
+            "member": "active_edge_hz",
+            "calls": 1,
+            "max_input_bytes": 206,
+            "max_output_bytes": 656,
+            "compressed_payload_bytes": 206,
+            "decompressed_payload_bytes": 656
+          },
+          {
+            "label": "master",
+            "member": "maximum_beta",
+            "calls": 1,
+            "max_input_bytes": 69,
+            "max_output_bytes": 136,
+            "compressed_payload_bytes": 69,
+            "decompressed_payload_bytes": 136
+          }
+        ],
+        "python_object_overhead_metered": false,
+        "all_scientific_temporaries_metered": false,
+        "whole_lifecycle_guard_verified": false,
+        "production_authorized": false
+      },
+      "resources": {
+        "elapsed_s": 2.479518434003694,
+        "peak_rss_bytes": 145096704
+      },
+      "outer_seconds": 2.8245979249768425,
+      "whole_lifecycle_guard_verified": false,
+      "complete_native_context_verified": false,
+      "production_authorized": false
+    }
+  },
+  "validation": {
+    "parity_except_quadrature_and_platform_resources": true,
+    "tamper_rejections": {
+      "qualification": "qualification",
+      "ledgerbool": "ledger entry",
+      "motioncapacity": "motion expression ledger",
+      "columncapacity": "column expression ledger",
+      "missingmotion": "original modules",
+      "phasebool": "geometry",
+      "badbeta": "independent array bytes",
+      "chunk": "decoder chunk ceiling"
+    },
+    "freeze_count": 1756,
+    "changed_since_03": [
+      "handoff/audit_tools/review_x20_86304_preparation_motion.py"
+    ],
+    "ledger_groups": {
+      "temperature_k": 14244,
+      "header-token-bytes-and-characters": 1716,
+      "hydrogen_fraction": 26730,
+      "helium_fraction": 39198,
+      "specific_material_energy_erg_g": 7430,
+      "density_g_cm3": 14253,
+      "phase_index": 1232,
+      "step_duration_s": 1899,
+      "relaxation": 1232,
+      "encoded_state": 26054,
+      "base_encoded_state": 26054,
+      "base_residual": 25934,
+      "finite_direction": 25934,
+      "array-finite-mask": 8649,
+      "cell_mass_g_cm2": 3718,
+      "active_edge_hz": 2587,
+      "maximum_beta": 616,
+      "motion": 75028,
+      "trial-base-comparison-bytes": 49200,
+      "array-copy": 7168,
+      "array-mirror": 14336,
+      "column": 56402
+    },
+    "decompressed_bytes": 69208,
+    "receipt_bytes": 305820
+  },
+  "old_source_unchanged": true,
+  "header_configuration_column_integrated": true,
+  "synthetic_motion_configuration_verified": true,
+  "all_scientific_temporaries_metered": false,
+  "whole_lifecycle_guard_verified": false,
+  "new_production_authorized": false,
+  "accepted_material_updates": 20,
+  "new_material_updates": 0,
+  "report": "handoff/linux-runs/2026-10-07-x20-86304-preparation-motion.md"
+}

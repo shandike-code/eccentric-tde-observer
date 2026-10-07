@@ -1,0 +1,11 @@
+{
+  "model": "deepseek-v4-flash[1m]",
+  "scope": "short supplied facts only; not source or performance audit",
+  "elapsed_s": 7.646659750025719,
+  "material_errors_found": false,
+  "clarifications": [
+    "8 distinct receipt tamper cases",
+    "zero actual source/production actions only this stage"
+  ],
+  "lecture_section": 186
+}
