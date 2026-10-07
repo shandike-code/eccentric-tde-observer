@@ -1,0 +1,73 @@
+{
+  "stage": "86304 current six-field resource protocol only",
+  "starting_mac_head": "3976c54002d8ef1203ecdbd1e151900687593f13",
+  "school_head": "fbfe81fb7ec4e9714e256ec460b483130db5c254",
+  "pins": {
+    "handoff/protocols/x20-86304-radiation-source-validation-v1.md": {
+      "size_bytes": 3413,
+      "sha256": "63f646642106bd95be002cc8eab1194ea8c88014e0395c1627948db9f5ab1801"
+    },
+    "handoff/linux-runs/2026-10-07-x20-86304-source-adapter.md": {
+      "size_bytes": 5519,
+      "sha256": "d1a02e07b4182c98034634a05e6e85c4def6bb1912ab78b80fb30b3f29ab37c6"
+    },
+    "handoff/audit_tools/bind_x20_86304_radiation.py": {
+      "size_bytes": 7800,
+      "sha256": "e161d6f6bee2a26f54aca5106780f8768b4d385763049d98749e7186d8a577b6"
+    },
+    "handoff/audit_tools/review_x20_86304_radiation_binding.py": {
+      "size_bytes": 3023,
+      "sha256": "9321550d29a91c29b5f3ca6816c3101fe8111be1dc4f8fe64a8d2685fc6a7e77"
+    },
+    "operations/x20_85889_chord_diagonal_resource.py": {
+      "size_bytes": 14719,
+      "sha256": "044e4337661250d7eba4de8c779b7d6f3652a6ded42632ceac0ef3bbd0a20522"
+    },
+    "operations/x20_85889_chord_scan_diagonal.py": {
+      "size_bytes": 5897,
+      "sha256": "a3737320592fac5511d5f8c979524919b5fd9229e36634b64b7e8437cc0b0896"
+    },
+    "operations/x20_85889_chord_scan_square.py": {
+      "size_bytes": 6042,
+      "sha256": "61e6c6d559975f7f863282209eb1ad016c4594f7f898f0c7e0a5d515878c862b"
+    },
+    "operations/x20_85889_chord_scan.py": {
+      "size_bytes": 9605,
+      "sha256": "9349c255b35c515fd37e7903a120ebed753e9c517c9381b402d4184d450a1643"
+    },
+    "handoff/audit_tools/review_x20_85889_chord_scan.py": {
+      "size_bytes": 7646,
+      "sha256": "806e67f2eeed99cc20fd54e2a8aab432fa765e8ebc789024218be0bd47d7b474"
+    },
+    "outputs/review-20260925/20261007-86304-radiation-binding.json": {
+      "size_bytes": 78105,
+      "sha256": "1b498283c4df72f70b553c3238fce7d60e96ab225d1c9d5543c9471166f2ee16"
+    },
+    "outputs/review-20260925/20261007-86304-radiation-binding-independent.json": {
+      "size_bytes": 306,
+      "sha256": "87fd9871be72fb3324488c581cb5630f5daae2fc302efa8da6a32a4d990261d4"
+    }
+  },
+  "protocol": {
+    "path": "handoff/protocols/x20-86304-radiation-resource-v1.md",
+    "size_bytes": 13218,
+    "sha256": "7ae64eea5ff6fc39b6fcd67867a0af8ed41371e60b5e224f88c4cbce6cf8cc6a"
+  },
+  "lecture_prefix": {
+    "size_bytes": 507154,
+    "sha256": "f142cb69cde6d834eb5425e188bec27749cf79f09eccabd2706fcc6b110a5341"
+  },
+  "new_numerical_tests": 0,
+  "new_slurm": 0,
+  "real_dat_read_bytes": 0,
+  "real_dat_stat": 0,
+  "new_maps": 0,
+  "new_material": 0,
+  "accepted": 20,
+  "production_driver_implemented": false,
+  "production_resource_verified": false,
+  "submission_ready": false,
+  "new_production_authorized": false,
+  "full_scan_authorized": false,
+  "format_review": "initial check rejected unbraced subscripts; inspected normalizer diff and explicitly separated products to avoid overbroad substitution; final check passed"
+}
