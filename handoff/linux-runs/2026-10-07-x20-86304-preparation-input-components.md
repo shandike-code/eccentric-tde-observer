@@ -1,0 +1,25 @@
+# 86304来源准备：输入组件小合成与尚未关闭的执行边界
+
+本阶段仅完成部分输入组件，未完成上一协议要求的全部来源准备封装。新增operations/x20_86304_preparation_inputs.py、独立review_x20_86304_preparation_inputs.py、exercise与50项tests；旧live、生产driver、审阅器、科学核和协议未改。Mac起点9c9935c409e7d895c8b0f6a79a3b80de02e993a0、学校fbfe81fb7ec4e9714e256ec460b483130db5c254现场clean；两端完整pre-86304-preparation-interfaces-20261007.bundle已verify。学校仅新增隔离fixture，未生产同步。
+
+输入reader先做纯词法检查，拒绝dat路径及dat目录分量后才调用系统接口；来源沿可信root descriptor逐层O_NOFOLLOW打开，拒链接、非普通文件、大小SHA不符及读取期间身份变化。staging要求完整唯一映射、原大小SHA相等，独占目录与文件创建，目标落盘后重新认证，失败保留部分目录。该接口不解析warm seed，也不调用原Path.resolve；但是它尚未接入原native链，不能因此宣称原问题已解决。直接os.stat等仍可绕过显式reader。
+
+ZIP/NPY检查先审所有成员的名字、类型、压缩方式、数量和头部dtype/shape/长度，拒重复、对象数组、越界和超额，再允许完整读取。限制为每NPZ数组payload严格小于128MiB、阶段预约累计严格小于512MiB；指纹入口只支持C-order普通数组，其他布局拒绝。ZIP头检查本身不等于全部payload CRC认证；完整读取才执行CRC。这里的预约量是声明数组payload和镜像payload，尚未包含全部解压临时量、复制及环境导入，不能称实际解压总量或RSS上界。
+
+标准库指纹实现不导入NumPy或live.native_facts，按NPY C-order数据字节保留dtype/shape/SHA。全trial与base逐数组指纹相同后，四物理数组按第一轴整行拼接原顺序和逆序，保存比能原数组指纹。它不执行原exact_trial，不验证原physicalold/r20关联、1367相位、889.419892762322秒或真实76块几何；不会生成可执行expected_native。独立NumPy oracle只接受小于64KiB、头部与成员长度闭合的合成输入，另行concat镜像核SHA，拒资格升级。
+
+MeteredBytes以不可变bytes提供read/readinto/readline/readall/seek；重复读取计入实际返回字节，超限在返回前拒绝，不提供fileno/getbuffer。默认严格小于256MiB。它衡量此内存输入接口向消费者返回的字节，不是原native实际文件loader计量，也不是设备I/O。认证源文件和staging目标重读另计。未将opened次数乘文件大小冒充实际总读量。
+
+Mac首轮50项0.23秒、最终50项0.21秒；学校50项4.27秒，全过无skip、无门限调整。第二轮前冻结1717文件，即旧1713加4个新py；Mac全清单结束SHA相同，学校隔离4文件前后SHA核齐。首轮freeze-01为1716，尚无exercise；原日志保留。负路径覆盖dat词法先拒、链接、错SHA/大小、路径越界、重复映射、独占目标、部分目录、对象/NaN/Inf/F-order、NPY bool/负/巨shape/重复键/截断、ZIP重名/链接/CRC损坏、读量和解码预约超额、伪资格。测试中的系统调用mock仅证实显式reader拒绝顺序，不是生产monkeypatch方案或全进程保护证据。
+
+专用E2E合成NPZ为2193B，staging源认证及目标重读合计4386B；这不是整套tests、ZIP重复读取或oracle全部读量。十个数组及四个镜像在两端独立oracle通过，学校四个小工件合计6040B先大小SHA核，再Mac独占收件并重跑独立小oracle，完整指纹证据两端相同。Mac峰RSS31506432B、学校30670848B仅这个微型E2E；墙钟分别0.002471/0.013489秒，不支持真实来源性能预测。完整证据位于outputs/review-20260925/20261007-86304-preparation-inputs-*，收件preparation-inputs-school-e2e-20261007。
+
+POST-RUN CHECK：小合成全过，无真实物理趋势或新大场统计。0真实NPZ/native刷新、dat读/stat/下载、原归档payload读取、生产main、ticket、Slurm、map、反馈、ODE或物质更新。accepted20/newmaterial0与十倍跨支质量门失败保持。
+
+## 未完成项与下一步
+
+全生命周期dat保护仍未实现。Python audit hook不能保证拦截stat；而禁止所有元数据调用会阻断现有项目导入链的正常路径解析。不能把二者任意一种包装成已验保护。当前native_configuration无条件RuntimeError，任何synthetic或process_guard_verified布尔参数都不能启用它。
+
+下一项先实现并独立验收导入前的进程级访问边界及另名native适配，明确哪些系统调用和环境输入受约束，并用导入期open/stat/readlink及别名故障注入验证。适配不得沿旧warm-seed resolve路径，也不得新增生产monkeypatch；旧函数的数值运算和原exact_trial必须保留并有独立接线证据。还须补实际native读取、实际解压/复制范围、120秒/RSS1GiB与外层150秒停止器；本阶段没有对这些资源门做合成验收。若边界不可落实，继续硬拒，不能通过追加一个自报true字段放行。
+
+待以上实现及两端小合成通过，再独立决定首次真实来源准备。343路径声明清单未实际staging或刷新，actual_source_manifest_prepared/live_native_recomputed/production_resource_verified/submission_ready/new_production_authorized/full_scan_authorized均false；本阶段没有获得下一项真实读取预算，生产首片预算仍另立，全301片DO NOT RUN。

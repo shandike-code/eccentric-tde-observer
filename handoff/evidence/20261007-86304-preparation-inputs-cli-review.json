@@ -1,0 +1,12 @@
+{
+  "scope": "short supplied facts only; no source/performance audit",
+  "model": "deepseek-v4-flash[1m]",
+  "wall_s": 14.122276999987662,
+  "corrections": [
+    "机械可跑过弱：50项含有限独立数组指纹与负路径核验，仍非真实生产资格。",
+    "真实物质计数为0混淆各类操作；应分别说真实来源刷新/dat访问/Slurm/map反馈ODE物质均未进行。",
+    "stat下载措辞错误：stat是元数据访问，和下载分别为零。",
+    "计量不是真实IO太笼统：确为内存字节接口实际返回量，但尚非native文件loader或设备IO。",
+    "绕过口不一定不会被合成触发；本轮未实现/未测试全进程导入期元数据防护，不能推出保护成立。"
+  ]
+}

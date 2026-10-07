@@ -1,0 +1,58 @@
+{
+  "source_job": 86304,
+  "starting_mac_commit": "9c9935c409e7d895c8b0f6a79a3b80de02e993a0",
+  "school_commit": "fbfe81fb7ec4e9714e256ec460b483130db5c254",
+  "partial_implementation": true,
+  "input_components_synthetic_verified": true,
+  "process_guard_implemented": false,
+  "native_adapter_implemented": false,
+  "native_loader_metering_integrated": false,
+  "resource_stop_guards_implemented": false,
+  "actual_source_manifest_prepared": false,
+  "live_native_recomputed": false,
+  "production_resource_verified": false,
+  "submission_ready": false,
+  "new_production_authorized": false,
+  "full_scan_authorized": false,
+  "mac_tests": 50,
+  "school_tests": 50,
+  "mac_seconds": 0.21,
+  "school_seconds": 4.27,
+  "mac_frozen_code_files": 1717,
+  "school_fixture_files": 4,
+  "synthetic_npz_bytes": 2193,
+  "staging_authentication_returned_bytes": 4386,
+  "real_npz_native_refresh": 0,
+  "real_dat_read_stat_download": 0,
+  "new_slurm_jobs": 0,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "pins": {
+    "outputs/review-20260925/20261007-86304-preparation-inputs-freeze-02.json": {
+      "size_bytes": 278992,
+      "sha256": "3cf3e8393d0c329918ea575b50d59a30236e9495abf2e25f2ec193f498187b9e"
+    },
+    "outputs/review-20260925/20261007-86304-preparation-inputs-parity.json": {
+      "size_bytes": 952,
+      "sha256": "a8200f3d79939cc7ee4c14b60518b3f1891195828929ca87f58ebacc07c44811"
+    },
+    "outputs/review-20260925/20261007-86304-preparation-inputs-tests-02.log": {
+      "size_bytes": 99,
+      "sha256": "c856c3389f6961f6037d8d4a5b00e75fee312ec2e757d9c955fc934f8c7a89be"
+    },
+    "outputs/review-20260925/20261007-86304-preparation-inputs-school-tests.log": {
+      "size_bytes": 99,
+      "sha256": "a4777d5f08fa6c449262d72642e8e3df5059703af04348f9b264687e8811c3c3"
+    }
+  },
+  "lecture_old_prefix": {
+    "path": "lecture/项目讲义/2026-09-25_辐射慢模外推与真实映射检验.md",
+    "size_bytes": 512262,
+    "sha256": "2bb82915fa856d240b7e55ed723ae69b019b861d88dfd5bf06fdf42ff6fe53a8"
+  },
+  "backups_verified": [
+    "Mac pre-86304-preparation-interfaces-20261007.bundle",
+    "school pre-86304-preparation-interfaces-20261007.bundle"
+  ],
+  "next_scope": "import-before-project process boundary, separately named native adapter without production monkeypatch, native read/decompression accounting and resource stop guards; tiny synthetic only"
+}
