@@ -1,0 +1,58 @@
+{
+  "schema": "86304-codec-stage-review-v1",
+  "report": "handoff/linux-runs/2026-10-08-x20-86304-preparation-codec.md",
+  "independent": {
+    "results": {
+      "Mac": {
+        "scalars": 49,
+        "entries": 77,
+        "reserved_bytes": 3763,
+        "checkpoints": 85,
+        "maximum_relative_scalar_error": 3.0856710715930516e-16
+      },
+      "Linux": {
+        "scalars": 49,
+        "entries": 77,
+        "reserved_bytes": 3763,
+        "checkpoints": 85,
+        "maximum_relative_scalar_error": 3.0856710715930516e-16
+      }
+    },
+    "tamper_rejected": [
+      "production",
+      "wholelife",
+      "exact-trial",
+      "bool-checks",
+      "bool-elapsed",
+      "bool-ledger",
+      "capacity-total",
+      "missing-array",
+      "bad-byte",
+      "bool-shape"
+    ],
+    "array_byte_parity": {
+      "helium_fraction": false,
+      "hydrogen_fraction": true,
+      "specific_material_energy_erg_g": true,
+      "temperature_k": true
+    },
+    "frozen_files": 1782,
+    "files_received": 6,
+    "bytes_received": 4172,
+    "school_fixture_files": 182
+  },
+  "detail": {
+    "local_elapsed_s": 0.00017312541604042053,
+    "school_elapsed_s": 0.000633048010058701,
+    "helium_max_abs_difference": 1.1102230246251565e-16,
+    "helium_different_elements": 2
+  },
+  "synthetic_codec_explicit_arrays_verified": true,
+  "exact_trial_integrated": false,
+  "configuration_integrated": false,
+  "all_scientific_temporaries_metered": false,
+  "whole_lifecycle_guard_verified": false,
+  "new_production_authorized": false,
+  "accepted_material_updates": 20,
+  "new_material_updates": 0
+}

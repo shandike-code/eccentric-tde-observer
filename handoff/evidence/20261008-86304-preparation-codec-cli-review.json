@@ -1,0 +1,10 @@
+{
+  "scope": "short supplied facts only; not source or performance audit",
+  "substantive_errors": [],
+  "clarifications": [
+    "same-platform byte equivalence; cross-platform helium differs",
+    "85 checkpoints applies to seven-cell success-path injection",
+    "reservations are not an RSS bound; no RSS experiment",
+    "old science and all previous tests untouched"
+  ]
+}
