@@ -1,0 +1,14 @@
+{
+  "scope": "short supplied facts only, not source or performance audit",
+  "model": "deepseek-v4-flash[1m]",
+  "elapsed_s": 14.764115208294243,
+  "corrections": [
+    "草稿“预约只界非allocator的总分配/live/RSS”语义错误；本表不界总分配、live或RSS，只列显式结果payload容量",
+    "“每式”限定于列出的显式数组表达式及所设inplace/递推检查点，不包括底层私有操作",
+    "全16阶同原函数仅各自同平台，不是跨平台逐位相同"
+  ],
+  "lecture_prefix": {
+    "size_bytes": 536277,
+    "sha256": "da1c442ee9268eb70d44f9b8c3b61544eae1210ffe26ae1addd9fa125ce82aa0"
+  }
+}

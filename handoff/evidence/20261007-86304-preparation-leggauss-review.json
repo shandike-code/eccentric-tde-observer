@@ -1,0 +1,405 @@
+{
+  "schema": "86304-preparation-leggauss-review-v1",
+  "initial_mac_head": "77d6ccb4847c3185692c129f7ae2b522ee0b6ff1",
+  "school_head": "fbfe81fb7ec4e9714e256ec460b483130db5c254",
+  "synthetic_leggauss_explicit_arrays_verified": true,
+  "flags": {
+    "leggauss_internals_metered": false,
+    "leggauss_configuration_integrated": false,
+    "whole_lifecycle_guard_verified": false,
+    "all_scientific_temporaries_metered": false,
+    "complete_native_context_verified": false,
+    "native_loader_metering_integrated": false,
+    "production_resource_stop_guards_integrated": false,
+    "actual_source_manifest_prepared": false,
+    "live_native_recomputed": false,
+    "submission_ready": false,
+    "new_production_authorized": false,
+    "full_scan_authorized": false,
+    "strict_error_bound": false
+  },
+  "independent": {
+    "local": {
+      "verified": true,
+      "moment_max_abs_error": 1.9290125052862095e-15,
+      "cases": [
+        {
+          "degree": 1,
+          "reservations": 24,
+          "capacity": 232,
+          "checks": 32
+        },
+        {
+          "degree": 2,
+          "reservations": 41,
+          "capacity": 672,
+          "checks": 54
+        },
+        {
+          "degree": 3,
+          "reservations": 56,
+          "capacity": 1312,
+          "checks": 74
+        },
+        {
+          "degree": 4,
+          "reservations": 71,
+          "capacity": 2240,
+          "checks": 94
+        },
+        {
+          "degree": 5,
+          "reservations": 86,
+          "capacity": 3424,
+          "checks": 114
+        },
+        {
+          "degree": 6,
+          "reservations": 101,
+          "capacity": 4864,
+          "checks": 134
+        },
+        {
+          "degree": 7,
+          "reservations": 116,
+          "capacity": 6560,
+          "checks": 154
+        },
+        {
+          "degree": 8,
+          "reservations": 131,
+          "capacity": 8512,
+          "checks": 174
+        },
+        {
+          "degree": 9,
+          "reservations": 146,
+          "capacity": 10720,
+          "checks": 194
+        },
+        {
+          "degree": 10,
+          "reservations": 161,
+          "capacity": 13184,
+          "checks": 214
+        },
+        {
+          "degree": 11,
+          "reservations": 176,
+          "capacity": 15904,
+          "checks": 234
+        },
+        {
+          "degree": 12,
+          "reservations": 191,
+          "capacity": 18880,
+          "checks": 254
+        },
+        {
+          "degree": 13,
+          "reservations": 206,
+          "capacity": 22112,
+          "checks": 274
+        },
+        {
+          "degree": 14,
+          "reservations": 221,
+          "capacity": 25600,
+          "checks": 294
+        },
+        {
+          "degree": 15,
+          "reservations": 236,
+          "capacity": 29344,
+          "checks": 314
+        },
+        {
+          "degree": 16,
+          "reservations": 251,
+          "capacity": 33344,
+          "checks": 334
+        }
+      ],
+      "private_workspace_metered": false,
+      "configuration_integrated": false
+    },
+    "school": {
+      "verified": true,
+      "moment_max_abs_error": 1.2212453270876722e-15,
+      "cases": [
+        {
+          "degree": 1,
+          "reservations": 24,
+          "capacity": 232,
+          "checks": 32
+        },
+        {
+          "degree": 2,
+          "reservations": 41,
+          "capacity": 672,
+          "checks": 54
+        },
+        {
+          "degree": 3,
+          "reservations": 56,
+          "capacity": 1312,
+          "checks": 74
+        },
+        {
+          "degree": 4,
+          "reservations": 71,
+          "capacity": 2240,
+          "checks": 94
+        },
+        {
+          "degree": 5,
+          "reservations": 86,
+          "capacity": 3424,
+          "checks": 114
+        },
+        {
+          "degree": 6,
+          "reservations": 101,
+          "capacity": 4864,
+          "checks": 134
+        },
+        {
+          "degree": 7,
+          "reservations": 116,
+          "capacity": 6560,
+          "checks": 154
+        },
+        {
+          "degree": 8,
+          "reservations": 131,
+          "capacity": 8512,
+          "checks": 174
+        },
+        {
+          "degree": 9,
+          "reservations": 146,
+          "capacity": 10720,
+          "checks": 194
+        },
+        {
+          "degree": 10,
+          "reservations": 161,
+          "capacity": 13184,
+          "checks": 214
+        },
+        {
+          "degree": 11,
+          "reservations": 176,
+          "capacity": 15904,
+          "checks": 234
+        },
+        {
+          "degree": 12,
+          "reservations": 191,
+          "capacity": 18880,
+          "checks": 254
+        },
+        {
+          "degree": 13,
+          "reservations": 206,
+          "capacity": 22112,
+          "checks": 274
+        },
+        {
+          "degree": 14,
+          "reservations": 221,
+          "capacity": 25600,
+          "checks": 294
+        },
+        {
+          "degree": 15,
+          "reservations": 236,
+          "capacity": 29344,
+          "checks": 314
+        },
+        {
+          "degree": 16,
+          "reservations": 251,
+          "capacity": 33344,
+          "checks": 334
+        }
+      ],
+      "private_workspace_metered": false,
+      "configuration_integrated": false
+    },
+    "all_cases_cross_platform_identical": false,
+    "capacity_checks_cross_platform_identical": true,
+    "cross_platform_differences": {
+      "assertion": "all cases cross-platform byte identity",
+      "differences": [
+        {
+          "degree": 3,
+          "array": "weight",
+          "count": 3,
+          "max_abs": 2.220446049250313e-16
+        },
+        {
+          "degree": 4,
+          "array": "weight",
+          "count": 4,
+          "max_abs": 1.1102230246251565e-16
+        },
+        {
+          "degree": 5,
+          "array": "weight",
+          "count": 5,
+          "max_abs": 1.1102230246251565e-16
+        },
+        {
+          "degree": 6,
+          "array": "node",
+          "count": 2,
+          "max_abs": 1.1102230246251565e-16
+        },
+        {
+          "degree": 6,
+          "array": "weight",
+          "count": 2,
+          "max_abs": 1.1102230246251565e-16
+        },
+        {
+          "degree": 7,
+          "array": "node",
+          "count": 2,
+          "max_abs": 1.1102230246251565e-16
+        },
+        {
+          "degree": 7,
+          "array": "weight",
+          "count": 7,
+          "max_abs": 9.159339953157541e-16
+        },
+        {
+          "degree": 8,
+          "array": "node",
+          "count": 2,
+          "max_abs": 5.551115123125783e-17
+        },
+        {
+          "degree": 8,
+          "array": "weight",
+          "count": 8,
+          "max_abs": 5.412337245047638e-16
+        },
+        {
+          "degree": 9,
+          "array": "weight",
+          "count": 9,
+          "max_abs": 4.85722573273506e-16
+        },
+        {
+          "degree": 10,
+          "array": "node",
+          "count": 2,
+          "max_abs": 5.551115123125783e-17
+        },
+        {
+          "degree": 10,
+          "array": "weight",
+          "count": 10,
+          "max_abs": 8.465450562766819e-16
+        },
+        {
+          "degree": 11,
+          "array": "weight",
+          "count": 9,
+          "max_abs": 3.885780586188048e-16
+        },
+        {
+          "degree": 12,
+          "array": "node",
+          "count": 2,
+          "max_abs": 2.7755575615628914e-17
+        },
+        {
+          "degree": 12,
+          "array": "weight",
+          "count": 12,
+          "max_abs": 3.0531133177191805e-16
+        },
+        {
+          "degree": 13,
+          "array": "node",
+          "count": 2,
+          "max_abs": 2.7755575615628914e-17
+        },
+        {
+          "degree": 13,
+          "array": "weight",
+          "count": 13,
+          "max_abs": 2.498001805406602e-16
+        },
+        {
+          "degree": 14,
+          "array": "weight",
+          "count": 14,
+          "max_abs": 2.3592239273284576e-16
+        },
+        {
+          "degree": 15,
+          "array": "node",
+          "count": 4,
+          "max_abs": 1.1102230246251565e-16
+        },
+        {
+          "degree": 15,
+          "array": "weight",
+          "count": 15,
+          "max_abs": 1.4710455076283324e-15
+        },
+        {
+          "degree": 16,
+          "array": "node",
+          "count": 4,
+          "max_abs": 1.1102230246251565e-16
+        },
+        {
+          "degree": 16,
+          "array": "weight",
+          "count": 16,
+          "max_abs": 3.885780586188048e-16
+        }
+      ]
+    },
+    "tamper_rejected": [
+      "workspace-claim",
+      "production-claim",
+      "missing-degree",
+      "bool-degree",
+      "bool-checks",
+      "bool-capacity",
+      "elapsed-bool",
+      "shape-bool",
+      "capacity-and-total",
+      "bad-value-rehashed"
+    ],
+    "received_files": 5,
+    "received_bytes": 98172,
+    "source_freeze_count": 1770,
+    "source_freeze_same": true,
+    "local_elapsed": 0.0018007908947765827,
+    "school_elapsed": 0.005558126023970544,
+    "school_tests": ".....                                                                    [100%]\n5 passed in 4.86s\n"
+  },
+  "lecture_prefix": {
+    "size_bytes": 536277,
+    "sha256": "da1c442ee9268eb70d44f9b8c3b61544eae1210ffe26ae1addd9fa125ce82aa0"
+  },
+  "accepted_material_updates": 20,
+  "new_material_updates": 0,
+  "tests": {
+    "mac": {
+      "count": 5,
+      "seconds": 0.17
+    },
+    "school": {
+      "count": 5,
+      "seconds": 4.86
+    }
+  }
+}
