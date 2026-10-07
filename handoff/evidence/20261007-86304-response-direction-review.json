@@ -1,0 +1,283 @@
+{
+  "scope": "eight existing small response arrays, 16 finite endpoint quadruples; no production computation",
+  "starting_local_commit": "ccf6763a86e5eda294fe7ddd2d83273145f7a7ec",
+  "school_commit": "fbfe81fb7ec4e9714e256ec460b483130db5c254",
+  "school_clean_after_cli": true,
+  "mass_source_exception": {
+    "user_reply": "继续",
+    "context": "pending question requesting this single fixed-SHA 17159976-byte NPZ exception",
+    "path": "outputs/review-20260921/common-feedback-bridge-75943-received/inputs/physical_old_time_level.npz",
+    "size_bytes": 17159976,
+    "sha256": "33f248d5cf35ac07fffd139e1cd99d4edefa590debf7e109f67f2dbc57adf455"
+  },
+  "source_claims": [
+    {
+      "path": "handoff/evidence/20261006-x20-85889-final-review.json",
+      "size_bytes": 87194,
+      "sha256": "61eaea4db3ba0fb87adce29c13ab42bc1f158068e634e9798b67ddc3d16c2729"
+    },
+    {
+      "path": "outputs/review-20260925/complete-1791262858167332668.json",
+      "size_bytes": 1623461,
+      "sha256": "ed219eef3121dea9cd23e3e328bdd2de72811e7a51ec4af897855046b82cf99f"
+    },
+    {
+      "path": "outputs/review-20260925/x20-85875-matched-85889-received/ARCHIVE_MANIFEST.json",
+      "size_bytes": 1623461,
+      "sha256": "ed219eef3121dea9cd23e3e328bdd2de72811e7a51ec4af897855046b82cf99f"
+    },
+    {
+      "path": "outputs/review-20260925/x20-85875-matched-85889-received/declaration.json",
+      "size_bytes": 347680,
+      "sha256": "193625dc91befd5832bf1a01ece0f44ae354a488e0b58496fb4510c0e21ffefc"
+    },
+    {
+      "path": "outputs/review-20260925/x20-85875-matched-85889-received/inputs/trial_material.npz",
+      "size_bytes": 27774,
+      "sha256": "36434a29123e2387195b77713baffaecd046f7d6c0297a5d0d95a74319e22eda"
+    },
+    {
+      "path": "outputs/review-20260925/x20-85875-matched-85889-received/historical/pair16/previous_response.npz",
+      "size_bytes": 12626,
+      "sha256": "b199d3db8aff9958530cd6a9c7ffca2691482d1ec5f80d7ae8031e9913bd9be7"
+    },
+    {
+      "path": "outputs/review-20260925/x20-85875-matched-85889-received/historical/pair16/final_response.npz",
+      "size_bytes": 12626,
+      "sha256": "58394257bbe0e77e9908074ba9f430033889d96b79647ba48584861b1a209290"
+    },
+    {
+      "path": "outputs/review-20260925/x20-85875-matched-85889-received/accelerated/pair16/previous_response.npz",
+      "size_bytes": 12626,
+      "sha256": "9b51e1504515614703c9546053aaf13b5c616962720cb6726a29615acd7368ea"
+    },
+    {
+      "path": "outputs/review-20260925/x20-85875-matched-85889-received/accelerated/pair16/final_response.npz",
+      "size_bytes": 12626,
+      "sha256": "e91cf9acb1ab10a658baa7a3fe657c842aa61a171a79745fc92fe91bfb9c867a"
+    },
+    {
+      "path": "handoff/evidence/20261007-x20-86304-final-review.json",
+      "size_bytes": 57263,
+      "sha256": "7e680adf4f4f0908f51f8a88b690731955a6493319f795b0e653e5902dadf840"
+    },
+    {
+      "path": "outputs/review-20260925/complete-1791311963190402946.json",
+      "size_bytes": 813404,
+      "sha256": "cd05603f84054c987f73270cc23f32076e41c2d9b8e8f9f0c8645f458faf96ae"
+    },
+    {
+      "path": "outputs/review-20260925/x20-relaxed-feedback-86304-final-received/ARCHIVE_MANIFEST.json",
+      "size_bytes": 813404,
+      "sha256": "cd05603f84054c987f73270cc23f32076e41c2d9b8e8f9f0c8645f458faf96ae"
+    },
+    {
+      "path": "outputs/review-20260925/x20-relaxed-feedback-86304-final-received/declaration.json",
+      "size_bytes": 670917,
+      "sha256": "330c6983168fb22cd97f156ee7cfdd901c7a989c0d3ed427005b22582fb121a9"
+    },
+    {
+      "path": "outputs/review-20260925/x20-relaxed-feedback-86304-final-received/inputs/trial_material.npz",
+      "size_bytes": 27774,
+      "sha256": "36434a29123e2387195b77713baffaecd046f7d6c0297a5d0d95a74319e22eda"
+    },
+    {
+      "path": "outputs/review-20260925/x20-relaxed-feedback-86304-final-received/historical/pair08/previous_response.npz",
+      "size_bytes": 12626,
+      "sha256": "a2d129034020d39b353f5807a74ef617f9fa7cace63f5e9060ed945cbd139442"
+    },
+    {
+      "path": "outputs/review-20260925/x20-relaxed-feedback-86304-final-received/historical/pair08/final_response.npz",
+      "size_bytes": 12626,
+      "sha256": "e339c6c9574652d982555ddbb3be49e9e4915a8a6050d90f1e634ee35be24986"
+    },
+    {
+      "path": "outputs/review-20260925/x20-relaxed-feedback-86304-final-received/accelerated/pair08/previous_response.npz",
+      "size_bytes": 12626,
+      "sha256": "f4a2d1cd11decddcce3f1f7bc383c44edb307a1d9e1bbe9920ffa5a2edb98ebe"
+    },
+    {
+      "path": "outputs/review-20260925/x20-relaxed-feedback-86304-final-received/accelerated/pair08/final_response.npz",
+      "size_bytes": 12626,
+      "sha256": "e3abcb41fa7cb80dfbca3853b866f883a8c916825243c686b4cd71f3dc3cc662"
+    },
+    {
+      "path": "outputs/review-20260921/common-feedback-bridge-75943-received/inputs/physical_old_time_level.npz",
+      "size_bytes": 17159976,
+      "sha256": "33f248d5cf35ac07fffd139e1cd99d4edefa590debf7e109f67f2dbc57adf455"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-76808-received/inputs/outer_base_material.npz",
+      "size_bytes": 27774,
+      "sha256": "36434a29123e2387195b77713baffaecd046f7d6c0297a5d0d95a74319e22eda"
+    },
+    {
+      "path": "outputs/review-20260925/common-step21-76808-received/inputs/base_residual.npy",
+      "size_bytes": 4224,
+      "sha256": "b6f337ce30d323acada31ea9f3e1772ccb2be1075753f432ab13a8e299ee2a45"
+    }
+  ],
+  "code_and_protocol_pins": [
+    {
+      "path": "handoff/audit_tools/diagnose_x20_86304_direction.py",
+      "size_bytes": 13676,
+      "sha256": "4dd038f8b412935ac796b389872bb7c9e7f46fb9836d19a683103961d15ed340"
+    },
+    {
+      "path": "handoff/audit_tools/review_x20_86304_direction.py",
+      "size_bytes": 6800,
+      "sha256": "006b966360e5ab8a8a37da6c320d98a0c3bc87144ff21cd2b0973bdecdca22d1"
+    },
+    {
+      "path": "tests/test_x20_86304_direction.py",
+      "size_bytes": 4886,
+      "sha256": "1835d8428ec6481754bba4e93da41b977951fb2dd981734ad8fdaf585d97e2c0"
+    },
+    {
+      "path": "handoff/protocols/x20-86304-small-response-direction-v1.md",
+      "size_bytes": 4642,
+      "sha256": "1a8641f508533237e3329e3f5ad1c16cb3f70cc7692d5473219fb5ace9e6f2f4"
+    },
+    {
+      "path": "handoff/protocols/x20-86304-small-response-direction-numerics-v1.md",
+      "size_bytes": 2743,
+      "sha256": "18b98b2a09caed0b15e52bbfe8d1c9e2ee8980088682fa732af758686b84639a"
+    }
+  ],
+  "lecture_previous_prefix": {
+    "path": "lecture/项目讲义/2026-09-25_辐射慢模外推与真实映射检验.md",
+    "size_bytes": 500038,
+    "sha256": "f5ba9d61d6064f622d79b9fe1e124f892c0bf5bb3b673059b13c404058fa65d6"
+  },
+  "artifacts": [
+    {
+      "path": "outputs/review-20260925/20261007-86304-response-direction.json",
+      "size_bytes": 1824298,
+      "sha256": "e2261cffd16f7cfae3d2e958761debc12d177d8d40d3433bb8123d23763ee6b9"
+    },
+    {
+      "path": "outputs/review-20260925/20261007-86304-response-direction-independent.json",
+      "size_bytes": 201829,
+      "sha256": "2e479056f9e9f8b1c741244c7e177c40631d54159ab8bdaa7aba02e66429c26d"
+    },
+    {
+      "path": "outputs/review-20260925/20261007-direction-summary.json",
+      "size_bytes": 654,
+      "sha256": "4c033e7e5022908552650af41025cfdd25630b60c38e48da7d65b3211e17581f"
+    },
+    {
+      "path": "outputs/review-20260925/20261007-direction-tests-01.log",
+      "size_bytes": 5444,
+      "sha256": "1e7c6f1f5571ea8a251a2a4a944c8f14db963dfbb8b4d40b8afb241417c8fdc1"
+    },
+    {
+      "path": "outputs/review-20260925/20261007-direction-tests-02.log",
+      "size_bytes": 99,
+      "sha256": "c79af088b5cced49662b44a02fcd4dccbbd7d3961e239bd62bd9d72c2c69794d"
+    },
+    {
+      "path": "outputs/review-20260925/20261007-direction-actual-01.log",
+      "size_bytes": 110,
+      "sha256": "7f45e6f9a3a6dc870d461a0f2dd7aae25bd162cc4897e7aec82fa248c857a9da"
+    },
+    {
+      "path": "outputs/review-20260925/20261007-direction-independent-01.log",
+      "size_bytes": 534,
+      "sha256": "2e07a79c2444fe47d8dfb75b3c0ea65193829a752b2d2a9426921e394377e841"
+    }
+  ],
+  "summary": {
+    "mass_norm_ratio": [
+      0.979020412714494,
+      0.9860869735560162
+    ],
+    "mass_cosine": [
+      0.9999706245334247,
+      0.9999824622372645
+    ],
+    "D_over_Cold_mass": [
+      0.015104960231291278,
+      0.02230832681960321
+    ],
+    "D_projection": [
+      -0.021008346466916038,
+      -0.013930320203362533
+    ],
+    "WH_projection": [
+      -0.02586334346468656,
+      -0.02015737491933157
+    ],
+    "WA_projection": [
+      -0.006241247321905567,
+      -0.004836845362340715
+    ],
+    "identity_max_abs": [
+      0.0,
+      0.0
+    ],
+    "source_bytes_per_pass": 23385314,
+    "response_bytes": 101008,
+    "interpretation": "finite response direction only; no contraction bound or ETA"
+  },
+  "tests": {
+    "passed": 36,
+    "seconds": 0.57,
+    "first_failure": "all-zero review summary max(empty); corrected to null; no tolerance changes",
+    "platform": "Mac",
+    "school_numeric_tests_run": false
+  },
+  "independent_review": {
+    "passed": true,
+    "quadruples": 16,
+    "scalar_checks": 752,
+    "maximum_fraction_of_bound": "0.00009178098754905854753658569002",
+    "method": "per-element Python subtraction, Decimal80 inner products and norms; independent of diagnostic module",
+    "strict_error_bound": false,
+    "source_binding": {
+      "sources": 21,
+      "responses": 8,
+      "mass_source_verified": true
+    },
+    "input": {
+      "path": "outputs/review-20260925/20261007-86304-response-direction.json",
+      "size_bytes": 1824298,
+      "sha256": "e2261cffd16f7cfae3d2e958761debc12d177d8d40d3433bb8123d23763ee6b9"
+    }
+  },
+  "pre_run": {
+    "Code": "PASS",
+    "Logic": "PASS",
+    "Physics": "PASS",
+    "Decision": "RUN",
+    "scope": "read-only finite response diagnostic"
+  },
+  "post_run": {
+    "Code": "PASS",
+    "Logic": "PASS",
+    "Physics": "PASS within finite stored-array algebra only",
+    "finite": true,
+    "original_comparisons_reproduced": 16,
+    "quadruples": 16,
+    "identity_max_abs": 0.0,
+    "new_physical_evolution_validated": false
+  },
+  "backup": {
+    "local_path": "outputs/review-20260925/pre-86304-direction-20261007.bundle",
+    "local_size_bytes": 26253806,
+    "school_size_bytes": 26116344,
+    "both_complete_verified": true
+  },
+  "new_vector_diagnostic_implemented": true,
+  "independent_vector_diagnostic_reviewed": true,
+  "submission_ready": false,
+  "new_production_authorized": false,
+  "new_maps": 0,
+  "new_feedback_pairs": 0,
+  "new_material_steps": 0,
+  "accepted_outer_steps": 20,
+  "reference_calibration_eligible": false,
+  "baseline_replaced": false,
+  "strict_error_bound": false,
+  "relaxed_consistency_pass": false,
+  "next_scope": "read only 86304 radiation endpoint manifests and mapping definitions; establish evidence gap and separately bounded hypothesis before any production design"
+}

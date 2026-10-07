@@ -1,0 +1,14 @@
+{
+  "scope": "independent check of facts-only lecture draft",
+  "model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "wall_seconds": 18.680320041719824,
+  "corrections": [
+    "identity_max_abs [0,0]是16四元组范围的最小最大，不是两支",
+    "所有斜杠数对改为范围并注明极值不必来自同一四元组",
+    "accepted20是同物理步已接受更新计数，不是跨支质量门失败字段",
+    "三源代码说法改为诊断器/审阅器/测试及数值约定；原核未修改"
+  ],
+  "full_source_cli_audit": false
+}
