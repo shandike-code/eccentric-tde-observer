@@ -1,0 +1,14 @@
+{
+  "model": "deepseek-v4-flash[1m]",
+  "scope": "short supplied facts; no full source audit",
+  "accepted_as_written": false,
+  "corrections": [
+    "radiation endpoints are full-field snapshots, not inner products",
+    "512-dimensional material response differs from radiation T output",
+    "current radiation norm ratios are not yet measured",
+    "endpoints exist; only joint field statistics missing",
+    "original inner residual has finite criterion meaning but is not remaining error"
+  ],
+  "lecture_prefix_size": 502753,
+  "lecture_prefix_sha256": "24aeb7a5f53eec9c4eeeb8e998891a671fec287161065a233aad6de09dc00ac6"
+}
