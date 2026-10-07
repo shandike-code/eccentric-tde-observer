@@ -1,0 +1,66 @@
+{
+  "schema": "86304-preparation-inflate-review-v1",
+  "report": "handoff/linux-runs/2026-10-07-x20-86304-preparation-inflate.md",
+  "code_before_after_count": 1742,
+  "code_before_after_same": true,
+  "tests": {
+    "mac_count": 19,
+    "mac_seconds": 0.01,
+    "school_count": 19,
+    "school_seconds": 0.025
+  },
+  "independent": {
+    "darwin": {
+      "independent_expected_bytes": true,
+      "platform": "darwin",
+      "production_authorized": false
+    },
+    "linux": {
+      "independent_expected_bytes": true,
+      "platform": "linux",
+      "production_authorized": false
+    },
+    "qualification": "rejected",
+    "missing": "rejected",
+    "array": "rejected",
+    "boolcount": "rejected",
+    "oversize": "rejected",
+    "all_code_after_same": 1742,
+    "cross_platform_fixture_results_equal": true
+  },
+  "linux_address_space": {
+    "limit_bytes": 50331648,
+    "small_allocation_bytes": 16384,
+    "rejected_mapping_request_bytes": 67108864,
+    "errno": 12,
+    "exec_before_startup": false,
+    "rss_limit": false
+  },
+  "received_files": 4,
+  "received_bytes": 4106,
+  "school_fixture_files": 5,
+  "school_production_head": "fbfe81fb7ec4e9714e256ec460b483130db5c254",
+  "bounded_decoder_synthetic_verified": true,
+  "linux_address_space_component_synthetic_verified": true,
+  "whole_lifecycle_guard_verified": false,
+  "complete_native_context_verified": false,
+  "native_loader_metering_integrated": false,
+  "production_resource_stop_guards_integrated": false,
+  "actual_source_manifest_prepared": false,
+  "live_native_recomputed": false,
+  "submission_ready": false,
+  "new_production_authorized": false,
+  "full_scan_authorized": false,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "strict_error_bound": false,
+  "lecture_prefix": {
+    "size_bytes": 526019,
+    "sha256": "05b7862ee724fe6ab619e2e7a790311e973a857fd32e450658703e35f2a9b31c"
+  },
+  "artifacts": [
+    "outputs/review-20260925/20261007-inflate-freeze-02.json",
+    "outputs/review-20260925/20261007-inflate-school-raw.json",
+    "outputs/review-20260925/20261007-inflate-independent.json"
+  ]
+}

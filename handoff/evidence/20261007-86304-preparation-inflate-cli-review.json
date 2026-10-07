@@ -1,0 +1,13 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "elapsed_s": 9.588379916734993,
+  "scope": "short supplied facts; not source or performance audit",
+  "corrections": [
+    "两端结果全部相同只限results字段；platform与elapsed不同",
+    "地址空间内核拒绝不是显式预约账本的一个字段，也不是RSS界",
+    "独立标准库描述解析解压组件；数组视图/有限性仍使用NumPy",
+    "科学表达式表是范围表，不是完整依赖闭包已计量"
+  ],
+  "lecture_section": 183,
+  "prefix_unchanged": true
+}
