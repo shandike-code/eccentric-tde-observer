@@ -1,0 +1,20 @@
+{
+  "scope": "short facts lecture, not full code/performance audit",
+  "full_protocol_attempt": {
+    "returncode": 124,
+    "wall_s": 55.12143829232082,
+    "successful_draft": false
+  },
+  "short_facts_attempt": {
+    "returncode": 0,
+    "wall_s": 10.012697958853096,
+    "model": "deepseek-v4-flash[1m]"
+  },
+  "corrections": [
+    "1713 code files were actually read and SHA checked, not declaration-only",
+    "9 metadata files refers to inventory generator inputs, not every interactive JSON read in this stage",
+    "almost empty empirical layer is misleading: actual code and metadata integrity checks passed; actual NPZ/native/field checks were not run",
+    "read payload is not device I/O; no current execution budget follows from a proposed cap"
+  ],
+  "decision": "DO NOT RUN real source/native configuration"
+}

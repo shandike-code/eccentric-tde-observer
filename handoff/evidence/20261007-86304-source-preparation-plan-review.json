@@ -1,0 +1,61 @@
+{
+  "source_job": 86304,
+  "starting_mac_commit": "922548643ae0ccd85398c3cfb7bb8332c4670a89",
+  "school_commit": "fbfe81fb7ec4e9714e256ec460b483130db5c254",
+  "counts": {
+    "source_paths": 343,
+    "source_payload_one_authentication": 59981776,
+    "archive_paths": 2,
+    "archive_payload_one_authentication": 457942741,
+    "explicit_payload_per_live_check": 577906293,
+    "code_files": 1713,
+    "code_payload_one_authentication": 14239395
+  },
+  "pins": {
+    "outputs/review-20260925/20261007-86304-source-preparation-inventory.json": {
+      "size_bytes": 489158,
+      "sha256": "3a9c78c59889abad873fd48220059371b137879c64bc8c05d7a823f98afa85ce"
+    },
+    "outputs/review-20260925/20261007-86304-source-plan.py": {
+      "size_bytes": 6188,
+      "sha256": "5ef51ea3f2d1a8bddef746b2c708f8a6e23eeb102336d5cffa3a71f4720429b2"
+    },
+    "outputs/review-20260925/20261007-86304-source-plan-independent.json": {
+      "size_bytes": 368,
+      "sha256": "9cf1701a07f56e65cff738af9e25d11f12c6d5438b6b7586fe232ceb42b16a89"
+    },
+    "handoff/protocols/x20-86304-source-preparation-v1.md": {
+      "size_bytes": 7552,
+      "sha256": "615a75a61c3146017baf03a4f2e78e0be2cd2a8689ee1dfbf63564917456f160"
+    }
+  },
+  "lecture_old_prefix": {
+    "path": "lecture/项目讲义/2026-09-25_辐射慢模外推与真实映射检验.md",
+    "size_bytes": 510456,
+    "sha256": "e4b954ebf2377af8e5219699422ebe2b36c716511b238d5b3efde02f201b0b8a"
+  },
+  "backups_verified": [
+    "Mac pre-86304-source-plan-20261007.bundle",
+    "school pre-86304-source-plan-20261007.bundle"
+  ],
+  "declaration_inventory_reviewed": true,
+  "actual_source_manifest_prepared": false,
+  "live_native_recomputed": false,
+  "production_resource_verified": false,
+  "submission_ready": false,
+  "new_production_authorized": false,
+  "full_scan_authorized": false,
+  "new_tests_run": 0,
+  "real_dat_read_stat_download": 0,
+  "new_slurm_jobs": 0,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0,
+  "blocking_gaps": [
+    "independent native dtype/shape/array SHA not derived",
+    "school receipt staging not verified",
+    "NPZ decoded sizes and loader repeated-read budget not yet frozen",
+    "whole-process dat denial including import window and warm-seed path resolve not yet implemented/tested"
+  ],
+  "next_scope": "separately named read guards / independent expectations / source staging and accounting interfaces plus tiny synthetic rejection tests; no actual refresh until separately reviewed",
+  "cli_review": "handoff/evidence/20261007-86304-source-plan-cli-review.json"
+}

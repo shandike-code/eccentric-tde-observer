@@ -1,0 +1,42 @@
+# 86304来源准备约定 v1：声明清单与执行前缺口
+
+本约定只批准准备与审阅，不批准真实来源刷新、native配置、资源作业或ticket。完整声明清单保存于outputs/review-20260925/20261007-86304-source-preparation-inventory.json；其schema有意不同于可执行86304-live-sources-v1，expected_native=null，不能作为生产main的sources参数。旧协议、核和114项合成验收不改写。
+
+## 声明清单与来源
+
+当前显式接口需要343个不同路径，一遍声明payload为59981776B。其中包含固定binding的320个JSON、两分支当前config/trial/native审计与初始化身份、归档native审计副本、原physicalold/base/r20、四项runtime、原终态审计/终态及独立适配参考。每行有path/size_bytes/sha256，purpose和provenance分别保存，重复路径必须声明完全相同。相同SHA不同路径仍计两次，不按内容去重。
+
+这343项是从已审小元数据编出的声明，不表示本阶段重读过343项实际来源。生成器只实际读取9份既有JSON并核前后大小SHA；读取当前1713份tracked py/sbatch得到完整代码清单，一遍14239395B。不得把1713替换成旧1696或818，也不把config内递归历史来源全部当native本次必需输入。历史科学源由原审计绑定，当前实际模块由完整代码清单和file/spec origin认证；两种范围分别记录。
+
+两归档按原最终审计声明固定：85889为303877902B，86304为154064839B；一遍合计457942741B，不在本阶段读取或stat归档payload。一次live.check的显式认证量为两遍343文件加两归档各一遍，即577906293B；前后两次check合计1155812586B，其中归档915885482B。该数字不包括native内部重读、代码导入、ZIP头/seek、解压和数组复制；不是完整应用读取量或设备I/O。代码认证另计，不能重复加到设备吞吐估计中。
+
+原physicalold有两个现存路径别名：feedback协议的physical_old_time_level.npz与native的outputs/phase7b4r_depth128_phase2048.npz，均17159976B且SHA33f248d5cf35ac07fffd139e1cd99d4edefa590debf7e109f67f2dbc57adf455。它们指向同一个已授权科学文件内容，清单按两路径计量；不得据此放行不同SHA的第二大NPZ。若将来合并路径必须另审配置影响，不静默改原协议。其他NPZ严格小于1MiB。
+
+## 独立预期及两端路径
+
+native静态打开集合为六路径：fixed模板、7b7i模板、原physicalold native路径、master频率NPZ、两支当前trial。按当前函数链每次check两支各读取fixed/template/old/master一次，每支trial由claim哈希和镜像loader各打开一次。清单保存预期次数；这是源码预测，不是实际打开记录，更不是按次数乘文件长度就得到底层读取量。完整trial额外从已认证内存bytes解码，须计解码内存而非再次磁盘payload。
+
+旧native_trial_audit和initialized_identity只有布尔核验结果与trial文件SHA，没有四镜像的逐数组dtype/shape/bytes SHA。不能把这些布尔值转换成新expected_native。未来首次小数组步骤必须在导入live/native之前，从独立冻结的原base/trial字节派生四镜像和specific_material_energy指纹；独立实现须直接按数组轴复制原半列及反序半列，不调用live.native_facts。保存全五试态数组、物理数组的dtype/shape/SHA，以及实际算法和源码pins。再由学校原exact_trial检查decode/能量；Mac已知末位差保留，不能当成学校错误或改容差。
+
+live.validate_archived_chain要求Mac收件目录逻辑路径。学校已有原run路径不等于这些路径已存在。后续必须从冻结343清单派生显式school staging表：每个归档成员由原run/已认证收件副本定位，先大小SHA再独占复制普通小文件；禁止覆盖、链接和解包整个旧归档以重跑审阅。当前尚未核学校staging存在性，不声称来源落盘完成。
+
+## 先修复/验收的执行缺口
+
+1. 当前audit hook在pipeline导入之后才active，不能把配置局部拒dat说成进程全生命周期拒dat。未来独立外层拒绝器应在项目模块导入前启用，覆盖文件打开、memmap和子进程路径，并用故障注入证实导入期拒绝；环境依赖读写另有白名单，不称通用安全沙箱。
+2. configure_native进入原_configure_worker，_template_protocol调用Path.resolve处理warm seed路径，可能触及路径元数据。仅拒open不足以证明零dat stat。当前禁止真实dat stat；因此不可原样运行现live入口并宣称零stat。须另名配置适配设计或明确有界元数据权限后再审，不能偷偷放行，也不能用测试monkeypatch当生产实现。
+3. 压缩NPZ大小不是解码内存上界。未来先以标准库ZIP目录和NPY头检查全部成员名、数量、dtype、shape、压缩/解压尺寸，拒object/重复名/越界/解码超额；该步骤本轮未运行。old全2048相位载入、full镜像、face_beta和76块规划都占内存，不能按201MB首片bytes估RSS。
+4. 当前opened_occurrences只记打开事件，没有读返回字节、解压字节或环境包输入；现reviewer只核集合，不能以此宣称loader读量已封顶。后续补明确计量/停止器及独立审阅负路径，再考虑实际配置。
+
+## 后续有界只读候选及停止规则
+
+分两步独立验收，均没有本轮执行资格。第一步只准备来源、ZIP/NPY头与独立expected指纹；第二步才运行两次学校native配置并比较独立预期。每步执行前冻结具体输入及脚本，给完整PRE-RUN；任何缺口未闭合就DO NOT RUN，不用协议发布自动授予下一步。
+
+拟每步单进程、线程1、完整生命周期严格小于120秒、累计峰RSS小于1GiB、进程树采样另列；外层150秒硬超时，信号/超额立即失败并保留部分目录，不恢复或自动重试。此预算是拒绝上限，不保证学校配置能够完成；超过后独立分析，不自动扩限。禁止数值worker、map、反馈、ODE、init、migrate、真实dat读/stat及写场。
+
+拟NPZ成员解码总额每独立来源文件小于128MiB、单阶段累计解码小于512MiB；native输入实际read返回字节总额小于256MiB/每次check，认证、原归档、代码与环境加载分别计量。上述为待实施的拒绝上限，不是已测开销，也不替代RSS。若现loader无法完整计量，应维持DO NOT RUN，不能把记录open次数冒充严格读上限。应用计量仍不是设备I/O，缓存、预读和网络文件系统流量不由此确定。
+
+冻结两端完整bundle、代码及实际module file/spec origin；学校未同步新代码，若后续同步按verify/fetch新ref/ff-only，不reset/force。全程独占输出，来源前后大小SHA与实际打开路径、归档SHA、trial/物理/native指纹、资源失败证据齐全后，Mac只收白名单小JSON独立审阅；不收真实dat、不重跑旧86304全包数值审阅。
+
+## 本次决定
+
+静态声明清单已冻结，真实可执行来源manifest尚未准备完成。Code WARNING、Logic WARNING、Physics WARNING；真实来源/native配置Decision: DO NOT RUN。先实施并小合成验证上述外层拒绝/计量/独立预期生成及school staging接口，再独立决定首次有界来源检查。生产首片仍需另一次资源预算、完整PRE-RUN与外部真实终态；全301片、续加8/16map、进一步放宽、接受21均未授权。accepted20/newmaterial0及十倍跨支质量失败保持。

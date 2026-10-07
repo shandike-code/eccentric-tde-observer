@@ -1,0 +1,17 @@
+# 86304真实来源准备的静态清单与阻断项
+
+本轮完成声明清单和独立有界只读约定，未运行真实来源/native前置。Mac起点922548643ae0ccd85398c3cfb7bb8332c4670a89、学校fbfe81fb7ec4e9714e256ec460b483130db5c254均现场核clean；学校没有生产同步。两端pre-86304-source-plan-20261007.bundle完整verify。
+
+已读新resource/live/reviewer相关路径、原resource-v1与实施报告，并沿pipeline.configure_native→_configure_worker→_template_protocol/_context/_second_full_material审查实际输入。声明清单为343个不同路径，一遍59981776B；两归档一遍457942741B。当前live一次显式认证577906293B，前后两次1155812586B；native内部读取不包含在内。完整1713代码一遍14239395B，旧代码SHA复核未变。每路径用途、来源位置和声明大小SHA均在完整inventory中；同SHA不同路径按路径计量。
+
+清单生成器只标准库，读取9份既有JSON且前后pins相同，不加载NPZ/native或归档payload。独立另段核验320固定声明包含性、成员与分支live路径的大小SHA对应、独立参考固定SHA、去重/计数/合计、NPZ限制和1713代码。没有运行旧完整审阅器或重复114项数值测试。本阶段另读学校两份已有模板JSON确认静态调用链，没有读真实dat或刷新native。两次交互查询误用manifest.json及Mac缺失模板路径而FileNotFoundError，未生成清单或更改数据；随后分别使用实际ARCHIVE_MANIFEST.json及学校原模板。生成器首次正式运行通过。
+
+当前有四项明确缺口：学校端Mac收件逻辑路径还未核staging；旧native审计仅布尔结果，没有新接口逐数组指纹；配置拒dat hook在pipeline导入后才active；原_template_protocol的Path.resolve可能检查warm seed路径元数据。因本阶段仍禁止真实dat stat，不能直接跑现live入口然后宣称零stat。另有NPZ解码大小和native实际read计量尚未冻结，不能按压缩文件或open次数推内存/总读量。
+
+新约定x20-86304-source-preparation-v1.md将声明inventory与可执行manifest分开，expected_native=null使本清单不能冒生产sources。拟后续先实现独立指纹/ZIP-NPY头核、全生命周期dat拒绝、真实读量计量和school staging，先小合成/故障注入验收，才独立决定首次真实有界来源检查。拟每步120秒、RSS小于1GiB、150秒外层硬限是拒绝上限，尚未授予/实测，不保证成功或自动扩限。独立native预期从固定原base/trial字节先派生，不从同次live输出反填；Mac已知decode末位差保持。
+
+POST-RUN CHECK：声明清单结构、来源连接及算术合计通过；新真实物理数值为空，无NaN/趋势/图可评估。没有生产main、实际ticket、Slurm、map、反馈、ODE、物质更新，也未读取/stat/下载真实dat。production_driver_implemented仍仅接口true，actual_source_manifest_prepared/live_native_recomputed/production_resource_verified/submission_ready/new_production_authorized/full_scan_authorized均false。accepted20/newmaterial0、校准/基线/严格误差资格false及十倍质量门失败不变。
+
+完整材料位于outputs/review-20260925/20261007-86304-source-preparation-inventory.json、20261007-86304-source-plan.py及其log、independent.json；Git小证据保存内容pins。旧协议、数值核、既有小合成与真实审阅不修改、不重跑。下一项限上述阻断项的另名实现和小合成验收，不直接真实来源刷新或提交资源Job。
+
+学校CLI全文协议55.1214秒超时124，无成功草稿；短事实重试10.0127秒，实际deepseek-v4-flash[1m]成功。独立纠正其把1713源码实际SHA核说成仅元数据声明，以及“实测几乎为空”的笼统措辞。原稿与纠错均保留；讲义176追加，旧前缀大小SHA独立冻结。此CLI没有完成全文源码/性能审计。
