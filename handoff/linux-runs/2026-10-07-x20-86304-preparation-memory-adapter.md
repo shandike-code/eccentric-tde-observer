@@ -1,0 +1,47 @@
+# 86304内存接线：原trial校验与柱几何的小合成验收
+
+本轮把认证内存数组接到原exact_trial，并在文件访问封锁后实际导入原项目依赖、执行原_full_column。两端小合成及独立原字节审阅通过；这是具体组件实施进展，完整native配置与真实来源准备仍未完成。真实准备Decision: DO NOT RUN。
+
+## 导入与启动范围
+
+新operations/x20_86304_preparation_memory.py建立冻结模块映射、核实际内存loader与file/spec origin，并提供有界ZIP数组加载与四镜像适配。旧数值核、原exact_trial、旧boundary/inputs及生产入口字节不改，无新增生产monkeypatch或FunctionType。
+
+静态解析从operations.common_step21_directions和scripts.phase7b5x_full_depth_block_probe出发，得到188个模块条目，含包、空namespace和旧裸名别名。空operations namespace由引导器显式建立，剩余187条交FrozenModules；两端实际执行151个项目模块，逐项核loader、__file__、spec.origin和compile文件名。源码由外部冻结pack供给；学校只重定位逻辑origin根目录，源码bytes不改。这里的origin是内存执行模块的逻辑源位置，不声称封锁后重新打开磁盘源码。动态未声明导入会拒绝；188是这两个入口的静态闭包，不是所有未来native操作的完整闭包证明。
+
+一次性子进程使用-I -S，禁用用户site、.pth与PYTHONPATH启动导入；显式增加该解释器的site-packages目录并预载环境依赖。三个SHA核过的引导模块在seal之前执行，原科学项目模块在seal之后执行。环境清单记录实际模块文件路径，但没有核环境全部文件SHA、共享库映射或解释器启动期间的路径系统调用；whole_lifecycle_guard_verified仍false。不能把-I -S本身称为OS沙箱，也不能说环境预载本轮已获得全生命周期访问资格。
+
+学校沿用已验seccomp白名单，封锁后本轮不存在路径的stat/open/readlink均为EPERM；Mac仍为ENOENT，不提升Mac全路径拒绝资格。原模块ROOT路径解析在此封锁中完成，没有调用旧warm-seed resolve，也没有触及真实dat。未来实际配置若采用该边界须限定学校Linux，并先独立审阅封锁前环境范围；目前无真实配置授权。
+
+## 原操作与独立预期
+
+小夹具仅两相位、128半列单元；编码试态由原codec生成，零control试态用于原exact_trial。新trial_and_mirrors直接调用原函数，再按旧_second_full_material相同顺序复制density、temperature、hydrogen、helium，分别沿第一轴拼原行和反序行。原_full_column直接接合成old数组，均匀单位层宽的边界逐位等于每相位的-128到128整数序列。没有调用完整_context、master/stencil/76块规划、init/migrate/map/反馈或ODE。
+
+独立expected先由旧标准库原字节解析器从合成NPZ派生12数组与四镜像指纹，不导入live.native_facts，不从新loader数组反填。随后新loader所有数组对这些dtype/shape/SHA核，四镜像亦核。新独立review_x20_86304_preparation_memory.py不导入adapter/native，再从回执中的小NPZ原字节独立解析NPY、逐行镜像并核指纹与实际模块来源。它核学校回执，不是Mac重新执行Linux封锁。
+
+四项篡改encoded_state、temperature、density、dt分别被原trial身份、decode或物理身份门拒绝。真实原base/trial/old/r20本轮没有刷新；已知Mac真实decode末位差仍保留，合成control通过不能覆盖该差异。
+
+## loader计量与资源范围
+
+新ArrayLoader认证不可变NPZ bytes的SHA；全部成员名、类型、压缩方式、总解压声明和全部NPY头通过后才创建NumPy数组。拒object、F-order、非有限、重复/路径成员、截断及错误SHA；ZIP完整成员读取校验CRC。NumPy frombuffer保持只读，显式copy及mirror先预约后分配。累计预约不回收；每来源解压声明严格小于128MiB，接口读上限不超过256MiB，阶段预约上限不超过512MiB，调用者不能把参数扩大。
+
+最终合成NPZ2765B；新loader压缩接口实际返回2545B，解压成员返回26136B，显式物化累计预约142387B。ZIP seek会跳过部分容器字节并重复读另一些字节，累计返回可以小于文件长度。独立原字节解析器另计返回10180B、payload预约63536B；这些均非整套测试总量、环境输入或设备IO。ZIP内部缓冲、解释器分配和原科学函数临时量没有全部闭合，all_native_temporaries_bounded=false，不以这些计数冒称总RSS上界。
+
+原StopGuard的120秒/1GiB检查在子进程使用；外层本轮subprocess超时20秒，含解释器启动。最终Mac内部1.0931527503秒/RSS170246144B，学校10.0855410250秒/RSS138219520B；外层分别1.1578790830秒和10.2715600750秒。首学校18.812862155秒外层记录保留，异时差不作提速结论。没有新验生产150秒启动器、进程树强杀或瞬时硬RSS限制。
+
+## 验收与原失败
+
+两端新增21tests：Mac0.07秒、学校3.99秒；首Mac18项0.09秒保留。无测试skip或断言放宽，没有重跑旧15/50/114项。测试覆盖无效数组、超额/bool/扩限、返回字节与只读、路径成员、损坏SHA/ZIP、源码身份及生产入口保持拒绝。另四种回执篡改（生产资格、全生命周期资格、缺原模块、缺镜像）被独立审阅拒绝。
+
+Mac首次练习脚本因importlib局部变量绑定失败；第二次在封锁后遇concurrent.futures.process惰性导入缺失。原错误留存，显式预载process/thread后完成，未改变科学核或OS白名单。首个正例的镜像预期来自loader数组，尚不足以独立认证loader；最终05改为原字节预期再完整复验，两版记录不回写。
+
+两端起始clean：Mac a6737bed409b5c844324ff4a32866fd383ad3538，学校fbfe81fb7ec4e9714e256ec460b483130db5c254。两端pre-86304-memory-adapter-20261007.bundle完整verify。freeze01/02/03为1723，加入test后04/05为1724，最终独立reviewer加入06为1725；最终全部1725代码SHA后核相同。学校final fixture六文件（代码、test、pack）前后大小SHA核齐，生产checkout未同步。
+
+学校四小工件共187432B逐项大小SHA核后独占收件；Mac独立审阅通过，12数组/4镜像、meter和151实际模块名跨平台同。环境清单和origin根目录各自保留，不宣称所有环境相同。工件索引为outputs/review-20260925/20261007-memory-*；学校preparation-memory-fixture-20261007-02，Mac收件preparation-memory-school-e2e-20261007。小审计见handoff/evidence/20261007-86304-preparation-memory-review.json。
+
+## 剩余实施与资格
+
+下一项应在此真实接线基础上继续：为认证old/master数组实现完整context适配，保留原_full_column及频率规划的表达式顺序；冻结实际新增导入闭包。补原科学函数临时量、ZIP内部缓冲的明确计量/预约边界，并实现独立生产120秒/1GiB/外层150秒停止封装及小合成故障注入。环境启动阶段仍需具体可验证的访问边界，不能仅凭环境origin清单宣布闭合。
+
+native_configuration继续无条件拒绝。original_exact_trial_memory_synthetic_verified/original_project_import_closure_synthetic_verified=true（仅上述入口）；whole_lifecycle_guard_verified/complete_native_context_verified/native_loader_metering_integrated/production_resource_stop_guards_integrated/actual_source_manifest_prepared/live_native_recomputed/submission_ready/new_production_authorized/full_scan_authorized=false。
+
+本轮真实NPZ/native刷新、dat stat/读/下载、归档payload、Slurm/map/反馈/ODE/物质均为0。accepted20、新物质0，十倍跨支质量门失败、校准与strictboundfalse保持。首次真实来源预算和生产首片预算仍须分别另审；全301片DO NOT RUN。

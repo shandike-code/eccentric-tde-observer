@@ -1,0 +1,22 @@
+{
+  "returncode": 0,
+  "elapsed_s": 8.988953792024404,
+  "actual_model": [
+    "deepseek-v4-flash[1m]"
+  ],
+  "scope": "supplied short facts, not source or performance audit",
+  "corrections": [
+    {
+      "draft": "环境加载仍处于封锁状态",
+      "correction": "环境预载在封锁之前，全生命周期边界仍未闭合。"
+    },
+    {
+      "draft": "内存量数据",
+      "correction": "接口返回、解压返回和预约分别记录，不是同一种内存占用或总IO。"
+    },
+    {
+      "draft": "学校stat/open/readlink全部EPERM",
+      "correction": "限本轮封锁后不存在路径三探测；旧25探测的范围见上一报告。"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "schema": "86304-preparation-memory-components-review-v1",
+  "starting_heads": {
+    "mac": "a6737bed409b5c844324ff4a32866fd383ad3538",
+    "school": "fbfe81fb7ec4e9714e256ec460b483130db5c254"
+  },
+  "report": "handoff/linux-runs/2026-10-07-x20-86304-preparation-memory-adapter.md",
+  "code": [
+    {
+      "path": "operations/x20_86304_preparation_memory.py",
+      "size_bytes": 8176,
+      "sha256": "aade3d714ffc3d016690c6c84fb22fe4c6a611ce162d30bd37725af690e5bba2"
+    },
+    {
+      "path": "handoff/audit_tools/exercise_x20_86304_preparation_memory.py",
+      "size_bytes": 7003,
+      "sha256": "117324bbfc2689f6838e96ffd50b73ed12e418a41c54451dd04a92b3809857ca"
+    },
+    {
+      "path": "handoff/audit_tools/review_x20_86304_preparation_memory.py",
+      "size_bytes": 4749,
+      "sha256": "b0cfcb483c8d6846d9e538d41ce11cdcc0852565d9bd35e43d6030cf6b7e36cb"
+    },
+    {
+      "path": "tests/test_x20_86304_preparation_memory.py",
+      "size_bytes": 2648,
+      "sha256": "ab0a4d4ed1f5683854477b30eb7b8beed5f412763c36135b23c387172ecf01cc"
+    }
+  ],
+  "independent": {
+    "synthetic_verified": true,
+    "original_project_modules": 151,
+    "raw_arrays": 12,
+    "mirror_arrays": 4,
+    "linux_post_environment_denial_verified": true,
+    "whole_lifecycle_guard_verified": false,
+    "production_ready": false,
+    "code_files_after_verified": 1725,
+    "parity_keys": [
+      "mirror_sha256",
+      "independent_raw_fingerprints",
+      "meter",
+      "executed_project_module_names"
+    ],
+    "received_bytes": 187432,
+    "school_resources": {
+      "elapsed_s": 10.085541025007842,
+      "peak_rss_bytes": 138219520
+    },
+    "mac_resources": {
+      "elapsed_s": 1.0931527502834797,
+      "peak_rss_bytes": 170246144
+    }
+  },
+  "tests": {
+    "mac_count": 21,
+    "mac_seconds": 0.07,
+    "school_count": 21,
+    "school_seconds": 3.99,
+    "old_suites_rerun": false
+  },
+  "full_bundles_verified_both": "pre-86304-memory-adapter-20261007.bundle",
+  "freeze": "outputs/review-20260925/20261007-memory-freeze-06.json",
+  "static_closure_entries": 188,
+  "frozen_entries": 187,
+  "executed_original_modules": 151,
+  "environment": {
+    "isolated_no_site": true,
+    "preload_before_seal": true,
+    "complete_input_sha_verified": false,
+    "shared_library_maps_verified": false
+  },
+  "meter": {
+    "npz_bytes": 2765,
+    "compressed_interface_returned_bytes": 2545,
+    "decompressed_member_returned_bytes": 26136,
+    "explicit_materialization_reserved_bytes": 142387,
+    "oracle_interface_returned_bytes": 10180,
+    "oracle_payload_reserved_bytes": 63536,
+    "whole_test_read_total_measured": false,
+    "all_native_temporaries_bounded": false
+  },
+  "qualifications": {
+    "original_exact_trial_memory_synthetic_verified": true,
+    "original_project_import_closure_synthetic_verified": true,
+    "whole_lifecycle_guard_verified": false,
+    "complete_native_context_verified": false,
+    "native_loader_metering_integrated": false,
+    "production_resource_stop_guards_integrated": false,
+    "actual_source_manifest_prepared": false,
+    "live_native_recomputed": false,
+    "submission_ready": false,
+    "new_production_authorized": false,
+    "full_scan_authorized": false
+  },
+  "activity": {
+    "real_dat_read": 0,
+    "real_dat_stat": 0,
+    "real_dat_download": 0,
+    "real_npz_native_refresh": 0,
+    "archive_payload_read": 0,
+    "new_slurm": 0,
+    "map": 0,
+    "feedback": 0,
+    "ode": 0,
+    "new_material_steps": 0,
+    "accepted": 20
+  },
+  "lecture_prefix": {
+    "size_bytes": 516726,
+    "sha256": "fa52b8fa55f5992b61a1de93bc3c137c53b4e1ce4782e1857084129ece190627"
+  },
+  "cli_review": {
+    "returncode": 0,
+    "elapsed_s": 8.988953792024404,
+    "actual_model": [
+      "deepseek-v4-flash[1m]"
+    ],
+    "scope": "supplied short facts, not source or performance audit",
+    "corrections": [
+      {
+        "draft": "环境加载仍处于封锁状态",
+        "correction": "环境预载在封锁之前，全生命周期边界仍未闭合。"
+      },
+      {
+        "draft": "内存量数据",
+        "correction": "接口返回、解压返回和预约分别记录，不是同一种内存占用或总IO。"
+      },
+      {
+        "draft": "学校stat/open/readlink全部EPERM",
+        "correction": "限本轮封锁后不存在路径三探测；旧25探测的范围见上一报告。"
+      }
+    ]
+  }
+}
