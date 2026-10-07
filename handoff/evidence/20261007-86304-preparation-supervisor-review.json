@@ -1,0 +1,43 @@
+{
+  "local": {
+    "synthetic_receipts_verified": true,
+    "case_count": 8,
+    "production_resource_stop_guards_integrated": false,
+    "whole_lifecycle_guard_verified": false
+  },
+  "school": {
+    "synthetic_receipts_verified": true,
+    "case_count": 8,
+    "production_resource_stop_guards_integrated": false,
+    "whole_lifecycle_guard_verified": false
+  },
+  "tamper_rejections": [
+    "qualification",
+    "bool_returncode",
+    "fake_kill",
+    "missing_case"
+  ],
+  "code_count": 1733,
+  "all_frozen_code_unchanged": true,
+  "school_source_sha_verified": true,
+  "receipt_files": 36,
+  "receipt_bytes": 23559,
+  "report": "handoff/linux-runs/2026-10-07-x20-86304-preparation-supervisor.md",
+  "tests": {
+    "mac": {
+      "count": 18,
+      "seconds": 0.7
+    },
+    "school": {
+      "count": 18,
+      "seconds": 2.68
+    }
+  },
+  "production_resource_stop_guards_integrated": false,
+  "complete_native_context_verified": false,
+  "whole_lifecycle_guard_verified": false,
+  "new_production_authorized": false,
+  "real_data_refreshes": 0,
+  "material_steps": 0,
+  "accepted": 20
+}

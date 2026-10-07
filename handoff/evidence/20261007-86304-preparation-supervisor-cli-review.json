@@ -1,0 +1,8 @@
+{
+  "scope": "short supplied facts, not source or performance audit",
+  "corrections": [
+    "两端共18改两端各18",
+    "任意argv接口不保证不可信程序资源或文件安全"
+  ],
+  "accepted": true
+}
