@@ -1,0 +1,13 @@
+{
+  "scope": "short supplied facts, not full source/performance audit",
+  "actual_model": "deepseek-v4-flash[1m]",
+  "elapsed_s": 9.510906916111708,
+  "corrections": [
+    "CLI时钟/学校tests4.07s及收件303635B属于第二轮；最终第三轮学校3.08s、303636B及最终资源见报告。",
+    "StopGuard在seal之前安装；CLI箭头把安装顺序放在内存导入之后，不准确。",
+    "Fortran标志由头解析器返回，拒绝发生在loader/配置布局门；不是parser本身立即拒。",
+    "0真实输入操作应表述为本轮未执行，不是科学验证覆盖为0；合成确实接原科学函数。",
+    "补充最终原始residual dtype字面门，防规范化改变接受域。"
+  ],
+  "production_authorized": false
+}
