@@ -1,0 +1,10 @@
+{
+  "model": "deepseek-v4-flash[1m]",
+  "scope": "short facts only",
+  "corrections": [
+    "independent implementation shares scientific sources; not unrelated origins",
+    "CLI saw 33 tests; final two platforms have 35 after additional required rejection checks"
+  ],
+  "lecture_prefix_size": 504996,
+  "lecture_prefix_sha256": "82448f6de944bd018b541daa47e4efb4a172c2227c0fff3f8c93fa7982c34b04"
+}

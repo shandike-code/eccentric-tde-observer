@@ -1,0 +1,53 @@
+{
+  "scope": "small JSON adapter and synthetic wiring only",
+  "artifacts": [
+    {
+      "path": "outputs/review-20260925/20261007-source-adapter-code-freeze.json",
+      "size_bytes": 1580,
+      "sha256": "a6c436eb254a6b449025a133babbd5b02fe746364b92187282b8eeb8e614e808"
+    },
+    {
+      "path": "outputs/review-20260925/20261007-source-adapter-parity.json",
+      "size_bytes": 356,
+      "sha256": "914a3c86334911fbbafcc48acd6ede0ee395cea0ef01ac259aabb60a706145b8"
+    },
+    {
+      "path": "outputs/review-20260925/20261007-86304-radiation-binding.json",
+      "size_bytes": 78105,
+      "sha256": "1b498283c4df72f70b553c3238fce7d60e96ab225d1c9d5543c9471166f2ee16"
+    },
+    {
+      "path": "outputs/review-20260925/20261007-86304-radiation-binding-independent.json",
+      "size_bytes": 306,
+      "sha256": "87fd9871be72fb3324488c581cb5630f5daae2fc302efa8da6a32a4d990261d4"
+    },
+    {
+      "path": "outputs/review-20260925/20261007-source-adapter-school-receipt.json",
+      "size_bytes": 503,
+      "sha256": "8b0b9aef2c4643436e5c89cdf42808403f0ac1d037ff3e894b124c97d77148ad"
+    }
+  ],
+  "mac_tests": 35,
+  "school_tests": 35,
+  "independent_binding_negative_paths": 8,
+  "synthetic_matrix_checks_per_dedicated_e2e": 1250,
+  "new_source_adapter_implemented": true,
+  "synthetic_wiring_verified": true,
+  "production_driver_implemented": false,
+  "production_resource_verified": false,
+  "full_field_statistics_complete": false,
+  "submission_ready": false,
+  "new_production_authorized": false,
+  "large_field_bytes_read": 0,
+  "new_slurm": 0,
+  "new_maps": 0,
+  "new_feedback": 0,
+  "new_material": 0,
+  "accepted_outer_steps": 20,
+  "mac_test_s": 0.19,
+  "school_test_s": 3.7,
+  "final_code_freeze": {
+    "path": "outputs/review-20260925/20261007-source-adapter-code-freeze-02.json",
+    "sha256": "b84892451683bd5eda5ab5dfae416e37148516936c1cff20093333be7ab89ff5"
+  }
+}
