@@ -1,0 +1,14 @@
+{
+  "first_attempt_elapsed_s": 5.3062514159828424,
+  "first_attempt_usable_lecture": false,
+  "first_attempt_reason": "Only tool-call markup returned; tools disabled, no claimed tool execution",
+  "second_attempt_elapsed_s": 3.3895237911492586,
+  "actual_model": "deepseek-v4-flash[1m]",
+  "scope": "short provided facts only, not source/performance audit",
+  "corrections": [
+    "No full scientific or startup qualification.",
+    "Output finite rejection is additional to original function; normal-path operation order preserved.",
+    "Counter and ledger receipt checks do not prove every native allocation."
+  ],
+  "accepted_as_fact_draft": true
+}

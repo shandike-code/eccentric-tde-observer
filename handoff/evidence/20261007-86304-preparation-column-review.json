@@ -1,0 +1,73 @@
+{
+  "schema": "86304-preparation-column-review-v1",
+  "scope": "isolated original column expression array-result reservations",
+  "independent": {
+    "local": {
+      "verified": true,
+      "reserved_bytes": 84475,
+      "entries": 30,
+      "scalar_values": 6147,
+      "production_authorized": false
+    },
+    "school": {
+      "verified": true,
+      "reserved_bytes": 84475,
+      "entries": 30,
+      "scalar_values": 6147,
+      "production_authorized": false
+    },
+    "parity_except_platform_elapsed": true,
+    "tamper_rejected": [
+      "qualification",
+      "count-bool",
+      "ledger-bool",
+      "ledger-size",
+      "missing-array",
+      "array-byte"
+    ],
+    "source_files_unchanged": 1751,
+    "local_elapsed_s": 0.00018370803445577621,
+    "school_elapsed_s": 0.0009583650098647922
+  },
+  "school_receipt": {
+    "root": "/home/scc/pb24511938/eccentric-tde-observer/outputs/review-20260925/preparation-column-fixture-20261007",
+    "fixture_files": 7,
+    "before_after_same": true,
+    "files": {
+      "tests.log": {
+        "size_bytes": 98,
+        "sha256": "ac37fb35480e543b52c76e57c66a29738b0a5400b0a7886f6409e7aeddeec1be"
+      },
+      "result.json": {
+        "size_bytes": 100232,
+        "sha256": "33df48af6601c4b2878e70aa6c5b291e7b56f79281213c35f3e26211d55d0c9c"
+      },
+      "review.json": {
+        "size_bytes": 114,
+        "sha256": "1abffb8771263b32bc31d323237e47ca1f08ecd7df942804126fcbdf4eff32d7"
+      },
+      "tests.log.stderr": {
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "result.json.stderr": {
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "review.json.stderr": {
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  },
+  "report": "handoff/linux-runs/2026-10-07-x20-86304-preparation-column.md",
+  "source_freeze": "outputs/review-20260925/20261007-column-freeze-01.json",
+  "synthetic_column_component_verified": true,
+  "header_configuration_integrated": false,
+  "whole_lifecycle_guard_verified": false,
+  "all_scientific_temporaries_metered": false,
+  "new_production_authorized": false,
+  "full_scan_authorized": false,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0
+}
