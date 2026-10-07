@@ -1,0 +1,16 @@
+{
+  "scope": "short supplied facts only; not source/performance audit",
+  "model": "deepseek-v4-flash[1m]",
+  "elapsed_s": 7.18481666687876,
+  "substantive_factual_errors": [],
+  "clarifications": [
+    "120 seconds and 1 GiB refer to StopGuard time and historical peak checks, not one combined quantity",
+    "explicit reservations are not allocator/live/RSS bounds",
+    "leggauss return allowance does not cover internals",
+    "full preparation and production remain unauthorized"
+  ],
+  "lecture_prefix": {
+    "size_bytes": 534693,
+    "sha256": "53789d93e6a14febd3415886e3c7a67428fd803a3ab44dd297ae18e40fb28a20"
+  }
+}
