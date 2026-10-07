@@ -1,0 +1,79 @@
+{
+  "tamper_rejected": [
+    "qualification",
+    "leggauss-scope",
+    "bool-ledger",
+    "bool-index",
+    "missing-module",
+    "missing-grid",
+    "bool-elapsed",
+    "chunk-overflow",
+    "leggauss-capacity-and-total",
+    "frequency-capacity-and-total",
+    "quadrature-capacity-and-total",
+    "bad-byte-new-sha"
+  ],
+  "parity": "sources/configuration/material/context except mu and weight/meter/grids/indices/module names equal; independent moments on each platform",
+  "code_files_unchanged": 1778,
+  "capacity_by_prefix": {
+    "temperature_k": 14244,
+    "header-token-bytes-and-characters": 1716,
+    "hydrogen_fraction": 26730,
+    "helium_fraction": 39198,
+    "specific_material_energy_erg_g": 7430,
+    "density_g_cm3": 14253,
+    "phase_index": 1232,
+    "step_duration_s": 1899,
+    "relaxation": 1232,
+    "encoded_state": 26054,
+    "base_encoded_state": 26054,
+    "base_residual": 25934,
+    "finite_direction": 25934,
+    "array-finite-mask": 8697,
+    "cell_mass_g_cm2": 3718,
+    "active_edge_hz": 3937,
+    "maximum_beta": 616,
+    "motion": 75956,
+    "trial-base-comparison-bytes": 49200,
+    "array-copy": 7168,
+    "array-mirror": 14336,
+    "column": 56402,
+    "leggauss": 33344,
+    "quadrature": 1792,
+    "frequency": 14637779
+  },
+  "pack_modules": 204,
+  "frozen_rows": 203,
+  "decoded_member_bytes": 69592,
+  "local": {
+    "synthetic_legendre_configuration_verified": true,
+    "original_modules": 160,
+    "blocks": 1,
+    "source_bytes": 12750,
+    "resources": {
+      "elapsed_s": 1.286976583302021,
+      "peak_rss_bytes": 186318848
+    },
+    "outer_seconds": 1.3816852089948952,
+    "whole_lifecycle_guard_verified": false,
+    "complete_native_context_verified": false,
+    "production_authorized": false
+  },
+  "school": {
+    "synthetic_legendre_configuration_verified": true,
+    "original_modules": 160,
+    "blocks": 1,
+    "source_bytes": 12750,
+    "resources": {
+      "elapsed_s": 2.084621079993667,
+      "peak_rss_bytes": 148635648
+    },
+    "outer_seconds": 2.3111539060191717,
+    "whole_lifecycle_guard_verified": false,
+    "complete_native_context_verified": false,
+    "production_authorized": false
+  },
+  "report": "handoff/linux-runs/2026-10-08-x20-86304-preparation-legendre.md",
+  "leggauss_internals_metered": false,
+  "leggauss_explicit_arrays_integrated": true
+}

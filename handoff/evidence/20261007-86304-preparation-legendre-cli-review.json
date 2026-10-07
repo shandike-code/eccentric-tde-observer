@@ -1,0 +1,10 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "scope": "short facts only",
+  "substantive_factual_errors": false,
+  "clarifications": [
+    "1GiB historical RSS checkpoint gate, not hard RSS limit",
+    "RLIMIT_AS not installed or exhaustion-tested",
+    "all temporaries metering remains incomplete"
+  ]
+}
