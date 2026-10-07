@@ -1,0 +1,34 @@
+{
+  "results": [
+    {
+      "platform": "Darwin",
+      "cases": 16,
+      "eigensolves": 0,
+      "maximum_identified_wrapper_bytes": 6536,
+      "backend_private_workspace_bounded": false,
+      "production_metering_integrated": false,
+      "tamper_rejections": 6
+    },
+    {
+      "platform": "Linux",
+      "cases": 16,
+      "eigensolves": 0,
+      "maximum_identified_wrapper_bytes": 6536,
+      "backend_private_workspace_bounded": false,
+      "production_metering_integrated": false,
+      "tamper_rejections": 6
+    }
+  ],
+  "source_pin": {
+    "path": "outputs/review-20260925/20261007-native-workspace-umath_linalg.cpp",
+    "size_bytes": 141311,
+    "sha256": "e34c39c15a8a887134aef75e20e6cefc9d0808dfdec2808e77bd125ab66d3ed2"
+  },
+  "source_revision": "48fecee5453aa1d31e6b79dcb3969dc1a6d1a891",
+  "code_count": 1772,
+  "old_code_unchanged": true,
+  "source_to_installed_binary_reproducible_build_verified": false,
+  "report": "handoff/linux-runs/2026-10-07-x20-86304-native-workspace.md",
+  "scope": "native query only, no eigensolve or configuration integration",
+  "scientific_runs": 0
+}

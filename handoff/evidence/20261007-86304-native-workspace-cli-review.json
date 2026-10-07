@@ -1,0 +1,9 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "scope": "short supplied facts only",
+  "corrections": [
+    "30 seconds is timeout not elapsed",
+    "6536 bytes derived caller buffers not measured total memory"
+  ],
+  "substantive_factual_errors": false
+}
