@@ -1,0 +1,9 @@
+{
+  "model": "deepseek-v4-flash[1m]",
+  "scope": "short supplied facts only, not full source or performance audit",
+  "corrections": [
+    "Mac不足同等OS路径已被拒绝：应为没有证明同等OS拒绝能力；本次Mac合成执行成功。",
+    "mu6与weight32分别指6个及32个元素存在差异，不是mu6/weight32变量或维度。"
+  ],
+  "accepted_facts": "context component progress only; no complete native preparation or HHe completion"
+}

@@ -1,0 +1,35 @@
+# 86304认证内存context：原运算顺序与76块合成核验
+
+本轮新增另名context组件，实际把认证合成old/master内存数组接到原柱几何、相位选择、频率stencil和分块规划。两端小合成及标准库独立审阅通过。完整native worker配置、启动保护和生产停止封装仍未完成，真实准备DO NOT RUN。
+
+## 接线与原表达式
+
+operations/x20_86304_preparation_context.py的_context_arrays保留原scripts/phase7b5x_full_depth_block_probe.py中_context主体，仅移除_load_material文件读取、将master的np.load块改为已认证数组。测试AST逐节点核这两处替换之外的表达式与求值顺序。新入口增加明确的dtype/shape/有限性、正密度温度面质量时间步、分数域、正递增频率和最大速度域检查；不改原源码，也无FunctionType或生产monkeypatch。native_configuration继续无条件拒绝。
+
+柱宽仍是面质量除密度，边界速度仍是下一相位边界差除时间与光速；parent_beta保持两相邻面算术平均，16子层复制、32方向求积、每核心块128组均保持原式。原identified_live_bytes只是旧规划表达式的数值，不是本轮实际分配或RSS上界。测试同时核静止单位柱与两相位不同宽度的移动柱，后者核速度符号、相位选择与原平均顺序。
+
+两端实际封锁后练习仅两相位128半列单元，合成master有9632组、规划76块；未分配完整9632×32×4096辐射场。old/master先由ArrayLoader核合成NPZ的大小域、SHA、ZIP/NPY头及CRC后frombuffer读入。新的独立reviewer只标准库，重新从原NPY bytes核夹具本身、完整镜像数组、边界、零速度、所有76块的9632组所有权、选择块及identified表达式；不从live.native_facts反填期待。
+
+## 导入与平台边界
+
+源码包沿前阶段两入口闭包增加新context模块，共189条静态记录，空operations namespace由引导器建立，188条交FrozenModules；本轮实际执行93项目模块。静态包并非最小context闭包；数量变化不能被解释成遗漏所有151原trial模块，本轮没有重新执行trial入口。新适配器直接依赖的原频率函数已在冻结包中。内存loader/file/spec origin和源码bytes核过，学校只重定位逻辑root。
+
+-I -S仍仅抑制site/pth/PYTHONPATH启动加载，显式环境预载发生在seal前。本轮没有重新做全部25路径探测，沿用已审封锁器；学校实际安装Linux seccomp TSYNC，Mac实际安装Seatbelt，但Mac没有因此取得全部元数据拒绝资格。解释器启动、共享库和环境全部输入的访问认证尚未闭合，whole_lifecycle_guard_verified=false。
+
+## 两端结果与独立差异
+
+新增25tests：Mac0.96秒、学校14.87秒，无失败、skip或放宽断言。没有重跑旧21/15/50/114tests。最终76块练习Mac内部0.9038368752秒、峰RSS176291840B，外层0.9754710407秒；学校内部2.3348231580秒、143642624B，外层2.5833011110秒。外层25秒仅这次小练习，不是生产150秒封装。
+
+首次附加全context跨平台逐位相等断言失败，原脚本与差异JSON保留。差异仅原角节点mu的6个元素、最大绝对1.1102230246251565e-16，以及weight的32个元素、最大绝对1.942890293094024e-16。独立审阅事先固定0到3阶角矩绝对容差2e-14，两端分别通过；未修改原求积或放宽该门。其余context结构与全部数组、meter、实际模块名严格相同，不声称全部context逐位同，也不推广到非零速度的跨平台规划。
+
+两合成NPZ分别1405B和14611B，共16016B；loader压缩接口返回15896B、解压成员返回93472B、显式物化累计预约329572B。原科学函数临时量和ZIP内部buffer尚未全部纳入，不是总I/O、设备流量、总分配或RSS界。没有原native文件loader完整计量资格。
+
+学校隔离fixture167文件在执行前后大小SHA相同；Mac1729代码冻结后SHA全同。学校四小工件1027185B按外部大小SHA核后独占收件，Mac独立审阅是回执核验，不是重执行Linux。六篡改生产资格、wholelife资格、块缺口、bool相位、数组SHA、缺原模块均拒。两端起始clean，Mac0ed2d6fc2365cb796c006f3e5c77ad5b557ff70d、学校fbfe81fb7ec4e9714e256ec460b483130db5c254；pre-86304-context-20261007.bundle均完整verify，学校生产checkout未同步。
+
+## 保存与下一项
+
+新exercise/reviewer与test均为x20_86304_preparation_context前缀。完整证据在outputs/review-20260925/20261007-context-*，学校preparation-context-fixture-20261007，Mac收件preparation-context-school-e2e-20261007；小审计handoff/evidence/20261007-86304-preparation-context-review.json。CLI短事实讲义13.7800171254秒实际deepseek-v4-flash[1m]，不是源码/性能审计；“Mac不足同等OS路径，已被拒绝”纠正为没有证明Mac同等拒绝能力，不是此次Mac执行失败。
+
+下一项必须继续具体实施：将已验trial/mirror/context接入完整native worker所需配置（目前仅context子路径），先列原_configure_worker剩余字段与表达式；实现独立120秒/1GiB/外层150秒停止封装并做时间、RSS、信号、忽略信号及部分失败小注入；补原临时量和ZIP内部buffer范围。环境启动访问边界须给具体可验证方案，实际配置若限定学校Linux须独立审阅平台范围。不得仅以此context验收宣布完整准备结束。
+
+original_context_memory_synthetic_verified=true；complete_native_context_verified/whole_lifecycle_guard_verified/native_loader_metering_integrated/production_resource_stop_guards_integrated/actual_source_manifest_prepared/live_native_recomputed/submission_ready/new_production_authorized/full_scan_authorized=false。真实NPZ/native刷新、dat stat/读/下载、归档payload、Slurm/map/反馈/ODE/物质均0；accepted20、新物质0、校准与strictboundfalse和十倍质量门失败保持。全部准备验收后才另审首次真实来源预算，生产首片预算另立，全301片DO NOT RUN。

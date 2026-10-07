@@ -1,0 +1,83 @@
+{
+  "local": {
+    "synthetic_context_reviewed": true,
+    "blocks": 76,
+    "groups": 9632,
+    "project_modules": 93,
+    "production_ready": false,
+    "whole_lifecycle_guard_verified": false,
+    "resources": {
+      "elapsed_s": 0.9038368752226233,
+      "peak_rss_bytes": 176291840
+    },
+    "outer_elapsed_s": 0.975471040699631,
+    "meter": {
+      "compressed_interface_returned_bytes": 15896,
+      "decompressed_member_returned_bytes": 93472,
+      "explicit_materialization_reserved_bytes": 329572,
+      "device_io_measured": false,
+      "all_native_temporaries_bounded": false
+    },
+    "source_npz_bytes": {
+      "old": 1405,
+      "master": 14611
+    }
+  },
+  "school": {
+    "synthetic_context_reviewed": true,
+    "blocks": 76,
+    "groups": 9632,
+    "project_modules": 93,
+    "production_ready": false,
+    "whole_lifecycle_guard_verified": false,
+    "resources": {
+      "elapsed_s": 2.334823158016661,
+      "peak_rss_bytes": 143642624
+    },
+    "outer_elapsed_s": 2.5833011110080406,
+    "meter": {
+      "compressed_interface_returned_bytes": 15896,
+      "decompressed_member_returned_bytes": 93472,
+      "explicit_materialization_reserved_bytes": 329572,
+      "device_io_measured": false,
+      "all_native_temporaries_bounded": false
+    },
+    "source_npz_bytes": {
+      "old": 1405,
+      "master": 14611
+    }
+  },
+  "angular_cross_platform_differences": {
+    "mu": {
+      "max_absolute_difference": 1.1102230246251565e-16,
+      "different_elements": 6
+    },
+    "weight": {
+      "max_absolute_difference": 1.942890293094024e-16,
+      "different_elements": 32
+    }
+  },
+  "tamper_rejections": [
+    "production",
+    "whole_lifecycle",
+    "block_gap",
+    "wrong_phase",
+    "bad_array",
+    "missing_origin"
+  ],
+  "code_after_files": 1729,
+  "context_except_angles_and_meter_cross_platform_equal": true,
+  "all_context_cross_platform_bitwise_equal": false,
+  "report": "handoff/linux-runs/2026-10-07-x20-86304-preparation-context.md",
+  "original_context_memory_synthetic_verified": true,
+  "complete_native_context_verified": false,
+  "whole_lifecycle_guard_verified": false,
+  "production_resource_stop_guards_integrated": false,
+  "actual_source_manifest_prepared": false,
+  "real_npz_refreshes": 0,
+  "real_dat_reads": 0,
+  "real_dat_stats": 0,
+  "new_material": 0,
+  "accepted": 20,
+  "school_checkout": "fbfe81fb7ec4e9714e256ec460b483130db5c254"
+}
