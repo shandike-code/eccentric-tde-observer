@@ -1,0 +1,14 @@
+{
+  "cli_scope": "short supplied facts only; not source or performance audit",
+  "actual_model": "deepseek-v4-flash[1m]",
+  "elapsed_s": 13.08105458272621,
+  "corrections": [
+    "外部大小做SHA认证改为独立核大小与外部SHA；大小不是摘要来源",
+    "76块所有权只指频组覆盖，shape/phase/dt是几何身份核",
+    "153包含新配置模块，不能全称原始科学模块",
+    "明确监督器和StopGuard只接专用合成入口",
+    "最终reviewer加固未部署学校，原回执在Mac重新审阅"
+  ],
+  "lecture_section": 182,
+  "prefix_unchanged": true
+}

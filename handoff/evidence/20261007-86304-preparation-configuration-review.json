@@ -1,0 +1,86 @@
+{
+  "schema": "86304-preparation-configuration-review-v1",
+  "report": "handoff/linux-runs/2026-10-07-x20-86304-preparation-configuration.md",
+  "mac": {
+    "synthetic_configuration_verified": true,
+    "original_modules": 153,
+    "blocks": 76,
+    "source_bytes": 26742,
+    "meter": {
+      "compressed_interface_returned_bytes": 21027,
+      "decompressed_member_returned_bytes": 145744,
+      "explicit_materialization_reserved_bytes": 642554,
+      "device_io_measured": false,
+      "all_native_temporaries_bounded": false
+    },
+    "resources": {
+      "elapsed_s": 0.9861757918260992,
+      "peak_rss_bytes": 177963008
+    },
+    "outer_seconds": 1.0533426250331104,
+    "whole_lifecycle_guard_verified": false,
+    "complete_native_context_verified": false,
+    "production_authorized": false
+  },
+  "school": {
+    "synthetic_configuration_verified": true,
+    "original_modules": 153,
+    "blocks": 76,
+    "source_bytes": 26742,
+    "meter": {
+      "compressed_interface_returned_bytes": 21027,
+      "decompressed_member_returned_bytes": 145744,
+      "explicit_materialization_reserved_bytes": 642554,
+      "device_io_measured": false,
+      "all_native_temporaries_bounded": false
+    },
+    "resources": {
+      "elapsed_s": 5.228236019989708,
+      "peak_rss_bytes": 143917056
+    },
+    "outer_seconds": 5.604321919003269,
+    "whole_lifecycle_guard_verified": false,
+    "complete_native_context_verified": false,
+    "production_authorized": false
+  },
+  "freeze_files": 1738,
+  "code_after_same": true,
+  "tamper": [
+    {
+      "case": "qualification",
+      "reason": "qualification"
+    },
+    {
+      "case": "phase_bool",
+      "reason": "geometry"
+    },
+    {
+      "case": "block_gap",
+      "reason": "ownership"
+    },
+    {
+      "case": "material_sha",
+      "reason": "independent array bytes"
+    },
+    {
+      "case": "trial_claim",
+      "reason": "configuration composition"
+    },
+    {
+      "case": "missing_module",
+      "reason": "original modules"
+    }
+  ],
+  "synthetic_configuration_verified": true,
+  "whole_lifecycle_guard_verified": false,
+  "complete_native_context_verified": false,
+  "native_loader_metering_integrated": false,
+  "production_resource_stop_guards_integrated": false,
+  "actual_source_manifest_prepared": false,
+  "live_native_recomputed": false,
+  "submission_ready": false,
+  "new_production_authorized": false,
+  "full_scan_authorized": false,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0
+}

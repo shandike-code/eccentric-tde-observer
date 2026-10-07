@@ -1,0 +1,96 @@
+"""Standard-library synthetic receipt review, without importing the adapter."""
+import ast
+import base64
+import hashlib
+import io
+import json
+import math
+import struct
+import zipfile
+
+
+def review(directory,pack,root,platform):
+    outcome=json.loads((directory/'outcome.json').read_text())
+    if (type(outcome['returncode']) is not int or outcome['returncode']!=0 or
+            outcome['success'] is not True or outcome['reason'] is not None or
+            outcome['kill_sent'] is not False or outcome['outer_limit_s']!=150. or
+            not 0<outcome['elapsed_s']<150):raise ValueError('supervised completion')
+    for k in ('whole_lifecycle_guard_verified','production_authorized'):
+        if outcome[k] is not False:raise ValueError('qualification')
+    for name in ('stdout','stderr'):
+        raw=(directory/(name+'.log')).read_bytes()
+        if outcome['outputs'][name]!=dict(size_bytes=len(raw),sha256=hashlib.sha256(raw).hexdigest()):raise ValueError('log integrity')
+    if (directory/'stderr.log').read_bytes():raise ValueError('stderr')
+    r=json.loads((directory/'stdout.log').read_bytes())
+    for k in ('production_authorized','whole_lifecycle_guard_verified','complete_native_context_verified'):
+        if r[k] is not False:raise ValueError('qualification')
+    for k in ('synthetic','startup_isolated_no_site','environment_preload_project_free'):
+        if r[k] is not True:raise ValueError('fixture scope')
+    if platform not in ('linux','darwin'):raise ValueError('external platform')
+    if platform=='linux' and r['seal']!='linux-seccomp-tsync-allowlist-v1':raise ValueError('Linux seal')
+    raw={k:base64.b64decode(v,validate=True) for k,v in r['source_bytes'].items()}
+    if set(raw)!={'fixed','template','trial','base','residual','old','master'}:raise ValueError('roles')
+    for k,v in raw.items():
+        c=r['claims'][k]
+        if c!=dict(path='synthetic/'+k+('.json' if k in ('fixed','template') else '.npy' if k=='residual' else '.npz'),size_bytes=len(v),sha256=hashlib.sha256(v).hexdigest()):raise ValueError('source bytes')
+    def npy(data):
+        if data[:8]!=b'\x93NUMPY\x01\x00':raise ValueError('fixture NPY version')
+        offset=10+int.from_bytes(data[8:10],'little');h=ast.literal_eval(data[10:offset].decode().strip());v=data[offset:]
+        if h['fortran_order'] is not False or h['descr'] not in ('<f8','<i8') or len(v)!=math.prod(h['shape'])*8:raise ValueError('NPY layout')
+        return h,v
+    arrays={};decoded_bytes=0
+    for role in ('trial','base','old','master'):
+        with zipfile.ZipFile(io.BytesIO(raw[role])) as z:
+            if len(set(z.namelist()))!=len(z.namelist()):raise ValueError('ZIP duplicate')
+            arrays[role]={}
+            for name in z.namelist():
+                v=z.read(name);decoded_bytes+=len(v);arrays[role][name[:-4]]=npy(v)
+    if arrays['trial']!=arrays['base']:raise ValueError('trial/base byte identity')
+    h,residual=npy(raw['residual'])
+    if h['shape']!=(512,) or h['descr']!='<f8' or residual!=b'\0'*4096:raise ValueError('zero residual fixture')
+    def array_fact(f,payload,shape):
+        if f!=dict(dtype='<f8',shape=shape,sha256=hashlib.sha256(payload).hexdigest(),data_base64=base64.b64encode(payload).decode()):raise ValueError('independent array bytes')
+    for field,parent in [('density_g_cm3','density_parent'),('temperature_k','temperature_parent'),('hydrogen_fraction','hydrogen_parent'),('helium_fraction','helium_parent')]:
+        h,v=arrays['trial'][field];shape=list(h['shape']);width=len(v)//128
+        if shape[0]!=128:raise ValueError('half cells')
+        mirrored=v+b''.join(v[i*width:(i+1)*width] for i in reversed(range(128)))
+        array_fact(r['material'][parent],mirrored,[256,*shape[1:]])
+        if arrays['old'][field][1]!=v+v:raise ValueError('old two phases')
+    if struct.unpack('<128d',arrays['old']['cell_mass_g_cm2'][1])!=(1e-10,)*128:raise ValueError('fixture mass')
+    if struct.unpack('<128d',arrays['trial']['density_g_cm3'][1])!=(1e-10,)*128:raise ValueError('fixture density')
+    if struct.unpack('<2d',arrays['old']['step_duration_s'][1])!=(1.,1.):raise ValueError('fixture duration')
+    if struct.unpack('<9633d',arrays['master']['active_edge_hz'][1])!=tuple(float(i) for i in range(1,9634)):raise ValueError('master edges')
+    f=json.loads(raw['fixed']);t=json.loads(raw['template'])
+    if f['sources']['phase7b7i_template_protocol']!=r['claims']['template']:raise ValueError('template claim')
+    for role,key in [('old','phase7b4r_material'),('master','phase7b5p_master_input')]:
+        if t['sources'][key]!=r['claims'][role]:raise ValueError('physical source claim')
+    f['sources']['current_material_state']=r['claims']['trial']
+    t['sources']['initial_radiation_state']['path']='synthetic/never-opened.dat'
+    t['sources']['second_material_iterate']=r['claims']['trial']
+    if r['fixed']!=f or r['template']!=t:raise ValueError('configuration composition')
+    if r['warm_seed']!=dict(path='synthetic/never-opened.dat',size_bytes=9632*32*4096*8,sha256='0'*64):raise ValueError('warm declaration')
+    c=r['context']
+    if type(c['phase']) is not int or (c['phase'],c['following'],c['duration_s'],c['shape'])!=(0,1,1.,[9632,32,4096]):raise ValueError('geometry')
+    if any(type(n) is not int for block in c['blocks'] for n in block):raise ValueError('integer ownership')
+    if c['blocks']!=[[i,min(i+128,9632)] for i in range(0,9632,128)]:raise ValueError('ownership')
+    array_fact(c['edge_cm'],struct.pack('<514d',*(list(range(-128,129))*2)),[2,257])
+    array_fact(c['beta'],b'\0'*(4096*8),[4096])
+    for key in ('mu','weight'):
+        payload=base64.b64decode(c[key]['data_base64'],validate=True)
+        array_fact(c[key],payload,[32])
+    mu=struct.unpack('<32d',base64.b64decode(c['mu']['data_base64']));w=struct.unpack('<32d',base64.b64decode(c['weight']['data_base64']))
+    if any(not math.isfinite(x) for x in mu+w) or any(x<=0 for x in w):raise ValueError('quadrature domain')
+    for order in range(4):
+        if abs(math.fsum(a*b**order for a,b in zip(w,mu))-(0 if order%2 else 2/(order+1)))>2e-14:raise ValueError('fixed angular moment')
+    required={'operations.x20_86304_preparation_configuration','operations.x20_86304_preparation_context','operations.common_step21_directions','scripts.phase7b5x_full_depth_block_probe'}
+    seen=r['executed_project_origins']
+    if not required<=seen.keys():raise ValueError('original modules')
+    for name,fact in seen.items():
+        row=pack['modules'][name];v=row['source'].encode()
+        if len(v)!=row['size_bytes'] or hashlib.sha256(v).hexdigest()!=row['sha256'] or fact!=dict(file=root+'/'+row['path'],spec_origin=root+'/'+row['path']):raise ValueError('memory origin')
+    if r['meter']['decompressed_member_returned_bytes']!=decoded_bytes or r['authenticated_input_bytes']!=sum(map(len,raw.values())) or r['residual_view_bytes']!=4096:raise ValueError('meter')
+    if r['meter']['all_native_temporaries_bounded'] is not False or r['meter']['device_io_measured'] is not False:raise ValueError('meter scope')
+    if not 0<r['resources']['elapsed_s']<120 or not 0<r['resources']['peak_rss_bytes']<1024**3:raise ValueError('child resources')
+    return dict(synthetic_configuration_verified=True,original_modules=len(seen),blocks=76,
+        source_bytes=sum(map(len,raw.values())),meter=r['meter'],resources=r['resources'],outer_seconds=outcome['elapsed_s'],
+        whole_lifecycle_guard_verified=False,complete_native_context_verified=False,production_authorized=False)
