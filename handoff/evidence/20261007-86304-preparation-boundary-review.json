@@ -1,0 +1,61 @@
+{
+  "mac": {
+    "synthetic_receipts_reviewed": true,
+    "platform": "darwin",
+    "denied_probes": 18,
+    "unproven_probes": [
+      {
+        "operation": "synthetic.dat:readlink",
+        "errno": 22
+      },
+      {
+        "operation": "hard.bin:readlink",
+        "errno": 22
+      },
+      {
+        "operation": "absent.dat:open",
+        "errno": 2
+      },
+      {
+        "operation": "absent.dat:stat",
+        "errno": 2
+      },
+      {
+        "operation": "absent.dat:lstat",
+        "errno": 2
+      },
+      {
+        "operation": "absent.dat:readlink",
+        "errno": 2
+      },
+      {
+        "operation": "absent.dat:libc-open",
+        "errno": 2
+      }
+    ],
+    "post_environment_seal_probes_passed": false,
+    "whole_lifecycle_guard_verified": false,
+    "native_adapter_integrated": false,
+    "production_authorized": false
+  },
+  "school": {
+    "synthetic_receipts_reviewed": true,
+    "platform": "linux",
+    "denied_probes": 25,
+    "unproven_probes": [],
+    "post_environment_seal_probes_passed": true,
+    "whole_lifecycle_guard_verified": false,
+    "native_adapter_integrated": false,
+    "production_authorized": false
+  },
+  "tamper_rejections": 4,
+  "code_after_matches": 1721,
+  "schema": "86304-preparation-process-boundary-review-v1",
+  "report": "handoff/linux-runs/2026-10-07-x20-86304-preparation-process-boundary.md",
+  "real_dat_read_stat": false,
+  "real_npz_native_refresh": false,
+  "archive_payload_read": false,
+  "new_slurm": false,
+  "accepted_outer_steps": 20,
+  "new_material_steps": 0
+}

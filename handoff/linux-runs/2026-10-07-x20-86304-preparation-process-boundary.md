@@ -1,0 +1,35 @@
+# 86304准备进程边界：Linux封锁后合成通过，完整准备仍未完成
+
+本轮新增独立的进程封锁组件、内存源码导入器、停止检查和合成故障注入，没有运行真实来源或native。学校Linux的25条封锁后探测全部拒绝；Mac有18条权限拒绝、7条仅返回EINVAL/ENOENT，不能声称所有路径调用都在执行前被拒绝。完整环境加载边界、原native适配和生产计量仍未闭合，真实准备Decision: DO NOT RUN。
+
+## 实现与具体边界
+
+`operations/x20_86304_preparation_boundary.py`不替换任何Python文件接口。Linux仅支持现场x86_64 ABI，用no_new_privs及seccomp TSYNC安装正向syscall白名单，所有未列出的调用返回EPERM；不同架构直接杀进程，x32调用不在白名单。open/stat/readlink、目录访问、fork/clone/exec、socket等都未放行。先确认stdout/stderr为管道，关闭stdin及其他已打开描述符；既有环境内存映射不被撤销，封锁前阶段不在此证明范围内。白名单保留内存、信号、时间、身份和资源查询及输出，不把它称作通用敌对代码沙箱。
+
+内核返回ERRNO时不会执行该系统调用，依据[Linux seccomp文档](https://kernel.org/doc/html/latest/userspace-api/seccomp_filter.html)。本次测试验证的是具体平台与已列探测；没有逐个执行所有Linux syscall。TSYNC实际安装成功，但未新建多线程测试，线程配置OPENBLAS_NUM_THREADS=1。关闭描述符与安装之间要求可信单进程启动过程，不能假设任意并发打开没有竞态。
+
+Mac使用sandbox_init的文件读写、fork/exec、网络和mach-lookup拒绝规则。实际不存在路径返回ENOENT、普通文件readlink返回EINVAL，因此只记有限访问拒绝，完整元数据封锁资格为false。此前sandbox-exec严格最小启动返回134，宽启动返回0；学校bwrap先因loopback权限、后因UID映射权限失败，均未当可用边界。
+
+FrozenModules对给定源码bytes核外部SHA、在执行前compile，拒已导入同名模块；安装后未知模块直接拒绝，不回落磁盘PathFinder。只在合成模块上实际验证了导入期stat拒绝及正常内存导入。它尚未完成所有真实项目依赖闭包、file/spec origin和环境清单接线；原项目ROOT解析是否可在该边界内完整导入尚未验证。原warm_seed Path.resolve没有执行，也没有暗放真实dat元数据。
+
+StopGuard提供粘性时间/RSS/信号失败。RSS来自ru_maxrss历史峰值，在检查点核验，不是瞬时硬RSS上限；SIGALRM也不能保证中断任意C阻塞。合成外部父进程以3秒超时杀进程组验证硬停止，但生产120秒/1GiB/外层150秒启动器尚未接线。不能将这个3秒故障注入说成生产150秒封装已验。
+
+## 两端实测与失败记录
+
+Mac15tests 0.05s；学校首15tests 2.03s，最终15tests 1.78s。没有重复旧50/114项。四类子进程为正常封锁、1字节RSS门触发、0.15秒定时信号、忽略定时信号后的3秒外层SIGKILL；这些故障参数只用于新合成。外层生命周期计时包括解释器启动；正常子进程内部计时从环境导入前开始，定时故障的0.15秒刻意从环境载入后起算。
+
+正常小NPZ352B，4×3 binary64数组96B；真实NumPy内存消费者经MeteredBytes返回358B，包含ZIP重复seek读取，不是设备I/O，也不是原native loader读取计量。两端数组SHA相同：3cdb84857b942fe6dfa5d5b90444935652a4a319bab777539926f4b43fe579fa。Mac正常子进程内部elapsed0.0279262913s/RSS36257792B，学校1.1268122940s/RSS31457280B，仅本微型例子。每个子进程新建14B synthetic.dat及符号/硬链接别名；绝未接触真实dat。
+
+Mac首次在readlink EINVAL失败，第二次在不存在路径libc.open ENOENT失败。最终探测器分别保存权限拒绝与未证明项，Mac资格仍false，未放宽为成功。学校首次全部路径拒绝后，NumPy ZIP解码缺惰性cp437编码而失败；把这个环境依赖显式预载后通过，保留首次错误，不把它误报为数据问题。
+
+本轮初始完整bundle两端verify：pre-86304-process-boundary-20261007.bundle。Mac原HEAD b37b35936c6716268dcd21916c8fd8d4b1bf29f2、学校fbfe81fb7ec4e9714e256ec460b483130db5c254均clean。freeze01/02/03为1720代码，最终增加独立reviewer后freeze04为1721。最终Mac全部1721SHA后核一致。学校首轮未落前置SHA核记录，不能回写；最终隔离fixture03四个执行文件前后SHA均核，与Mac相同。学校生产checkout未同步。
+
+学校九个小JSON/日志5345B经大小SHA核后独占收件，Mac独立reviewer不导入边界实现，检查全部25探测、真假资格、NumPy摘要、RSS/信号/外层kill；4种篡改（生产资格、缺用例、伪kill、bool返回码）均拒绝。独立审阅是回执核对，不是Mac重执行Linux内核。所有原失败日志保留，旧数值核、原exact_trial、live/driver及协议不改。
+
+## 工件与继续事项
+
+完整日志和freeze位于outputs/review-20260925/20261007-86304-preparation-boundary-*；Mac最终例为preparation-boundary-e2e-20261007-03，学校为preparation-boundary-fixture-20261007-03，收件为preparation-boundary-school-e2e-20261007。小审计见handoff/evidence/20261007-86304-preparation-boundary-review.json。
+
+下一项必须实际推进完整适配，不能仅重复本段限制：先核环境预加载阶段的解释器启动、依赖来源和不执行项目代码的边界；冻结真实项目内存导入闭包；另名从已认证内存数组接原exact_trial及原数值操作，绕开旧warm-seed路径解析。独立expected继续来自原base/trial原字节；loader返回、ZIP实际解压与数组复制预约分别计量，再接生产停止器。先两端小合成故障注入，真实343来源staging/NPZ/native/归档payload/dat stat均未授权。若Mac不能给相同OS保证，应明确将真实配置限定学校并独立审阅该平台范围，不能伪造两端等价。
+
+本阶段是实现进展而非完整任务完成：post_environment_linux_seal_synthetic_verified=true；whole_lifecycle_guard_verified/native_adapter_integrated/native_loader_metering_integrated/production_resource_stop_guards_integrated/actual_source_manifest_prepared/live_native_recomputed/submission_ready/new_production_authorized/full_scan_authorized=false。accepted20/newmaterial0，十倍跨支质量门失败、校准与strictboundfalse保持。

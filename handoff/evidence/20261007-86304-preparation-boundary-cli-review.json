@@ -1,0 +1,12 @@
+{
+  "scope": "independent correction of supplied-facts lecture only",
+  "corrections": [
+    "358B是消费者实际返回量，含ZIP重复读取；不能仅归因容器开销，文件本身已经352B。",
+    "导入期专测stat；fork/exec是在封锁后直接探测，不都发生于模块导入期。",
+    "真实dat读取和stat均为0，是两项不同操作；Slurm、map、反馈、物质不能混称关键物质。",
+    "本项目真实来源是计算状态，不是天文观测。",
+    "质量门失败仍支持有限的失败与数值比较结论；不能说任何结论均不成立。",
+    "合成通过不补上环境预载保护或完整项目导入闭包；不把生产参数接线排在真实来源试运行之后。"
+  ],
+  "source_audit": false
+}
