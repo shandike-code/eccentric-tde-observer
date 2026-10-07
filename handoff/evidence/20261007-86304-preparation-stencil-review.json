@@ -1,0 +1,64 @@
+{
+  "schema": "86304-preparation-stencil-review-v1",
+  "scope": "independent synthetic frequency component, not configuration",
+  "initial_mac_head": "865f15a29ea805af4b1fce03cee413fda65776bc",
+  "school_head": "fbfe81fb7ec4e9714e256ec460b483130db5c254",
+  "tests": {
+    "mac": {
+      "count": 7,
+      "seconds": 1.16
+    },
+    "school": {
+      "count": 7,
+      "seconds": 14.76
+    }
+  },
+  "independent": {
+    "mac": {
+      "synthetic_frequency_component_verified": true,
+      "scalar_values_checked": 150,
+      "ledger_entries": 100,
+      "capacity_bytes": 4633,
+      "checks": 110,
+      "production_authorized": false,
+      "configuration_integrated": false
+    },
+    "school": {
+      "synthetic_frequency_component_verified": true,
+      "scalar_values_checked": 150,
+      "ledger_entries": 100,
+      "capacity_bytes": 4633,
+      "checks": 110,
+      "production_authorized": false,
+      "configuration_integrated": false
+    },
+    "tamper_rejections": {
+      "qualification": "qualification",
+      "checkpoint-bool": "checkpoints",
+      "ledger-bool": "expression ledger",
+      "ledger-capacity-and-total": "expression ledger",
+      "block-bool": "block ownership",
+      "array-bytes": "scalar bytes",
+      "missing-input": "input count",
+      "elapsed-bool": "environment"
+    },
+    "parity_except_platform_elapsed": true,
+    "elapsed_s": {
+      "mac": 0.000293792225420475,
+      "school": 0.0010984439868479967
+    },
+    "final_reviewer_deployed_school": false
+  },
+  "code_freeze": "outputs/review-20260925/20261007-stencil-freeze-03.json",
+  "code_count": 1760,
+  "school_fixture_files": 174,
+  "verified_receipt_bytes": 10355,
+  "synthetic_frequency_component_verified": true,
+  "configuration_integrated": false,
+  "production_authorized": false,
+  "all_scientific_temporaries_metered": false,
+  "whole_lifecycle_guard_verified": false,
+  "accepted_material_updates": 20,
+  "new_material_updates": 0,
+  "real_source_refreshes": 0
+}

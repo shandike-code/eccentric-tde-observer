@@ -1,0 +1,12 @@
+{
+  "actual_model": "deepseek-v4-flash[1m]",
+  "elapsed_s": 8.5505658746697,
+  "scope": "short supplied facts only, not source or performance audit",
+  "corrections": [
+    "future tense corrected to completed implementation",
+    "one module has three functional paths",
+    "not merely interface renaming: explicit reservations and checkpoints implemented",
+    "existing motion configuration exists; new frequency component not integrated"
+  ],
+  "accepted_claims": "bounded synthetic evidence and production limitations independently checked"
+}
