@@ -1,0 +1,102 @@
+{
+  "schema": "86304-trust-stage-review-v1",
+  "report": "handoff/linux-runs/2026-10-08-x20-86304-preparation-trust.md",
+  "independent": {
+    "results": {
+      "Mac": {
+        "control": {
+          "scalar_metrics": {
+            "temperature": 0.0,
+            "energy": 0.0,
+            "population": 0.0
+          },
+          "reserved_bytes": 20626,
+          "entries": 260,
+          "checkpoints": 286
+        },
+        "small": {
+          "scalar_metrics": {
+            "temperature": 0.0317434074991028,
+            "energy": 0.006583513500384446,
+            "population": 0.0
+          },
+          "reserved_bytes": 13214,
+          "entries": 164,
+          "checkpoints": 181
+        },
+        "large": {
+          "scalar_metrics": {
+            "temperature": 1.7182818284590458,
+            "energy": 0.3563679045938974,
+            "population": 0.0
+          },
+          "reserved_bytes": 13214,
+          "entries": 164,
+          "checkpoints": 181
+        }
+      },
+      "Linux": {
+        "control": {
+          "scalar_metrics": {
+            "temperature": 0.0,
+            "energy": 0.0,
+            "population": 0.0
+          },
+          "reserved_bytes": 20626,
+          "entries": 260,
+          "checkpoints": 286
+        },
+        "small": {
+          "scalar_metrics": {
+            "temperature": 0.0317434074991028,
+            "energy": 0.006583513500384446,
+            "population": 0.0
+          },
+          "reserved_bytes": 13214,
+          "entries": 164,
+          "checkpoints": 181
+        },
+        "large": {
+          "scalar_metrics": {
+            "temperature": 1.7182818284590458,
+            "energy": 0.3563679045938974,
+            "population": 0.0
+          },
+          "reserved_bytes": 13214,
+          "entries": 164,
+          "checkpoints": 181
+        }
+      }
+    },
+    "tamper_rejected": [
+      "production",
+      "wholelife",
+      "configuration",
+      "all-temporaries",
+      "bool-checks",
+      "bool-elapsed",
+      "bool-ledger",
+      "capacity-total",
+      "missing-case",
+      "wrong-decision",
+      "integer-decision"
+    ],
+    "case_transcript_parity": [
+      "control",
+      "small",
+      "large"
+    ],
+    "frozen_files": 1786,
+    "files_received": 6,
+    "bytes_received": 20821,
+    "school_fixture_files": 183
+  },
+  "synthetic_trust_control_component_verified": true,
+  "configuration_integrated": false,
+  "all_scientific_temporaries_metered": false,
+  "whole_lifecycle_guard_verified": false,
+  "new_production_authorized": false,
+  "accepted_material_updates": 20,
+  "new_material_updates": 0,
+  "first_test_failure": "test expected wrong strict-budget prefix for adjacent 1B reservation; component and Budget unchanged"
+}

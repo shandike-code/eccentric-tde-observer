@@ -1,0 +1,13 @@
+{
+  "scope": "supplied short facts only, not full source/performance audit",
+  "actual_model": "deepseek-v4-flash[1m]",
+  "elapsed_s": 12.023458041716367,
+  "clarifications": [
+    "另名实现，不是仅符号别名。",
+    "输入扰动是 ln(gas thermal specific energy)，不是直接温度扰动；固定布居下温度随之变化。",
+    "3/11/29/128是control对照；非零trust/stride是3/11/29。",
+    "286逐点故障注入范围是十一单元control成功路径；不覆盖全部非法输入分支。",
+    "60s/30s为外部timeout，未测RSS耗尽，不证明生产预算。"
+  ],
+  "applied_to": "report and lecture193 independently written and checked"
+}
